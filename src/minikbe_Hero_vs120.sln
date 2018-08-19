@@ -69,7 +69,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "db_mysql", "lib\db_mysql\db
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "db_redis", "lib\db_redis\db_redis.vcxproj", "{70E890EA-9496-4F7C-B903-5FCF87A73AC4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientTest", "..\..\..\minikbe-client\mini-kbe-ClientTest\ClientTest\ClientTest.vcxproj", "{B2439655-1AA9-4745-A7D8-3A419322FFDB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientTest", "..\..\mini-kbe-ClientTest\ClientTest\ClientTest.vcxproj", "{B2439655-1AA9-4745-A7D8-3A419322FFDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

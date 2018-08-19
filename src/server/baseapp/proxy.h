@@ -149,6 +149,9 @@ public:
 	*/
 	Network::Channel* pChannel();
 
+public:
+	void sendUserDownInfo();
+
 protected:
 	uint64 rndUUID_;
 	Network::Address addr_;
@@ -173,6 +176,26 @@ protected:
 
 	// 注册时附带的datas数据（永久存档）
 	std::string createDatas_;
+
+private:
+	int32 serverid_;
+	std::string nickName_;
+	int32 lastsetnametime_;
+	int32 avatar_;
+	int32 level_;
+	int64 exp_;
+	int64 money_;
+	int64 gem_;
+	int32 arena_point_;
+	int32 crusade_point_;
+	int32 guild_point_;
+	int32 last_midas_time_;
+	int32 today_midas_times_;
+	int32 total_online_time_;
+	int16 tutorialstep_;
+	int64 rechargegem_;
+	int8 facebook_follow_;
+
 };
 
 }

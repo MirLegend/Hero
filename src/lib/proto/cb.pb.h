@@ -39,6 +39,7 @@ class HelloCB;
 class Login;
 class LoginBaseappFailed;
 class CreatedProxies;
+class login_reply;
 class hire_data;
 class hire_hero;
 class down_msg;
@@ -47,7 +48,6 @@ class system_setting_change;
 class system_setting_request;
 class system_setting_item;
 class global_config;
-class login_reply;
 class sdk_login_reply;
 class user_check;
 class reset;
@@ -1633,6 +1633,112 @@ class CreatedProxies : public ::google::protobuf::Message {
 };
 // -------------------------------------------------------------------
 
+class login_reply : public ::google::protobuf::Message {
+ public:
+  login_reply();
+  virtual ~login_reply();
+
+  login_reply(const login_reply& from);
+
+  inline login_reply& operator=(const login_reply& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const login_reply& default_instance();
+
+  void Swap(login_reply* other);
+
+  // implements Message ----------------------------------------------
+
+  login_reply* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const login_reply& from);
+  void MergeFrom(const login_reply& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .client_baseserver.result _result = 1;
+  inline bool has__result() const;
+  inline void clear__result();
+  static const int kResultFieldNumber = 1;
+  inline ::client_baseserver::result _result() const;
+  inline void set__result(::client_baseserver::result value);
+
+  // optional .client_baseserver.user _user = 2;
+  inline bool has__user() const;
+  inline void clear__user();
+  static const int kUserFieldNumber = 2;
+  inline const ::client_baseserver::user& _user() const;
+  inline ::client_baseserver::user* mutable__user();
+  inline ::client_baseserver::user* release__user();
+  inline void set_allocated__user(::client_baseserver::user* _user);
+
+  // required string _time_zone = 3;
+  inline bool has__time_zone() const;
+  inline void clear__time_zone();
+  static const int kTimeZoneFieldNumber = 3;
+  inline const ::std::string& _time_zone() const;
+  inline void set__time_zone(const ::std::string& value);
+  inline void set__time_zone(const char* value);
+  inline void set__time_zone(const char* value, size_t size);
+  inline ::std::string* mutable__time_zone();
+  inline ::std::string* release__time_zone();
+  inline void set_allocated__time_zone(::std::string* _time_zone);
+
+  // @@protoc_insertion_point(class_scope:client_baseserver.login_reply)
+ private:
+  inline void set_has__result();
+  inline void clear_has__result();
+  inline void set_has__user();
+  inline void clear_has__user();
+  inline void set_has__time_zone();
+  inline void clear_has__time_zone();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 _has_bits_[1];
+  mutable int _cached_size_;
+  ::client_baseserver::user* _user_;
+  ::std::string* _time_zone_;
+  int _result_;
+  friend void  protobuf_AddDesc_cb_2eproto();
+  friend void protobuf_AssignDesc_cb_2eproto();
+  friend void protobuf_ShutdownFile_cb_2eproto();
+
+  void InitAsDefaultInstance();
+  static login_reply* default_instance_;
+};
+// -------------------------------------------------------------------
+
 class hire_data : public ::google::protobuf::Message {
  public:
   hire_data();
@@ -3175,112 +3281,6 @@ class global_config : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static global_config* default_instance_;
-};
-// -------------------------------------------------------------------
-
-class login_reply : public ::google::protobuf::Message {
- public:
-  login_reply();
-  virtual ~login_reply();
-
-  login_reply(const login_reply& from);
-
-  inline login_reply& operator=(const login_reply& from) {
-    CopyFrom(from);
-    return *this;
-  }
-
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _unknown_fields_;
-  }
-
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return &_unknown_fields_;
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const login_reply& default_instance();
-
-  void Swap(login_reply* other);
-
-  // implements Message ----------------------------------------------
-
-  login_reply* New() const;
-  void CopyFrom(const ::google::protobuf::Message& from);
-  void MergeFrom(const ::google::protobuf::Message& from);
-  void CopyFrom(const login_reply& from);
-  void MergeFrom(const login_reply& from);
-  void Clear();
-  bool IsInitialized() const;
-
-  int ByteSize() const;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input);
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
-  int GetCachedSize() const { return _cached_size_; }
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const;
-  public:
-  ::google::protobuf::Metadata GetMetadata() const;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // required .client_baseserver.result _result = 1;
-  inline bool has__result() const;
-  inline void clear__result();
-  static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
-
-  // optional .client_baseserver.user _user = 2;
-  inline bool has__user() const;
-  inline void clear__user();
-  static const int kUserFieldNumber = 2;
-  inline const ::client_baseserver::user& _user() const;
-  inline ::client_baseserver::user* mutable__user();
-  inline ::client_baseserver::user* release__user();
-  inline void set_allocated__user(::client_baseserver::user* _user);
-
-  // required string _time_zone = 3;
-  inline bool has__time_zone() const;
-  inline void clear__time_zone();
-  static const int kTimeZoneFieldNumber = 3;
-  inline const ::std::string& _time_zone() const;
-  inline void set__time_zone(const ::std::string& value);
-  inline void set__time_zone(const char* value);
-  inline void set__time_zone(const char* value, size_t size);
-  inline ::std::string* mutable__time_zone();
-  inline ::std::string* release__time_zone();
-  inline void set_allocated__time_zone(::std::string* _time_zone);
-
-  // @@protoc_insertion_point(class_scope:client_baseserver.login_reply)
- private:
-  inline void set_has__result();
-  inline void clear_has__result();
-  inline void set_has__user();
-  inline void clear_has__user();
-  inline void set_has__time_zone();
-  inline void clear_has__time_zone();
-
-  ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
-  ::google::protobuf::uint32 _has_bits_[1];
-  mutable int _cached_size_;
-  ::client_baseserver::user* _user_;
-  ::std::string* _time_zone_;
-  int _result_;
-  friend void  protobuf_AddDesc_cb_2eproto();
-  friend void protobuf_AssignDesc_cb_2eproto();
-  friend void protobuf_ShutdownFile_cb_2eproto();
-
-  void InitAsDefaultInstance();
-  static login_reply* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -30060,6 +30060,152 @@ inline void CreatedProxies::set_entityid(::google::protobuf::int32 value) {
 
 // -------------------------------------------------------------------
 
+// login_reply
+
+// required .client_baseserver.result _result = 1;
+inline bool login_reply::has__result() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void login_reply::set_has__result() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void login_reply::clear_has__result() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void login_reply::clear__result() {
+  _result_ = 0;
+  clear_has__result();
+}
+inline ::client_baseserver::result login_reply::_result() const {
+  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._result)
+  return static_cast< ::client_baseserver::result >(_result_);
+}
+inline void login_reply::set__result(::client_baseserver::result value) {
+  assert(::client_baseserver::result_IsValid(value));
+  set_has__result();
+  _result_ = value;
+  // @@protoc_insertion_point(field_set:client_baseserver.login_reply._result)
+}
+
+// optional .client_baseserver.user _user = 2;
+inline bool login_reply::has__user() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void login_reply::set_has__user() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void login_reply::clear_has__user() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void login_reply::clear__user() {
+  if (_user_ != NULL) _user_->::client_baseserver::user::Clear();
+  clear_has__user();
+}
+inline const ::client_baseserver::user& login_reply::_user() const {
+  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._user)
+  return _user_ != NULL ? *_user_ : *default_instance_->_user_;
+}
+inline ::client_baseserver::user* login_reply::mutable__user() {
+  set_has__user();
+  if (_user_ == NULL) _user_ = new ::client_baseserver::user;
+  // @@protoc_insertion_point(field_mutable:client_baseserver.login_reply._user)
+  return _user_;
+}
+inline ::client_baseserver::user* login_reply::release__user() {
+  clear_has__user();
+  ::client_baseserver::user* temp = _user_;
+  _user_ = NULL;
+  return temp;
+}
+inline void login_reply::set_allocated__user(::client_baseserver::user* _user) {
+  delete _user_;
+  _user_ = _user;
+  if (_user) {
+    set_has__user();
+  } else {
+    clear_has__user();
+  }
+  // @@protoc_insertion_point(field_set_allocated:client_baseserver.login_reply._user)
+}
+
+// required string _time_zone = 3;
+inline bool login_reply::has__time_zone() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void login_reply::set_has__time_zone() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void login_reply::clear_has__time_zone() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void login_reply::clear__time_zone() {
+  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    _time_zone_->clear();
+  }
+  clear_has__time_zone();
+}
+inline const ::std::string& login_reply::_time_zone() const {
+  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._time_zone)
+  return *_time_zone_;
+}
+inline void login_reply::set__time_zone(const ::std::string& value) {
+  set_has__time_zone();
+  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    _time_zone_ = new ::std::string;
+  }
+  _time_zone_->assign(value);
+  // @@protoc_insertion_point(field_set:client_baseserver.login_reply._time_zone)
+}
+inline void login_reply::set__time_zone(const char* value) {
+  set_has__time_zone();
+  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    _time_zone_ = new ::std::string;
+  }
+  _time_zone_->assign(value);
+  // @@protoc_insertion_point(field_set_char:client_baseserver.login_reply._time_zone)
+}
+inline void login_reply::set__time_zone(const char* value, size_t size) {
+  set_has__time_zone();
+  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    _time_zone_ = new ::std::string;
+  }
+  _time_zone_->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:client_baseserver.login_reply._time_zone)
+}
+inline ::std::string* login_reply::mutable__time_zone() {
+  set_has__time_zone();
+  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    _time_zone_ = new ::std::string;
+  }
+  // @@protoc_insertion_point(field_mutable:client_baseserver.login_reply._time_zone)
+  return _time_zone_;
+}
+inline ::std::string* login_reply::release__time_zone() {
+  clear_has__time_zone();
+  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    return NULL;
+  } else {
+    ::std::string* temp = _time_zone_;
+    _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    return temp;
+  }
+}
+inline void login_reply::set_allocated__time_zone(::std::string* _time_zone) {
+  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete _time_zone_;
+  }
+  if (_time_zone) {
+    set_has__time_zone();
+    _time_zone_ = _time_zone;
+  } else {
+    clear_has__time_zone();
+    _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_set_allocated:client_baseserver.login_reply._time_zone)
+}
+
+// -------------------------------------------------------------------
+
 // hire_data
 
 // required uint32 _uid = 1;
@@ -33385,152 +33531,6 @@ inline void global_config::set__hero_split_ending(::google::protobuf::uint32 val
   set_has__hero_split_ending();
   _hero_split_ending_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.global_config._hero_split_ending)
-}
-
-// -------------------------------------------------------------------
-
-// login_reply
-
-// required .client_baseserver.result _result = 1;
-inline bool login_reply::has__result() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void login_reply::set_has__result() {
-  _has_bits_[0] |= 0x00000001u;
-}
-inline void login_reply::clear_has__result() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline void login_reply::clear__result() {
-  _result_ = 0;
-  clear_has__result();
-}
-inline ::client_baseserver::result login_reply::_result() const {
-  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
-}
-inline void login_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
-  set_has__result();
-  _result_ = value;
-  // @@protoc_insertion_point(field_set:client_baseserver.login_reply._result)
-}
-
-// optional .client_baseserver.user _user = 2;
-inline bool login_reply::has__user() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void login_reply::set_has__user() {
-  _has_bits_[0] |= 0x00000002u;
-}
-inline void login_reply::clear_has__user() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline void login_reply::clear__user() {
-  if (_user_ != NULL) _user_->::client_baseserver::user::Clear();
-  clear_has__user();
-}
-inline const ::client_baseserver::user& login_reply::_user() const {
-  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._user)
-  return _user_ != NULL ? *_user_ : *default_instance_->_user_;
-}
-inline ::client_baseserver::user* login_reply::mutable__user() {
-  set_has__user();
-  if (_user_ == NULL) _user_ = new ::client_baseserver::user;
-  // @@protoc_insertion_point(field_mutable:client_baseserver.login_reply._user)
-  return _user_;
-}
-inline ::client_baseserver::user* login_reply::release__user() {
-  clear_has__user();
-  ::client_baseserver::user* temp = _user_;
-  _user_ = NULL;
-  return temp;
-}
-inline void login_reply::set_allocated__user(::client_baseserver::user* _user) {
-  delete _user_;
-  _user_ = _user;
-  if (_user) {
-    set_has__user();
-  } else {
-    clear_has__user();
-  }
-  // @@protoc_insertion_point(field_set_allocated:client_baseserver.login_reply._user)
-}
-
-// required string _time_zone = 3;
-inline bool login_reply::has__time_zone() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void login_reply::set_has__time_zone() {
-  _has_bits_[0] |= 0x00000004u;
-}
-inline void login_reply::clear_has__time_zone() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline void login_reply::clear__time_zone() {
-  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    _time_zone_->clear();
-  }
-  clear_has__time_zone();
-}
-inline const ::std::string& login_reply::_time_zone() const {
-  // @@protoc_insertion_point(field_get:client_baseserver.login_reply._time_zone)
-  return *_time_zone_;
-}
-inline void login_reply::set__time_zone(const ::std::string& value) {
-  set_has__time_zone();
-  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    _time_zone_ = new ::std::string;
-  }
-  _time_zone_->assign(value);
-  // @@protoc_insertion_point(field_set:client_baseserver.login_reply._time_zone)
-}
-inline void login_reply::set__time_zone(const char* value) {
-  set_has__time_zone();
-  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    _time_zone_ = new ::std::string;
-  }
-  _time_zone_->assign(value);
-  // @@protoc_insertion_point(field_set_char:client_baseserver.login_reply._time_zone)
-}
-inline void login_reply::set__time_zone(const char* value, size_t size) {
-  set_has__time_zone();
-  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    _time_zone_ = new ::std::string;
-  }
-  _time_zone_->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:client_baseserver.login_reply._time_zone)
-}
-inline ::std::string* login_reply::mutable__time_zone() {
-  set_has__time_zone();
-  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    _time_zone_ = new ::std::string;
-  }
-  // @@protoc_insertion_point(field_mutable:client_baseserver.login_reply._time_zone)
-  return _time_zone_;
-}
-inline ::std::string* login_reply::release__time_zone() {
-  clear_has__time_zone();
-  if (_time_zone_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    return NULL;
-  } else {
-    ::std::string* temp = _time_zone_;
-    _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-    return temp;
-  }
-}
-inline void login_reply::set_allocated__time_zone(::std::string* _time_zone) {
-  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    delete _time_zone_;
-  }
-  if (_time_zone) {
-    set_has__time_zone();
-    _time_zone_ = _time_zone;
-  } else {
-    clear_has__time_zone();
-    _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  // @@protoc_insertion_point(field_set_allocated:client_baseserver.login_reply._time_zone)
 }
 
 // -------------------------------------------------------------------

@@ -35,6 +35,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* CreatedProxies_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   CreatedProxies_reflection_ = NULL;
+const ::google::protobuf::Descriptor* login_reply_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  login_reply_reflection_ = NULL;
 const ::google::protobuf::Descriptor* hire_data_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hire_data_reflection_ = NULL;
@@ -60,9 +63,6 @@ const ::google::protobuf::EnumDescriptor* system_setting_item_setting_status_des
 const ::google::protobuf::Descriptor* global_config_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   global_config_reflection_ = NULL;
-const ::google::protobuf::Descriptor* login_reply_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  login_reply_reflection_ = NULL;
 const ::google::protobuf::Descriptor* sdk_login_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   sdk_login_reply_reflection_ = NULL;
@@ -908,7 +908,24 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(CreatedProxies));
-  hire_data_descriptor_ = file->message_type(5);
+  login_reply_descriptor_ = file->message_type(5);
+  static const int login_reply_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _result_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _user_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _time_zone_),
+  };
+  login_reply_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      login_reply_descriptor_,
+      login_reply::default_instance_,
+      login_reply_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(login_reply));
+  hire_data_descriptor_ = file->message_type(6);
   static const int hire_data_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hire_data, _uid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hire_data, _name_),
@@ -925,7 +942,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(hire_data));
-  hire_hero_descriptor_ = file->message_type(6);
+  hire_hero_descriptor_ = file->message_type(7);
   static const int hire_hero_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hire_hero, _base_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hire_hero, _dyna_),
@@ -941,7 +958,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(hire_hero));
-  down_msg_descriptor_ = file->message_type(7);
+  down_msg_descriptor_ = file->message_type(8);
   static const int down_msg_offsets_[69] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(down_msg, _login_reply_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(down_msg, _reset_),
@@ -1024,7 +1041,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(down_msg));
-  system_setting_reply_descriptor_ = file->message_type(8);
+  system_setting_reply_descriptor_ = file->message_type(9);
   static const int system_setting_reply_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_reply, _request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_reply, _change_),
@@ -1040,7 +1057,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_reply));
-  system_setting_change_descriptor_ = file->message_type(9);
+  system_setting_change_descriptor_ = file->message_type(10);
   static const int system_setting_change_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_change, _result_),
   };
@@ -1055,7 +1072,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_change));
-  system_setting_request_descriptor_ = file->message_type(10);
+  system_setting_request_descriptor_ = file->message_type(11);
   static const int system_setting_request_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_request, _system_setting_item_),
   };
@@ -1070,7 +1087,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_request));
-  system_setting_item_descriptor_ = file->message_type(11);
+  system_setting_item_descriptor_ = file->message_type(12);
   static const int system_setting_item_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_item, key_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(system_setting_item, value_),
@@ -1087,7 +1104,7 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_item));
   system_setting_item_setting_status_descriptor_ = system_setting_item_descriptor_->enum_type(0);
-  global_config_descriptor_ = file->message_type(12);
+  global_config_descriptor_ = file->message_type(13);
   static const int global_config_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(global_config, _hero_split_ending_),
   };
@@ -1102,23 +1119,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(global_config));
-  login_reply_descriptor_ = file->message_type(13);
-  static const int login_reply_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _result_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _user_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _time_zone_),
-  };
-  login_reply_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      login_reply_descriptor_,
-      login_reply::default_instance_,
-      login_reply_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(login_reply, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(login_reply));
   sdk_login_reply_descriptor_ = file->message_type(14);
   static const int sdk_login_reply_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(sdk_login_reply, _result_),
@@ -5329,6 +5329,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     CreatedProxies_descriptor_, &CreatedProxies::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    login_reply_descriptor_, &login_reply::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     hire_data_descriptor_, &hire_data::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     hire_hero_descriptor_, &hire_hero::default_instance());
@@ -5344,8 +5346,6 @@ void protobuf_RegisterTypes(const ::std::string&) {
     system_setting_item_descriptor_, &system_setting_item::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     global_config_descriptor_, &global_config::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    login_reply_descriptor_, &login_reply::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     sdk_login_reply_descriptor_, &sdk_login_reply::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
@@ -5837,6 +5837,8 @@ void protobuf_ShutdownFile_cb_2eproto() {
   delete LoginBaseappFailed_reflection_;
   delete CreatedProxies::default_instance_;
   delete CreatedProxies_reflection_;
+  delete login_reply::default_instance_;
+  delete login_reply_reflection_;
   delete hire_data::default_instance_;
   delete hire_data_reflection_;
   delete hire_hero::default_instance_;
@@ -5853,8 +5855,6 @@ void protobuf_ShutdownFile_cb_2eproto() {
   delete system_setting_item_reflection_;
   delete global_config::default_instance_;
   delete global_config_reflection_;
-  delete login_reply::default_instance_;
-  delete login_reply_reflection_;
   delete sdk_login_reply::default_instance_;
   delete sdk_login_reply_reflection_;
   delete user_check::default_instance_;
@@ -6346,141 +6346,141 @@ void protobuf_AddDesc_cb_2eproto() {
     "\n\textraData\030\003 \001(\t\"*\n\005Login\022\017\n\007account\030\001 "
     "\001(\t\022\020\n\010password\030\002 \001(\t\"%\n\022LoginBaseappFai"
     "led\022\017\n\007retCode\030\001 \001(\r\"\"\n\016CreatedProxies\022\020"
-    "\n\010entityID\030\001 \001(\005\"U\n\thire_data\022\014\n\004_uid\030\001 "
-    "\002(\r\022\r\n\005_name\030\002 \002(\t\022+\n\005_hero\030\003 \002(\0132\034.clie"
-    "nt_baseserver.hire_hero\"`\n\thire_hero\022&\n\005"
-    "_base\030\001 \002(\0132\027.client_baseserver.hero\022+\n\005"
-    "_dyna\030\002 \002(\0132\034.client_baseserver.hero_dyn"
-    "a\"\327#\n\010down_msg\0224\n\014_login_reply\030\001 \001(\0132\036.c"
-    "lient_baseserver.login_reply\022(\n\006_reset\030\002"
-    " \001(\0132\030.client_baseserver.reset\022@\n\022_enter"
-    "_stage_reply\030\003 \001(\0132$.client_baseserver.e"
-    "nter_stage_reply\022>\n\021_exit_stage_reply\030\004 "
-    "\001(\0132#.client_baseserver.exit_stage_reply"
-    "\022B\n\023_hero_upgrade_reply\030\005 \001(\0132%.client_b"
-    "aseserver.hero_upgrade_reply\022H\n\026_equip_s"
-    "ynthesis_reply\030\006 \001(\0132(.client_baseserver"
-    ".equip_synthesis_reply\022>\n\021_wear_equip_re"
-    "ply\030\007 \001(\0132#.client_baseserver.wear_equip"
-    "_reply\022B\n\023_consume_item_reply\030\010 \001(\0132%.cl"
-    "ient_baseserver.consume_item_reply\0229\n\023_s"
-    "hop_refresh_reply\030\t \001(\0132\034.client_baseser"
-    "ver.user_shop\022B\n\023_shop_consume_reply\030\n \001"
-    "(\0132%.client_baseserver.shop_consume_repl"
-    "y\022D\n\024_skill_levelup_reply\030\013 \001(\0132&.client"
-    "_baseserver.skill_levelup_reply\022<\n\020_sell"
-    "_item_reply\030\014 \001(\0132\".client_baseserver.se"
-    "ll_item_reply\022J\n\027_fragment_compose_reply"
-    "\030\r \001(\0132).client_baseserver.fragment_comp"
-    "ose_reply\022N\n\031_hero_equip_upgrade_reply\030\016"
-    " \001(\0132+.client_baseserver.hero_equip_upgr"
-    "ade_reply\022B\n\023_trigger_task_reply\030\017 \001(\0132%"
-    ".client_baseserver.trigger_task_reply\022H\n"
-    "\026_require_rewards_reply\030\020 \001(\0132(.client_b"
-    "aseserver.require_rewards_reply\022@\n\022_trig"
-    "ger_job_reply\030\021 \001(\0132$.client_baseserver."
-    "trigger_job_reply\022@\n\022_job_rewards_reply\030"
-    "\022 \001(\0132$.client_baseserver.job_rewards_re"
-    "ply\022@\n\022_reset_elite_reply\030\023 \001(\0132$.client"
-    "_baseserver.reset_elite_reply\022@\n\022_sweep_"
-    "stage_reply\030\024 \001(\0132$.client_baseserver.sw"
-    "eep_stage_reply\022@\n\022_tavern_draw_reply\030\025 "
-    "\001(\0132$.client_baseserver.tavern_draw_repl"
-    "y\022J\n\027_sync_skill_stren_reply\030\026 \001(\0132).cli"
-    "ent_baseserver.sync_skill_stren_reply\022>\n"
-    "\021_query_data_reply\030\027 \001(\0132#.client_basese"
-    "rver.query_data_reply\022@\n\022_hero_evolve_re"
-    "ply\030\030 \001(\0132$.client_baseserver.hero_evolv"
-    "e_reply\022D\n\024_sync_vitality_reply\030\031 \001(\0132&."
-    "client_baseserver.sync_vitality_reply\0222\n"
-    "\013_user_check\030\032 \001(\0132\035.client_baseserver.u"
-    "ser_check\022:\n\017_tutorial_reply\030\033 \001(\0132!.cli"
-    "ent_baseserver.tutorial_reply\0222\n\013_error_"
-    "info\030\034 \001(\0132\035.client_baseserver.error_inf"
-    "o\0226\n\r_ladder_reply\030\035 \001(\0132\037.client_basese"
-    "rver.ladder_reply\022:\n\017_set_name_reply\030\036 \001"
-    "(\0132!.client_baseserver.set_name_reply\0224\n"
-    "\014_midas_reply\030\037 \001(\0132\036.client_baseserver."
-    "midas_reply\022<\n\020_open_shop_reply\030  \001(\0132\"."
-    "client_baseserver.open_shop_reply\0226\n\r_ch"
-    "arge_reply\030! \001(\0132\037.client_baseserver.cha"
-    "rge_reply\022<\n\020_sdk_login_reply\030\" \001(\0132\".cl"
-    "ient_baseserver.sdk_login_reply\022>\n\021_set_"
-    "avatar_reply\030# \001(\0132#.client_baseserver.s"
-    "et_avatar_reply\0222\n\013_notify_msg\030$ \001(\0132\035.c"
-    "lient_baseserver.notify_msg\022H\n\026_ask_dail"
-    "y_login_reply\030% \001(\0132(.client_baseserver."
-    "ask_daily_login_reply\0220\n\n_tbc_reply\030& \001("
-    "\0132\034.client_baseserver.tbc_reply\022B\n\023_get_"
-    "maillist_reply\030\' \001(\0132%.client_baseserver"
-    ".get_maillist_reply\022<\n\020_read_mail_reply\030"
-    "( \001(\0132\".client_baseserver.read_mail_repl"
-    "y\022\021\n\t_svr_time\030) \001(\r\022B\n\023_get_vip_gift_re"
-    "ply\030* \001(\0132%.client_baseserver.get_vip_gi"
-    "ft_reply\0222\n\013_chat_reply\030+ \001(\0132\035.client_b"
-    "aseserver.chat_reply\022>\n\021_cdkey_gift_repl"
-    "y\030, \001(\0132#.client_baseserver.cdkey_gift_r"
-    "eply\0224\n\014_guild_reply\030- \001(\0132\036.client_base"
-    "server.guild_reply\022D\n\024_ask_magicsoul_rep"
-    "ly\030. \001(\0132&.client_baseserver.ask_magicso"
-    "ul_reply\022C\n\030_ask_activity_info_reply\030/ \001"
-    "(\0132!.client_baseserver.activity_infos\022:\n"
-    "\017_excavate_reply\0300 \001(\0132!.client_baseserv"
-    "er.excavate_reply\022F\n\025_system_setting_rep"
-    "ly\0301 \001(\0132\'.client_baseserver.system_sett"
-    "ing_reply\022J\n\027_query_split_data_reply\0302 \001"
-    "(\0132).client_baseserver.query_split_data_"
-    "reply\022N\n\031_query_split_return_reply\0303 \001(\013"
-    "2+.client_baseserver.query_split_return_"
-    "reply\022>\n\021_split_hero_reply\0304 \001(\0132#.clien"
-    "t_baseserver.split_hero_reply\022:\n\017_worldc"
-    "up_reply\0305 \001(\0132!.client_baseserver.world"
-    "cup_reply\022@\n\022_battle_check_fail\0306 \001(\0132$."
-    "client_baseserver.battle_check_fail\0226\n\r_"
-    "query_replay\0307 \001(\0132\037.client_baseserver.q"
-    "uery_replay\0222\n\013_super_link\0308 \001(\0132\035.clien"
-    "t_baseserver.super_link\022F\n\025_query_rankli"
-    "st_reply\0309 \001(\0132\'.client_baseserver.query"
-    "_ranklist_reply\022L\n\030_request_guild_log_re"
-    "ply\030A \001(\0132*.client_baseserver.request_gu"
-    "ild_log_reply\022D\n\024_change_server_reply\030: "
-    "\001(\0132&.client_baseserver.change_server_re"
-    "ply\022D\n\024_activity_info_reply\030; \001(\0132&.clie"
-    "nt_baseserver.activity_info_reply\022P\n\032_ac"
-    "tivity_lotto_info_reply\030< \001(\0132,.client_b"
-    "aseserver.activity_lotto_info_reply\022T\n\034_"
-    "activity_lotto_reward_reply\030= \001(\0132..clie"
-    "nt_baseserver.activity_lotto_reward_repl"
-    "y\022Z\n\037_activity_bigpackage_info_reply\030> \001"
-    "(\01321.client_baseserver.activity_bigpacka"
-    "ge_info_reply\022^\n!_activity_bigpackage_re"
-    "ward_reply\030\? \001(\01323.client_baseserver.act"
-    "ivity_bigpackage_reward_reply\022\\\n _activi"
-    "ty_bigpackage_reset_reply\030@ \001(\01322.client"
-    "_baseserver.activity_bigpackage_reset_re"
-    "ply\022C\n\023_fb_attention_reply\030\254\002 \001(\0132%.clie"
-    "nt_baseserver.fb_attention_reply\022C\n\023_con"
-    "tinue_pay_reply\030\256\002 \001(\0132%.client_baseserv"
-    "er.continue_pay_reply\022I\n\026_recharge_rebat"
-    "e_reply\030\257\002 \001(\0132(.client_baseserver.recha"
-    "rge_rebate_reply\022I\n\026_every_day_happy_rep"
-    "ly\030\260\002 \001(\0132(.client_baseserver.every_day_"
-    "happy_reply\"\216\001\n\024system_setting_reply\022;\n\010"
-    "_request\030\001 \001(\0132).client_baseserver.syste"
-    "m_setting_request\0229\n\007_change\030\002 \001(\0132(.cli"
-    "ent_baseserver.system_setting_change\"C\n\025"
-    "system_setting_change\022*\n\007_result\030\001 \002(\0162\031"
-    ".client_baseserver.result\"^\n\026system_sett"
-    "ing_request\022D\n\024_system_setting_item\030\001 \003("
-    "\0132&.client_baseserver.system_setting_ite"
-    "m\"\213\001\n\023system_setting_item\022\013\n\003key\030\001 \002(\t\022D"
-    "\n\005value\030\002 \002(\01625.client_baseserver.system"
-    "_setting_item.setting_status\"!\n\016setting_"
-    "status\022\006\n\002on\020\001\022\007\n\003off\020\002\"+\n\rglobal_config"
-    "\022\032\n\022_hero_split_ending\030\001 \001(\r\"u\n\013login_re"
-    "ply\022*\n\007_result\030\001 \002(\0162\031.client_baseserver"
-    ".result\022&\n\005_user\030\002 \001(\0132\027.client_baseserv"
-    "er.user\022\022\n\n_time_zone\030\003 \002(\t\"\177\n\017sdk_login"
+    "\n\010entityID\030\001 \001(\005\"u\n\013login_reply\022*\n\007_resu"
+    "lt\030\001 \002(\0162\031.client_baseserver.result\022&\n\005_"
+    "user\030\002 \001(\0132\027.client_baseserver.user\022\022\n\n_"
+    "time_zone\030\003 \002(\t\"U\n\thire_data\022\014\n\004_uid\030\001 \002"
+    "(\r\022\r\n\005_name\030\002 \002(\t\022+\n\005_hero\030\003 \002(\0132\034.clien"
+    "t_baseserver.hire_hero\"`\n\thire_hero\022&\n\005_"
+    "base\030\001 \002(\0132\027.client_baseserver.hero\022+\n\005_"
+    "dyna\030\002 \002(\0132\034.client_baseserver.hero_dyna"
+    "\"\327#\n\010down_msg\0224\n\014_login_reply\030\001 \001(\0132\036.cl"
+    "ient_baseserver.login_reply\022(\n\006_reset\030\002 "
+    "\001(\0132\030.client_baseserver.reset\022@\n\022_enter_"
+    "stage_reply\030\003 \001(\0132$.client_baseserver.en"
+    "ter_stage_reply\022>\n\021_exit_stage_reply\030\004 \001"
+    "(\0132#.client_baseserver.exit_stage_reply\022"
+    "B\n\023_hero_upgrade_reply\030\005 \001(\0132%.client_ba"
+    "seserver.hero_upgrade_reply\022H\n\026_equip_sy"
+    "nthesis_reply\030\006 \001(\0132(.client_baseserver."
+    "equip_synthesis_reply\022>\n\021_wear_equip_rep"
+    "ly\030\007 \001(\0132#.client_baseserver.wear_equip_"
+    "reply\022B\n\023_consume_item_reply\030\010 \001(\0132%.cli"
+    "ent_baseserver.consume_item_reply\0229\n\023_sh"
+    "op_refresh_reply\030\t \001(\0132\034.client_baseserv"
+    "er.user_shop\022B\n\023_shop_consume_reply\030\n \001("
+    "\0132%.client_baseserver.shop_consume_reply"
+    "\022D\n\024_skill_levelup_reply\030\013 \001(\0132&.client_"
+    "baseserver.skill_levelup_reply\022<\n\020_sell_"
+    "item_reply\030\014 \001(\0132\".client_baseserver.sel"
+    "l_item_reply\022J\n\027_fragment_compose_reply\030"
+    "\r \001(\0132).client_baseserver.fragment_compo"
+    "se_reply\022N\n\031_hero_equip_upgrade_reply\030\016 "
+    "\001(\0132+.client_baseserver.hero_equip_upgra"
+    "de_reply\022B\n\023_trigger_task_reply\030\017 \001(\0132%."
+    "client_baseserver.trigger_task_reply\022H\n\026"
+    "_require_rewards_reply\030\020 \001(\0132(.client_ba"
+    "seserver.require_rewards_reply\022@\n\022_trigg"
+    "er_job_reply\030\021 \001(\0132$.client_baseserver.t"
+    "rigger_job_reply\022@\n\022_job_rewards_reply\030\022"
+    " \001(\0132$.client_baseserver.job_rewards_rep"
+    "ly\022@\n\022_reset_elite_reply\030\023 \001(\0132$.client_"
+    "baseserver.reset_elite_reply\022@\n\022_sweep_s"
+    "tage_reply\030\024 \001(\0132$.client_baseserver.swe"
+    "ep_stage_reply\022@\n\022_tavern_draw_reply\030\025 \001"
+    "(\0132$.client_baseserver.tavern_draw_reply"
+    "\022J\n\027_sync_skill_stren_reply\030\026 \001(\0132).clie"
+    "nt_baseserver.sync_skill_stren_reply\022>\n\021"
+    "_query_data_reply\030\027 \001(\0132#.client_baseser"
+    "ver.query_data_reply\022@\n\022_hero_evolve_rep"
+    "ly\030\030 \001(\0132$.client_baseserver.hero_evolve"
+    "_reply\022D\n\024_sync_vitality_reply\030\031 \001(\0132&.c"
+    "lient_baseserver.sync_vitality_reply\0222\n\013"
+    "_user_check\030\032 \001(\0132\035.client_baseserver.us"
+    "er_check\022:\n\017_tutorial_reply\030\033 \001(\0132!.clie"
+    "nt_baseserver.tutorial_reply\0222\n\013_error_i"
+    "nfo\030\034 \001(\0132\035.client_baseserver.error_info"
+    "\0226\n\r_ladder_reply\030\035 \001(\0132\037.client_baseser"
+    "ver.ladder_reply\022:\n\017_set_name_reply\030\036 \001("
+    "\0132!.client_baseserver.set_name_reply\0224\n\014"
+    "_midas_reply\030\037 \001(\0132\036.client_baseserver.m"
+    "idas_reply\022<\n\020_open_shop_reply\030  \001(\0132\".c"
+    "lient_baseserver.open_shop_reply\0226\n\r_cha"
+    "rge_reply\030! \001(\0132\037.client_baseserver.char"
+    "ge_reply\022<\n\020_sdk_login_reply\030\" \001(\0132\".cli"
+    "ent_baseserver.sdk_login_reply\022>\n\021_set_a"
+    "vatar_reply\030# \001(\0132#.client_baseserver.se"
+    "t_avatar_reply\0222\n\013_notify_msg\030$ \001(\0132\035.cl"
+    "ient_baseserver.notify_msg\022H\n\026_ask_daily"
+    "_login_reply\030% \001(\0132(.client_baseserver.a"
+    "sk_daily_login_reply\0220\n\n_tbc_reply\030& \001(\013"
+    "2\034.client_baseserver.tbc_reply\022B\n\023_get_m"
+    "aillist_reply\030\' \001(\0132%.client_baseserver."
+    "get_maillist_reply\022<\n\020_read_mail_reply\030("
+    " \001(\0132\".client_baseserver.read_mail_reply"
+    "\022\021\n\t_svr_time\030) \001(\r\022B\n\023_get_vip_gift_rep"
+    "ly\030* \001(\0132%.client_baseserver.get_vip_gif"
+    "t_reply\0222\n\013_chat_reply\030+ \001(\0132\035.client_ba"
+    "seserver.chat_reply\022>\n\021_cdkey_gift_reply"
+    "\030, \001(\0132#.client_baseserver.cdkey_gift_re"
+    "ply\0224\n\014_guild_reply\030- \001(\0132\036.client_bases"
+    "erver.guild_reply\022D\n\024_ask_magicsoul_repl"
+    "y\030. \001(\0132&.client_baseserver.ask_magicsou"
+    "l_reply\022C\n\030_ask_activity_info_reply\030/ \001("
+    "\0132!.client_baseserver.activity_infos\022:\n\017"
+    "_excavate_reply\0300 \001(\0132!.client_baseserve"
+    "r.excavate_reply\022F\n\025_system_setting_repl"
+    "y\0301 \001(\0132\'.client_baseserver.system_setti"
+    "ng_reply\022J\n\027_query_split_data_reply\0302 \001("
+    "\0132).client_baseserver.query_split_data_r"
+    "eply\022N\n\031_query_split_return_reply\0303 \001(\0132"
+    "+.client_baseserver.query_split_return_r"
+    "eply\022>\n\021_split_hero_reply\0304 \001(\0132#.client"
+    "_baseserver.split_hero_reply\022:\n\017_worldcu"
+    "p_reply\0305 \001(\0132!.client_baseserver.worldc"
+    "up_reply\022@\n\022_battle_check_fail\0306 \001(\0132$.c"
+    "lient_baseserver.battle_check_fail\0226\n\r_q"
+    "uery_replay\0307 \001(\0132\037.client_baseserver.qu"
+    "ery_replay\0222\n\013_super_link\0308 \001(\0132\035.client"
+    "_baseserver.super_link\022F\n\025_query_ranklis"
+    "t_reply\0309 \001(\0132\'.client_baseserver.query_"
+    "ranklist_reply\022L\n\030_request_guild_log_rep"
+    "ly\030A \001(\0132*.client_baseserver.request_gui"
+    "ld_log_reply\022D\n\024_change_server_reply\030: \001"
+    "(\0132&.client_baseserver.change_server_rep"
+    "ly\022D\n\024_activity_info_reply\030; \001(\0132&.clien"
+    "t_baseserver.activity_info_reply\022P\n\032_act"
+    "ivity_lotto_info_reply\030< \001(\0132,.client_ba"
+    "seserver.activity_lotto_info_reply\022T\n\034_a"
+    "ctivity_lotto_reward_reply\030= \001(\0132..clien"
+    "t_baseserver.activity_lotto_reward_reply"
+    "\022Z\n\037_activity_bigpackage_info_reply\030> \001("
+    "\01321.client_baseserver.activity_bigpackag"
+    "e_info_reply\022^\n!_activity_bigpackage_rew"
+    "ard_reply\030\? \001(\01323.client_baseserver.acti"
+    "vity_bigpackage_reward_reply\022\\\n _activit"
+    "y_bigpackage_reset_reply\030@ \001(\01322.client_"
+    "baseserver.activity_bigpackage_reset_rep"
+    "ly\022C\n\023_fb_attention_reply\030\254\002 \001(\0132%.clien"
+    "t_baseserver.fb_attention_reply\022C\n\023_cont"
+    "inue_pay_reply\030\256\002 \001(\0132%.client_baseserve"
+    "r.continue_pay_reply\022I\n\026_recharge_rebate"
+    "_reply\030\257\002 \001(\0132(.client_baseserver.rechar"
+    "ge_rebate_reply\022I\n\026_every_day_happy_repl"
+    "y\030\260\002 \001(\0132(.client_baseserver.every_day_h"
+    "appy_reply\"\216\001\n\024system_setting_reply\022;\n\010_"
+    "request\030\001 \001(\0132).client_baseserver.system"
+    "_setting_request\0229\n\007_change\030\002 \001(\0132(.clie"
+    "nt_baseserver.system_setting_change\"C\n\025s"
+    "ystem_setting_change\022*\n\007_result\030\001 \002(\0162\031."
+    "client_baseserver.result\"^\n\026system_setti"
+    "ng_request\022D\n\024_system_setting_item\030\001 \003(\013"
+    "2&.client_baseserver.system_setting_item"
+    "\"\213\001\n\023system_setting_item\022\013\n\003key\030\001 \002(\t\022D\n"
+    "\005value\030\002 \002(\01625.client_baseserver.system_"
+    "setting_item.setting_status\"!\n\016setting_s"
+    "tatus\022\006\n\002on\020\001\022\007\n\003off\020\002\"+\n\rglobal_config\022"
+    "\032\n\022_hero_split_ending\030\001 \001(\r\"\177\n\017sdk_login"
     "_reply\0220\n\007_result\030\001 \002(\0162\031.client_baseser"
     "ver.result:\004fail\022\014\n\004_uin\030\002 \002(\t\022\025\n\r_acces"
     "s_token\030\003 \001(\t\022\025\n\r_recharge_url\030\004 \001(\t\"4\n\n"
@@ -7392,6 +7392,7 @@ void protobuf_AddDesc_cb_2eproto() {
   Login::default_instance_ = new Login();
   LoginBaseappFailed::default_instance_ = new LoginBaseappFailed();
   CreatedProxies::default_instance_ = new CreatedProxies();
+  login_reply::default_instance_ = new login_reply();
   hire_data::default_instance_ = new hire_data();
   hire_hero::default_instance_ = new hire_hero();
   down_msg::default_instance_ = new down_msg();
@@ -7400,7 +7401,6 @@ void protobuf_AddDesc_cb_2eproto() {
   system_setting_request::default_instance_ = new system_setting_request();
   system_setting_item::default_instance_ = new system_setting_item();
   global_config::default_instance_ = new global_config();
-  login_reply::default_instance_ = new login_reply();
   sdk_login_reply::default_instance_ = new sdk_login_reply();
   user_check::default_instance_ = new user_check();
   reset::default_instance_ = new reset();
@@ -7644,6 +7644,7 @@ void protobuf_AddDesc_cb_2eproto() {
   Login::default_instance_->InitAsDefaultInstance();
   LoginBaseappFailed::default_instance_->InitAsDefaultInstance();
   CreatedProxies::default_instance_->InitAsDefaultInstance();
+  login_reply::default_instance_->InitAsDefaultInstance();
   hire_data::default_instance_->InitAsDefaultInstance();
   hire_hero::default_instance_->InitAsDefaultInstance();
   down_msg::default_instance_->InitAsDefaultInstance();
@@ -7652,7 +7653,6 @@ void protobuf_AddDesc_cb_2eproto() {
   system_setting_request::default_instance_->InitAsDefaultInstance();
   system_setting_item::default_instance_->InitAsDefaultInstance();
   global_config::default_instance_->InitAsDefaultInstance();
-  login_reply::default_instance_->InitAsDefaultInstance();
   sdk_login_reply::default_instance_->InitAsDefaultInstance();
   user_check::default_instance_->InitAsDefaultInstance();
   reset::default_instance_->InitAsDefaultInstance();
@@ -9417,6 +9417,344 @@ void CreatedProxies::Swap(CreatedProxies* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = CreatedProxies_descriptor_;
   metadata.reflection = CreatedProxies_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int login_reply::kResultFieldNumber;
+const int login_reply::kUserFieldNumber;
+const int login_reply::kTimeZoneFieldNumber;
+#endif  // !_MSC_VER
+
+login_reply::login_reply()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:client_baseserver.login_reply)
+}
+
+void login_reply::InitAsDefaultInstance() {
+  _user_ = const_cast< ::client_baseserver::user*>(&::client_baseserver::user::default_instance());
+}
+
+login_reply::login_reply(const login_reply& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:client_baseserver.login_reply)
+}
+
+void login_reply::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  _result_ = 0;
+  _user_ = NULL;
+  _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+login_reply::~login_reply() {
+  // @@protoc_insertion_point(destructor:client_baseserver.login_reply)
+  SharedDtor();
+}
+
+void login_reply::SharedDtor() {
+  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete _time_zone_;
+  }
+  if (this != default_instance_) {
+    delete _user_;
+  }
+}
+
+void login_reply::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* login_reply::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return login_reply_descriptor_;
+}
+
+const login_reply& login_reply::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_cb_2eproto();
+  return *default_instance_;
+}
+
+login_reply* login_reply::default_instance_ = NULL;
+
+login_reply* login_reply::New() const {
+  return new login_reply;
+}
+
+void login_reply::Clear() {
+  if (_has_bits_[0 / 32] & 7) {
+    _result_ = 0;
+    if (has__user()) {
+      if (_user_ != NULL) _user_->::client_baseserver::user::Clear();
+    }
+    if (has__time_zone()) {
+      if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        _time_zone_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool login_reply::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:client_baseserver.login_reply)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required .client_baseserver.result _result = 1;
+      case 1: {
+        if (tag == 8) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::client_baseserver::result_IsValid(value)) {
+            set__result(static_cast< ::client_baseserver::result >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(1, value);
+          }
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse__user;
+        break;
+      }
+
+      // optional .client_baseserver.user _user = 2;
+      case 2: {
+        if (tag == 18) {
+         parse__user:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable__user()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(26)) goto parse__time_zone;
+        break;
+      }
+
+      // required string _time_zone = 3;
+      case 3: {
+        if (tag == 26) {
+         parse__time_zone:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable__time_zone()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->_time_zone().data(), this->_time_zone().length(),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "_time_zone");
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:client_baseserver.login_reply)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:client_baseserver.login_reply)
+  return false;
+#undef DO_
+}
+
+void login_reply::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:client_baseserver.login_reply)
+  // required .client_baseserver.result _result = 1;
+  if (has__result()) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->_result(), output);
+  }
+
+  // optional .client_baseserver.user _user = 2;
+  if (has__user()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_user(), output);
+  }
+
+  // required string _time_zone = 3;
+  if (has__time_zone()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_time_zone().data(), this->_time_zone().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "_time_zone");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->_time_zone(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:client_baseserver.login_reply)
+}
+
+::google::protobuf::uint8* login_reply::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.login_reply)
+  // required .client_baseserver.result _result = 1;
+  if (has__result()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->_result(), target);
+  }
+
+  // optional .client_baseserver.user _user = 2;
+  if (has__user()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->_user(), target);
+  }
+
+  // required string _time_zone = 3;
+  if (has__time_zone()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_time_zone().data(), this->_time_zone().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "_time_zone");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->_time_zone(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:client_baseserver.login_reply)
+  return target;
+}
+
+int login_reply::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // required .client_baseserver.result _result = 1;
+    if (has__result()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+    }
+
+    // optional .client_baseserver.user _user = 2;
+    if (has__user()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->_user());
+    }
+
+    // required string _time_zone = 3;
+    if (has__time_zone()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->_time_zone());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void login_reply::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const login_reply* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const login_reply*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void login_reply::MergeFrom(const login_reply& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has__result()) {
+      set__result(from._result());
+    }
+    if (from.has__user()) {
+      mutable__user()->::client_baseserver::user::MergeFrom(from._user());
+    }
+    if (from.has__time_zone()) {
+      set__time_zone(from._time_zone());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void login_reply::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void login_reply::CopyFrom(const login_reply& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool login_reply::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000005) != 0x00000005) return false;
+
+  if (has__user()) {
+    if (!this->_user().IsInitialized()) return false;
+  }
+  return true;
+}
+
+void login_reply::Swap(login_reply* other) {
+  if (other != this) {
+    std::swap(_result_, other->_result_);
+    std::swap(_user_, other->_user_);
+    std::swap(_time_zone_, other->_time_zone_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata login_reply::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = login_reply_descriptor_;
+  metadata.reflection = login_reply_reflection_;
   return metadata;
 }
 
@@ -14749,344 +15087,6 @@ void global_config::Swap(global_config* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = global_config_descriptor_;
   metadata.reflection = global_config_reflection_;
-  return metadata;
-}
-
-
-// ===================================================================
-
-#ifndef _MSC_VER
-const int login_reply::kResultFieldNumber;
-const int login_reply::kUserFieldNumber;
-const int login_reply::kTimeZoneFieldNumber;
-#endif  // !_MSC_VER
-
-login_reply::login_reply()
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:client_baseserver.login_reply)
-}
-
-void login_reply::InitAsDefaultInstance() {
-  _user_ = const_cast< ::client_baseserver::user*>(&::client_baseserver::user::default_instance());
-}
-
-login_reply::login_reply(const login_reply& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:client_baseserver.login_reply)
-}
-
-void login_reply::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  _result_ = 0;
-  _user_ = NULL;
-  _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-}
-
-login_reply::~login_reply() {
-  // @@protoc_insertion_point(destructor:client_baseserver.login_reply)
-  SharedDtor();
-}
-
-void login_reply::SharedDtor() {
-  if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-    delete _time_zone_;
-  }
-  if (this != default_instance_) {
-    delete _user_;
-  }
-}
-
-void login_reply::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* login_reply::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return login_reply_descriptor_;
-}
-
-const login_reply& login_reply::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cb_2eproto();
-  return *default_instance_;
-}
-
-login_reply* login_reply::default_instance_ = NULL;
-
-login_reply* login_reply::New() const {
-  return new login_reply;
-}
-
-void login_reply::Clear() {
-  if (_has_bits_[0 / 32] & 7) {
-    _result_ = 0;
-    if (has__user()) {
-      if (_user_ != NULL) _user_->::client_baseserver::user::Clear();
-    }
-    if (has__time_zone()) {
-      if (_time_zone_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
-        _time_zone_->clear();
-      }
-    }
-  }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
-}
-
-bool login_reply::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:client_baseserver.login_reply)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
-      case 1: {
-        if (tag == 8) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(18)) goto parse__user;
-        break;
-      }
-
-      // optional .client_baseserver.user _user = 2;
-      case 2: {
-        if (tag == 18) {
-         parse__user:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable__user()));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(26)) goto parse__time_zone;
-        break;
-      }
-
-      // required string _time_zone = 3;
-      case 3: {
-        if (tag == 26) {
-         parse__time_zone:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable__time_zone()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->_time_zone().data(), this->_time_zone().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "_time_zone");
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectAtEnd()) goto success;
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:client_baseserver.login_reply)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:client_baseserver.login_reply)
-  return false;
-#undef DO_
-}
-
-void login_reply::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:client_baseserver.login_reply)
-  // required .client_baseserver.result _result = 1;
-  if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
-  }
-
-  // optional .client_baseserver.user _user = 2;
-  if (has__user()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_user(), output);
-  }
-
-  // required string _time_zone = 3;
-  if (has__time_zone()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->_time_zone().data(), this->_time_zone().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "_time_zone");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->_time_zone(), output);
-  }
-
-  if (!unknown_fields().empty()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:client_baseserver.login_reply)
-}
-
-::google::protobuf::uint8* login_reply::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.login_reply)
-  // required .client_baseserver.result _result = 1;
-  if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
-  }
-
-  // optional .client_baseserver.user _user = 2;
-  if (has__user()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->_user(), target);
-  }
-
-  // required string _time_zone = 3;
-  if (has__time_zone()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->_time_zone().data(), this->_time_zone().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "_time_zone");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        3, this->_time_zone(), target);
-  }
-
-  if (!unknown_fields().empty()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        unknown_fields(), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:client_baseserver.login_reply)
-  return target;
-}
-
-int login_reply::ByteSize() const {
-  int total_size = 0;
-
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
-    if (has__result()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
-    }
-
-    // optional .client_baseserver.user _user = 2;
-    if (has__user()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->_user());
-    }
-
-    // required string _time_zone = 3;
-    if (has__time_zone()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->_time_zone());
-    }
-
-  }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void login_reply::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const login_reply* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const login_reply*>(
-      &from);
-  if (source == NULL) {
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-    MergeFrom(*source);
-  }
-}
-
-void login_reply::MergeFrom(const login_reply& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has__result()) {
-      set__result(from._result());
-    }
-    if (from.has__user()) {
-      mutable__user()->::client_baseserver::user::MergeFrom(from._user());
-    }
-    if (from.has__time_zone()) {
-      set__time_zone(from._time_zone());
-    }
-  }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-}
-
-void login_reply::CopyFrom(const ::google::protobuf::Message& from) {
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void login_reply::CopyFrom(const login_reply& from) {
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool login_reply::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000005) != 0x00000005) return false;
-
-  if (has__user()) {
-    if (!this->_user().IsInitialized()) return false;
-  }
-  return true;
-}
-
-void login_reply::Swap(login_reply* other) {
-  if (other != this) {
-    std::swap(_result_, other->_result_);
-    std::swap(_user_, other->_user_);
-    std::swap(_time_zone_, other->_time_zone_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
-}
-
-::google::protobuf::Metadata login_reply::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = login_reply_descriptor_;
-  metadata.reflection = login_reply_reflection_;
   return metadata;
 }
 

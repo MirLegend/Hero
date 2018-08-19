@@ -29,6 +29,13 @@ message CreatedProxies {
 	optional int32 entityID = 1;
 }
 
+//s-c 服务器 -> 客户端 91 - 6 //登陆成功， 返回用户信息
+message login_reply {
+    required result  _result        = 1;
+    optional user    _user          = 2;
+    required string  _time_zone     = 3; // 用户时区-标准时区
+}
+
 ///////////////////////////////base ///////////////////////////////////////////
 // 通用结果
 enum result {
@@ -178,12 +185,6 @@ message system_setting_item{
 
 message global_config {
     optional uint32 _hero_split_ending = 1; // 英雄分解活动结束时间
-}
-
-message login_reply {
-    required result  _result        = 1;
-    optional user    _user          = 2;
-    required string  _time_zone     = 3; // 用户时区-标准时区
 }
 
 message sdk_login_reply {
