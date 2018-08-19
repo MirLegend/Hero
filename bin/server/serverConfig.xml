@@ -1,0 +1,7 @@
+<root>
+	<serverpaths>
+		<root_path> F:\minikbe\mini-kbe </root_path>
+		<res_path> ./;F:\minikbe\mini-kbe\bin\server\;F:\minikbe\mini-kbe\bin\server\server\ </res_path>
+		<bin_path> F:\minikbe\mini-kbe\bin\server\ </bin_path>
+	</serverpaths>
+</root>
