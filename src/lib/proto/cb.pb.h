@@ -23,7 +23,6 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
-#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
@@ -287,895 +286,6 @@ class continue_pay_reply;
 class recharge_rebate_reply;
 class every_day_happy_reply;
 
-enum system_setting_item_setting_status {
-  system_setting_item_setting_status_on = 1,
-  system_setting_item_setting_status_off = 2
-};
-bool system_setting_item_setting_status_IsValid(int value);
-const system_setting_item_setting_status system_setting_item_setting_status_setting_status_MIN = system_setting_item_setting_status_on;
-const system_setting_item_setting_status system_setting_item_setting_status_setting_status_MAX = system_setting_item_setting_status_off;
-const int system_setting_item_setting_status_setting_status_ARRAYSIZE = system_setting_item_setting_status_setting_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* system_setting_item_setting_status_descriptor();
-inline const ::std::string& system_setting_item_setting_status_Name(system_setting_item_setting_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    system_setting_item_setting_status_descriptor(), value);
-}
-inline bool system_setting_item_setting_status_Parse(
-    const ::std::string& name, system_setting_item_setting_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<system_setting_item_setting_status>(
-    system_setting_item_setting_status_descriptor(), name, value);
-}
-enum exit_stage_reply_exit_stage_result {
-  exit_stage_reply_exit_stage_result_known = 0,
-  exit_stage_reply_exit_stage_result_unknown = 1
-};
-bool exit_stage_reply_exit_stage_result_IsValid(int value);
-const exit_stage_reply_exit_stage_result exit_stage_reply_exit_stage_result_exit_stage_result_MIN = exit_stage_reply_exit_stage_result_known;
-const exit_stage_reply_exit_stage_result exit_stage_reply_exit_stage_result_exit_stage_result_MAX = exit_stage_reply_exit_stage_result_unknown;
-const int exit_stage_reply_exit_stage_result_exit_stage_result_ARRAYSIZE = exit_stage_reply_exit_stage_result_exit_stage_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* exit_stage_reply_exit_stage_result_descriptor();
-inline const ::std::string& exit_stage_reply_exit_stage_result_Name(exit_stage_reply_exit_stage_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    exit_stage_reply_exit_stage_result_descriptor(), value);
-}
-inline bool exit_stage_reply_exit_stage_result_Parse(
-    const ::std::string& name, exit_stage_reply_exit_stage_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<exit_stage_reply_exit_stage_result>(
-    exit_stage_reply_exit_stage_result_descriptor(), name, value);
-}
-enum error_info_exit {
-  error_info_exit_noneed = 0,
-  error_info_exit_force = 1
-};
-bool error_info_exit_IsValid(int value);
-const error_info_exit error_info_exit_exit_MIN = error_info_exit_noneed;
-const error_info_exit error_info_exit_exit_MAX = error_info_exit_force;
-const int error_info_exit_exit_ARRAYSIZE = error_info_exit_exit_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* error_info_exit_descriptor();
-inline const ::std::string& error_info_exit_Name(error_info_exit value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    error_info_exit_descriptor(), value);
-}
-inline bool error_info_exit_Parse(
-    const ::std::string& name, error_info_exit* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<error_info_exit>(
-    error_info_exit_descriptor(), name, value);
-}
-enum goods_price_type {
-  goods_price_type_gold = 0,
-  goods_price_type_diamond = 1,
-  goods_price_type_crusadepoint = 2,
-  goods_price_type_arenapoint = 3,
-  goods_price_type_guildpoint = 4
-};
-bool goods_price_type_IsValid(int value);
-const goods_price_type goods_price_type_price_type_MIN = goods_price_type_gold;
-const goods_price_type goods_price_type_price_type_MAX = goods_price_type_guildpoint;
-const int goods_price_type_price_type_ARRAYSIZE = goods_price_type_price_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* goods_price_type_descriptor();
-inline const ::std::string& goods_price_type_Name(goods_price_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    goods_price_type_descriptor(), value);
-}
-inline bool goods_price_type_Parse(
-    const ::std::string& name, goods_price_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<goods_price_type>(
-    goods_price_type_descriptor(), name, value);
-}
-enum star_goods_box_type {
-  star_goods_box_type_stone_green = 0,
-  star_goods_box_type_stone_blue = 1,
-  star_goods_box_type_stone_purple = 2
-};
-bool star_goods_box_type_IsValid(int value);
-const star_goods_box_type star_goods_box_type_box_type_MIN = star_goods_box_type_stone_green;
-const star_goods_box_type star_goods_box_type_box_type_MAX = star_goods_box_type_stone_purple;
-const int star_goods_box_type_box_type_ARRAYSIZE = star_goods_box_type_box_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* star_goods_box_type_descriptor();
-inline const ::std::string& star_goods_box_type_Name(star_goods_box_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    star_goods_box_type_descriptor(), value);
-}
-inline bool star_goods_box_type_Parse(
-    const ::std::string& name, star_goods_box_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<star_goods_box_type>(
-    star_goods_box_type_descriptor(), name, value);
-}
-enum daily_login_dailylogin_status {
-  daily_login_dailylogin_status_all = 1,
-  daily_login_dailylogin_status_part = 2,
-  daily_login_dailylogin_status_nothing = 3
-};
-bool daily_login_dailylogin_status_IsValid(int value);
-const daily_login_dailylogin_status daily_login_dailylogin_status_dailylogin_status_MIN = daily_login_dailylogin_status_all;
-const daily_login_dailylogin_status daily_login_dailylogin_status_dailylogin_status_MAX = daily_login_dailylogin_status_nothing;
-const int daily_login_dailylogin_status_dailylogin_status_ARRAYSIZE = daily_login_dailylogin_status_dailylogin_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* daily_login_dailylogin_status_descriptor();
-inline const ::std::string& daily_login_dailylogin_status_Name(daily_login_dailylogin_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    daily_login_dailylogin_status_descriptor(), value);
-}
-inline bool daily_login_dailylogin_status_Parse(
-    const ::std::string& name, daily_login_dailylogin_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<daily_login_dailylogin_status>(
-    daily_login_dailylogin_status_descriptor(), name, value);
-}
-enum usertask_status {
-  usertask_status_finished = 0,
-  usertask_status_working = 1
-};
-bool usertask_status_IsValid(int value);
-const usertask_status usertask_status_status_MIN = usertask_status_finished;
-const usertask_status usertask_status_status_MAX = usertask_status_working;
-const int usertask_status_status_ARRAYSIZE = usertask_status_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* usertask_status_descriptor();
-inline const ::std::string& usertask_status_Name(usertask_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    usertask_status_descriptor(), value);
-}
-inline bool usertask_status_Parse(
-    const ::std::string& name, usertask_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<usertask_status>(
-    usertask_status_descriptor(), name, value);
-}
-enum tavern_record_box_type {
-  tavern_record_box_type_green = 1,
-  tavern_record_box_type_blue = 2,
-  tavern_record_box_type_purple = 3,
-  tavern_record_box_type_magicsoul = 4
-};
-bool tavern_record_box_type_IsValid(int value);
-const tavern_record_box_type tavern_record_box_type_box_type_MIN = tavern_record_box_type_green;
-const tavern_record_box_type tavern_record_box_type_box_type_MAX = tavern_record_box_type_magicsoul;
-const int tavern_record_box_type_box_type_ARRAYSIZE = tavern_record_box_type_box_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* tavern_record_box_type_descriptor();
-inline const ::std::string& tavern_record_box_type_Name(tavern_record_box_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    tavern_record_box_type_descriptor(), value);
-}
-inline bool tavern_record_box_type_Parse(
-    const ::std::string& name, tavern_record_box_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<tavern_record_box_type>(
-    tavern_record_box_type_descriptor(), name, value);
-}
-enum dailyjob_reward_type {
-  dailyjob_reward_type_rmb = 1,
-  dailyjob_reward_type_money = 2,
-  dailyjob_reward_type_item = 3,
-  dailyjob_reward_type_hero = 4,
-  dailyjob_reward_type_vitality = 5,
-  dailyjob_reward_type_playerexp = 6,
-  dailyjob_reward_type_crusadepoint = 7,
-  dailyjob_reward_type_arenapoint = 8,
-  dailyjob_reward_type_guildpoint = 9
-};
-bool dailyjob_reward_type_IsValid(int value);
-const dailyjob_reward_type dailyjob_reward_type_type_MIN = dailyjob_reward_type_rmb;
-const dailyjob_reward_type dailyjob_reward_type_type_MAX = dailyjob_reward_type_guildpoint;
-const int dailyjob_reward_type_type_ARRAYSIZE = dailyjob_reward_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* dailyjob_reward_type_descriptor();
-inline const ::std::string& dailyjob_reward_type_Name(dailyjob_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    dailyjob_reward_type_descriptor(), value);
-}
-inline bool dailyjob_reward_type_Parse(
-    const ::std::string& name, dailyjob_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<dailyjob_reward_type>(
-    dailyjob_reward_type_descriptor(), name, value);
-}
-enum ladder_rank_reward_reward_type {
-  ladder_rank_reward_reward_type_gold = 1,
-  ladder_rank_reward_reward_type_diamond = 2,
-  ladder_rank_reward_reward_type_item = 3,
-  ladder_rank_reward_reward_type_arenapoint = 4
-};
-bool ladder_rank_reward_reward_type_IsValid(int value);
-const ladder_rank_reward_reward_type ladder_rank_reward_reward_type_reward_type_MIN = ladder_rank_reward_reward_type_gold;
-const ladder_rank_reward_reward_type ladder_rank_reward_reward_type_reward_type_MAX = ladder_rank_reward_reward_type_arenapoint;
-const int ladder_rank_reward_reward_type_reward_type_ARRAYSIZE = ladder_rank_reward_reward_type_reward_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* ladder_rank_reward_reward_type_descriptor();
-inline const ::std::string& ladder_rank_reward_reward_type_Name(ladder_rank_reward_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    ladder_rank_reward_reward_type_descriptor(), value);
-}
-inline bool ladder_rank_reward_reward_type_Parse(
-    const ::std::string& name, ladder_rank_reward_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ladder_rank_reward_reward_type>(
-    ladder_rank_reward_reward_type_descriptor(), name, value);
-}
-enum set_name_reply_set_name_result {
-  set_name_reply_set_name_result_success = 0,
-  set_name_reply_set_name_result_exists = 1,
-  set_name_reply_set_name_result_dirty_word = 2
-};
-bool set_name_reply_set_name_result_IsValid(int value);
-const set_name_reply_set_name_result set_name_reply_set_name_result_set_name_result_MIN = set_name_reply_set_name_result_success;
-const set_name_reply_set_name_result set_name_reply_set_name_result_set_name_result_MAX = set_name_reply_set_name_result_dirty_word;
-const int set_name_reply_set_name_result_set_name_result_ARRAYSIZE = set_name_reply_set_name_result_set_name_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* set_name_reply_set_name_result_descriptor();
-inline const ::std::string& set_name_reply_set_name_result_Name(set_name_reply_set_name_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    set_name_reply_set_name_result_descriptor(), value);
-}
-inline bool set_name_reply_set_name_result_Parse(
-    const ::std::string& name, set_name_reply_set_name_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<set_name_reply_set_name_result>(
-    set_name_reply_set_name_result_descriptor(), name, value);
-}
-enum tbc_reward_type {
-  tbc_reward_type_gold = 1,
-  tbc_reward_type_diamond = 2,
-  tbc_reward_type_item = 3,
-  tbc_reward_type_chest = 4,
-  tbc_reward_type_crusadepoint = 5,
-  tbc_reward_type_chestbox = 6
-};
-bool tbc_reward_type_IsValid(int value);
-const tbc_reward_type tbc_reward_type_type_MIN = tbc_reward_type_gold;
-const tbc_reward_type tbc_reward_type_type_MAX = tbc_reward_type_chestbox;
-const int tbc_reward_type_type_ARRAYSIZE = tbc_reward_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* tbc_reward_type_descriptor();
-inline const ::std::string& tbc_reward_type_Name(tbc_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    tbc_reward_type_descriptor(), value);
-}
-inline bool tbc_reward_type_Parse(
-    const ::std::string& name, tbc_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<tbc_reward_type>(
-    tbc_reward_type_descriptor(), name, value);
-}
-enum tbc_stage_status {
-  tbc_stage_status_unpassed = 0,
-  tbc_stage_status_passed = 1,
-  tbc_stage_status_rewarded = 2
-};
-bool tbc_stage_status_IsValid(int value);
-const tbc_stage_status tbc_stage_status_status_MIN = tbc_stage_status_unpassed;
-const tbc_stage_status tbc_stage_status_status_MAX = tbc_stage_status_rewarded;
-const int tbc_stage_status_status_ARRAYSIZE = tbc_stage_status_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* tbc_stage_status_descriptor();
-inline const ::std::string& tbc_stage_status_Name(tbc_stage_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    tbc_stage_status_descriptor(), value);
-}
-inline bool tbc_stage_status_Parse(
-    const ::std::string& name, tbc_stage_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<tbc_stage_status>(
-    tbc_stage_status_descriptor(), name, value);
-}
-enum sys_mail_status {
-  sys_mail_status_unread = 0,
-  sys_mail_status_read = 1,
-  sys_mail_status_delete = 2
-};
-bool sys_mail_status_IsValid(int value);
-const sys_mail_status sys_mail_status_status_MIN = sys_mail_status_unread;
-const sys_mail_status sys_mail_status_status_MAX = sys_mail_status_delete;
-const int sys_mail_status_status_ARRAYSIZE = sys_mail_status_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* sys_mail_status_descriptor();
-inline const ::std::string& sys_mail_status_Name(sys_mail_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    sys_mail_status_descriptor(), value);
-}
-inline bool sys_mail_status_Parse(
-    const ::std::string& name, sys_mail_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<sys_mail_status>(
-    sys_mail_status_descriptor(), name, value);
-}
-enum mail_param_mail_param_type {
-  mail_param_mail_param_type_value = 1,
-  mail_param_mail_param_type_money = 2,
-  mail_param_mail_param_type_item = 3,
-  mail_param_mail_param_type_mine = 4,
-  mail_param_mail_param_type_self_hero = 5,
-  mail_param_mail_param_type_excav_battle_id = 6,
-  mail_param_mail_param_type_hero_name = 7
-};
-bool mail_param_mail_param_type_IsValid(int value);
-const mail_param_mail_param_type mail_param_mail_param_type_mail_param_type_MIN = mail_param_mail_param_type_value;
-const mail_param_mail_param_type mail_param_mail_param_type_mail_param_type_MAX = mail_param_mail_param_type_hero_name;
-const int mail_param_mail_param_type_mail_param_type_ARRAYSIZE = mail_param_mail_param_type_mail_param_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* mail_param_mail_param_type_descriptor();
-inline const ::std::string& mail_param_mail_param_type_Name(mail_param_mail_param_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    mail_param_mail_param_type_descriptor(), value);
-}
-inline bool mail_param_mail_param_type_Parse(
-    const ::std::string& name, mail_param_mail_param_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<mail_param_mail_param_type>(
-    mail_param_mail_param_type_descriptor(), name, value);
-}
-enum user_point_user_point_type {
-  user_point_user_point_type_arenapoint = 1,
-  user_point_user_point_type_crusadepoint = 2,
-  user_point_user_point_type_guildpoint = 3
-};
-bool user_point_user_point_type_IsValid(int value);
-const user_point_user_point_type user_point_user_point_type_user_point_type_MIN = user_point_user_point_type_arenapoint;
-const user_point_user_point_type user_point_user_point_type_user_point_type_MAX = user_point_user_point_type_guildpoint;
-const int user_point_user_point_type_user_point_type_ARRAYSIZE = user_point_user_point_type_user_point_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* user_point_user_point_type_descriptor();
-inline const ::std::string& user_point_user_point_type_Name(user_point_user_point_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    user_point_user_point_type_descriptor(), value);
-}
-inline bool user_point_user_point_type_Parse(
-    const ::std::string& name, user_point_user_point_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<user_point_user_point_type>(
-    user_point_user_point_type_descriptor(), name, value);
-}
-enum chat_acc_chat_acc_t {
-  chat_acc_chat_acc_t_binary = 1,
-  chat_acc_chat_acc_t_pvp_replay = 2
-};
-bool chat_acc_chat_acc_t_IsValid(int value);
-const chat_acc_chat_acc_t chat_acc_chat_acc_t_chat_acc_t_MIN = chat_acc_chat_acc_t_binary;
-const chat_acc_chat_acc_t chat_acc_chat_acc_t_chat_acc_t_MAX = chat_acc_chat_acc_t_pvp_replay;
-const int chat_acc_chat_acc_t_chat_acc_t_ARRAYSIZE = chat_acc_chat_acc_t_chat_acc_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor();
-inline const ::std::string& chat_acc_chat_acc_t_Name(chat_acc_chat_acc_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    chat_acc_chat_acc_t_descriptor(), value);
-}
-inline bool chat_acc_chat_acc_t_Parse(
-    const ::std::string& name, chat_acc_chat_acc_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<chat_acc_chat_acc_t>(
-    chat_acc_chat_acc_t_descriptor(), name, value);
-}
-enum guild_join_join_result {
-  guild_join_join_result_join_fail = 0,
-  guild_join_join_result_join_enter = 1,
-  guild_join_join_result_join_wait = 2
-};
-bool guild_join_join_result_IsValid(int value);
-const guild_join_join_result guild_join_join_result_join_result_MIN = guild_join_join_result_join_fail;
-const guild_join_join_result guild_join_join_result_join_result_MAX = guild_join_join_result_join_wait;
-const int guild_join_join_result_join_result_ARRAYSIZE = guild_join_join_result_join_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_join_join_result_descriptor();
-inline const ::std::string& guild_join_join_result_Name(guild_join_join_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_join_join_result_descriptor(), value);
-}
-inline bool guild_join_join_result_Parse(
-    const ::std::string& name, guild_join_join_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_join_join_result>(
-    guild_join_join_result_descriptor(), name, value);
-}
-enum worship_reward_type {
-  worship_reward_type_gold = 1,
-  worship_reward_type_diamond = 2
-};
-bool worship_reward_type_IsValid(int value);
-const worship_reward_type worship_reward_type_type_MIN = worship_reward_type_gold;
-const worship_reward_type worship_reward_type_type_MAX = worship_reward_type_diamond;
-const int worship_reward_type_type_ARRAYSIZE = worship_reward_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* worship_reward_type_descriptor();
-inline const ::std::string& worship_reward_type_Name(worship_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    worship_reward_type_descriptor(), value);
-}
-inline bool worship_reward_type_Parse(
-    const ::std::string& name, worship_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<worship_reward_type>(
-    worship_reward_type_descriptor(), name, value);
-}
-enum activity_reward_type {
-  activity_reward_type_rmb = 1,
-  activity_reward_type_money = 2,
-  activity_reward_type_item = 3,
-  activity_reward_type_hero = 4,
-  activity_reward_type_rand_soul = 5
-};
-bool activity_reward_type_IsValid(int value);
-const activity_reward_type activity_reward_type_type_MIN = activity_reward_type_rmb;
-const activity_reward_type activity_reward_type_type_MAX = activity_reward_type_rand_soul;
-const int activity_reward_type_type_ARRAYSIZE = activity_reward_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* activity_reward_type_descriptor();
-inline const ::std::string& activity_reward_type_Name(activity_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    activity_reward_type_descriptor(), value);
-}
-inline bool activity_reward_type_Parse(
-    const ::std::string& name, activity_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<activity_reward_type>(
-    activity_reward_type_descriptor(), name, value);
-}
-enum activity_info_type {
-  activity_info_type_single_br_tavern = 1,
-  activity_info_type_combo_br_tavern = 2,
-  activity_info_type_single_gd_tavern = 3,
-  activity_info_type_combo_gd_tavern = 4,
-  activity_info_type_magic_soul_tavern = 5,
-  activity_info_type_rmb_recharge = 6,
-  activity_info_type_diamond_consume = 7
-};
-bool activity_info_type_IsValid(int value);
-const activity_info_type activity_info_type_type_MIN = activity_info_type_single_br_tavern;
-const activity_info_type activity_info_type_type_MAX = activity_info_type_diamond_consume;
-const int activity_info_type_type_ARRAYSIZE = activity_info_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* activity_info_type_descriptor();
-inline const ::std::string& activity_info_type_Name(activity_info_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    activity_info_type_descriptor(), value);
-}
-inline bool activity_info_type_Parse(
-    const ::std::string& name, activity_info_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<activity_info_type>(
-    activity_info_type_descriptor(), name, value);
-}
-enum cdkey_gift_reply_cdkey_result {
-  cdkey_gift_reply_cdkey_result_success = 0,
-  cdkey_gift_reply_cdkey_result_already_used = 1,
-  cdkey_gift_reply_cdkey_result_not_exists = 2,
-  cdkey_gift_reply_cdkey_result_once_only = 3
-};
-bool cdkey_gift_reply_cdkey_result_IsValid(int value);
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply_cdkey_result_cdkey_result_MIN = cdkey_gift_reply_cdkey_result_success;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply_cdkey_result_cdkey_result_MAX = cdkey_gift_reply_cdkey_result_once_only;
-const int cdkey_gift_reply_cdkey_result_cdkey_result_ARRAYSIZE = cdkey_gift_reply_cdkey_result_cdkey_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* cdkey_gift_reply_cdkey_result_descriptor();
-inline const ::std::string& cdkey_gift_reply_cdkey_result_Name(cdkey_gift_reply_cdkey_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    cdkey_gift_reply_cdkey_result_descriptor(), value);
-}
-inline bool cdkey_gift_reply_cdkey_result_Parse(
-    const ::std::string& name, cdkey_gift_reply_cdkey_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<cdkey_gift_reply_cdkey_result>(
-    cdkey_gift_reply_cdkey_result_descriptor(), name, value);
-}
-enum search_excavate_reply_search_result {
-  search_excavate_reply_search_result_success = 0,
-  search_excavate_reply_search_result_failed = 1,
-  search_excavate_reply_search_result_lack_money = 2
-};
-bool search_excavate_reply_search_result_IsValid(int value);
-const search_excavate_reply_search_result search_excavate_reply_search_result_search_result_MIN = search_excavate_reply_search_result_success;
-const search_excavate_reply_search_result search_excavate_reply_search_result_search_result_MAX = search_excavate_reply_search_result_lack_money;
-const int search_excavate_reply_search_result_search_result_ARRAYSIZE = search_excavate_reply_search_result_search_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* search_excavate_reply_search_result_descriptor();
-inline const ::std::string& search_excavate_reply_search_result_Name(search_excavate_reply_search_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    search_excavate_reply_search_result_descriptor(), value);
-}
-inline bool search_excavate_reply_search_result_Parse(
-    const ::std::string& name, search_excavate_reply_search_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<search_excavate_reply_search_result>(
-    search_excavate_reply_search_result_descriptor(), name, value);
-}
-enum excavate_owner {
-  excavate_owner_mine = 0,
-  excavate_owner_others = 1,
-  excavate_owner_robot = 2
-};
-bool excavate_owner_IsValid(int value);
-const excavate_owner excavate_owner_owner_MIN = excavate_owner_mine;
-const excavate_owner excavate_owner_owner_MAX = excavate_owner_robot;
-const int excavate_owner_owner_ARRAYSIZE = excavate_owner_owner_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* excavate_owner_descriptor();
-inline const ::std::string& excavate_owner_Name(excavate_owner value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    excavate_owner_descriptor(), value);
-}
-inline bool excavate_owner_Parse(
-    const ::std::string& name, excavate_owner* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<excavate_owner>(
-    excavate_owner_descriptor(), name, value);
-}
-enum excavate_state {
-  excavate_state_searched = 1,
-  excavate_state_battle = 2,
-  excavate_state_shield = 3,
-  excavate_state_occupy = 4,
-  excavate_state_protect = 5,
-  excavate_state_dead = 6
-};
-bool excavate_state_IsValid(int value);
-const excavate_state excavate_state_state_MIN = excavate_state_searched;
-const excavate_state excavate_state_state_MAX = excavate_state_dead;
-const int excavate_state_state_ARRAYSIZE = excavate_state_state_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* excavate_state_descriptor();
-inline const ::std::string& excavate_state_Name(excavate_state value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    excavate_state_descriptor(), value);
-}
-inline bool excavate_state_Parse(
-    const ::std::string& name, excavate_state* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<excavate_state>(
-    excavate_state_descriptor(), name, value);
-}
-enum excavate_history_def_result {
-  excavate_history_def_result_win = 0,
-  excavate_history_def_result_fail = 1
-};
-bool excavate_history_def_result_IsValid(int value);
-const excavate_history_def_result excavate_history_def_result_def_result_MIN = excavate_history_def_result_win;
-const excavate_history_def_result excavate_history_def_result_def_result_MAX = excavate_history_def_result_fail;
-const int excavate_history_def_result_def_result_ARRAYSIZE = excavate_history_def_result_def_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* excavate_history_def_result_descriptor();
-inline const ::std::string& excavate_history_def_result_Name(excavate_history_def_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    excavate_history_def_result_descriptor(), value);
-}
-inline bool excavate_history_def_result_Parse(
-    const ::std::string& name, excavate_history_def_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<excavate_history_def_result>(
-    excavate_history_def_result_descriptor(), name, value);
-}
-enum set_excavate_team_reply_result {
-  set_excavate_team_reply_result_success = 0,
-  set_excavate_team_reply_result_failed = 1,
-  set_excavate_team_reply_result_expired = 2,
-  set_excavate_team_reply_result_fall = 3
-};
-bool set_excavate_team_reply_result_IsValid(int value);
-const set_excavate_team_reply_result set_excavate_team_reply_result_result_MIN = set_excavate_team_reply_result_success;
-const set_excavate_team_reply_result set_excavate_team_reply_result_result_MAX = set_excavate_team_reply_result_fall;
-const int set_excavate_team_reply_result_result_ARRAYSIZE = set_excavate_team_reply_result_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* set_excavate_team_reply_result_descriptor();
-inline const ::std::string& set_excavate_team_reply_result_Name(set_excavate_team_reply_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    set_excavate_team_reply_result_descriptor(), value);
-}
-inline bool set_excavate_team_reply_result_Parse(
-    const ::std::string& name, set_excavate_team_reply_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<set_excavate_team_reply_result>(
-    set_excavate_team_reply_result_descriptor(), name, value);
-}
-enum excavate_end_battle_reply_mine_battle_result {
-  excavate_end_battle_reply_mine_battle_result_success = 0,
-  excavate_end_battle_reply_mine_battle_result_timeout = 1
-};
-bool excavate_end_battle_reply_mine_battle_result_IsValid(int value);
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply_mine_battle_result_mine_battle_result_MIN = excavate_end_battle_reply_mine_battle_result_success;
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply_mine_battle_result_mine_battle_result_MAX = excavate_end_battle_reply_mine_battle_result_timeout;
-const int excavate_end_battle_reply_mine_battle_result_mine_battle_result_ARRAYSIZE = excavate_end_battle_reply_mine_battle_result_mine_battle_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* excavate_end_battle_reply_mine_battle_result_descriptor();
-inline const ::std::string& excavate_end_battle_reply_mine_battle_result_Name(excavate_end_battle_reply_mine_battle_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    excavate_end_battle_reply_mine_battle_result_descriptor(), value);
-}
-inline bool excavate_end_battle_reply_mine_battle_result_Parse(
-    const ::std::string& name, excavate_end_battle_reply_mine_battle_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<excavate_end_battle_reply_mine_battle_result>(
-    excavate_end_battle_reply_mine_battle_result_descriptor(), name, value);
-}
-enum excavate_reward_type {
-  excavate_reward_type_gold = 1,
-  excavate_reward_type_diamond = 2,
-  excavate_reward_type_item = 3,
-  excavate_reward_type_wood = 4,
-  excavate_reward_type_iron = 5,
-  excavate_reward_type_crystal = 6
-};
-bool excavate_reward_type_IsValid(int value);
-const excavate_reward_type excavate_reward_type_type_MIN = excavate_reward_type_gold;
-const excavate_reward_type excavate_reward_type_type_MAX = excavate_reward_type_crystal;
-const int excavate_reward_type_type_ARRAYSIZE = excavate_reward_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* excavate_reward_type_descriptor();
-inline const ::std::string& excavate_reward_type_Name(excavate_reward_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    excavate_reward_type_descriptor(), value);
-}
-inline bool excavate_reward_type_Parse(
-    const ::std::string& name, excavate_reward_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<excavate_reward_type>(
-    excavate_reward_type_descriptor(), name, value);
-}
-enum guild_instance_query_is_can_jump {
-  guild_instance_query_is_can_jump_true = 1,
-  guild_instance_query_is_can_jump_false = 2
-};
-bool guild_instance_query_is_can_jump_IsValid(int value);
-const guild_instance_query_is_can_jump guild_instance_query_is_can_jump_is_can_jump_MIN = guild_instance_query_is_can_jump_true;
-const guild_instance_query_is_can_jump guild_instance_query_is_can_jump_is_can_jump_MAX = guild_instance_query_is_can_jump_false;
-const int guild_instance_query_is_can_jump_is_can_jump_ARRAYSIZE = guild_instance_query_is_can_jump_is_can_jump_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_instance_query_is_can_jump_descriptor();
-inline const ::std::string& guild_instance_query_is_can_jump_Name(guild_instance_query_is_can_jump value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_instance_query_is_can_jump_descriptor(), value);
-}
-inline bool guild_instance_query_is_can_jump_Parse(
-    const ::std::string& name, guild_instance_query_is_can_jump* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_instance_query_is_can_jump>(
-    guild_instance_query_is_can_jump_descriptor(), name, value);
-}
-enum guild_instance_detail_challenger_status {
-  guild_instance_detail_challenger_status_battle = 1,
-  guild_instance_detail_challenger_status_prepare = 2
-};
-bool guild_instance_detail_challenger_status_IsValid(int value);
-const guild_instance_detail_challenger_status guild_instance_detail_challenger_status_challenger_status_MIN = guild_instance_detail_challenger_status_battle;
-const guild_instance_detail_challenger_status guild_instance_detail_challenger_status_challenger_status_MAX = guild_instance_detail_challenger_status_prepare;
-const int guild_instance_detail_challenger_status_challenger_status_ARRAYSIZE = guild_instance_detail_challenger_status_challenger_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_instance_detail_challenger_status_descriptor();
-inline const ::std::string& guild_instance_detail_challenger_status_Name(guild_instance_detail_challenger_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_instance_detail_challenger_status_descriptor(), value);
-}
-inline bool guild_instance_detail_challenger_status_Parse(
-    const ::std::string& name, guild_instance_detail_challenger_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_instance_detail_challenger_status>(
-    guild_instance_detail_challenger_status_descriptor(), name, value);
-}
-enum guild_instance_item_drop_state {
-  guild_instance_item_drop_state_no_apply = 1,
-  guild_instance_item_drop_state_apply = 2
-};
-bool guild_instance_item_drop_state_IsValid(int value);
-const guild_instance_item_drop_state guild_instance_item_drop_state_drop_state_MIN = guild_instance_item_drop_state_no_apply;
-const guild_instance_item_drop_state guild_instance_item_drop_state_drop_state_MAX = guild_instance_item_drop_state_apply;
-const int guild_instance_item_drop_state_drop_state_ARRAYSIZE = guild_instance_item_drop_state_drop_state_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_instance_item_drop_state_descriptor();
-inline const ::std::string& guild_instance_item_drop_state_Name(guild_instance_item_drop_state value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_instance_item_drop_state_descriptor(), value);
-}
-inline bool guild_instance_item_drop_state_Parse(
-    const ::std::string& name, guild_instance_item_drop_state* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_instance_item_drop_state>(
-    guild_instance_item_drop_state_descriptor(), name, value);
-}
-enum query_ranklist_reply_rank_type {
-  query_ranklist_reply_rank_type_guildliveness = 1,
-  query_ranklist_reply_rank_type_excavate_rob = 2,
-  query_ranklist_reply_rank_type_excavate_gold = 3,
-  query_ranklist_reply_rank_type_excavate_exp = 4,
-  query_ranklist_reply_rank_type_top_gs = 5,
-  query_ranklist_reply_rank_type_full_hero_gs = 6,
-  query_ranklist_reply_rank_type_hero_team_gs = 7,
-  query_ranklist_reply_rank_type_hero_evo_star = 8,
-  query_ranklist_reply_rank_type_hero_arousal = 9,
-  query_ranklist_reply_rank_type_top_arena = 10
-};
-bool query_ranklist_reply_rank_type_IsValid(int value);
-const query_ranklist_reply_rank_type query_ranklist_reply_rank_type_rank_type_MIN = query_ranklist_reply_rank_type_guildliveness;
-const query_ranklist_reply_rank_type query_ranklist_reply_rank_type_rank_type_MAX = query_ranklist_reply_rank_type_top_arena;
-const int query_ranklist_reply_rank_type_rank_type_ARRAYSIZE = query_ranklist_reply_rank_type_rank_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* query_ranklist_reply_rank_type_descriptor();
-inline const ::std::string& query_ranklist_reply_rank_type_Name(query_ranklist_reply_rank_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    query_ranklist_reply_rank_type_descriptor(), value);
-}
-inline bool query_ranklist_reply_rank_type_Parse(
-    const ::std::string& name, query_ranklist_reply_rank_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<query_ranklist_reply_rank_type>(
-    query_ranklist_reply_rank_type_descriptor(), name, value);
-}
-enum result {
-  success = 0,
-  fail = 1
-};
-bool result_IsValid(int value);
-const result result_MIN = success;
-const result result_MAX = fail;
-const int result_ARRAYSIZE = result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* result_descriptor();
-inline const ::std::string& result_Name(result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    result_descriptor(), value);
-}
-inline bool result_Parse(
-    const ::std::string& name, result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<result>(
-    result_descriptor(), name, value);
-}
-enum battle_result {
-  victory = 0,
-  defeat = 1,
-  canceled = 2,
-  timeout = 3
-};
-bool battle_result_IsValid(int value);
-const battle_result battle_result_MIN = victory;
-const battle_result battle_result_MAX = timeout;
-const int battle_result_ARRAYSIZE = battle_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor();
-inline const ::std::string& battle_result_Name(battle_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    battle_result_descriptor(), value);
-}
-inline bool battle_result_Parse(
-    const ::std::string& name, battle_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<battle_result>(
-    battle_result_descriptor(), name, value);
-}
-enum money_type {
-  gold = 1,
-  diamond = 2,
-  tbc_point = 3,
-  ladder_point = 4
-};
-bool money_type_IsValid(int value);
-const money_type money_type_MIN = gold;
-const money_type money_type_MAX = ladder_point;
-const int money_type_ARRAYSIZE = money_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* money_type_descriptor();
-inline const ::std::string& money_type_Name(money_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    money_type_descriptor(), value);
-}
-inline bool money_type_Parse(
-    const ::std::string& name, money_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<money_type>(
-    money_type_descriptor(), name, value);
-}
-enum hero_status {
-  idle = 0,
-  hire = 1,
-  mining = 2
-};
-bool hero_status_IsValid(int value);
-const hero_status hero_status_MIN = idle;
-const hero_status hero_status_MAX = mining;
-const int hero_status_ARRAYSIZE = hero_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor();
-inline const ::std::string& hero_status_Name(hero_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hero_status_descriptor(), value);
-}
-inline bool hero_status_Parse(
-    const ::std::string& name, hero_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hero_status>(
-    hero_status_descriptor(), name, value);
-}
-enum server_opt_result {
-  get_ok = 0,
-  change_ok = 1,
-  fail_op = 2
-};
-bool server_opt_result_IsValid(int value);
-const server_opt_result server_opt_result_MIN = get_ok;
-const server_opt_result server_opt_result_MAX = fail_op;
-const int server_opt_result_ARRAYSIZE = server_opt_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* server_opt_result_descriptor();
-inline const ::std::string& server_opt_result_Name(server_opt_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    server_opt_result_descriptor(), value);
-}
-inline bool server_opt_result_Parse(
-    const ::std::string& name, server_opt_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<server_opt_result>(
-    server_opt_result_descriptor(), name, value);
-}
-enum hire_result {
-  success_hire = 0,
-  fail_hire = 1,
-  stage_invalid = 2
-};
-bool hire_result_IsValid(int value);
-const hire_result hire_result_MIN = success_hire;
-const hire_result hire_result_MAX = stage_invalid;
-const int hire_result_ARRAYSIZE = hire_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hire_result_descriptor();
-inline const ::std::string& hire_result_Name(hire_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hire_result_descriptor(), value);
-}
-inline bool hire_result_Parse(
-    const ::std::string& name, hire_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hire_result>(
-    hire_result_descriptor(), name, value);
-}
-enum hire_from {
-  guild = 0,
-  tbc = 1,
-  stage = 2,
-  excav = 3
-};
-bool hire_from_IsValid(int value);
-const hire_from hire_from_MIN = guild;
-const hire_from hire_from_MAX = excav;
-const int hire_from_ARRAYSIZE = hire_from_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor();
-inline const ::std::string& hire_from_Name(hire_from value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hire_from_descriptor(), value);
-}
-inline bool hire_from_Parse(
-    const ::std::string& name, hire_from* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hire_from>(
-    hire_from_descriptor(), name, value);
-}
-enum guild_join_t {
-  no_verify = 1,
-  verify = 2,
-  closed = 3
-};
-bool guild_join_t_IsValid(int value);
-const guild_join_t guild_join_t_MIN = no_verify;
-const guild_join_t guild_join_t_MAX = closed;
-const int guild_join_t_ARRAYSIZE = guild_join_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_join_t_descriptor();
-inline const ::std::string& guild_join_t_Name(guild_join_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_join_t_descriptor(), value);
-}
-inline bool guild_join_t_Parse(
-    const ::std::string& name, guild_join_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_join_t>(
-    guild_join_t_descriptor(), name, value);
-}
-enum guild_job_t {
-  chairman = 1,
-  member = 2,
-  elder = 3
-};
-bool guild_job_t_IsValid(int value);
-const guild_job_t guild_job_t_MIN = chairman;
-const guild_job_t guild_job_t_MAX = elder;
-const int guild_job_t_ARRAYSIZE = guild_job_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor();
-inline const ::std::string& guild_job_t_Name(guild_job_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_job_t_descriptor(), value);
-}
-inline bool guild_job_t_Parse(
-    const ::std::string& name, guild_job_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_job_t>(
-    guild_job_t_descriptor(), name, value);
-}
-enum chat_channel {
-  world_channel = 1,
-  guild_channel = 2,
-  personal_channel = 3
-};
-bool chat_channel_IsValid(int value);
-const chat_channel chat_channel_MIN = world_channel;
-const chat_channel chat_channel_MAX = personal_channel;
-const int chat_channel_ARRAYSIZE = chat_channel_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor();
-inline const ::std::string& chat_channel_Name(chat_channel value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    chat_channel_descriptor(), value);
-}
-inline bool chat_channel_Parse(
-    const ::std::string& name, chat_channel* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<chat_channel>(
-    chat_channel_descriptor(), name, value);
-}
 // ===================================================================
 
 class Hello : public ::google::protobuf::Message {
@@ -1686,12 +796,12 @@ class login_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.user _user = 2;
   inline bool has__user() const;
@@ -1729,7 +839,7 @@ class login_reply : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::user* _user_;
   ::std::string* _time_zone_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -2979,12 +2089,12 @@ class system_setting_change : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.system_setting_change)
  private:
@@ -2995,7 +2105,7 @@ class system_setting_change : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -3138,30 +2248,6 @@ class system_setting_item : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef system_setting_item_setting_status setting_status;
-  static const setting_status on = system_setting_item_setting_status_on;
-  static const setting_status off = system_setting_item_setting_status_off;
-  static inline bool setting_status_IsValid(int value) {
-    return system_setting_item_setting_status_IsValid(value);
-  }
-  static const setting_status setting_status_MIN =
-    system_setting_item_setting_status_setting_status_MIN;
-  static const setting_status setting_status_MAX =
-    system_setting_item_setting_status_setting_status_MAX;
-  static const int setting_status_ARRAYSIZE =
-    system_setting_item_setting_status_setting_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  setting_status_descriptor() {
-    return system_setting_item_setting_status_descriptor();
-  }
-  static inline const ::std::string& setting_status_Name(setting_status value) {
-    return system_setting_item_setting_status_Name(value);
-  }
-  static inline bool setting_status_Parse(const ::std::string& name,
-      setting_status* value) {
-    return system_setting_item_setting_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required string key = 1;
@@ -3176,12 +2262,12 @@ class system_setting_item : public ::google::protobuf::Message {
   inline ::std::string* release_key();
   inline void set_allocated_key(::std::string* key);
 
-  // required .client_baseserver.system_setting_item.setting_status value = 2;
+  // required uint32 value = 2;
   inline bool has_value() const;
   inline void clear_value();
   static const int kValueFieldNumber = 2;
-  inline ::client_baseserver::system_setting_item_setting_status value() const;
-  inline void set_value(::client_baseserver::system_setting_item_setting_status value);
+  inline ::google::protobuf::uint32 value() const;
+  inline void set_value(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.system_setting_item)
  private:
@@ -3195,7 +2281,7 @@ class system_setting_item : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* key_;
-  int value_;
+  ::google::protobuf::uint32 value_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -3337,12 +2423,12 @@ class sdk_login_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required string _uin = 2;
   inline bool has__uin() const;
@@ -3398,7 +2484,7 @@ class sdk_login_reply : public ::google::protobuf::Message {
   ::std::string* _uin_;
   ::std::string* _access_token_;
   ::std::string* _recharge_url_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -4503,38 +3589,14 @@ class exit_stage_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef exit_stage_reply_exit_stage_result exit_stage_result;
-  static const exit_stage_result known = exit_stage_reply_exit_stage_result_known;
-  static const exit_stage_result unknown = exit_stage_reply_exit_stage_result_unknown;
-  static inline bool exit_stage_result_IsValid(int value) {
-    return exit_stage_reply_exit_stage_result_IsValid(value);
-  }
-  static const exit_stage_result exit_stage_result_MIN =
-    exit_stage_reply_exit_stage_result_exit_stage_result_MIN;
-  static const exit_stage_result exit_stage_result_MAX =
-    exit_stage_reply_exit_stage_result_exit_stage_result_MAX;
-  static const int exit_stage_result_ARRAYSIZE =
-    exit_stage_reply_exit_stage_result_exit_stage_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  exit_stage_result_descriptor() {
-    return exit_stage_reply_exit_stage_result_descriptor();
-  }
-  static inline const ::std::string& exit_stage_result_Name(exit_stage_result value) {
-    return exit_stage_reply_exit_stage_result_Name(value);
-  }
-  static inline bool exit_stage_result_Parse(const ::std::string& name,
-      exit_stage_result* value) {
-    return exit_stage_reply_exit_stage_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::exit_stage_reply_exit_stage_result _result() const;
-  inline void set__result(::client_baseserver::exit_stage_reply_exit_stage_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.user_shop _shop = 2;
   inline bool has__shop() const;
@@ -4569,7 +3631,7 @@ class exit_stage_reply : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::user_shop* _shop_;
   ::client_baseserver::star_shop* _sshop_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -4632,12 +3694,12 @@ class hero_upgrade_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.hero _hero = 2;
   inline bool has__hero() const;
@@ -4673,7 +3735,7 @@ class hero_upgrade_reply : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::hero* _hero_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _items_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -4736,12 +3798,12 @@ class equip_synthesis_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.equip_synthesis_reply)
  private:
@@ -4752,7 +3814,7 @@ class equip_synthesis_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -4815,12 +3877,12 @@ class wear_equip_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _gs = 2;
   inline bool has__gs() const;
@@ -4840,7 +3902,7 @@ class wear_equip_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _gs_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -5312,12 +4374,12 @@ class shop_consume_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.shop_consume_reply)
  private:
@@ -5328,7 +4390,7 @@ class shop_consume_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5391,12 +4453,12 @@ class skill_levelup_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _gs = 2;
   inline bool has__gs() const;
@@ -5416,7 +4478,7 @@ class skill_levelup_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _gs_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -5480,12 +4542,12 @@ class sell_item_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.sell_item_reply)
  private:
@@ -5496,7 +4558,7 @@ class sell_item_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5559,12 +4621,12 @@ class fragment_compose_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.fragment_compose_reply)
  private:
@@ -5575,7 +4637,7 @@ class fragment_compose_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5638,12 +4700,12 @@ class hero_equip_upgrade_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.hero _hero = 2;
   inline bool has__hero() const;
@@ -5666,7 +4728,7 @@ class hero_equip_upgrade_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::hero* _hero_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5729,12 +4791,12 @@ class tutorial_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.tutorial_reply)
  private:
@@ -5745,7 +4807,7 @@ class tutorial_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5806,30 +4868,6 @@ class error_info : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef error_info_exit exit;
-  static const exit noneed = error_info_exit_noneed;
-  static const exit force = error_info_exit_force;
-  static inline bool exit_IsValid(int value) {
-    return error_info_exit_IsValid(value);
-  }
-  static const exit exit_MIN =
-    error_info_exit_exit_MIN;
-  static const exit exit_MAX =
-    error_info_exit_exit_MAX;
-  static const int exit_ARRAYSIZE =
-    error_info_exit_exit_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  exit_descriptor() {
-    return error_info_exit_descriptor();
-  }
-  static inline const ::std::string& exit_Name(exit value) {
-    return error_info_exit_Name(value);
-  }
-  static inline bool exit_Parse(const ::std::string& name,
-      exit* value) {
-    return error_info_exit_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required string _info = 1;
@@ -5844,12 +4882,12 @@ class error_info : public ::google::protobuf::Message {
   inline ::std::string* release__info();
   inline void set_allocated__info(::std::string* _info);
 
-  // optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+  // optional uint32 _exit = 2;
   inline bool has__exit() const;
   inline void clear__exit();
   static const int kExitFieldNumber = 2;
-  inline ::client_baseserver::error_info_exit _exit() const;
-  inline void set__exit(::client_baseserver::error_info_exit value);
+  inline ::google::protobuf::uint32 _exit() const;
+  inline void set__exit(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.error_info)
  private:
@@ -5863,7 +4901,7 @@ class error_info : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* _info_;
-  int _exit_;
+  ::google::protobuf::uint32 _exit_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -5924,33 +4962,6 @@ class goods : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef goods_price_type price_type;
-  static const price_type gold = goods_price_type_gold;
-  static const price_type diamond = goods_price_type_diamond;
-  static const price_type crusadepoint = goods_price_type_crusadepoint;
-  static const price_type arenapoint = goods_price_type_arenapoint;
-  static const price_type guildpoint = goods_price_type_guildpoint;
-  static inline bool price_type_IsValid(int value) {
-    return goods_price_type_IsValid(value);
-  }
-  static const price_type price_type_MIN =
-    goods_price_type_price_type_MIN;
-  static const price_type price_type_MAX =
-    goods_price_type_price_type_MAX;
-  static const int price_type_ARRAYSIZE =
-    goods_price_type_price_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  price_type_descriptor() {
-    return goods_price_type_descriptor();
-  }
-  static inline const ::std::string& price_type_Name(price_type value) {
-    return goods_price_type_Name(value);
-  }
-  static inline bool price_type_Parse(const ::std::string& name,
-      price_type* value) {
-    return goods_price_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _id = 1;
@@ -5967,12 +4978,12 @@ class goods : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _amount() const;
   inline void set__amount(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.goods.price_type _type = 3;
+  // required uint32 _type = 3;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 3;
-  inline ::client_baseserver::goods_price_type _type() const;
-  inline void set__type(::client_baseserver::goods_price_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required uint32 _price = 4;
   inline bool has__price() const;
@@ -6007,7 +5018,7 @@ class goods : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::uint32 _id_;
   ::google::protobuf::uint32 _amount_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _price_;
   ::google::protobuf::uint32 _is_sale_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -6070,41 +5081,16 @@ class star_goods : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef star_goods_box_type box_type;
-  static const box_type stone_green = star_goods_box_type_stone_green;
-  static const box_type stone_blue = star_goods_box_type_stone_blue;
-  static const box_type stone_purple = star_goods_box_type_stone_purple;
-  static inline bool box_type_IsValid(int value) {
-    return star_goods_box_type_IsValid(value);
-  }
-  static const box_type box_type_MIN =
-    star_goods_box_type_box_type_MIN;
-  static const box_type box_type_MAX =
-    star_goods_box_type_box_type_MAX;
-  static const int box_type_ARRAYSIZE =
-    star_goods_box_type_box_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  box_type_descriptor() {
-    return star_goods_box_type_descriptor();
-  }
-  static inline const ::std::string& box_type_Name(box_type value) {
-    return star_goods_box_type_Name(value);
-  }
-  static inline bool box_type_Parse(const ::std::string& name,
-      box_type* value) {
-    return star_goods_box_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.star_goods.box_type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::star_goods_box_type _type() const;
-  inline void set__type(::client_baseserver::star_goods_box_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
-  // required uint32 _amount = 2 [default = 1];
+  // required uint32 _amount = 2;
   inline bool has__amount() const;
   inline void clear__amount();
   static const int kAmountFieldNumber = 2;
@@ -6140,7 +5126,7 @@ class star_goods : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _amount_;
   ::google::protobuf::uint32 _stone_id_;
   ::google::protobuf::uint32 _stone_amount_;
@@ -6897,39 +5883,14 @@ class daily_login : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef daily_login_dailylogin_status dailylogin_status;
-  static const dailylogin_status all = daily_login_dailylogin_status_all;
-  static const dailylogin_status part = daily_login_dailylogin_status_part;
-  static const dailylogin_status nothing = daily_login_dailylogin_status_nothing;
-  static inline bool dailylogin_status_IsValid(int value) {
-    return daily_login_dailylogin_status_IsValid(value);
-  }
-  static const dailylogin_status dailylogin_status_MIN =
-    daily_login_dailylogin_status_dailylogin_status_MIN;
-  static const dailylogin_status dailylogin_status_MAX =
-    daily_login_dailylogin_status_dailylogin_status_MAX;
-  static const int dailylogin_status_ARRAYSIZE =
-    daily_login_dailylogin_status_dailylogin_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  dailylogin_status_descriptor() {
-    return daily_login_dailylogin_status_descriptor();
-  }
-  static inline const ::std::string& dailylogin_status_Name(dailylogin_status value) {
-    return daily_login_dailylogin_status_Name(value);
-  }
-  static inline bool dailylogin_status_Parse(const ::std::string& name,
-      dailylogin_status* value) {
-    return daily_login_dailylogin_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.daily_login.dailylogin_status _status = 1;
+  // required uint32 _status = 1;
   inline bool has__status() const;
   inline void clear__status();
   static const int kStatusFieldNumber = 1;
-  inline ::client_baseserver::daily_login_dailylogin_status _status() const;
-  inline void set__status(::client_baseserver::daily_login_dailylogin_status value);
+  inline ::google::protobuf::uint32 _status() const;
+  inline void set__status(::google::protobuf::uint32 value);
 
   // required uint32 _frequency = 2;
   inline bool has__frequency() const;
@@ -6958,7 +5919,7 @@ class daily_login : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _status_;
+  ::google::protobuf::uint32 _status_;
   ::google::protobuf::uint32 _frequency_;
   ::google::protobuf::uint32 _last_login_date_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -7023,12 +5984,12 @@ class ask_daily_login_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated uint32 _items = 2;
   inline int _items_size() const;
@@ -7073,7 +6034,7 @@ class ask_daily_login_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _items_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _diamond_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _hero_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -7279,12 +6240,12 @@ class hero : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _gs() const;
   inline void set__gs(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.hero_status _state = 7;
+  // required uint32 _state = 7;
   inline bool has__state() const;
   inline void clear__state();
   static const int kStateFieldNumber = 7;
-  inline ::client_baseserver::hero_status _state() const;
-  inline void set__state(::client_baseserver::hero_status value);
+  inline ::google::protobuf::uint32 _state() const;
+  inline void set__state(::google::protobuf::uint32 value);
 
   // repeated uint32 _skill_levels = 8;
   inline int _skill_levels_size() const;
@@ -7339,7 +6300,7 @@ class hero : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _gs_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _skill_levels_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero_equip > _items_;
-  int _state_;
+  ::google::protobuf::uint32 _state_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -7437,12 +6398,12 @@ class hero_summary : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _gs() const;
   inline void set__gs(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.hero_status _state = 6;
+  // optional uint32 _state = 6;
   inline bool has__state() const;
   inline void clear__state();
   static const int kStateFieldNumber = 6;
-  inline ::client_baseserver::hero_status _state() const;
-  inline void set__state(::client_baseserver::hero_status value);
+  inline ::google::protobuf::uint32 _state() const;
+  inline void set__state(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.hero_summary)
  private:
@@ -7468,7 +6429,7 @@ class hero_summary : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _level_;
   ::google::protobuf::uint32 _stars_;
   ::google::protobuf::uint32 _gs_;
-  int _state_;
+  ::google::protobuf::uint32 _state_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -7737,30 +6698,6 @@ class usertask : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef usertask_status status;
-  static const status finished = usertask_status_finished;
-  static const status working = usertask_status_working;
-  static inline bool status_IsValid(int value) {
-    return usertask_status_IsValid(value);
-  }
-  static const status status_MIN =
-    usertask_status_status_MIN;
-  static const status status_MAX =
-    usertask_status_status_MAX;
-  static const int status_ARRAYSIZE =
-    usertask_status_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  status_descriptor() {
-    return usertask_status_descriptor();
-  }
-  static inline const ::std::string& status_Name(status value) {
-    return usertask_status_Name(value);
-  }
-  static inline bool status_Parse(const ::std::string& name,
-      status* value) {
-    return usertask_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _line = 1;
@@ -7777,12 +6714,12 @@ class usertask : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _id() const;
   inline void set__id(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.usertask.status _status = 3 [default = working];
+  // required uint32 _status = 3;
   inline bool has__status() const;
   inline void clear__status();
   static const int kStatusFieldNumber = 3;
-  inline ::client_baseserver::usertask_status _status() const;
-  inline void set__status(::client_baseserver::usertask_status value);
+  inline ::google::protobuf::uint32 _status() const;
+  inline void set__status(::google::protobuf::uint32 value);
 
   // optional uint32 _task_target = 4;
   inline bool has__task_target() const;
@@ -7808,7 +6745,7 @@ class usertask : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::uint32 _line_;
   ::google::protobuf::uint32 _id_;
-  int _status_;
+  ::google::protobuf::uint32 _status_;
   ::google::protobuf::uint32 _task_target_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -8071,40 +7008,14 @@ class tavern_record : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef tavern_record_box_type box_type;
-  static const box_type green = tavern_record_box_type_green;
-  static const box_type blue = tavern_record_box_type_blue;
-  static const box_type purple = tavern_record_box_type_purple;
-  static const box_type magicsoul = tavern_record_box_type_magicsoul;
-  static inline bool box_type_IsValid(int value) {
-    return tavern_record_box_type_IsValid(value);
-  }
-  static const box_type box_type_MIN =
-    tavern_record_box_type_box_type_MIN;
-  static const box_type box_type_MAX =
-    tavern_record_box_type_box_type_MAX;
-  static const int box_type_ARRAYSIZE =
-    tavern_record_box_type_box_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  box_type_descriptor() {
-    return tavern_record_box_type_descriptor();
-  }
-  static inline const ::std::string& box_type_Name(box_type value) {
-    return tavern_record_box_type_Name(value);
-  }
-  static inline bool box_type_Parse(const ::std::string& name,
-      box_type* value) {
-    return tavern_record_box_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+  // required uint32 _box_type = 1;
   inline bool has__box_type() const;
   inline void clear__box_type();
   static const int kBoxTypeFieldNumber = 1;
-  inline ::client_baseserver::tavern_record_box_type _box_type() const;
-  inline void set__box_type(::client_baseserver::tavern_record_box_type value);
+  inline ::google::protobuf::uint32 _box_type() const;
+  inline void set__box_type(::google::protobuf::uint32 value);
 
   // required uint32 _left_cnt = 2;
   inline bool has__left_cnt() const;
@@ -8142,7 +7053,7 @@ class tavern_record : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _box_type_;
+  ::google::protobuf::uint32 _box_type_;
   ::google::protobuf::uint32 _left_cnt_;
   ::google::protobuf::uint32 _last_get_time_;
   ::google::protobuf::uint32 _has_first_draw_;
@@ -8297,15 +7208,17 @@ class trigger_task_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   inline int _result_size() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result(int index) const;
-  inline void set__result(int index, ::client_baseserver::result value);
-  inline void add__result(::client_baseserver::result value);
-  inline const ::google::protobuf::RepeatedField<int>& _result() const;
-  inline ::google::protobuf::RepeatedField<int>* mutable__result();
+  inline ::google::protobuf::uint32 _result(int index) const;
+  inline void set__result(int index, ::google::protobuf::uint32 value);
+  inline void add__result(::google::protobuf::uint32 value);
+  inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+      _result() const;
+  inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+      mutable__result();
 
   // @@protoc_insertion_point(class_scope:client_baseserver.trigger_task_reply)
  private:
@@ -8314,7 +7227,7 @@ class trigger_task_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField<int> _result_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -8377,12 +7290,12 @@ class require_rewards_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.require_rewards_reply)
  private:
@@ -8393,7 +7306,7 @@ class require_rewards_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -8456,15 +7369,17 @@ class trigger_job_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   inline int _result_size() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result(int index) const;
-  inline void set__result(int index, ::client_baseserver::result value);
-  inline void add__result(::client_baseserver::result value);
-  inline const ::google::protobuf::RepeatedField<int>& _result() const;
-  inline ::google::protobuf::RepeatedField<int>* mutable__result();
+  inline ::google::protobuf::uint32 _result(int index) const;
+  inline void set__result(int index, ::google::protobuf::uint32 value);
+  inline void add__result(::google::protobuf::uint32 value);
+  inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+      _result() const;
+  inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+      mutable__result();
 
   // @@protoc_insertion_point(class_scope:client_baseserver.trigger_job_reply)
  private:
@@ -8473,7 +7388,7 @@ class trigger_job_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField<int> _result_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -8534,45 +7449,14 @@ class dailyjob_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef dailyjob_reward_type type;
-  static const type rmb = dailyjob_reward_type_rmb;
-  static const type money = dailyjob_reward_type_money;
-  static const type item = dailyjob_reward_type_item;
-  static const type hero = dailyjob_reward_type_hero;
-  static const type vitality = dailyjob_reward_type_vitality;
-  static const type playerexp = dailyjob_reward_type_playerexp;
-  static const type crusadepoint = dailyjob_reward_type_crusadepoint;
-  static const type arenapoint = dailyjob_reward_type_arenapoint;
-  static const type guildpoint = dailyjob_reward_type_guildpoint;
-  static inline bool type_IsValid(int value) {
-    return dailyjob_reward_type_IsValid(value);
-  }
-  static const type type_MIN =
-    dailyjob_reward_type_type_MIN;
-  static const type type_MAX =
-    dailyjob_reward_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    dailyjob_reward_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return dailyjob_reward_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return dailyjob_reward_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return dailyjob_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // optional .client_baseserver.dailyjob_reward.type _type = 1;
+  // optional uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::dailyjob_reward_type _type() const;
-  inline void set__type(::client_baseserver::dailyjob_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _id = 2;
   inline bool has__id() const;
@@ -8601,7 +7485,7 @@ class dailyjob_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _id_;
   ::google::protobuf::uint32 _amount_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -8666,12 +7550,12 @@ class job_rewards_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.dailyjob_reward _activity_reward = 2;
   inline int _activity_reward_size() const;
@@ -8695,7 +7579,7 @@ class job_rewards_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::dailyjob_reward > _activity_reward_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -8866,12 +7750,12 @@ class reset_elite_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.reset_elite_reply)
  private:
@@ -8882,7 +7766,7 @@ class reset_elite_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -9234,12 +8118,12 @@ class hero_evolve_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.hero _hero = 2;
   inline bool has__hero() const;
@@ -9262,7 +8146,7 @@ class hero_evolve_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::hero* _hero_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -10126,12 +9010,12 @@ class start_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _rseed = 2;
   inline bool has__rseed() const;
@@ -10184,7 +9068,7 @@ class start_battle : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _rseed_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _self_heroes_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _heroes_;
@@ -10251,12 +9135,12 @@ class end_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.battle_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _best_rank_reward = 2;
   inline bool has__best_rank_reward() const;
@@ -10294,7 +9178,7 @@ class end_battle : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _best_rank_reward_;
   ::google::protobuf::uint32 _best_rank_;
   ::google::protobuf::uint32 _cur_rank_;
@@ -10360,12 +9244,12 @@ class set_lineup : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated uint32 _lineup = 2;
   inline int _lineup_size() const;
@@ -10398,7 +9282,7 @@ class set_lineup : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _lineup_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _gs_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -10719,12 +9603,12 @@ class pvp_record : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _oppo_robot() const;
   inline void set__oppo_robot(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.battle_result _result = 13 [default = victory];
+  // optional uint32 _result = 13;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 13;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.hero _self_heroes = 14;
   inline int _self_heroes_size() const;
@@ -10860,7 +9744,7 @@ class pvp_record : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _oppo_robot_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _self_heroes_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero_dyna > _self_dynas_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _rseed_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _oppo_heroes_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero_dyna > _oppo_dynas_;
@@ -11124,12 +10008,12 @@ class clear_battle_cd : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.clear_battle_cd)
  private:
@@ -11140,7 +10024,7 @@ class clear_battle_cd : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -11324,12 +10208,12 @@ class ladder_record : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _bt_time() const;
   inline void set__bt_time(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.battle_result _bt_result = 5;
+  // required uint32 _bt_result = 5;
   inline bool has__bt_result() const;
   inline void clear__bt_result();
   static const int kBtResultFieldNumber = 5;
-  inline ::client_baseserver::battle_result _bt_result() const;
-  inline void set__bt_result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _bt_result() const;
+  inline void set__bt_result(::google::protobuf::uint32 value);
 
   // required uint32 _replay_id = 6;
   inline bool has__replay_id() const;
@@ -11361,7 +10245,7 @@ class ladder_record : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _user_id_;
   ::google::protobuf::uint32 _deta_rank_;
   ::google::protobuf::uint32 _bt_time_;
-  int _bt_result_;
+  ::google::protobuf::uint32 _bt_result_;
   ::google::protobuf::uint32 _replay_id_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -11567,40 +10451,14 @@ class ladder_rank_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef ladder_rank_reward_reward_type reward_type;
-  static const reward_type gold = ladder_rank_reward_reward_type_gold;
-  static const reward_type diamond = ladder_rank_reward_reward_type_diamond;
-  static const reward_type item = ladder_rank_reward_reward_type_item;
-  static const reward_type arenapoint = ladder_rank_reward_reward_type_arenapoint;
-  static inline bool reward_type_IsValid(int value) {
-    return ladder_rank_reward_reward_type_IsValid(value);
-  }
-  static const reward_type reward_type_MIN =
-    ladder_rank_reward_reward_type_reward_type_MIN;
-  static const reward_type reward_type_MAX =
-    ladder_rank_reward_reward_type_reward_type_MAX;
-  static const int reward_type_ARRAYSIZE =
-    ladder_rank_reward_reward_type_reward_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  reward_type_descriptor() {
-    return ladder_rank_reward_reward_type_descriptor();
-  }
-  static inline const ::std::string& reward_type_Name(reward_type value) {
-    return ladder_rank_reward_reward_type_Name(value);
-  }
-  static inline bool reward_type_Parse(const ::std::string& name,
-      reward_type* value) {
-    return ladder_rank_reward_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::ladder_rank_reward_reward_type _type() const;
-  inline void set__type(::client_baseserver::ladder_rank_reward_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _param1 = 2;
   inline bool has__param1() const;
@@ -11629,7 +10487,7 @@ class ladder_rank_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _param1_;
   ::google::protobuf::uint32 _param2_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -11776,12 +10634,12 @@ class buy_battle_chance : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _buy_times = 2;
   inline bool has__buy_times() const;
@@ -11801,7 +10659,7 @@ class buy_battle_chance : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _buy_times_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -11863,39 +10721,14 @@ class set_name_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef set_name_reply_set_name_result set_name_result;
-  static const set_name_result success = set_name_reply_set_name_result_success;
-  static const set_name_result exists = set_name_reply_set_name_result_exists;
-  static const set_name_result dirty_word = set_name_reply_set_name_result_dirty_word;
-  static inline bool set_name_result_IsValid(int value) {
-    return set_name_reply_set_name_result_IsValid(value);
-  }
-  static const set_name_result set_name_result_MIN =
-    set_name_reply_set_name_result_set_name_result_MIN;
-  static const set_name_result set_name_result_MAX =
-    set_name_reply_set_name_result_set_name_result_MAX;
-  static const int set_name_result_ARRAYSIZE =
-    set_name_reply_set_name_result_set_name_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  set_name_result_descriptor() {
-    return set_name_reply_set_name_result_descriptor();
-  }
-  static inline const ::std::string& set_name_result_Name(set_name_result value) {
-    return set_name_reply_set_name_result_Name(value);
-  }
-  static inline bool set_name_result_Parse(const ::std::string& name,
-      set_name_result* value) {
-    return set_name_reply_set_name_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::set_name_reply_set_name_result _result() const;
-  inline void set__result(::client_baseserver::set_name_reply_set_name_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.set_name_reply)
  private:
@@ -11906,7 +10739,7 @@ class set_name_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -11969,12 +10802,12 @@ class set_avatar_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.set_avatar_reply)
  private:
@@ -11985,7 +10818,7 @@ class set_avatar_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -12347,12 +11180,12 @@ class open_shop_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.user_shop _shop = 2;
   inline bool has__shop() const;
@@ -12375,7 +11208,7 @@ class open_shop_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::user_shop* _shop_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -13108,42 +11941,14 @@ class tbc_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef tbc_reward_type type;
-  static const type gold = tbc_reward_type_gold;
-  static const type diamond = tbc_reward_type_diamond;
-  static const type item = tbc_reward_type_item;
-  static const type chest = tbc_reward_type_chest;
-  static const type crusadepoint = tbc_reward_type_crusadepoint;
-  static const type chestbox = tbc_reward_type_chestbox;
-  static inline bool type_IsValid(int value) {
-    return tbc_reward_type_IsValid(value);
-  }
-  static const type type_MIN =
-    tbc_reward_type_type_MIN;
-  static const type type_MAX =
-    tbc_reward_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    tbc_reward_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return tbc_reward_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return tbc_reward_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return tbc_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.tbc_reward.type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::tbc_reward_type _type() const;
-  inline void set__type(::client_baseserver::tbc_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _param1 = 2;
   inline bool has__param1() const;
@@ -13172,7 +11977,7 @@ class tbc_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _param1_;
   ::google::protobuf::uint32 _param2_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -13235,39 +12040,14 @@ class tbc_stage : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef tbc_stage_status status;
-  static const status unpassed = tbc_stage_status_unpassed;
-  static const status passed = tbc_stage_status_passed;
-  static const status rewarded = tbc_stage_status_rewarded;
-  static inline bool status_IsValid(int value) {
-    return tbc_stage_status_IsValid(value);
-  }
-  static const status status_MIN =
-    tbc_stage_status_status_MIN;
-  static const status status_MAX =
-    tbc_stage_status_status_MAX;
-  static const int status_ARRAYSIZE =
-    tbc_stage_status_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  status_descriptor() {
-    return tbc_stage_status_descriptor();
-  }
-  static inline const ::std::string& status_Name(status value) {
-    return tbc_stage_status_Name(value);
-  }
-  static inline bool status_Parse(const ::std::string& name,
-      status* value) {
-    return tbc_stage_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+  // required uint32 _status = 1;
   inline bool has__status() const;
   inline void clear__status();
   static const int kStatusFieldNumber = 1;
-  inline ::client_baseserver::tbc_stage_status _status() const;
-  inline void set__status(::client_baseserver::tbc_stage_status value);
+  inline ::google::protobuf::uint32 _status() const;
+  inline void set__status(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.tbc_reward _rewards = 2;
   inline int _rewards_size() const;
@@ -13291,7 +12071,7 @@ class tbc_stage : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::tbc_reward > _rewards_;
-  int _status_;
+  ::google::protobuf::uint32 _status_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -13666,12 +12446,12 @@ class tbc_start_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _rseed = 2;
   inline bool has__rseed() const;
@@ -13691,7 +12471,7 @@ class tbc_start_battle : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _rseed_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -13755,12 +12535,12 @@ class tbc_end_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.tbc_end_battle)
  private:
@@ -13771,7 +12551,7 @@ class tbc_end_battle : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -13834,12 +12614,12 @@ class tbc_reset : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.tbc_info _info = 2;
   inline bool has__info() const;
@@ -13862,7 +12642,7 @@ class tbc_reset : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::tbc_info* _info_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -13925,12 +12705,12 @@ class tbc_draw_reward : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _stage_id = 2;
   inline bool has__stage_id() const;
@@ -13974,7 +12754,7 @@ class tbc_draw_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _stage_id_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::tbc_reward > _rewards_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _heroes_;
@@ -14120,31 +12900,6 @@ class sys_mail : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef sys_mail_status status;
-  static const status unread = sys_mail_status_unread;
-  static const status read = sys_mail_status_read;
-  static const status delete = sys_mail_status_delete;
-  static inline bool status_IsValid(int value) {
-    return sys_mail_status_IsValid(value);
-  }
-  static const status status_MIN =
-    sys_mail_status_status_MIN;
-  static const status status_MAX =
-    sys_mail_status_status_MAX;
-  static const int status_ARRAYSIZE =
-    sys_mail_status_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  status_descriptor() {
-    return sys_mail_status_descriptor();
-  }
-  static inline const ::std::string& status_Name(status value) {
-    return sys_mail_status_Name(value);
-  }
-  static inline bool status_Parse(const ::std::string& name,
-      status* value) {
-    return sys_mail_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _id = 1;
@@ -14154,12 +12909,12 @@ class sys_mail : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _id() const;
   inline void set__id(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.sys_mail.status _status = 2;
+  // required uint32 _status = 2;
   inline bool has__status() const;
   inline void clear__status();
   static const int kStatusFieldNumber = 2;
-  inline ::client_baseserver::sys_mail_status _status() const;
-  inline void set__status(::client_baseserver::sys_mail_status value);
+  inline ::google::protobuf::uint32 _status() const;
+  inline void set__status(::google::protobuf::uint32 value);
 
   // required uint32 _mail_time = 3;
   inline bool has__mail_time() const;
@@ -14262,7 +13017,7 @@ class sys_mail : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _id_;
-  int _status_;
+  ::google::protobuf::uint32 _status_;
   ::google::protobuf::uint32 _mail_time_;
   ::google::protobuf::uint32 _expire_time_;
   ::client_baseserver::mail_content* _content_;
@@ -14631,35 +13386,6 @@ class mail_param : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef mail_param_mail_param_type mail_param_type;
-  static const mail_param_type value = mail_param_mail_param_type_value;
-  static const mail_param_type money = mail_param_mail_param_type_money;
-  static const mail_param_type item = mail_param_mail_param_type_item;
-  static const mail_param_type mine = mail_param_mail_param_type_mine;
-  static const mail_param_type self_hero = mail_param_mail_param_type_self_hero;
-  static const mail_param_type excav_battle_id = mail_param_mail_param_type_excav_battle_id;
-  static const mail_param_type hero_name = mail_param_mail_param_type_hero_name;
-  static inline bool mail_param_type_IsValid(int value) {
-    return mail_param_mail_param_type_IsValid(value);
-  }
-  static const mail_param_type mail_param_type_MIN =
-    mail_param_mail_param_type_mail_param_type_MIN;
-  static const mail_param_type mail_param_type_MAX =
-    mail_param_mail_param_type_mail_param_type_MAX;
-  static const int mail_param_type_ARRAYSIZE =
-    mail_param_mail_param_type_mail_param_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  mail_param_type_descriptor() {
-    return mail_param_mail_param_type_descriptor();
-  }
-  static inline const ::std::string& mail_param_type_Name(mail_param_type value) {
-    return mail_param_mail_param_type_Name(value);
-  }
-  static inline bool mail_param_type_Parse(const ::std::string& name,
-      mail_param_type* value) {
-    return mail_param_mail_param_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _idx = 1;
@@ -14669,12 +13395,12 @@ class mail_param : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _idx() const;
   inline void set__idx(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.mail_param.mail_param_type _type = 2;
+  // optional uint32 _type = 2;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 2;
-  inline ::client_baseserver::mail_param_mail_param_type _type() const;
-  inline void set__type(::client_baseserver::mail_param_mail_param_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional string _value = 3;
   inline bool has__value() const;
@@ -14702,7 +13428,7 @@ class mail_param : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _idx_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::std::string* _value_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -14764,39 +13490,14 @@ class user_point : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef user_point_user_point_type user_point_type;
-  static const user_point_type arenapoint = user_point_user_point_type_arenapoint;
-  static const user_point_type crusadepoint = user_point_user_point_type_crusadepoint;
-  static const user_point_type guildpoint = user_point_user_point_type_guildpoint;
-  static inline bool user_point_type_IsValid(int value) {
-    return user_point_user_point_type_IsValid(value);
-  }
-  static const user_point_type user_point_type_MIN =
-    user_point_user_point_type_user_point_type_MIN;
-  static const user_point_type user_point_type_MAX =
-    user_point_user_point_type_user_point_type_MAX;
-  static const int user_point_type_ARRAYSIZE =
-    user_point_user_point_type_user_point_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  user_point_type_descriptor() {
-    return user_point_user_point_type_descriptor();
-  }
-  static inline const ::std::string& user_point_type_Name(user_point_type value) {
-    return user_point_user_point_type_Name(value);
-  }
-  static inline bool user_point_type_Parse(const ::std::string& name,
-      user_point_type* value) {
-    return user_point_user_point_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::user_point_user_point_type _type() const;
-  inline void set__type(::client_baseserver::user_point_user_point_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required uint32 _value = 2;
   inline bool has__value() const;
@@ -14816,7 +13517,7 @@ class user_point : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _value_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -14880,12 +13581,12 @@ class read_mail_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.read_mail_reply)
  private:
@@ -14896,7 +13597,7 @@ class read_mail_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -14959,12 +13660,12 @@ class get_vip_gift_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.get_vip_gift_reply)
  private:
@@ -14975,7 +13676,7 @@ class get_vip_gift_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -15364,19 +14065,19 @@ class chat_broad_say : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // optional .client_baseserver.result _result = 1;
+  // optional uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.chat_channel _channel = 2;
+  // optional uint32 _channel = 2;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 2;
-  inline ::client_baseserver::chat_channel _channel() const;
-  inline void set__channel(::client_baseserver::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.chat_content _contents = 3;
   inline int _contents_size() const;
@@ -15401,8 +14102,8 @@ class chat_broad_say : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
-  int _channel_;
+  ::google::protobuf::uint32 _result_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::chat_content > _contents_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -15466,19 +14167,19 @@ class chat_say : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+  // required uint32 _channel = 2;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 2;
-  inline ::client_baseserver::chat_channel _channel() const;
-  inline void set__channel(::client_baseserver::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.chat_content _contents = 3;
   inline int _contents_size() const;
@@ -15503,8 +14204,8 @@ class chat_say : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
-  int _channel_;
+  ::google::protobuf::uint32 _result_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::chat_content > _contents_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -15568,12 +14269,12 @@ class chat_fresh : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseserver::chat_channel _channel() const;
-  inline void set__channel(::client_baseserver::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.chat_content _contents = 2;
   inline int _contents_size() const;
@@ -15597,7 +14298,7 @@ class chat_fresh : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::chat_content > _contents_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -15660,12 +14361,12 @@ class chat_fetch : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseserver::chat_channel _channel() const;
-  inline void set__channel(::client_baseserver::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // required uint32 _chat_id = 2;
   inline bool has__chat_id() const;
@@ -15696,7 +14397,7 @@ class chat_fetch : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::uint32 _chat_id_;
   ::client_baseserver::chat_acc* _accessory_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -15759,38 +14460,14 @@ class chat_acc : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef chat_acc_chat_acc_t chat_acc_t;
-  static const chat_acc_t binary = chat_acc_chat_acc_t_binary;
-  static const chat_acc_t pvp_replay = chat_acc_chat_acc_t_pvp_replay;
-  static inline bool chat_acc_t_IsValid(int value) {
-    return chat_acc_chat_acc_t_IsValid(value);
-  }
-  static const chat_acc_t chat_acc_t_MIN =
-    chat_acc_chat_acc_t_chat_acc_t_MIN;
-  static const chat_acc_t chat_acc_t_MAX =
-    chat_acc_chat_acc_t_chat_acc_t_MAX;
-  static const int chat_acc_t_ARRAYSIZE =
-    chat_acc_chat_acc_t_chat_acc_t_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  chat_acc_t_descriptor() {
-    return chat_acc_chat_acc_t_descriptor();
-  }
-  static inline const ::std::string& chat_acc_t_Name(chat_acc_t value) {
-    return chat_acc_chat_acc_t_Name(value);
-  }
-  static inline bool chat_acc_t_Parse(const ::std::string& name,
-      chat_acc_t* value) {
-    return chat_acc_chat_acc_t_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::chat_acc_chat_acc_t _type() const;
-  inline void set__type(::client_baseserver::chat_acc_chat_acc_t value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional string _binary = 2;
   inline bool has__binary() const;
@@ -15828,7 +14505,7 @@ class chat_acc : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::std::string* _binary_;
   ::client_baseserver::pvp_record* _replay_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -16059,12 +14736,12 @@ class chat_add_bl : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   inline bool has__ret() const;
   inline void clear__ret();
   static const int kRetFieldNumber = 1;
-  inline ::client_baseserver::result _ret() const;
-  inline void set__ret(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _ret() const;
+  inline void set__ret(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.chat_add_bl)
  private:
@@ -16075,7 +14752,7 @@ class chat_add_bl : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _ret_;
+  ::google::protobuf::uint32 _ret_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -16138,12 +14815,12 @@ class chat_del_bl : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   inline bool has__ret() const;
   inline void clear__ret();
   static const int kRetFieldNumber = 1;
-  inline ::client_baseserver::result _ret() const;
-  inline void set__ret(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _ret() const;
+  inline void set__ret(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.chat_del_bl)
  private:
@@ -16154,7 +14831,7 @@ class chat_del_bl : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _ret_;
+  ::google::protobuf::uint32 _ret_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -16338,12 +15015,12 @@ class user_guild : public ::google::protobuf::Message {
   inline ::std::string* release__name();
   inline void set_allocated__name(::std::string* _name);
 
-  // optional .client_baseserver.guild_job_t _job = 3 [default = member];
+  // optional uint32 _job = 3;
   inline bool has__job() const;
   inline void clear__job();
   static const int kJobFieldNumber = 3;
-  inline ::client_baseserver::guild_job_t _job() const;
-  inline void set__job(::client_baseserver::guild_job_t value);
+  inline ::google::protobuf::uint32 _job() const;
+  inline void set__job(::google::protobuf::uint32 value);
 
   // optional uint32 _req_guild_id = 4;
   inline bool has__req_guild_id() const;
@@ -16381,7 +15058,7 @@ class user_guild : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::std::string* _name_;
   ::google::protobuf::uint32 _id_;
-  int _job_;
+  ::google::protobuf::uint32 _job_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _hire_hero_;
   ::google::protobuf::uint32 _req_guild_id_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -16500,14 +15177,14 @@ class guild_reply : public ::google::protobuf::Message {
   inline ::client_baseserver::guild_join_confirm* release__join_confirm();
   inline void set_allocated__join_confirm(::client_baseserver::guild_join_confirm* _join_confirm);
 
-  // optional .client_baseserver.guild_leave _leave = 7;
-  inline bool has__leave() const;
-  inline void clear__leave();
-  static const int kLeaveFieldNumber = 7;
-  inline const ::client_baseserver::guild_leave& _leave() const;
-  inline ::client_baseserver::guild_leave* mutable__leave();
-  inline ::client_baseserver::guild_leave* release__leave();
-  inline void set_allocated__leave(::client_baseserver::guild_leave* _leave);
+  // optional .client_baseserver.guild_leave _guild_leave = 7;
+  inline bool has__guild_leave() const;
+  inline void clear__guild_leave();
+  static const int kGuildLeaveFieldNumber = 7;
+  inline const ::client_baseserver::guild_leave& _guild_leave() const;
+  inline ::client_baseserver::guild_leave* mutable__guild_leave();
+  inline ::client_baseserver::guild_leave* release__guild_leave();
+  inline void set_allocated__guild_leave(::client_baseserver::guild_leave* _guild_leave);
 
   // optional .client_baseserver.guild_kick _kick = 8;
   inline bool has__kick() const;
@@ -16608,12 +15285,12 @@ class guild_reply : public ::google::protobuf::Message {
   inline ::client_baseserver::guild_qurey_hh_detail* release__query_hh_detail();
   inline void set_allocated__query_hh_detail(::client_baseserver::guild_qurey_hh_detail* _query_hh_detail);
 
-  // required .client_baseserver.result _result = 19 [default = success];
+  // required uint32 _result = 19;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 19;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.guild_instance_query _instance_query = 20;
   inline bool has__instance_query() const;
@@ -16791,8 +15468,8 @@ class guild_reply : public ::google::protobuf::Message {
   inline void clear_has__join();
   inline void set_has__join_confirm();
   inline void clear_has__join_confirm();
-  inline void set_has__leave();
-  inline void clear_has__leave();
+  inline void set_has__guild_leave();
+  inline void clear_has__guild_leave();
   inline void set_has__kick();
   inline void clear_has__kick();
   inline void set_has__set();
@@ -16863,7 +15540,7 @@ class guild_reply : public ::google::protobuf::Message {
   ::client_baseserver::guild_search* _search_;
   ::client_baseserver::guild_join* _join_;
   ::client_baseserver::guild_join_confirm* _join_confirm_;
-  ::client_baseserver::guild_leave* _leave_;
+  ::client_baseserver::guild_leave* _guild_leave_;
   ::client_baseserver::guild_kick* _kick_;
   ::client_baseserver::guild_set* _set_;
   ::client_baseserver::guild_query* _query_;
@@ -16893,7 +15570,7 @@ class guild_reply : public ::google::protobuf::Message {
   ::client_baseserver::guild_stage_rank* _guild_stage_rank_;
   ::client_baseserver::guild_set_jump* _set_jump_;
   ::client_baseserver::guild_send_mail* _send_mail_reply_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   mutable int _cached_size_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -16957,12 +15634,12 @@ class guild_send_mail : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_send_mail)
  private:
@@ -16973,7 +15650,7 @@ class guild_send_mail : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -17036,12 +15713,12 @@ class guild_set_jump : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_set_jump)
  private:
@@ -17052,7 +15729,7 @@ class guild_set_jump : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -17115,12 +15792,12 @@ class guild_instance_prepare : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _left_time = 2;
   inline bool has__left_time() const;
@@ -17140,7 +15817,7 @@ class guild_instance_prepare : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _left_time_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -17934,12 +16611,12 @@ class guild_jump : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
   inline bool has__app_queue() const;
@@ -17962,7 +16639,7 @@ class guild_jump : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::guild_app_queue* _app_queue_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -18419,12 +17096,12 @@ class guild_drop_give : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_drop_give)
  private:
@@ -18435,7 +17112,7 @@ class guild_drop_give : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -18889,12 +17566,12 @@ class guild_instance_apply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
   inline bool has__app_queue() const;
@@ -18917,7 +17594,7 @@ class guild_instance_apply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::guild_app_queue* _app_queue_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -19402,12 +18079,12 @@ class guild_instance_end_down : public ::google::protobuf::Message {
   inline ::client_baseserver::guild_instance_summary* release__summary();
   inline void set_allocated__summary(::client_baseserver::guild_instance_summary* _summary);
 
-  // required .client_baseserver.battle_result _result = 2;
+  // required uint32 _result = 2;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 2;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated uint32 _rewards = 3;
   inline int _rewards_size() const;
@@ -19475,7 +18152,7 @@ class guild_instance_end_down : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::guild_instance_summary* _summary_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _rewards_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _stage_old_progress_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _apply_rewards_;
   ::client_baseserver::break_history* _break_history_;
@@ -19663,12 +18340,12 @@ class guild_instance_open : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _raid_id = 2;
   inline bool has__raid_id() const;
@@ -19697,7 +18374,7 @@ class guild_instance_open : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _raid_id_;
   ::google::protobuf::uint32 _left_time_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -19762,12 +18439,12 @@ class guild_create : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.guild_info _guild_info = 2;
   inline bool has__guild_info() const;
@@ -19790,7 +18467,7 @@ class guild_create : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::guild_info* _guild_info_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -19853,12 +18530,12 @@ class guild_dismiss : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_dismiss)
  private:
@@ -19869,7 +18546,7 @@ class guild_dismiss : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -20107,12 +18784,12 @@ class guild_summary : public ::google::protobuf::Message {
   inline ::std::string* release__slogan();
   inline void set_allocated__slogan(::std::string* _slogan);
 
-  // required .client_baseserver.guild_join_t _join_type = 5;
+  // required uint32 _join_type = 5;
   inline bool has__join_type() const;
   inline void clear__join_type();
   static const int kJoinTypeFieldNumber = 5;
-  inline ::client_baseserver::guild_join_t _join_type() const;
-  inline void set__join_type(::client_baseserver::guild_join_t value);
+  inline ::google::protobuf::uint32 _join_type() const;
+  inline void set__join_type(::google::protobuf::uint32 value);
 
   // required uint32 _join_limit = 6;
   inline bool has__join_limit() const;
@@ -20191,7 +18868,7 @@ class guild_summary : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _id_;
   ::google::protobuf::uint32 _avatar_;
   ::std::string* _slogan_;
-  int _join_type_;
+  ::google::protobuf::uint32 _join_type_;
   ::google::protobuf::uint32 _join_limit_;
   ::client_baseserver::user_summary* _president_;
   ::google::protobuf::uint32 _member_cnt_;
@@ -20276,12 +18953,12 @@ class guild_member : public ::google::protobuf::Message {
   inline ::client_baseserver::user_summary* release__summary();
   inline void set_allocated__summary(::client_baseserver::user_summary* _summary);
 
-  // required .client_baseserver.guild_job_t _job = 3;
+  // required uint32 _job = 3;
   inline bool has__job() const;
   inline void clear__job();
   static const int kJobFieldNumber = 3;
-  inline ::client_baseserver::guild_job_t _job() const;
-  inline void set__job(::client_baseserver::guild_job_t value);
+  inline ::google::protobuf::uint32 _job() const;
+  inline void set__job(::google::protobuf::uint32 value);
 
   // required uint32 _last_login = 4;
   inline bool has__last_login() const;
@@ -20325,7 +19002,7 @@ class guild_member : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::user_summary* _summary_;
   ::google::protobuf::uint32 _uid_;
-  int _job_;
+  ::google::protobuf::uint32 _job_;
   ::google::protobuf::uint32 _last_login_;
   ::google::protobuf::uint32 _active_;
   ::google::protobuf::uint32 _join_instance_time_;
@@ -20494,12 +19171,12 @@ class guild_list : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::client_baseserver::guild_summary >*
       mutable__guilds();
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 2;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _create_cost = 3;
   inline bool has__create_cost() const;
@@ -20520,7 +19197,7 @@ class guild_list : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::guild_summary > _guilds_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _create_cost_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -20593,12 +19270,12 @@ class guild_search : public ::google::protobuf::Message {
   inline ::client_baseserver::guild_summary* release__guilds();
   inline void set_allocated__guilds(::client_baseserver::guild_summary* _guilds);
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 2;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _create_cost = 3;
   inline bool has__create_cost() const;
@@ -20621,7 +19298,7 @@ class guild_search : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::guild_summary* _guilds_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _create_cost_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -20683,39 +19360,14 @@ class guild_join : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_join_join_result join_result;
-  static const join_result join_fail = guild_join_join_result_join_fail;
-  static const join_result join_enter = guild_join_join_result_join_enter;
-  static const join_result join_wait = guild_join_join_result_join_wait;
-  static inline bool join_result_IsValid(int value) {
-    return guild_join_join_result_IsValid(value);
-  }
-  static const join_result join_result_MIN =
-    guild_join_join_result_join_result_MIN;
-  static const join_result join_result_MAX =
-    guild_join_join_result_join_result_MAX;
-  static const int join_result_ARRAYSIZE =
-    guild_join_join_result_join_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  join_result_descriptor() {
-    return guild_join_join_result_descriptor();
-  }
-  static inline const ::std::string& join_result_Name(join_result value) {
-    return guild_join_join_result_Name(value);
-  }
-  static inline bool join_result_Parse(const ::std::string& name,
-      join_result* value) {
-    return guild_join_join_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.guild_join.join_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::guild_join_join_result _result() const;
-  inline void set__result(::client_baseserver::guild_join_join_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _join_guild_id = 2;
   inline bool has__join_guild_id() const;
@@ -20769,7 +19421,7 @@ class guild_join : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _join_guild_id_;
   ::client_baseserver::guild_info* _guild_info_;
   ::std::string* _fail_reason_;
@@ -20836,12 +19488,12 @@ class guild_join_confirm : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.guild_member _new_man = 2;
   inline bool has__new_man() const;
@@ -20864,7 +19516,7 @@ class guild_join_confirm : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::guild_member* _new_man_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -20927,12 +19579,12 @@ class guild_leave : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_leave)
  private:
@@ -20943,7 +19595,7 @@ class guild_leave : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -21006,12 +19658,12 @@ class guild_kick : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_kick)
  private:
@@ -21022,7 +19674,7 @@ class guild_kick : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -21085,12 +19737,12 @@ class guild_set : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_set)
  private:
@@ -21101,7 +19753,7 @@ class guild_set : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -21379,12 +20031,12 @@ class guild_set_job : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_set_job)
  private:
@@ -21395,7 +20047,7 @@ class guild_set_job : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -21458,12 +20110,12 @@ class guild_add_hire : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _income = 2;
   inline bool has__income() const;
@@ -21483,7 +20135,7 @@ class guild_add_hire : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _income_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -21547,12 +20199,12 @@ class guild_del_hire : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _hire_reward = 2;
   inline bool has__hire_reward() const;
@@ -21590,7 +20242,7 @@ class guild_del_hire : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _hire_reward_;
   ::google::protobuf::uint32 _stay_reward_;
   ::google::protobuf::uint32 _heroid_;
@@ -21680,12 +20332,12 @@ class guild_query_hires : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
       mutable__hire_uids();
 
-  // required .client_baseserver.hire_from _from = 3;
+  // required uint32 _from = 3;
   inline bool has__from() const;
   inline void clear__from();
   static const int kFromFieldNumber = 3;
-  inline ::client_baseserver::hire_from _from() const;
-  inline void set__from(::client_baseserver::hire_from value);
+  inline ::google::protobuf::uint32 _from() const;
+  inline void set__from(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_query_hires)
  private:
@@ -21698,7 +20350,7 @@ class guild_query_hires : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::guild_hire_user > _users_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _hire_uids_;
-  int _from_;
+  ::google::protobuf::uint32 _from_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -21999,19 +20651,19 @@ class guild_hire_hero : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.hire_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::hire_result _result() const;
-  inline void set__result(::client_baseserver::hire_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.hire_from _from = 2;
+  // optional uint32 _from = 2;
   inline bool has__from() const;
   inline void clear__from();
   static const int kFromFieldNumber = 2;
-  inline ::client_baseserver::hire_from _from() const;
-  inline void set__from(::client_baseserver::hire_from value);
+  inline ::google::protobuf::uint32 _from() const;
+  inline void set__from(::google::protobuf::uint32 value);
 
   // optional uint32 _uid = 3;
   inline bool has__uid() const;
@@ -22044,8 +20696,8 @@ class guild_hire_hero : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
-  int _from_;
+  ::google::protobuf::uint32 _result_;
+  ::google::protobuf::uint32 _from_;
   ::client_baseserver::hero* _hero_;
   ::google::protobuf::uint32 _uid_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -22110,12 +20762,12 @@ class guild_worship_req : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_worship_req)
  private:
@@ -22126,7 +20778,7 @@ class guild_worship_req : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -22189,12 +20841,12 @@ class guild_worship_withdraw : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.worship_reward _rewards = 2;
   inline int _rewards_size() const;
@@ -22218,7 +20870,7 @@ class guild_worship_withdraw : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::worship_reward > _rewards_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -22360,38 +21012,14 @@ class worship_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef worship_reward_type type;
-  static const type gold = worship_reward_type_gold;
-  static const type diamond = worship_reward_type_diamond;
-  static inline bool type_IsValid(int value) {
-    return worship_reward_type_IsValid(value);
-  }
-  static const type type_MIN =
-    worship_reward_type_type_MIN;
-  static const type type_MAX =
-    worship_reward_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    worship_reward_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return worship_reward_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return worship_reward_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return worship_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.worship_reward.type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::worship_reward_type _type() const;
-  inline void set__type(::client_baseserver::worship_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _param1 = 2;
   inline bool has__param1() const;
@@ -22420,7 +21048,7 @@ class worship_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _param1_;
   ::google::protobuf::uint32 _param2_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -22483,41 +21111,14 @@ class activity_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef activity_reward_type type;
-  static const type rmb = activity_reward_type_rmb;
-  static const type money = activity_reward_type_money;
-  static const type item = activity_reward_type_item;
-  static const type hero = activity_reward_type_hero;
-  static const type rand_soul = activity_reward_type_rand_soul;
-  static inline bool type_IsValid(int value) {
-    return activity_reward_type_IsValid(value);
-  }
-  static const type type_MIN =
-    activity_reward_type_type_MIN;
-  static const type type_MAX =
-    activity_reward_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    activity_reward_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return activity_reward_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return activity_reward_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return activity_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // optional .client_baseserver.activity_reward.type _type = 1;
+  // optional uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::activity_reward_type _type() const;
-  inline void set__type(::client_baseserver::activity_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _id = 2;
   inline bool has__id() const;
@@ -22546,7 +21147,7 @@ class activity_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _id_;
   ::google::protobuf::uint32 _amount_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -22795,35 +21396,6 @@ class activity_info : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef activity_info_type type;
-  static const type single_br_tavern = activity_info_type_single_br_tavern;
-  static const type combo_br_tavern = activity_info_type_combo_br_tavern;
-  static const type single_gd_tavern = activity_info_type_single_gd_tavern;
-  static const type combo_gd_tavern = activity_info_type_combo_gd_tavern;
-  static const type magic_soul_tavern = activity_info_type_magic_soul_tavern;
-  static const type rmb_recharge = activity_info_type_rmb_recharge;
-  static const type diamond_consume = activity_info_type_diamond_consume;
-  static inline bool type_IsValid(int value) {
-    return activity_info_type_IsValid(value);
-  }
-  static const type type_MIN =
-    activity_info_type_type_MIN;
-  static const type type_MAX =
-    activity_info_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    activity_info_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return activity_info_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return activity_info_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return activity_info_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // optional uint32 _id = 1;
@@ -22833,12 +21405,12 @@ class activity_info : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _id() const;
   inline void set__id(::google::protobuf::uint32 value);
 
-  // optional .client_baseserver.activity_info.type _type = 2;
+  // optional uint32 _type = 2;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 2;
-  inline ::client_baseserver::activity_info_type _type() const;
-  inline void set__type(::client_baseserver::activity_info_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _start_time = 3;
   inline bool has__start_time() const;
@@ -22924,7 +21496,7 @@ class activity_info : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _id_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _start_time_;
   ::google::protobuf::uint32 _end_time_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::activity_rewards > _rewards_;
@@ -22991,40 +21563,14 @@ class cdkey_gift_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef cdkey_gift_reply_cdkey_result cdkey_result;
-  static const cdkey_result success = cdkey_gift_reply_cdkey_result_success;
-  static const cdkey_result already_used = cdkey_gift_reply_cdkey_result_already_used;
-  static const cdkey_result not_exists = cdkey_gift_reply_cdkey_result_not_exists;
-  static const cdkey_result once_only = cdkey_gift_reply_cdkey_result_once_only;
-  static inline bool cdkey_result_IsValid(int value) {
-    return cdkey_gift_reply_cdkey_result_IsValid(value);
-  }
-  static const cdkey_result cdkey_result_MIN =
-    cdkey_gift_reply_cdkey_result_cdkey_result_MIN;
-  static const cdkey_result cdkey_result_MAX =
-    cdkey_gift_reply_cdkey_result_cdkey_result_MAX;
-  static const int cdkey_result_ARRAYSIZE =
-    cdkey_gift_reply_cdkey_result_cdkey_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  cdkey_result_descriptor() {
-    return cdkey_gift_reply_cdkey_result_descriptor();
-  }
-  static inline const ::std::string& cdkey_result_Name(cdkey_result value) {
-    return cdkey_gift_reply_cdkey_result_Name(value);
-  }
-  static inline bool cdkey_result_Parse(const ::std::string& name,
-      cdkey_result* value) {
-    return cdkey_gift_reply_cdkey_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::cdkey_gift_reply_cdkey_result _result() const;
-  inline void set__result(::client_baseserver::cdkey_gift_reply_cdkey_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.res_pack _pack = 2;
   inline bool has__pack() const;
@@ -23047,7 +21593,7 @@ class cdkey_gift_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::res_pack* _pack_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -23827,39 +22373,14 @@ class search_excavate_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef search_excavate_reply_search_result search_result;
-  static const search_result success = search_excavate_reply_search_result_success;
-  static const search_result failed = search_excavate_reply_search_result_failed;
-  static const search_result lack_money = search_excavate_reply_search_result_lack_money;
-  static inline bool search_result_IsValid(int value) {
-    return search_excavate_reply_search_result_IsValid(value);
-  }
-  static const search_result search_result_MIN =
-    search_excavate_reply_search_result_search_result_MIN;
-  static const search_result search_result_MAX =
-    search_excavate_reply_search_result_search_result_MAX;
-  static const int search_result_ARRAYSIZE =
-    search_excavate_reply_search_result_search_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  search_result_descriptor() {
-    return search_excavate_reply_search_result_descriptor();
-  }
-  static inline const ::std::string& search_result_Name(search_result value) {
-    return search_excavate_reply_search_result_Name(value);
-  }
-  static inline bool search_result_Parse(const ::std::string& name,
-      search_result* value) {
-    return search_excavate_reply_search_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.search_excavate_reply.search_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::search_excavate_reply_search_result _result() const;
-  inline void set__result(::client_baseserver::search_excavate_reply_search_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.excavate _excavate = 2;
   inline bool has__excavate() const;
@@ -23882,7 +22403,7 @@ class search_excavate_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::excavate* _excavate_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -24464,67 +22985,14 @@ class excavate : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef excavate_owner owner;
-  static const owner mine = excavate_owner_mine;
-  static const owner others = excavate_owner_others;
-  static const owner robot = excavate_owner_robot;
-  static inline bool owner_IsValid(int value) {
-    return excavate_owner_IsValid(value);
-  }
-  static const owner owner_MIN =
-    excavate_owner_owner_MIN;
-  static const owner owner_MAX =
-    excavate_owner_owner_MAX;
-  static const int owner_ARRAYSIZE =
-    excavate_owner_owner_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  owner_descriptor() {
-    return excavate_owner_descriptor();
-  }
-  static inline const ::std::string& owner_Name(owner value) {
-    return excavate_owner_Name(value);
-  }
-  static inline bool owner_Parse(const ::std::string& name,
-      owner* value) {
-    return excavate_owner_Parse(name, value);
-  }
-
-  typedef excavate_state state;
-  static const state searched = excavate_state_searched;
-  static const state battle = excavate_state_battle;
-  static const state shield = excavate_state_shield;
-  static const state occupy = excavate_state_occupy;
-  static const state protect = excavate_state_protect;
-  static const state dead = excavate_state_dead;
-  static inline bool state_IsValid(int value) {
-    return excavate_state_IsValid(value);
-  }
-  static const state state_MIN =
-    excavate_state_state_MIN;
-  static const state state_MAX =
-    excavate_state_state_MAX;
-  static const int state_ARRAYSIZE =
-    excavate_state_state_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  state_descriptor() {
-    return excavate_state_descriptor();
-  }
-  static inline const ::std::string& state_Name(state value) {
-    return excavate_state_Name(value);
-  }
-  static inline bool state_Parse(const ::std::string& name,
-      state* value) {
-    return excavate_state_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.excavate.owner _owner = 1;
+  // required uint32 _owner = 1;
   inline bool has__owner() const;
   inline void clear__owner();
   static const int kOwnerFieldNumber = 1;
-  inline ::client_baseserver::excavate_owner _owner() const;
-  inline void set__owner(::client_baseserver::excavate_owner value);
+  inline ::google::protobuf::uint32 _owner() const;
+  inline void set__owner(::google::protobuf::uint32 value);
 
   // required uint32 _id = 2;
   inline bool has__id() const;
@@ -24552,12 +23020,12 @@ class excavate : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::client_baseserver::excavate_team >*
       mutable__team();
 
-  // required .client_baseserver.excavate.state _state = 5;
+  // required uint32 _state = 5;
   inline bool has__state() const;
   inline void clear__state();
   static const int kStateFieldNumber = 5;
-  inline ::client_baseserver::excavate_state _state() const;
-  inline void set__state(::client_baseserver::excavate_state value);
+  inline ::google::protobuf::uint32 _state() const;
+  inline void set__state(::google::protobuf::uint32 value);
 
   // optional uint32 _state_end_ts = 6;
   inline bool has__state_end_ts() const;
@@ -24592,11 +23060,11 @@ class excavate : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _owner_;
+  ::google::protobuf::uint32 _owner_;
   ::google::protobuf::uint32 _id_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::excavate_team > _team_;
   ::google::protobuf::uint32 _type_id_;
-  int _state_;
+  ::google::protobuf::uint32 _state_;
   ::google::protobuf::uint32 _state_end_ts_;
   ::google::protobuf::uint32 _create_time_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -24659,30 +23127,6 @@ class excavate_history : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef excavate_history_def_result def_result;
-  static const def_result win = excavate_history_def_result_win;
-  static const def_result fail = excavate_history_def_result_fail;
-  static inline bool def_result_IsValid(int value) {
-    return excavate_history_def_result_IsValid(value);
-  }
-  static const def_result def_result_MIN =
-    excavate_history_def_result_def_result_MIN;
-  static const def_result def_result_MAX =
-    excavate_history_def_result_def_result_MAX;
-  static const int def_result_ARRAYSIZE =
-    excavate_history_def_result_def_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  def_result_descriptor() {
-    return excavate_history_def_result_descriptor();
-  }
-  static inline const ::std::string& def_result_Name(def_result value) {
-    return excavate_history_def_result_Name(value);
-  }
-  static inline bool def_result_Parse(const ::std::string& name,
-      def_result* value) {
-    return excavate_history_def_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required string _id = 1;
@@ -24704,12 +23148,12 @@ class excavate_history : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _excavate_id() const;
   inline void set__excavate_id(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.excavate_history.def_result _result = 3;
+  // required uint32 _result = 3;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 3;
-  inline ::client_baseserver::excavate_history_def_result _result() const;
-  inline void set__result(::client_baseserver::excavate_history_def_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required string _enemy_name = 4;
   inline bool has__enemy_name() const;
@@ -24793,7 +23237,7 @@ class excavate_history : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::std::string* _id_;
   ::google::protobuf::uint32 _excavate_id_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::std::string* _enemy_name_;
   ::std::string* _enemy_svrname_;
   ::google::protobuf::uint32 _enemy_svrid_;
@@ -25159,12 +23603,12 @@ class excavate_battle : public ::google::protobuf::Message {
   inline ::client_baseserver::excavate_battle_team* release__oppo_team();
   inline void set_allocated__oppo_team(::client_baseserver::excavate_battle_team* _oppo_team);
 
-  // required .client_baseserver.battle_result _result = 3;
+  // required uint32 _result = 3;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 3;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _record_id = 4;
   inline bool has__record_id() const;
@@ -25199,7 +23643,7 @@ class excavate_battle : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::client_baseserver::excavate_battle_team* _self_team_;
   ::client_baseserver::excavate_battle_team* _oppo_team_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _record_id_;
   ::google::protobuf::uint32 _record_svrid_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -25344,40 +23788,14 @@ class set_excavate_team_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef set_excavate_team_reply_result result;
-  static const result success = set_excavate_team_reply_result_success;
-  static const result failed = set_excavate_team_reply_result_failed;
-  static const result expired = set_excavate_team_reply_result_expired;
-  static const result fall = set_excavate_team_reply_result_fall;
-  static inline bool result_IsValid(int value) {
-    return set_excavate_team_reply_result_IsValid(value);
-  }
-  static const result result_MIN =
-    set_excavate_team_reply_result_result_MIN;
-  static const result result_MAX =
-    set_excavate_team_reply_result_result_MAX;
-  static const int result_ARRAYSIZE =
-    set_excavate_team_reply_result_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  result_descriptor() {
-    return set_excavate_team_reply_result_descriptor();
-  }
-  static inline const ::std::string& result_Name(result value) {
-    return set_excavate_team_reply_result_Name(value);
-  }
-  static inline bool result_Parse(const ::std::string& name,
-      result* value) {
-    return set_excavate_team_reply_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.set_excavate_team_reply.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::set_excavate_team_reply_result _result() const;
-  inline void set__result(::client_baseserver::set_excavate_team_reply_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.excavate _mine = 2;
   inline bool has__mine() const;
@@ -25400,7 +23818,7 @@ class set_excavate_team_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::excavate* _mine_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -25463,12 +23881,12 @@ class excavate_start_battle_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // required uint32 _rseed = 2;
   inline bool has__rseed() const;
@@ -25512,7 +23930,7 @@ class excavate_start_battle_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _rseed_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero > _hero_bases_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::hero_dyna > _hero_dynas_;
@@ -25576,38 +23994,14 @@ class excavate_end_battle_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef excavate_end_battle_reply_mine_battle_result mine_battle_result;
-  static const mine_battle_result success = excavate_end_battle_reply_mine_battle_result_success;
-  static const mine_battle_result timeout = excavate_end_battle_reply_mine_battle_result_timeout;
-  static inline bool mine_battle_result_IsValid(int value) {
-    return excavate_end_battle_reply_mine_battle_result_IsValid(value);
-  }
-  static const mine_battle_result mine_battle_result_MIN =
-    excavate_end_battle_reply_mine_battle_result_mine_battle_result_MIN;
-  static const mine_battle_result mine_battle_result_MAX =
-    excavate_end_battle_reply_mine_battle_result_mine_battle_result_MAX;
-  static const int mine_battle_result_ARRAYSIZE =
-    excavate_end_battle_reply_mine_battle_result_mine_battle_result_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  mine_battle_result_descriptor() {
-    return excavate_end_battle_reply_mine_battle_result_descriptor();
-  }
-  static inline const ::std::string& mine_battle_result_Name(mine_battle_result value) {
-    return excavate_end_battle_reply_mine_battle_result_Name(value);
-  }
-  static inline bool mine_battle_result_Parse(const ::std::string& name,
-      mine_battle_result* value) {
-    return excavate_end_battle_reply_mine_battle_result_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // optional .client_baseserver.battle_result _result = 1 [default = victory];
+  // optional uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::battle_result _result() const;
-  inline void set__result(::client_baseserver::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.excavate _excavate = 2;
   inline bool has__excavate() const;
@@ -25630,12 +24024,12 @@ class excavate_end_battle_reply : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::client_baseserver::excavate_reward >*
       mutable__reward();
 
-  // optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+  // optional uint32 _mine_battle_result = 4;
   inline bool has__mine_battle_result() const;
   inline void clear__mine_battle_result();
   static const int kMineBattleResultFieldNumber = 4;
-  inline ::client_baseserver::excavate_end_battle_reply_mine_battle_result _mine_battle_result() const;
-  inline void set__mine_battle_result(::client_baseserver::excavate_end_battle_reply_mine_battle_result value);
+  inline ::google::protobuf::uint32 _mine_battle_result() const;
+  inline void set__mine_battle_result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.excavate_end_battle_reply)
  private:
@@ -25651,8 +24045,8 @@ class excavate_end_battle_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::excavate* _excavate_;
-  int _result_;
-  int _mine_battle_result_;
+  ::google::protobuf::uint32 _result_;
+  ::google::protobuf::uint32 _mine_battle_result_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::excavate_reward > _reward_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -25806,42 +24200,14 @@ class excavate_reward : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef excavate_reward_type type;
-  static const type gold = excavate_reward_type_gold;
-  static const type diamond = excavate_reward_type_diamond;
-  static const type item = excavate_reward_type_item;
-  static const type wood = excavate_reward_type_wood;
-  static const type iron = excavate_reward_type_iron;
-  static const type crystal = excavate_reward_type_crystal;
-  static inline bool type_IsValid(int value) {
-    return excavate_reward_type_IsValid(value);
-  }
-  static const type type_MIN =
-    excavate_reward_type_type_MIN;
-  static const type type_MAX =
-    excavate_reward_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    excavate_reward_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return excavate_reward_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return excavate_reward_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return excavate_reward_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.excavate_reward.type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseserver::excavate_reward_type _type() const;
-  inline void set__type(::client_baseserver::excavate_reward_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _team_id = 2;
   inline bool has__team_id() const;
@@ -25879,7 +24245,7 @@ class excavate_reward : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _team_id_;
   ::google::protobuf::uint32 _param1_;
   ::google::protobuf::uint32 _param2_;
@@ -26026,12 +24392,12 @@ class clear_excavate_battle_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.clear_excavate_battle_reply)
  private:
@@ -26042,7 +24408,7 @@ class clear_excavate_battle_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -26105,12 +24471,12 @@ class withdraw_excavate_hero_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.withdraw_excavate_hero_reply)
  private:
@@ -26121,7 +24487,7 @@ class withdraw_excavate_hero_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -26184,12 +24550,12 @@ class draw_excavate_def_rwd_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _draw_vitality = 2;
   inline bool has__draw_vitality() const;
@@ -26209,7 +24575,7 @@ class draw_excavate_def_rwd_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _draw_vitality_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
@@ -26273,12 +24639,12 @@ class drop_excavate_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.excavate_reward _reward = 2;
   inline bool has__reward() const;
@@ -26301,7 +24667,7 @@ class drop_excavate_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::excavate_reward* _reward_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -26364,12 +24730,12 @@ class change_server_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.server_opt_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::server_opt_result _result() const;
-  inline void set__result(::client_baseserver::server_opt_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.server_info _server_info = 2;
   inline int _server_info_size() const;
@@ -26393,7 +24759,7 @@ class change_server_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::server_info > _server_info_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -26573,30 +24939,6 @@ class guild_instance_query : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_instance_query_is_can_jump is_can_jump;
-  static const is_can_jump true = guild_instance_query_is_can_jump_true;
-  static const is_can_jump false = guild_instance_query_is_can_jump_false;
-  static inline bool is_can_jump_IsValid(int value) {
-    return guild_instance_query_is_can_jump_IsValid(value);
-  }
-  static const is_can_jump is_can_jump_MIN =
-    guild_instance_query_is_can_jump_is_can_jump_MIN;
-  static const is_can_jump is_can_jump_MAX =
-    guild_instance_query_is_can_jump_is_can_jump_MAX;
-  static const int is_can_jump_ARRAYSIZE =
-    guild_instance_query_is_can_jump_is_can_jump_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  is_can_jump_descriptor() {
-    return guild_instance_query_is_can_jump_descriptor();
-  }
-  static inline const ::std::string& is_can_jump_Name(is_can_jump value) {
-    return guild_instance_query_is_can_jump_Name(value);
-  }
-  static inline bool is_can_jump_Parse(const ::std::string& name,
-      is_can_jump* value) {
-    return guild_instance_query_is_can_jump_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _current_raid_id = 1;
@@ -26625,12 +24967,12 @@ class guild_instance_query : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _stage_pass() const;
   inline void set__stage_pass(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+  // required uint32 _is_can_jump = 4;
   inline bool has__is_can_jump() const;
   inline void clear__is_can_jump();
   static const int kIsCanJumpFieldNumber = 4;
-  inline ::client_baseserver::guild_instance_query_is_can_jump _is_can_jump() const;
-  inline void set__is_can_jump(::client_baseserver::guild_instance_query_is_can_jump value);
+  inline ::google::protobuf::uint32 _is_can_jump() const;
+  inline void set__is_can_jump(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_instance_query)
  private:
@@ -26648,7 +24990,7 @@ class guild_instance_query : public ::google::protobuf::Message {
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::guild_instance_summary > _summary_;
   ::google::protobuf::uint32 _current_raid_id_;
   ::google::protobuf::uint32 _stage_pass_;
-  int _is_can_jump_;
+  ::google::protobuf::uint32 _is_can_jump_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -26828,30 +25170,6 @@ class guild_instance_detail : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_instance_detail_challenger_status challenger_status;
-  static const challenger_status battle = guild_instance_detail_challenger_status_battle;
-  static const challenger_status prepare = guild_instance_detail_challenger_status_prepare;
-  static inline bool challenger_status_IsValid(int value) {
-    return guild_instance_detail_challenger_status_IsValid(value);
-  }
-  static const challenger_status challenger_status_MIN =
-    guild_instance_detail_challenger_status_challenger_status_MIN;
-  static const challenger_status challenger_status_MAX =
-    guild_instance_detail_challenger_status_challenger_status_MAX;
-  static const int challenger_status_ARRAYSIZE =
-    guild_instance_detail_challenger_status_challenger_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  challenger_status_descriptor() {
-    return guild_instance_detail_challenger_status_descriptor();
-  }
-  static inline const ::std::string& challenger_status_Name(challenger_status value) {
-    return guild_instance_detail_challenger_status_Name(value);
-  }
-  static inline bool challenger_status_Parse(const ::std::string& name,
-      challenger_status* value) {
-    return guild_instance_detail_challenger_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _stage = 1;
@@ -26901,12 +25219,12 @@ class guild_instance_detail : public ::google::protobuf::Message {
   inline ::client_baseserver::guild_challenger* release__challenger();
   inline void set_allocated__challenger(::client_baseserver::guild_challenger* _challenger);
 
-  // optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+  // optional uint32 _challenger_status = 6;
   inline bool has__challenger_status() const;
   inline void clear__challenger_status();
   static const int kChallengerStatusFieldNumber = 6;
-  inline ::client_baseserver::guild_instance_detail_challenger_status _challenger_status() const;
-  inline void set__challenger_status(::client_baseserver::guild_instance_detail_challenger_status value);
+  inline ::google::protobuf::uint32 _challenger_status() const;
+  inline void set__challenger_status(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.guild_instance_detail)
  private:
@@ -26928,7 +25246,7 @@ class guild_instance_detail : public ::google::protobuf::Message {
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _hp_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::guild_instance_record > _record_;
   ::client_baseserver::guild_challenger* _challenger_;
-  int _challenger_status_;
+  ::google::protobuf::uint32 _challenger_status_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -27300,30 +25618,6 @@ class guild_instance_item : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_instance_item_drop_state drop_state;
-  static const drop_state no_apply = guild_instance_item_drop_state_no_apply;
-  static const drop_state apply = guild_instance_item_drop_state_apply;
-  static inline bool drop_state_IsValid(int value) {
-    return guild_instance_item_drop_state_IsValid(value);
-  }
-  static const drop_state drop_state_MIN =
-    guild_instance_item_drop_state_drop_state_MIN;
-  static const drop_state drop_state_MAX =
-    guild_instance_item_drop_state_drop_state_MAX;
-  static const int drop_state_ARRAYSIZE =
-    guild_instance_item_drop_state_drop_state_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  drop_state_descriptor() {
-    return guild_instance_item_drop_state_descriptor();
-  }
-  static inline const ::std::string& drop_state_Name(drop_state value) {
-    return guild_instance_item_drop_state_Name(value);
-  }
-  static inline bool drop_state_Parse(const ::std::string& name,
-      drop_state* value) {
-    return guild_instance_item_drop_state_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _item_id = 1;
@@ -27340,12 +25634,12 @@ class guild_instance_item : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _num() const;
   inline void set__num(::google::protobuf::uint32 value);
 
-  // required .client_baseserver.guild_instance_item.drop_state _state = 3;
+  // required uint32 _state = 3;
   inline bool has__state() const;
   inline void clear__state();
   static const int kStateFieldNumber = 3;
-  inline ::client_baseserver::guild_instance_item_drop_state _state() const;
-  inline void set__state(::client_baseserver::guild_instance_item_drop_state value);
+  inline ::google::protobuf::uint32 _state() const;
+  inline void set__state(::google::protobuf::uint32 value);
 
   // required uint32 _apply_num = 4;
   inline bool has__apply_num() const;
@@ -27380,7 +25674,7 @@ class guild_instance_item : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::uint32 _item_id_;
   ::google::protobuf::uint32 _num_;
-  int _state_;
+  ::google::protobuf::uint32 _state_;
   ::google::protobuf::uint32 _apply_num_;
   ::google::protobuf::uint32 _able_app_count_;
   friend void  protobuf_AddDesc_cb_2eproto();
@@ -27840,12 +26134,12 @@ class split_hero_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional .client_baseserver.hero _hero = 2;
   inline bool has__hero() const;
@@ -27868,7 +26162,7 @@ class split_hero_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::client_baseserver::hero* _hero_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -28299,12 +26593,12 @@ class worldcup_submit_reply : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseserver::result _result() const;
-  inline void set__result(::client_baseserver::result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseserver.worldcup_submit_reply)
  private:
@@ -28315,7 +26609,7 @@ class worldcup_submit_reply : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_cb_2eproto();
   friend void protobuf_AssignDesc_cb_2eproto();
   friend void protobuf_ShutdownFile_cb_2eproto();
@@ -28657,46 +26951,14 @@ class query_ranklist_reply : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef query_ranklist_reply_rank_type rank_type;
-  static const rank_type guildliveness = query_ranklist_reply_rank_type_guildliveness;
-  static const rank_type excavate_rob = query_ranklist_reply_rank_type_excavate_rob;
-  static const rank_type excavate_gold = query_ranklist_reply_rank_type_excavate_gold;
-  static const rank_type excavate_exp = query_ranklist_reply_rank_type_excavate_exp;
-  static const rank_type top_gs = query_ranklist_reply_rank_type_top_gs;
-  static const rank_type full_hero_gs = query_ranklist_reply_rank_type_full_hero_gs;
-  static const rank_type hero_team_gs = query_ranklist_reply_rank_type_hero_team_gs;
-  static const rank_type hero_evo_star = query_ranklist_reply_rank_type_hero_evo_star;
-  static const rank_type hero_arousal = query_ranklist_reply_rank_type_hero_arousal;
-  static const rank_type top_arena = query_ranklist_reply_rank_type_top_arena;
-  static inline bool rank_type_IsValid(int value) {
-    return query_ranklist_reply_rank_type_IsValid(value);
-  }
-  static const rank_type rank_type_MIN =
-    query_ranklist_reply_rank_type_rank_type_MIN;
-  static const rank_type rank_type_MAX =
-    query_ranklist_reply_rank_type_rank_type_MAX;
-  static const int rank_type_ARRAYSIZE =
-    query_ranklist_reply_rank_type_rank_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rank_type_descriptor() {
-    return query_ranklist_reply_rank_type_descriptor();
-  }
-  static inline const ::std::string& rank_type_Name(rank_type value) {
-    return query_ranklist_reply_rank_type_Name(value);
-  }
-  static inline bool rank_type_Parse(const ::std::string& name,
-      rank_type* value) {
-    return query_ranklist_reply_rank_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   inline bool has__rank_type() const;
   inline void clear__rank_type();
   static const int kRankTypeFieldNumber = 1;
-  inline ::client_baseserver::query_ranklist_reply_rank_type _rank_type() const;
-  inline void set__rank_type(::client_baseserver::query_ranklist_reply_rank_type value);
+  inline ::google::protobuf::uint32 _rank_type() const;
+  inline void set__rank_type(::google::protobuf::uint32 value);
 
   // repeated .client_baseserver.ranklist_item _ranklist_item = 2;
   inline int _ranklist_item_size() const;
@@ -28749,7 +27011,7 @@ class query_ranklist_reply : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseserver::ranklist_item > _ranklist_item_;
-  int _rank_type_;
+  ::google::protobuf::uint32 _rank_type_;
   ::google::protobuf::uint32 _self_ranking_;
   ::client_baseserver::ranklist_item* _self_item_;
   ::google::protobuf::uint32 _self_prev_pos_;
@@ -30062,7 +28324,7 @@ inline void CreatedProxies::set_entityid(::google::protobuf::int32 value) {
 
 // login_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool login_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -30073,15 +28335,14 @@ inline void login_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void login_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result login_reply::_result() const {
+inline ::google::protobuf::uint32 login_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.login_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void login_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void login_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.login_reply._result)
@@ -33341,7 +31602,7 @@ inline void system_setting_reply::set_allocated__change(::client_baseserver::sys
 
 // system_setting_change
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool system_setting_change::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -33352,15 +31613,14 @@ inline void system_setting_change::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void system_setting_change::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result system_setting_change::_result() const {
+inline ::google::protobuf::uint32 system_setting_change::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.system_setting_change._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void system_setting_change::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void system_setting_change::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.system_setting_change._result)
@@ -33480,7 +31740,7 @@ inline void system_setting_item::set_allocated_key(::std::string* key) {
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.system_setting_item.key)
 }
 
-// required .client_baseserver.system_setting_item.setting_status value = 2;
+// required uint32 value = 2;
 inline bool system_setting_item::has_value() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -33491,15 +31751,14 @@ inline void system_setting_item::clear_has_value() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void system_setting_item::clear_value() {
-  value_ = 1;
+  value_ = 0u;
   clear_has_value();
 }
-inline ::client_baseserver::system_setting_item_setting_status system_setting_item::value() const {
+inline ::google::protobuf::uint32 system_setting_item::value() const {
   // @@protoc_insertion_point(field_get:client_baseserver.system_setting_item.value)
-  return static_cast< ::client_baseserver::system_setting_item_setting_status >(value_);
+  return value_;
 }
-inline void system_setting_item::set_value(::client_baseserver::system_setting_item_setting_status value) {
-  assert(::client_baseserver::system_setting_item_setting_status_IsValid(value));
+inline void system_setting_item::set_value(::google::protobuf::uint32 value) {
   set_has_value();
   value_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.system_setting_item.value)
@@ -33537,7 +31796,7 @@ inline void global_config::set__hero_split_ending(::google::protobuf::uint32 val
 
 // sdk_login_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool sdk_login_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -33548,15 +31807,14 @@ inline void sdk_login_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void sdk_login_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result sdk_login_reply::_result() const {
+inline ::google::protobuf::uint32 sdk_login_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.sdk_login_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void sdk_login_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void sdk_login_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.sdk_login_reply._result)
@@ -34754,7 +33012,7 @@ inline void activity_bigpackage_reset_reply::set__next_reset_price(::google::pro
 
 // exit_stage_reply
 
-// required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+// required uint32 _result = 1;
 inline bool exit_stage_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -34765,15 +33023,14 @@ inline void exit_stage_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void exit_stage_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::exit_stage_reply_exit_stage_result exit_stage_reply::_result() const {
+inline ::google::protobuf::uint32 exit_stage_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.exit_stage_reply._result)
-  return static_cast< ::client_baseserver::exit_stage_reply_exit_stage_result >(_result_);
+  return _result_;
 }
-inline void exit_stage_reply::set__result(::client_baseserver::exit_stage_reply_exit_stage_result value) {
-  assert(::client_baseserver::exit_stage_reply_exit_stage_result_IsValid(value));
+inline void exit_stage_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.exit_stage_reply._result)
@@ -34865,7 +33122,7 @@ inline void exit_stage_reply::set_allocated__sshop(::client_baseserver::star_sho
 
 // hero_upgrade_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool hero_upgrade_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -34876,15 +33133,14 @@ inline void hero_upgrade_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void hero_upgrade_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result hero_upgrade_reply::_result() const {
+inline ::google::protobuf::uint32 hero_upgrade_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.hero_upgrade_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void hero_upgrade_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void hero_upgrade_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.hero_upgrade_reply._result)
@@ -34965,7 +33221,7 @@ hero_upgrade_reply::mutable__items() {
 
 // equip_synthesis_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool equip_synthesis_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -34976,15 +33232,14 @@ inline void equip_synthesis_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void equip_synthesis_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result equip_synthesis_reply::_result() const {
+inline ::google::protobuf::uint32 equip_synthesis_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.equip_synthesis_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void equip_synthesis_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void equip_synthesis_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.equip_synthesis_reply._result)
@@ -34994,7 +33249,7 @@ inline void equip_synthesis_reply::set__result(::client_baseserver::result value
 
 // wear_equip_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool wear_equip_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35005,15 +33260,14 @@ inline void wear_equip_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void wear_equip_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result wear_equip_reply::_result() const {
+inline ::google::protobuf::uint32 wear_equip_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.wear_equip_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void wear_equip_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void wear_equip_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.wear_equip_reply._result)
@@ -35414,7 +33668,7 @@ star_shop::mutable__star_goods() {
 
 // shop_consume_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool shop_consume_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35425,15 +33679,14 @@ inline void shop_consume_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void shop_consume_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result shop_consume_reply::_result() const {
+inline ::google::protobuf::uint32 shop_consume_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.shop_consume_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void shop_consume_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void shop_consume_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.shop_consume_reply._result)
@@ -35443,7 +33696,7 @@ inline void shop_consume_reply::set__result(::client_baseserver::result value) {
 
 // skill_levelup_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool skill_levelup_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35454,15 +33707,14 @@ inline void skill_levelup_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void skill_levelup_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result skill_levelup_reply::_result() const {
+inline ::google::protobuf::uint32 skill_levelup_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.skill_levelup_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void skill_levelup_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void skill_levelup_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.skill_levelup_reply._result)
@@ -35496,7 +33748,7 @@ inline void skill_levelup_reply::set__gs(::google::protobuf::uint32 value) {
 
 // sell_item_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool sell_item_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35507,15 +33759,14 @@ inline void sell_item_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void sell_item_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result sell_item_reply::_result() const {
+inline ::google::protobuf::uint32 sell_item_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.sell_item_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void sell_item_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void sell_item_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.sell_item_reply._result)
@@ -35525,7 +33776,7 @@ inline void sell_item_reply::set__result(::client_baseserver::result value) {
 
 // fragment_compose_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool fragment_compose_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35536,15 +33787,14 @@ inline void fragment_compose_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void fragment_compose_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result fragment_compose_reply::_result() const {
+inline ::google::protobuf::uint32 fragment_compose_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.fragment_compose_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void fragment_compose_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void fragment_compose_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.fragment_compose_reply._result)
@@ -35554,7 +33804,7 @@ inline void fragment_compose_reply::set__result(::client_baseserver::result valu
 
 // hero_equip_upgrade_reply
 
-// required .client_baseserver.result _result = 1 [default = fail];
+// required uint32 _result = 1;
 inline bool hero_equip_upgrade_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35565,15 +33815,14 @@ inline void hero_equip_upgrade_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void hero_equip_upgrade_reply::clear__result() {
-  _result_ = 1;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result hero_equip_upgrade_reply::_result() const {
+inline ::google::protobuf::uint32 hero_equip_upgrade_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.hero_equip_upgrade_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void hero_equip_upgrade_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void hero_equip_upgrade_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.hero_equip_upgrade_reply._result)
@@ -35624,7 +33873,7 @@ inline void hero_equip_upgrade_reply::set_allocated__hero(::client_baseserver::h
 
 // tutorial_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool tutorial_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35635,15 +33884,14 @@ inline void tutorial_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tutorial_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result tutorial_reply::_result() const {
+inline ::google::protobuf::uint32 tutorial_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tutorial_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void tutorial_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void tutorial_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tutorial_reply._result)
@@ -35729,7 +33977,7 @@ inline void error_info::set_allocated__info(::std::string* _info) {
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.error_info._info)
 }
 
-// optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+// optional uint32 _exit = 2;
 inline bool error_info::has__exit() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -35740,15 +33988,14 @@ inline void error_info::clear_has__exit() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void error_info::clear__exit() {
-  _exit_ = 0;
+  _exit_ = 0u;
   clear_has__exit();
 }
-inline ::client_baseserver::error_info_exit error_info::_exit() const {
+inline ::google::protobuf::uint32 error_info::_exit() const {
   // @@protoc_insertion_point(field_get:client_baseserver.error_info._exit)
-  return static_cast< ::client_baseserver::error_info_exit >(_exit_);
+  return _exit_;
 }
-inline void error_info::set__exit(::client_baseserver::error_info_exit value) {
-  assert(::client_baseserver::error_info_exit_IsValid(value));
+inline void error_info::set__exit(::google::protobuf::uint32 value) {
   set_has__exit();
   _exit_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.error_info._exit)
@@ -35806,7 +34053,7 @@ inline void goods::set__amount(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.goods._amount)
 }
 
-// required .client_baseserver.goods.price_type _type = 3;
+// required uint32 _type = 3;
 inline bool goods::has__type() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -35817,15 +34064,14 @@ inline void goods::clear_has__type() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void goods::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::goods_price_type goods::_type() const {
+inline ::google::protobuf::uint32 goods::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.goods._type)
-  return static_cast< ::client_baseserver::goods_price_type >(_type_);
+  return _type_;
 }
-inline void goods::set__type(::client_baseserver::goods_price_type value) {
-  assert(::client_baseserver::goods_price_type_IsValid(value));
+inline void goods::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.goods._type)
@@ -35883,7 +34129,7 @@ inline void goods::set__is_sale(::google::protobuf::uint32 value) {
 
 // star_goods
 
-// required .client_baseserver.star_goods.box_type _type = 1;
+// required uint32 _type = 1;
 inline bool star_goods::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -35894,21 +34140,20 @@ inline void star_goods::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void star_goods::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::star_goods_box_type star_goods::_type() const {
+inline ::google::protobuf::uint32 star_goods::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.star_goods._type)
-  return static_cast< ::client_baseserver::star_goods_box_type >(_type_);
+  return _type_;
 }
-inline void star_goods::set__type(::client_baseserver::star_goods_box_type value) {
-  assert(::client_baseserver::star_goods_box_type_IsValid(value));
+inline void star_goods::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.star_goods._type)
 }
 
-// required uint32 _amount = 2 [default = 1];
+// required uint32 _amount = 2;
 inline bool star_goods::has__amount() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -35919,7 +34164,7 @@ inline void star_goods::clear_has__amount() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void star_goods::clear__amount() {
-  _amount_ = 1u;
+  _amount_ = 0u;
   clear_has__amount();
 }
 inline ::google::protobuf::uint32 star_goods::_amount() const {
@@ -37430,7 +35675,7 @@ inline void name_card::set__avatar(::google::protobuf::uint32 value) {
 
 // daily_login
 
-// required .client_baseserver.daily_login.dailylogin_status _status = 1;
+// required uint32 _status = 1;
 inline bool daily_login::has__status() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -37441,15 +35686,14 @@ inline void daily_login::clear_has__status() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void daily_login::clear__status() {
-  _status_ = 1;
+  _status_ = 0u;
   clear_has__status();
 }
-inline ::client_baseserver::daily_login_dailylogin_status daily_login::_status() const {
+inline ::google::protobuf::uint32 daily_login::_status() const {
   // @@protoc_insertion_point(field_get:client_baseserver.daily_login._status)
-  return static_cast< ::client_baseserver::daily_login_dailylogin_status >(_status_);
+  return _status_;
 }
-inline void daily_login::set__status(::client_baseserver::daily_login_dailylogin_status value) {
-  assert(::client_baseserver::daily_login_dailylogin_status_IsValid(value));
+inline void daily_login::set__status(::google::protobuf::uint32 value) {
   set_has__status();
   _status_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.daily_login._status)
@@ -37507,7 +35751,7 @@ inline void daily_login::set__last_login_date(::google::protobuf::uint32 value) 
 
 // ask_daily_login_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool ask_daily_login_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -37518,15 +35762,14 @@ inline void ask_daily_login_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void ask_daily_login_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result ask_daily_login_reply::_result() const {
+inline ::google::protobuf::uint32 ask_daily_login_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.ask_daily_login_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void ask_daily_login_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void ask_daily_login_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.ask_daily_login_reply._result)
@@ -37840,7 +36083,7 @@ inline void hero::set__gs(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.hero._gs)
 }
 
-// required .client_baseserver.hero_status _state = 7;
+// required uint32 _state = 7;
 inline bool hero::has__state() const {
   return (_has_bits_[0] & 0x00000040u) != 0;
 }
@@ -37851,15 +36094,14 @@ inline void hero::clear_has__state() {
   _has_bits_[0] &= ~0x00000040u;
 }
 inline void hero::clear__state() {
-  _state_ = 0;
+  _state_ = 0u;
   clear_has__state();
 }
-inline ::client_baseserver::hero_status hero::_state() const {
+inline ::google::protobuf::uint32 hero::_state() const {
   // @@protoc_insertion_point(field_get:client_baseserver.hero._state)
-  return static_cast< ::client_baseserver::hero_status >(_state_);
+  return _state_;
 }
-inline void hero::set__state(::client_baseserver::hero_status value) {
-  assert(::client_baseserver::hero_status_IsValid(value));
+inline void hero::set__state(::google::protobuf::uint32 value) {
   set_has__state();
   _state_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.hero._state)
@@ -38049,7 +36291,7 @@ inline void hero_summary::set__gs(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.hero_summary._gs)
 }
 
-// optional .client_baseserver.hero_status _state = 6;
+// optional uint32 _state = 6;
 inline bool hero_summary::has__state() const {
   return (_has_bits_[0] & 0x00000020u) != 0;
 }
@@ -38060,15 +36302,14 @@ inline void hero_summary::clear_has__state() {
   _has_bits_[0] &= ~0x00000020u;
 }
 inline void hero_summary::clear__state() {
-  _state_ = 0;
+  _state_ = 0u;
   clear_has__state();
 }
-inline ::client_baseserver::hero_status hero_summary::_state() const {
+inline ::google::protobuf::uint32 hero_summary::_state() const {
   // @@protoc_insertion_point(field_get:client_baseserver.hero_summary._state)
-  return static_cast< ::client_baseserver::hero_status >(_state_);
+  return _state_;
 }
-inline void hero_summary::set__state(::client_baseserver::hero_status value) {
-  assert(::client_baseserver::hero_status_IsValid(value));
+inline void hero_summary::set__state(::google::protobuf::uint32 value) {
   set_has__state();
   _state_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.hero_summary._state)
@@ -38302,7 +36543,7 @@ inline void usertask::set__id(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.usertask._id)
 }
 
-// required .client_baseserver.usertask.status _status = 3 [default = working];
+// required uint32 _status = 3;
 inline bool usertask::has__status() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -38313,15 +36554,14 @@ inline void usertask::clear_has__status() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void usertask::clear__status() {
-  _status_ = 1;
+  _status_ = 0u;
   clear_has__status();
 }
-inline ::client_baseserver::usertask_status usertask::_status() const {
+inline ::google::protobuf::uint32 usertask::_status() const {
   // @@protoc_insertion_point(field_get:client_baseserver.usertask._status)
-  return static_cast< ::client_baseserver::usertask_status >(_status_);
+  return _status_;
 }
-inline void usertask::set__status(::client_baseserver::usertask_status value) {
-  assert(::client_baseserver::usertask_status_IsValid(value));
+inline void usertask::set__status(::google::protobuf::uint32 value) {
   set_has__status();
   _status_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.usertask._status)
@@ -38513,7 +36753,7 @@ sweeploot::mutable__items() {
 
 // tavern_record
 
-// required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+// required uint32 _box_type = 1;
 inline bool tavern_record::has__box_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -38524,15 +36764,14 @@ inline void tavern_record::clear_has__box_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tavern_record::clear__box_type() {
-  _box_type_ = 1;
+  _box_type_ = 0u;
   clear_has__box_type();
 }
-inline ::client_baseserver::tavern_record_box_type tavern_record::_box_type() const {
+inline ::google::protobuf::uint32 tavern_record::_box_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tavern_record._box_type)
-  return static_cast< ::client_baseserver::tavern_record_box_type >(_box_type_);
+  return _box_type_;
 }
-inline void tavern_record::set__box_type(::client_baseserver::tavern_record_box_type value) {
-  assert(::client_baseserver::tavern_record_box_type_IsValid(value));
+inline void tavern_record::set__box_type(::google::protobuf::uint32 value) {
   set_has__box_type();
   _box_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tavern_record._box_type)
@@ -38666,33 +36905,31 @@ inline void usermidas::set__today_times(::google::protobuf::uint32 value) {
 
 // trigger_task_reply
 
-// repeated .client_baseserver.result _result = 1;
+// repeated uint32 _result = 1;
 inline int trigger_task_reply::_result_size() const {
   return _result_.size();
 }
 inline void trigger_task_reply::clear__result() {
   _result_.Clear();
 }
-inline ::client_baseserver::result trigger_task_reply::_result(int index) const {
+inline ::google::protobuf::uint32 trigger_task_reply::_result(int index) const {
   // @@protoc_insertion_point(field_get:client_baseserver.trigger_task_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_.Get(index));
+  return _result_.Get(index);
 }
-inline void trigger_task_reply::set__result(int index, ::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void trigger_task_reply::set__result(int index, ::google::protobuf::uint32 value) {
   _result_.Set(index, value);
   // @@protoc_insertion_point(field_set:client_baseserver.trigger_task_reply._result)
 }
-inline void trigger_task_reply::add__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void trigger_task_reply::add__result(::google::protobuf::uint32 value) {
   _result_.Add(value);
   // @@protoc_insertion_point(field_add:client_baseserver.trigger_task_reply._result)
 }
-inline const ::google::protobuf::RepeatedField<int>&
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
 trigger_task_reply::_result() const {
   // @@protoc_insertion_point(field_list:client_baseserver.trigger_task_reply._result)
   return _result_;
 }
-inline ::google::protobuf::RepeatedField<int>*
+inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
 trigger_task_reply::mutable__result() {
   // @@protoc_insertion_point(field_mutable_list:client_baseserver.trigger_task_reply._result)
   return &_result_;
@@ -38702,7 +36939,7 @@ trigger_task_reply::mutable__result() {
 
 // require_rewards_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool require_rewards_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -38713,15 +36950,14 @@ inline void require_rewards_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void require_rewards_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result require_rewards_reply::_result() const {
+inline ::google::protobuf::uint32 require_rewards_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.require_rewards_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void require_rewards_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void require_rewards_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.require_rewards_reply._result)
@@ -38731,33 +36967,31 @@ inline void require_rewards_reply::set__result(::client_baseserver::result value
 
 // trigger_job_reply
 
-// repeated .client_baseserver.result _result = 1;
+// repeated uint32 _result = 1;
 inline int trigger_job_reply::_result_size() const {
   return _result_.size();
 }
 inline void trigger_job_reply::clear__result() {
   _result_.Clear();
 }
-inline ::client_baseserver::result trigger_job_reply::_result(int index) const {
+inline ::google::protobuf::uint32 trigger_job_reply::_result(int index) const {
   // @@protoc_insertion_point(field_get:client_baseserver.trigger_job_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_.Get(index));
+  return _result_.Get(index);
 }
-inline void trigger_job_reply::set__result(int index, ::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void trigger_job_reply::set__result(int index, ::google::protobuf::uint32 value) {
   _result_.Set(index, value);
   // @@protoc_insertion_point(field_set:client_baseserver.trigger_job_reply._result)
 }
-inline void trigger_job_reply::add__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void trigger_job_reply::add__result(::google::protobuf::uint32 value) {
   _result_.Add(value);
   // @@protoc_insertion_point(field_add:client_baseserver.trigger_job_reply._result)
 }
-inline const ::google::protobuf::RepeatedField<int>&
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
 trigger_job_reply::_result() const {
   // @@protoc_insertion_point(field_list:client_baseserver.trigger_job_reply._result)
   return _result_;
 }
-inline ::google::protobuf::RepeatedField<int>*
+inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
 trigger_job_reply::mutable__result() {
   // @@protoc_insertion_point(field_mutable_list:client_baseserver.trigger_job_reply._result)
   return &_result_;
@@ -38767,7 +37001,7 @@ trigger_job_reply::mutable__result() {
 
 // dailyjob_reward
 
-// optional .client_baseserver.dailyjob_reward.type _type = 1;
+// optional uint32 _type = 1;
 inline bool dailyjob_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -38778,15 +37012,14 @@ inline void dailyjob_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void dailyjob_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::dailyjob_reward_type dailyjob_reward::_type() const {
+inline ::google::protobuf::uint32 dailyjob_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.dailyjob_reward._type)
-  return static_cast< ::client_baseserver::dailyjob_reward_type >(_type_);
+  return _type_;
 }
-inline void dailyjob_reward::set__type(::client_baseserver::dailyjob_reward_type value) {
-  assert(::client_baseserver::dailyjob_reward_type_IsValid(value));
+inline void dailyjob_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.dailyjob_reward._type)
@@ -38844,7 +37077,7 @@ inline void dailyjob_reward::set__amount(::google::protobuf::uint32 value) {
 
 // job_rewards_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool job_rewards_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -38855,15 +37088,14 @@ inline void job_rewards_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void job_rewards_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result job_rewards_reply::_result() const {
+inline ::google::protobuf::uint32 job_rewards_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.job_rewards_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void job_rewards_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void job_rewards_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.job_rewards_reply._result)
@@ -38997,7 +37229,7 @@ tavern_draw_reply::mutable__smash_idx() {
 
 // reset_elite_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool reset_elite_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -39008,15 +37240,14 @@ inline void reset_elite_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void reset_elite_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result reset_elite_reply::_result() const {
+inline ::google::protobuf::uint32 reset_elite_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.reset_elite_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void reset_elite_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void reset_elite_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.reset_elite_reply._result)
@@ -39269,7 +37500,7 @@ inline void sync_skill_stren_reply::set_allocated__skill_level_up(::client_bases
 
 // hero_evolve_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool hero_evolve_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -39280,15 +37511,14 @@ inline void hero_evolve_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void hero_evolve_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result hero_evolve_reply::_result() const {
+inline ::google::protobuf::uint32 hero_evolve_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.hero_evolve_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void hero_evolve_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void hero_evolve_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.hero_evolve_reply._result)
@@ -40442,7 +38672,7 @@ apply_opponent::mutable__oppos() {
 
 // start_battle
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool start_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -40453,15 +38683,14 @@ inline void start_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void start_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result start_battle::_result() const {
+inline ::google::protobuf::uint32 start_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.start_battle._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void start_battle::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void start_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.start_battle._result)
@@ -40579,7 +38808,7 @@ inline void start_battle::set__is_robot(::google::protobuf::uint32 value) {
 
 // end_battle
 
-// required .client_baseserver.battle_result _result = 1;
+// required uint32 _result = 1;
 inline bool end_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -40590,15 +38819,14 @@ inline void end_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void end_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result end_battle::_result() const {
+inline ::google::protobuf::uint32 end_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.end_battle._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void end_battle::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void end_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.end_battle._result)
@@ -40680,7 +38908,7 @@ inline void end_battle::set__cur_rank(::google::protobuf::uint32 value) {
 
 // set_lineup
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool set_lineup::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -40691,15 +38919,14 @@ inline void set_lineup::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_lineup::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result set_lineup::_result() const {
+inline ::google::protobuf::uint32 set_lineup::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.set_lineup._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void set_lineup::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void set_lineup::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.set_lineup._result)
@@ -41234,7 +39461,7 @@ inline void pvp_record::set__oppo_robot(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.pvp_record._oppo_robot)
 }
 
-// optional .client_baseserver.battle_result _result = 13 [default = victory];
+// optional uint32 _result = 13;
 inline bool pvp_record::has__result() const {
   return (_has_bits_[0] & 0x00001000u) != 0;
 }
@@ -41245,15 +39472,14 @@ inline void pvp_record::clear_has__result() {
   _has_bits_[0] &= ~0x00001000u;
 }
 inline void pvp_record::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result pvp_record::_result() const {
+inline ::google::protobuf::uint32 pvp_record::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.pvp_record._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void pvp_record::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void pvp_record::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.pvp_record._result)
@@ -41653,7 +39879,7 @@ inline void query_oppo_info::set_allocated__user(::client_baseserver::ladder_opp
 
 // clear_battle_cd
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool clear_battle_cd::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -41664,15 +39890,14 @@ inline void clear_battle_cd::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void clear_battle_cd::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result clear_battle_cd::_result() const {
+inline ::google::protobuf::uint32 clear_battle_cd::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.clear_battle_cd._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void clear_battle_cd::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void clear_battle_cd::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.clear_battle_cd._result)
@@ -41864,7 +40089,7 @@ inline void ladder_record::set__bt_time(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.ladder_record._bt_time)
 }
 
-// required .client_baseserver.battle_result _bt_result = 5;
+// required uint32 _bt_result = 5;
 inline bool ladder_record::has__bt_result() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -41875,15 +40100,14 @@ inline void ladder_record::clear_has__bt_result() {
   _has_bits_[0] &= ~0x00000010u;
 }
 inline void ladder_record::clear__bt_result() {
-  _bt_result_ = 0;
+  _bt_result_ = 0u;
   clear_has__bt_result();
 }
-inline ::client_baseserver::battle_result ladder_record::_bt_result() const {
+inline ::google::protobuf::uint32 ladder_record::_bt_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.ladder_record._bt_result)
-  return static_cast< ::client_baseserver::battle_result >(_bt_result_);
+  return _bt_result_;
 }
-inline void ladder_record::set__bt_result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void ladder_record::set__bt_result(::google::protobuf::uint32 value) {
   set_has__bt_result();
   _bt_result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.ladder_record._bt_result)
@@ -42112,7 +40336,7 @@ ladder_opponent::mutable__heros() {
 
 // ladder_rank_reward
 
-// required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+// required uint32 _type = 1;
 inline bool ladder_rank_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -42123,15 +40347,14 @@ inline void ladder_rank_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void ladder_rank_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::ladder_rank_reward_reward_type ladder_rank_reward::_type() const {
+inline ::google::protobuf::uint32 ladder_rank_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.ladder_rank_reward._type)
-  return static_cast< ::client_baseserver::ladder_rank_reward_reward_type >(_type_);
+  return _type_;
 }
-inline void ladder_rank_reward::set__type(::client_baseserver::ladder_rank_reward_reward_type value) {
-  assert(::client_baseserver::ladder_rank_reward_reward_type_IsValid(value));
+inline void ladder_rank_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.ladder_rank_reward._type)
@@ -42223,7 +40446,7 @@ draw_rank_reward::mutable__rewards() {
 
 // buy_battle_chance
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool buy_battle_chance::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -42234,15 +40457,14 @@ inline void buy_battle_chance::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void buy_battle_chance::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result buy_battle_chance::_result() const {
+inline ::google::protobuf::uint32 buy_battle_chance::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.buy_battle_chance._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void buy_battle_chance::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void buy_battle_chance::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.buy_battle_chance._result)
@@ -42276,7 +40498,7 @@ inline void buy_battle_chance::set__buy_times(::google::protobuf::uint32 value) 
 
 // set_name_reply
 
-// required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool set_name_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -42287,15 +40509,14 @@ inline void set_name_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_name_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::set_name_reply_set_name_result set_name_reply::_result() const {
+inline ::google::protobuf::uint32 set_name_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.set_name_reply._result)
-  return static_cast< ::client_baseserver::set_name_reply_set_name_result >(_result_);
+  return _result_;
 }
-inline void set_name_reply::set__result(::client_baseserver::set_name_reply_set_name_result value) {
-  assert(::client_baseserver::set_name_reply_set_name_result_IsValid(value));
+inline void set_name_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.set_name_reply._result)
@@ -42305,7 +40526,7 @@ inline void set_name_reply::set__result(::client_baseserver::set_name_reply_set_
 
 // set_avatar_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool set_avatar_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -42316,15 +40537,14 @@ inline void set_avatar_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_avatar_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result set_avatar_reply::_result() const {
+inline ::google::protobuf::uint32 set_avatar_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.set_avatar_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void set_avatar_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void set_avatar_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.set_avatar_reply._result)
@@ -42562,7 +40782,7 @@ midas_reply::mutable__acquire() {
 
 // open_shop_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool open_shop_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -42573,15 +40793,14 @@ inline void open_shop_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void open_shop_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result open_shop_reply::_result() const {
+inline ::google::protobuf::uint32 open_shop_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.open_shop_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void open_shop_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void open_shop_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.open_shop_reply._result)
@@ -43436,7 +41655,7 @@ inline void tbc_oppo_hero::set_allocated__dyna(::client_baseserver::hero_dyna* _
 
 // tbc_reward
 
-// required .client_baseserver.tbc_reward.type _type = 1;
+// required uint32 _type = 1;
 inline bool tbc_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -43447,15 +41666,14 @@ inline void tbc_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::tbc_reward_type tbc_reward::_type() const {
+inline ::google::protobuf::uint32 tbc_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_reward._type)
-  return static_cast< ::client_baseserver::tbc_reward_type >(_type_);
+  return _type_;
 }
-inline void tbc_reward::set__type(::client_baseserver::tbc_reward_type value) {
-  assert(::client_baseserver::tbc_reward_type_IsValid(value));
+inline void tbc_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_reward._type)
@@ -43513,7 +41731,7 @@ inline void tbc_reward::set__param2(::google::protobuf::uint32 value) {
 
 // tbc_stage
 
-// required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+// required uint32 _status = 1;
 inline bool tbc_stage::has__status() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -43524,15 +41742,14 @@ inline void tbc_stage::clear_has__status() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_stage::clear__status() {
-  _status_ = 0;
+  _status_ = 0u;
   clear_has__status();
 }
-inline ::client_baseserver::tbc_stage_status tbc_stage::_status() const {
+inline ::google::protobuf::uint32 tbc_stage::_status() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_stage._status)
-  return static_cast< ::client_baseserver::tbc_stage_status >(_status_);
+  return _status_;
 }
-inline void tbc_stage::set__status(::client_baseserver::tbc_stage_status value) {
-  assert(::client_baseserver::tbc_stage_status_IsValid(value));
+inline void tbc_stage::set__status(::google::protobuf::uint32 value) {
   set_has__status();
   _status_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_stage._status)
@@ -43869,7 +42086,7 @@ inline void tbc_query_oppo::set__is_robot(::google::protobuf::uint32 value) {
 
 // tbc_start_battle
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool tbc_start_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -43880,15 +42097,14 @@ inline void tbc_start_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_start_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result tbc_start_battle::_result() const {
+inline ::google::protobuf::uint32 tbc_start_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_start_battle._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void tbc_start_battle::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void tbc_start_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_start_battle._result)
@@ -43922,7 +42138,7 @@ inline void tbc_start_battle::set__rseed(::google::protobuf::uint32 value) {
 
 // tbc_end_battle
 
-// required .client_baseserver.battle_result _result = 1 [default = victory];
+// required uint32 _result = 1;
 inline bool tbc_end_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -43933,15 +42149,14 @@ inline void tbc_end_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_end_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result tbc_end_battle::_result() const {
+inline ::google::protobuf::uint32 tbc_end_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_end_battle._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void tbc_end_battle::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void tbc_end_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_end_battle._result)
@@ -43951,7 +42166,7 @@ inline void tbc_end_battle::set__result(::client_baseserver::battle_result value
 
 // tbc_reset
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool tbc_reset::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -43962,15 +42177,14 @@ inline void tbc_reset::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_reset::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result tbc_reset::_result() const {
+inline ::google::protobuf::uint32 tbc_reset::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_reset._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void tbc_reset::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void tbc_reset::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_reset._result)
@@ -44021,7 +42235,7 @@ inline void tbc_reset::set_allocated__info(::client_baseserver::tbc_info* _info)
 
 // tbc_draw_reward
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool tbc_draw_reward::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -44032,15 +42246,14 @@ inline void tbc_draw_reward::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_draw_reward::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result tbc_draw_reward::_result() const {
+inline ::google::protobuf::uint32 tbc_draw_reward::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.tbc_draw_reward._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void tbc_draw_reward::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void tbc_draw_reward::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.tbc_draw_reward._result)
@@ -44192,7 +42405,7 @@ inline void sys_mail::set__id(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.sys_mail._id)
 }
 
-// required .client_baseserver.sys_mail.status _status = 2;
+// required uint32 _status = 2;
 inline bool sys_mail::has__status() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -44203,15 +42416,14 @@ inline void sys_mail::clear_has__status() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void sys_mail::clear__status() {
-  _status_ = 0;
+  _status_ = 0u;
   clear_has__status();
 }
-inline ::client_baseserver::sys_mail_status sys_mail::_status() const {
+inline ::google::protobuf::uint32 sys_mail::_status() const {
   // @@protoc_insertion_point(field_get:client_baseserver.sys_mail._status)
-  return static_cast< ::client_baseserver::sys_mail_status >(_status_);
+  return _status_;
 }
-inline void sys_mail::set__status(::client_baseserver::sys_mail_status value) {
-  assert(::client_baseserver::sys_mail_status_IsValid(value));
+inline void sys_mail::set__status(::google::protobuf::uint32 value) {
   set_has__status();
   _status_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.sys_mail._status)
@@ -44866,7 +43078,7 @@ inline void mail_param::set__idx(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.mail_param._idx)
 }
 
-// optional .client_baseserver.mail_param.mail_param_type _type = 2;
+// optional uint32 _type = 2;
 inline bool mail_param::has__type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -44877,15 +43089,14 @@ inline void mail_param::clear_has__type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void mail_param::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::mail_param_mail_param_type mail_param::_type() const {
+inline ::google::protobuf::uint32 mail_param::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.mail_param._type)
-  return static_cast< ::client_baseserver::mail_param_mail_param_type >(_type_);
+  return _type_;
 }
-inline void mail_param::set__type(::client_baseserver::mail_param_mail_param_type value) {
-  assert(::client_baseserver::mail_param_mail_param_type_IsValid(value));
+inline void mail_param::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.mail_param._type)
@@ -44971,7 +43182,7 @@ inline void mail_param::set_allocated__value(::std::string* _value) {
 
 // user_point
 
-// required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+// required uint32 _type = 1;
 inline bool user_point::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -44982,15 +43193,14 @@ inline void user_point::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void user_point::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::user_point_user_point_type user_point::_type() const {
+inline ::google::protobuf::uint32 user_point::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.user_point._type)
-  return static_cast< ::client_baseserver::user_point_user_point_type >(_type_);
+  return _type_;
 }
-inline void user_point::set__type(::client_baseserver::user_point_user_point_type value) {
-  assert(::client_baseserver::user_point_user_point_type_IsValid(value));
+inline void user_point::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.user_point._type)
@@ -45024,7 +43234,7 @@ inline void user_point::set__value(::google::protobuf::uint32 value) {
 
 // read_mail_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool read_mail_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45035,15 +43245,14 @@ inline void read_mail_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void read_mail_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result read_mail_reply::_result() const {
+inline ::google::protobuf::uint32 read_mail_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.read_mail_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void read_mail_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void read_mail_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.read_mail_reply._result)
@@ -45053,7 +43262,7 @@ inline void read_mail_reply::set__result(::client_baseserver::result value) {
 
 // get_vip_gift_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool get_vip_gift_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45064,15 +43273,14 @@ inline void get_vip_gift_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void get_vip_gift_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result get_vip_gift_reply::_result() const {
+inline ::google::protobuf::uint32 get_vip_gift_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.get_vip_gift_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void get_vip_gift_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void get_vip_gift_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.get_vip_gift_reply._result)
@@ -45476,7 +43684,7 @@ chat_blacklist::mutable__chat_blacklist_user() {
 
 // chat_broad_say
 
-// optional .client_baseserver.result _result = 1;
+// optional uint32 _result = 1;
 inline bool chat_broad_say::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45487,21 +43695,20 @@ inline void chat_broad_say::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_broad_say::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result chat_broad_say::_result() const {
+inline ::google::protobuf::uint32 chat_broad_say::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_broad_say._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void chat_broad_say::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void chat_broad_say::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_broad_say._result)
 }
 
-// optional .client_baseserver.chat_channel _channel = 2;
+// optional uint32 _channel = 2;
 inline bool chat_broad_say::has__channel() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -45512,15 +43719,14 @@ inline void chat_broad_say::clear_has__channel() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void chat_broad_say::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseserver::chat_channel chat_broad_say::_channel() const {
+inline ::google::protobuf::uint32 chat_broad_say::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_broad_say._channel)
-  return static_cast< ::client_baseserver::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_broad_say::set__channel(::client_baseserver::chat_channel value) {
-  assert(::client_baseserver::chat_channel_IsValid(value));
+inline void chat_broad_say::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_broad_say._channel)
@@ -45560,7 +43766,7 @@ chat_broad_say::mutable__contents() {
 
 // chat_say
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool chat_say::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45571,21 +43777,20 @@ inline void chat_say::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_say::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result chat_say::_result() const {
+inline ::google::protobuf::uint32 chat_say::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_say._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void chat_say::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void chat_say::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_say._result)
 }
 
-// required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+// required uint32 _channel = 2;
 inline bool chat_say::has__channel() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -45596,15 +43801,14 @@ inline void chat_say::clear_has__channel() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void chat_say::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseserver::chat_channel chat_say::_channel() const {
+inline ::google::protobuf::uint32 chat_say::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_say._channel)
-  return static_cast< ::client_baseserver::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_say::set__channel(::client_baseserver::chat_channel value) {
-  assert(::client_baseserver::chat_channel_IsValid(value));
+inline void chat_say::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_say._channel)
@@ -45644,7 +43848,7 @@ chat_say::mutable__contents() {
 
 // chat_fresh
 
-// required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+// required uint32 _channel = 1;
 inline bool chat_fresh::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45655,15 +43859,14 @@ inline void chat_fresh::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_fresh::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseserver::chat_channel chat_fresh::_channel() const {
+inline ::google::protobuf::uint32 chat_fresh::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_fresh._channel)
-  return static_cast< ::client_baseserver::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_fresh::set__channel(::client_baseserver::chat_channel value) {
-  assert(::client_baseserver::chat_channel_IsValid(value));
+inline void chat_fresh::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_fresh._channel)
@@ -45703,7 +43906,7 @@ chat_fresh::mutable__contents() {
 
 // chat_fetch
 
-// required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+// required uint32 _channel = 1;
 inline bool chat_fetch::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45714,15 +43917,14 @@ inline void chat_fetch::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_fetch::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseserver::chat_channel chat_fetch::_channel() const {
+inline ::google::protobuf::uint32 chat_fetch::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_fetch._channel)
-  return static_cast< ::client_baseserver::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_fetch::set__channel(::client_baseserver::chat_channel value) {
-  assert(::client_baseserver::chat_channel_IsValid(value));
+inline void chat_fetch::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_fetch._channel)
@@ -45797,7 +43999,7 @@ inline void chat_fetch::set_allocated__accessory(::client_baseserver::chat_acc* 
 
 // chat_acc
 
-// required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+// required uint32 _type = 1;
 inline bool chat_acc::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -45808,15 +44010,14 @@ inline void chat_acc::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_acc::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::chat_acc_chat_acc_t chat_acc::_type() const {
+inline ::google::protobuf::uint32 chat_acc::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_acc._type)
-  return static_cast< ::client_baseserver::chat_acc_chat_acc_t >(_type_);
+  return _type_;
 }
-inline void chat_acc::set__type(::client_baseserver::chat_acc_chat_acc_t value) {
-  assert(::client_baseserver::chat_acc_chat_acc_t_IsValid(value));
+inline void chat_acc::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_acc._type)
@@ -46249,7 +44450,7 @@ inline void chat_content::set_allocated__content(::std::string* _content) {
 
 // chat_add_bl
 
-// required .client_baseserver.result _ret = 1;
+// required uint32 _ret = 1;
 inline bool chat_add_bl::has__ret() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -46260,15 +44461,14 @@ inline void chat_add_bl::clear_has__ret() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_add_bl::clear__ret() {
-  _ret_ = 0;
+  _ret_ = 0u;
   clear_has__ret();
 }
-inline ::client_baseserver::result chat_add_bl::_ret() const {
+inline ::google::protobuf::uint32 chat_add_bl::_ret() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_add_bl._ret)
-  return static_cast< ::client_baseserver::result >(_ret_);
+  return _ret_;
 }
-inline void chat_add_bl::set__ret(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void chat_add_bl::set__ret(::google::protobuf::uint32 value) {
   set_has__ret();
   _ret_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_add_bl._ret)
@@ -46278,7 +44478,7 @@ inline void chat_add_bl::set__ret(::client_baseserver::result value) {
 
 // chat_del_bl
 
-// required .client_baseserver.result _ret = 1;
+// required uint32 _ret = 1;
 inline bool chat_del_bl::has__ret() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -46289,15 +44489,14 @@ inline void chat_del_bl::clear_has__ret() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_del_bl::clear__ret() {
-  _ret_ = 0;
+  _ret_ = 0u;
   clear_has__ret();
 }
-inline ::client_baseserver::result chat_del_bl::_ret() const {
+inline ::google::protobuf::uint32 chat_del_bl::_ret() const {
   // @@protoc_insertion_point(field_get:client_baseserver.chat_del_bl._ret)
-  return static_cast< ::client_baseserver::result >(_ret_);
+  return _ret_;
 }
-inline void chat_del_bl::set__ret(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void chat_del_bl::set__ret(::google::protobuf::uint32 value) {
   set_has__ret();
   _ret_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.chat_del_bl._ret)
@@ -46489,7 +44688,7 @@ inline void user_guild::set_allocated__name(::std::string* _name) {
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.user_guild._name)
 }
 
-// optional .client_baseserver.guild_job_t _job = 3 [default = member];
+// optional uint32 _job = 3;
 inline bool user_guild::has__job() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -46500,15 +44699,14 @@ inline void user_guild::clear_has__job() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void user_guild::clear__job() {
-  _job_ = 2;
+  _job_ = 0u;
   clear_has__job();
 }
-inline ::client_baseserver::guild_job_t user_guild::_job() const {
+inline ::google::protobuf::uint32 user_guild::_job() const {
   // @@protoc_insertion_point(field_get:client_baseserver.user_guild._job)
-  return static_cast< ::client_baseserver::guild_job_t >(_job_);
+  return _job_;
 }
-inline void user_guild::set__job(::client_baseserver::guild_job_t value) {
-  assert(::client_baseserver::guild_job_t_IsValid(value));
+inline void user_guild::set__job(::google::protobuf::uint32 value) {
   set_has__job();
   _job_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.user_guild._job)
@@ -46818,45 +45016,45 @@ inline void guild_reply::set_allocated__join_confirm(::client_baseserver::guild_
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_reply._join_confirm)
 }
 
-// optional .client_baseserver.guild_leave _leave = 7;
-inline bool guild_reply::has__leave() const {
+// optional .client_baseserver.guild_leave _guild_leave = 7;
+inline bool guild_reply::has__guild_leave() const {
   return (_has_bits_[0] & 0x00000040u) != 0;
 }
-inline void guild_reply::set_has__leave() {
+inline void guild_reply::set_has__guild_leave() {
   _has_bits_[0] |= 0x00000040u;
 }
-inline void guild_reply::clear_has__leave() {
+inline void guild_reply::clear_has__guild_leave() {
   _has_bits_[0] &= ~0x00000040u;
 }
-inline void guild_reply::clear__leave() {
-  if (_leave_ != NULL) _leave_->::client_baseserver::guild_leave::Clear();
-  clear_has__leave();
+inline void guild_reply::clear__guild_leave() {
+  if (_guild_leave_ != NULL) _guild_leave_->::client_baseserver::guild_leave::Clear();
+  clear_has__guild_leave();
 }
-inline const ::client_baseserver::guild_leave& guild_reply::_leave() const {
-  // @@protoc_insertion_point(field_get:client_baseserver.guild_reply._leave)
-  return _leave_ != NULL ? *_leave_ : *default_instance_->_leave_;
+inline const ::client_baseserver::guild_leave& guild_reply::_guild_leave() const {
+  // @@protoc_insertion_point(field_get:client_baseserver.guild_reply._guild_leave)
+  return _guild_leave_ != NULL ? *_guild_leave_ : *default_instance_->_guild_leave_;
 }
-inline ::client_baseserver::guild_leave* guild_reply::mutable__leave() {
-  set_has__leave();
-  if (_leave_ == NULL) _leave_ = new ::client_baseserver::guild_leave;
-  // @@protoc_insertion_point(field_mutable:client_baseserver.guild_reply._leave)
-  return _leave_;
+inline ::client_baseserver::guild_leave* guild_reply::mutable__guild_leave() {
+  set_has__guild_leave();
+  if (_guild_leave_ == NULL) _guild_leave_ = new ::client_baseserver::guild_leave;
+  // @@protoc_insertion_point(field_mutable:client_baseserver.guild_reply._guild_leave)
+  return _guild_leave_;
 }
-inline ::client_baseserver::guild_leave* guild_reply::release__leave() {
-  clear_has__leave();
-  ::client_baseserver::guild_leave* temp = _leave_;
-  _leave_ = NULL;
+inline ::client_baseserver::guild_leave* guild_reply::release__guild_leave() {
+  clear_has__guild_leave();
+  ::client_baseserver::guild_leave* temp = _guild_leave_;
+  _guild_leave_ = NULL;
   return temp;
 }
-inline void guild_reply::set_allocated__leave(::client_baseserver::guild_leave* _leave) {
-  delete _leave_;
-  _leave_ = _leave;
-  if (_leave) {
-    set_has__leave();
+inline void guild_reply::set_allocated__guild_leave(::client_baseserver::guild_leave* _guild_leave) {
+  delete _guild_leave_;
+  _guild_leave_ = _guild_leave;
+  if (_guild_leave) {
+    set_has__guild_leave();
   } else {
-    clear_has__leave();
+    clear_has__guild_leave();
   }
-  // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_reply._leave)
+  // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_reply._guild_leave)
 }
 
 // optional .client_baseserver.guild_kick _kick = 8;
@@ -47310,7 +45508,7 @@ inline void guild_reply::set_allocated__query_hh_detail(::client_baseserver::gui
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_reply._query_hh_detail)
 }
 
-// required .client_baseserver.result _result = 19 [default = success];
+// required uint32 _result = 19;
 inline bool guild_reply::has__result() const {
   return (_has_bits_[0] & 0x00040000u) != 0;
 }
@@ -47321,15 +45519,14 @@ inline void guild_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00040000u;
 }
 inline void guild_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_reply::_result() const {
+inline ::google::protobuf::uint32 guild_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_reply._result)
@@ -48077,7 +46274,7 @@ inline void guild_reply::set_allocated__send_mail_reply(::client_baseserver::gui
 
 // guild_send_mail
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_send_mail::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -48088,15 +46285,14 @@ inline void guild_send_mail::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_send_mail::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_send_mail::_result() const {
+inline ::google::protobuf::uint32 guild_send_mail::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_send_mail._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_send_mail::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_send_mail::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_send_mail._result)
@@ -48106,7 +46302,7 @@ inline void guild_send_mail::set__result(::client_baseserver::result value) {
 
 // guild_set_jump
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_set_jump::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -48117,15 +46313,14 @@ inline void guild_set_jump::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_set_jump::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_set_jump::_result() const {
+inline ::google::protobuf::uint32 guild_set_jump::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_set_jump._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_set_jump::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_set_jump::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_set_jump._result)
@@ -48135,7 +46330,7 @@ inline void guild_set_jump::set__result(::client_baseserver::result value) {
 
 // guild_instance_prepare
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_instance_prepare::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -48146,15 +46341,14 @@ inline void guild_instance_prepare::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_instance_prepare::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_instance_prepare::_result() const {
+inline ::google::protobuf::uint32 guild_instance_prepare::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_prepare._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_instance_prepare::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_instance_prepare::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_prepare._result)
@@ -48905,7 +47099,7 @@ guild_members::mutable__guild_member() {
 
 // guild_jump
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_jump::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -48916,15 +47110,14 @@ inline void guild_jump::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_jump::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_jump::_result() const {
+inline ::google::protobuf::uint32 guild_jump::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_jump._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_jump::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_jump::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_jump._result)
@@ -49364,7 +47557,7 @@ guild_instance_damage::mutable__damages() {
 
 // guild_drop_give
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_drop_give::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -49375,15 +47568,14 @@ inline void guild_drop_give::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_drop_give::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_drop_give::_result() const {
+inline ::google::protobuf::uint32 guild_drop_give::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_drop_give._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_drop_give::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_drop_give::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_drop_give._result)
@@ -49679,7 +47871,7 @@ guild_drop_info::mutable__items() {
 
 // guild_instance_apply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_instance_apply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -49690,15 +47882,14 @@ inline void guild_instance_apply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_instance_apply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_instance_apply::_result() const {
+inline ::google::protobuf::uint32 guild_instance_apply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_apply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_instance_apply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_instance_apply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_apply._result)
@@ -50141,7 +48332,7 @@ inline void guild_instance_end_down::set_allocated__summary(::client_baseserver:
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_instance_end_down._summary)
 }
 
-// required .client_baseserver.battle_result _result = 2;
+// required uint32 _result = 2;
 inline bool guild_instance_end_down::has__result() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -50152,15 +48343,14 @@ inline void guild_instance_end_down::clear_has__result() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_instance_end_down::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result guild_instance_end_down::_result() const {
+inline ::google::protobuf::uint32 guild_instance_end_down::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_end_down._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void guild_instance_end_down::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void guild_instance_end_down::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_end_down._result)
@@ -50460,7 +48650,7 @@ inline void break_history::set_allocated__old_summary(::client_baseserver::user_
 
 // guild_instance_open
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_instance_open::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -50471,15 +48661,14 @@ inline void guild_instance_open::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_instance_open::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_instance_open::_result() const {
+inline ::google::protobuf::uint32 guild_instance_open::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_open._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_instance_open::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_instance_open::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_open._result)
@@ -50537,7 +48726,7 @@ inline void guild_instance_open::set__left_time(::google::protobuf::uint32 value
 
 // guild_create
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_create::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -50548,15 +48737,14 @@ inline void guild_create::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_create::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_create::_result() const {
+inline ::google::protobuf::uint32 guild_create::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_create._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_create::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_create::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_create._result)
@@ -50607,7 +48795,7 @@ inline void guild_create::set_allocated__guild_info(::client_baseserver::guild_i
 
 // guild_dismiss
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_dismiss::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -50618,15 +48806,14 @@ inline void guild_dismiss::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_dismiss::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_dismiss::_result() const {
+inline ::google::protobuf::uint32 guild_dismiss::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_dismiss._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_dismiss::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_dismiss::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_dismiss._result)
@@ -51013,7 +49200,7 @@ inline void guild_summary::set_allocated__slogan(::std::string* _slogan) {
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_summary._slogan)
 }
 
-// required .client_baseserver.guild_join_t _join_type = 5;
+// required uint32 _join_type = 5;
 inline bool guild_summary::has__join_type() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -51024,15 +49211,14 @@ inline void guild_summary::clear_has__join_type() {
   _has_bits_[0] &= ~0x00000010u;
 }
 inline void guild_summary::clear__join_type() {
-  _join_type_ = 1;
+  _join_type_ = 0u;
   clear_has__join_type();
 }
-inline ::client_baseserver::guild_join_t guild_summary::_join_type() const {
+inline ::google::protobuf::uint32 guild_summary::_join_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_summary._join_type)
-  return static_cast< ::client_baseserver::guild_join_t >(_join_type_);
+  return _join_type_;
 }
-inline void guild_summary::set__join_type(::client_baseserver::guild_join_t value) {
-  assert(::client_baseserver::guild_join_t_IsValid(value));
+inline void guild_summary::set__join_type(::google::protobuf::uint32 value) {
   set_has__join_type();
   _join_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_summary._join_type)
@@ -51268,7 +49454,7 @@ inline void guild_member::set_allocated__summary(::client_baseserver::user_summa
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_member._summary)
 }
 
-// required .client_baseserver.guild_job_t _job = 3;
+// required uint32 _job = 3;
 inline bool guild_member::has__job() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -51279,15 +49465,14 @@ inline void guild_member::clear_has__job() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void guild_member::clear__job() {
-  _job_ = 1;
+  _job_ = 0u;
   clear_has__job();
 }
-inline ::client_baseserver::guild_job_t guild_member::_job() const {
+inline ::google::protobuf::uint32 guild_member::_job() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_member._job)
-  return static_cast< ::client_baseserver::guild_job_t >(_job_);
+  return _job_;
 }
-inline void guild_member::set__job(::client_baseserver::guild_job_t value) {
-  assert(::client_baseserver::guild_job_t_IsValid(value));
+inline void guild_member::set__job(::google::protobuf::uint32 value) {
   set_has__job();
   _job_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_member._job)
@@ -51468,7 +49653,7 @@ guild_list::mutable__guilds() {
   return &_guilds_;
 }
 
-// required .client_baseserver.result _result = 2 [default = success];
+// required uint32 _result = 2;
 inline bool guild_list::has__result() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -51479,15 +49664,14 @@ inline void guild_list::clear_has__result() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_list::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_list::_result() const {
+inline ::google::protobuf::uint32 guild_list::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_list._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_list::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_list::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_list._result)
@@ -51562,7 +49746,7 @@ inline void guild_search::set_allocated__guilds(::client_baseserver::guild_summa
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_search._guilds)
 }
 
-// required .client_baseserver.result _result = 2 [default = success];
+// required uint32 _result = 2;
 inline bool guild_search::has__result() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -51573,15 +49757,14 @@ inline void guild_search::clear_has__result() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_search::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_search::_result() const {
+inline ::google::protobuf::uint32 guild_search::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_search._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_search::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_search::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_search._result)
@@ -51615,7 +49798,7 @@ inline void guild_search::set__create_cost(::google::protobuf::uint32 value) {
 
 // guild_join
 
-// required .client_baseserver.guild_join.join_result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_join::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -51626,15 +49809,14 @@ inline void guild_join::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_join::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::guild_join_join_result guild_join::_result() const {
+inline ::google::protobuf::uint32 guild_join::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_join._result)
-  return static_cast< ::client_baseserver::guild_join_join_result >(_result_);
+  return _result_;
 }
-inline void guild_join::set__result(::client_baseserver::guild_join_join_result value) {
-  assert(::client_baseserver::guild_join_join_result_IsValid(value));
+inline void guild_join::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_join._result)
@@ -51809,7 +49991,7 @@ inline void guild_join::set_allocated__fail_reason(::std::string* _fail_reason) 
 
 // guild_join_confirm
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_join_confirm::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -51820,15 +50002,14 @@ inline void guild_join_confirm::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_join_confirm::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_join_confirm::_result() const {
+inline ::google::protobuf::uint32 guild_join_confirm::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_join_confirm._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_join_confirm::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_join_confirm::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_join_confirm._result)
@@ -51879,7 +50060,7 @@ inline void guild_join_confirm::set_allocated__new_man(::client_baseserver::guil
 
 // guild_leave
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_leave::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -51890,15 +50071,14 @@ inline void guild_leave::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_leave::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_leave::_result() const {
+inline ::google::protobuf::uint32 guild_leave::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_leave._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_leave::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_leave::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_leave._result)
@@ -51908,7 +50088,7 @@ inline void guild_leave::set__result(::client_baseserver::result value) {
 
 // guild_kick
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_kick::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -51919,15 +50099,14 @@ inline void guild_kick::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_kick::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_kick::_result() const {
+inline ::google::protobuf::uint32 guild_kick::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_kick._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_kick::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_kick::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_kick._result)
@@ -51937,7 +50116,7 @@ inline void guild_kick::set__result(::client_baseserver::result value) {
 
 // guild_set
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_set::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -51948,15 +50127,14 @@ inline void guild_set::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_set::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_set::_result() const {
+inline ::google::protobuf::uint32 guild_set::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_set._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_set::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_set::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_set._result)
@@ -52182,7 +50360,7 @@ inline void guild_worship::set__times(::google::protobuf::uint32 value) {
 
 // guild_set_job
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_set_job::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52193,15 +50371,14 @@ inline void guild_set_job::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_set_job::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_set_job::_result() const {
+inline ::google::protobuf::uint32 guild_set_job::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_set_job._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_set_job::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_set_job::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_set_job._result)
@@ -52211,7 +50388,7 @@ inline void guild_set_job::set__result(::client_baseserver::result value) {
 
 // guild_add_hire
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_add_hire::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52222,15 +50399,14 @@ inline void guild_add_hire::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_add_hire::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_add_hire::_result() const {
+inline ::google::protobuf::uint32 guild_add_hire::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_add_hire._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_add_hire::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_add_hire::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_add_hire._result)
@@ -52264,7 +50440,7 @@ inline void guild_add_hire::set__income(::google::protobuf::uint32 value) {
 
 // guild_del_hire
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_del_hire::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52275,15 +50451,14 @@ inline void guild_del_hire::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_del_hire::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_del_hire::_result() const {
+inline ::google::protobuf::uint32 guild_del_hire::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_del_hire._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_del_hire::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_del_hire::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_del_hire._result)
@@ -52425,7 +50600,7 @@ guild_query_hires::mutable__hire_uids() {
   return &_hire_uids_;
 }
 
-// required .client_baseserver.hire_from _from = 3;
+// required uint32 _from = 3;
 inline bool guild_query_hires::has__from() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -52436,15 +50611,14 @@ inline void guild_query_hires::clear_has__from() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void guild_query_hires::clear__from() {
-  _from_ = 0;
+  _from_ = 0u;
   clear_has__from();
 }
-inline ::client_baseserver::hire_from guild_query_hires::_from() const {
+inline ::google::protobuf::uint32 guild_query_hires::_from() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_query_hires._from)
-  return static_cast< ::client_baseserver::hire_from >(_from_);
+  return _from_;
 }
-inline void guild_query_hires::set__from(::client_baseserver::hire_from value) {
-  assert(::client_baseserver::hire_from_IsValid(value));
+inline void guild_query_hires::set__from(::google::protobuf::uint32 value) {
   set_has__from();
   _from_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_query_hires._from)
@@ -52753,7 +50927,7 @@ inline void hire_hero_summary::set__hire_ts(::google::protobuf::uint32 value) {
 
 // guild_hire_hero
 
-// required .client_baseserver.hire_result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_hire_hero::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52764,21 +50938,20 @@ inline void guild_hire_hero::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_hire_hero::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::hire_result guild_hire_hero::_result() const {
+inline ::google::protobuf::uint32 guild_hire_hero::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_hire_hero._result)
-  return static_cast< ::client_baseserver::hire_result >(_result_);
+  return _result_;
 }
-inline void guild_hire_hero::set__result(::client_baseserver::hire_result value) {
-  assert(::client_baseserver::hire_result_IsValid(value));
+inline void guild_hire_hero::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_hire_hero._result)
 }
 
-// optional .client_baseserver.hire_from _from = 2;
+// optional uint32 _from = 2;
 inline bool guild_hire_hero::has__from() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -52789,15 +50962,14 @@ inline void guild_hire_hero::clear_has__from() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_hire_hero::clear__from() {
-  _from_ = 0;
+  _from_ = 0u;
   clear_has__from();
 }
-inline ::client_baseserver::hire_from guild_hire_hero::_from() const {
+inline ::google::protobuf::uint32 guild_hire_hero::_from() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_hire_hero._from)
-  return static_cast< ::client_baseserver::hire_from >(_from_);
+  return _from_;
 }
-inline void guild_hire_hero::set__from(::client_baseserver::hire_from value) {
-  assert(::client_baseserver::hire_from_IsValid(value));
+inline void guild_hire_hero::set__from(::google::protobuf::uint32 value) {
   set_has__from();
   _from_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_hire_hero._from)
@@ -52872,7 +51044,7 @@ inline void guild_hire_hero::set_allocated__hero(::client_baseserver::hero* _her
 
 // guild_worship_req
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_worship_req::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52883,15 +51055,14 @@ inline void guild_worship_req::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_worship_req::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_worship_req::_result() const {
+inline ::google::protobuf::uint32 guild_worship_req::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_worship_req._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_worship_req::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_worship_req::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_worship_req._result)
@@ -52901,7 +51072,7 @@ inline void guild_worship_req::set__result(::client_baseserver::result value) {
 
 // guild_worship_withdraw
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_worship_withdraw::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -52912,15 +51083,14 @@ inline void guild_worship_withdraw::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_worship_withdraw::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result guild_worship_withdraw::_result() const {
+inline ::google::protobuf::uint32 guild_worship_withdraw::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_worship_withdraw._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void guild_worship_withdraw::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void guild_worship_withdraw::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_worship_withdraw._result)
@@ -53005,7 +51175,7 @@ inline void guild_qurey_hh_detail::set_allocated__hero(::client_baseserver::hero
 
 // worship_reward
 
-// required .client_baseserver.worship_reward.type _type = 1;
+// required uint32 _type = 1;
 inline bool worship_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -53016,15 +51186,14 @@ inline void worship_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void worship_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::worship_reward_type worship_reward::_type() const {
+inline ::google::protobuf::uint32 worship_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.worship_reward._type)
-  return static_cast< ::client_baseserver::worship_reward_type >(_type_);
+  return _type_;
 }
-inline void worship_reward::set__type(::client_baseserver::worship_reward_type value) {
-  assert(::client_baseserver::worship_reward_type_IsValid(value));
+inline void worship_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.worship_reward._type)
@@ -53082,7 +51251,7 @@ inline void worship_reward::set__param2(::google::protobuf::uint32 value) {
 
 // activity_reward
 
-// optional .client_baseserver.activity_reward.type _type = 1;
+// optional uint32 _type = 1;
 inline bool activity_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -53093,15 +51262,14 @@ inline void activity_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void activity_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::activity_reward_type activity_reward::_type() const {
+inline ::google::protobuf::uint32 activity_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.activity_reward._type)
-  return static_cast< ::client_baseserver::activity_reward_type >(_type_);
+  return _type_;
 }
-inline void activity_reward::set__type(::client_baseserver::activity_reward_type value) {
-  assert(::client_baseserver::activity_reward_type_IsValid(value));
+inline void activity_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.activity_reward._type)
@@ -53316,7 +51484,7 @@ inline void activity_info::set__id(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.activity_info._id)
 }
 
-// optional .client_baseserver.activity_info.type _type = 2;
+// optional uint32 _type = 2;
 inline bool activity_info::has__type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -53327,15 +51495,14 @@ inline void activity_info::clear_has__type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void activity_info::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::activity_info_type activity_info::_type() const {
+inline ::google::protobuf::uint32 activity_info::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.activity_info._type)
-  return static_cast< ::client_baseserver::activity_info_type >(_type_);
+  return _type_;
 }
-inline void activity_info::set__type(::client_baseserver::activity_info_type value) {
-  assert(::client_baseserver::activity_info_type_IsValid(value));
+inline void activity_info::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.activity_info._type)
@@ -53651,7 +51818,7 @@ inline void activity_info::set_allocated__rules(::std::string* _rules) {
 
 // cdkey_gift_reply
 
-// required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+// required uint32 _result = 1;
 inline bool cdkey_gift_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -53662,15 +51829,14 @@ inline void cdkey_gift_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void cdkey_gift_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::cdkey_gift_reply_cdkey_result cdkey_gift_reply::_result() const {
+inline ::google::protobuf::uint32 cdkey_gift_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.cdkey_gift_reply._result)
-  return static_cast< ::client_baseserver::cdkey_gift_reply_cdkey_result >(_result_);
+  return _result_;
 }
-inline void cdkey_gift_reply::set__result(::client_baseserver::cdkey_gift_reply_cdkey_result value) {
-  assert(::client_baseserver::cdkey_gift_reply_cdkey_result_IsValid(value));
+inline void cdkey_gift_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.cdkey_gift_reply._result)
@@ -54654,7 +52820,7 @@ inline void revenge_excavate_reply::set_allocated__excavate(::client_baseserver:
 
 // search_excavate_reply
 
-// required .client_baseserver.search_excavate_reply.search_result _result = 1;
+// required uint32 _result = 1;
 inline bool search_excavate_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -54665,15 +52831,14 @@ inline void search_excavate_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void search_excavate_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::search_excavate_reply_search_result search_excavate_reply::_result() const {
+inline ::google::protobuf::uint32 search_excavate_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.search_excavate_reply._result)
-  return static_cast< ::client_baseserver::search_excavate_reply_search_result >(_result_);
+  return _result_;
 }
-inline void search_excavate_reply::set__result(::client_baseserver::search_excavate_reply_search_result value) {
-  assert(::client_baseserver::search_excavate_reply_search_result_IsValid(value));
+inline void search_excavate_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.search_excavate_reply._result)
@@ -55412,7 +53577,7 @@ inline void excavate_team::set__robbed(::google::protobuf::uint32 value) {
 
 // excavate
 
-// required .client_baseserver.excavate.owner _owner = 1;
+// required uint32 _owner = 1;
 inline bool excavate::has__owner() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -55423,15 +53588,14 @@ inline void excavate::clear_has__owner() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void excavate::clear__owner() {
-  _owner_ = 0;
+  _owner_ = 0u;
   clear_has__owner();
 }
-inline ::client_baseserver::excavate_owner excavate::_owner() const {
+inline ::google::protobuf::uint32 excavate::_owner() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate._owner)
-  return static_cast< ::client_baseserver::excavate_owner >(_owner_);
+  return _owner_;
 }
-inline void excavate::set__owner(::client_baseserver::excavate_owner value) {
-  assert(::client_baseserver::excavate_owner_IsValid(value));
+inline void excavate::set__owner(::google::protobuf::uint32 value) {
   set_has__owner();
   _owner_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate._owner)
@@ -55515,7 +53679,7 @@ excavate::mutable__team() {
   return &_team_;
 }
 
-// required .client_baseserver.excavate.state _state = 5;
+// required uint32 _state = 5;
 inline bool excavate::has__state() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -55526,15 +53690,14 @@ inline void excavate::clear_has__state() {
   _has_bits_[0] &= ~0x00000010u;
 }
 inline void excavate::clear__state() {
-  _state_ = 1;
+  _state_ = 0u;
   clear_has__state();
 }
-inline ::client_baseserver::excavate_state excavate::_state() const {
+inline ::google::protobuf::uint32 excavate::_state() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate._state)
-  return static_cast< ::client_baseserver::excavate_state >(_state_);
+  return _state_;
 }
-inline void excavate::set__state(::client_baseserver::excavate_state value) {
-  assert(::client_baseserver::excavate_state_IsValid(value));
+inline void excavate::set__state(::google::protobuf::uint32 value) {
   set_has__state();
   _state_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate._state)
@@ -55692,7 +53855,7 @@ inline void excavate_history::set__excavate_id(::google::protobuf::uint32 value)
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_history._excavate_id)
 }
 
-// required .client_baseserver.excavate_history.def_result _result = 3;
+// required uint32 _result = 3;
 inline bool excavate_history::has__result() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -55703,15 +53866,14 @@ inline void excavate_history::clear_has__result() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void excavate_history::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::excavate_history_def_result excavate_history::_result() const {
+inline ::google::protobuf::uint32 excavate_history::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_history._result)
-  return static_cast< ::client_baseserver::excavate_history_def_result >(_result_);
+  return _result_;
 }
-inline void excavate_history::set__result(::client_baseserver::excavate_history_def_result value) {
-  assert(::client_baseserver::excavate_history_def_result_IsValid(value));
+inline void excavate_history::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_history._result)
@@ -56276,7 +54438,7 @@ inline void excavate_battle::set_allocated__oppo_team(::client_baseserver::excav
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.excavate_battle._oppo_team)
 }
 
-// required .client_baseserver.battle_result _result = 3;
+// required uint32 _result = 3;
 inline bool excavate_battle::has__result() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -56287,15 +54449,14 @@ inline void excavate_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void excavate_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result excavate_battle::_result() const {
+inline ::google::protobuf::uint32 excavate_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_battle._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void excavate_battle::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void excavate_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_battle._result)
@@ -56387,7 +54548,7 @@ query_excavate_battle_reply::mutable__battles() {
 
 // set_excavate_team_reply
 
-// required .client_baseserver.set_excavate_team_reply.result _result = 1;
+// required uint32 _result = 1;
 inline bool set_excavate_team_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56398,15 +54559,14 @@ inline void set_excavate_team_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_excavate_team_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::set_excavate_team_reply_result set_excavate_team_reply::_result() const {
+inline ::google::protobuf::uint32 set_excavate_team_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.set_excavate_team_reply._result)
-  return static_cast< ::client_baseserver::set_excavate_team_reply_result >(_result_);
+  return _result_;
 }
-inline void set_excavate_team_reply::set__result(::client_baseserver::set_excavate_team_reply_result value) {
-  assert(::client_baseserver::set_excavate_team_reply_result_IsValid(value));
+inline void set_excavate_team_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.set_excavate_team_reply._result)
@@ -56457,7 +54617,7 @@ inline void set_excavate_team_reply::set_allocated__mine(::client_baseserver::ex
 
 // excavate_start_battle_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool excavate_start_battle_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56468,15 +54628,14 @@ inline void excavate_start_battle_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void excavate_start_battle_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result excavate_start_battle_reply::_result() const {
+inline ::google::protobuf::uint32 excavate_start_battle_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_start_battle_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void excavate_start_battle_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void excavate_start_battle_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_start_battle_reply._result)
@@ -56570,7 +54729,7 @@ excavate_start_battle_reply::mutable__hero_dynas() {
 
 // excavate_end_battle_reply
 
-// optional .client_baseserver.battle_result _result = 1 [default = victory];
+// optional uint32 _result = 1;
 inline bool excavate_end_battle_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56581,15 +54740,14 @@ inline void excavate_end_battle_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void excavate_end_battle_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::battle_result excavate_end_battle_reply::_result() const {
+inline ::google::protobuf::uint32 excavate_end_battle_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_end_battle_reply._result)
-  return static_cast< ::client_baseserver::battle_result >(_result_);
+  return _result_;
 }
-inline void excavate_end_battle_reply::set__result(::client_baseserver::battle_result value) {
-  assert(::client_baseserver::battle_result_IsValid(value));
+inline void excavate_end_battle_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_end_battle_reply._result)
@@ -56666,7 +54824,7 @@ excavate_end_battle_reply::mutable__reward() {
   return &_reward_;
 }
 
-// optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+// optional uint32 _mine_battle_result = 4;
 inline bool excavate_end_battle_reply::has__mine_battle_result() const {
   return (_has_bits_[0] & 0x00000008u) != 0;
 }
@@ -56677,15 +54835,14 @@ inline void excavate_end_battle_reply::clear_has__mine_battle_result() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void excavate_end_battle_reply::clear__mine_battle_result() {
-  _mine_battle_result_ = 0;
+  _mine_battle_result_ = 0u;
   clear_has__mine_battle_result();
 }
-inline ::client_baseserver::excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply::_mine_battle_result() const {
+inline ::google::protobuf::uint32 excavate_end_battle_reply::_mine_battle_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_end_battle_reply._mine_battle_result)
-  return static_cast< ::client_baseserver::excavate_end_battle_reply_mine_battle_result >(_mine_battle_result_);
+  return _mine_battle_result_;
 }
-inline void excavate_end_battle_reply::set__mine_battle_result(::client_baseserver::excavate_end_battle_reply_mine_battle_result value) {
-  assert(::client_baseserver::excavate_end_battle_reply_mine_battle_result_IsValid(value));
+inline void excavate_end_battle_reply::set__mine_battle_result(::google::protobuf::uint32 value) {
   set_has__mine_battle_result();
   _mine_battle_result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_end_battle_reply._mine_battle_result)
@@ -56753,7 +54910,7 @@ draw_excav_res_reply::mutable__reward() {
 
 // excavate_reward
 
-// required .client_baseserver.excavate_reward.type _type = 1;
+// required uint32 _type = 1;
 inline bool excavate_reward::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56764,15 +54921,14 @@ inline void excavate_reward::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void excavate_reward::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseserver::excavate_reward_type excavate_reward::_type() const {
+inline ::google::protobuf::uint32 excavate_reward::_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.excavate_reward._type)
-  return static_cast< ::client_baseserver::excavate_reward_type >(_type_);
+  return _type_;
 }
-inline void excavate_reward::set__type(::client_baseserver::excavate_reward_type value) {
-  assert(::client_baseserver::excavate_reward_type_IsValid(value));
+inline void excavate_reward::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.excavate_reward._type)
@@ -56899,7 +55055,7 @@ inline void query_excavate_def_reply::set_allocated__excavate(::client_baseserve
 
 // clear_excavate_battle_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool clear_excavate_battle_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56910,15 +55066,14 @@ inline void clear_excavate_battle_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void clear_excavate_battle_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result clear_excavate_battle_reply::_result() const {
+inline ::google::protobuf::uint32 clear_excavate_battle_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.clear_excavate_battle_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void clear_excavate_battle_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void clear_excavate_battle_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.clear_excavate_battle_reply._result)
@@ -56928,7 +55083,7 @@ inline void clear_excavate_battle_reply::set__result(::client_baseserver::result
 
 // withdraw_excavate_hero_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool withdraw_excavate_hero_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56939,15 +55094,14 @@ inline void withdraw_excavate_hero_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void withdraw_excavate_hero_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result withdraw_excavate_hero_reply::_result() const {
+inline ::google::protobuf::uint32 withdraw_excavate_hero_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.withdraw_excavate_hero_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void withdraw_excavate_hero_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void withdraw_excavate_hero_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.withdraw_excavate_hero_reply._result)
@@ -56957,7 +55111,7 @@ inline void withdraw_excavate_hero_reply::set__result(::client_baseserver::resul
 
 // draw_excavate_def_rwd_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool draw_excavate_def_rwd_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -56968,15 +55122,14 @@ inline void draw_excavate_def_rwd_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void draw_excavate_def_rwd_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result draw_excavate_def_rwd_reply::_result() const {
+inline ::google::protobuf::uint32 draw_excavate_def_rwd_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.draw_excavate_def_rwd_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void draw_excavate_def_rwd_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void draw_excavate_def_rwd_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.draw_excavate_def_rwd_reply._result)
@@ -57010,7 +55163,7 @@ inline void draw_excavate_def_rwd_reply::set__draw_vitality(::google::protobuf::
 
 // drop_excavate_reply
 
-// required .client_baseserver.result _result = 1 [default = success];
+// required uint32 _result = 1;
 inline bool drop_excavate_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -57021,15 +55174,14 @@ inline void drop_excavate_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void drop_excavate_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result drop_excavate_reply::_result() const {
+inline ::google::protobuf::uint32 drop_excavate_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.drop_excavate_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void drop_excavate_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void drop_excavate_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.drop_excavate_reply._result)
@@ -57080,7 +55232,7 @@ inline void drop_excavate_reply::set_allocated__reward(::client_baseserver::exca
 
 // change_server_reply
 
-// required .client_baseserver.server_opt_result _result = 1;
+// required uint32 _result = 1;
 inline bool change_server_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -57091,15 +55243,14 @@ inline void change_server_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void change_server_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::server_opt_result change_server_reply::_result() const {
+inline ::google::protobuf::uint32 change_server_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.change_server_reply._result)
-  return static_cast< ::client_baseserver::server_opt_result >(_result_);
+  return _result_;
 }
-inline void change_server_reply::set__result(::client_baseserver::server_opt_result value) {
-  assert(::client_baseserver::server_opt_result_IsValid(value));
+inline void change_server_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.change_server_reply._result)
@@ -57421,7 +55572,7 @@ inline void guild_instance_query::set__stage_pass(::google::protobuf::uint32 val
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_query._stage_pass)
 }
 
-// required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+// required uint32 _is_can_jump = 4;
 inline bool guild_instance_query::has__is_can_jump() const {
   return (_has_bits_[0] & 0x00000008u) != 0;
 }
@@ -57432,15 +55583,14 @@ inline void guild_instance_query::clear_has__is_can_jump() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void guild_instance_query::clear__is_can_jump() {
-  _is_can_jump_ = 1;
+  _is_can_jump_ = 0u;
   clear_has__is_can_jump();
 }
-inline ::client_baseserver::guild_instance_query_is_can_jump guild_instance_query::_is_can_jump() const {
+inline ::google::protobuf::uint32 guild_instance_query::_is_can_jump() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_query._is_can_jump)
-  return static_cast< ::client_baseserver::guild_instance_query_is_can_jump >(_is_can_jump_);
+  return _is_can_jump_;
 }
-inline void guild_instance_query::set__is_can_jump(::client_baseserver::guild_instance_query_is_can_jump value) {
-  assert(::client_baseserver::guild_instance_query_is_can_jump_IsValid(value));
+inline void guild_instance_query::set__is_can_jump(::google::protobuf::uint32 value) {
   set_has__is_can_jump();
   _is_can_jump_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_query._is_can_jump)
@@ -57723,7 +55873,7 @@ inline void guild_instance_detail::set_allocated__challenger(::client_baseserver
   // @@protoc_insertion_point(field_set_allocated:client_baseserver.guild_instance_detail._challenger)
 }
 
-// optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+// optional uint32 _challenger_status = 6;
 inline bool guild_instance_detail::has__challenger_status() const {
   return (_has_bits_[0] & 0x00000020u) != 0;
 }
@@ -57734,15 +55884,14 @@ inline void guild_instance_detail::clear_has__challenger_status() {
   _has_bits_[0] &= ~0x00000020u;
 }
 inline void guild_instance_detail::clear__challenger_status() {
-  _challenger_status_ = 1;
+  _challenger_status_ = 0u;
   clear_has__challenger_status();
 }
-inline ::client_baseserver::guild_instance_detail_challenger_status guild_instance_detail::_challenger_status() const {
+inline ::google::protobuf::uint32 guild_instance_detail::_challenger_status() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_detail._challenger_status)
-  return static_cast< ::client_baseserver::guild_instance_detail_challenger_status >(_challenger_status_);
+  return _challenger_status_;
 }
-inline void guild_instance_detail::set__challenger_status(::client_baseserver::guild_instance_detail_challenger_status value) {
-  assert(::client_baseserver::guild_instance_detail_challenger_status_IsValid(value));
+inline void guild_instance_detail::set__challenger_status(::google::protobuf::uint32 value) {
   set_has__challenger_status();
   _challenger_status_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_detail._challenger_status)
@@ -58086,7 +56235,7 @@ inline void guild_instance_item::set__num(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_item._num)
 }
 
-// required .client_baseserver.guild_instance_item.drop_state _state = 3;
+// required uint32 _state = 3;
 inline bool guild_instance_item::has__state() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -58097,15 +56246,14 @@ inline void guild_instance_item::clear_has__state() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void guild_instance_item::clear__state() {
-  _state_ = 1;
+  _state_ = 0u;
   clear_has__state();
 }
-inline ::client_baseserver::guild_instance_item_drop_state guild_instance_item::_state() const {
+inline ::google::protobuf::uint32 guild_instance_item::_state() const {
   // @@protoc_insertion_point(field_get:client_baseserver.guild_instance_item._state)
-  return static_cast< ::client_baseserver::guild_instance_item_drop_state >(_state_);
+  return _state_;
 }
-inline void guild_instance_item::set__state(::client_baseserver::guild_instance_item_drop_state value) {
-  assert(::client_baseserver::guild_instance_item_drop_state_IsValid(value));
+inline void guild_instance_item::set__state(::google::protobuf::uint32 value) {
   set_has__state();
   _state_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.guild_instance_item._state)
@@ -58461,7 +56609,7 @@ inline void query_split_return_reply::set__skill_point(::google::protobuf::uint3
 
 // split_hero_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool split_hero_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -58472,15 +56620,14 @@ inline void split_hero_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void split_hero_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result split_hero_reply::_result() const {
+inline ::google::protobuf::uint32 split_hero_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.split_hero_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void split_hero_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void split_hero_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.split_hero_reply._result)
@@ -58802,7 +56949,7 @@ worldcup_query_reply::mutable__comp() {
 
 // worldcup_submit_reply
 
-// required .client_baseserver.result _result = 1;
+// required uint32 _result = 1;
 inline bool worldcup_submit_reply::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -58813,15 +56960,14 @@ inline void worldcup_submit_reply::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void worldcup_submit_reply::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseserver::result worldcup_submit_reply::_result() const {
+inline ::google::protobuf::uint32 worldcup_submit_reply::_result() const {
   // @@protoc_insertion_point(field_get:client_baseserver.worldcup_submit_reply._result)
-  return static_cast< ::client_baseserver::result >(_result_);
+  return _result_;
 }
-inline void worldcup_submit_reply::set__result(::client_baseserver::result value) {
-  assert(::client_baseserver::result_IsValid(value));
+inline void worldcup_submit_reply::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.worldcup_submit_reply._result)
@@ -59125,7 +57271,7 @@ inline void ranklist_item::set__param1(::google::protobuf::uint32 value) {
 
 // query_ranklist_reply
 
-// required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+// required uint32 _rank_type = 1;
 inline bool query_ranklist_reply::has__rank_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -59136,15 +57282,14 @@ inline void query_ranklist_reply::clear_has__rank_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void query_ranklist_reply::clear__rank_type() {
-  _rank_type_ = 1;
+  _rank_type_ = 0u;
   clear_has__rank_type();
 }
-inline ::client_baseserver::query_ranklist_reply_rank_type query_ranklist_reply::_rank_type() const {
+inline ::google::protobuf::uint32 query_ranklist_reply::_rank_type() const {
   // @@protoc_insertion_point(field_get:client_baseserver.query_ranklist_reply._rank_type)
-  return static_cast< ::client_baseserver::query_ranklist_reply_rank_type >(_rank_type_);
+  return _rank_type_;
 }
-inline void query_ranklist_reply::set__rank_type(::client_baseserver::query_ranklist_reply_rank_type value) {
-  assert(::client_baseserver::query_ranklist_reply_rank_type_IsValid(value));
+inline void query_ranklist_reply::set__rank_type(::google::protobuf::uint32 value) {
   set_has__rank_type();
   _rank_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseserver.query_ranklist_reply._rank_type)
@@ -59900,221 +58045,6 @@ every_day_happy_reply::mutable__rewards() {
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::client_baseserver::system_setting_item_setting_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::system_setting_item_setting_status>() {
-  return ::client_baseserver::system_setting_item_setting_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::exit_stage_reply_exit_stage_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::exit_stage_reply_exit_stage_result>() {
-  return ::client_baseserver::exit_stage_reply_exit_stage_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::error_info_exit> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::error_info_exit>() {
-  return ::client_baseserver::error_info_exit_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::goods_price_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::goods_price_type>() {
-  return ::client_baseserver::goods_price_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::star_goods_box_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::star_goods_box_type>() {
-  return ::client_baseserver::star_goods_box_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::daily_login_dailylogin_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::daily_login_dailylogin_status>() {
-  return ::client_baseserver::daily_login_dailylogin_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::usertask_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::usertask_status>() {
-  return ::client_baseserver::usertask_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::tavern_record_box_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::tavern_record_box_type>() {
-  return ::client_baseserver::tavern_record_box_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::dailyjob_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::dailyjob_reward_type>() {
-  return ::client_baseserver::dailyjob_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::ladder_rank_reward_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::ladder_rank_reward_reward_type>() {
-  return ::client_baseserver::ladder_rank_reward_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::set_name_reply_set_name_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::set_name_reply_set_name_result>() {
-  return ::client_baseserver::set_name_reply_set_name_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::tbc_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::tbc_reward_type>() {
-  return ::client_baseserver::tbc_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::tbc_stage_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::tbc_stage_status>() {
-  return ::client_baseserver::tbc_stage_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::sys_mail_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::sys_mail_status>() {
-  return ::client_baseserver::sys_mail_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::mail_param_mail_param_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::mail_param_mail_param_type>() {
-  return ::client_baseserver::mail_param_mail_param_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::user_point_user_point_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::user_point_user_point_type>() {
-  return ::client_baseserver::user_point_user_point_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::chat_acc_chat_acc_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::chat_acc_chat_acc_t>() {
-  return ::client_baseserver::chat_acc_chat_acc_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_join_join_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_join_join_result>() {
-  return ::client_baseserver::guild_join_join_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::worship_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::worship_reward_type>() {
-  return ::client_baseserver::worship_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::activity_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::activity_reward_type>() {
-  return ::client_baseserver::activity_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::activity_info_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::activity_info_type>() {
-  return ::client_baseserver::activity_info_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::cdkey_gift_reply_cdkey_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::cdkey_gift_reply_cdkey_result>() {
-  return ::client_baseserver::cdkey_gift_reply_cdkey_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::search_excavate_reply_search_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::search_excavate_reply_search_result>() {
-  return ::client_baseserver::search_excavate_reply_search_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::excavate_owner> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::excavate_owner>() {
-  return ::client_baseserver::excavate_owner_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::excavate_state> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::excavate_state>() {
-  return ::client_baseserver::excavate_state_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::excavate_history_def_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::excavate_history_def_result>() {
-  return ::client_baseserver::excavate_history_def_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::set_excavate_team_reply_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::set_excavate_team_reply_result>() {
-  return ::client_baseserver::set_excavate_team_reply_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::excavate_end_battle_reply_mine_battle_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::excavate_end_battle_reply_mine_battle_result>() {
-  return ::client_baseserver::excavate_end_battle_reply_mine_battle_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::excavate_reward_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::excavate_reward_type>() {
-  return ::client_baseserver::excavate_reward_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_instance_query_is_can_jump> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_instance_query_is_can_jump>() {
-  return ::client_baseserver::guild_instance_query_is_can_jump_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_instance_detail_challenger_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_instance_detail_challenger_status>() {
-  return ::client_baseserver::guild_instance_detail_challenger_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_instance_item_drop_state> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_instance_item_drop_state>() {
-  return ::client_baseserver::guild_instance_item_drop_state_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::query_ranklist_reply_rank_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::query_ranklist_reply_rank_type>() {
-  return ::client_baseserver::query_ranklist_reply_rank_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::result>() {
-  return ::client_baseserver::result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::battle_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::battle_result>() {
-  return ::client_baseserver::battle_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::money_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::money_type>() {
-  return ::client_baseserver::money_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::hero_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::hero_status>() {
-  return ::client_baseserver::hero_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::server_opt_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::server_opt_result>() {
-  return ::client_baseserver::server_opt_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::hire_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::hire_result>() {
-  return ::client_baseserver::hire_result_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::hire_from> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::hire_from>() {
-  return ::client_baseserver::hire_from_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_join_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_join_t>() {
-  return ::client_baseserver::guild_join_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::guild_job_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::guild_job_t>() {
-  return ::client_baseserver::guild_job_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseserver::chat_channel> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseserver::chat_channel>() {
-  return ::client_baseserver::chat_channel_descriptor();
-}
 
 }  // namespace google
 }  // namespace protobuf

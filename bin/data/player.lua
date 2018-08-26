@@ -1714,7 +1714,7 @@ local function getTavernRecord(self, box)
     end
   end
   if isIllegal then
-    local r = ed.downmsg.tavern_record()
+    local r = {} --ed.downmsg.tavern_record()
     r._box_type = "magicsoul"
     r._left_cnt = 0
     r._last_get_time = 0

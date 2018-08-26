@@ -236,8 +236,10 @@ void Proxy::sendUserDownInfo()
 {
 	Network::Bundle* pBundle = Network::Bundle::createPoolObject();
 	pBundle->newMessage(91, 6);
-	client_baseserver::login_reply loginreply;
-	loginreply.set__result(client_baseserver::result::success);
+	client_baseserver::down_msg downmsg;
+	printf("before downmsg size:%d \n", downmsg.ByteSize());
+	client_baseserver::login_reply& loginreply = *(downmsg.mutable__login_reply());
+	loginreply.set__result(0);
 	loginreply.set__time_zone("china");
 	//发送玩家数据
 	client_baseserver::user* pUserData = loginreply.mutable__user();
@@ -253,19 +255,21 @@ void Proxy::sendUserDownInfo()
 	pUserData->set__exp(exp_);
 	pUserData->set__money(money_);
 	pUserData->set__rmb(gem_);
+	pUserData->set__recharge_sum(0);
+
 
 	//userpoint
 	client_baseserver::user_point* pUserPoint = pUserData->add__points();
-	pUserPoint->set__type(client_baseserver::user_point_user_point_type::user_point_user_point_type_arenapoint);
+	pUserPoint->set__type(1);
 	pUserPoint->set__value(100);
 
-	client_baseserver::user_point* pUserPoint = pUserData->add__points();
-	pUserPoint->set__type(client_baseserver::user_point_user_point_type::user_point_user_point_type_crusadepoint);
-	pUserPoint->set__value(100);
+	client_baseserver::user_point* pUserPoint1 = pUserData->add__points();
+	pUserPoint1->set__type(2);
+	pUserPoint1->set__value(100);
 
-	client_baseserver::user_point* pUserPoint = pUserData->add__points();
-	pUserPoint->set__type(client_baseserver::user_point_user_point_type::user_point_user_point_type_guildpoint);
-	pUserPoint->set__value(100);
+	client_baseserver::user_point* pUserPoint2 = pUserData->add__points();
+	pUserPoint2->set__type(3);
+	pUserPoint2->set__value(100);
 
 	//Usermidas
 	client_baseserver::usermidas* pUserMidas = pUserData->mutable__usermidas();
@@ -321,10 +325,18 @@ void Proxy::sendUserDownInfo()
 	client_baseserver::daily_login* pDailyLogin = pUserData->mutable__daily_login();
 	pDailyLogin->set__frequency(0);
 	pDailyLogin->set__last_login_date(0);
-	pDailyLogin->set__status(client_baseserver::daily_login::dailylogin_status::daily_login_dailylogin_status_nothing);
+	pDailyLogin->set__status(0);
 
+	client_baseserver::user_guild* pGuid = pUserData->mutable__user_guild();
+	pGuid->set__id(0);
+	pGuid->set__name("asdf");
 
-	ADDTOBUNDLE((*pBundle), loginreply)
+	client_baseserver::chat* pChat = pUserData->mutable__chat();
+	pChat->set__world_chat_times(0);
+	pChat->set__last_reset_world_chat_time(0);
+
+	printf("downmsg size:%d, %d \n", downmsg.ByteSize(), loginreply.ByteSize());
+	ADDTOBUNDLE((*pBundle), downmsg)
 		this->sendToClient(pBundle);
 }
 

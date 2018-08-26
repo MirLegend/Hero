@@ -86,6 +86,7 @@ public:
 
 	void onClientHello(Network::Channel* pChannel, MemoryStream& s); //客户端握手
 	void loginBaseapp(Network::Channel* pChannel, MemoryStream& s);
+	void onClientUpMsg(Network::Channel* pChannel, MemoryStream& s);
 	/**
 	登录失败
 	@failedcode: 失败返回码 NETWORK_ERR_SRV_NO_READY:服务器没有准备好,

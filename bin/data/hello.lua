@@ -1,13 +1,14 @@
 ---
 
 pcall(function()
-	if EDFLAGWIN32 then
+	--if EDFLAGWIN32 then
 		logfile = io.open("log_client.log", "w")
-	end
+	--end
 	require("LocalString")
 	require("tools")
 	require("edebug")
 	require("maingameproject")
+	ed.logfile = logfile
 end)
 
 --EDFLAGWIN32=false

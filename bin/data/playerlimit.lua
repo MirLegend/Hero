@@ -16,6 +16,8 @@ class.getTable = getTable
 local function row(level)
   local plt = getTable()
   level = level or ed.player:getLevel()
+  --print( debug.traceback() )
+  print("player level:"..ed.player:getLevel())
   return plt[level]
 end
 class.row = row

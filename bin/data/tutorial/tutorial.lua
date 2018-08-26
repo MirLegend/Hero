@@ -527,13 +527,25 @@ local function complete(key)
     end
     ed.player:increaseTutorial(id)
     completeAddition(key)
-    local msg = ed.upmsg.tutorial()
-    msg._record = ed.player._tutorial
-    if key == "_5v5Anim" then
-      ed.send(msg, "tutorial")
-    else
-      ed.delaySend(msg, "tutorial")
-    end
+    --local msg = ed.upmsg.tutorial()
+    --msg._record = ed.player._tutorial
+    --if key == "_5v5Anim" then
+    --  ed.send(msg, "tutorial")
+    --else
+    --  ed.delaySend(msg, "tutorial")
+    --end
+
+
+    --local stringbuffer = protobuf.encode("client_baseup.up_msg",      
+   -- {
+    --  _tutorial = {
+    --    _record={
+    --      ed.player._tutorial
+    --     }
+    --  }
+    --})
+    --local slen = string.len(stringbuffer)
+    --ed.GameApp.SendMsg(91, 7, stringbuffer)
     local stillShow = tr.still_show
     if not stillShow then
       if not items[key] then

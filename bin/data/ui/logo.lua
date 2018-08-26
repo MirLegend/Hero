@@ -88,14 +88,15 @@ end
 class.doLoginReply = doLoginReply
 local function doLogin(self)
   ed.netreply.loginReply = self:doLoginReply()
-  local languageId = CCApplication:sharedApplication():getCurrentLanguage()
-  local login = ed.upmsg.login()
-  ed.upmsg._user_id = ed.getUserid()
-  login._active_code = 0
-  login._old_deviceid = ed.getDeviceId() --game_server_id
-  login._version = LegendGetLoginPwd();
-  login._languageid = languageId--add by xinghui
-  ed.send(login, "login")
+  --local languageId = CCApplication:sharedApplication():getCurrentLanguage()
+  --local login = ed.upmsg.login()
+  --ed.upmsg._user_id = ed.getUserid()
+  --login._active_code = 0
+  --login._old_deviceid = ed.getDeviceId() --game_server_id
+  --login._version = LegendGetLoginPwd();
+  --login._languageid = languageId--add by xinghui
+  --ed.send(login, "login")
+  ed.GameApp.loginServer("ziyu", "5321")
   --FireEvent("LoginSuc")
 end
 class.doLogin = doLogin

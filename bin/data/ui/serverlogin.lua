@@ -446,43 +446,42 @@ function serverLogin:enterGame()
   end
   print("enterGame================================= ip"..game_server_ip)
   CCUserDefault:sharedUserDefault():setStringForKey("lastservername", lastServerName)
-CCUserDefault:sharedUserDefault():flush()
-	local isLogined=libPlatformManager:getPlatform():getLogined()
-	local name=libPlatformManager:getPlatform():loginUin()
+  CCUserDefault:sharedUserDefault():flush()
+	local isLogined= true --libPlatformManager:getPlatform():getLogined()
+	local name="asd" --libPlatformManager:getPlatform():loginUin()
 	--print("login state is "..tostring(isLogined))
   if isLogined==true and name~=nil and name~="" then
 
-	local platformTag=GetPlatformOS()
-	if platformTag==3 then
-		print("--------------------------uuuuuuuuuuuuuuuuuuuu"..newSessionId)
-		ed.setUserid(1)		--登录机制修改后，此时并不知道真正的userId,　用1代替
-		ed.setPuid(name);
-		ed.setDeviceId('win32_' .. name)
-  		ed.setCryptKey(newSessionId)
-		--win32保存用户名
-		CCUserDefault:sharedUserDefault():setStringForKey("lastloginname", name)
-		CCUserDefault:sharedUserDefault():flush()
-	else
-		--Android ios平台
-		print("--------------------------zycdebug uin name is enterGame")
-		local name=libPlatformManager:getPlatform():loginUin()
-		ed.setPuid(name);
-		ed.setUserid(1)		--登录机制修改后，此时并不知道真正的userId,　用1代替
-		local deviceId=libOS:getInstance():getDeviceID()
-		ed.setDeviceId(deviceId)
-  		ed.setCryptKey(newSessionId)
-		--LegendLog("--------------------------zycdebug uin name is "..name)
-	end		
-    ed.replaceScene(ed.ui.logo.create(sessionId))
+	    local platformTag=GetPlatformOS()
+	    if platformTag==3 then
+          print("--------------------------uuuuuuuuuuuuuuuuuuuu"..newSessionId)
+          ed.setUserid(1)
+          ed.setPuid(name);
+          ed.setDeviceId('win32_' .. name)
+          ed.setCryptKey(newSessionId)
+          CCUserDefault:sharedUserDefault():setStringForKey("lastloginname", name)
+          CCUserDefault:sharedUserDefault():flush()
+	    else
+		    --Android ios平台
+		    print("--------------------------zycdebug uin name is enterGame")
+		    --local name=libPlatformManager:getPlatform():loginUin()
+		    --ed.setPuid(name);
+		    --ed.setUserid(1)		--登录机制修改后，此时并不知道真正的userId,　用1代替
+		    --local deviceId=libOS:getInstance():getDeviceID()
+		    --ed.setDeviceId(deviceId)
+  	    --	ed.setCryptKey(newSessionId)
+		    --LegendLog("--------------------------zycdebug uin name is "..name)
+	    end		
+      ed.replaceScene(ed.ui.logo.create(sessionId))
   else
-	--[[
-    local login = ed.upmsg.sdk_login()
-    login._session_key = sessionId
-    login._plat_id = LegendSDKType
-    ed.send(login, "sdk_login")
-	--]]
-	print("--------------------------login")
-	libPlatformManager:getPlatform():login()
+	    --[[
+        local login = ed.upmsg.sdk_login()
+        login._session_key = sessionId
+        login._plat_id = LegendSDKType
+        ed.send(login, "sdk_login")
+	    --]]
+	    print("--------------------------login")
+	    --libPlatformManager:getPlatform():login()
   end
 end
 function serverLogin:onEnterFramework()

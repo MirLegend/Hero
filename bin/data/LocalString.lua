@@ -23,26 +23,26 @@ tr-TR	土耳其语				LANG_TURKISH		kLanguageTurkish
 
 vi-VN	越南语					LANG_VIETNAMESE		kLanguageVietnamese
 	]]--
-	["en-US"] = require("language/en-US"),
-	["zh-CN"] = require("language/en-US"),
-	["de-DE"] = require("language/de-DE"),
-	["es-ES"] = require("language/en-US"),
-	["fr-FR"] = require("language/en-US"),
-	["id-ID"] = require("language/en-US"),
+	["en-US"] = require("language/zh-CN"),
+	["zh-CN"] = require("language/zh-CN"),
+	["de-DE"] = require("language/zh-CN"),
+	["es-ES"] = require("language/zh-CN"),
+	["fr-FR"] = require("language/zh-CN"),
+	["id-ID"] = require("language/zh-CN"),
 
-	["it-IT"] = require("language/en-US"),
-	["ja-JP"] = require("language/en-US"),
-	["ko-KR"] = require("language/ko-KR"),
-	["ms-MY"] = require("language/en-US"),
-	["nb-NO"] = require("language/en-US"),
+	["it-IT"] = require("language/zh-CN"),
+	["ja-JP"] = require("language/zh-CN"),
+	["ko-KR"] = require("language/zh-CN"),
+	["ms-MY"] = require("language/zh-CN"),
+	["nb-NO"] = require("language/zh-CN"),
 
-	["nl-NL"] = require("language/en-US"),
-	["pt-BR"] = require("language/pt-BR"),
-	["ru-RU"] = require("language/ru-RU"),
-	["th-TH"] = require("language/en-US"),
-	["tr-TR"] = require("language/tr-TR"),
+	["nl-NL"] = require("language/zh-CN"),
+	["pt-BR"] = require("language/zh-CN"),
+	["ru-RU"] = require("language/zh-CN"),
+	["th-TH"] = require("language/zh-CN"),
+	["tr-TR"] = require("language/zh-CN"),
 
-	["vi-VN"] = require("language/en-US"),
+	["vi-VN"] = require("language/zh-CN"),
 }
 
 languageEum = {
@@ -113,11 +113,11 @@ end
 	
 currentLang = checkCurrentLanguage()
 function checkLanguageUpdate()
-	if sendLanguageToServer then
-	  	local systemSetting = ed.upmsg.system_setting()
-	  	systemSetting._change = {}
-		systemSetting._change.key = "language"
-		systemSetting._change.value = currentLang
-		ed.send(systemSetting, "system_setting")
-	end
+	--if sendLanguageToServer then
+	 -- 	local systemSetting = ed.upmsg.system_setting()
+	--  	systemSetting._change = {}
+	--	systemSetting._change.key = "language"
+	--	systemSetting._change.value = currentLang
+	--	ed.send(systemSetting, "system_setting")
+	--end
 end

@@ -125,15 +125,16 @@ if ccp then
   end
 end
 function log(...)
-  if logfile then
-    logfile:write(...)
-    logfile:write("\n")
-    logfile:flush()
+  if ed.logfile then
+    ed.logfile:write(...)
+    ed.logfile:write("\n")
+    ed.logfile:flush()
   else
     print(...)
   end
 end
 ed.log = log
+ed.LegendLog = log
 local multiplier = 3125
 local moder = 34359738337
 local random_seed = 1
@@ -1256,9 +1257,9 @@ function bytes_to_int(str,endian,signed) -- use length of string to determine 8,
 end
 --add by xinghui
 function sendDotInfoToServer(dot_id)
-    local msg = ed.upmsg.dot_info()
-    msg._dot_id = dot_id or 1000
-    ed.send(msg, "dot_info")
+    --local msg = ed.upmsg.dot_info()
+    --msg._dot_id = dot_id or 1000
+    --ed.send(msg, "dot_info")
     ed.tutorial.isShowTutorial = false
 end
 ed.sendDotInfoToServer = sendDotInfoToServer

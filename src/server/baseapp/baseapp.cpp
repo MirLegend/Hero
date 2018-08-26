@@ -12,6 +12,7 @@
 #include <sstream>
 
 #include "proto/cb.pb.h"
+#include "proto/up.pb.h"
 #include "proto/bmb.pb.h"
 #include "../../server/basemgr/basemgr_interface.h"
 #include "proto/basedb.pb.h"
@@ -423,6 +424,14 @@ void BaseApp::loginBaseapp(Network::Channel* pChannel, MemoryStream& s)
 
 	// 记录客户端地址
 	ptinfos->addr = pChannel->addr();
+}
+
+//
+void BaseApp::onClientUpMsg(Network::Channel* pChannel, MemoryStream& s)
+{
+	client_baseup::up_msg upCmd;
+	PARSEBUNDLE(s, upCmd)
+		printf("onClientUpMsg-------------------------\n");
 }
 
 //-------------------------------------------------------------------------------------

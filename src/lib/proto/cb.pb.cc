@@ -59,7 +59,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* system_setting_item_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   system_setting_item_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* system_setting_item_setting_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* global_config_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   global_config_reflection_ = NULL;
@@ -99,7 +98,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* exit_stage_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   exit_stage_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* exit_stage_reply_exit_stage_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* hero_upgrade_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hero_upgrade_reply_reflection_ = NULL;
@@ -142,15 +140,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* error_info_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   error_info_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* error_info_exit_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* goods_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   goods_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* goods_price_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* star_goods_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   star_goods_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* star_goods_box_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* user_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   user_reflection_ = NULL;
@@ -163,7 +158,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* daily_login_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   daily_login_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* daily_login_dailylogin_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* ask_daily_login_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   ask_daily_login_reply_reflection_ = NULL;
@@ -185,7 +179,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* usertask_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   usertask_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* usertask_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* dailyjob_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   dailyjob_reflection_ = NULL;
@@ -195,7 +188,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* tavern_record_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tavern_record_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* tavern_record_box_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* usermidas_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   usermidas_reflection_ = NULL;
@@ -211,7 +203,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* dailyjob_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   dailyjob_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* dailyjob_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* job_rewards_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   job_rewards_reply_reflection_ = NULL;
@@ -290,7 +281,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* ladder_rank_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   ladder_rank_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* ladder_rank_reward_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* draw_rank_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   draw_rank_reward_reflection_ = NULL;
@@ -300,7 +290,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* set_name_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_name_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* set_name_reply_set_name_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* set_avatar_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_avatar_reply_reflection_ = NULL;
@@ -337,11 +326,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* tbc_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tbc_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* tbc_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* tbc_stage_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tbc_stage_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* tbc_stage_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* tbc_info_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tbc_info_reflection_ = NULL;
@@ -369,7 +356,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* sys_mail_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   sys_mail_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* sys_mail_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* mail_content_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   mail_content_reflection_ = NULL;
@@ -382,11 +368,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* mail_param_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   mail_param_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* mail_param_mail_param_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* user_point_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   user_point_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* user_point_user_point_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* read_mail_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   read_mail_reply_reflection_ = NULL;
@@ -417,7 +401,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* chat_acc_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   chat_acc_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* chat_content_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   chat_content_reflection_ = NULL;
@@ -547,7 +530,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_join_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_join_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_join_join_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_join_confirm_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_join_confirm_reflection_ = NULL;
@@ -599,11 +581,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* worship_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   worship_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* worship_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* activity_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   activity_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* activity_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* activity_infos_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   activity_infos_reflection_ = NULL;
@@ -613,11 +593,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* activity_info_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   activity_info_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* activity_info_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* cdkey_gift_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   cdkey_gift_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* cdkey_gift_reply_cdkey_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* res_pack_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   res_pack_reflection_ = NULL;
@@ -639,7 +617,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* search_excavate_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   search_excavate_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* search_excavate_reply_search_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* query_excavate_data_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_excavate_data_reply_reflection_ = NULL;
@@ -655,12 +632,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* excavate_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   excavate_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* excavate_owner_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* excavate_state_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* excavate_history_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   excavate_history_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* excavate_history_def_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* query_excavate_history_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_excavate_history_reply_reflection_ = NULL;
@@ -679,21 +653,18 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* set_excavate_team_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_excavate_team_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* set_excavate_team_reply_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* excavate_start_battle_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   excavate_start_battle_reply_reflection_ = NULL;
 const ::google::protobuf::Descriptor* excavate_end_battle_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   excavate_end_battle_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* excavate_end_battle_reply_mine_battle_result_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* draw_excav_res_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   draw_excav_res_reply_reflection_ = NULL;
 const ::google::protobuf::Descriptor* excavate_reward_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   excavate_reward_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* excavate_reward_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* query_excavate_def_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_excavate_def_reply_reflection_ = NULL;
@@ -718,14 +689,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_instance_query_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_instance_query_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_instance_query_is_can_jump_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_chapter_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_chapter_reflection_ = NULL;
 const ::google::protobuf::Descriptor* guild_instance_detail_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_instance_detail_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_instance_detail_challenger_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_challenger_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_challenger_reflection_ = NULL;
@@ -738,7 +707,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_instance_item_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_instance_item_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_instance_item_drop_state_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_instance_drop_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_instance_drop_reflection_ = NULL;
@@ -781,7 +749,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* query_ranklist_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_ranklist_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* query_ranklist_reply_rank_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* request_guild_log_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   request_guild_log_reply_reflection_ = NULL;
@@ -809,16 +776,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* every_day_happy_reply_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   every_day_happy_reply_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* result_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* money_type_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* server_opt_result_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* hire_result_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_join_t_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor_ = NULL;
 
 }  // namespace
 
@@ -1103,7 +1060,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_item));
-  system_setting_item_setting_status_descriptor_ = system_setting_item_descriptor_->enum_type(0);
   global_config_descriptor_ = file->message_type(13);
   static const int global_config_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(global_config, _hero_split_ending_),
@@ -1326,7 +1282,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(exit_stage_reply));
-  exit_stage_reply_exit_stage_result_descriptor_ = exit_stage_reply_descriptor_->enum_type(0);
   hero_upgrade_reply_descriptor_ = file->message_type(26);
   static const int hero_upgrade_reply_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hero_upgrade_reply, _result_),
@@ -1551,7 +1506,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(error_info));
-  error_info_exit_descriptor_ = error_info_descriptor_->enum_type(0);
   goods_descriptor_ = file->message_type(40);
   static const int goods_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(goods, _id_),
@@ -1571,7 +1525,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(goods));
-  goods_price_type_descriptor_ = goods_descriptor_->enum_type(0);
   star_goods_descriptor_ = file->message_type(41);
   static const int star_goods_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(star_goods, _type_),
@@ -1590,7 +1543,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(star_goods));
-  star_goods_box_type_descriptor_ = star_goods_descriptor_->enum_type(0);
   user_descriptor_ = file->message_type(42);
   static const int user_offsets_[32] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(user, _userid_),
@@ -1691,7 +1643,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(daily_login));
-  daily_login_dailylogin_status_descriptor_ = daily_login_descriptor_->enum_type(0);
   ask_daily_login_reply_descriptor_ = file->message_type(46);
   static const int ask_daily_login_reply_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ask_daily_login_reply, _result_),
@@ -1823,7 +1774,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(usertask));
-  usertask_status_descriptor_ = usertask_descriptor_->enum_type(0);
   dailyjob_descriptor_ = file->message_type(53);
   static const int dailyjob_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(dailyjob, _id_),
@@ -1876,7 +1826,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(tavern_record));
-  tavern_record_box_type_descriptor_ = tavern_record_descriptor_->enum_type(0);
   usermidas_descriptor_ = file->message_type(56);
   static const int usermidas_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(usermidas, _last_change_),
@@ -1955,7 +1904,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(dailyjob_reward));
-  dailyjob_reward_type_descriptor_ = dailyjob_reward_descriptor_->enum_type(0);
   job_rewards_reply_descriptor_ = file->message_type(61);
   static const int job_rewards_reply_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(job_rewards_reply, _result_),
@@ -2428,7 +2376,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(ladder_rank_reward));
-  ladder_rank_reward_reward_type_descriptor_ = ladder_rank_reward_descriptor_->enum_type(0);
   draw_rank_reward_descriptor_ = file->message_type(87);
   static const int draw_rank_reward_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(draw_rank_reward, _rewards_),
@@ -2475,7 +2422,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(set_name_reply));
-  set_name_reply_set_name_result_descriptor_ = set_name_reply_descriptor_->enum_type(0);
   set_avatar_reply_descriptor_ = file->message_type(90);
   static const int set_avatar_reply_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(set_avatar_reply, _result_),
@@ -2681,7 +2627,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(tbc_reward));
-  tbc_reward_type_descriptor_ = tbc_reward_descriptor_->enum_type(0);
   tbc_stage_descriptor_ = file->message_type(102);
   static const int tbc_stage_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tbc_stage, _status_),
@@ -2698,7 +2643,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(tbc_stage));
-  tbc_stage_status_descriptor_ = tbc_stage_descriptor_->enum_type(0);
   tbc_info_descriptor_ = file->message_type(103);
   static const int tbc_info_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tbc_info, _cur_stage_),
@@ -2855,7 +2799,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(sys_mail));
-  sys_mail_status_descriptor_ = sys_mail_descriptor_->enum_type(0);
   mail_content_descriptor_ = file->message_type(112);
   static const int mail_content_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(mail_content, _plain_mail_),
@@ -2922,7 +2865,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(mail_param));
-  mail_param_mail_param_type_descriptor_ = mail_param_descriptor_->enum_type(0);
   user_point_descriptor_ = file->message_type(116);
   static const int user_point_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(user_point, _type_),
@@ -2939,7 +2881,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(user_point));
-  user_point_user_point_type_descriptor_ = user_point_descriptor_->enum_type(0);
   read_mail_reply_descriptor_ = file->message_type(117);
   static const int read_mail_reply_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(read_mail_reply, _result_),
@@ -3106,7 +3047,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(chat_acc));
-  chat_acc_chat_acc_t_descriptor_ = chat_acc_descriptor_->enum_type(0);
   chat_content_descriptor_ = file->message_type(127);
   static const int chat_content_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(chat_content, _chat_id_),
@@ -3204,7 +3144,7 @@ void protobuf_AssignDesc_cb_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _search_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _join_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _join_confirm_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _leave_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _guild_leave_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _kick_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _set_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_reply, _query_),
@@ -3882,7 +3822,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_join));
-  guild_join_join_result_descriptor_ = guild_join_descriptor_->enum_type(0);
   guild_join_confirm_descriptor_ = file->message_type(170);
   static const int guild_join_confirm_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_join_confirm, _result_),
@@ -4163,7 +4102,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(worship_reward));
-  worship_reward_type_descriptor_ = worship_reward_descriptor_->enum_type(0);
   activity_reward_descriptor_ = file->message_type(187);
   static const int activity_reward_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(activity_reward, _type_),
@@ -4181,7 +4119,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(activity_reward));
-  activity_reward_type_descriptor_ = activity_reward_descriptor_->enum_type(0);
   activity_infos_descriptor_ = file->message_type(188);
   static const int activity_infos_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(activity_infos, _activity_info_),
@@ -4236,7 +4173,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(activity_info));
-  activity_info_type_descriptor_ = activity_info_descriptor_->enum_type(0);
   cdkey_gift_reply_descriptor_ = file->message_type(191);
   static const int cdkey_gift_reply_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(cdkey_gift_reply, _result_),
@@ -4253,7 +4189,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(cdkey_gift_reply));
-  cdkey_gift_reply_cdkey_result_descriptor_ = cdkey_gift_reply_descriptor_->enum_type(0);
   res_pack_descriptor_ = file->message_type(192);
   static const int res_pack_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(res_pack, _money_),
@@ -4380,7 +4315,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(search_excavate_reply));
-  search_excavate_reply_search_result_descriptor_ = search_excavate_reply_descriptor_->enum_type(0);
   query_excavate_data_reply_descriptor_ = file->message_type(199);
   static const int query_excavate_data_reply_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(query_excavate_data_reply, _excavate_),
@@ -4480,8 +4414,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(excavate));
-  excavate_owner_descriptor_ = excavate_descriptor_->enum_type(0);
-  excavate_state_descriptor_ = excavate_descriptor_->enum_type(1);
   excavate_history_descriptor_ = file->message_type(204);
   static const int excavate_history_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(excavate_history, _id_),
@@ -4505,7 +4437,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(excavate_history));
-  excavate_history_def_result_descriptor_ = excavate_history_descriptor_->enum_type(0);
   query_excavate_history_reply_descriptor_ = file->message_type(205);
   static const int query_excavate_history_reply_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(query_excavate_history_reply, _excavate_history_),
@@ -4604,7 +4535,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(set_excavate_team_reply));
-  set_excavate_team_reply_result_descriptor_ = set_excavate_team_reply_descriptor_->enum_type(0);
   excavate_start_battle_reply_descriptor_ = file->message_type(211);
   static const int excavate_start_battle_reply_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(excavate_start_battle_reply, _result_),
@@ -4641,7 +4571,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(excavate_end_battle_reply));
-  excavate_end_battle_reply_mine_battle_result_descriptor_ = excavate_end_battle_reply_descriptor_->enum_type(0);
   draw_excav_res_reply_descriptor_ = file->message_type(213);
   static const int draw_excav_res_reply_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(draw_excav_res_reply, _diamond_),
@@ -4676,7 +4605,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(excavate_reward));
-  excavate_reward_type_descriptor_ = excavate_reward_descriptor_->enum_type(0);
   query_excavate_def_reply_descriptor_ = file->message_type(215);
   static const int query_excavate_def_reply_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(query_excavate_def_reply, _excavate_),
@@ -4806,7 +4734,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_instance_query));
-  guild_instance_query_is_can_jump_descriptor_ = guild_instance_query_descriptor_->enum_type(0);
   guild_chapter_descriptor_ = file->message_type(223);
   static const int guild_chapter_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_chapter, _id_),
@@ -4846,7 +4773,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_instance_detail));
-  guild_instance_detail_challenger_status_descriptor_ = guild_instance_detail_descriptor_->enum_type(0);
   guild_challenger_descriptor_ = file->message_type(225);
   static const int guild_challenger_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_challenger, _summary_),
@@ -4918,7 +4844,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_instance_item));
-  guild_instance_item_drop_state_descriptor_ = guild_instance_item_descriptor_->enum_type(0);
   guild_instance_drop_descriptor_ = file->message_type(229);
   static const int guild_instance_drop_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_instance_drop, _items_),
@@ -5148,7 +5073,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(query_ranklist_reply));
-  query_ranklist_reply_rank_type_descriptor_ = query_ranklist_reply_descriptor_->enum_type(0);
   request_guild_log_reply_descriptor_ = file->message_type(243);
   static const int request_guild_log_reply_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(request_guild_log_reply, _guild_log_),
@@ -5296,16 +5220,6 @@ void protobuf_AssignDesc_cb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(every_day_happy_reply));
-  result_descriptor_ = file->enum_type(0);
-  battle_result_descriptor_ = file->enum_type(1);
-  money_type_descriptor_ = file->enum_type(2);
-  hero_status_descriptor_ = file->enum_type(3);
-  server_opt_result_descriptor_ = file->enum_type(4);
-  hire_result_descriptor_ = file->enum_type(5);
-  hire_from_descriptor_ = file->enum_type(6);
-  guild_join_t_descriptor_ = file->enum_type(7);
-  guild_job_t_descriptor_ = file->enum_type(8);
-  chat_channel_descriptor_ = file->enum_type(9);
 }
 
 namespace {
@@ -6346,1045 +6260,871 @@ void protobuf_AddDesc_cb_2eproto() {
     "\n\textraData\030\003 \001(\t\"*\n\005Login\022\017\n\007account\030\001 "
     "\001(\t\022\020\n\010password\030\002 \001(\t\"%\n\022LoginBaseappFai"
     "led\022\017\n\007retCode\030\001 \001(\r\"\"\n\016CreatedProxies\022\020"
-    "\n\010entityID\030\001 \001(\005\"u\n\013login_reply\022*\n\007_resu"
-    "lt\030\001 \002(\0162\031.client_baseserver.result\022&\n\005_"
-    "user\030\002 \001(\0132\027.client_baseserver.user\022\022\n\n_"
-    "time_zone\030\003 \002(\t\"U\n\thire_data\022\014\n\004_uid\030\001 \002"
-    "(\r\022\r\n\005_name\030\002 \002(\t\022+\n\005_hero\030\003 \002(\0132\034.clien"
-    "t_baseserver.hire_hero\"`\n\thire_hero\022&\n\005_"
-    "base\030\001 \002(\0132\027.client_baseserver.hero\022+\n\005_"
-    "dyna\030\002 \002(\0132\034.client_baseserver.hero_dyna"
-    "\"\327#\n\010down_msg\0224\n\014_login_reply\030\001 \001(\0132\036.cl"
-    "ient_baseserver.login_reply\022(\n\006_reset\030\002 "
-    "\001(\0132\030.client_baseserver.reset\022@\n\022_enter_"
-    "stage_reply\030\003 \001(\0132$.client_baseserver.en"
-    "ter_stage_reply\022>\n\021_exit_stage_reply\030\004 \001"
-    "(\0132#.client_baseserver.exit_stage_reply\022"
-    "B\n\023_hero_upgrade_reply\030\005 \001(\0132%.client_ba"
-    "seserver.hero_upgrade_reply\022H\n\026_equip_sy"
-    "nthesis_reply\030\006 \001(\0132(.client_baseserver."
-    "equip_synthesis_reply\022>\n\021_wear_equip_rep"
-    "ly\030\007 \001(\0132#.client_baseserver.wear_equip_"
-    "reply\022B\n\023_consume_item_reply\030\010 \001(\0132%.cli"
-    "ent_baseserver.consume_item_reply\0229\n\023_sh"
-    "op_refresh_reply\030\t \001(\0132\034.client_baseserv"
-    "er.user_shop\022B\n\023_shop_consume_reply\030\n \001("
-    "\0132%.client_baseserver.shop_consume_reply"
-    "\022D\n\024_skill_levelup_reply\030\013 \001(\0132&.client_"
-    "baseserver.skill_levelup_reply\022<\n\020_sell_"
-    "item_reply\030\014 \001(\0132\".client_baseserver.sel"
-    "l_item_reply\022J\n\027_fragment_compose_reply\030"
-    "\r \001(\0132).client_baseserver.fragment_compo"
-    "se_reply\022N\n\031_hero_equip_upgrade_reply\030\016 "
-    "\001(\0132+.client_baseserver.hero_equip_upgra"
-    "de_reply\022B\n\023_trigger_task_reply\030\017 \001(\0132%."
-    "client_baseserver.trigger_task_reply\022H\n\026"
-    "_require_rewards_reply\030\020 \001(\0132(.client_ba"
-    "seserver.require_rewards_reply\022@\n\022_trigg"
-    "er_job_reply\030\021 \001(\0132$.client_baseserver.t"
-    "rigger_job_reply\022@\n\022_job_rewards_reply\030\022"
-    " \001(\0132$.client_baseserver.job_rewards_rep"
-    "ly\022@\n\022_reset_elite_reply\030\023 \001(\0132$.client_"
-    "baseserver.reset_elite_reply\022@\n\022_sweep_s"
-    "tage_reply\030\024 \001(\0132$.client_baseserver.swe"
-    "ep_stage_reply\022@\n\022_tavern_draw_reply\030\025 \001"
-    "(\0132$.client_baseserver.tavern_draw_reply"
-    "\022J\n\027_sync_skill_stren_reply\030\026 \001(\0132).clie"
-    "nt_baseserver.sync_skill_stren_reply\022>\n\021"
-    "_query_data_reply\030\027 \001(\0132#.client_baseser"
-    "ver.query_data_reply\022@\n\022_hero_evolve_rep"
-    "ly\030\030 \001(\0132$.client_baseserver.hero_evolve"
-    "_reply\022D\n\024_sync_vitality_reply\030\031 \001(\0132&.c"
-    "lient_baseserver.sync_vitality_reply\0222\n\013"
-    "_user_check\030\032 \001(\0132\035.client_baseserver.us"
-    "er_check\022:\n\017_tutorial_reply\030\033 \001(\0132!.clie"
-    "nt_baseserver.tutorial_reply\0222\n\013_error_i"
-    "nfo\030\034 \001(\0132\035.client_baseserver.error_info"
-    "\0226\n\r_ladder_reply\030\035 \001(\0132\037.client_baseser"
-    "ver.ladder_reply\022:\n\017_set_name_reply\030\036 \001("
-    "\0132!.client_baseserver.set_name_reply\0224\n\014"
-    "_midas_reply\030\037 \001(\0132\036.client_baseserver.m"
-    "idas_reply\022<\n\020_open_shop_reply\030  \001(\0132\".c"
-    "lient_baseserver.open_shop_reply\0226\n\r_cha"
-    "rge_reply\030! \001(\0132\037.client_baseserver.char"
-    "ge_reply\022<\n\020_sdk_login_reply\030\" \001(\0132\".cli"
-    "ent_baseserver.sdk_login_reply\022>\n\021_set_a"
-    "vatar_reply\030# \001(\0132#.client_baseserver.se"
-    "t_avatar_reply\0222\n\013_notify_msg\030$ \001(\0132\035.cl"
-    "ient_baseserver.notify_msg\022H\n\026_ask_daily"
-    "_login_reply\030% \001(\0132(.client_baseserver.a"
-    "sk_daily_login_reply\0220\n\n_tbc_reply\030& \001(\013"
-    "2\034.client_baseserver.tbc_reply\022B\n\023_get_m"
-    "aillist_reply\030\' \001(\0132%.client_baseserver."
-    "get_maillist_reply\022<\n\020_read_mail_reply\030("
-    " \001(\0132\".client_baseserver.read_mail_reply"
-    "\022\021\n\t_svr_time\030) \001(\r\022B\n\023_get_vip_gift_rep"
-    "ly\030* \001(\0132%.client_baseserver.get_vip_gif"
-    "t_reply\0222\n\013_chat_reply\030+ \001(\0132\035.client_ba"
-    "seserver.chat_reply\022>\n\021_cdkey_gift_reply"
-    "\030, \001(\0132#.client_baseserver.cdkey_gift_re"
-    "ply\0224\n\014_guild_reply\030- \001(\0132\036.client_bases"
-    "erver.guild_reply\022D\n\024_ask_magicsoul_repl"
-    "y\030. \001(\0132&.client_baseserver.ask_magicsou"
-    "l_reply\022C\n\030_ask_activity_info_reply\030/ \001("
-    "\0132!.client_baseserver.activity_infos\022:\n\017"
-    "_excavate_reply\0300 \001(\0132!.client_baseserve"
-    "r.excavate_reply\022F\n\025_system_setting_repl"
-    "y\0301 \001(\0132\'.client_baseserver.system_setti"
-    "ng_reply\022J\n\027_query_split_data_reply\0302 \001("
-    "\0132).client_baseserver.query_split_data_r"
-    "eply\022N\n\031_query_split_return_reply\0303 \001(\0132"
-    "+.client_baseserver.query_split_return_r"
-    "eply\022>\n\021_split_hero_reply\0304 \001(\0132#.client"
-    "_baseserver.split_hero_reply\022:\n\017_worldcu"
-    "p_reply\0305 \001(\0132!.client_baseserver.worldc"
-    "up_reply\022@\n\022_battle_check_fail\0306 \001(\0132$.c"
-    "lient_baseserver.battle_check_fail\0226\n\r_q"
-    "uery_replay\0307 \001(\0132\037.client_baseserver.qu"
-    "ery_replay\0222\n\013_super_link\0308 \001(\0132\035.client"
-    "_baseserver.super_link\022F\n\025_query_ranklis"
-    "t_reply\0309 \001(\0132\'.client_baseserver.query_"
-    "ranklist_reply\022L\n\030_request_guild_log_rep"
-    "ly\030A \001(\0132*.client_baseserver.request_gui"
-    "ld_log_reply\022D\n\024_change_server_reply\030: \001"
-    "(\0132&.client_baseserver.change_server_rep"
-    "ly\022D\n\024_activity_info_reply\030; \001(\0132&.clien"
-    "t_baseserver.activity_info_reply\022P\n\032_act"
-    "ivity_lotto_info_reply\030< \001(\0132,.client_ba"
-    "seserver.activity_lotto_info_reply\022T\n\034_a"
-    "ctivity_lotto_reward_reply\030= \001(\0132..clien"
-    "t_baseserver.activity_lotto_reward_reply"
-    "\022Z\n\037_activity_bigpackage_info_reply\030> \001("
-    "\01321.client_baseserver.activity_bigpackag"
-    "e_info_reply\022^\n!_activity_bigpackage_rew"
-    "ard_reply\030\? \001(\01323.client_baseserver.acti"
-    "vity_bigpackage_reward_reply\022\\\n _activit"
-    "y_bigpackage_reset_reply\030@ \001(\01322.client_"
-    "baseserver.activity_bigpackage_reset_rep"
-    "ly\022C\n\023_fb_attention_reply\030\254\002 \001(\0132%.clien"
-    "t_baseserver.fb_attention_reply\022C\n\023_cont"
-    "inue_pay_reply\030\256\002 \001(\0132%.client_baseserve"
-    "r.continue_pay_reply\022I\n\026_recharge_rebate"
-    "_reply\030\257\002 \001(\0132(.client_baseserver.rechar"
-    "ge_rebate_reply\022I\n\026_every_day_happy_repl"
-    "y\030\260\002 \001(\0132(.client_baseserver.every_day_h"
-    "appy_reply\"\216\001\n\024system_setting_reply\022;\n\010_"
-    "request\030\001 \001(\0132).client_baseserver.system"
-    "_setting_request\0229\n\007_change\030\002 \001(\0132(.clie"
-    "nt_baseserver.system_setting_change\"C\n\025s"
-    "ystem_setting_change\022*\n\007_result\030\001 \002(\0162\031."
-    "client_baseserver.result\"^\n\026system_setti"
-    "ng_request\022D\n\024_system_setting_item\030\001 \003(\013"
-    "2&.client_baseserver.system_setting_item"
-    "\"\213\001\n\023system_setting_item\022\013\n\003key\030\001 \002(\t\022D\n"
-    "\005value\030\002 \002(\01625.client_baseserver.system_"
-    "setting_item.setting_status\"!\n\016setting_s"
-    "tatus\022\006\n\002on\020\001\022\007\n\003off\020\002\"+\n\rglobal_config\022"
-    "\032\n\022_hero_split_ending\030\001 \001(\r\"\177\n\017sdk_login"
-    "_reply\0220\n\007_result\030\001 \002(\0162\031.client_baseser"
-    "ver.result:\004fail\022\014\n\004_uin\030\002 \002(\t\022\025\n\r_acces"
-    "s_token\030\003 \001(\t\022\025\n\r_recharge_url\030\004 \001(\t\"4\n\n"
-    "user_check\022&\n\005_user\030\001 \002(\0132\027.client_bases"
-    "erver.user\"/\n\005reset\022&\n\005_user\030\001 \002(\0132\027.cli"
-    "ent_baseserver.user\"3\n\021enter_stage_reply"
-    "\022\016\n\006_rseed\030\001 \002(\r\022\016\n\006_loots\030\002 \003(\r\"Y\n\023acti"
-    "vity_info_reply\022B\n\023_last_activity_info\030\001"
-    " \003(\0132%.client_baseserver.last_activity_i"
-    "nfo\">\n\022last_activity_info\022\021\n\t_group_id\030\001"
-    " \002(\t\022\025\n\r_activity_ids\030\002 \003(\r\"\255\001\n\031activity"
-    "_lotto_info_reply\022\024\n\014_diamond_num\030\001 \002(\r\022"
-    "\025\n\r_current_step\030\002 \002(\r\022\031\n\021_need_diamond_"
-    "num\030\003 \002(\r\022\030\n\020_win_diamond_num\030\004 \002(\r\022\024\n\014_"
-    "remain_time\030\005 \002(\r\022\030\n\020_broadcast_texts\030\006 "
-    "\003(\t\"\225\001\n\033activity_lotto_reward_reply\022\017\n\007_"
-    "status\030\001 \002(\r\022\032\n\022_reward_diamon_num\030\002 \002(\r"
-    "\022\030\n\020_have_next_round\030\003 \002(\r\022\031\n\021_need_diam"
-    "ond_num\030\004 \001(\r\022\024\n\014_diamond_num\030\005 \002(\r\"\265\001\n\036"
-    "activity_bigpackage_info_reply\022\025\n\r_peopl"
-    "e_count\030\001 \002(\r\022\025\n\r_remain_times\030\002 \002(\r\022\031\n\021"
-    "_next_reset_price\030\003 \002(\r\022\030\n\020_current_rank"
-    "ing\030\004 \002(\r\022\024\n\014_get_box_ids\030\005 \003(\r\022\032\n\022_dist"
-    "ance_score_20\030\006 \002(\r\"\311\001\n activity_bigpack"
-    "age_reward_reply\022\017\n\007_status\030\001 \002(\r\0224\n\010_re"
-    "wards\030\002 \003(\0132\".client_baseserver.activity"
-    "_reward\022\021\n\t_item_ids\030\003 \003(\r\022\025\n\r_people_co"
-    "unt\030\004 \002(\r\022\030\n\020_current_ranking\030\005 \002(\r\022\032\n\022_"
-    "distance_score_20\030\006 \002(\r\"M\n\037activity_bigp"
-    "ackage_reset_reply\022\017\n\007_status\030\001 \002(\r\022\031\n\021_"
-    "next_reset_price\030\002 \002(\r\"\351\001\n\020exit_stage_re"
-    "ply\022M\n\007_result\030\001 \002(\01625.client_baseserver"
-    ".exit_stage_reply.exit_stage_result:\005kno"
-    "wn\022+\n\005_shop\030\002 \001(\0132\034.client_baseserver.us"
-    "er_shop\022,\n\006_sshop\030\003 \001(\0132\034.client_baseser"
-    "ver.star_shop\"+\n\021exit_stage_result\022\t\n\005kn"
-    "own\020\000\022\013\n\007unknown\020\001\"~\n\022hero_upgrade_reply"
-    "\0220\n\007_result\030\001 \002(\0162\031.client_baseserver.re"
-    "sult:\004fail\022&\n\005_hero\030\002 \001(\0132\027.client_bases"
-    "erver.hero\022\016\n\006_items\030\003 \003(\r\"I\n\025equip_synt"
-    "hesis_reply\0220\n\007_result\030\001 \002(\0162\031.client_ba"
-    "seserver.result:\004fail\"Q\n\020wear_equip_repl"
-    "y\0220\n\007_result\030\001 \002(\0162\031.client_baseserver.r"
-    "esult:\004fail\022\013\n\003_gs\030\002 \002(\r\"y\n\023sync_vitalit"
-    "y_reply\022.\n\t_vitality\030\001 \002(\0132\033.client_base"
-    "server.vitality\0222\n\r_shadow_runes\030\002 \002(\0132\033"
-    ".client_baseserver.vitality\"<\n\022consume_i"
-    "tem_reply\022&\n\005_hero\030\001 \002(\0132\027.client_basese"
-    "rver.hero\"\272\001\n\tuser_shop\022\013\n\003_id\030\001 \002(\r\022\037\n\027"
-    "_last_auto_refresh_time\030\002 \001(\r\022\024\n\014_expire"
-    "_time\030\003 \001(\r\022!\n\031_last_manual_refresh_time"
-    "\030\004 \001(\r\022\024\n\014_today_times\030\005 \001(\r\0220\n\016_current"
-    "_goods\030\006 \003(\0132\030.client_baseserver.goods\"b"
-    "\n\tstar_shop\022\013\n\003_id\030\001 \002(\r\022\024\n\014_expire_time"
-    "\030\002 \001(\r\0222\n\013_star_goods\030\003 \003(\0132\035.client_bas"
-    "eserver.star_goods\"I\n\022shop_consume_reply"
-    "\0223\n\007_result\030\001 \002(\0162\031.client_baseserver.re"
-    "sult:\007success\"T\n\023skill_levelup_reply\0220\n\007"
-    "_result\030\001 \002(\0162\031.client_baseserver.result"
-    ":\004fail\022\013\n\003_gs\030\002 \002(\r\"F\n\017sell_item_reply\0223"
-    "\n\007_result\030\001 \002(\0162\031.client_baseserver.resu"
-    "lt:\007success\"J\n\026fragment_compose_reply\0220\n"
-    "\007_result\030\001 \002(\0162\031.client_baseserver.resul"
-    "t:\004fail\"t\n\030hero_equip_upgrade_reply\0220\n\007_"
-    "result\030\001 \002(\0162\031.client_baseserver.result:"
-    "\004fail\022&\n\005_hero\030\002 \001(\0132\027.client_baseserver"
-    ".hero\"E\n\016tutorial_reply\0223\n\007_result\030\001 \002(\016"
-    "2\031.client_baseserver.result:\007success\"u\n\n"
-    "error_info\022\r\n\005_info\030\001 \002(\t\0229\n\005_exit\030\002 \001(\016"
-    "2\".client_baseserver.error_info.exit:\006no"
-    "need\"\035\n\004exit\022\n\n\006noneed\020\000\022\t\n\005force\020\001\"\322\001\n\005"
-    "goods\022\013\n\003_id\030\001 \002(\r\022\017\n\007_amount\030\002 \002(\r\0222\n\005_"
-    "type\030\003 \002(\0162#.client_baseserver.goods.pri"
-    "ce_type\022\016\n\006_price\030\004 \002(\r\022\020\n\010_is_sale\030\005 \002("
-    "\r\"U\n\nprice_type\022\010\n\004gold\020\000\022\013\n\007diamond\020\001\022\020"
-    "\n\014crusadepoint\020\002\022\016\n\narenapoint\020\003\022\016\n\nguil"
-    "dpoint\020\004\"\300\001\n\nstar_goods\0225\n\005_type\030\001 \002(\0162&"
-    ".client_baseserver.star_goods.box_type\022\022"
-    "\n\007_amount\030\002 \002(\r:\0011\022\021\n\t_stone_id\030\003 \002(\r\022\025\n"
-    "\r_stone_amount\030\004 \002(\r\"=\n\010box_type\022\017\n\013ston"
-    "e_green\020\000\022\016\n\nstone_blue\020\001\022\020\n\014stone_purpl"
-    "e\020\002\"\357\010\n\004user\022\017\n\007_userid\030\001 \002(\r\0220\n\n_name_c"
-    "ard\030\002 \002(\0132\034.client_baseserver.name_card\022"
-    "\016\n\006_level\030\003 \002(\r\022\025\n\r_recharge_sum\030\004 \002(\r\022\014"
-    "\n\004_exp\030\005 \002(\r\022\016\n\006_money\030\006 \002(\r\022\014\n\004_rmb\030\007 \002"
-    "(\r\022.\n\t_vitality\030\010 \002(\0132\033.client_baseserve"
-    "r.vitality\022(\n\007_heroes\030\n \003(\0132\027.client_bas"
-    "eserver.hero\022\016\n\006_items\030\013 \003(\r\0228\n\017_skill_l"
-    "evel_up\030\014 \002(\0132\037.client_baseserver.skilll"
-    "evelup\0220\n\n_userstage\030\017 \002(\0132\034.client_base"
-    "server.userstage\022+\n\005_shop\030\020 \003(\0132\034.client"
-    "_baseserver.user_shop\022\021\n\t_tutorial\030\021 \003(\r"
-    "\022*\n\005_task\030\022 \003(\0132\033.client_baseserver.user"
-    "task\022\026\n\016_task_finished\030\023 \003(\r\022\023\n\013_last_lo"
-    "gin\030\024 \001(\r\022.\n\t_dailyjob\030\025 \003(\0132\033.client_ba"
-    "seserver.dailyjob\0228\n\016_tavern_record\030\026 \003("
-    "\0132 .client_baseserver.tavern_record\0220\n\n_"
-    "usermidas\030\027 \002(\0132\034.client_baseserver.user"
-    "midas\0224\n\014_daily_login\030\030 \002(\0132\036.client_bas"
-    "eserver.daily_login\022\027\n\017_recharge_limit\030\031"
-    " \003(\r\022\027\n\017_vip_gifts_draw\030\032 \003(\r\022.\n\007_points"
-    "\030\033 \003(\0132\035.client_baseserver.user_point\0221\n"
-    "\013_month_card\030\034 \003(\0132\034.client_baseserver.m"
-    "onthcard\0222\n\013_user_guild\030\035 \002(\0132\035.client_b"
-    "aseserver.user_guild\022&\n\005_chat\030\036 \002(\0132\027.cl"
-    "ient_baseserver.chat\022,\n\006_sshop\030\037 \001(\0132\034.c"
-    "lient_baseserver.star_shop\022\030\n\020_facebook_"
-    "follow\030  \001(\r\022\017\n\007_praise\030! \001(\t\022\022\n\n_sessio"
-    "nid\030\" \001(\r\0222\n\r_shadow_runes\030# \001(\0132\033.clien"
-    "t_baseserver.vitality\"s\n\014user_summary\022\017\n"
-    "\007_avatar\030\001 \002(\r\022\r\n\005_name\030\002 \002(\t\022\014\n\004_vip\030\003 "
-    "\002(\r\022\016\n\006_level\030\004 \002(\r\022\023\n\013_guild_name\030\005 \001(\t"
-    "\022\020\n\010_user_id\030\006 \001(\r\"H\n\tname_card\022\r\n\005_name"
-    "\030\001 \002(\t\022\033\n\023_last_set_name_time\030\002 \002(\r\022\017\n\007_"
-    "avatar\030\003 \002(\r\"\263\001\n\013daily_login\022A\n\007_status\030"
-    "\001 \002(\01620.client_baseserver.daily_login.da"
-    "ilylogin_status\022\022\n\n_frequency\030\002 \002(\r\022\030\n\020_"
-    "last_login_date\030\003 \002(\r\"3\n\021dailylogin_stat"
-    "us\022\007\n\003all\020\001\022\010\n\004part\020\002\022\013\n\007nothing\020\003\"\215\001\n\025a"
-    "sk_daily_login_reply\022*\n\007_result\030\001 \002(\0162\031."
-    "client_baseserver.result\022\016\n\006_items\030\002 \003(\r"
-    "\022&\n\005_hero\030\003 \003(\0132\027.client_baseserver.hero"
-    "\022\020\n\010_diamond\030\004 \001(\r\"<\n\nhero_equip\022\016\n\006_ind"
-    "ex\030\001 \002(\r\022\020\n\010_item_id\030\002 \002(\r\022\014\n\004_exp\030\003 \002(\r"
-    "\"\324\001\n\004hero\022\014\n\004_tid\030\001 \002(\r\022\r\n\005_rank\030\002 \001(\r\022\016"
-    "\n\006_level\030\003 \002(\r\022\016\n\006_stars\030\004 \002(\r\022\014\n\004_exp\030\005"
-    " \002(\r\022\013\n\003_gs\030\006 \002(\r\022.\n\006_state\030\007 \002(\0162\036.clie"
-    "nt_baseserver.hero_status\022\025\n\r_skill_leve"
-    "ls\030\010 \003(\r\022-\n\006_items\030\t \003(\0132\035.client_basese"
-    "rver.hero_equip\"\210\001\n\014hero_summary\022\014\n\004_tid"
-    "\030\001 \002(\r\022\r\n\005_rank\030\002 \001(\r\022\016\n\006_level\030\003 \002(\r\022\016\n"
-    "\006_stars\030\004 \002(\r\022\013\n\003_gs\030\005 \001(\r\022.\n\006_state\030\006 \001"
-    "(\0162\036.client_baseserver.hero_status\"E\n\the"
-    "ro_dyna\022\020\n\010_hp_perc\030\001 \002(\r\022\020\n\010_mp_perc\030\002 "
-    "\002(\r\022\024\n\014_custom_data\030\003 \001(\r\"x\n\014skilllevelu"
-    "p\022\035\n\025_skill_levelup_chance\030\001 \002(\r\022\031\n\021_ski"
-    "ll_levelup_cd\030\002 \002(\r\022\024\n\014_reset_times\030\003 \002("
-    "\r\022\030\n\020_last_reset_date\030\004 \002(\r\"\237\001\n\010usertask"
-    "\022\r\n\005_line\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\022<\n\007_status\030"
-    "\003 \002(\0162\".client_baseserver.usertask.statu"
-    "s:\007working\022\024\n\014_task_target\030\004 \001(\r\"#\n\006stat"
-    "us\022\014\n\010finished\020\000\022\013\n\007working\020\001\"I\n\010dailyjo"
-    "b\022\013\n\003_id\030\001 \002(\r\022\032\n\022_last_rewards_time\030\002 \002"
-    "(\r\022\024\n\014_task_target\030\003 \001(\r\"9\n\tsweeploot\022\014\n"
-    "\004_exp\030\001 \002(\r\022\016\n\006_money\030\002 \002(\r\022\016\n\006_items\030\003 "
-    "\003(\r\"\324\001\n\rtavern_record\022C\n\t_box_type\030\001 \002(\016"
-    "2).client_baseserver.tavern_record.box_t"
-    "ype:\005green\022\021\n\t_left_cnt\030\002 \002(\r\022\026\n\016_last_g"
-    "et_time\030\003 \002(\r\022\027\n\017_has_first_draw\030\004 \002(\r\":"
-    "\n\010box_type\022\t\n\005green\020\001\022\010\n\004blue\020\002\022\n\n\006purpl"
-    "e\020\003\022\r\n\tmagicsoul\020\004\"7\n\tusermidas\022\024\n\014_last"
-    "_change\030\001 \002(\r\022\024\n\014_today_times\030\002 \002(\r\"@\n\022t"
-    "rigger_task_reply\022*\n\007_result\030\001 \003(\0162\031.cli"
-    "ent_baseserver.result\"C\n\025require_rewards"
-    "_reply\022*\n\007_result\030\001 \002(\0162\031.client_baseser"
-    "ver.result\"\?\n\021trigger_job_reply\022*\n\007_resu"
-    "lt\030\001 \003(\0162\031.client_baseserver.result\"\346\001\n\017"
-    "dailyjob_reward\0226\n\005_type\030\001 \001(\0162\'.client_"
-    "baseserver.dailyjob_reward.type\022\013\n\003_id\030\002"
-    " \001(\r\022\017\n\007_amount\030\003 \001(\r\"}\n\004type\022\007\n\003rmb\020\001\022\t"
-    "\n\005money\020\002\022\010\n\004item\020\003\022\010\n\004hero\020\004\022\014\n\010vitalit"
-    "y\020\005\022\r\n\tplayerexp\020\006\022\020\n\014crusadepoint\020\007\022\016\n\n"
-    "arenapoint\020\010\022\016\n\nguildpoint\020\t\"\206\001\n\021job_rew"
-    "ards_reply\0223\n\007_result\030\001 \002(\0162\031.client_bas"
-    "eserver.result:\007success\022<\n\020_activity_rew"
-    "ard\030\002 \003(\0132\".client_baseserver.dailyjob_r"
-    "eward\"h\n\021tavern_draw_reply\022\021\n\t_item_ids\030"
-    "\001 \003(\r\022,\n\013_new_heroes\030\002 \003(\0132\027.client_base"
-    "server.hero\022\022\n\n_smash_idx\030\003 \003(\r\"H\n\021reset"
-    "_elite_reply\0223\n\007_result\030\001 \002(\0162\031.client_b"
-    "aseserver.result:\007success\"\253\001\n\021sweep_stag"
-    "e_reply\022+\n\005_loot\030\001 \003(\0132\034.client_baseserv"
-    "er.sweeploot\022\016\n\006_items\030\002 \003(\r\022+\n\005_shop\030\003 "
-    "\001(\0132\034.client_baseserver.user_shop\022,\n\006_ss"
-    "hop\030\004 \001(\0132\034.client_baseserver.star_shop\""
-    "B\n\005sweep\022\030\n\020_last_reset_time\030\001 \002(\r\022\037\n\027_t"
-    "oday_free_sweep_times\030\002 \002(\r\"R\n\026sync_skil"
-    "l_stren_reply\0228\n\017_skill_level_up\030\001 \002(\0132\037"
-    ".client_baseserver.skilllevelup\"p\n\021hero_"
-    "evolve_reply\0223\n\007_result\030\001 \002(\0162\031.client_b"
-    "aseserver.result:\007success\022&\n\005_hero\030\002 \001(\013"
-    "2\027.client_baseserver.hero\"V\n\010vitality\022\020\n"
-    "\010_current\030\001 \002(\r\022\023\n\013_lastchange\030\002 \002(\r\022\021\n\t"
-    "_todaybuy\030\003 \002(\r\022\020\n\010_lastbuy\030\004 \002(\r\"\377\001\n\tus"
-    "erstage\022\033\n\023_normal_stage_stars\030\001 \003(\r\022\032\n\022"
-    "_elite_stage_stars\030\002 \003(\r\022\033\n\023_elite_daily"
-    "_record\030\003 \003(\r\022\031\n\021_elite_reset_time\030\004 \002(\r"
-    "\022(\n\006_sweep\030\005 \002(\0132\030.client_baseserver.swe"
-    "ep\022>\n\021_act_daily_record\030\006 \003(\0132#.client_b"
-    "aseserver.act_daily_record\022\027\n\017_act_reset"
-    "_time\030\007 \002(\r\"I\n\020act_daily_record\022\013\n\003_id\030\001"
-    " \002(\r\022\022\n\n_frequency\030\002 \002(\r\022\024\n\014_last_change"
-    "\030\003 \002(\r\"\303\005\n\014ladder_reply\0222\n\013_open_panel\030\001"
-    " \001(\0132\035.client_baseserver.open_panel\0226\n\013_"
-    "apply_oppo\030\002 \001(\0132!.client_baseserver.app"
-    "ly_opponent\0226\n\r_start_battle\030\003 \001(\0132\037.cli"
-    "ent_baseserver.start_battle\0222\n\013_end_batt"
-    "le\030\004 \001(\0132\035.client_baseserver.end_battle\022"
-    "2\n\013_set_lineup\030\005 \001(\0132\035.client_baseserver"
-    ".set_lineup\0228\n\016_query_records\030\006 \001(\0132 .cl"
-    "ient_baseserver.query_records\0226\n\r_query_"
-    "replay\030\007 \001(\0132\037.client_baseserver.query_r"
-    "eplay\022<\n\020_query_rankborad\030\010 \001(\0132\".client"
-    "_baseserver.query_rankboard\0227\n\013_query_op"
-    "po\030\t \001(\0132\".client_baseserver.query_oppo_"
-    "info\022<\n\020_clear_battle_cd\030\n \001(\0132\".client_"
-    "baseserver.clear_battle_cd\022>\n\021_draw_rank"
-    "_reward\030\013 \001(\0132#.client_baseserver.draw_r"
-    "ank_reward\022@\n\022_buy_battle_chance\030\014 \001(\0132$"
-    ".client_baseserver.buy_battle_chance\"\255\001\n"
-    "\nopen_panel\022\r\n\005_rank\030\001 \002(\r\022\023\n\013_left_coun"
-    "t\030\002 \002(\r\022\025\n\r_last_bt_time\030\003 \002(\r\022\022\n\n_buy_t"
-    "imes\030\004 \002(\r\022\017\n\007_lineup\030\005 \003(\r\022\013\n\003_gs\030\006 \002(\r"
-    "\0222\n\006_oppos\030\007 \003(\0132\".client_baseserver.lad"
-    "der_opponent\"D\n\016apply_opponent\0222\n\006_oppos"
-    "\030\001 \003(\0132\".client_baseserver.ladder_oppone"
-    "nt\"\266\001\n\014start_battle\022*\n\007_result\030\001 \002(\0162\031.c"
-    "lient_baseserver.result\022\016\n\006_rseed\030\002 \002(\r\022"
-    "-\n\014_self_heroes\030\003 \003(\0132\027.client_baseserve"
-    "r.hero\022(\n\007_heroes\030\004 \003(\0132\027.client_baseser"
-    "ver.hero\022\021\n\t_is_robot\030\005 \002(\r\"\201\001\n\nend_batt"
-    "le\0221\n\007_result\030\001 \002(\0162 .client_baseserver."
-    "battle_result\022\031\n\021_best_rank_reward\030\002 \002(\r"
-    "\022\022\n\n_best_rank\030\003 \002(\r\022\021\n\t_cur_rank\030\004 \002(\r\""
-    "V\n\nset_lineup\022*\n\007_result\030\001 \002(\0162\031.client_"
-    "baseserver.result\022\017\n\007_lineup\030\002 \003(\r\022\013\n\003_g"
-    "s\030\003 \002(\r\"C\n\rquery_records\0222\n\010_records\030\001 \003"
-    "(\0132 .client_baseserver.ladder_record\">\n\014"
-    "query_replay\022.\n\007_record\030\001 \002(\0132\035.client_b"
-    "aseserver.pvp_record\"\271\004\n\npvp_record\022\020\n\010_"
-    "checkid\030\001 \002(\r\022\017\n\007_userid\030\002 \002(\r\022\021\n\t_usern"
-    "ame\030\003 \001(\t\022\016\n\006_level\030\004 \001(\r\022\017\n\007_avatar\030\005 \001"
-    "(\r\022\014\n\004_vip\030\006 \001(\r\022\024\n\014_oppo_userid\030\007 \002(\r\022\022"
-    "\n\n_oppo_name\030\010 \001(\t\022\023\n\013_oppo_level\030\t \001(\r\022"
-    "\024\n\014_oppo_avatar\030\n \001(\r\022\021\n\t_oppo_vip\030\013 \001(\r"
-    "\022\023\n\013_oppo_robot\030\014 \001(\r\022:\n\007_result\030\r \001(\0162 "
-    ".client_baseserver.battle_result:\007victor"
-    "y\022-\n\014_self_heroes\030\016 \003(\0132\027.client_baseser"
-    "ver.hero\0221\n\013_self_dynas\030\017 \003(\0132\034.client_b"
-    "aseserver.hero_dyna\022-\n\014_oppo_heroes\030\020 \003("
-    "\0132\027.client_baseserver.hero\0221\n\013_oppo_dyna"
-    "s\030\021 \003(\0132\034.client_baseserver.hero_dyna\022\016\n"
-    "\006_rseed\030\022 \002(\r\022\023\n\013_self_robot\030\023 \001(\r\022\017\n\007_p"
-    "aram1\030\024 \001(\r\022\023\n\013_operations\030\025 \003(\r\"\240\001\n\017que"
-    "ry_rankboard\0225\n\n_rank_list\030\001 \003(\0132!.clien"
-    "t_baseserver.rankboard_data\0225\n\n_self_ran"
-    "k\030\002 \001(\0132!.client_baseserver.rankboard_da"
-    "ta\022\014\n\004_pos\030\003 \001(\r\022\021\n\t_prev_pos\030\004 \001(\r\"D\n\017q"
-    "uery_oppo_info\0221\n\005_user\030\001 \002(\0132\".client_b"
-    "aseserver.ladder_opponent\"=\n\017clear_battl"
-    "e_cd\022*\n\007_result\030\001 \002(\0162\031.client_baseserve"
-    "r.result\"U\n\016rankboard_data\022\020\n\010_user_id\030\001"
-    " \002(\r\0221\n\010_summary\030\002 \001(\0132\037.client_baseserv"
-    "er.user_summary\"\304\001\n\rladder_record\022\020\n\010_us"
-    "er_id\030\001 \002(\r\0221\n\010_summary\030\002 \002(\0132\037.client_b"
-    "aseserver.user_summary\022\022\n\n_deta_rank\030\003 \002"
-    "(\r\022\020\n\010_bt_time\030\004 \002(\r\0224\n\n_bt_result\030\005 \002(\016"
-    "2 .client_baseserver.battle_result\022\022\n\n_r"
-    "eplay_id\030\006 \002(\r\"\310\001\n\017ladder_opponent\022\020\n\010_u"
-    "ser_id\030\001 \002(\r\0221\n\010_summary\030\002 \002(\0132\037.client_"
-    "baseserver.user_summary\022\r\n\005_rank\030\003 \002(\r\022\020"
-    "\n\010_win_cnt\030\004 \002(\r\022\013\n\003_gs\030\005 \002(\r\022\021\n\t_is_rob"
-    "ot\030\006 \002(\r\022/\n\006_heros\030\007 \003(\0132\037.client_basese"
-    "rver.hero_summary\"\270\001\n\022ladder_rank_reward"
-    "\022@\n\005_type\030\001 \002(\01621.client_baseserver.ladd"
-    "er_rank_reward.reward_type\022\017\n\007_param1\030\002 "
-    "\001(\r\022\017\n\007_param2\030\003 \001(\r\">\n\013reward_type\022\010\n\004g"
-    "old\020\001\022\013\n\007diamond\020\002\022\010\n\004item\020\003\022\016\n\narenapoi"
-    "nt\020\004\"K\n\020draw_rank_reward\0227\n\010_rewards\030\001 \003"
-    "(\0132%.client_baseserver.ladder_rank_rewar"
-    "d\"\\\n\021buy_battle_chance\0223\n\007_result\030\001 \002(\0162"
-    "\031.client_baseserver.result:\007success\022\022\n\n_"
-    "buy_times\030\002 \001(\r\"\231\001\n\016set_name_reply\022K\n\007_r"
-    "esult\030\001 \002(\01621.client_baseserver.set_name"
-    "_reply.set_name_result:\007success\":\n\017set_n"
-    "ame_result\022\013\n\007success\020\000\022\n\n\006exists\020\001\022\016\n\nd"
-    "irty_word\020\002\">\n\020set_avatar_reply\022*\n\007_resu"
-    "lt\030\001 \002(\0162\031.client_baseserver.result\"\247\001\n\020"
-    "query_data_reply\022\013\n\003rmb\030\001 \001(\r\022\022\n\ncharge_"
-    "sum\030\002 \001(\r\022\'\n\006heroes\030\003 \003(\0132\027.client_bases"
-    "erver.hero\022\026\n\016recharge_limit\030\004 \003(\r\0221\n\013_m"
-    "onth_card\030\005 \003(\0132\034.client_baseserver.mont"
-    "hcard\".\n\rmidas_acquire\022\r\n\005_type\030\001 \002(\r\022\016\n"
-    "\006_money\030\002 \002(\r\"A\n\013midas_reply\0222\n\010_acquire"
-    "\030\001 \003(\0132 .client_baseserver.midas_acquire"
-    "\"j\n\017open_shop_reply\022*\n\007_result\030\001 \002(\0162\031.c"
-    "lient_baseserver.result\022+\n\005_shop\030\002 \001(\0132\034"
-    ".client_baseserver.user_shop\"6\n\014charge_r"
-    "eply\022\022\n\n_serial_id\030\001 \002(\t\022\022\n\n_charge_id\030\002"
-    " \002(\r\"\232\002\n\nnotify_msg\0228\n\016_ladder_notify\030\001 "
-    "\001(\0132 .client_baseserver.ladder_notify\022\021\n"
-    "\t_new_mail\030\002 \001(\r\022\023\n\013_guild_chat\030\003 \001(\r\022\030\n"
-    "\020_activity_notify\030\004 \001(\r\022\030\n\020_activity_rew"
-    "ard\030\005 \001(\r\022\027\n\017_release_heroes\030\006 \003(\r\022\025\n\r_e"
-    "xcav_record\030\007 \001(\r\022\023\n\013_guild_drop\030\010 \001(\r\022\026"
-    "\n\016_personal_chat\030\t \001(\r\022\031\n\021_splitable_her"
-    "oes\030\n \001(\r\"%\n\rladder_notify\022\024\n\014_is_attack"
-    "ed\030\001 \001(\r\"\321\002\n\ttbc_reply\0226\n\013_open_panel\030\001 "
-    "\001(\0132!.client_baseserver.tbc_open_panel\0226"
-    "\n\013_query_oppo\030\002 \001(\0132!.client_baseserver."
-    "tbc_query_oppo\0227\n\n_start_bat\030\003 \001(\0132#.cli"
-    "ent_baseserver.tbc_start_battle\0223\n\010_end_"
-    "bat\030\004 \001(\0132!.client_baseserver.tbc_end_ba"
-    "ttle\022,\n\006_reset\030\005 \001(\0132\034.client_baseserver"
-    ".tbc_reset\0228\n\014_draw_reward\030\006 \001(\0132\".clien"
-    "t_baseserver.tbc_draw_reward\"J\n\rtbc_self"
-    "_hero\022\014\n\004_tid\030\001 \002(\r\022+\n\005_dyna\030\002 \002(\0132\034.cli"
-    "ent_baseserver.hero_dyna\"d\n\rtbc_oppo_her"
-    "o\022&\n\005_base\030\001 \002(\0132\027.client_baseserver.her"
-    "o\022+\n\005_dyna\030\002 \002(\0132\034.client_baseserver.her"
-    "o_dyna\"\265\001\n\ntbc_reward\0221\n\005_type\030\001 \002(\0162\".c"
-    "lient_baseserver.tbc_reward.type\022\017\n\007_par"
-    "am1\030\002 \001(\r\022\017\n\007_param2\030\003 \001(\r\"R\n\004type\022\010\n\004go"
-    "ld\020\001\022\013\n\007diamond\020\002\022\010\n\004item\020\003\022\t\n\005chest\020\004\022\020"
-    "\n\014crusadepoint\020\005\022\014\n\010chestbox\020\006\"\256\001\n\ttbc_s"
-    "tage\022>\n\007_status\030\001 \002(\0162#.client_baseserve"
-    "r.tbc_stage.status:\010unpassed\022/\n\010_rewards"
-    "\030\002 \003(\0132\035.client_baseserver.tbc_reward\"0\n"
-    "\006status\022\014\n\010unpassed\020\000\022\n\n\006passed\020\001\022\014\n\010rew"
-    "arded\020\002\"\310\001\n\010tbc_info\022\022\n\n_cur_stage\030\001 \002(\r"
-    "\022\024\n\014_reset_times\030\002 \002(\r\0221\n\007_heroes\030\003 \003(\0132"
-    " .client_baseserver.tbc_self_hero\022-\n\007_st"
-    "ages\030\004 \003(\0132\034.client_baseserver.tbc_stage"
-    "\0220\n\n_hire_hero\030\005 \001(\0132\034.client_baseserver"
-    ".hire_data\"<\n\016tbc_open_panel\022*\n\005_info\030\001 "
-    "\002(\0132\033.client_baseserver.tbc_info\"\210\001\n\016tbc"
-    "_query_oppo\0221\n\010_summary\030\001 \002(\0132\037.client_b"
-    "aseserver.user_summary\0220\n\006_oppos\030\002 \003(\0132 "
-    ".client_baseserver.tbc_oppo_hero\022\021\n\t_is_"
-    "robot\030\003 \002(\r\"W\n\020tbc_start_battle\0223\n\007_resu"
-    "lt\030\001 \002(\0162\031.client_baseserver.result:\007suc"
-    "cess\022\016\n\006_rseed\030\002 \002(\r\"L\n\016tbc_end_battle\022:"
-    "\n\007_result\030\001 \002(\0162 .client_baseserver.batt"
-    "le_result:\007victory\"l\n\ttbc_reset\0223\n\007_resu"
-    "lt\030\001 \002(\0162\031.client_baseserver.result:\007suc"
-    "cess\022*\n\005_info\030\002 \001(\0132\033.client_baseserver."
-    "tbc_info\"\264\001\n\017tbc_draw_reward\0223\n\007_result\030"
-    "\001 \002(\0162\031.client_baseserver.result:\007succes"
-    "s\022\021\n\t_stage_id\030\002 \002(\r\022/\n\010_rewards\030\003 \003(\0132\035"
-    ".client_baseserver.tbc_reward\022(\n\007_heroes"
-    "\030\004 \003(\0132\027.client_baseserver.hero\"I\n\022get_m"
-    "aillist_reply\0223\n\016_sys_mail_list\030\001 \003(\0132\033."
-    "client_baseserver.sys_mail\"\335\002\n\010sys_mail\022"
-    "\013\n\003_id\030\001 \002(\r\0223\n\007_status\030\002 \002(\0162\".client_b"
-    "aseserver.sys_mail.status\022\022\n\n_mail_time\030"
-    "\003 \002(\r\022\024\n\014_expire_time\030\004 \002(\r\0221\n\010_content\030"
-    "\005 \002(\0132\037.client_baseserver.mail_content\022\016"
-    "\n\006_money\030\006 \001(\r\022\021\n\t_diamonds\030\007 \001(\r\022\024\n\014_sk"
-    "ill_point\030\010 \001(\r\022\016\n\006_items\030\t \003(\r\022\r\n\005_type"
-    "\030\013 \002(\r\022.\n\007_points\030\n \003(\0132\035.client_baseser"
-    "ver.user_point\"*\n\006status\022\n\n\006unread\020\000\022\010\n\004"
-    "read\020\001\022\n\n\006delete\020\002\"x\n\014mail_content\0222\n\013_p"
-    "lain_mail\030\001 \001(\0132\035.client_baseserver.plai"
-    "n_mail\0224\n\014_format_mail\030\002 \001(\0132\036.client_ba"
-    "seserver.format_mail\"=\n\nplain_mail\022\r\n\005_f"
-    "rom\030\001 \002(\t\022\016\n\006_title\030\002 \002(\t\022\020\n\010_content\030\003 "
-    "\002(\t\"S\n\013format_mail\022\024\n\014_mail_cfg_id\030\001 \002(\r"
-    "\022.\n\007_params\030\002 \003(\0132\035.client_baseserver.ma"
-    "il_param\"\330\001\n\nmail_param\022\014\n\004_idx\030\001 \002(\r\022<\n"
-    "\005_type\030\002 \001(\0162-.client_baseserver.mail_pa"
-    "ram.mail_param_type\022\016\n\006_value\030\003 \001(\t\"n\n\017m"
-    "ail_param_type\022\t\n\005value\020\001\022\t\n\005money\020\002\022\010\n\004"
-    "item\020\003\022\010\n\004mine\020\004\022\r\n\tself_hero\020\005\022\023\n\017excav"
-    "_battle_id\020\006\022\r\n\thero_name\020\007\"\253\001\n\nuser_poi"
-    "nt\022H\n\005_type\030\001 \002(\0162-.client_baseserver.us"
-    "er_point.user_point_type:\narenapoint\022\016\n\006"
-    "_value\030\002 \002(\r\"C\n\017user_point_type\022\016\n\narena"
-    "point\020\001\022\020\n\014crusadepoint\020\002\022\016\n\nguildpoint\020"
-    "\003\"=\n\017read_mail_reply\022*\n\007_result\030\001 \002(\0162\031."
-    "client_baseserver.result\"@\n\022get_vip_gift"
-    "_reply\022*\n\007_result\030\001 \002(\0162\031.client_baseser"
-    "ver.result\"\371\002\n\nchat_reply\022)\n\004_say\030\001 \001(\0132"
-    "\033.client_baseserver.chat_say\022-\n\006_fresh\030\002"
-    " \001(\0132\035.client_baseserver.chat_fresh\022-\n\006_"
-    "fetch\030\003 \001(\0132\035.client_baseserver.chat_fet"
-    "ch\0224\n\014_chat_add_bl\030\004 \001(\0132\036.client_basese"
-    "rver.chat_add_bl\0224\n\014_chat_del_bl\030\005 \001(\0132\036"
-    ".client_baseserver.chat_del_bl\022:\n\017_chat_"
-    "blacklist\030\006 \001(\0132!.client_baseserver.chat"
-    "_blacklist\022:\n\017_chat_borad_say\030\007 \001(\0132!.cl"
-    "ient_baseserver.chat_broad_say\"^\n\023chat_b"
-    "lacklist_user\022\017\n\007_userid\030\001 \001(\r\0226\n\r_user_"
-    "summary\030\002 \001(\0132\037.client_baseserver.user_s"
-    "ummary\"V\n\016chat_blacklist\022D\n\024_chat_blackl"
-    "ist_user\030\001 \003(\0132&.client_baseserver.chat_"
-    "blacklist_user\"\243\001\n\016chat_broad_say\022*\n\007_re"
-    "sult\030\001 \001(\0162\031.client_baseserver.result\0221\n"
-    "\010_channel\030\002 \001(\0162\037.client_baseserver.chat"
-    "_channel\0222\n\t_contents\030\003 \003(\0132\037.client_bas"
-    "eserver.chat_content\"\265\001\n\010chat_say\0223\n\007_re"
-    "sult\030\001 \002(\0162\031.client_baseserver.result:\007s"
-    "uccess\022@\n\010_channel\030\002 \002(\0162\037.client_basese"
-    "rver.chat_channel:\rworld_channel\0222\n\t_con"
-    "tents\030\003 \003(\0132\037.client_baseserver.chat_con"
-    "tent\"\202\001\n\nchat_fresh\022@\n\010_channel\030\001 \002(\0162\037."
-    "client_baseserver.chat_channel:\rworld_ch"
-    "annel\0222\n\t_contents\030\002 \003(\0132\037.client_basese"
-    "rver.chat_content\"\221\001\n\nchat_fetch\022@\n\010_cha"
-    "nnel\030\001 \002(\0162\037.client_baseserver.chat_chan"
-    "nel:\rworld_channel\022\020\n\010_chat_id\030\002 \002(\r\022/\n\n"
-    "_accessory\030\003 \001(\0132\033.client_baseserver.cha"
-    "t_acc\"\264\001\n\010chat_acc\022=\n\005_type\030\001 \002(\0162&.clie"
-    "nt_baseserver.chat_acc.chat_acc_t:\006binar"
-    "y\022\017\n\007_binary\030\002 \001(\t\022.\n\007_replay\030\003 \001(\0132\035.cl"
-    "ient_baseserver.pvp_record\"(\n\nchat_acc_t"
-    "\022\n\n\006binary\020\001\022\016\n\npvp_replay\020\002\"\225\002\n\014chat_co"
-    "ntent\022\020\n\010_chat_id\030\001 \002(\r\022\024\n\014_speaker_uid\030"
-    "\002 \002(\r\0229\n\020_speaker_summary\030\003 \002(\0132\037.client"
-    "_baseserver.user_summary\022\023\n\013_target_uid\030"
-    "\004 \001(\r\0228\n\017_target_summary\030\005 \001(\0132\037.client_"
-    "baseserver.user_summary\022\025\n\r_speaker_post"
-    "\030\006 \001(\r\022\023\n\013_speak_time\030\007 \002(\r\022\025\n\r_content_"
-    "type\030\010 \002(\r\022\020\n\010_content\030\t \002(\t\"6\n\013chat_add"
-    "_bl\022\'\n\004_ret\030\001 \002(\0162\031.client_baseserver.re"
-    "sult\"6\n\013chat_del_bl\022\'\n\004_ret\030\001 \002(\0162\031.clie"
-    "nt_baseserver.result\"[\n\004chat\022\031\n\021_world_c"
-    "hat_times\030\001 \002(\r\022#\n\033_last_reset_world_cha"
-    "t_time\030\002 \002(\r\022\023\n\013_black_list\030\003 \003(\r\"\211\001\n\nus"
-    "er_guild\022\013\n\003_id\030\001 \002(\r\022\r\n\005_name\030\002 \002(\t\0224\n\004"
-    "_job\030\003 \001(\0162\036.client_baseserver.guild_job"
-    "_t:\006member\022\025\n\r_req_guild_id\030\004 \001(\r\022\022\n\n_hi"
-    "re_hero\030\005 \003(\r\"\357\020\n\013guild_reply\0220\n\007_create"
-    "\030\001 \001(\0132\037.client_baseserver.guild_create\022"
-    "2\n\010_dismiss\030\002 \001(\0132 .client_baseserver.gu"
-    "ild_dismiss\022,\n\005_list\030\003 \001(\0132\035.client_base"
-    "server.guild_list\0220\n\007_search\030\004 \001(\0132\037.cli"
-    "ent_baseserver.guild_search\022,\n\005_join\030\005 \001"
-    "(\0132\035.client_baseserver.guild_join\022<\n\r_jo"
-    "in_confirm\030\006 \001(\0132%.client_baseserver.gui"
-    "ld_join_confirm\022.\n\006_leave\030\007 \001(\0132\036.client"
-    "_baseserver.guild_leave\022,\n\005_kick\030\010 \001(\0132\035"
-    ".client_baseserver.guild_kick\022*\n\004_set\030\t "
-    "\001(\0132\034.client_baseserver.guild_set\022.\n\006_qu"
-    "ery\030\n \001(\0132\036.client_baseserver.guild_quer"
-    "y\0222\n\010_set_job\030\013 \001(\0132 .client_baseserver."
-    "guild_set_job\0224\n\t_add_hire\030\014 \001(\0132!.clien"
-    "t_baseserver.guild_add_hire\0224\n\t_del_hire"
-    "\030\r \001(\0132!.client_baseserver.guild_del_hir"
-    "e\022:\n\014_query_hires\030\016 \001(\0132$.client_baseser"
-    "ver.guild_query_hires\0226\n\n_hire_hero\030\017 \001("
-    "\0132\".client_baseserver.guild_hire_hero\022:\n"
-    "\014_worship_req\030\020 \001(\0132$.client_baseserver."
-    "guild_worship_req\022D\n\021_worship_withdraw\030\021"
-    " \001(\0132).client_baseserver.guild_worship_w"
-    "ithdraw\022B\n\020_query_hh_detail\030\022 \001(\0132(.clie"
-    "nt_baseserver.guild_qurey_hh_detail\0223\n\007_"
-    "result\030\023 \002(\0162\031.client_baseserver.result:"
-    "\007success\022@\n\017_instance_query\030\024 \001(\0132\'.clie"
-    "nt_baseserver.guild_instance_query\022B\n\020_i"
-    "nstance_detail\030\025 \001(\0132(.client_baseserver"
-    ".guild_instance_detail\022@\n\017_instance_star"
-    "t\030\026 \001(\0132\'.client_baseserver.guild_instan"
-    "ce_start\022A\n\r_instance_end\030\027 \001(\0132*.client"
-    "_baseserver.guild_instance_end_down\022>\n\016_"
-    "instance_drop\030\030 \001(\0132&.client_baseserver."
-    "guild_instance_drop\022>\n\016_instance_open\030\031 "
-    "\001(\0132&.client_baseserver.guild_instance_o"
-    "pen\022@\n\017_instance_apply\030\032 \001(\0132\'.client_ba"
-    "seserver.guild_instance_apply\0226\n\n_drop_i"
-    "nfo\030\033 \001(\0132\".client_baseserver.guild_drop"
-    "_info\0226\n\n_drop_give\030\034 \001(\0132\".client_bases"
-    "erver.guild_drop_give\022B\n\020_instance_damag"
-    "e\030\035 \001(\0132(.client_baseserver.guild_instan"
-    "ce_damage\022>\n\016_items_history\030\036 \001(\0132&.clie"
-    "nt_baseserver.guild_items_history\0222\n\013_gu"
-    "ild_jump\030\037 \001(\0132\035.client_baseserver.guild"
-    "_jump\022<\n\020_guild_app_queue\030  \001(\0132\".client"
-    "_baseserver.guild_app_queue\022D\n\021_instance"
-    "_prepare\030! \001(\0132).client_baseserver.guild"
-    "_instance_prepare\0228\n\016_guild_members\030\" \001("
-    "\0132 .client_baseserver.guild_members\022>\n\021_"
-    "guild_stage_rank\030# \001(\0132#.client_baseserv"
-    "er.guild_stage_rank\0224\n\t_set_jump\030$ \001(\0132!"
-    ".client_baseserver.guild_set_jump\022<\n\020_se"
-    "nd_mail_reply\030% \001(\0132\".client_baseserver."
-    "guild_send_mail\"=\n\017guild_send_mail\022*\n\007_r"
-    "esult\030\001 \002(\0162\031.client_baseserver.result\"<"
-    "\n\016guild_set_jump\022*\n\007_result\030\001 \002(\0162\031.clie"
-    "nt_baseserver.result\"X\n\026guild_instance_p"
-    "repare\022*\n\007_result\030\001 \002(\0162\031.client_baseser"
-    "ver.result\022\022\n\n_left_time\030\002 \002(\r\"\177\n\010dps_ra"
-    "nk\022\014\n\004_dps\030\001 \002(\r\0222\n\t_dps_user\030\002 \002(\0132\037.cl"
-    "ient_baseserver.user_summary\0221\n\006_array\030\003"
-    " \001(\0132!.client_baseserver.dps_rank_array\""
-    "A\n\016dps_rank_array\022/\n\006_heros\030\001 \003(\0132\037.clie"
-    "nt_baseserver.hero_summary\"Y\n\020guild_firs"
-    "t_pass\0221\n\010_summary\030\001 \002(\0132\037.client_basese"
-    "rver.user_summary\022\022\n\n_pass_time\030\002 \002(\r\"K\n"
-    "\017guild_fast_pass\022\013\n\003_id\030\001 \002(\r\022\r\n\005_icon\030\002"
-    " \002(\r\022\r\n\005_time\030\003 \002(\r\022\r\n\005_name\030\004 \002(\t\"\307\001\n\020g"
-    "uild_stage_rank\022\021\n\t_stage_id\030\001 \002(\r\022.\n\t_d"
-    "ps_rank\030\002 \003(\0132\033.client_baseserver.dps_ra"
-    "nk\0228\n\013_first_pass\030\003 \001(\0132#.client_baseser"
-    "ver.guild_first_pass\0226\n\n_fast_pass\030\004 \001(\013"
-    "2\".client_baseserver.guild_fast_pass\"\266\001\n"
-    "\017guild_app_queue\0221\n\010_summary\030\001 \003(\0132\037.cli"
-    "ent_baseserver.user_summary\022\020\n\010_timeout\030"
-    "\002 \002(\r\022\023\n\013_item_count\030\003 \002(\r\022\r\n\005_rank\030\004 \002("
-    "\r\022\020\n\010_item_id\030\005 \002(\r\022\023\n\013_jump_times\030\006 \002(\r"
-    "\022\023\n\013_cost_money\030\007 \002(\r\"G\n\rguild_members\0226"
-    "\n\r_guild_member\030\001 \003(\0132\037.client_baseserve"
-    "r.guild_member\"p\n\nguild_jump\022*\n\007_result\030"
-    "\001 \002(\0162\031.client_baseserver.result\0226\n\n_app"
-    "_queue\030\002 \002(\0132\".client_baseserver.guild_a"
-    "pp_queue\"f\n\023guild_items_history\022\020\n\010_isth"
-    "ere\030\001 \002(\r\022=\n\016_item_historys\030\002 \003(\0132%.clie"
-    "nt_baseserver.guild_item_history\"h\n\022guil"
-    "d_item_history\022\020\n\010_item_id\030\001 \002(\r\022\026\n\016_rec"
-    "eiver_name\030\002 \002(\t\022\022\n\n_send_time\030\003 \002(\r\022\024\n\014"
-    "_sender_name\030\004 \001(\t\"d\n\027guild_challenger_d"
-    "amage\0228\n\013_challenger\030\001 \002(\0132#.client_base"
+    "\n\010entityID\030\001 \001(\005\"Z\n\013login_reply\022\017\n\007_resu"
+    "lt\030\001 \002(\r\022&\n\005_user\030\002 \001(\0132\027.client_baseser"
+    "ver.user\022\022\n\n_time_zone\030\003 \002(\t\"U\n\thire_dat"
+    "a\022\014\n\004_uid\030\001 \002(\r\022\r\n\005_name\030\002 \002(\t\022+\n\005_hero\030"
+    "\003 \002(\0132\034.client_baseserver.hire_hero\"`\n\th"
+    "ire_hero\022&\n\005_base\030\001 \002(\0132\027.client_baseser"
+    "ver.hero\022+\n\005_dyna\030\002 \002(\0132\034.client_baseser"
+    "ver.hero_dyna\"\327#\n\010down_msg\0224\n\014_login_rep"
+    "ly\030\001 \001(\0132\036.client_baseserver.login_reply"
+    "\022(\n\006_reset\030\002 \001(\0132\030.client_baseserver.res"
+    "et\022@\n\022_enter_stage_reply\030\003 \001(\0132$.client_"
+    "baseserver.enter_stage_reply\022>\n\021_exit_st"
+    "age_reply\030\004 \001(\0132#.client_baseserver.exit"
+    "_stage_reply\022B\n\023_hero_upgrade_reply\030\005 \001("
+    "\0132%.client_baseserver.hero_upgrade_reply"
+    "\022H\n\026_equip_synthesis_reply\030\006 \001(\0132(.clien"
+    "t_baseserver.equip_synthesis_reply\022>\n\021_w"
+    "ear_equip_reply\030\007 \001(\0132#.client_baseserve"
+    "r.wear_equip_reply\022B\n\023_consume_item_repl"
+    "y\030\010 \001(\0132%.client_baseserver.consume_item"
+    "_reply\0229\n\023_shop_refresh_reply\030\t \001(\0132\034.cl"
+    "ient_baseserver.user_shop\022B\n\023_shop_consu"
+    "me_reply\030\n \001(\0132%.client_baseserver.shop_"
+    "consume_reply\022D\n\024_skill_levelup_reply\030\013 "
+    "\001(\0132&.client_baseserver.skill_levelup_re"
+    "ply\022<\n\020_sell_item_reply\030\014 \001(\0132\".client_b"
+    "aseserver.sell_item_reply\022J\n\027_fragment_c"
+    "ompose_reply\030\r \001(\0132).client_baseserver.f"
+    "ragment_compose_reply\022N\n\031_hero_equip_upg"
+    "rade_reply\030\016 \001(\0132+.client_baseserver.her"
+    "o_equip_upgrade_reply\022B\n\023_trigger_task_r"
+    "eply\030\017 \001(\0132%.client_baseserver.trigger_t"
+    "ask_reply\022H\n\026_require_rewards_reply\030\020 \001("
+    "\0132(.client_baseserver.require_rewards_re"
+    "ply\022@\n\022_trigger_job_reply\030\021 \001(\0132$.client"
+    "_baseserver.trigger_job_reply\022@\n\022_job_re"
+    "wards_reply\030\022 \001(\0132$.client_baseserver.jo"
+    "b_rewards_reply\022@\n\022_reset_elite_reply\030\023 "
+    "\001(\0132$.client_baseserver.reset_elite_repl"
+    "y\022@\n\022_sweep_stage_reply\030\024 \001(\0132$.client_b"
+    "aseserver.sweep_stage_reply\022@\n\022_tavern_d"
+    "raw_reply\030\025 \001(\0132$.client_baseserver.tave"
+    "rn_draw_reply\022J\n\027_sync_skill_stren_reply"
+    "\030\026 \001(\0132).client_baseserver.sync_skill_st"
+    "ren_reply\022>\n\021_query_data_reply\030\027 \001(\0132#.c"
+    "lient_baseserver.query_data_reply\022@\n\022_he"
+    "ro_evolve_reply\030\030 \001(\0132$.client_baseserve"
+    "r.hero_evolve_reply\022D\n\024_sync_vitality_re"
+    "ply\030\031 \001(\0132&.client_baseserver.sync_vital"
+    "ity_reply\0222\n\013_user_check\030\032 \001(\0132\035.client_"
+    "baseserver.user_check\022:\n\017_tutorial_reply"
+    "\030\033 \001(\0132!.client_baseserver.tutorial_repl"
+    "y\0222\n\013_error_info\030\034 \001(\0132\035.client_baseserv"
+    "er.error_info\0226\n\r_ladder_reply\030\035 \001(\0132\037.c"
+    "lient_baseserver.ladder_reply\022:\n\017_set_na"
+    "me_reply\030\036 \001(\0132!.client_baseserver.set_n"
+    "ame_reply\0224\n\014_midas_reply\030\037 \001(\0132\036.client"
+    "_baseserver.midas_reply\022<\n\020_open_shop_re"
+    "ply\030  \001(\0132\".client_baseserver.open_shop_"
+    "reply\0226\n\r_charge_reply\030! \001(\0132\037.client_ba"
+    "seserver.charge_reply\022<\n\020_sdk_login_repl"
+    "y\030\" \001(\0132\".client_baseserver.sdk_login_re"
+    "ply\022>\n\021_set_avatar_reply\030# \001(\0132#.client_"
+    "baseserver.set_avatar_reply\0222\n\013_notify_m"
+    "sg\030$ \001(\0132\035.client_baseserver.notify_msg\022"
+    "H\n\026_ask_daily_login_reply\030% \001(\0132(.client"
+    "_baseserver.ask_daily_login_reply\0220\n\n_tb"
+    "c_reply\030& \001(\0132\034.client_baseserver.tbc_re"
+    "ply\022B\n\023_get_maillist_reply\030\' \001(\0132%.clien"
+    "t_baseserver.get_maillist_reply\022<\n\020_read"
+    "_mail_reply\030( \001(\0132\".client_baseserver.re"
+    "ad_mail_reply\022\021\n\t_svr_time\030) \001(\r\022B\n\023_get"
+    "_vip_gift_reply\030* \001(\0132%.client_baseserve"
+    "r.get_vip_gift_reply\0222\n\013_chat_reply\030+ \001("
+    "\0132\035.client_baseserver.chat_reply\022>\n\021_cdk"
+    "ey_gift_reply\030, \001(\0132#.client_baseserver."
+    "cdkey_gift_reply\0224\n\014_guild_reply\030- \001(\0132\036"
+    ".client_baseserver.guild_reply\022D\n\024_ask_m"
+    "agicsoul_reply\030. \001(\0132&.client_baseserver"
+    ".ask_magicsoul_reply\022C\n\030_ask_activity_in"
+    "fo_reply\030/ \001(\0132!.client_baseserver.activ"
+    "ity_infos\022:\n\017_excavate_reply\0300 \001(\0132!.cli"
+    "ent_baseserver.excavate_reply\022F\n\025_system"
+    "_setting_reply\0301 \001(\0132\'.client_baseserver"
+    ".system_setting_reply\022J\n\027_query_split_da"
+    "ta_reply\0302 \001(\0132).client_baseserver.query"
+    "_split_data_reply\022N\n\031_query_split_return"
+    "_reply\0303 \001(\0132+.client_baseserver.query_s"
+    "plit_return_reply\022>\n\021_split_hero_reply\0304"
+    " \001(\0132#.client_baseserver.split_hero_repl"
+    "y\022:\n\017_worldcup_reply\0305 \001(\0132!.client_base"
+    "server.worldcup_reply\022@\n\022_battle_check_f"
+    "ail\0306 \001(\0132$.client_baseserver.battle_che"
+    "ck_fail\0226\n\r_query_replay\0307 \001(\0132\037.client_"
+    "baseserver.query_replay\0222\n\013_super_link\0308"
+    " \001(\0132\035.client_baseserver.super_link\022F\n\025_"
+    "query_ranklist_reply\0309 \001(\0132\'.client_base"
+    "server.query_ranklist_reply\022L\n\030_request_"
+    "guild_log_reply\030A \001(\0132*.client_baseserve"
+    "r.request_guild_log_reply\022D\n\024_change_ser"
+    "ver_reply\030: \001(\0132&.client_baseserver.chan"
+    "ge_server_reply\022D\n\024_activity_info_reply\030"
+    "; \001(\0132&.client_baseserver.activity_info_"
+    "reply\022P\n\032_activity_lotto_info_reply\030< \001("
+    "\0132,.client_baseserver.activity_lotto_inf"
+    "o_reply\022T\n\034_activity_lotto_reward_reply\030"
+    "= \001(\0132..client_baseserver.activity_lotto"
+    "_reward_reply\022Z\n\037_activity_bigpackage_in"
+    "fo_reply\030> \001(\01321.client_baseserver.activ"
+    "ity_bigpackage_info_reply\022^\n!_activity_b"
+    "igpackage_reward_reply\030\? \001(\01323.client_ba"
+    "seserver.activity_bigpackage_reward_repl"
+    "y\022\\\n _activity_bigpackage_reset_reply\030@ "
+    "\001(\01322.client_baseserver.activity_bigpack"
+    "age_reset_reply\022C\n\023_fb_attention_reply\030\254"
+    "\002 \001(\0132%.client_baseserver.fb_attention_r"
+    "eply\022C\n\023_continue_pay_reply\030\256\002 \001(\0132%.cli"
+    "ent_baseserver.continue_pay_reply\022I\n\026_re"
+    "charge_rebate_reply\030\257\002 \001(\0132(.client_base"
+    "server.recharge_rebate_reply\022I\n\026_every_d"
+    "ay_happy_reply\030\260\002 \001(\0132(.client_baseserve"
+    "r.every_day_happy_reply\"\216\001\n\024system_setti"
+    "ng_reply\022;\n\010_request\030\001 \001(\0132).client_base"
+    "server.system_setting_request\0229\n\007_change"
+    "\030\002 \001(\0132(.client_baseserver.system_settin"
+    "g_change\"(\n\025system_setting_change\022\017\n\007_re"
+    "sult\030\001 \002(\r\"^\n\026system_setting_request\022D\n\024"
+    "_system_setting_item\030\001 \003(\0132&.client_base"
+    "server.system_setting_item\"1\n\023system_set"
+    "ting_item\022\013\n\003key\030\001 \002(\t\022\r\n\005value\030\002 \002(\r\"+\n"
+    "\rglobal_config\022\032\n\022_hero_split_ending\030\001 \001"
+    "(\r\"^\n\017sdk_login_reply\022\017\n\007_result\030\001 \002(\r\022\014"
+    "\n\004_uin\030\002 \002(\t\022\025\n\r_access_token\030\003 \001(\t\022\025\n\r_"
+    "recharge_url\030\004 \001(\t\"4\n\nuser_check\022&\n\005_use"
+    "r\030\001 \002(\0132\027.client_baseserver.user\"/\n\005rese"
+    "t\022&\n\005_user\030\001 \002(\0132\027.client_baseserver.use"
+    "r\"3\n\021enter_stage_reply\022\016\n\006_rseed\030\001 \002(\r\022\016"
+    "\n\006_loots\030\002 \003(\r\"Y\n\023activity_info_reply\022B\n"
+    "\023_last_activity_info\030\001 \003(\0132%.client_base"
+    "server.last_activity_info\">\n\022last_activi"
+    "ty_info\022\021\n\t_group_id\030\001 \002(\t\022\025\n\r_activity_"
+    "ids\030\002 \003(\r\"\255\001\n\031activity_lotto_info_reply\022"
+    "\024\n\014_diamond_num\030\001 \002(\r\022\025\n\r_current_step\030\002"
+    " \002(\r\022\031\n\021_need_diamond_num\030\003 \002(\r\022\030\n\020_win_"
+    "diamond_num\030\004 \002(\r\022\024\n\014_remain_time\030\005 \002(\r\022"
+    "\030\n\020_broadcast_texts\030\006 \003(\t\"\225\001\n\033activity_l"
+    "otto_reward_reply\022\017\n\007_status\030\001 \002(\r\022\032\n\022_r"
+    "eward_diamon_num\030\002 \002(\r\022\030\n\020_have_next_rou"
+    "nd\030\003 \002(\r\022\031\n\021_need_diamond_num\030\004 \001(\r\022\024\n\014_"
+    "diamond_num\030\005 \002(\r\"\265\001\n\036activity_bigpackag"
+    "e_info_reply\022\025\n\r_people_count\030\001 \002(\r\022\025\n\r_"
+    "remain_times\030\002 \002(\r\022\031\n\021_next_reset_price\030"
+    "\003 \002(\r\022\030\n\020_current_ranking\030\004 \002(\r\022\024\n\014_get_"
+    "box_ids\030\005 \003(\r\022\032\n\022_distance_score_20\030\006 \002("
+    "\r\"\311\001\n activity_bigpackage_reward_reply\022\017"
+    "\n\007_status\030\001 \002(\r\0224\n\010_rewards\030\002 \003(\0132\".clie"
+    "nt_baseserver.activity_reward\022\021\n\t_item_i"
+    "ds\030\003 \003(\r\022\025\n\r_people_count\030\004 \002(\r\022\030\n\020_curr"
+    "ent_ranking\030\005 \002(\r\022\032\n\022_distance_score_20\030"
+    "\006 \002(\r\"M\n\037activity_bigpackage_reset_reply"
+    "\022\017\n\007_status\030\001 \002(\r\022\031\n\021_next_reset_price\030\002"
+    " \002(\r\"~\n\020exit_stage_reply\022\017\n\007_result\030\001 \002("
+    "\r\022+\n\005_shop\030\002 \001(\0132\034.client_baseserver.use"
+    "r_shop\022,\n\006_sshop\030\003 \001(\0132\034.client_baseserv"
+    "er.star_shop\"]\n\022hero_upgrade_reply\022\017\n\007_r"
+    "esult\030\001 \002(\r\022&\n\005_hero\030\002 \001(\0132\027.client_base"
+    "server.hero\022\016\n\006_items\030\003 \003(\r\"(\n\025equip_syn"
+    "thesis_reply\022\017\n\007_result\030\001 \002(\r\"0\n\020wear_eq"
+    "uip_reply\022\017\n\007_result\030\001 \002(\r\022\013\n\003_gs\030\002 \002(\r\""
+    "y\n\023sync_vitality_reply\022.\n\t_vitality\030\001 \002("
+    "\0132\033.client_baseserver.vitality\0222\n\r_shado"
+    "w_runes\030\002 \002(\0132\033.client_baseserver.vitali"
+    "ty\"<\n\022consume_item_reply\022&\n\005_hero\030\001 \002(\0132"
+    "\027.client_baseserver.hero\"\272\001\n\tuser_shop\022\013"
+    "\n\003_id\030\001 \002(\r\022\037\n\027_last_auto_refresh_time\030\002"
+    " \001(\r\022\024\n\014_expire_time\030\003 \001(\r\022!\n\031_last_manu"
+    "al_refresh_time\030\004 \001(\r\022\024\n\014_today_times\030\005 "
+    "\001(\r\0220\n\016_current_goods\030\006 \003(\0132\030.client_bas"
+    "eserver.goods\"b\n\tstar_shop\022\013\n\003_id\030\001 \002(\r\022"
+    "\024\n\014_expire_time\030\002 \001(\r\0222\n\013_star_goods\030\003 \003"
+    "(\0132\035.client_baseserver.star_goods\"%\n\022sho"
+    "p_consume_reply\022\017\n\007_result\030\001 \002(\r\"3\n\023skil"
+    "l_levelup_reply\022\017\n\007_result\030\001 \002(\r\022\013\n\003_gs\030"
+    "\002 \002(\r\"\"\n\017sell_item_reply\022\017\n\007_result\030\001 \002("
+    "\r\")\n\026fragment_compose_reply\022\017\n\007_result\030\001"
+    " \002(\r\"S\n\030hero_equip_upgrade_reply\022\017\n\007_res"
+    "ult\030\001 \002(\r\022&\n\005_hero\030\002 \001(\0132\027.client_basese"
+    "rver.hero\"!\n\016tutorial_reply\022\017\n\007_result\030\001"
+    " \002(\r\"*\n\nerror_info\022\r\n\005_info\030\001 \002(\t\022\r\n\005_ex"
+    "it\030\002 \001(\r\"V\n\005goods\022\013\n\003_id\030\001 \002(\r\022\017\n\007_amoun"
+    "t\030\002 \002(\r\022\r\n\005_type\030\003 \002(\r\022\016\n\006_price\030\004 \002(\r\022\020"
+    "\n\010_is_sale\030\005 \002(\r\"V\n\nstar_goods\022\r\n\005_type\030"
+    "\001 \002(\r\022\017\n\007_amount\030\002 \002(\r\022\021\n\t_stone_id\030\003 \002("
+    "\r\022\025\n\r_stone_amount\030\004 \002(\r\"\357\010\n\004user\022\017\n\007_us"
+    "erid\030\001 \002(\r\0220\n\n_name_card\030\002 \002(\0132\034.client_"
+    "baseserver.name_card\022\016\n\006_level\030\003 \002(\r\022\025\n\r"
+    "_recharge_sum\030\004 \002(\r\022\014\n\004_exp\030\005 \002(\r\022\016\n\006_mo"
+    "ney\030\006 \002(\r\022\014\n\004_rmb\030\007 \002(\r\022.\n\t_vitality\030\010 \002"
+    "(\0132\033.client_baseserver.vitality\022(\n\007_hero"
+    "es\030\n \003(\0132\027.client_baseserver.hero\022\016\n\006_it"
+    "ems\030\013 \003(\r\0228\n\017_skill_level_up\030\014 \002(\0132\037.cli"
+    "ent_baseserver.skilllevelup\0220\n\n_userstag"
+    "e\030\017 \002(\0132\034.client_baseserver.userstage\022+\n"
+    "\005_shop\030\020 \003(\0132\034.client_baseserver.user_sh"
+    "op\022\021\n\t_tutorial\030\021 \003(\r\022*\n\005_task\030\022 \003(\0132\033.c"
+    "lient_baseserver.usertask\022\026\n\016_task_finis"
+    "hed\030\023 \003(\r\022\023\n\013_last_login\030\024 \001(\r\022.\n\t_daily"
+    "job\030\025 \003(\0132\033.client_baseserver.dailyjob\0228"
+    "\n\016_tavern_record\030\026 \003(\0132 .client_baseserv"
+    "er.tavern_record\0220\n\n_usermidas\030\027 \002(\0132\034.c"
+    "lient_baseserver.usermidas\0224\n\014_daily_log"
+    "in\030\030 \002(\0132\036.client_baseserver.daily_login"
+    "\022\027\n\017_recharge_limit\030\031 \003(\r\022\027\n\017_vip_gifts_"
+    "draw\030\032 \003(\r\022.\n\007_points\030\033 \003(\0132\035.client_bas"
+    "eserver.user_point\0221\n\013_month_card\030\034 \003(\0132"
+    "\034.client_baseserver.monthcard\0222\n\013_user_g"
+    "uild\030\035 \002(\0132\035.client_baseserver.user_guil"
+    "d\022&\n\005_chat\030\036 \002(\0132\027.client_baseserver.cha"
+    "t\022,\n\006_sshop\030\037 \001(\0132\034.client_baseserver.st"
+    "ar_shop\022\030\n\020_facebook_follow\030  \001(\r\022\017\n\007_pr"
+    "aise\030! \001(\t\022\022\n\n_sessionid\030\" \001(\r\0222\n\r_shado"
+    "w_runes\030# \001(\0132\033.client_baseserver.vitali"
+    "ty\"s\n\014user_summary\022\017\n\007_avatar\030\001 \002(\r\022\r\n\005_"
+    "name\030\002 \002(\t\022\014\n\004_vip\030\003 \002(\r\022\016\n\006_level\030\004 \002(\r"
+    "\022\023\n\013_guild_name\030\005 \001(\t\022\020\n\010_user_id\030\006 \001(\r\""
+    "H\n\tname_card\022\r\n\005_name\030\001 \002(\t\022\033\n\023_last_set"
+    "_name_time\030\002 \002(\r\022\017\n\007_avatar\030\003 \002(\r\"L\n\013dai"
+    "ly_login\022\017\n\007_status\030\001 \002(\r\022\022\n\n_frequency\030"
+    "\002 \002(\r\022\030\n\020_last_login_date\030\003 \002(\r\"r\n\025ask_d"
+    "aily_login_reply\022\017\n\007_result\030\001 \002(\r\022\016\n\006_it"
+    "ems\030\002 \003(\r\022&\n\005_hero\030\003 \003(\0132\027.client_basese"
+    "rver.hero\022\020\n\010_diamond\030\004 \001(\r\"<\n\nhero_equi"
+    "p\022\016\n\006_index\030\001 \002(\r\022\020\n\010_item_id\030\002 \002(\r\022\014\n\004_"
+    "exp\030\003 \002(\r\"\264\001\n\004hero\022\014\n\004_tid\030\001 \002(\r\022\r\n\005_ran"
+    "k\030\002 \001(\r\022\016\n\006_level\030\003 \002(\r\022\016\n\006_stars\030\004 \002(\r\022"
+    "\014\n\004_exp\030\005 \002(\r\022\013\n\003_gs\030\006 \002(\r\022\016\n\006_state\030\007 \002"
+    "(\r\022\025\n\r_skill_levels\030\010 \003(\r\022-\n\006_items\030\t \003("
+    "\0132\035.client_baseserver.hero_equip\"h\n\014hero"
+    "_summary\022\014\n\004_tid\030\001 \002(\r\022\r\n\005_rank\030\002 \001(\r\022\016\n"
+    "\006_level\030\003 \002(\r\022\016\n\006_stars\030\004 \002(\r\022\013\n\003_gs\030\005 \001"
+    "(\r\022\016\n\006_state\030\006 \001(\r\"E\n\thero_dyna\022\020\n\010_hp_p"
+    "erc\030\001 \002(\r\022\020\n\010_mp_perc\030\002 \002(\r\022\024\n\014_custom_d"
+    "ata\030\003 \001(\r\"x\n\014skilllevelup\022\035\n\025_skill_leve"
+    "lup_chance\030\001 \002(\r\022\031\n\021_skill_levelup_cd\030\002 "
+    "\002(\r\022\024\n\014_reset_times\030\003 \002(\r\022\030\n\020_last_reset"
+    "_date\030\004 \002(\r\"M\n\010usertask\022\r\n\005_line\030\001 \002(\r\022\013"
+    "\n\003_id\030\002 \002(\r\022\017\n\007_status\030\003 \002(\r\022\024\n\014_task_ta"
+    "rget\030\004 \001(\r\"I\n\010dailyjob\022\013\n\003_id\030\001 \002(\r\022\032\n\022_"
+    "last_rewards_time\030\002 \002(\r\022\024\n\014_task_target\030"
+    "\003 \001(\r\"9\n\tsweeploot\022\014\n\004_exp\030\001 \002(\r\022\016\n\006_mon"
+    "ey\030\002 \002(\r\022\016\n\006_items\030\003 \003(\r\"f\n\rtavern_recor"
+    "d\022\021\n\t_box_type\030\001 \002(\r\022\021\n\t_left_cnt\030\002 \002(\r\022"
+    "\026\n\016_last_get_time\030\003 \002(\r\022\027\n\017_has_first_dr"
+    "aw\030\004 \002(\r\"7\n\tusermidas\022\024\n\014_last_change\030\001 "
+    "\002(\r\022\024\n\014_today_times\030\002 \002(\r\"%\n\022trigger_tas"
+    "k_reply\022\017\n\007_result\030\001 \003(\r\"(\n\025require_rewa"
+    "rds_reply\022\017\n\007_result\030\001 \002(\r\"$\n\021trigger_jo"
+    "b_reply\022\017\n\007_result\030\001 \003(\r\">\n\017dailyjob_rew"
+    "ard\022\r\n\005_type\030\001 \001(\r\022\013\n\003_id\030\002 \001(\r\022\017\n\007_amou"
+    "nt\030\003 \001(\r\"b\n\021job_rewards_reply\022\017\n\007_result"
+    "\030\001 \002(\r\022<\n\020_activity_reward\030\002 \003(\0132\".clien"
+    "t_baseserver.dailyjob_reward\"h\n\021tavern_d"
+    "raw_reply\022\021\n\t_item_ids\030\001 \003(\r\022,\n\013_new_her"
+    "oes\030\002 \003(\0132\027.client_baseserver.hero\022\022\n\n_s"
+    "mash_idx\030\003 \003(\r\"$\n\021reset_elite_reply\022\017\n\007_"
+    "result\030\001 \002(\r\"\253\001\n\021sweep_stage_reply\022+\n\005_l"
+    "oot\030\001 \003(\0132\034.client_baseserver.sweeploot\022"
+    "\016\n\006_items\030\002 \003(\r\022+\n\005_shop\030\003 \001(\0132\034.client_"
+    "baseserver.user_shop\022,\n\006_sshop\030\004 \001(\0132\034.c"
+    "lient_baseserver.star_shop\"B\n\005sweep\022\030\n\020_"
+    "last_reset_time\030\001 \002(\r\022\037\n\027_today_free_swe"
+    "ep_times\030\002 \002(\r\"R\n\026sync_skill_stren_reply"
+    "\0228\n\017_skill_level_up\030\001 \002(\0132\037.client_bases"
+    "erver.skilllevelup\"L\n\021hero_evolve_reply\022"
+    "\017\n\007_result\030\001 \002(\r\022&\n\005_hero\030\002 \001(\0132\027.client"
+    "_baseserver.hero\"V\n\010vitality\022\020\n\010_current"
+    "\030\001 \002(\r\022\023\n\013_lastchange\030\002 \002(\r\022\021\n\t_todaybuy"
+    "\030\003 \002(\r\022\020\n\010_lastbuy\030\004 \002(\r\"\377\001\n\tuserstage\022\033"
+    "\n\023_normal_stage_stars\030\001 \003(\r\022\032\n\022_elite_st"
+    "age_stars\030\002 \003(\r\022\033\n\023_elite_daily_record\030\003"
+    " \003(\r\022\031\n\021_elite_reset_time\030\004 \002(\r\022(\n\006_swee"
+    "p\030\005 \002(\0132\030.client_baseserver.sweep\022>\n\021_ac"
+    "t_daily_record\030\006 \003(\0132#.client_baseserver"
+    ".act_daily_record\022\027\n\017_act_reset_time\030\007 \002"
+    "(\r\"I\n\020act_daily_record\022\013\n\003_id\030\001 \002(\r\022\022\n\n_"
+    "frequency\030\002 \002(\r\022\024\n\014_last_change\030\003 \002(\r\"\303\005"
+    "\n\014ladder_reply\0222\n\013_open_panel\030\001 \001(\0132\035.cl"
+    "ient_baseserver.open_panel\0226\n\013_apply_opp"
+    "o\030\002 \001(\0132!.client_baseserver.apply_oppone"
+    "nt\0226\n\r_start_battle\030\003 \001(\0132\037.client_bases"
+    "erver.start_battle\0222\n\013_end_battle\030\004 \001(\0132"
+    "\035.client_baseserver.end_battle\0222\n\013_set_l"
+    "ineup\030\005 \001(\0132\035.client_baseserver.set_line"
+    "up\0228\n\016_query_records\030\006 \001(\0132 .client_base"
+    "server.query_records\0226\n\r_query_replay\030\007 "
+    "\001(\0132\037.client_baseserver.query_replay\022<\n\020"
+    "_query_rankborad\030\010 \001(\0132\".client_baseserv"
+    "er.query_rankboard\0227\n\013_query_oppo\030\t \001(\0132"
+    "\".client_baseserver.query_oppo_info\022<\n\020_"
+    "clear_battle_cd\030\n \001(\0132\".client_baseserve"
+    "r.clear_battle_cd\022>\n\021_draw_rank_reward\030\013"
+    " \001(\0132#.client_baseserver.draw_rank_rewar"
+    "d\022@\n\022_buy_battle_chance\030\014 \001(\0132$.client_b"
+    "aseserver.buy_battle_chance\"\255\001\n\nopen_pan"
+    "el\022\r\n\005_rank\030\001 \002(\r\022\023\n\013_left_count\030\002 \002(\r\022\025"
+    "\n\r_last_bt_time\030\003 \002(\r\022\022\n\n_buy_times\030\004 \002("
+    "\r\022\017\n\007_lineup\030\005 \003(\r\022\013\n\003_gs\030\006 \002(\r\0222\n\006_oppo"
+    "s\030\007 \003(\0132\".client_baseserver.ladder_oppon"
+    "ent\"D\n\016apply_opponent\0222\n\006_oppos\030\001 \003(\0132\"."
+    "client_baseserver.ladder_opponent\"\233\001\n\014st"
+    "art_battle\022\017\n\007_result\030\001 \002(\r\022\016\n\006_rseed\030\002 "
+    "\002(\r\022-\n\014_self_heroes\030\003 \003(\0132\027.client_bases"
+    "erver.hero\022(\n\007_heroes\030\004 \003(\0132\027.client_bas"
+    "eserver.hero\022\021\n\t_is_robot\030\005 \002(\r\"_\n\nend_b"
+    "attle\022\017\n\007_result\030\001 \002(\r\022\031\n\021_best_rank_rew"
+    "ard\030\002 \002(\r\022\022\n\n_best_rank\030\003 \002(\r\022\021\n\t_cur_ra"
+    "nk\030\004 \002(\r\";\n\nset_lineup\022\017\n\007_result\030\001 \002(\r\022"
+    "\017\n\007_lineup\030\002 \003(\r\022\013\n\003_gs\030\003 \002(\r\"C\n\rquery_r"
+    "ecords\0222\n\010_records\030\001 \003(\0132 .client_basese"
+    "rver.ladder_record\">\n\014query_replay\022.\n\007_r"
+    "ecord\030\001 \002(\0132\035.client_baseserver.pvp_reco"
+    "rd\"\216\004\n\npvp_record\022\020\n\010_checkid\030\001 \002(\r\022\017\n\007_"
+    "userid\030\002 \002(\r\022\021\n\t_username\030\003 \001(\t\022\016\n\006_leve"
+    "l\030\004 \001(\r\022\017\n\007_avatar\030\005 \001(\r\022\014\n\004_vip\030\006 \001(\r\022\024"
+    "\n\014_oppo_userid\030\007 \002(\r\022\022\n\n_oppo_name\030\010 \001(\t"
+    "\022\023\n\013_oppo_level\030\t \001(\r\022\024\n\014_oppo_avatar\030\n "
+    "\001(\r\022\021\n\t_oppo_vip\030\013 \001(\r\022\023\n\013_oppo_robot\030\014 "
+    "\001(\r\022\017\n\007_result\030\r \001(\r\022-\n\014_self_heroes\030\016 \003"
+    "(\0132\027.client_baseserver.hero\0221\n\013_self_dyn"
+    "as\030\017 \003(\0132\034.client_baseserver.hero_dyna\022-"
+    "\n\014_oppo_heroes\030\020 \003(\0132\027.client_baseserver"
+    ".hero\0221\n\013_oppo_dynas\030\021 \003(\0132\034.client_base"
+    "server.hero_dyna\022\016\n\006_rseed\030\022 \002(\r\022\023\n\013_sel"
+    "f_robot\030\023 \001(\r\022\017\n\007_param1\030\024 \001(\r\022\023\n\013_opera"
+    "tions\030\025 \003(\r\"\240\001\n\017query_rankboard\0225\n\n_rank"
+    "_list\030\001 \003(\0132!.client_baseserver.rankboar"
+    "d_data\0225\n\n_self_rank\030\002 \001(\0132!.client_base"
+    "server.rankboard_data\022\014\n\004_pos\030\003 \001(\r\022\021\n\t_"
+    "prev_pos\030\004 \001(\r\"D\n\017query_oppo_info\0221\n\005_us"
+    "er\030\001 \002(\0132\".client_baseserver.ladder_oppo"
+    "nent\"\"\n\017clear_battle_cd\022\017\n\007_result\030\001 \002(\r"
+    "\"U\n\016rankboard_data\022\020\n\010_user_id\030\001 \002(\r\0221\n\010"
+    "_summary\030\002 \001(\0132\037.client_baseserver.user_"
+    "summary\"\242\001\n\rladder_record\022\020\n\010_user_id\030\001 "
+    "\002(\r\0221\n\010_summary\030\002 \002(\0132\037.client_baseserve"
+    "r.user_summary\022\022\n\n_deta_rank\030\003 \002(\r\022\020\n\010_b"
+    "t_time\030\004 \002(\r\022\022\n\n_bt_result\030\005 \002(\r\022\022\n\n_rep"
+    "lay_id\030\006 \002(\r\"\310\001\n\017ladder_opponent\022\020\n\010_use"
+    "r_id\030\001 \002(\r\0221\n\010_summary\030\002 \002(\0132\037.client_ba"
+    "seserver.user_summary\022\r\n\005_rank\030\003 \002(\r\022\020\n\010"
+    "_win_cnt\030\004 \002(\r\022\013\n\003_gs\030\005 \002(\r\022\021\n\t_is_robot"
+    "\030\006 \002(\r\022/\n\006_heros\030\007 \003(\0132\037.client_baseserv"
+    "er.hero_summary\"E\n\022ladder_rank_reward\022\r\n"
+    "\005_type\030\001 \002(\r\022\017\n\007_param1\030\002 \001(\r\022\017\n\007_param2"
+    "\030\003 \001(\r\"K\n\020draw_rank_reward\0227\n\010_rewards\030\001"
+    " \003(\0132%.client_baseserver.ladder_rank_rew"
+    "ard\"8\n\021buy_battle_chance\022\017\n\007_result\030\001 \002("
+    "\r\022\022\n\n_buy_times\030\002 \001(\r\"!\n\016set_name_reply\022"
+    "\017\n\007_result\030\001 \002(\r\"#\n\020set_avatar_reply\022\017\n\007"
+    "_result\030\001 \002(\r\"\247\001\n\020query_data_reply\022\013\n\003rm"
+    "b\030\001 \001(\r\022\022\n\ncharge_sum\030\002 \001(\r\022\'\n\006heroes\030\003 "
+    "\003(\0132\027.client_baseserver.hero\022\026\n\016recharge"
+    "_limit\030\004 \003(\r\0221\n\013_month_card\030\005 \003(\0132\034.clie"
+    "nt_baseserver.monthcard\".\n\rmidas_acquire"
+    "\022\r\n\005_type\030\001 \002(\r\022\016\n\006_money\030\002 \002(\r\"A\n\013midas"
+    "_reply\0222\n\010_acquire\030\001 \003(\0132 .client_basese"
+    "rver.midas_acquire\"O\n\017open_shop_reply\022\017\n"
+    "\007_result\030\001 \002(\r\022+\n\005_shop\030\002 \001(\0132\034.client_b"
+    "aseserver.user_shop\"6\n\014charge_reply\022\022\n\n_"
+    "serial_id\030\001 \002(\t\022\022\n\n_charge_id\030\002 \002(\r\"\232\002\n\n"
+    "notify_msg\0228\n\016_ladder_notify\030\001 \001(\0132 .cli"
+    "ent_baseserver.ladder_notify\022\021\n\t_new_mai"
+    "l\030\002 \001(\r\022\023\n\013_guild_chat\030\003 \001(\r\022\030\n\020_activit"
+    "y_notify\030\004 \001(\r\022\030\n\020_activity_reward\030\005 \001(\r"
+    "\022\027\n\017_release_heroes\030\006 \003(\r\022\025\n\r_excav_reco"
+    "rd\030\007 \001(\r\022\023\n\013_guild_drop\030\010 \001(\r\022\026\n\016_person"
+    "al_chat\030\t \001(\r\022\031\n\021_splitable_heroes\030\n \001(\r"
+    "\"%\n\rladder_notify\022\024\n\014_is_attacked\030\001 \001(\r\""
+    "\321\002\n\ttbc_reply\0226\n\013_open_panel\030\001 \001(\0132!.cli"
+    "ent_baseserver.tbc_open_panel\0226\n\013_query_"
+    "oppo\030\002 \001(\0132!.client_baseserver.tbc_query"
+    "_oppo\0227\n\n_start_bat\030\003 \001(\0132#.client_bases"
+    "erver.tbc_start_battle\0223\n\010_end_bat\030\004 \001(\013"
+    "2!.client_baseserver.tbc_end_battle\022,\n\006_"
+    "reset\030\005 \001(\0132\034.client_baseserver.tbc_rese"
+    "t\0228\n\014_draw_reward\030\006 \001(\0132\".client_baseser"
+    "ver.tbc_draw_reward\"J\n\rtbc_self_hero\022\014\n\004"
+    "_tid\030\001 \002(\r\022+\n\005_dyna\030\002 \002(\0132\034.client_bases"
+    "erver.hero_dyna\"d\n\rtbc_oppo_hero\022&\n\005_bas"
+    "e\030\001 \002(\0132\027.client_baseserver.hero\022+\n\005_dyn"
+    "a\030\002 \002(\0132\034.client_baseserver.hero_dyna\"=\n"
+    "\ntbc_reward\022\r\n\005_type\030\001 \002(\r\022\017\n\007_param1\030\002 "
+    "\001(\r\022\017\n\007_param2\030\003 \001(\r\"M\n\ttbc_stage\022\017\n\007_st"
+    "atus\030\001 \002(\r\022/\n\010_rewards\030\002 \003(\0132\035.client_ba"
+    "seserver.tbc_reward\"\310\001\n\010tbc_info\022\022\n\n_cur"
+    "_stage\030\001 \002(\r\022\024\n\014_reset_times\030\002 \002(\r\0221\n\007_h"
+    "eroes\030\003 \003(\0132 .client_baseserver.tbc_self"
+    "_hero\022-\n\007_stages\030\004 \003(\0132\034.client_baseserv"
+    "er.tbc_stage\0220\n\n_hire_hero\030\005 \001(\0132\034.clien"
+    "t_baseserver.hire_data\"<\n\016tbc_open_panel"
+    "\022*\n\005_info\030\001 \002(\0132\033.client_baseserver.tbc_"
+    "info\"\210\001\n\016tbc_query_oppo\0221\n\010_summary\030\001 \002("
+    "\0132\037.client_baseserver.user_summary\0220\n\006_o"
+    "ppos\030\002 \003(\0132 .client_baseserver.tbc_oppo_"
+    "hero\022\021\n\t_is_robot\030\003 \002(\r\"3\n\020tbc_start_bat"
+    "tle\022\017\n\007_result\030\001 \002(\r\022\016\n\006_rseed\030\002 \002(\r\"!\n\016"
+    "tbc_end_battle\022\017\n\007_result\030\001 \002(\r\"H\n\ttbc_r"
+    "eset\022\017\n\007_result\030\001 \002(\r\022*\n\005_info\030\002 \001(\0132\033.c"
+    "lient_baseserver.tbc_info\"\220\001\n\017tbc_draw_r"
+    "eward\022\017\n\007_result\030\001 \002(\r\022\021\n\t_stage_id\030\002 \002("
+    "\r\022/\n\010_rewards\030\003 \003(\0132\035.client_baseserver."
+    "tbc_reward\022(\n\007_heroes\030\004 \003(\0132\027.client_bas"
+    "eserver.hero\"I\n\022get_maillist_reply\0223\n\016_s"
+    "ys_mail_list\030\001 \003(\0132\033.client_baseserver.s"
+    "ys_mail\"\215\002\n\010sys_mail\022\013\n\003_id\030\001 \002(\r\022\017\n\007_st"
+    "atus\030\002 \002(\r\022\022\n\n_mail_time\030\003 \002(\r\022\024\n\014_expir"
+    "e_time\030\004 \002(\r\0221\n\010_content\030\005 \002(\0132\037.client_"
+    "baseserver.mail_content\022\016\n\006_money\030\006 \001(\r\022"
+    "\021\n\t_diamonds\030\007 \001(\r\022\024\n\014_skill_point\030\010 \001(\r"
+    "\022\016\n\006_items\030\t \003(\r\022\r\n\005_type\030\013 \002(\r\022.\n\007_poin"
+    "ts\030\n \003(\0132\035.client_baseserver.user_point\""
+    "x\n\014mail_content\0222\n\013_plain_mail\030\001 \001(\0132\035.c"
+    "lient_baseserver.plain_mail\0224\n\014_format_m"
+    "ail\030\002 \001(\0132\036.client_baseserver.format_mai"
+    "l\"=\n\nplain_mail\022\r\n\005_from\030\001 \002(\t\022\016\n\006_title"
+    "\030\002 \002(\t\022\020\n\010_content\030\003 \002(\t\"S\n\013format_mail\022"
+    "\024\n\014_mail_cfg_id\030\001 \002(\r\022.\n\007_params\030\002 \003(\0132\035"
+    ".client_baseserver.mail_param\"9\n\nmail_pa"
+    "ram\022\014\n\004_idx\030\001 \002(\r\022\r\n\005_type\030\002 \001(\r\022\016\n\006_val"
+    "ue\030\003 \001(\t\"+\n\nuser_point\022\r\n\005_type\030\001 \002(\r\022\016\n"
+    "\006_value\030\002 \002(\r\"\"\n\017read_mail_reply\022\017\n\007_res"
+    "ult\030\001 \002(\r\"%\n\022get_vip_gift_reply\022\017\n\007_resu"
+    "lt\030\001 \002(\r\"\371\002\n\nchat_reply\022)\n\004_say\030\001 \001(\0132\033."
+    "client_baseserver.chat_say\022-\n\006_fresh\030\002 \001"
+    "(\0132\035.client_baseserver.chat_fresh\022-\n\006_fe"
+    "tch\030\003 \001(\0132\035.client_baseserver.chat_fetch"
+    "\0224\n\014_chat_add_bl\030\004 \001(\0132\036.client_baseserv"
+    "er.chat_add_bl\0224\n\014_chat_del_bl\030\005 \001(\0132\036.c"
+    "lient_baseserver.chat_del_bl\022:\n\017_chat_bl"
+    "acklist\030\006 \001(\0132!.client_baseserver.chat_b"
+    "lacklist\022:\n\017_chat_borad_say\030\007 \001(\0132!.clie"
+    "nt_baseserver.chat_broad_say\"^\n\023chat_bla"
+    "cklist_user\022\017\n\007_userid\030\001 \001(\r\0226\n\r_user_su"
+    "mmary\030\002 \001(\0132\037.client_baseserver.user_sum"
+    "mary\"V\n\016chat_blacklist\022D\n\024_chat_blacklis"
+    "t_user\030\001 \003(\0132&.client_baseserver.chat_bl"
+    "acklist_user\"g\n\016chat_broad_say\022\017\n\007_resul"
+    "t\030\001 \001(\r\022\020\n\010_channel\030\002 \001(\r\0222\n\t_contents\030\003"
+    " \003(\0132\037.client_baseserver.chat_content\"a\n"
+    "\010chat_say\022\017\n\007_result\030\001 \002(\r\022\020\n\010_channel\030\002"
+    " \002(\r\0222\n\t_contents\030\003 \003(\0132\037.client_baseser"
+    "ver.chat_content\"R\n\nchat_fresh\022\020\n\010_chann"
+    "el\030\001 \002(\r\0222\n\t_contents\030\002 \003(\0132\037.client_bas"
+    "eserver.chat_content\"a\n\nchat_fetch\022\020\n\010_c"
+    "hannel\030\001 \002(\r\022\020\n\010_chat_id\030\002 \002(\r\022/\n\n_acces"
+    "sory\030\003 \001(\0132\033.client_baseserver.chat_acc\""
+    "Z\n\010chat_acc\022\r\n\005_type\030\001 \002(\r\022\017\n\007_binary\030\002 "
+    "\001(\t\022.\n\007_replay\030\003 \001(\0132\035.client_baseserver"
+    ".pvp_record\"\225\002\n\014chat_content\022\020\n\010_chat_id"
+    "\030\001 \002(\r\022\024\n\014_speaker_uid\030\002 \002(\r\0229\n\020_speaker"
+    "_summary\030\003 \002(\0132\037.client_baseserver.user_"
+    "summary\022\023\n\013_target_uid\030\004 \001(\r\0228\n\017_target_"
+    "summary\030\005 \001(\0132\037.client_baseserver.user_s"
+    "ummary\022\025\n\r_speaker_post\030\006 \001(\r\022\023\n\013_speak_"
+    "time\030\007 \002(\r\022\025\n\r_content_type\030\010 \002(\r\022\020\n\010_co"
+    "ntent\030\t \002(\t\"\033\n\013chat_add_bl\022\014\n\004_ret\030\001 \002(\r"
+    "\"\033\n\013chat_del_bl\022\014\n\004_ret\030\001 \002(\r\"[\n\004chat\022\031\n"
+    "\021_world_chat_times\030\001 \002(\r\022#\n\033_last_reset_"
+    "world_chat_time\030\002 \002(\r\022\023\n\013_black_list\030\003 \003"
+    "(\r\"a\n\nuser_guild\022\013\n\003_id\030\001 \002(\r\022\r\n\005_name\030\002"
+    " \002(\t\022\014\n\004_job\030\003 \001(\r\022\025\n\r_req_guild_id\030\004 \001("
+    "\r\022\022\n\n_hire_hero\030\005 \003(\r\"\321\020\n\013guild_reply\0220\n"
+    "\007_create\030\001 \001(\0132\037.client_baseserver.guild"
+    "_create\0222\n\010_dismiss\030\002 \001(\0132 .client_bases"
+    "erver.guild_dismiss\022,\n\005_list\030\003 \001(\0132\035.cli"
+    "ent_baseserver.guild_list\0220\n\007_search\030\004 \001"
+    "(\0132\037.client_baseserver.guild_search\022,\n\005_"
+    "join\030\005 \001(\0132\035.client_baseserver.guild_joi"
+    "n\022<\n\r_join_confirm\030\006 \001(\0132%.client_basese"
+    "rver.guild_join_confirm\0224\n\014_guild_leave\030"
+    "\007 \001(\0132\036.client_baseserver.guild_leave\022,\n"
+    "\005_kick\030\010 \001(\0132\035.client_baseserver.guild_k"
+    "ick\022*\n\004_set\030\t \001(\0132\034.client_baseserver.gu"
+    "ild_set\022.\n\006_query\030\n \001(\0132\036.client_baseser"
+    "ver.guild_query\0222\n\010_set_job\030\013 \001(\0132 .clie"
+    "nt_baseserver.guild_set_job\0224\n\t_add_hire"
+    "\030\014 \001(\0132!.client_baseserver.guild_add_hir"
+    "e\0224\n\t_del_hire\030\r \001(\0132!.client_baseserver"
+    ".guild_del_hire\022:\n\014_query_hires\030\016 \001(\0132$."
+    "client_baseserver.guild_query_hires\0226\n\n_"
+    "hire_hero\030\017 \001(\0132\".client_baseserver.guil"
+    "d_hire_hero\022:\n\014_worship_req\030\020 \001(\0132$.clie"
+    "nt_baseserver.guild_worship_req\022D\n\021_wors"
+    "hip_withdraw\030\021 \001(\0132).client_baseserver.g"
+    "uild_worship_withdraw\022B\n\020_query_hh_detai"
+    "l\030\022 \001(\0132(.client_baseserver.guild_qurey_"
+    "hh_detail\022\017\n\007_result\030\023 \002(\r\022@\n\017_instance_"
+    "query\030\024 \001(\0132\'.client_baseserver.guild_in"
+    "stance_query\022B\n\020_instance_detail\030\025 \001(\0132("
+    ".client_baseserver.guild_instance_detail"
+    "\022@\n\017_instance_start\030\026 \001(\0132\'.client_bases"
+    "erver.guild_instance_start\022A\n\r_instance_"
+    "end\030\027 \001(\0132*.client_baseserver.guild_inst"
+    "ance_end_down\022>\n\016_instance_drop\030\030 \001(\0132&."
+    "client_baseserver.guild_instance_drop\022>\n"
+    "\016_instance_open\030\031 \001(\0132&.client_baseserve"
+    "r.guild_instance_open\022@\n\017_instance_apply"
+    "\030\032 \001(\0132\'.client_baseserver.guild_instanc"
+    "e_apply\0226\n\n_drop_info\030\033 \001(\0132\".client_bas"
+    "eserver.guild_drop_info\0226\n\n_drop_give\030\034 "
+    "\001(\0132\".client_baseserver.guild_drop_give\022"
+    "B\n\020_instance_damage\030\035 \001(\0132(.client_bases"
+    "erver.guild_instance_damage\022>\n\016_items_hi"
+    "story\030\036 \001(\0132&.client_baseserver.guild_it"
+    "ems_history\0222\n\013_guild_jump\030\037 \001(\0132\035.clien"
+    "t_baseserver.guild_jump\022<\n\020_guild_app_qu"
+    "eue\030  \001(\0132\".client_baseserver.guild_app_"
+    "queue\022D\n\021_instance_prepare\030! \001(\0132).clien"
+    "t_baseserver.guild_instance_prepare\0228\n\016_"
+    "guild_members\030\" \001(\0132 .client_baseserver."
+    "guild_members\022>\n\021_guild_stage_rank\030# \001(\013"
+    "2#.client_baseserver.guild_stage_rank\0224\n"
+    "\t_set_jump\030$ \001(\0132!.client_baseserver.gui"
+    "ld_set_jump\022<\n\020_send_mail_reply\030% \001(\0132\"."
+    "client_baseserver.guild_send_mail\"\"\n\017gui"
+    "ld_send_mail\022\017\n\007_result\030\001 \002(\r\"!\n\016guild_s"
+    "et_jump\022\017\n\007_result\030\001 \002(\r\"=\n\026guild_instan"
+    "ce_prepare\022\017\n\007_result\030\001 \002(\r\022\022\n\n_left_tim"
+    "e\030\002 \002(\r\"\177\n\010dps_rank\022\014\n\004_dps\030\001 \002(\r\0222\n\t_dp"
+    "s_user\030\002 \002(\0132\037.client_baseserver.user_su"
+    "mmary\0221\n\006_array\030\003 \001(\0132!.client_baseserve"
+    "r.dps_rank_array\"A\n\016dps_rank_array\022/\n\006_h"
+    "eros\030\001 \003(\0132\037.client_baseserver.hero_summ"
+    "ary\"Y\n\020guild_first_pass\0221\n\010_summary\030\001 \002("
+    "\0132\037.client_baseserver.user_summary\022\022\n\n_p"
+    "ass_time\030\002 \002(\r\"K\n\017guild_fast_pass\022\013\n\003_id"
+    "\030\001 \002(\r\022\r\n\005_icon\030\002 \002(\r\022\r\n\005_time\030\003 \002(\r\022\r\n\005"
+    "_name\030\004 \002(\t\"\307\001\n\020guild_stage_rank\022\021\n\t_sta"
+    "ge_id\030\001 \002(\r\022.\n\t_dps_rank\030\002 \003(\0132\033.client_"
+    "baseserver.dps_rank\0228\n\013_first_pass\030\003 \001(\013"
+    "2#.client_baseserver.guild_first_pass\0226\n"
+    "\n_fast_pass\030\004 \001(\0132\".client_baseserver.gu"
+    "ild_fast_pass\"\266\001\n\017guild_app_queue\0221\n\010_su"
+    "mmary\030\001 \003(\0132\037.client_baseserver.user_sum"
+    "mary\022\020\n\010_timeout\030\002 \002(\r\022\023\n\013_item_count\030\003 "
+    "\002(\r\022\r\n\005_rank\030\004 \002(\r\022\020\n\010_item_id\030\005 \002(\r\022\023\n\013"
+    "_jump_times\030\006 \002(\r\022\023\n\013_cost_money\030\007 \002(\r\"G"
+    "\n\rguild_members\0226\n\r_guild_member\030\001 \003(\0132\037"
+    ".client_baseserver.guild_member\"U\n\nguild"
+    "_jump\022\017\n\007_result\030\001 \002(\r\0226\n\n_app_queue\030\002 \002"
+    "(\0132\".client_baseserver.guild_app_queue\"f"
+    "\n\023guild_items_history\022\020\n\010_isthere\030\001 \002(\r\022"
+    "=\n\016_item_historys\030\002 \003(\0132%.client_baseser"
+    "ver.guild_item_history\"h\n\022guild_item_his"
+    "tory\022\020\n\010_item_id\030\001 \002(\r\022\026\n\016_receiver_name"
+    "\030\002 \002(\t\022\022\n\n_send_time\030\003 \002(\r\022\024\n\014_sender_na"
+    "me\030\004 \001(\t\"d\n\027guild_challenger_damage\0228\n\013_"
+    "challenger\030\001 \002(\0132#.client_baseserver.gui"
+    "ld_challenger\022\017\n\007_damage\030\002 \002(\r\"g\n\025guild_"
+    "instance_damage\022\020\n\010_isthere\030\001 \002(\r\022<\n\010_da"
+    "mages\030\002 \003(\0132*.client_baseserver.guild_ch"
+    "allenger_damage\"\"\n\017guild_drop_give\022\017\n\007_r"
+    "esult\030\001 \002(\r\"Q\n\024guild_drop_item_info\022\020\n\010_"
+    "item_id\030\001 \002(\r\022\025\n\r_time_out_end\030\002 \002(\r\022\020\n\010"
+    "_user_id\030\003 \003(\r\"\232\001\n\017guild_drop_item\022\020\n\010_r"
+    "aid_id\030\001 \002(\r\0228\n\t_dps_list\030\002 \003(\0132%.client"
+    "_baseserver.guild_instance_dps\022;\n\n_item_"
+    "info\030\003 \003(\0132\'.client_baseserver.guild_dro"
+    "p_item_info\"0\n\022guild_instance_dps\022\014\n\004_ui"
+    "d\030\001 \002(\r\022\014\n\004_dps\030\002 \002(\r\"x\n\017guild_drop_info"
+    "\0221\n\010_members\030\001 \003(\0132\037.client_baseserver.g"
+    "uild_member\0222\n\006_items\030\002 \003(\0132\".client_bas"
+    "eserver.guild_drop_item\"_\n\024guild_instanc"
+    "e_apply\022\017\n\007_result\030\001 \002(\r\0226\n\n_app_queue\030\002"
+    " \002(\0132\".client_baseserver.guild_app_queue"
+    "\"d\n\023guild_instance_info\022\020\n\010_raid_id\030\001 \002("
+    "\r\022\024\n\014_stage_index\030\002 \002(\r\022\023\n\013_wave_index\030\003"
+    " \002(\r\022\020\n\010_hp_info\030\004 \003(\r\"\260\001\n\024guild_instanc"
+    "e_start\022>\n\016_instance_info\030\001 \002(\0132&.client"
+    "_baseserver.guild_instance_info\022\016\n\006_rsee"
+    "d\030\002 \002(\r\022\016\n\006_loots\030\003 \003(\r\0228\n\010_hp_drop\030\004 \003("
+    "\0132&.client_baseserver.guild_stage_hp_dro"
+    "p\"X\n\023guild_stage_hp_drop\022\025\n\r_monster_inf"
+    "o\030\001 \002(\r\022*\n\006_loots\030\002 \003(\0132\032.client_baseser"
+    "ver.hp_drop\"\'\n\007hp_drop\022\014\n\004_per\030\001 \002(\r\022\016\n\006"
+    "_items\030\002 \003(\r\"\375\001\n\027guild_instance_end_down"
+    "\022;\n\010_summary\030\001 \002(\0132).client_baseserver.g"
+    "uild_instance_summary\022\017\n\007_result\030\002 \002(\r\022\020"
+    "\n\010_rewards\030\003 \003(\r\022\026\n\016_apply_rewards\030\004 \003(\r"
+    "\022\033\n\023_stage_old_progress\030\005 \002(\r\022\023\n\013_join_t"
+    "imes\030\006 \002(\r\0228\n\016_break_history\030\007 \001(\0132 .cli"
+    "ent_baseserver.break_history\"\215\001\n\rbreak_h"
+    "istory\022\020\n\010_diamond\030\001 \002(\r\022\023\n\013_guildpoint\030"
+    "\002 \002(\r\022\014\n\004_dps\030\003 \002(\r\022\020\n\010_old_dps\030\004 \001(\r\0225\n"
+    "\014_old_summary\030\005 \001(\0132\037.client_baseserver."
+    "user_summary\"L\n\023guild_instance_open\022\017\n\007_"
+    "result\030\001 \002(\r\022\020\n\010_raid_id\030\002 \002(\r\022\022\n\n_left_"
+    "time\030\003 \002(\r\"S\n\014guild_create\022\017\n\007_result\030\001 "
+    "\002(\r\0222\n\013_guild_info\030\002 \001(\0132\035.client_basese"
+    "rver.guild_info\" \n\rguild_dismiss\022\017\n\007_res"
+    "ult\030\001 \002(\r\"\362\001\n\nguild_info\0222\n\010_summary\030\001 \002"
+    "(\0132 .client_baseserver.guild_summary\0221\n\010"
+    "_members\030\002 \003(\0132\037.client_baseserver.guild"
+    "_member\0223\n\t_appliers\030\003 \003(\0132 .client_base"
+    "server.guild_applier\022\021\n\t_vitality\030\004 \002(\r\022"
+    "\026\n\016_self_vitality\030\005 \002(\r\022\035\n\025_left_distrib"
+    "ute_time\030\006 \002(\r\"\370\001\n\rguild_summary\022\013\n\003_id\030"
+    "\001 \002(\r\022\r\n\005_name\030\002 \002(\t\022\017\n\007_avatar\030\003 \002(\r\022\017\n"
+    "\007_slogan\030\004 \002(\t\022\022\n\n_join_type\030\005 \002(\r\022\023\n\013_j"
+    "oin_limit\030\006 \002(\r\022\023\n\013_member_cnt\030\007 \002(\r\0223\n\n"
+    "_president\030\010 \002(\0132\037.client_baseserver.use"
+    "r_summary\022\021\n\t_liveness\030\t \001(\r\022\021\n\t_can_jum"
+    "p\030\n \001(\r\022\020\n\010_host_id\030\013 \001(\r\"\240\001\n\014guild_memb"
+    "er\022\014\n\004_uid\030\001 \002(\r\0221\n\010_summary\030\002 \002(\0132\037.cli"
+    "ent_baseserver.user_summary\022\014\n\004_job\030\003 \002("
+    "\r\022\023\n\013_last_login\030\004 \002(\r\022\017\n\007_active\030\005 \001(\r\022"
+    "\033\n\023_join_instance_time\030\006 \001(\r\"U\n\rguild_ap"
+    "plier\022\014\n\004_uid\030\001 \002(\r\0226\n\r_user_summary\030\002 \001"
+    "(\0132\037.client_baseserver.user_summary\"f\n\ng"
+    "uild_list\0221\n\007_guilds\030\001 \003(\0132 .client_base"
+    "server.guild_summary\022\017\n\007_result\030\002 \002(\r\022\024\n"
+    "\014_create_cost\030\003 \001(\r\"h\n\014guild_search\0221\n\007_"
+    "guilds\030\001 \001(\0132 .client_baseserver.guild_s"
+    "ummary\022\017\n\007_result\030\002 \002(\r\022\024\n\014_create_cost\030"
+    "\003 \001(\r\"\221\001\n\nguild_join\022\017\n\007_result\030\001 \002(\r\022\026\n"
+    "\016_join_guild_id\030\002 \002(\r\0222\n\013_guild_info\030\003 \001"
+    "(\0132\035.client_baseserver.guild_info\022\020\n\010_cd"
+    "_time\030\004 \001(\r\022\024\n\014_fail_reason\030\005 \001(\t\"X\n\022gui"
+    "ld_join_confirm\022\017\n\007_result\030\001 \002(\r\0221\n\010_new"
+    "_man\030\002 \001(\0132\037.client_baseserver.guild_mem"
+    "ber\"\036\n\013guild_leave\022\017\n\007_result\030\001 \002(\r\"\035\n\ng"
+    "uild_kick\022\017\n\007_result\030\001 \002(\r\"\034\n\tguild_set\022"
+    "\017\n\007_result\030\001 \002(\r\"\231\001\n\013guild_query\022,\n\005_inf"
+    "o\030\001 \001(\0132\035.client_baseserver.guild_info\0222"
+    "\n\010_worship\030\002 \001(\0132 .client_baseserver.gui"
+    "ld_worship\022\022\n\n_drop_info\030\003 \001(\r\022\024\n\014_to_ch"
+    "airman\030\004 \001(\r\"h\n\rguild_worship\022\022\n\n_use_ti"
+    "mes\030\001 \002(\r\0223\n\010_rewards\030\002 \003(\0132!.client_bas"
+    "eserver.worship_reward\022\016\n\006_times\030\003 \002(\r\" "
+    "\n\rguild_set_job\022\017\n\007_result\030\001 \002(\r\"2\n\016guil"
+    "d_add_hire\022\017\n\007_result\030\001 \002(\r\022\017\n\007_income\030\002"
+    " \002(\r\"^\n\016guild_del_hire\022\017\n\007_result\030\001 \002(\r\022"
+    "\024\n\014_hire_reward\030\002 \001(\r\022\024\n\014_stay_reward\030\003 "
+    "\001(\r\022\017\n\007_heroid\030\004 \001(\r\"j\n\021guild_query_hire"
+    "s\0222\n\006_users\030\001 \003(\0132\".client_baseserver.gu"
+    "ild_hire_user\022\022\n\n_hire_uids\030\002 \003(\r\022\r\n\005_fr"
+    "om\030\003 \002(\r\"\206\001\n\017guild_hire_user\022\014\n\004_uid\030\001 \002"
+    "(\r\022\r\n\005_name\030\002 \002(\t\022\016\n\006_level\030\003 \002(\r\022\017\n\007_av"
+    "atar\030\004 \002(\r\0225\n\007_heroes\030\005 \003(\0132$.client_bas"
+    "eserver.hire_hero_summary\"u\n\021hire_hero_s"
+    "ummary\022.\n\005_hero\030\001 \002(\0132\037.client_baseserve"
+    "r.hero_summary\022\r\n\005_cost\030\002 \002(\r\022\017\n\007_income"
+    "\030\003 \002(\r\022\020\n\010_hire_ts\030\004 \002(\r\"g\n\017guild_hire_h"
+    "ero\022\017\n\007_result\030\001 \002(\r\022\r\n\005_from\030\002 \001(\r\022\014\n\004_"
+    "uid\030\003 \001(\r\022&\n\005_hero\030\004 \001(\0132\027.client_basese"
+    "rver.hero\"$\n\021guild_worship_req\022\017\n\007_resul"
+    "t\030\001 \002(\r\"^\n\026guild_worship_withdraw\022\017\n\007_re"
+    "sult\030\001 \002(\r\0223\n\010_rewards\030\002 \003(\0132!.client_ba"
+    "seserver.worship_reward\"\?\n\025guild_qurey_h"
+    "h_detail\022&\n\005_hero\030\001 \001(\0132\027.client_baseser"
+    "ver.hero\"A\n\016worship_reward\022\r\n\005_type\030\001 \002("
+    "\r\022\017\n\007_param1\030\002 \001(\r\022\017\n\007_param2\030\003 \001(\r\">\n\017a"
+    "ctivity_reward\022\r\n\005_type\030\001 \001(\r\022\013\n\003_id\030\002 \001"
+    "(\r\022\017\n\007_amount\030\003 \001(\r\"J\n\016activity_infos\0228\n"
+    "\016_activity_info\030\001 \003(\0132 .client_baseserve"
+    "r.activity_info\"\211\001\n\020activity_rewards\022\017\n\007"
+    "_amount\030\001 \001(\r\0224\n\010_rewards\030\002 \003(\0132\".client"
+    "_baseserver.activity_reward\022.\n\t_dailyjob"
+    "\030\003 \001(\0132\033.client_baseserver.dailyjob\"\271\001\n\r"
+    "activity_info\022\013\n\003_id\030\001 \001(\r\022\r\n\005_type\030\002 \001("
+    "\r\022\023\n\013_start_time\030\003 \001(\r\022\021\n\t_end_time\030\004 \001("
+    "\r\0225\n\010_rewards\030\005 \003(\0132#.client_baseserver."
+    "activity_rewards\022\016\n\006_title\030\006 \001(\t\022\r\n\005_des"
+    "c\030\007 \001(\t\022\016\n\006_rules\030\010 \001(\t\"O\n\020cdkey_gift_re"
+    "ply\022\017\n\007_result\030\001 \002(\r\022*\n\005_pack\030\002 \001(\0132\033.cl"
+    "ient_baseserver.res_pack\"\231\001\n\010res_pack\022\016\n"
+    "\006_money\030\001 \001(\r\022\020\n\010_diamond\030\002 \001(\r\022\016\n\006_item"
+    "s\030\003 \003(\r\022(\n\007_heroes\030\004 \003(\0132\027.client_basese"
+    "rver.hero\0221\n\013_month_card\030\005 \001(\0132\034.client_"
+    "baseserver.monthcard\"\"\n\023ask_magicsoul_re"
+    "ply\022\013\n\003_id\030\001 \003(\r\"h\n\016important_data\022\016\n\006_m"
+    "oney\030\001 \002(\r\022\014\n\004_rmb\030\002 \002(\r\022(\n\007_heroes\030\003 \003("
+    "\0132\027.client_baseserver.hero\022\016\n\006_items\030\004 \003"
+    "(\r\".\n\tmonthcard\022\013\n\003_id\030\001 \002(\r\022\024\n\014_expire_"
+    "time\030\002 \002(\r\"\270\010\n\016excavate_reply\022H\n\026_search"
+    "_excavate_reply\030\001 \001(\0132(.client_baseserve"
+    "r.search_excavate_reply\022P\n\032_query_excava"
+    "te_data_reply\030\002 \001(\0132,.client_baseserver."
+    "query_excavate_data_reply\022V\n\035_query_exca"
+    "vate_history_reply\030\003 \001(\0132/.client_basese"
+    "rver.query_excavate_history_reply\022T\n\034_qu"
+    "ery_excavate_battle_reply\030\004 \001(\0132..client"
+    "_baseserver.query_excavate_battle_reply\022"
+    "L\n\030_set_excavate_team_reply\030\005 \001(\0132*.clie"
+    "nt_baseserver.set_excavate_team_reply\022T\n"
+    "\034_excavate_start_battle_reply\030\006 \001(\0132..cl"
+    "ient_baseserver.excavate_start_battle_re"
+    "ply\022P\n\032_excavate_end_battle_reply\030\007 \001(\0132"
+    ",.client_baseserver.excavate_end_battle_"
+    "reply\022N\n\031_query_excavate_def_reply\030\010 \001(\013"
+    "2+.client_baseserver.query_excavate_def_"
+    "reply\022T\n\034_clear_excavate_battle_reply\030\t "
+    "\001(\0132..client_baseserver.clear_excavate_b"
+    "attle_reply\022T\n\034_draw_excavate_def_rwd_re"
+    "ply\030\n \001(\0132..client_baseserver.draw_excav"
+    "ate_def_rwd_reply\022J\n\027_revenge_excavate_r"
+    "eply\030\013 \001(\0132).client_baseserver.revenge_e"
+    "xcavate_reply\022F\n\025_draw_excav_res_reply\030\014"
+    " \001(\0132\'.client_baseserver.draw_excav_res_"
+    "reply\022V\n\035_withdraw_excavate_hero_reply\030\r"
+    " \001(\0132/.client_baseserver.withdraw_excava"
+    "te_hero_reply\"H\n\026revenge_excavate_reply\022"
+    ".\n\t_excavate\030\001 \001(\0132\033.client_baseserver.e"
+    "xcavate\"X\n\025search_excavate_reply\022\017\n\007_res"
+    "ult\030\001 \002(\r\022.\n\t_excavate\030\002 \001(\0132\033.client_ba"
+    "seserver.excavate\"\300\002\n\031query_excavate_dat"
+    "a_reply\022.\n\t_excavate\030\001 \003(\0132\033.client_base"
+    "server.excavate\022\024\n\014_searched_id\030\002 \002(\r\022\025\n"
+    "\r_search_times\030\003 \002(\r\022\027\n\017_last_search_ts\030"
+    "\004 \002(\r\022\025\n\r_attacking_id\030\005 \001(\r\022:\n\013_bat_her"
+    "oes\030\006 \003(\0132%.client_baseserver.excavate_s"
+    "elf_hero\022-\n\004_cfg\030\007 \001(\0132\037.client_baseserv"
+    "er.excavate_cfg\022+\n\005_hire\030\010 \001(\0132\034.client_"
+    "baseserver.hire_data\"S\n\022excavate_self_he"
+    "ro\022\020\n\010_hero_id\030\001 \002(\r\022+\n\005_dyna\030\002 \002(\0132\034.cl"
+    "ient_baseserver.hero_dyna\"\'\n\014excavate_cf"
+    "g\022\027\n\017_attack_timeout\030\001 \001(\r\"\276\002\n\rexcavate_"
+    "team\022\020\n\010_team_id\030\001 \002(\r\0220\n\007_player\030\002 \001(\0132"
+    "\037.client_baseserver.user_summary\0224\n\013_her"
+    "o_bases\030\003 \003(\0132\037.client_baseserver.hero_s"
+    "ummary\0221\n\013_hero_dynas\030\004 \003(\0132\034.client_bas"
+    "eserver.hero_dyna\022\020\n\010_res_got\030\005 \002(\r\022\017\n\007_"
+    "svr_id\030\006 \001(\r\022\027\n\017_display_svr_id\030\007 \001(\r\022\021\n"
+    "\t_svr_name\030\010 \001(\t\022\020\n\010_team_gs\030\t \001(\r\022\016\n\006_s"
+    "peed\030\n \001(\r\022\017\n\007_robbed\030\013 \001(\r\"\247\001\n\010excavate"
+    "\022\016\n\006_owner\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\022\020\n\010_type_i"
+    "d\030\003 \002(\r\022/\n\005_team\030\004 \003(\0132 .client_baseserv"
+    "er.excavate_team\022\016\n\006_state\030\005 \002(\r\022\025\n\r_sta"
+    "te_end_ts\030\006 \001(\r\022\024\n\014_create_time\030\007 \001(\r\"\340\001"
+    "\n\020excavate_history\022\013\n\003_id\030\001 \002(\t\022\024\n\014_exca"
+    "vate_id\030\002 \002(\r\022\017\n\007_result\030\003 \002(\r\022\023\n\013_enemy"
+    "_name\030\004 \002(\t\022\024\n\014_enemy_svrid\030\005 \001(\r\022\026\n\016_en"
+    "emy_svrname\030\006 \001(\t\022\r\n\005_time\030\007 \002(\r\022\021\n\t_vat"
+    "ility\030\010 \001(\r\0223\n\007_reward\030\t \003(\0132\".client_ba"
+    "seserver.excavate_reward\"z\n\034query_excava"
+    "te_history_reply\022>\n\021_excavate_history\030\001 "
+    "\003(\0132#.client_baseserver.excavate_history"
+    "\022\032\n\022_draw_def_vitality\030\002 \001(\r\"s\n\024excavate"
+    "_battle_hero\022.\n\005_base\030\001 \002(\0132\037.client_bas"
+    "eserver.hero_summary\022+\n\005_dyna\030\002 \002(\0132\034.cl"
+    "ient_baseserver.hero_dyna\"\200\001\n\024excavate_b"
+    "attle_team\0220\n\007_player\030\001 \002(\0132\037.client_bas"
+    "eserver.user_summary\0226\n\005_hero\030\002 \003(\0132\'.cl"
+    "ient_baseserver.excavate_battle_hero\"\307\001\n"
+    "\017excavate_battle\022;\n\n_self_team\030\001 \002(\0132\'.c"
+    "lient_baseserver.excavate_battle_team\022;\n"
+    "\n_oppo_team\030\002 \002(\0132\'.client_baseserver.ex"
+    "cavate_battle_team\022\017\n\007_result\030\003 \002(\r\022\022\n\n_"
+    "record_id\030\004 \002(\r\022\025\n\r_record_svrid\030\005 \002(\r\"S"
+    "\n\033query_excavate_battle_reply\0224\n\010_battle"
+    "s\030\001 \003(\0132\".client_baseserver.excavate_bat"
+    "tle\"V\n\027set_excavate_team_reply\022\017\n\007_resul"
+    "t\030\001 \002(\r\022*\n\005_mine\030\002 \001(\0132\033.client_baseserv"
+    "er.excavate\"\237\001\n\033excavate_start_battle_re"
+    "ply\022\017\n\007_result\030\001 \002(\r\022\016\n\006_rseed\030\002 \002(\r\022,\n\013"
+    "_hero_bases\030\003 \003(\0132\027.client_baseserver.he"
+    "ro\0221\n\013_hero_dynas\030\004 \003(\0132\034.client_baseser"
+    "ver.hero_dyna\"\256\001\n\031excavate_end_battle_re"
+    "ply\022\017\n\007_result\030\001 \001(\r\022.\n\t_excavate\030\002 \001(\0132"
+    "\033.client_baseserver.excavate\0223\n\007_reward\030"
+    "\003 \003(\0132\".client_baseserver.excavate_rewar"
+    "d\022\033\n\023_mine_battle_result\030\004 \001(\r\"]\n\024draw_e"
+    "xcav_res_reply\022\020\n\010_diamond\030\001 \001(\r\0223\n\007_rew"
+    "ard\030\002 \003(\0132\".client_baseserver.excavate_r"
+    "eward\"T\n\017excavate_reward\022\r\n\005_type\030\001 \002(\r\022"
+    "\020\n\010_team_id\030\002 \001(\r\022\017\n\007_param1\030\003 \001(\r\022\017\n\007_p"
+    "aram2\030\004 \001(\r\"J\n\030query_excavate_def_reply\022"
+    ".\n\t_excavate\030\001 \001(\0132\033.client_baseserver.e"
+    "xcavate\".\n\033clear_excavate_battle_reply\022\017"
+    "\n\007_result\030\001 \002(\r\"/\n\034withdraw_excavate_her"
+    "o_reply\022\017\n\007_result\030\001 \002(\r\"F\n\033draw_excavat"
+    "e_def_rwd_reply\022\017\n\007_result\030\001 \002(\r\022\026\n\016_dra"
+    "w_vitality\030\002 \001(\r\"[\n\023drop_excavate_reply\022"
+    "\017\n\007_result\030\001 \002(\r\0223\n\007_reward\030\002 \001(\0132\".clie"
+    "nt_baseserver.excavate_reward\"\\\n\023change_"
+    "server_reply\022\017\n\007_result\030\001 \002(\r\0224\n\014_server"
+    "_info\030\002 \003(\0132\036.client_baseserver.server_i"
+    "nfo\"d\n\013server_info\022\022\n\n_server_id\030\001 \002(\r\022\024"
+    "\n\014_server_name\030\002 \002(\t\022\024\n\014_player_name\030\003 \001"
+    "(\t\022\025\n\r_player_level\030\004 \001(\r\"\230\001\n\024guild_inst"
+    "ance_query\022\030\n\020_current_raid_id\030\001 \002(\r\022;\n\010"
+    "_summary\030\002 \003(\0132).client_baseserver.guild"
+    "_instance_summary\022\023\n\013_stage_pass\030\003 \001(\r\022\024"
+    "\n\014_is_can_jump\030\004 \002(\r\"p\n\rguild_chapter\022\013\n"
+    "\003_id\030\001 \002(\r\022\021\n\t_progress\030\002 \002(\r\022\023\n\013_begin_"
+    "time\030\003 \002(\r\022\023\n\013_rest_times\030\004 \002(\r\022\025\n\r_cur_"
+    "stage_id\030\005 \002(\r\"\324\001\n\025guild_instance_detail"
+    "\022\016\n\006_stage\030\001 \002(\r\022\r\n\005_wave\030\002 \002(\r\022\013\n\003_hp\030\003"
+    " \003(\r\0229\n\007_record\030\004 \003(\0132(.client_baseserve"
+    "r.guild_instance_record\0228\n\013_challenger\030\005"
+    " \001(\0132#.client_baseserver.guild_challenge"
+    "r\022\032\n\022_challenger_status\030\006 \001(\r\"E\n\020guild_c"
+    "hallenger\0221\n\010_summary\030\001 \002(\0132\037.client_bas"
+    "eserver.user_summary\"b\n\025guild_instance_r"
+    "ecord\0228\n\013_challenger\030\001 \002(\0132#.client_base"
     "server.guild_challenger\022\017\n\007_damage\030\002 \002(\r"
-    "\"g\n\025guild_instance_damage\022\020\n\010_isthere\030\001 "
-    "\002(\r\022<\n\010_damages\030\002 \003(\0132*.client_baseserve"
-    "r.guild_challenger_damage\"=\n\017guild_drop_"
-    "give\022*\n\007_result\030\001 \002(\0162\031.client_baseserve"
-    "r.result\"Q\n\024guild_drop_item_info\022\020\n\010_ite"
-    "m_id\030\001 \002(\r\022\025\n\r_time_out_end\030\002 \002(\r\022\020\n\010_us"
-    "er_id\030\003 \003(\r\"\232\001\n\017guild_drop_item\022\020\n\010_raid"
-    "_id\030\001 \002(\r\0228\n\t_dps_list\030\002 \003(\0132%.client_ba"
-    "seserver.guild_instance_dps\022;\n\n_item_inf"
-    "o\030\003 \003(\0132\'.client_baseserver.guild_drop_i"
-    "tem_info\"0\n\022guild_instance_dps\022\014\n\004_uid\030\001"
-    " \002(\r\022\014\n\004_dps\030\002 \002(\r\"x\n\017guild_drop_info\0221\n"
-    "\010_members\030\001 \003(\0132\037.client_baseserver.guil"
-    "d_member\0222\n\006_items\030\002 \003(\0132\".client_basese"
-    "rver.guild_drop_item\"z\n\024guild_instance_a"
-    "pply\022*\n\007_result\030\001 \002(\0162\031.client_baseserve"
-    "r.result\0226\n\n_app_queue\030\002 \002(\0132\".client_ba"
-    "seserver.guild_app_queue\"d\n\023guild_instan"
-    "ce_info\022\020\n\010_raid_id\030\001 \002(\r\022\024\n\014_stage_inde"
-    "x\030\002 \002(\r\022\023\n\013_wave_index\030\003 \002(\r\022\020\n\010_hp_info"
-    "\030\004 \003(\r\"\260\001\n\024guild_instance_start\022>\n\016_inst"
-    "ance_info\030\001 \002(\0132&.client_baseserver.guil"
-    "d_instance_info\022\016\n\006_rseed\030\002 \002(\r\022\016\n\006_loot"
-    "s\030\003 \003(\r\0228\n\010_hp_drop\030\004 \003(\0132&.client_bases"
-    "erver.guild_stage_hp_drop\"X\n\023guild_stage"
-    "_hp_drop\022\025\n\r_monster_info\030\001 \002(\r\022*\n\006_loot"
-    "s\030\002 \003(\0132\032.client_baseserver.hp_drop\"\'\n\007h"
-    "p_drop\022\014\n\004_per\030\001 \002(\r\022\016\n\006_items\030\002 \003(\r\"\237\002\n"
-    "\027guild_instance_end_down\022;\n\010_summary\030\001 \002"
-    "(\0132).client_baseserver.guild_instance_su"
-    "mmary\0221\n\007_result\030\002 \002(\0162 .client_baseserv"
-    "er.battle_result\022\020\n\010_rewards\030\003 \003(\r\022\026\n\016_a"
-    "pply_rewards\030\004 \003(\r\022\033\n\023_stage_old_progres"
-    "s\030\005 \002(\r\022\023\n\013_join_times\030\006 \002(\r\0228\n\016_break_h"
-    "istory\030\007 \001(\0132 .client_baseserver.break_h"
-    "istory\"\215\001\n\rbreak_history\022\020\n\010_diamond\030\001 \002"
-    "(\r\022\023\n\013_guildpoint\030\002 \002(\r\022\014\n\004_dps\030\003 \002(\r\022\020\n"
-    "\010_old_dps\030\004 \001(\r\0225\n\014_old_summary\030\005 \001(\0132\037."
-    "client_baseserver.user_summary\"g\n\023guild_"
-    "instance_open\022*\n\007_result\030\001 \002(\0162\031.client_"
-    "baseserver.result\022\020\n\010_raid_id\030\002 \002(\r\022\022\n\n_"
-    "left_time\030\003 \002(\r\"n\n\014guild_create\022*\n\007_resu"
-    "lt\030\001 \002(\0162\031.client_baseserver.result\0222\n\013_"
-    "guild_info\030\002 \001(\0132\035.client_baseserver.gui"
-    "ld_info\";\n\rguild_dismiss\022*\n\007_result\030\001 \002("
-    "\0162\031.client_baseserver.result\"\362\001\n\nguild_i"
-    "nfo\0222\n\010_summary\030\001 \002(\0132 .client_baseserve"
-    "r.guild_summary\0221\n\010_members\030\002 \003(\0132\037.clie"
-    "nt_baseserver.guild_member\0223\n\t_appliers\030"
-    "\003 \003(\0132 .client_baseserver.guild_applier\022"
-    "\021\n\t_vitality\030\004 \002(\r\022\026\n\016_self_vitality\030\005 \002"
-    "(\r\022\035\n\025_left_distribute_time\030\006 \002(\r\"\231\002\n\rgu"
-    "ild_summary\022\013\n\003_id\030\001 \002(\r\022\r\n\005_name\030\002 \002(\t\022"
-    "\017\n\007_avatar\030\003 \002(\r\022\017\n\007_slogan\030\004 \002(\t\0223\n\n_jo"
-    "in_type\030\005 \002(\0162\037.client_baseserver.guild_"
-    "join_t\022\023\n\013_join_limit\030\006 \002(\r\022\023\n\013_member_c"
-    "nt\030\007 \002(\r\0223\n\n_president\030\010 \002(\0132\037.client_ba"
-    "seserver.user_summary\022\021\n\t_liveness\030\t \001(\r"
-    "\022\021\n\t_can_jump\030\n \001(\r\022\020\n\010_host_id\030\013 \001(\r\"\300\001"
-    "\n\014guild_member\022\014\n\004_uid\030\001 \002(\r\0221\n\010_summary"
-    "\030\002 \002(\0132\037.client_baseserver.user_summary\022"
-    ",\n\004_job\030\003 \002(\0162\036.client_baseserver.guild_"
-    "job_t\022\023\n\013_last_login\030\004 \002(\r\022\017\n\007_active\030\005 "
-    "\001(\r\022\033\n\023_join_instance_time\030\006 \001(\r\"U\n\rguil"
-    "d_applier\022\014\n\004_uid\030\001 \002(\r\0226\n\r_user_summary"
-    "\030\002 \001(\0132\037.client_baseserver.user_summary\""
-    "\212\001\n\nguild_list\0221\n\007_guilds\030\001 \003(\0132 .client"
-    "_baseserver.guild_summary\0223\n\007_result\030\002 \002"
-    "(\0162\031.client_baseserver.result:\007success\022\024"
-    "\n\014_create_cost\030\003 \001(\r\"\214\001\n\014guild_search\0221\n"
-    "\007_guilds\030\001 \001(\0132 .client_baseserver.guild"
-    "_summary\0223\n\007_result\030\002 \002(\0162\031.client_bases"
-    "erver.result:\007success\022\024\n\014_create_cost\030\003 "
-    "\001(\r\"\371\001\n\nguild_join\022:\n\007_result\030\001 \002(\0162).cl"
-    "ient_baseserver.guild_join.join_result\022\026"
-    "\n\016_join_guild_id\030\002 \002(\r\0222\n\013_guild_info\030\003 "
-    "\001(\0132\035.client_baseserver.guild_info\022\020\n\010_c"
-    "d_time\030\004 \001(\r\022\024\n\014_fail_reason\030\005 \001(\t\";\n\013jo"
-    "in_result\022\r\n\tjoin_fail\020\000\022\016\n\njoin_enter\020\001"
-    "\022\r\n\tjoin_wait\020\002\"s\n\022guild_join_confirm\022*\n"
-    "\007_result\030\001 \002(\0162\031.client_baseserver.resul"
-    "t\0221\n\010_new_man\030\002 \001(\0132\037.client_baseserver."
-    "guild_member\"9\n\013guild_leave\022*\n\007_result\030\001"
-    " \002(\0162\031.client_baseserver.result\"8\n\nguild"
-    "_kick\022*\n\007_result\030\001 \002(\0162\031.client_baseserv"
-    "er.result\"7\n\tguild_set\022*\n\007_result\030\001 \002(\0162"
-    "\031.client_baseserver.result\"\231\001\n\013guild_que"
-    "ry\022,\n\005_info\030\001 \001(\0132\035.client_baseserver.gu"
-    "ild_info\0222\n\010_worship\030\002 \001(\0132 .client_base"
-    "server.guild_worship\022\022\n\n_drop_info\030\003 \001(\r"
-    "\022\024\n\014_to_chairman\030\004 \001(\r\"h\n\rguild_worship\022"
-    "\022\n\n_use_times\030\001 \002(\r\0223\n\010_rewards\030\002 \003(\0132!."
-    "client_baseserver.worship_reward\022\016\n\006_tim"
-    "es\030\003 \002(\r\";\n\rguild_set_job\022*\n\007_result\030\001 \002"
-    "(\0162\031.client_baseserver.result\"M\n\016guild_a"
-    "dd_hire\022*\n\007_result\030\001 \002(\0162\031.client_basese"
-    "rver.result\022\017\n\007_income\030\002 \002(\r\"y\n\016guild_de"
-    "l_hire\022*\n\007_result\030\001 \002(\0162\031.client_baseser"
-    "ver.result\022\024\n\014_hire_reward\030\002 \001(\r\022\024\n\014_sta"
-    "y_reward\030\003 \001(\r\022\017\n\007_heroid\030\004 \001(\r\"\210\001\n\021guil"
-    "d_query_hires\0222\n\006_users\030\001 \003(\0132\".client_b"
-    "aseserver.guild_hire_user\022\022\n\n_hire_uids\030"
-    "\002 \003(\r\022+\n\005_from\030\003 \002(\0162\034.client_baseserver"
-    ".hire_from\"\206\001\n\017guild_hire_user\022\014\n\004_uid\030\001"
-    " \002(\r\022\r\n\005_name\030\002 \002(\t\022\016\n\006_level\030\003 \002(\r\022\017\n\007_"
-    "avatar\030\004 \002(\r\0225\n\007_heroes\030\005 \003(\0132$.client_b"
-    "aseserver.hire_hero_summary\"u\n\021hire_hero"
-    "_summary\022.\n\005_hero\030\001 \002(\0132\037.client_baseser"
-    "ver.hero_summary\022\r\n\005_cost\030\002 \002(\r\022\017\n\007_inco"
-    "me\030\003 \002(\r\022\020\n\010_hire_ts\030\004 \002(\r\"\245\001\n\017guild_hir"
-    "e_hero\022/\n\007_result\030\001 \002(\0162\036.client_baseser"
-    "ver.hire_result\022+\n\005_from\030\002 \001(\0162\034.client_"
-    "baseserver.hire_from\022\014\n\004_uid\030\003 \001(\r\022&\n\005_h"
-    "ero\030\004 \001(\0132\027.client_baseserver.hero\"\?\n\021gu"
-    "ild_worship_req\022*\n\007_result\030\001 \002(\0162\031.clien"
-    "t_baseserver.result\"y\n\026guild_worship_wit"
-    "hdraw\022*\n\007_result\030\001 \002(\0162\031.client_baseserv"
-    "er.result\0223\n\010_rewards\030\002 \003(\0132!.client_bas"
-    "eserver.worship_reward\"\?\n\025guild_qurey_hh"
-    "_detail\022&\n\005_hero\030\001 \001(\0132\027.client_baseserv"
-    "er.hero\"\210\001\n\016worship_reward\0225\n\005_type\030\001 \002("
-    "\0162&.client_baseserver.worship_reward.typ"
-    "e\022\017\n\007_param1\030\002 \001(\r\022\017\n\007_param2\030\003 \001(\r\"\035\n\004t"
-    "ype\022\010\n\004gold\020\001\022\013\n\007diamond\020\002\"\246\001\n\017activity_"
-    "reward\0226\n\005_type\030\001 \001(\0162\'.client_baseserve"
-    "r.activity_reward.type\022\013\n\003_id\030\002 \001(\r\022\017\n\007_"
-    "amount\030\003 \001(\r\"=\n\004type\022\007\n\003rmb\020\001\022\t\n\005money\020\002"
-    "\022\010\n\004item\020\003\022\010\n\004hero\020\004\022\r\n\trand_soul\020\005\"J\n\016a"
-    "ctivity_infos\0228\n\016_activity_info\030\001 \003(\0132 ."
-    "client_baseserver.activity_info\"\211\001\n\020acti"
-    "vity_rewards\022\017\n\007_amount\030\001 \001(\r\0224\n\010_reward"
-    "s\030\002 \003(\0132\".client_baseserver.activity_rew"
-    "ard\022.\n\t_dailyjob\030\003 \001(\0132\033.client_baseserv"
-    "er.dailyjob\"\375\002\n\ractivity_info\022\013\n\003_id\030\001 \001"
-    "(\r\0224\n\005_type\030\002 \001(\0162%.client_baseserver.ac"
-    "tivity_info.type\022\023\n\013_start_time\030\003 \001(\r\022\021\n"
-    "\t_end_time\030\004 \001(\r\0225\n\010_rewards\030\005 \003(\0132#.cli"
-    "ent_baseserver.activity_rewards\022\016\n\006_titl"
-    "e\030\006 \001(\t\022\r\n\005_desc\030\007 \001(\t\022\016\n\006_rules\030\010 \001(\t\"\232"
-    "\001\n\004type\022\024\n\020single_br_tavern\020\001\022\023\n\017combo_b"
-    "r_tavern\020\002\022\024\n\020single_gd_tavern\020\003\022\023\n\017comb"
-    "o_gd_tavern\020\004\022\025\n\021magic_soul_tavern\020\005\022\020\n\014"
-    "rmb_recharge\020\006\022\023\n\017diamond_consume\020\007\"\317\001\n\020"
-    "cdkey_gift_reply\022A\n\007_result\030\001 \002(\01620.clie"
-    "nt_baseserver.cdkey_gift_reply.cdkey_res"
-    "ult\022*\n\005_pack\030\002 \001(\0132\033.client_baseserver.r"
-    "es_pack\"L\n\014cdkey_result\022\013\n\007success\020\000\022\020\n\014"
-    "already_used\020\001\022\016\n\nnot_exists\020\002\022\r\n\tonce_o"
-    "nly\020\003\"\231\001\n\010res_pack\022\016\n\006_money\030\001 \001(\r\022\020\n\010_d"
-    "iamond\030\002 \001(\r\022\016\n\006_items\030\003 \003(\r\022(\n\007_heroes\030"
-    "\004 \003(\0132\027.client_baseserver.hero\0221\n\013_month"
-    "_card\030\005 \001(\0132\034.client_baseserver.monthcar"
-    "d\"\"\n\023ask_magicsoul_reply\022\013\n\003_id\030\001 \003(\r\"h\n"
-    "\016important_data\022\016\n\006_money\030\001 \002(\r\022\014\n\004_rmb\030"
-    "\002 \002(\r\022(\n\007_heroes\030\003 \003(\0132\027.client_baseserv"
-    "er.hero\022\016\n\006_items\030\004 \003(\r\".\n\tmonthcard\022\013\n\003"
-    "_id\030\001 \002(\r\022\024\n\014_expire_time\030\002 \002(\r\"\270\010\n\016exca"
-    "vate_reply\022H\n\026_search_excavate_reply\030\001 \001"
-    "(\0132(.client_baseserver.search_excavate_r"
-    "eply\022P\n\032_query_excavate_data_reply\030\002 \001(\013"
-    "2,.client_baseserver.query_excavate_data"
-    "_reply\022V\n\035_query_excavate_history_reply\030"
-    "\003 \001(\0132/.client_baseserver.query_excavate"
-    "_history_reply\022T\n\034_query_excavate_battle"
-    "_reply\030\004 \001(\0132..client_baseserver.query_e"
-    "xcavate_battle_reply\022L\n\030_set_excavate_te"
-    "am_reply\030\005 \001(\0132*.client_baseserver.set_e"
-    "xcavate_team_reply\022T\n\034_excavate_start_ba"
-    "ttle_reply\030\006 \001(\0132..client_baseserver.exc"
-    "avate_start_battle_reply\022P\n\032_excavate_en"
-    "d_battle_reply\030\007 \001(\0132,.client_baseserver"
-    ".excavate_end_battle_reply\022N\n\031_query_exc"
-    "avate_def_reply\030\010 \001(\0132+.client_baseserve"
-    "r.query_excavate_def_reply\022T\n\034_clear_exc"
-    "avate_battle_reply\030\t \001(\0132..client_basese"
-    "rver.clear_excavate_battle_reply\022T\n\034_dra"
-    "w_excavate_def_rwd_reply\030\n \001(\0132..client_"
-    "baseserver.draw_excavate_def_rwd_reply\022J"
-    "\n\027_revenge_excavate_reply\030\013 \001(\0132).client"
-    "_baseserver.revenge_excavate_reply\022F\n\025_d"
-    "raw_excav_res_reply\030\014 \001(\0132\'.client_bases"
-    "erver.draw_excav_res_reply\022V\n\035_withdraw_"
-    "excavate_hero_reply\030\r \001(\0132/.client_bases"
-    "erver.withdraw_excavate_hero_reply\"H\n\026re"
-    "venge_excavate_reply\022.\n\t_excavate\030\001 \001(\0132"
-    "\033.client_baseserver.excavate\"\312\001\n\025search_"
-    "excavate_reply\022G\n\007_result\030\001 \002(\01626.client"
-    "_baseserver.search_excavate_reply.search"
-    "_result\022.\n\t_excavate\030\002 \001(\0132\033.client_base"
-    "server.excavate\"8\n\rsearch_result\022\013\n\007succ"
-    "ess\020\000\022\n\n\006failed\020\001\022\016\n\nlack_money\020\002\"\300\002\n\031qu"
-    "ery_excavate_data_reply\022.\n\t_excavate\030\001 \003"
-    "(\0132\033.client_baseserver.excavate\022\024\n\014_sear"
-    "ched_id\030\002 \002(\r\022\025\n\r_search_times\030\003 \002(\r\022\027\n\017"
-    "_last_search_ts\030\004 \002(\r\022\025\n\r_attacking_id\030\005"
-    " \001(\r\022:\n\013_bat_heroes\030\006 \003(\0132%.client_bases"
-    "erver.excavate_self_hero\022-\n\004_cfg\030\007 \001(\0132\037"
-    ".client_baseserver.excavate_cfg\022+\n\005_hire"
-    "\030\010 \001(\0132\034.client_baseserver.hire_data\"S\n\022"
-    "excavate_self_hero\022\020\n\010_hero_id\030\001 \002(\r\022+\n\005"
-    "_dyna\030\002 \002(\0132\034.client_baseserver.hero_dyn"
-    "a\"\'\n\014excavate_cfg\022\027\n\017_attack_timeout\030\001 \001"
-    "(\r\"\276\002\n\rexcavate_team\022\020\n\010_team_id\030\001 \002(\r\0220"
-    "\n\007_player\030\002 \001(\0132\037.client_baseserver.user"
-    "_summary\0224\n\013_hero_bases\030\003 \003(\0132\037.client_b"
-    "aseserver.hero_summary\0221\n\013_hero_dynas\030\004 "
-    "\003(\0132\034.client_baseserver.hero_dyna\022\020\n\010_re"
-    "s_got\030\005 \002(\r\022\017\n\007_svr_id\030\006 \001(\r\022\027\n\017_display"
-    "_svr_id\030\007 \001(\r\022\021\n\t_svr_name\030\010 \001(\t\022\020\n\010_tea"
-    "m_gs\030\t \001(\r\022\016\n\006_speed\030\n \001(\r\022\017\n\007_robbed\030\013 "
-    "\001(\r\"\351\002\n\010excavate\0221\n\006_owner\030\001 \002(\0162!.clien"
-    "t_baseserver.excavate.owner\022\013\n\003_id\030\002 \002(\r"
-    "\022\020\n\010_type_id\030\003 \002(\r\022/\n\005_team\030\004 \003(\0132 .clie"
-    "nt_baseserver.excavate_team\0221\n\006_state\030\005 "
-    "\002(\0162!.client_baseserver.excavate.state\022\025"
-    "\n\r_state_end_ts\030\006 \001(\r\022\024\n\014_create_time\030\007 "
-    "\001(\r\"(\n\005owner\022\010\n\004mine\020\000\022\n\n\006others\020\001\022\t\n\005ro"
-    "bot\020\002\"P\n\005state\022\014\n\010searched\020\001\022\n\n\006battle\020\002"
-    "\022\n\n\006shield\020\003\022\n\n\006occupy\020\004\022\013\n\007protect\020\005\022\010\n"
-    "\004dead\020\006\"\261\002\n\020excavate_history\022\013\n\003_id\030\001 \002("
-    "\t\022\024\n\014_excavate_id\030\002 \002(\r\022\?\n\007_result\030\003 \002(\016"
-    "2..client_baseserver.excavate_history.de"
-    "f_result\022\023\n\013_enemy_name\030\004 \002(\t\022\024\n\014_enemy_"
-    "svrid\030\005 \001(\r\022\026\n\016_enemy_svrname\030\006 \001(\t\022\r\n\005_"
-    "time\030\007 \002(\r\022\021\n\t_vatility\030\010 \001(\r\0223\n\007_reward"
-    "\030\t \003(\0132\".client_baseserver.excavate_rewa"
-    "rd\"\037\n\ndef_result\022\007\n\003win\020\000\022\010\n\004fail\020\001\"z\n\034q"
-    "uery_excavate_history_reply\022>\n\021_excavate"
-    "_history\030\001 \003(\0132#.client_baseserver.excav"
-    "ate_history\022\032\n\022_draw_def_vitality\030\002 \001(\r\""
-    "s\n\024excavate_battle_hero\022.\n\005_base\030\001 \002(\0132\037"
-    ".client_baseserver.hero_summary\022+\n\005_dyna"
-    "\030\002 \002(\0132\034.client_baseserver.hero_dyna\"\200\001\n"
-    "\024excavate_battle_team\0220\n\007_player\030\001 \002(\0132\037"
-    ".client_baseserver.user_summary\0226\n\005_hero"
-    "\030\002 \003(\0132\'.client_baseserver.excavate_batt"
-    "le_hero\"\351\001\n\017excavate_battle\022;\n\n_self_tea"
-    "m\030\001 \002(\0132\'.client_baseserver.excavate_bat"
-    "tle_team\022;\n\n_oppo_team\030\002 \002(\0132\'.client_ba"
-    "seserver.excavate_battle_team\0221\n\007_result"
-    "\030\003 \002(\0162 .client_baseserver.battle_result"
-    "\022\022\n\n_record_id\030\004 \002(\r\022\025\n\r_record_svrid\030\005 "
-    "\002(\r\"S\n\033query_excavate_battle_reply\0224\n\010_b"
-    "attles\030\001 \003(\0132\".client_baseserver.excavat"
-    "e_battle\"\303\001\n\027set_excavate_team_reply\022B\n\007"
-    "_result\030\001 \002(\01621.client_baseserver.set_ex"
-    "cavate_team_reply.result\022*\n\005_mine\030\002 \001(\0132"
-    "\033.client_baseserver.excavate\"8\n\006result\022\013"
-    "\n\007success\020\000\022\n\n\006failed\020\001\022\013\n\007expired\020\002\022\010\n\004"
-    "fall\020\003\"\303\001\n\033excavate_start_battle_reply\0223"
-    "\n\007_result\030\001 \002(\0162\031.client_baseserver.resu"
-    "lt:\007success\022\016\n\006_rseed\030\002 \002(\r\022,\n\013_hero_bas"
-    "es\030\003 \003(\0132\027.client_baseserver.hero\0221\n\013_he"
-    "ro_dynas\030\004 \003(\0132\034.client_baseserver.hero_"
-    "dyna\"\323\002\n\031excavate_end_battle_reply\022:\n\007_r"
-    "esult\030\001 \001(\0162 .client_baseserver.battle_r"
-    "esult:\007victory\022.\n\t_excavate\030\002 \001(\0132\033.clie"
-    "nt_baseserver.excavate\0223\n\007_reward\030\003 \003(\0132"
-    "\".client_baseserver.excavate_reward\022e\n\023_"
-    "mine_battle_result\030\004 \001(\0162\?.client_basese"
-    "rver.excavate_end_battle_reply.mine_batt"
-    "le_result:\007success\".\n\022mine_battle_result"
-    "\022\013\n\007success\020\000\022\013\n\007timeout\020\001\"]\n\024draw_excav"
-    "_res_reply\022\020\n\010_diamond\030\001 \001(\r\0223\n\007_reward\030"
-    "\002 \003(\0132\".client_baseserver.excavate_rewar"
-    "d\"\307\001\n\017excavate_reward\0226\n\005_type\030\001 \002(\0162\'.c"
-    "lient_baseserver.excavate_reward.type\022\020\n"
-    "\010_team_id\030\002 \001(\r\022\017\n\007_param1\030\003 \001(\r\022\017\n\007_par"
-    "am2\030\004 \001(\r\"H\n\004type\022\010\n\004gold\020\001\022\013\n\007diamond\020\002"
-    "\022\010\n\004item\020\003\022\010\n\004wood\020\004\022\010\n\004iron\020\005\022\013\n\007crysta"
-    "l\020\006\"J\n\030query_excavate_def_reply\022.\n\t_exca"
-    "vate\030\001 \001(\0132\033.client_baseserver.excavate\""
-    "R\n\033clear_excavate_battle_reply\0223\n\007_resul"
-    "t\030\001 \002(\0162\031.client_baseserver.result:\007succ"
-    "ess\"S\n\034withdraw_excavate_hero_reply\0223\n\007_"
-    "result\030\001 \002(\0162\031.client_baseserver.result:"
-    "\007success\"j\n\033draw_excavate_def_rwd_reply\022"
-    "3\n\007_result\030\001 \002(\0162\031.client_baseserver.res"
-    "ult:\007success\022\026\n\016_draw_vitality\030\002 \001(\r\"\177\n\023"
-    "drop_excavate_reply\0223\n\007_result\030\001 \002(\0162\031.c"
-    "lient_baseserver.result:\007success\0223\n\007_rew"
-    "ard\030\002 \001(\0132\".client_baseserver.excavate_r"
-    "eward\"\202\001\n\023change_server_reply\0225\n\007_result"
-    "\030\001 \002(\0162$.client_baseserver.server_opt_re"
-    "sult\0224\n\014_server_info\030\002 \003(\0132\036.client_base"
-    "server.server_info\"d\n\013server_info\022\022\n\n_se"
-    "rver_id\030\001 \002(\r\022\024\n\014_server_name\030\002 \002(\t\022\024\n\014_"
-    "player_name\030\003 \001(\t\022\025\n\r_player_level\030\004 \001(\r"
-    "\"\361\001\n\024guild_instance_query\022\030\n\020_current_ra"
-    "id_id\030\001 \002(\r\022;\n\010_summary\030\002 \003(\0132).client_b"
-    "aseserver.guild_instance_summary\022\023\n\013_sta"
-    "ge_pass\030\003 \001(\r\022I\n\014_is_can_jump\030\004 \002(\01623.cl"
-    "ient_baseserver.guild_instance_query.is_"
-    "can_jump\"\"\n\013is_can_jump\022\010\n\004true\020\001\022\t\n\005fal"
-    "se\020\002\"p\n\rguild_chapter\022\013\n\003_id\030\001 \002(\r\022\021\n\t_p"
-    "rogress\030\002 \002(\r\022\023\n\013_begin_time\030\003 \002(\r\022\023\n\013_r"
-    "est_times\030\004 \002(\r\022\025\n\r_cur_stage_id\030\005 \002(\r\"\276"
-    "\002\n\025guild_instance_detail\022\016\n\006_stage\030\001 \002(\r"
-    "\022\r\n\005_wave\030\002 \002(\r\022\013\n\003_hp\030\003 \003(\r\0229\n\007_record\030"
-    "\004 \003(\0132(.client_baseserver.guild_instance"
-    "_record\0228\n\013_challenger\030\005 \001(\0132#.client_ba"
-    "seserver.guild_challenger\022V\n\022_challenger"
-    "_status\030\006 \001(\0162:.client_baseserver.guild_"
-    "instance_detail.challenger_status\",\n\021cha"
-    "llenger_status\022\n\n\006battle\020\001\022\013\n\007prepare\020\002\""
-    "E\n\020guild_challenger\0221\n\010_summary\030\001 \002(\0132\037."
-    "client_baseserver.user_summary\"b\n\025guild_"
-    "instance_record\0228\n\013_challenger\030\001 \002(\0132#.c"
-    "lient_baseserver.guild_challenger\022\017\n\007_da"
-    "mage\030\002 \002(\r\"\246\001\n\026guild_instance_summary\022\013\n"
-    "\003_id\030\001 \002(\r\022\021\n\t_stage_id\030\002 \002(\r\022\022\n\n_left_t"
-    "ime\030\003 \002(\r\022\023\n\013_start_time\030\004 \002(\r\022\021\n\t_progr"
-    "ess\030\005 \002(\r\022\027\n\017_stage_progress\030\006 \002(\r\022\027\n\017_b"
-    "attle_user_id\030\007 \001(\r\"\314\001\n\023guild_instance_i"
-    "tem\022\020\n\010_item_id\030\001 \002(\r\022\014\n\004_num\030\002 \002(\r\022A\n\006_"
-    "state\030\003 \002(\01621.client_baseserver.guild_in"
-    "stance_item.drop_state\022\022\n\n_apply_num\030\004 \002"
-    "(\r\022\027\n\017_able_app_count\030\005 \002(\r\"%\n\ndrop_stat"
-    "e\022\014\n\010no_apply\020\001\022\t\n\005apply\020\002\"\206\001\n\023guild_ins"
-    "tance_drop\0226\n\006_items\030\001 \003(\0132&.client_base"
-    "server.guild_instance_item\022\020\n\010_raid_id\030\002"
-    " \002(\r\022\026\n\016_apply_item_id\030\003 \001(\r\022\r\n\005_rank\030\004 "
-    "\001(\r\"H\n\016splitable_hero\022\014\n\004_tid\030\001 \002(\r\022\024\n\014_"
-    "split_times\030\002 \002(\r\022\022\n\n_end_point\030\003 \002(\r\"L\n"
-    "\026query_split_data_reply\0222\n\007_heroes\030\001 \003(\013"
-    "2!.client_baseserver.splitable_hero\"O\n\030q"
-    "uery_split_return_reply\022\016\n\006_items\030\001 \003(\r\022"
-    "\r\n\005_gold\030\002 \002(\r\022\024\n\014_skill_point\030\003 \002(\r\"f\n\020"
-    "split_hero_reply\022*\n\007_result\030\001 \002(\0162\031.clie"
-    "nt_baseserver.result\022&\n\005_hero\030\002 \001(\0132\027.cl"
-    "ient_baseserver.hero\"\242\001\n\016worldcup_reply\022"
-    "F\n\025_worldcup_query_reply\030\001 \001(\0132\'.client_"
-    "baseserver.worldcup_query_reply\022H\n\026_worl"
-    "dcup_submit_reply\030\002 \001(\0132(.client_baseser"
-    "ver.worldcup_submit_reply\"2\n\017worldcup_re"
-    "ward\022\r\n\005_gold\030\001 \001(\r\022\020\n\010_diamond\030\002 \001(\r\"d\n"
-    "\rworldcup_comp\022\016\n\006_teams\030\001 \003(\r\0223\n\007_rewar"
-    "d\030\002 \002(\0132\".client_baseserver.worldcup_rew"
-    "ard\022\016\n\006_guess\030\003 \001(\r\"G\n\024worldcup_query_re"
-    "ply\022/\n\005_comp\030\001 \003(\0132 .client_baseserver.w"
-    "orldcup_comp\"C\n\025worldcup_submit_reply\022*\n"
-    "\007_result\030\001 \002(\0162\031.client_baseserver.resul"
-    "t\"%\n\021battle_check_fail\022\020\n\010_checkid\030\001 \002(\r"
-    "\"*\n\nsuper_link\022\r\n\005_info\030\002 \002(\t\022\r\n\005_addr\030\001"
-    " \002(\t\"\222\001\n\rranklist_item\0226\n\r_user_summary\030"
-    "\001 \001(\0132\037.client_baseserver.user_summary\0228"
-    "\n\016_guild_summary\030\002 \001(\0132 .client_baseserv"
-    "er.guild_summary\022\017\n\007_param1\030\003 \001(\r\"\270\003\n\024qu"
-    "ery_ranklist_reply\022E\n\n_rank_type\030\001 \002(\01621"
-    ".client_baseserver.query_ranklist_reply."
-    "rank_type\0228\n\016_ranklist_item\030\002 \003(\0132 .clie"
-    "nt_baseserver.ranklist_item\022\025\n\r_self_ran"
-    "king\030\003 \001(\r\0224\n\n_self_item\030\004 \001(\0132 .client_"
-    "baseserver.ranklist_item\022\026\n\016_self_prev_p"
-    "os\030\005 \001(\r\"\271\001\n\trank_type\022\021\n\rguildliveness\020"
-    "\001\022\020\n\014excavate_rob\020\002\022\021\n\rexcavate_gold\020\003\022\020"
-    "\n\014excavate_exp\020\004\022\n\n\006top_gs\020\005\022\020\n\014full_her"
-    "o_gs\020\006\022\020\n\014hero_team_gs\020\007\022\021\n\rhero_evo_sta"
-    "r\020\010\022\020\n\014hero_arousal\020\t\022\r\n\ttop_arena\020\n\"K\n\027"
-    "request_guild_log_reply\0220\n\n_guild_log\030\001 "
-    "\003(\0132\034.client_baseserver.guild_log\"i\n\tgui"
-    "ld_log\022\013\n\003_id\030\001 \002(\r\022@\n\022_guild_log_conten"
-    "t\030\002 \003(\0132$.client_baseserver.guild_log_co"
-    "ntent\022\r\n\005_date\030\003 \002(\r\"4\n\021guild_log_conten"
-    "t\022\r\n\005_time\030\001 \002(\r\022\020\n\010_content\030\002 \002(\t\")\n\025cl"
-    "ient_update_version\022\020\n\010_version\030\001 \002(\r\"2\n"
-    "\025query_act_stage_reply\022\031\n\021_opened_act_st"
-    "age\030\001 \003(\r\"(\n\022fb_attention_reply\022\022\n\n_atte"
-    "ntion\030\001 \002(\r\"4\n\022continue_pay_reply\022\r\n\005_ti"
-    "me\030\001 \002(\r\022\017\n\007_status\030\002 \003(\r\"w\n\025recharge_re"
-    "bate_reply\022\r\n\005_time\030\001 \002(\r\022\017\n\007_status\030\002 \002"
-    "(\r\022\027\n\017_recharge_money\030\003 \002(\r\022\020\n\010_get_day\030"
-    "\004 \001(\r\022\023\n\013_get_status\030\005 \001(\r\"\260\001\n\025every_day"
-    "_happy_reply\022\017\n\007_status\030\005 \002(\r\022\030\n\020_goldca"
-    "rd_number\030\001 \002(\r\022\032\n\022_silvercard_number\030\002 "
-    "\002(\r\022\032\n\022_coppercard_number\030\003 \002(\r\0224\n\010_rewa"
-    "rds\030\004 \003(\0132\".client_baseserver.activity_r"
-    "eward*\037\n\006result\022\013\n\007success\020\000\022\010\n\004fail\020\001*C"
-    "\n\rbattle_result\022\013\n\007victory\020\000\022\n\n\006defeat\020\001"
-    "\022\014\n\010canceled\020\002\022\013\n\007timeout\020\003*D\n\nmoney_typ"
-    "e\022\010\n\004gold\020\001\022\013\n\007diamond\020\002\022\r\n\ttbc_point\020\003\022"
-    "\020\n\014ladder_point\020\004*-\n\013hero_status\022\010\n\004idle"
-    "\020\000\022\010\n\004hire\020\001\022\n\n\006mining\020\002*;\n\021server_opt_r"
-    "esult\022\n\n\006get_ok\020\000\022\r\n\tchange_ok\020\001\022\013\n\007fail"
-    "_op\020\002*A\n\013hire_result\022\020\n\014success_hire\020\000\022\r"
-    "\n\tfail_hire\020\001\022\021\n\rstage_invalid\020\002*5\n\thire"
-    "_from\022\t\n\005guild\020\000\022\007\n\003tbc\020\001\022\t\n\005stage\020\002\022\t\n\005"
-    "excav\020\003*5\n\014guild_join_t\022\r\n\tno_verify\020\001\022\n"
-    "\n\006verify\020\002\022\n\n\006closed\020\003*2\n\013guild_job_t\022\014\n"
-    "\010chairman\020\001\022\n\n\006member\020\002\022\t\n\005elder\020\003*J\n\014ch"
-    "at_channel\022\021\n\rworld_channel\020\001\022\021\n\rguild_c"
-    "hannel\020\002\022\024\n\020personal_channel\020\003", 41790);
+    "\"\246\001\n\026guild_instance_summary\022\013\n\003_id\030\001 \002(\r"
+    "\022\021\n\t_stage_id\030\002 \002(\r\022\022\n\n_left_time\030\003 \002(\r\022"
+    "\023\n\013_start_time\030\004 \002(\r\022\021\n\t_progress\030\005 \002(\r\022"
+    "\027\n\017_stage_progress\030\006 \002(\r\022\027\n\017_battle_user"
+    "_id\030\007 \001(\r\"r\n\023guild_instance_item\022\020\n\010_ite"
+    "m_id\030\001 \002(\r\022\014\n\004_num\030\002 \002(\r\022\016\n\006_state\030\003 \002(\r"
+    "\022\022\n\n_apply_num\030\004 \002(\r\022\027\n\017_able_app_count\030"
+    "\005 \002(\r\"\206\001\n\023guild_instance_drop\0226\n\006_items\030"
+    "\001 \003(\0132&.client_baseserver.guild_instance"
+    "_item\022\020\n\010_raid_id\030\002 \002(\r\022\026\n\016_apply_item_i"
+    "d\030\003 \001(\r\022\r\n\005_rank\030\004 \001(\r\"H\n\016splitable_hero"
+    "\022\014\n\004_tid\030\001 \002(\r\022\024\n\014_split_times\030\002 \002(\r\022\022\n\n"
+    "_end_point\030\003 \002(\r\"L\n\026query_split_data_rep"
+    "ly\0222\n\007_heroes\030\001 \003(\0132!.client_baseserver."
+    "splitable_hero\"O\n\030query_split_return_rep"
+    "ly\022\016\n\006_items\030\001 \003(\r\022\r\n\005_gold\030\002 \002(\r\022\024\n\014_sk"
+    "ill_point\030\003 \002(\r\"K\n\020split_hero_reply\022\017\n\007_"
+    "result\030\001 \002(\r\022&\n\005_hero\030\002 \001(\0132\027.client_bas"
+    "eserver.hero\"\242\001\n\016worldcup_reply\022F\n\025_worl"
+    "dcup_query_reply\030\001 \001(\0132\'.client_baseserv"
+    "er.worldcup_query_reply\022H\n\026_worldcup_sub"
+    "mit_reply\030\002 \001(\0132(.client_baseserver.worl"
+    "dcup_submit_reply\"2\n\017worldcup_reward\022\r\n\005"
+    "_gold\030\001 \001(\r\022\020\n\010_diamond\030\002 \001(\r\"d\n\rworldcu"
+    "p_comp\022\016\n\006_teams\030\001 \003(\r\0223\n\007_reward\030\002 \002(\0132"
+    "\".client_baseserver.worldcup_reward\022\016\n\006_"
+    "guess\030\003 \001(\r\"G\n\024worldcup_query_reply\022/\n\005_"
+    "comp\030\001 \003(\0132 .client_baseserver.worldcup_"
+    "comp\"(\n\025worldcup_submit_reply\022\017\n\007_result"
+    "\030\001 \002(\r\"%\n\021battle_check_fail\022\020\n\010_checkid\030"
+    "\001 \002(\r\"*\n\nsuper_link\022\r\n\005_info\030\002 \002(\t\022\r\n\005_a"
+    "ddr\030\001 \002(\t\"\222\001\n\rranklist_item\0226\n\r_user_sum"
+    "mary\030\001 \001(\0132\037.client_baseserver.user_summ"
+    "ary\0228\n\016_guild_summary\030\002 \001(\0132 .client_bas"
+    "eserver.guild_summary\022\017\n\007_param1\030\003 \001(\r\"\311"
+    "\001\n\024query_ranklist_reply\022\022\n\n_rank_type\030\001 "
+    "\002(\r\0228\n\016_ranklist_item\030\002 \003(\0132 .client_bas"
+    "eserver.ranklist_item\022\025\n\r_self_ranking\030\003"
+    " \001(\r\0224\n\n_self_item\030\004 \001(\0132 .client_basese"
+    "rver.ranklist_item\022\026\n\016_self_prev_pos\030\005 \001"
+    "(\r\"K\n\027request_guild_log_reply\0220\n\n_guild_"
+    "log\030\001 \003(\0132\034.client_baseserver.guild_log\""
+    "i\n\tguild_log\022\013\n\003_id\030\001 \002(\r\022@\n\022_guild_log_"
+    "content\030\002 \003(\0132$.client_baseserver.guild_"
+    "log_content\022\r\n\005_date\030\003 \002(\r\"4\n\021guild_log_"
+    "content\022\r\n\005_time\030\001 \002(\r\022\020\n\010_content\030\002 \002(\t"
+    "\")\n\025client_update_version\022\020\n\010_version\030\001 "
+    "\002(\r\"2\n\025query_act_stage_reply\022\031\n\021_opened_"
+    "act_stage\030\001 \003(\r\"(\n\022fb_attention_reply\022\022\n"
+    "\n_attention\030\001 \002(\r\"4\n\022continue_pay_reply\022"
+    "\r\n\005_time\030\001 \002(\r\022\017\n\007_status\030\002 \003(\r\"w\n\025recha"
+    "rge_rebate_reply\022\r\n\005_time\030\001 \002(\r\022\017\n\007_stat"
+    "us\030\002 \002(\r\022\027\n\017_recharge_money\030\003 \002(\r\022\020\n\010_ge"
+    "t_day\030\004 \001(\r\022\023\n\013_get_status\030\005 \001(\r\"\260\001\n\025eve"
+    "ry_day_happy_reply\022\017\n\007_status\030\005 \002(\r\022\030\n\020_"
+    "goldcard_number\030\001 \002(\r\022\032\n\022_silvercard_num"
+    "ber\030\002 \002(\r\022\032\n\022_coppercard_number\030\003 \002(\r\0224\n"
+    "\010_rewards\030\004 \003(\0132\".client_baseserver.acti"
+    "vity_reward", 34811);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "cb.proto", &protobuf_RegisterTypes);
   Hello::default_instance_ = new Hello();
@@ -7900,158 +7640,6 @@ struct StaticDescriptorInitializer_cb_2eproto {
     protobuf_AddDesc_cb_2eproto();
   }
 } static_descriptor_initializer_cb_2eproto_;
-const ::google::protobuf::EnumDescriptor* result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return result_descriptor_;
-}
-bool result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return battle_result_descriptor_;
-}
-bool battle_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* money_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return money_type_descriptor_;
-}
-bool money_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hero_status_descriptor_;
-}
-bool hero_status_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* server_opt_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return server_opt_result_descriptor_;
-}
-bool server_opt_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* hire_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hire_result_descriptor_;
-}
-bool hire_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hire_from_descriptor_;
-}
-bool hire_from_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* guild_join_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_join_t_descriptor_;
-}
-bool guild_join_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_job_t_descriptor_;
-}
-bool guild_job_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return chat_channel_descriptor_;
-}
-bool chat_channel_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
 
 // ===================================================================
 
@@ -9449,7 +9037,7 @@ login_reply::login_reply(const login_reply& from)
 void login_reply::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _user_ = NULL;
   _time_zone_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -9492,7 +9080,7 @@ login_reply* login_reply::New() const {
 
 void login_reply::Clear() {
   if (_has_bits_[0 / 32] & 7) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__user()) {
       if (_user_ != NULL) _user_->::client_baseserver::user::Clear();
     }
@@ -9516,18 +9104,13 @@ bool login_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -9590,10 +9173,9 @@ failure:
 void login_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.login_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.user _user = 2;
@@ -9622,10 +9204,9 @@ void login_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* login_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.login_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.user _user = 2;
@@ -9658,10 +9239,11 @@ int login_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.user _user = 2;
@@ -14132,7 +13714,7 @@ system_setting_change::system_setting_change(const system_setting_change& from)
 
 void system_setting_change::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -14168,7 +13750,7 @@ system_setting_change* system_setting_change::New() const {
 }
 
 void system_setting_change::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -14183,18 +13765,13 @@ bool system_setting_change::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -14227,10 +13804,9 @@ failure:
 void system_setting_change::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.system_setting_change)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -14243,10 +13819,9 @@ void system_setting_change::SerializeWithCachedSizes(
 ::google::protobuf::uint8* system_setting_change::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.system_setting_change)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -14261,10 +13836,11 @@ int system_setting_change::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -14559,27 +14135,6 @@ void system_setting_request::Swap(system_setting_request* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* system_setting_item_setting_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return system_setting_item_setting_status_descriptor_;
-}
-bool system_setting_item_setting_status_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const system_setting_item_setting_status system_setting_item::on;
-const system_setting_item_setting_status system_setting_item::off;
-const system_setting_item_setting_status system_setting_item::setting_status_MIN;
-const system_setting_item_setting_status system_setting_item::setting_status_MAX;
-const int system_setting_item::setting_status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int system_setting_item::kKeyFieldNumber;
 const int system_setting_item::kValueFieldNumber;
@@ -14605,7 +14160,7 @@ void system_setting_item::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   key_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  value_ = 1;
+  value_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -14650,7 +14205,7 @@ void system_setting_item::Clear() {
         key_->clear();
       }
     }
-    value_ = 1;
+    value_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -14682,19 +14237,14 @@ bool system_setting_item::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.system_setting_item.setting_status value = 2;
+      // required uint32 value = 2;
       case 2: {
         if (tag == 16) {
          parse_value:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::system_setting_item_setting_status_IsValid(value)) {
-            set_value(static_cast< ::client_baseserver::system_setting_item_setting_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &value_)));
+          set_has_value();
         } else {
           goto handle_unusual;
         }
@@ -14737,10 +14287,9 @@ void system_setting_item::SerializeWithCachedSizes(
       1, this->key(), output);
   }
 
-  // required .client_baseserver.system_setting_item.setting_status value = 2;
+  // required uint32 value = 2;
   if (has_value()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->value(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->value(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -14764,10 +14313,9 @@ void system_setting_item::SerializeWithCachedSizes(
         1, this->key(), target);
   }
 
-  // required .client_baseserver.system_setting_item.setting_status value = 2;
+  // required uint32 value = 2;
   if (has_value()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->value(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->value(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -14789,10 +14337,11 @@ int system_setting_item::ByteSize() const {
           this->key());
     }
 
-    // required .client_baseserver.system_setting_item.setting_status value = 2;
+    // required uint32 value = 2;
     if (has_value()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->value());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->value());
     }
 
   }
@@ -15119,7 +14668,7 @@ sdk_login_reply::sdk_login_reply(const sdk_login_reply& from)
 void sdk_login_reply::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   _uin_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _access_token_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _recharge_url_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -15168,7 +14717,7 @@ sdk_login_reply* sdk_login_reply::New() const {
 
 void sdk_login_reply::Clear() {
   if (_has_bits_[0 / 32] & 15) {
-    _result_ = 1;
+    _result_ = 0u;
     if (has__uin()) {
       if (_uin_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _uin_->clear();
@@ -15199,18 +14748,13 @@ bool sdk_login_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -15294,10 +14838,9 @@ failure:
 void sdk_login_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.sdk_login_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required string _uin = 2;
@@ -15340,10 +14883,9 @@ void sdk_login_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* sdk_login_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.sdk_login_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required string _uin = 2;
@@ -15391,10 +14933,11 @@ int sdk_login_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required string _uin = 2;
@@ -18723,27 +18266,6 @@ void activity_bigpackage_reset_reply::Swap(activity_bigpackage_reset_reply* othe
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* exit_stage_reply_exit_stage_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return exit_stage_reply_exit_stage_result_descriptor_;
-}
-bool exit_stage_reply_exit_stage_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const exit_stage_reply_exit_stage_result exit_stage_reply::known;
-const exit_stage_reply_exit_stage_result exit_stage_reply::unknown;
-const exit_stage_reply_exit_stage_result exit_stage_reply::exit_stage_result_MIN;
-const exit_stage_reply_exit_stage_result exit_stage_reply::exit_stage_result_MAX;
-const int exit_stage_reply::exit_stage_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int exit_stage_reply::kResultFieldNumber;
 const int exit_stage_reply::kShopFieldNumber;
@@ -18770,7 +18292,7 @@ exit_stage_reply::exit_stage_reply(const exit_stage_reply& from)
 
 void exit_stage_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _shop_ = NULL;
   _sshop_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -18811,7 +18333,7 @@ exit_stage_reply* exit_stage_reply::New() const {
 
 void exit_stage_reply::Clear() {
   if (_has_bits_[0 / 32] & 7) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__shop()) {
       if (_shop_ != NULL) _shop_->::client_baseserver::user_shop::Clear();
     }
@@ -18833,18 +18355,13 @@ bool exit_stage_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::exit_stage_reply_exit_stage_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::exit_stage_reply_exit_stage_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -18903,10 +18420,9 @@ failure:
 void exit_stage_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.exit_stage_reply)
-  // required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.user_shop _shop = 2;
@@ -18931,10 +18447,9 @@ void exit_stage_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* exit_stage_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.exit_stage_reply)
-  // required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.user_shop _shop = 2;
@@ -18963,10 +18478,11 @@ int exit_stage_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.exit_stage_reply.exit_stage_result _result = 1 [default = known];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.user_shop _shop = 2;
@@ -19094,7 +18610,7 @@ hero_upgrade_reply::hero_upgrade_reply(const hero_upgrade_reply& from)
 
 void hero_upgrade_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   _hero_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -19133,7 +18649,7 @@ hero_upgrade_reply* hero_upgrade_reply::New() const {
 
 void hero_upgrade_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 1;
+    _result_ = 0u;
     if (has__hero()) {
       if (_hero_ != NULL) _hero_->::client_baseserver::hero::Clear();
     }
@@ -19153,18 +18669,13 @@ bool hero_upgrade_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -19229,10 +18740,9 @@ failure:
 void hero_upgrade_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.hero_upgrade_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -19257,10 +18767,9 @@ void hero_upgrade_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* hero_upgrade_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.hero_upgrade_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -19288,10 +18797,11 @@ int hero_upgrade_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.hero _hero = 2;
@@ -19414,7 +18924,7 @@ equip_synthesis_reply::equip_synthesis_reply(const equip_synthesis_reply& from)
 
 void equip_synthesis_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -19450,7 +18960,7 @@ equip_synthesis_reply* equip_synthesis_reply::New() const {
 }
 
 void equip_synthesis_reply::Clear() {
-  _result_ = 1;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -19465,18 +18975,13 @@ bool equip_synthesis_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -19509,10 +19014,9 @@ failure:
 void equip_synthesis_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.equip_synthesis_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -19525,10 +19029,9 @@ void equip_synthesis_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* equip_synthesis_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.equip_synthesis_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -19543,10 +19046,11 @@ int equip_synthesis_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -19644,7 +19148,7 @@ wear_equip_reply::wear_equip_reply(const wear_equip_reply& from)
 
 void wear_equip_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   _gs_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -19681,10 +19185,21 @@ wear_equip_reply* wear_equip_reply::New() const {
 }
 
 void wear_equip_reply::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _result_ = 1;
-    _gs_ = 0u;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<wear_equip_reply*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_result_, _gs_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -19699,18 +19214,13 @@ bool wear_equip_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -19758,10 +19268,9 @@ failure:
 void wear_equip_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.wear_equip_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _gs = 2;
@@ -19779,10 +19288,9 @@ void wear_equip_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* wear_equip_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.wear_equip_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _gs = 2;
@@ -19802,10 +19310,11 @@ int wear_equip_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _gs = 2;
@@ -21171,7 +20680,7 @@ shop_consume_reply::shop_consume_reply(const shop_consume_reply& from)
 
 void shop_consume_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -21207,7 +20716,7 @@ shop_consume_reply* shop_consume_reply::New() const {
 }
 
 void shop_consume_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -21222,18 +20731,13 @@ bool shop_consume_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -21266,10 +20770,9 @@ failure:
 void shop_consume_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.shop_consume_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -21282,10 +20785,9 @@ void shop_consume_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* shop_consume_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.shop_consume_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -21300,10 +20802,11 @@ int shop_consume_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -21401,7 +20904,7 @@ skill_levelup_reply::skill_levelup_reply(const skill_levelup_reply& from)
 
 void skill_levelup_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   _gs_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -21438,10 +20941,21 @@ skill_levelup_reply* skill_levelup_reply::New() const {
 }
 
 void skill_levelup_reply::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _result_ = 1;
-    _gs_ = 0u;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<skill_levelup_reply*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_result_, _gs_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -21456,18 +20970,13 @@ bool skill_levelup_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -21515,10 +21024,9 @@ failure:
 void skill_levelup_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.skill_levelup_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _gs = 2;
@@ -21536,10 +21044,9 @@ void skill_levelup_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* skill_levelup_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.skill_levelup_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _gs = 2;
@@ -21559,10 +21066,11 @@ int skill_levelup_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _gs = 2;
@@ -21670,7 +21178,7 @@ sell_item_reply::sell_item_reply(const sell_item_reply& from)
 
 void sell_item_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -21706,7 +21214,7 @@ sell_item_reply* sell_item_reply::New() const {
 }
 
 void sell_item_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -21721,18 +21229,13 @@ bool sell_item_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -21765,10 +21268,9 @@ failure:
 void sell_item_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.sell_item_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -21781,10 +21283,9 @@ void sell_item_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* sell_item_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.sell_item_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -21799,10 +21300,11 @@ int sell_item_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -21899,7 +21401,7 @@ fragment_compose_reply::fragment_compose_reply(const fragment_compose_reply& fro
 
 void fragment_compose_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -21935,7 +21437,7 @@ fragment_compose_reply* fragment_compose_reply::New() const {
 }
 
 void fragment_compose_reply::Clear() {
-  _result_ = 1;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -21950,18 +21452,13 @@ bool fragment_compose_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -21994,10 +21491,9 @@ failure:
 void fragment_compose_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.fragment_compose_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -22010,10 +21506,9 @@ void fragment_compose_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* fragment_compose_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.fragment_compose_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -22028,10 +21523,11 @@ int fragment_compose_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -22130,7 +21626,7 @@ hero_equip_upgrade_reply::hero_equip_upgrade_reply(const hero_equip_upgrade_repl
 
 void hero_equip_upgrade_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 1;
+  _result_ = 0u;
   _hero_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -22169,7 +21665,7 @@ hero_equip_upgrade_reply* hero_equip_upgrade_reply::New() const {
 
 void hero_equip_upgrade_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 1;
+    _result_ = 0u;
     if (has__hero()) {
       if (_hero_ != NULL) _hero_->::client_baseserver::hero::Clear();
     }
@@ -22188,18 +21684,13 @@ bool hero_equip_upgrade_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = fail];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -22245,10 +21736,9 @@ failure:
 void hero_equip_upgrade_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.hero_equip_upgrade_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -22267,10 +21757,9 @@ void hero_equip_upgrade_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* hero_equip_upgrade_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.hero_equip_upgrade_reply)
-  // required .client_baseserver.result _result = 1 [default = fail];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -22292,10 +21781,11 @@ int hero_equip_upgrade_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = fail];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.hero _hero = 2;
@@ -22406,7 +21896,7 @@ tutorial_reply::tutorial_reply(const tutorial_reply& from)
 
 void tutorial_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -22442,7 +21932,7 @@ tutorial_reply* tutorial_reply::New() const {
 }
 
 void tutorial_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -22457,18 +21947,13 @@ bool tutorial_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -22501,10 +21986,9 @@ failure:
 void tutorial_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tutorial_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -22517,10 +22001,9 @@ void tutorial_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tutorial_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tutorial_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -22535,10 +22018,11 @@ int tutorial_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -22613,27 +22097,6 @@ void tutorial_reply::Swap(tutorial_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* error_info_exit_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return error_info_exit_descriptor_;
-}
-bool error_info_exit_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const error_info_exit error_info::noneed;
-const error_info_exit error_info::force;
-const error_info_exit error_info::exit_MIN;
-const error_info_exit error_info::exit_MAX;
-const int error_info::exit_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int error_info::kInfoFieldNumber;
 const int error_info::kExitFieldNumber;
@@ -22659,7 +22122,7 @@ void error_info::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   _info_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _exit_ = 0;
+  _exit_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -22704,7 +22167,7 @@ void error_info::Clear() {
         _info_->clear();
       }
     }
-    _exit_ = 0;
+    _exit_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -22736,19 +22199,14 @@ bool error_info::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+      // optional uint32 _exit = 2;
       case 2: {
         if (tag == 16) {
          parse__exit:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::error_info_exit_IsValid(value)) {
-            set__exit(static_cast< ::client_baseserver::error_info_exit >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_exit_)));
+          set_has__exit();
         } else {
           goto handle_unusual;
         }
@@ -22791,10 +22249,9 @@ void error_info::SerializeWithCachedSizes(
       1, this->_info(), output);
   }
 
-  // optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+  // optional uint32 _exit = 2;
   if (has__exit()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_exit(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_exit(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -22818,10 +22275,9 @@ void error_info::SerializeWithCachedSizes(
         1, this->_info(), target);
   }
 
-  // optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+  // optional uint32 _exit = 2;
   if (has__exit()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_exit(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_exit(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -22843,10 +22299,11 @@ int error_info::ByteSize() const {
           this->_info());
     }
 
-    // optional .client_baseserver.error_info.exit _exit = 2 [default = noneed];
+    // optional uint32 _exit = 2;
     if (has__exit()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_exit());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_exit());
     }
 
   }
@@ -22925,33 +22382,6 @@ void error_info::Swap(error_info* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* goods_price_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return goods_price_type_descriptor_;
-}
-bool goods_price_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const goods_price_type goods::gold;
-const goods_price_type goods::diamond;
-const goods_price_type goods::crusadepoint;
-const goods_price_type goods::arenapoint;
-const goods_price_type goods::guildpoint;
-const goods_price_type goods::price_type_MIN;
-const goods_price_type goods::price_type_MAX;
-const int goods::price_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int goods::kIdFieldNumber;
 const int goods::kAmountFieldNumber;
@@ -22980,7 +22410,7 @@ void goods::SharedCtor() {
   _cached_size_ = 0;
   _id_ = 0u;
   _amount_ = 0u;
-  _type_ = 0;
+  _type_ = 0u;
   _price_ = 0u;
   _is_sale_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -23078,19 +22508,14 @@ bool goods::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.goods.price_type _type = 3;
+      // required uint32 _type = 3;
       case 3: {
         if (tag == 24) {
          parse__type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::goods_price_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::goods_price_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -23163,10 +22588,9 @@ void goods::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_amount(), output);
   }
 
-  // required .client_baseserver.goods.price_type _type = 3;
+  // required uint32 _type = 3;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_type(), output);
   }
 
   // required uint32 _price = 4;
@@ -23199,10 +22623,9 @@ void goods::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_amount(), target);
   }
 
-  // required .client_baseserver.goods.price_type _type = 3;
+  // required uint32 _type = 3;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_type(), target);
   }
 
   // required uint32 _price = 4;
@@ -23241,10 +22664,11 @@ int goods::ByteSize() const {
           this->_amount());
     }
 
-    // required .client_baseserver.goods.price_type _type = 3;
+    // required uint32 _type = 3;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required uint32 _price = 4;
@@ -23349,29 +22773,6 @@ void goods::Swap(goods* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* star_goods_box_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return star_goods_box_type_descriptor_;
-}
-bool star_goods_box_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const star_goods_box_type star_goods::stone_green;
-const star_goods_box_type star_goods::stone_blue;
-const star_goods_box_type star_goods::stone_purple;
-const star_goods_box_type star_goods::box_type_MIN;
-const star_goods_box_type star_goods::box_type_MAX;
-const int star_goods::box_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int star_goods::kTypeFieldNumber;
 const int star_goods::kAmountFieldNumber;
@@ -23397,8 +22798,8 @@ star_goods::star_goods(const star_goods& from)
 
 void star_goods::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
-  _amount_ = 1u;
+  _type_ = 0u;
+  _amount_ = 0u;
   _stone_id_ = 0u;
   _stone_amount_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -23446,11 +22847,7 @@ void star_goods::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 15) {
-    ZR_(_stone_id_, _stone_amount_);
-    _type_ = 0;
-    _amount_ = 1u;
-  }
+  ZR_(_type_, _stone_amount_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -23469,18 +22866,13 @@ bool star_goods::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.star_goods.box_type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::star_goods_box_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::star_goods_box_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -23488,7 +22880,7 @@ bool star_goods::MergePartialFromCodedStream(
         break;
       }
 
-      // required uint32 _amount = 2 [default = 1];
+      // required uint32 _amount = 2;
       case 2: {
         if (tag == 16) {
          parse__amount:
@@ -23558,13 +22950,12 @@ failure:
 void star_goods::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.star_goods)
-  // required .client_baseserver.star_goods.box_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
-  // required uint32 _amount = 2 [default = 1];
+  // required uint32 _amount = 2;
   if (has__amount()) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_amount(), output);
   }
@@ -23589,13 +22980,12 @@ void star_goods::SerializeWithCachedSizes(
 ::google::protobuf::uint8* star_goods::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.star_goods)
-  // required .client_baseserver.star_goods.box_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
-  // required uint32 _amount = 2 [default = 1];
+  // required uint32 _amount = 2;
   if (has__amount()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_amount(), target);
   }
@@ -23622,13 +23012,14 @@ int star_goods::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.star_goods.box_type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
-    // required uint32 _amount = 2 [default = 1];
+    // required uint32 _amount = 2;
     if (has__amount()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
@@ -26142,29 +25533,6 @@ void name_card::Swap(name_card* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* daily_login_dailylogin_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return daily_login_dailylogin_status_descriptor_;
-}
-bool daily_login_dailylogin_status_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const daily_login_dailylogin_status daily_login::all;
-const daily_login_dailylogin_status daily_login::part;
-const daily_login_dailylogin_status daily_login::nothing;
-const daily_login_dailylogin_status daily_login::dailylogin_status_MIN;
-const daily_login_dailylogin_status daily_login::dailylogin_status_MAX;
-const int daily_login::dailylogin_status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int daily_login::kStatusFieldNumber;
 const int daily_login::kFrequencyFieldNumber;
@@ -26189,7 +25557,7 @@ daily_login::daily_login(const daily_login& from)
 
 void daily_login::SharedCtor() {
   _cached_size_ = 0;
-  _status_ = 1;
+  _status_ = 0u;
   _frequency_ = 0u;
   _last_login_date_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -26237,10 +25605,7 @@ void daily_login::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_frequency_, _last_login_date_);
-    _status_ = 1;
-  }
+  ZR_(_status_, _last_login_date_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -26259,18 +25624,13 @@ bool daily_login::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.daily_login.dailylogin_status _status = 1;
+      // required uint32 _status = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::daily_login_dailylogin_status_IsValid(value)) {
-            set__status(static_cast< ::client_baseserver::daily_login_dailylogin_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_status_)));
+          set_has__status();
         } else {
           goto handle_unusual;
         }
@@ -26333,10 +25693,9 @@ failure:
 void daily_login::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.daily_login)
-  // required .client_baseserver.daily_login.dailylogin_status _status = 1;
+  // required uint32 _status = 1;
   if (has__status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_status(), output);
   }
 
   // required uint32 _frequency = 2;
@@ -26359,10 +25718,9 @@ void daily_login::SerializeWithCachedSizes(
 ::google::protobuf::uint8* daily_login::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.daily_login)
-  // required .client_baseserver.daily_login.dailylogin_status _status = 1;
+  // required uint32 _status = 1;
   if (has__status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_status(), target);
   }
 
   // required uint32 _frequency = 2;
@@ -26387,10 +25745,11 @@ int daily_login::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.daily_login.dailylogin_status _status = 1;
+    // required uint32 _status = 1;
     if (has__status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_status());
     }
 
     // required uint32 _frequency = 2;
@@ -26512,7 +25871,7 @@ ask_daily_login_reply::ask_daily_login_reply(const ask_daily_login_reply& from)
 
 void ask_daily_login_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _diamond_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -26580,18 +25939,13 @@ bool ask_daily_login_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -26672,10 +26026,9 @@ failure:
 void ask_daily_login_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.ask_daily_login_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated uint32 _items = 2;
@@ -26705,10 +26058,9 @@ void ask_daily_login_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* ask_daily_login_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.ask_daily_login_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated uint32 _items = 2;
@@ -26741,10 +26093,11 @@ int ask_daily_login_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _diamond = 4;
@@ -27202,7 +26555,7 @@ void hero::SharedCtor() {
   _stars_ = 0u;
   _exp_ = 0u;
   _gs_ = 0u;
-  _state_ = 0;
+  _state_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -27250,7 +26603,7 @@ void hero::Clear() {
 
   if (_has_bits_[0 / 32] & 127) {
     ZR_(_tid_, _gs_);
-    _state_ = 0;
+    _state_ = 0u;
   }
 
 #undef OFFSET_OF_FIELD_
@@ -27361,19 +26714,14 @@ bool hero::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.hero_status _state = 7;
+      // required uint32 _state = 7;
       case 7: {
         if (tag == 56) {
          parse__state:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::hero_status_IsValid(value)) {
-            set__state(static_cast< ::client_baseserver::hero_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(7, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_state_)));
+          set_has__state();
         } else {
           goto handle_unusual;
         }
@@ -27469,10 +26817,9 @@ void hero::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->_gs(), output);
   }
 
-  // required .client_baseserver.hero_status _state = 7;
+  // required uint32 _state = 7;
   if (has__state()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      7, this->_state(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(7, this->_state(), output);
   }
 
   // repeated uint32 _skill_levels = 8;
@@ -27527,10 +26874,9 @@ void hero::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->_gs(), target);
   }
 
-  // required .client_baseserver.hero_status _state = 7;
+  // required uint32 _state = 7;
   if (has__state()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      7, this->_state(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(7, this->_state(), target);
   }
 
   // repeated uint32 _skill_levels = 8;
@@ -27600,10 +26946,11 @@ int hero::ByteSize() const {
           this->_gs());
     }
 
-    // required .client_baseserver.hero_status _state = 7;
+    // required uint32 _state = 7;
     if (has__state()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_state());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_state());
     }
 
   }
@@ -27757,7 +27104,7 @@ void hero_summary::SharedCtor() {
   _level_ = 0u;
   _stars_ = 0u;
   _gs_ = 0u;
-  _state_ = 0;
+  _state_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -27898,19 +27245,14 @@ bool hero_summary::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.hero_status _state = 6;
+      // optional uint32 _state = 6;
       case 6: {
         if (tag == 48) {
          parse__state:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::hero_status_IsValid(value)) {
-            set__state(static_cast< ::client_baseserver::hero_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(6, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_state_)));
+          set_has__state();
         } else {
           goto handle_unusual;
         }
@@ -27968,10 +27310,9 @@ void hero_summary::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->_gs(), output);
   }
 
-  // optional .client_baseserver.hero_status _state = 6;
+  // optional uint32 _state = 6;
   if (has__state()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      6, this->_state(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->_state(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -28009,10 +27350,9 @@ void hero_summary::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->_gs(), target);
   }
 
-  // optional .client_baseserver.hero_status _state = 6;
+  // optional uint32 _state = 6;
   if (has__state()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      6, this->_state(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->_state(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -28062,10 +27402,11 @@ int hero_summary::ByteSize() const {
           this->_gs());
     }
 
-    // optional .client_baseserver.hero_status _state = 6;
+    // optional uint32 _state = 6;
     if (has__state()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_state());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_state());
     }
 
   }
@@ -28824,27 +28165,6 @@ void skilllevelup::Swap(skilllevelup* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* usertask_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return usertask_status_descriptor_;
-}
-bool usertask_status_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const usertask_status usertask::finished;
-const usertask_status usertask::working;
-const usertask_status usertask::status_MIN;
-const usertask_status usertask::status_MAX;
-const int usertask::status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int usertask::kLineFieldNumber;
 const int usertask::kIdFieldNumber;
@@ -28872,7 +28192,7 @@ void usertask::SharedCtor() {
   _cached_size_ = 0;
   _line_ = 0u;
   _id_ = 0u;
-  _status_ = 1;
+  _status_ = 0u;
   _task_target_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -28919,11 +28239,7 @@ void usertask::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 15) {
-    ZR_(_line_, _id_);
-    _status_ = 1;
-    _task_target_ = 0u;
-  }
+  ZR_(_line_, _task_target_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -28971,19 +28287,14 @@ bool usertask::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.usertask.status _status = 3 [default = working];
+      // required uint32 _status = 3;
       case 3: {
         if (tag == 24) {
          parse__status:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::usertask_status_IsValid(value)) {
-            set__status(static_cast< ::client_baseserver::usertask_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_status_)));
+          set_has__status();
         } else {
           goto handle_unusual;
         }
@@ -29041,10 +28352,9 @@ void usertask::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_id(), output);
   }
 
-  // required .client_baseserver.usertask.status _status = 3 [default = working];
+  // required uint32 _status = 3;
   if (has__status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_status(), output);
   }
 
   // optional uint32 _task_target = 4;
@@ -29072,10 +28382,9 @@ void usertask::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_id(), target);
   }
 
-  // required .client_baseserver.usertask.status _status = 3 [default = working];
+  // required uint32 _status = 3;
   if (has__status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_status(), target);
   }
 
   // optional uint32 _task_target = 4;
@@ -29109,10 +28418,11 @@ int usertask::ByteSize() const {
           this->_id());
     }
 
-    // required .client_baseserver.usertask.status _status = 3 [default = working];
+    // required uint32 _status = 3;
     if (has__status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_status());
     }
 
     // optional uint32 _task_target = 4;
@@ -29839,31 +29149,6 @@ void sweeploot::Swap(sweeploot* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* tavern_record_box_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return tavern_record_box_type_descriptor_;
-}
-bool tavern_record_box_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const tavern_record_box_type tavern_record::green;
-const tavern_record_box_type tavern_record::blue;
-const tavern_record_box_type tavern_record::purple;
-const tavern_record_box_type tavern_record::magicsoul;
-const tavern_record_box_type tavern_record::box_type_MIN;
-const tavern_record_box_type tavern_record::box_type_MAX;
-const int tavern_record::box_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int tavern_record::kBoxTypeFieldNumber;
 const int tavern_record::kLeftCntFieldNumber;
@@ -29889,7 +29174,7 @@ tavern_record::tavern_record(const tavern_record& from)
 
 void tavern_record::SharedCtor() {
   _cached_size_ = 0;
-  _box_type_ = 1;
+  _box_type_ = 0u;
   _left_cnt_ = 0u;
   _last_get_time_ = 0u;
   _has_first_draw_ = 0u;
@@ -29938,10 +29223,7 @@ void tavern_record::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 15) {
-    ZR_(_left_cnt_, _has_first_draw_);
-    _box_type_ = 1;
-  }
+  ZR_(_box_type_, _has_first_draw_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -29960,18 +29242,13 @@ bool tavern_record::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+      // required uint32 _box_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::tavern_record_box_type_IsValid(value)) {
-            set__box_type(static_cast< ::client_baseserver::tavern_record_box_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_box_type_)));
+          set_has__box_type();
         } else {
           goto handle_unusual;
         }
@@ -30049,10 +29326,9 @@ failure:
 void tavern_record::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tavern_record)
-  // required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+  // required uint32 _box_type = 1;
   if (has__box_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_box_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_box_type(), output);
   }
 
   // required uint32 _left_cnt = 2;
@@ -30080,10 +29356,9 @@ void tavern_record::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tavern_record::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tavern_record)
-  // required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+  // required uint32 _box_type = 1;
   if (has__box_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_box_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_box_type(), target);
   }
 
   // required uint32 _left_cnt = 2;
@@ -30113,10 +29388,11 @@ int tavern_record::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.tavern_record.box_type _box_type = 1 [default = green];
+    // required uint32 _box_type = 1;
     if (has__box_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_box_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_box_type());
     }
 
     // required uint32 _left_cnt = 2;
@@ -30571,24 +29847,17 @@ bool trigger_task_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .client_baseserver.result _result = 1;
+      // repeated uint32 _result = 1;
       case 1: {
         if (tag == 8) {
          parse__result:
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            add__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 1, 8, input, this->mutable__result())));
         } else if (tag == 10) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedEnumNoInline(
-                 input,
-                 &::client_baseserver::result_IsValid,
-                 this->mutable__result())));
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, this->mutable__result())));
         } else {
           goto handle_unusual;
         }
@@ -30622,9 +29891,9 @@ failure:
 void trigger_task_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.trigger_task_reply)
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   for (int i = 0; i < this->_result_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(
       1, this->_result(i), output);
   }
 
@@ -30638,10 +29907,10 @@ void trigger_task_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* trigger_task_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.trigger_task_reply)
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   for (int i = 0; i < this->_result_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(i), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteUInt32ToArray(1, this->_result(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -30655,12 +29924,12 @@ void trigger_task_reply::SerializeWithCachedSizes(
 int trigger_task_reply::ByteSize() const {
   int total_size = 0;
 
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   {
     int data_size = 0;
     for (int i = 0; i < this->_result_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
-        this->_result(i));
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        UInt32Size(this->_result(i));
     }
     total_size += 1 * this->_result_size() + data_size;
   }
@@ -30753,7 +30022,7 @@ require_rewards_reply::require_rewards_reply(const require_rewards_reply& from)
 
 void require_rewards_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -30789,7 +30058,7 @@ require_rewards_reply* require_rewards_reply::New() const {
 }
 
 void require_rewards_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -30804,18 +30073,13 @@ bool require_rewards_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -30848,10 +30112,9 @@ failure:
 void require_rewards_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.require_rewards_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -30864,10 +30127,9 @@ void require_rewards_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* require_rewards_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.require_rewards_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -30882,10 +30144,11 @@ int require_rewards_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -31032,24 +30295,17 @@ bool trigger_job_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .client_baseserver.result _result = 1;
+      // repeated uint32 _result = 1;
       case 1: {
         if (tag == 8) {
          parse__result:
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            add__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 1, 8, input, this->mutable__result())));
         } else if (tag == 10) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedEnumNoInline(
-                 input,
-                 &::client_baseserver::result_IsValid,
-                 this->mutable__result())));
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, this->mutable__result())));
         } else {
           goto handle_unusual;
         }
@@ -31083,9 +30339,9 @@ failure:
 void trigger_job_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.trigger_job_reply)
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   for (int i = 0; i < this->_result_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(
       1, this->_result(i), output);
   }
 
@@ -31099,10 +30355,10 @@ void trigger_job_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* trigger_job_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.trigger_job_reply)
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   for (int i = 0; i < this->_result_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(i), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteUInt32ToArray(1, this->_result(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -31116,12 +30372,12 @@ void trigger_job_reply::SerializeWithCachedSizes(
 int trigger_job_reply::ByteSize() const {
   int total_size = 0;
 
-  // repeated .client_baseserver.result _result = 1;
+  // repeated uint32 _result = 1;
   {
     int data_size = 0;
     for (int i = 0; i < this->_result_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
-        this->_result(i));
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        UInt32Size(this->_result(i));
     }
     total_size += 1 * this->_result_size() + data_size;
   }
@@ -31192,41 +30448,6 @@ void trigger_job_reply::Swap(trigger_job_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* dailyjob_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return dailyjob_reward_type_descriptor_;
-}
-bool dailyjob_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const dailyjob_reward_type dailyjob_reward::rmb;
-const dailyjob_reward_type dailyjob_reward::money;
-const dailyjob_reward_type dailyjob_reward::item;
-const dailyjob_reward_type dailyjob_reward::hero;
-const dailyjob_reward_type dailyjob_reward::vitality;
-const dailyjob_reward_type dailyjob_reward::playerexp;
-const dailyjob_reward_type dailyjob_reward::crusadepoint;
-const dailyjob_reward_type dailyjob_reward::arenapoint;
-const dailyjob_reward_type dailyjob_reward::guildpoint;
-const dailyjob_reward_type dailyjob_reward::type_MIN;
-const dailyjob_reward_type dailyjob_reward::type_MAX;
-const int dailyjob_reward::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int dailyjob_reward::kTypeFieldNumber;
 const int dailyjob_reward::kIdFieldNumber;
@@ -31251,7 +30472,7 @@ dailyjob_reward::dailyjob_reward(const dailyjob_reward& from)
 
 void dailyjob_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _id_ = 0u;
   _amount_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -31299,10 +30520,7 @@ void dailyjob_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_id_, _amount_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _amount_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -31321,18 +30539,13 @@ bool dailyjob_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseserver.dailyjob_reward.type _type = 1;
+      // optional uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::dailyjob_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::dailyjob_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -31395,10 +30608,9 @@ failure:
 void dailyjob_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.dailyjob_reward)
-  // optional .client_baseserver.dailyjob_reward.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _id = 2;
@@ -31421,10 +30633,9 @@ void dailyjob_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* dailyjob_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.dailyjob_reward)
-  // optional .client_baseserver.dailyjob_reward.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _id = 2;
@@ -31449,10 +30660,11 @@ int dailyjob_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseserver.dailyjob_reward.type _type = 1;
+    // optional uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _id = 2;
@@ -31571,7 +30783,7 @@ job_rewards_reply::job_rewards_reply(const job_rewards_reply& from)
 
 void job_rewards_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -31607,7 +30819,7 @@ job_rewards_reply* job_rewards_reply::New() const {
 }
 
 void job_rewards_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   _activity_reward_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -31623,18 +30835,13 @@ bool job_rewards_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -31681,10 +30888,9 @@ failure:
 void job_rewards_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.job_rewards_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated .client_baseserver.dailyjob_reward _activity_reward = 2;
@@ -31703,10 +30909,9 @@ void job_rewards_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* job_rewards_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.job_rewards_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated .client_baseserver.dailyjob_reward _activity_reward = 2;
@@ -31728,10 +30933,11 @@ int job_rewards_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -32148,7 +31354,7 @@ reset_elite_reply::reset_elite_reply(const reset_elite_reply& from)
 
 void reset_elite_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -32184,7 +31390,7 @@ reset_elite_reply* reset_elite_reply::New() const {
 }
 
 void reset_elite_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -32199,18 +31405,13 @@ bool reset_elite_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -32243,10 +31444,9 @@ failure:
 void reset_elite_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.reset_elite_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -32259,10 +31459,9 @@ void reset_elite_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* reset_elite_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.reset_elite_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -32277,10 +31476,11 @@ int reset_elite_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -33250,7 +32450,7 @@ hero_evolve_reply::hero_evolve_reply(const hero_evolve_reply& from)
 
 void hero_evolve_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _hero_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -33289,7 +32489,7 @@ hero_evolve_reply* hero_evolve_reply::New() const {
 
 void hero_evolve_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__hero()) {
       if (_hero_ != NULL) _hero_->::client_baseserver::hero::Clear();
     }
@@ -33308,18 +32508,13 @@ bool hero_evolve_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -33365,10 +32560,9 @@ failure:
 void hero_evolve_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.hero_evolve_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -33387,10 +32581,9 @@ void hero_evolve_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* hero_evolve_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.hero_evolve_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -33412,10 +32605,11 @@ int hero_evolve_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.hero _hero = 2;
@@ -36146,7 +35340,7 @@ start_battle::start_battle(const start_battle& from)
 
 void start_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _rseed_ = 0u;
   _is_robot_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -36218,18 +35412,13 @@ bool start_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -36320,10 +35509,9 @@ failure:
 void start_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.start_battle)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _rseed = 2;
@@ -36358,10 +35546,9 @@ void start_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* start_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.start_battle)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _rseed = 2;
@@ -36400,10 +35587,11 @@ int start_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _rseed = 2;
@@ -36547,7 +35735,7 @@ end_battle::end_battle(const end_battle& from)
 
 void end_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _best_rank_reward_ = 0u;
   _best_rank_ = 0u;
   _cur_rank_ = 0u;
@@ -36615,18 +35803,13 @@ bool end_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.battle_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -36704,10 +35887,9 @@ failure:
 void end_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.end_battle)
-  // required .client_baseserver.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _best_rank_reward = 2;
@@ -36735,10 +35917,9 @@ void end_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* end_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.end_battle)
-  // required .client_baseserver.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _best_rank_reward = 2;
@@ -36768,10 +35949,11 @@ int end_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.battle_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _best_rank_reward = 2;
@@ -36903,7 +36085,7 @@ set_lineup::set_lineup(const set_lineup& from)
 
 void set_lineup::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _gs_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -36970,18 +36152,13 @@ bool set_lineup::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -37048,10 +36225,9 @@ failure:
 void set_lineup::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.set_lineup)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated uint32 _lineup = 2;
@@ -37075,10 +36251,9 @@ void set_lineup::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_lineup::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.set_lineup)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated uint32 _lineup = 2;
@@ -37104,10 +36279,11 @@ int set_lineup::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _gs = 3;
@@ -37711,7 +36887,7 @@ void pvp_record::SharedCtor() {
   _oppo_avatar_ = 0u;
   _oppo_vip_ = 0u;
   _oppo_robot_ = 0u;
-  _result_ = 0;
+  _result_ = 0u;
   _rseed_ = 0u;
   _self_robot_ = 0u;
   _param1_ = 0u;
@@ -37782,7 +36958,7 @@ void pvp_record::Clear() {
   }
   if (_has_bits_[8 / 32] & 7936) {
     ZR_(_oppo_level_, _oppo_robot_);
-    _result_ = 0;
+    _result_ = 0u;
   }
   if (_has_bits_[16 / 32] & 917504) {
     ZR_(_self_robot_, _param1_);
@@ -37994,19 +37170,14 @@ bool pvp_record::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.battle_result _result = 13 [default = victory];
+      // optional uint32 _result = 13;
       case 13: {
         if (tag == 104) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(13, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -38229,10 +37400,9 @@ void pvp_record::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->_oppo_robot(), output);
   }
 
-  // optional .client_baseserver.battle_result _result = 13 [default = victory];
+  // optional uint32 _result = 13;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      13, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(13, this->_result(), output);
   }
 
   // repeated .client_baseserver.hero _self_heroes = 14;
@@ -38362,10 +37532,9 @@ void pvp_record::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->_oppo_robot(), target);
   }
 
-  // optional .client_baseserver.battle_result _result = 13 [default = victory];
+  // optional uint32 _result = 13;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      13, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(13, this->_result(), target);
   }
 
   // repeated .client_baseserver.hero _self_heroes = 14;
@@ -38515,10 +37684,11 @@ int pvp_record::ByteSize() const {
           this->_oppo_robot());
     }
 
-    // optional .client_baseserver.battle_result _result = 13 [default = victory];
+    // optional uint32 _result = 13;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -39353,7 +38523,7 @@ clear_battle_cd::clear_battle_cd(const clear_battle_cd& from)
 
 void clear_battle_cd::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -39389,7 +38559,7 @@ clear_battle_cd* clear_battle_cd::New() const {
 }
 
 void clear_battle_cd::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -39404,18 +38574,13 @@ bool clear_battle_cd::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -39448,10 +38613,9 @@ failure:
 void clear_battle_cd::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.clear_battle_cd)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -39464,10 +38628,9 @@ void clear_battle_cd::SerializeWithCachedSizes(
 ::google::protobuf::uint8* clear_battle_cd::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.clear_battle_cd)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -39482,10 +38645,11 @@ int clear_battle_cd::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -39864,7 +39028,7 @@ void ladder_record::SharedCtor() {
   _summary_ = NULL;
   _deta_rank_ = 0u;
   _bt_time_ = 0u;
-  _bt_result_ = 0;
+  _bt_result_ = 0u;
   _replay_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -39993,19 +39157,14 @@ bool ladder_record::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.battle_result _bt_result = 5;
+      // required uint32 _bt_result = 5;
       case 5: {
         if (tag == 40) {
          parse__bt_result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__bt_result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(5, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_bt_result_)));
+          set_has__bt_result();
         } else {
           goto handle_unusual;
         }
@@ -40074,10 +39233,9 @@ void ladder_record::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->_bt_time(), output);
   }
 
-  // required .client_baseserver.battle_result _bt_result = 5;
+  // required uint32 _bt_result = 5;
   if (has__bt_result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->_bt_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->_bt_result(), output);
   }
 
   // required uint32 _replay_id = 6;
@@ -40117,10 +39275,9 @@ void ladder_record::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->_bt_time(), target);
   }
 
-  // required .client_baseserver.battle_result _bt_result = 5;
+  // required uint32 _bt_result = 5;
   if (has__bt_result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->_bt_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->_bt_result(), target);
   }
 
   // required uint32 _replay_id = 6;
@@ -40168,10 +39325,11 @@ int ladder_record::ByteSize() const {
           this->_bt_time());
     }
 
-    // required .client_baseserver.battle_result _bt_result = 5;
+    // required uint32 _bt_result = 5;
     if (has__bt_result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_bt_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_bt_result());
     }
 
     // required uint32 _replay_id = 6;
@@ -40755,31 +39913,6 @@ void ladder_opponent::Swap(ladder_opponent* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* ladder_rank_reward_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return ladder_rank_reward_reward_type_descriptor_;
-}
-bool ladder_rank_reward_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const ladder_rank_reward_reward_type ladder_rank_reward::gold;
-const ladder_rank_reward_reward_type ladder_rank_reward::diamond;
-const ladder_rank_reward_reward_type ladder_rank_reward::item;
-const ladder_rank_reward_reward_type ladder_rank_reward::arenapoint;
-const ladder_rank_reward_reward_type ladder_rank_reward::reward_type_MIN;
-const ladder_rank_reward_reward_type ladder_rank_reward::reward_type_MAX;
-const int ladder_rank_reward::reward_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int ladder_rank_reward::kTypeFieldNumber;
 const int ladder_rank_reward::kParam1FieldNumber;
@@ -40804,7 +39937,7 @@ ladder_rank_reward::ladder_rank_reward(const ladder_rank_reward& from)
 
 void ladder_rank_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _param1_ = 0u;
   _param2_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -40852,10 +39985,7 @@ void ladder_rank_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_param1_, _param2_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _param2_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -40874,18 +40004,13 @@ bool ladder_rank_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::ladder_rank_reward_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::ladder_rank_reward_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -40948,10 +40073,9 @@ failure:
 void ladder_rank_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.ladder_rank_reward)
-  // required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _param1 = 2;
@@ -40974,10 +40098,9 @@ void ladder_rank_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* ladder_rank_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.ladder_rank_reward)
-  // required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _param1 = 2;
@@ -41002,10 +40125,11 @@ int ladder_rank_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.ladder_rank_reward.reward_type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _param1 = 2;
@@ -41345,7 +40469,7 @@ buy_battle_chance::buy_battle_chance(const buy_battle_chance& from)
 
 void buy_battle_chance::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _buy_times_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -41411,18 +40535,13 @@ bool buy_battle_chance::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -41470,10 +40589,9 @@ failure:
 void buy_battle_chance::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.buy_battle_chance)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional uint32 _buy_times = 2;
@@ -41491,10 +40609,9 @@ void buy_battle_chance::SerializeWithCachedSizes(
 ::google::protobuf::uint8* buy_battle_chance::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.buy_battle_chance)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional uint32 _buy_times = 2;
@@ -41514,10 +40631,11 @@ int buy_battle_chance::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _buy_times = 2;
@@ -41603,29 +40721,6 @@ void buy_battle_chance::Swap(buy_battle_chance* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* set_name_reply_set_name_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return set_name_reply_set_name_result_descriptor_;
-}
-bool set_name_reply_set_name_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const set_name_reply_set_name_result set_name_reply::success;
-const set_name_reply_set_name_result set_name_reply::exists;
-const set_name_reply_set_name_result set_name_reply::dirty_word;
-const set_name_reply_set_name_result set_name_reply::set_name_result_MIN;
-const set_name_reply_set_name_result set_name_reply::set_name_result_MAX;
-const int set_name_reply::set_name_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int set_name_reply::kResultFieldNumber;
 #endif  // !_MSC_VER
@@ -41648,7 +40743,7 @@ set_name_reply::set_name_reply(const set_name_reply& from)
 
 void set_name_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -41684,7 +40779,7 @@ set_name_reply* set_name_reply::New() const {
 }
 
 void set_name_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -41699,18 +40794,13 @@ bool set_name_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::set_name_reply_set_name_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::set_name_reply_set_name_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -41743,10 +40833,9 @@ failure:
 void set_name_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.set_name_reply)
-  // required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -41759,10 +40848,9 @@ void set_name_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_name_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.set_name_reply)
-  // required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -41777,10 +40865,11 @@ int set_name_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.set_name_reply.set_name_result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -41877,7 +40966,7 @@ set_avatar_reply::set_avatar_reply(const set_avatar_reply& from)
 
 void set_avatar_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -41913,7 +41002,7 @@ set_avatar_reply* set_avatar_reply::New() const {
 }
 
 void set_avatar_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -41928,18 +41017,13 @@ bool set_avatar_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -41972,10 +41056,9 @@ failure:
 void set_avatar_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.set_avatar_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -41988,10 +41071,9 @@ void set_avatar_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_avatar_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.set_avatar_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -42006,10 +41088,11 @@ int set_avatar_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -43002,7 +42085,7 @@ open_shop_reply::open_shop_reply(const open_shop_reply& from)
 
 void open_shop_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _shop_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -43041,7 +42124,7 @@ open_shop_reply* open_shop_reply::New() const {
 
 void open_shop_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__shop()) {
       if (_shop_ != NULL) _shop_->::client_baseserver::user_shop::Clear();
     }
@@ -43060,18 +42143,13 @@ bool open_shop_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -43117,10 +42195,9 @@ failure:
 void open_shop_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.open_shop_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.user_shop _shop = 2;
@@ -43139,10 +42216,9 @@ void open_shop_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* open_shop_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.open_shop_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.user_shop _shop = 2;
@@ -43164,10 +42240,11 @@ int open_shop_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.user_shop _shop = 2;
@@ -45381,35 +44458,6 @@ void tbc_oppo_hero::Swap(tbc_oppo_hero* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* tbc_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return tbc_reward_type_descriptor_;
-}
-bool tbc_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const tbc_reward_type tbc_reward::gold;
-const tbc_reward_type tbc_reward::diamond;
-const tbc_reward_type tbc_reward::item;
-const tbc_reward_type tbc_reward::chest;
-const tbc_reward_type tbc_reward::crusadepoint;
-const tbc_reward_type tbc_reward::chestbox;
-const tbc_reward_type tbc_reward::type_MIN;
-const tbc_reward_type tbc_reward::type_MAX;
-const int tbc_reward::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int tbc_reward::kTypeFieldNumber;
 const int tbc_reward::kParam1FieldNumber;
@@ -45434,7 +44482,7 @@ tbc_reward::tbc_reward(const tbc_reward& from)
 
 void tbc_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _param1_ = 0u;
   _param2_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -45482,10 +44530,7 @@ void tbc_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_param1_, _param2_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _param2_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -45504,18 +44549,13 @@ bool tbc_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.tbc_reward.type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::tbc_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::tbc_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -45578,10 +44618,9 @@ failure:
 void tbc_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_reward)
-  // required .client_baseserver.tbc_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _param1 = 2;
@@ -45604,10 +44643,9 @@ void tbc_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_reward)
-  // required .client_baseserver.tbc_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _param1 = 2;
@@ -45632,10 +44670,11 @@ int tbc_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.tbc_reward.type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _param1 = 2;
@@ -45732,29 +44771,6 @@ void tbc_reward::Swap(tbc_reward* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* tbc_stage_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return tbc_stage_status_descriptor_;
-}
-bool tbc_stage_status_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const tbc_stage_status tbc_stage::unpassed;
-const tbc_stage_status tbc_stage::passed;
-const tbc_stage_status tbc_stage::rewarded;
-const tbc_stage_status tbc_stage::status_MIN;
-const tbc_stage_status tbc_stage::status_MAX;
-const int tbc_stage::status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int tbc_stage::kStatusFieldNumber;
 const int tbc_stage::kRewardsFieldNumber;
@@ -45778,7 +44794,7 @@ tbc_stage::tbc_stage(const tbc_stage& from)
 
 void tbc_stage::SharedCtor() {
   _cached_size_ = 0;
-  _status_ = 0;
+  _status_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -45814,7 +44830,7 @@ tbc_stage* tbc_stage::New() const {
 }
 
 void tbc_stage::Clear() {
-  _status_ = 0;
+  _status_ = 0u;
   _rewards_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -45830,18 +44846,13 @@ bool tbc_stage::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+      // required uint32 _status = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::tbc_stage_status_IsValid(value)) {
-            set__status(static_cast< ::client_baseserver::tbc_stage_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_status_)));
+          set_has__status();
         } else {
           goto handle_unusual;
         }
@@ -45888,10 +44899,9 @@ failure:
 void tbc_stage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_stage)
-  // required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+  // required uint32 _status = 1;
   if (has__status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_status(), output);
   }
 
   // repeated .client_baseserver.tbc_reward _rewards = 2;
@@ -45910,10 +44920,9 @@ void tbc_stage::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_stage::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_stage)
-  // required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+  // required uint32 _status = 1;
   if (has__status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_status(), target);
   }
 
   // repeated .client_baseserver.tbc_reward _rewards = 2;
@@ -45935,10 +44944,11 @@ int tbc_stage::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.tbc_stage.status _status = 1 [default = unpassed];
+    // required uint32 _status = 1;
     if (has__status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_status());
     }
 
   }
@@ -46994,7 +46004,7 @@ tbc_start_battle::tbc_start_battle(const tbc_start_battle& from)
 
 void tbc_start_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _rseed_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -47060,18 +46070,13 @@ bool tbc_start_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -47119,10 +46124,9 @@ failure:
 void tbc_start_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_start_battle)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _rseed = 2;
@@ -47140,10 +46144,9 @@ void tbc_start_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_start_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_start_battle)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _rseed = 2;
@@ -47163,10 +46166,11 @@ int tbc_start_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _rseed = 2;
@@ -47274,7 +46278,7 @@ tbc_end_battle::tbc_end_battle(const tbc_end_battle& from)
 
 void tbc_end_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -47310,7 +46314,7 @@ tbc_end_battle* tbc_end_battle::New() const {
 }
 
 void tbc_end_battle::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -47325,18 +46329,13 @@ bool tbc_end_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.battle_result _result = 1 [default = victory];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -47369,10 +46368,9 @@ failure:
 void tbc_end_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_end_battle)
-  // required .client_baseserver.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -47385,10 +46383,9 @@ void tbc_end_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_end_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_end_battle)
-  // required .client_baseserver.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -47403,10 +46400,11 @@ int tbc_end_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.battle_result _result = 1 [default = victory];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -47505,7 +46503,7 @@ tbc_reset::tbc_reset(const tbc_reset& from)
 
 void tbc_reset::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _info_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -47544,7 +46542,7 @@ tbc_reset* tbc_reset::New() const {
 
 void tbc_reset::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__info()) {
       if (_info_ != NULL) _info_->::client_baseserver::tbc_info::Clear();
     }
@@ -47563,18 +46561,13 @@ bool tbc_reset::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -47620,10 +46613,9 @@ failure:
 void tbc_reset::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_reset)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.tbc_info _info = 2;
@@ -47642,10 +46634,9 @@ void tbc_reset::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_reset::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_reset)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.tbc_info _info = 2;
@@ -47667,10 +46658,11 @@ int tbc_reset::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.tbc_info _info = 2;
@@ -47784,7 +46776,7 @@ tbc_draw_reward::tbc_draw_reward(const tbc_draw_reward& from)
 
 void tbc_draw_reward::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _stage_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -47852,18 +46844,13 @@ bool tbc_draw_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -47939,10 +46926,9 @@ failure:
 void tbc_draw_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.tbc_draw_reward)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _stage_id = 2;
@@ -47972,10 +46958,9 @@ void tbc_draw_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_draw_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.tbc_draw_reward)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _stage_id = 2;
@@ -48009,10 +46994,11 @@ int tbc_draw_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _stage_id = 2;
@@ -48340,29 +47326,6 @@ void get_maillist_reply::Swap(get_maillist_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* sys_mail_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return sys_mail_status_descriptor_;
-}
-bool sys_mail_status_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const sys_mail_status sys_mail::unread;
-const sys_mail_status sys_mail::read;
-const sys_mail_status sys_mail::delete;
-const sys_mail_status sys_mail::status_MIN;
-const sys_mail_status sys_mail::status_MAX;
-const int sys_mail::status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int sys_mail::kIdFieldNumber;
 const int sys_mail::kStatusFieldNumber;
@@ -48397,7 +47360,7 @@ sys_mail::sys_mail(const sys_mail& from)
 void sys_mail::SharedCtor() {
   _cached_size_ = 0;
   _id_ = 0u;
-  _status_ = 0;
+  _status_ = 0u;
   _mail_time_ = 0u;
   _expire_time_ = 0u;
   _content_ = NULL;
@@ -48494,19 +47457,14 @@ bool sys_mail::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.sys_mail.status _status = 2;
+      // required uint32 _status = 2;
       case 2: {
         if (tag == 16) {
          parse__status:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::sys_mail_status_IsValid(value)) {
-            set__status(static_cast< ::client_baseserver::sys_mail_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_status_)));
+          set_has__status();
         } else {
           goto handle_unusual;
         }
@@ -48680,10 +47638,9 @@ void sys_mail::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_id(), output);
   }
 
-  // required .client_baseserver.sys_mail.status _status = 2;
+  // required uint32 _status = 2;
   if (has__status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_status(), output);
   }
 
   // required uint32 _mail_time = 3;
@@ -48749,10 +47706,9 @@ void sys_mail::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_id(), target);
   }
 
-  // required .client_baseserver.sys_mail.status _status = 2;
+  // required uint32 _status = 2;
   if (has__status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_status(), target);
   }
 
   // required uint32 _mail_time = 3;
@@ -48824,10 +47780,11 @@ int sys_mail::ByteSize() const {
           this->_id());
     }
 
-    // required .client_baseserver.sys_mail.status _status = 2;
+    // required uint32 _status = 2;
     if (has__status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_status());
     }
 
     // required uint32 _mail_time = 3;
@@ -49919,37 +48876,6 @@ void format_mail::Swap(format_mail* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* mail_param_mail_param_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return mail_param_mail_param_type_descriptor_;
-}
-bool mail_param_mail_param_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const mail_param_mail_param_type mail_param::value;
-const mail_param_mail_param_type mail_param::money;
-const mail_param_mail_param_type mail_param::item;
-const mail_param_mail_param_type mail_param::mine;
-const mail_param_mail_param_type mail_param::self_hero;
-const mail_param_mail_param_type mail_param::excav_battle_id;
-const mail_param_mail_param_type mail_param::hero_name;
-const mail_param_mail_param_type mail_param::mail_param_type_MIN;
-const mail_param_mail_param_type mail_param::mail_param_type_MAX;
-const int mail_param::mail_param_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int mail_param::kIdxFieldNumber;
 const int mail_param::kTypeFieldNumber;
@@ -49976,7 +48902,7 @@ void mail_param::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   _idx_ = 0u;
-  _type_ = 1;
+  _type_ = 0u;
   _value_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -50016,15 +48942,28 @@ mail_param* mail_param::New() const {
 }
 
 void mail_param::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<mail_param*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 7) {
-    _idx_ = 0u;
-    _type_ = 1;
+    ZR_(_idx_, _type_);
     if (has__value()) {
       if (_value_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _value_->clear();
       }
     }
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -50053,19 +48992,14 @@ bool mail_param::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.mail_param.mail_param_type _type = 2;
+      // optional uint32 _type = 2;
       case 2: {
         if (tag == 16) {
          parse__type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::mail_param_mail_param_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::mail_param_mail_param_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -50120,10 +49054,9 @@ void mail_param::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_idx(), output);
   }
 
-  // optional .client_baseserver.mail_param.mail_param_type _type = 2;
+  // optional uint32 _type = 2;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_type(), output);
   }
 
   // optional string _value = 3;
@@ -50151,10 +49084,9 @@ void mail_param::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_idx(), target);
   }
 
-  // optional .client_baseserver.mail_param.mail_param_type _type = 2;
+  // optional uint32 _type = 2;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_type(), target);
   }
 
   // optional string _value = 3;
@@ -50187,10 +49119,11 @@ int mail_param::ByteSize() const {
           this->_idx());
     }
 
-    // optional .client_baseserver.mail_param.mail_param_type _type = 2;
+    // optional uint32 _type = 2;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional string _value = 3;
@@ -50280,29 +49213,6 @@ void mail_param::Swap(mail_param* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* user_point_user_point_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return user_point_user_point_type_descriptor_;
-}
-bool user_point_user_point_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const user_point_user_point_type user_point::arenapoint;
-const user_point_user_point_type user_point::crusadepoint;
-const user_point_user_point_type user_point::guildpoint;
-const user_point_user_point_type user_point::user_point_type_MIN;
-const user_point_user_point_type user_point::user_point_type_MAX;
-const int user_point::user_point_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int user_point::kTypeFieldNumber;
 const int user_point::kValueFieldNumber;
@@ -50326,7 +49236,7 @@ user_point::user_point(const user_point& from)
 
 void user_point::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _value_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -50363,10 +49273,21 @@ user_point* user_point::New() const {
 }
 
 void user_point::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _type_ = 1;
-    _value_ = 0u;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<user_point*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_type_, _value_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -50381,18 +49302,13 @@ bool user_point::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::user_point_user_point_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::user_point_user_point_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -50440,10 +49356,9 @@ failure:
 void user_point::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.user_point)
-  // required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // required uint32 _value = 2;
@@ -50461,10 +49376,9 @@ void user_point::SerializeWithCachedSizes(
 ::google::protobuf::uint8* user_point::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.user_point)
-  // required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // required uint32 _value = 2;
@@ -50484,10 +49398,11 @@ int user_point::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.user_point.user_point_type _type = 1 [default = arenapoint];
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required uint32 _value = 2;
@@ -50595,7 +49510,7 @@ read_mail_reply::read_mail_reply(const read_mail_reply& from)
 
 void read_mail_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -50631,7 +49546,7 @@ read_mail_reply* read_mail_reply::New() const {
 }
 
 void read_mail_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -50646,18 +49561,13 @@ bool read_mail_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -50690,10 +49600,9 @@ failure:
 void read_mail_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.read_mail_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -50706,10 +49615,9 @@ void read_mail_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* read_mail_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.read_mail_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -50724,10 +49632,11 @@ int read_mail_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -50824,7 +49733,7 @@ get_vip_gift_reply::get_vip_gift_reply(const get_vip_gift_reply& from)
 
 void get_vip_gift_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -50860,7 +49769,7 @@ get_vip_gift_reply* get_vip_gift_reply::New() const {
 }
 
 void get_vip_gift_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -50875,18 +49784,13 @@ bool get_vip_gift_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -50919,10 +49823,9 @@ failure:
 void get_vip_gift_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.get_vip_gift_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -50935,10 +49838,9 @@ void get_vip_gift_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* get_vip_gift_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.get_vip_gift_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -50953,10 +49855,11 @@ int get_vip_gift_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -52060,8 +50963,8 @@ chat_broad_say::chat_broad_say(const chat_broad_say& from)
 
 void chat_broad_say::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
-  _channel_ = 1;
+  _result_ = 0u;
+  _channel_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -52097,10 +51000,21 @@ chat_broad_say* chat_broad_say::New() const {
 }
 
 void chat_broad_say::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
-    _channel_ = 1;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_broad_say*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_result_, _channel_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _contents_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -52116,18 +51030,13 @@ bool chat_broad_say::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseserver.result _result = 1;
+      // optional uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -52135,19 +51044,14 @@ bool chat_broad_say::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.chat_channel _channel = 2;
+      // optional uint32 _channel = 2;
       case 2: {
         if (tag == 16) {
          parse__channel:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseserver::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -52194,16 +51098,14 @@ failure:
 void chat_broad_say::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_broad_say)
-  // optional .client_baseserver.result _result = 1;
+  // optional uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
-  // optional .client_baseserver.chat_channel _channel = 2;
+  // optional uint32 _channel = 2;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_channel(), output);
   }
 
   // repeated .client_baseserver.chat_content _contents = 3;
@@ -52222,16 +51124,14 @@ void chat_broad_say::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_broad_say::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_broad_say)
-  // optional .client_baseserver.result _result = 1;
+  // optional uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
-  // optional .client_baseserver.chat_channel _channel = 2;
+  // optional uint32 _channel = 2;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_channel(), target);
   }
 
   // repeated .client_baseserver.chat_content _contents = 3;
@@ -52253,16 +51153,18 @@ int chat_broad_say::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseserver.result _result = 1;
+    // optional uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
-    // optional .client_baseserver.chat_channel _channel = 2;
+    // optional uint32 _channel = 2;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
   }
@@ -52375,8 +51277,8 @@ chat_say::chat_say(const chat_say& from)
 
 void chat_say::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
-  _channel_ = 1;
+  _result_ = 0u;
+  _channel_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -52412,10 +51314,21 @@ chat_say* chat_say::New() const {
 }
 
 void chat_say::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
-    _channel_ = 1;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_say*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_result_, _channel_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _contents_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -52431,18 +51344,13 @@ bool chat_say::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -52450,19 +51358,14 @@ bool chat_say::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+      // required uint32 _channel = 2;
       case 2: {
         if (tag == 16) {
          parse__channel:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseserver::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -52509,16 +51412,14 @@ failure:
 void chat_say::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_say)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
-  // required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+  // required uint32 _channel = 2;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_channel(), output);
   }
 
   // repeated .client_baseserver.chat_content _contents = 3;
@@ -52537,16 +51438,14 @@ void chat_say::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_say::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_say)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
-  // required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+  // required uint32 _channel = 2;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_channel(), target);
   }
 
   // repeated .client_baseserver.chat_content _contents = 3;
@@ -52568,16 +51467,18 @@ int chat_say::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
-    // required .client_baseserver.chat_channel _channel = 2 [default = world_channel];
+    // required uint32 _channel = 2;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
   }
@@ -52690,7 +51591,7 @@ chat_fresh::chat_fresh(const chat_fresh& from)
 
 void chat_fresh::SharedCtor() {
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -52726,7 +51627,7 @@ chat_fresh* chat_fresh::New() const {
 }
 
 void chat_fresh::Clear() {
-  _channel_ = 1;
+  _channel_ = 0u;
   _contents_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -52742,18 +51643,13 @@ bool chat_fresh::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+      // required uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseserver::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -52800,10 +51696,9 @@ failure:
 void chat_fresh::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_fresh)
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   // repeated .client_baseserver.chat_content _contents = 2;
@@ -52822,10 +51717,9 @@ void chat_fresh::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_fresh::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_fresh)
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   // repeated .client_baseserver.chat_content _contents = 2;
@@ -52847,10 +51741,11 @@ int chat_fresh::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+    // required uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
   }
@@ -52961,7 +51856,7 @@ chat_fetch::chat_fetch(const chat_fetch& from)
 
 void chat_fetch::SharedCtor() {
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   _chat_id_ = 0u;
   _accessory_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -53000,13 +51895,26 @@ chat_fetch* chat_fetch::New() const {
 }
 
 void chat_fetch::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_fetch*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 7) {
-    _channel_ = 1;
-    _chat_id_ = 0u;
+    ZR_(_channel_, _chat_id_);
     if (has__accessory()) {
       if (_accessory_ != NULL) _accessory_->::client_baseserver::chat_acc::Clear();
     }
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -53021,18 +51929,13 @@ bool chat_fetch::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+      // required uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseserver::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -53093,10 +51996,9 @@ failure:
 void chat_fetch::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_fetch)
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   // required uint32 _chat_id = 2;
@@ -53120,10 +52022,9 @@ void chat_fetch::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_fetch::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_fetch)
-  // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   // required uint32 _chat_id = 2;
@@ -53150,10 +52051,11 @@ int chat_fetch::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.chat_channel _channel = 1 [default = world_channel];
+    // required uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
     // required uint32 _chat_id = 2;
@@ -53253,27 +52155,6 @@ void chat_fetch::Swap(chat_fetch* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return chat_acc_chat_acc_t_descriptor_;
-}
-bool chat_acc_chat_acc_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const chat_acc_chat_acc_t chat_acc::binary;
-const chat_acc_chat_acc_t chat_acc::pvp_replay;
-const chat_acc_chat_acc_t chat_acc::chat_acc_t_MIN;
-const chat_acc_chat_acc_t chat_acc::chat_acc_t_MAX;
-const int chat_acc::chat_acc_t_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int chat_acc::kTypeFieldNumber;
 const int chat_acc::kBinaryFieldNumber;
@@ -53300,7 +52181,7 @@ chat_acc::chat_acc(const chat_acc& from)
 void chat_acc::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _binary_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _replay_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -53343,7 +52224,7 @@ chat_acc* chat_acc::New() const {
 
 void chat_acc::Clear() {
   if (_has_bits_[0 / 32] & 7) {
-    _type_ = 1;
+    _type_ = 0u;
     if (has__binary()) {
       if (_binary_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _binary_->clear();
@@ -53367,18 +52248,13 @@ bool chat_acc::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::chat_acc_chat_acc_t_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::chat_acc_chat_acc_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -53441,10 +52317,9 @@ failure:
 void chat_acc::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_acc)
-  // required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional string _binary = 2;
@@ -53473,10 +52348,9 @@ void chat_acc::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_acc::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_acc)
-  // required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional string _binary = 2;
@@ -53509,10 +52383,11 @@ int chat_acc::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.chat_acc.chat_acc_t _type = 1 [default = binary];
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional string _binary = 2;
@@ -54222,7 +53097,7 @@ chat_add_bl::chat_add_bl(const chat_add_bl& from)
 
 void chat_add_bl::SharedCtor() {
   _cached_size_ = 0;
-  _ret_ = 0;
+  _ret_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -54258,7 +53133,7 @@ chat_add_bl* chat_add_bl::New() const {
 }
 
 void chat_add_bl::Clear() {
-  _ret_ = 0;
+  _ret_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -54273,18 +53148,13 @@ bool chat_add_bl::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _ret = 1;
+      // required uint32 _ret = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__ret(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_ret_)));
+          set_has__ret();
         } else {
           goto handle_unusual;
         }
@@ -54317,10 +53187,9 @@ failure:
 void chat_add_bl::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_add_bl)
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   if (has__ret()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_ret(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_ret(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -54333,10 +53202,9 @@ void chat_add_bl::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_add_bl::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_add_bl)
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   if (has__ret()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_ret(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_ret(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -54351,10 +53219,11 @@ int chat_add_bl::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _ret = 1;
+    // required uint32 _ret = 1;
     if (has__ret()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_ret());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_ret());
     }
 
   }
@@ -54451,7 +53320,7 @@ chat_del_bl::chat_del_bl(const chat_del_bl& from)
 
 void chat_del_bl::SharedCtor() {
   _cached_size_ = 0;
-  _ret_ = 0;
+  _ret_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -54487,7 +53356,7 @@ chat_del_bl* chat_del_bl::New() const {
 }
 
 void chat_del_bl::Clear() {
-  _ret_ = 0;
+  _ret_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -54502,18 +53371,13 @@ bool chat_del_bl::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _ret = 1;
+      // required uint32 _ret = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__ret(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_ret_)));
+          set_has__ret();
         } else {
           goto handle_unusual;
         }
@@ -54546,10 +53410,9 @@ failure:
 void chat_del_bl::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.chat_del_bl)
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   if (has__ret()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_ret(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_ret(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -54562,10 +53425,9 @@ void chat_del_bl::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_del_bl::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.chat_del_bl)
-  // required .client_baseserver.result _ret = 1;
+  // required uint32 _ret = 1;
   if (has__ret()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_ret(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_ret(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -54580,10 +53442,11 @@ int chat_del_bl::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _ret = 1;
+    // required uint32 _ret = 1;
     if (has__ret()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_ret());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_ret());
     }
 
   }
@@ -55007,7 +53870,7 @@ void user_guild::SharedCtor() {
   _cached_size_ = 0;
   _id_ = 0u;
   _name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _job_ = 2;
+  _job_ = 0u;
   _req_guild_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -55047,16 +53910,29 @@ user_guild* user_guild::New() const {
 }
 
 void user_guild::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<user_guild*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 15) {
-    _id_ = 0u;
+    ZR_(_id_, _job_);
     if (has__name()) {
       if (_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _name_->clear();
       }
     }
-    _job_ = 2;
     _req_guild_id_ = 0u;
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _hire_hero_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -55103,19 +53979,14 @@ bool user_guild::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.guild_job_t _job = 3 [default = member];
+      // optional uint32 _job = 3;
       case 3: {
         if (tag == 24) {
          parse__job:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_job_t_IsValid(value)) {
-            set__job(static_cast< ::client_baseserver::guild_job_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_job_)));
+          set_has__job();
         } else {
           goto handle_unusual;
         }
@@ -55197,10 +54068,9 @@ void user_guild::SerializeWithCachedSizes(
       2, this->_name(), output);
   }
 
-  // optional .client_baseserver.guild_job_t _job = 3 [default = member];
+  // optional uint32 _job = 3;
   if (has__job()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_job(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_job(), output);
   }
 
   // optional uint32 _req_guild_id = 4;
@@ -55240,10 +54110,9 @@ void user_guild::SerializeWithCachedSizes(
         2, this->_name(), target);
   }
 
-  // optional .client_baseserver.guild_job_t _job = 3 [default = member];
+  // optional uint32 _job = 3;
   if (has__job()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_job(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_job(), target);
   }
 
   // optional uint32 _req_guild_id = 4;
@@ -55283,10 +54152,11 @@ int user_guild::ByteSize() const {
           this->_name());
     }
 
-    // optional .client_baseserver.guild_job_t _job = 3 [default = member];
+    // optional uint32 _job = 3;
     if (has__job()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_job());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_job());
     }
 
     // optional uint32 _req_guild_id = 4;
@@ -55399,7 +54269,7 @@ const int guild_reply::kListFieldNumber;
 const int guild_reply::kSearchFieldNumber;
 const int guild_reply::kJoinFieldNumber;
 const int guild_reply::kJoinConfirmFieldNumber;
-const int guild_reply::kLeaveFieldNumber;
+const int guild_reply::kGuildLeaveFieldNumber;
 const int guild_reply::kKickFieldNumber;
 const int guild_reply::kSetFieldNumber;
 const int guild_reply::kQueryFieldNumber;
@@ -55445,7 +54315,7 @@ void guild_reply::InitAsDefaultInstance() {
   _search_ = const_cast< ::client_baseserver::guild_search*>(&::client_baseserver::guild_search::default_instance());
   _join_ = const_cast< ::client_baseserver::guild_join*>(&::client_baseserver::guild_join::default_instance());
   _join_confirm_ = const_cast< ::client_baseserver::guild_join_confirm*>(&::client_baseserver::guild_join_confirm::default_instance());
-  _leave_ = const_cast< ::client_baseserver::guild_leave*>(&::client_baseserver::guild_leave::default_instance());
+  _guild_leave_ = const_cast< ::client_baseserver::guild_leave*>(&::client_baseserver::guild_leave::default_instance());
   _kick_ = const_cast< ::client_baseserver::guild_kick*>(&::client_baseserver::guild_kick::default_instance());
   _set_ = const_cast< ::client_baseserver::guild_set*>(&::client_baseserver::guild_set::default_instance());
   _query_ = const_cast< ::client_baseserver::guild_query*>(&::client_baseserver::guild_query::default_instance());
@@ -55492,7 +54362,7 @@ void guild_reply::SharedCtor() {
   _search_ = NULL;
   _join_ = NULL;
   _join_confirm_ = NULL;
-  _leave_ = NULL;
+  _guild_leave_ = NULL;
   _kick_ = NULL;
   _set_ = NULL;
   _query_ = NULL;
@@ -55504,7 +54374,7 @@ void guild_reply::SharedCtor() {
   _worship_req_ = NULL;
   _worship_withdraw_ = NULL;
   _query_hh_detail_ = NULL;
-  _result_ = 0;
+  _result_ = 0u;
   _instance_query_ = NULL;
   _instance_detail_ = NULL;
   _instance_start_ = NULL;
@@ -55539,7 +54409,7 @@ void guild_reply::SharedDtor() {
     delete _search_;
     delete _join_;
     delete _join_confirm_;
-    delete _leave_;
+    delete _guild_leave_;
     delete _kick_;
     delete _set_;
     delete _query_;
@@ -55613,8 +54483,8 @@ void guild_reply::Clear() {
     if (has__join_confirm()) {
       if (_join_confirm_ != NULL) _join_confirm_->::client_baseserver::guild_join_confirm::Clear();
     }
-    if (has__leave()) {
-      if (_leave_ != NULL) _leave_->::client_baseserver::guild_leave::Clear();
+    if (has__guild_leave()) {
+      if (_guild_leave_ != NULL) _guild_leave_->::client_baseserver::guild_leave::Clear();
     }
     if (has__kick()) {
       if (_kick_ != NULL) _kick_->::client_baseserver::guild_kick::Clear();
@@ -55653,7 +54523,7 @@ void guild_reply::Clear() {
     if (has__query_hh_detail()) {
       if (_query_hh_detail_ != NULL) _query_hh_detail_->::client_baseserver::guild_qurey_hh_detail::Clear();
     }
-    _result_ = 0;
+    _result_ = 0u;
     if (has__instance_query()) {
       if (_instance_query_ != NULL) _instance_query_->::client_baseserver::guild_instance_query::Clear();
     }
@@ -55800,16 +54670,16 @@ bool guild_reply::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(58)) goto parse__leave;
+        if (input->ExpectTag(58)) goto parse__guild_leave;
         break;
       }
 
-      // optional .client_baseserver.guild_leave _leave = 7;
+      // optional .client_baseserver.guild_leave _guild_leave = 7;
       case 7: {
         if (tag == 58) {
-         parse__leave:
+         parse__guild_leave:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable__leave()));
+               input, mutable__guild_leave()));
         } else {
           goto handle_unusual;
         }
@@ -55960,19 +54830,14 @@ bool guild_reply::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.result _result = 19 [default = success];
+      // required uint32 _result = 19;
       case 19: {
         if (tag == 152) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(19, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -56275,10 +55140,10 @@ void guild_reply::SerializeWithCachedSizes(
       6, this->_join_confirm(), output);
   }
 
-  // optional .client_baseserver.guild_leave _leave = 7;
-  if (has__leave()) {
+  // optional .client_baseserver.guild_leave _guild_leave = 7;
+  if (has__guild_leave()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_leave(), output);
+      7, this->_guild_leave(), output);
   }
 
   // optional .client_baseserver.guild_kick _kick = 8;
@@ -56347,10 +55212,9 @@ void guild_reply::SerializeWithCachedSizes(
       18, this->_query_hh_detail(), output);
   }
 
-  // required .client_baseserver.result _result = 19 [default = success];
+  // required uint32 _result = 19;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      19, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(19, this->_result(), output);
   }
 
   // optional .client_baseserver.guild_instance_query _instance_query = 20;
@@ -56513,11 +55377,11 @@ void guild_reply::SerializeWithCachedSizes(
         6, this->_join_confirm(), target);
   }
 
-  // optional .client_baseserver.guild_leave _leave = 7;
-  if (has__leave()) {
+  // optional .client_baseserver.guild_leave _guild_leave = 7;
+  if (has__guild_leave()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        7, this->_leave(), target);
+        7, this->_guild_leave(), target);
   }
 
   // optional .client_baseserver.guild_kick _kick = 8;
@@ -56597,10 +55461,9 @@ void guild_reply::SerializeWithCachedSizes(
         18, this->_query_hh_detail(), target);
   }
 
-  // required .client_baseserver.result _result = 19 [default = success];
+  // required uint32 _result = 19;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      19, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(19, this->_result(), target);
   }
 
   // optional .client_baseserver.guild_instance_query _instance_query = 20;
@@ -56783,11 +55646,11 @@ int guild_reply::ByteSize() const {
           this->_join_confirm());
     }
 
-    // optional .client_baseserver.guild_leave _leave = 7;
-    if (has__leave()) {
+    // optional .client_baseserver.guild_leave _guild_leave = 7;
+    if (has__guild_leave()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->_leave());
+          this->_guild_leave());
     }
 
     // optional .client_baseserver.guild_kick _kick = 8;
@@ -56871,10 +55734,11 @@ int guild_reply::ByteSize() const {
           this->_query_hh_detail());
     }
 
-    // required .client_baseserver.result _result = 19 [default = success];
+    // required uint32 _result = 19;
     if (has__result()) {
       total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.guild_instance_query _instance_query = 20;
@@ -57052,8 +55916,8 @@ void guild_reply::MergeFrom(const guild_reply& from) {
     if (from.has__join_confirm()) {
       mutable__join_confirm()->::client_baseserver::guild_join_confirm::MergeFrom(from._join_confirm());
     }
-    if (from.has__leave()) {
-      mutable__leave()->::client_baseserver::guild_leave::MergeFrom(from._leave());
+    if (from.has__guild_leave()) {
+      mutable__guild_leave()->::client_baseserver::guild_leave::MergeFrom(from._guild_leave());
     }
     if (from.has__kick()) {
       mutable__kick()->::client_baseserver::guild_kick::MergeFrom(from._kick());
@@ -57190,8 +56054,8 @@ bool guild_reply::IsInitialized() const {
   if (has__join_confirm()) {
     if (!this->_join_confirm().IsInitialized()) return false;
   }
-  if (has__leave()) {
-    if (!this->_leave().IsInitialized()) return false;
+  if (has__guild_leave()) {
+    if (!this->_guild_leave().IsInitialized()) return false;
   }
   if (has__kick()) {
     if (!this->_kick().IsInitialized()) return false;
@@ -57291,7 +56155,7 @@ void guild_reply::Swap(guild_reply* other) {
     std::swap(_search_, other->_search_);
     std::swap(_join_, other->_join_);
     std::swap(_join_confirm_, other->_join_confirm_);
-    std::swap(_leave_, other->_leave_);
+    std::swap(_guild_leave_, other->_guild_leave_);
     std::swap(_kick_, other->_kick_);
     std::swap(_set_, other->_set_);
     std::swap(_query_, other->_query_);
@@ -57362,7 +56226,7 @@ guild_send_mail::guild_send_mail(const guild_send_mail& from)
 
 void guild_send_mail::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -57398,7 +56262,7 @@ guild_send_mail* guild_send_mail::New() const {
 }
 
 void guild_send_mail::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -57413,18 +56277,13 @@ bool guild_send_mail::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -57457,10 +56316,9 @@ failure:
 void guild_send_mail::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_send_mail)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -57473,10 +56331,9 @@ void guild_send_mail::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_send_mail::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_send_mail)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -57491,10 +56348,11 @@ int guild_send_mail::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -57591,7 +56449,7 @@ guild_set_jump::guild_set_jump(const guild_set_jump& from)
 
 void guild_set_jump::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -57627,7 +56485,7 @@ guild_set_jump* guild_set_jump::New() const {
 }
 
 void guild_set_jump::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -57642,18 +56500,13 @@ bool guild_set_jump::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -57686,10 +56539,9 @@ failure:
 void guild_set_jump::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_set_jump)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -57702,10 +56554,9 @@ void guild_set_jump::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_set_jump::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_set_jump)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -57720,10 +56571,11 @@ int guild_set_jump::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -57821,7 +56673,7 @@ guild_instance_prepare::guild_instance_prepare(const guild_instance_prepare& fro
 
 void guild_instance_prepare::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _left_time_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -57887,18 +56739,13 @@ bool guild_instance_prepare::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -57946,10 +56793,9 @@ failure:
 void guild_instance_prepare::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_instance_prepare)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _left_time = 2;
@@ -57967,10 +56813,9 @@ void guild_instance_prepare::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_instance_prepare::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_instance_prepare)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _left_time = 2;
@@ -57990,10 +56835,11 @@ int guild_instance_prepare::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _left_time = 2;
@@ -60339,7 +59185,7 @@ guild_jump::guild_jump(const guild_jump& from)
 
 void guild_jump::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _app_queue_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -60378,7 +59224,7 @@ guild_jump* guild_jump::New() const {
 
 void guild_jump::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__app_queue()) {
       if (_app_queue_ != NULL) _app_queue_->::client_baseserver::guild_app_queue::Clear();
     }
@@ -60397,18 +59243,13 @@ bool guild_jump::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -60454,10 +59295,9 @@ failure:
 void guild_jump::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_jump)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -60476,10 +59316,9 @@ void guild_jump::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_jump::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_jump)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -60501,10 +59340,11 @@ int guild_jump::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -61809,7 +60649,7 @@ guild_drop_give::guild_drop_give(const guild_drop_give& from)
 
 void guild_drop_give::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -61845,7 +60685,7 @@ guild_drop_give* guild_drop_give::New() const {
 }
 
 void guild_drop_give::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -61860,18 +60700,13 @@ bool guild_drop_give::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -61904,10 +60739,9 @@ failure:
 void guild_drop_give::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_drop_give)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -61920,10 +60754,9 @@ void guild_drop_give::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_drop_give::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_drop_give)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -61938,10 +60771,11 @@ int guild_drop_give::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -63198,7 +62032,7 @@ guild_instance_apply::guild_instance_apply(const guild_instance_apply& from)
 
 void guild_instance_apply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _app_queue_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -63237,7 +62071,7 @@ guild_instance_apply* guild_instance_apply::New() const {
 
 void guild_instance_apply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__app_queue()) {
       if (_app_queue_ != NULL) _app_queue_->::client_baseserver::guild_app_queue::Clear();
     }
@@ -63256,18 +62090,13 @@ bool guild_instance_apply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -63313,10 +62142,9 @@ failure:
 void guild_instance_apply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_instance_apply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -63335,10 +62163,9 @@ void guild_instance_apply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_instance_apply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_instance_apply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -63360,10 +62187,11 @@ int guild_instance_apply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required .client_baseserver.guild_app_queue _app_queue = 2;
@@ -64732,7 +63560,7 @@ guild_instance_end_down::guild_instance_end_down(const guild_instance_end_down& 
 void guild_instance_end_down::SharedCtor() {
   _cached_size_ = 0;
   _summary_ = NULL;
-  _result_ = 0;
+  _result_ = 0u;
   _stage_old_progress_ = 0u;
   _join_times_ = 0u;
   _break_history_ = NULL;
@@ -64825,19 +63653,14 @@ bool guild_instance_end_down::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.battle_result _result = 2;
+      // required uint32 _result = 2;
       case 2: {
         if (tag == 16) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -64957,10 +63780,9 @@ void guild_instance_end_down::SerializeWithCachedSizes(
       1, this->_summary(), output);
   }
 
-  // required .client_baseserver.battle_result _result = 2;
+  // required uint32 _result = 2;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_result(), output);
   }
 
   // repeated uint32 _rewards = 3;
@@ -65008,10 +63830,9 @@ void guild_instance_end_down::SerializeWithCachedSizes(
         1, this->_summary(), target);
   }
 
-  // required .client_baseserver.battle_result _result = 2;
+  // required uint32 _result = 2;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_result(), target);
   }
 
   // repeated uint32 _rewards = 3;
@@ -65062,10 +63883,11 @@ int guild_instance_end_down::ByteSize() const {
           this->_summary());
     }
 
-    // required .client_baseserver.battle_result _result = 2;
+    // required uint32 _result = 2;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _stage_old_progress = 5;
@@ -65631,7 +64453,7 @@ guild_instance_open::guild_instance_open(const guild_instance_open& from)
 
 void guild_instance_open::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _raid_id_ = 0u;
   _left_time_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -65698,18 +64520,13 @@ bool guild_instance_open::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -65772,10 +64589,9 @@ failure:
 void guild_instance_open::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_instance_open)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _raid_id = 2;
@@ -65798,10 +64614,9 @@ void guild_instance_open::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_instance_open::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_instance_open)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _raid_id = 2;
@@ -65826,10 +64641,11 @@ int guild_instance_open::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _raid_id = 2;
@@ -65950,7 +64766,7 @@ guild_create::guild_create(const guild_create& from)
 
 void guild_create::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _guild_info_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -65989,7 +64805,7 @@ guild_create* guild_create::New() const {
 
 void guild_create::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__guild_info()) {
       if (_guild_info_ != NULL) _guild_info_->::client_baseserver::guild_info::Clear();
     }
@@ -66008,18 +64824,13 @@ bool guild_create::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -66065,10 +64876,9 @@ failure:
 void guild_create::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_create)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.guild_info _guild_info = 2;
@@ -66087,10 +64897,9 @@ void guild_create::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_create::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_create)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.guild_info _guild_info = 2;
@@ -66112,10 +64921,11 @@ int guild_create::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.guild_info _guild_info = 2;
@@ -66226,7 +65036,7 @@ guild_dismiss::guild_dismiss(const guild_dismiss& from)
 
 void guild_dismiss::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -66262,7 +65072,7 @@ guild_dismiss* guild_dismiss::New() const {
 }
 
 void guild_dismiss::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -66277,18 +65087,13 @@ bool guild_dismiss::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -66321,10 +65126,9 @@ failure:
 void guild_dismiss::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_dismiss)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -66337,10 +65141,9 @@ void guild_dismiss::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_dismiss::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_dismiss)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -66355,10 +65158,11 @@ int guild_dismiss::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -66913,7 +65717,7 @@ void guild_summary::SharedCtor() {
   _name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _avatar_ = 0u;
   _slogan_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _join_type_ = 1;
+  _join_type_ = 0u;
   _join_limit_ = 0u;
   _member_cnt_ = 0u;
   _president_ = NULL;
@@ -66974,6 +65778,7 @@ void guild_summary::Clear() {
 
   if (_has_bits_[0 / 32] & 255) {
     ZR_(_id_, _avatar_);
+    ZR_(_join_type_, _join_limit_);
     if (has__name()) {
       if (_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _name_->clear();
@@ -66984,8 +65789,6 @@ void guild_summary::Clear() {
         _slogan_->clear();
       }
     }
-    _join_type_ = 1;
-    _join_limit_ = 0u;
     _member_cnt_ = 0u;
     if (has__president()) {
       if (_president_ != NULL) _president_->::client_baseserver::user_summary::Clear();
@@ -67073,19 +65876,14 @@ bool guild_summary::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.guild_join_t _join_type = 5;
+      // required uint32 _join_type = 5;
       case 5: {
         if (tag == 40) {
          parse__join_type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_join_t_IsValid(value)) {
-            set__join_type(static_cast< ::client_baseserver::guild_join_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(5, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_join_type_)));
+          set_has__join_type();
         } else {
           goto handle_unusual;
         }
@@ -67236,10 +66034,9 @@ void guild_summary::SerializeWithCachedSizes(
       4, this->_slogan(), output);
   }
 
-  // required .client_baseserver.guild_join_t _join_type = 5;
+  // required uint32 _join_type = 5;
   if (has__join_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->_join_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->_join_type(), output);
   }
 
   // required uint32 _join_limit = 6;
@@ -67315,10 +66112,9 @@ void guild_summary::SerializeWithCachedSizes(
         4, this->_slogan(), target);
   }
 
-  // required .client_baseserver.guild_join_t _join_type = 5;
+  // required uint32 _join_type = 5;
   if (has__join_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->_join_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->_join_type(), target);
   }
 
   // required uint32 _join_limit = 6;
@@ -67393,10 +66189,11 @@ int guild_summary::ByteSize() const {
           this->_slogan());
     }
 
-    // required .client_baseserver.guild_join_t _join_type = 5;
+    // required uint32 _join_type = 5;
     if (has__join_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_join_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_join_type());
     }
 
     // required uint32 _join_limit = 6;
@@ -67590,7 +66387,7 @@ void guild_member::SharedCtor() {
   _cached_size_ = 0;
   _uid_ = 0u;
   _summary_ = NULL;
-  _job_ = 1;
+  _job_ = 0u;
   _last_login_ = 0u;
   _active_ = 0u;
   _join_instance_time_ = 0u;
@@ -67641,12 +66438,10 @@ void guild_member::Clear() {
   } while (0)
 
   if (_has_bits_[0 / 32] & 63) {
-    ZR_(_last_login_, _join_instance_time_);
-    _uid_ = 0u;
+    ZR_(_uid_, _join_instance_time_);
     if (has__summary()) {
       if (_summary_ != NULL) _summary_->::client_baseserver::user_summary::Clear();
     }
-    _job_ = 1;
   }
 
 #undef OFFSET_OF_FIELD_
@@ -67693,19 +66488,14 @@ bool guild_member::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.guild_job_t _job = 3;
+      // required uint32 _job = 3;
       case 3: {
         if (tag == 24) {
          parse__job:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_job_t_IsValid(value)) {
-            set__job(static_cast< ::client_baseserver::guild_job_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_job_)));
+          set_has__job();
         } else {
           goto handle_unusual;
         }
@@ -67794,10 +66584,9 @@ void guild_member::SerializeWithCachedSizes(
       2, this->_summary(), output);
   }
 
-  // required .client_baseserver.guild_job_t _job = 3;
+  // required uint32 _job = 3;
   if (has__job()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_job(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_job(), output);
   }
 
   // required uint32 _last_login = 4;
@@ -67837,10 +66626,9 @@ void guild_member::SerializeWithCachedSizes(
         2, this->_summary(), target);
   }
 
-  // required .client_baseserver.guild_job_t _job = 3;
+  // required uint32 _job = 3;
   if (has__job()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_job(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_job(), target);
   }
 
   // required uint32 _last_login = 4;
@@ -67884,10 +66672,11 @@ int guild_member::ByteSize() const {
           this->_summary());
     }
 
-    // required .client_baseserver.guild_job_t _job = 3;
+    // required uint32 _job = 3;
     if (has__job()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_job());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_job());
     }
 
     // required uint32 _last_login = 4;
@@ -68302,7 +67091,7 @@ guild_list::guild_list(const guild_list& from)
 
 void guild_list::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _create_cost_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -68383,19 +67172,14 @@ bool guild_list::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.result _result = 2 [default = success];
+      // required uint32 _result = 2;
       case 2: {
         if (tag == 16) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -68449,10 +67233,9 @@ void guild_list::SerializeWithCachedSizes(
       1, this->_guilds(i), output);
   }
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_result(), output);
   }
 
   // optional uint32 _create_cost = 3;
@@ -68477,10 +67260,9 @@ void guild_list::SerializeWithCachedSizes(
         1, this->_guilds(i), target);
   }
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_result(), target);
   }
 
   // optional uint32 _create_cost = 3;
@@ -68500,10 +67282,11 @@ int guild_list::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[1 / 32] & (0xffu << (1 % 32))) {
-    // required .client_baseserver.result _result = 2 [default = success];
+    // required uint32 _result = 2;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _create_cost = 3;
@@ -68626,7 +67409,7 @@ guild_search::guild_search(const guild_search& from)
 void guild_search::SharedCtor() {
   _cached_size_ = 0;
   _guilds_ = NULL;
-  _result_ = 0;
+  _result_ = 0u;
   _create_cost_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -68710,19 +67493,14 @@ bool guild_search::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.result _result = 2 [default = success];
+      // required uint32 _result = 2;
       case 2: {
         if (tag == 16) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -68776,10 +67554,9 @@ void guild_search::SerializeWithCachedSizes(
       1, this->_guilds(), output);
   }
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_result(), output);
   }
 
   // optional uint32 _create_cost = 3;
@@ -68804,10 +67581,9 @@ void guild_search::SerializeWithCachedSizes(
         1, this->_guilds(), target);
   }
 
-  // required .client_baseserver.result _result = 2 [default = success];
+  // required uint32 _result = 2;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_result(), target);
   }
 
   // optional uint32 _create_cost = 3;
@@ -68834,10 +67610,11 @@ int guild_search::ByteSize() const {
           this->_guilds());
     }
 
-    // required .client_baseserver.result _result = 2 [default = success];
+    // required uint32 _result = 2;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _create_cost = 3;
@@ -68930,29 +67707,6 @@ void guild_search::Swap(guild_search* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_join_join_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_join_join_result_descriptor_;
-}
-bool guild_join_join_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_join_join_result guild_join::join_fail;
-const guild_join_join_result guild_join::join_enter;
-const guild_join_join_result guild_join::join_wait;
-const guild_join_join_result guild_join::join_result_MIN;
-const guild_join_join_result guild_join::join_result_MAX;
-const int guild_join::join_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_join::kResultFieldNumber;
 const int guild_join::kJoinGuildIdFieldNumber;
@@ -68981,7 +67735,7 @@ guild_join::guild_join(const guild_join& from)
 void guild_join::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _join_guild_id_ = 0u;
   _guild_info_ = NULL;
   _cd_time_ = 0u;
@@ -69065,18 +67819,13 @@ bool guild_join::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.guild_join.join_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_join_join_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::guild_join_join_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -69169,10 +67918,9 @@ failure:
 void guild_join::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_join)
-  // required .client_baseserver.guild_join.join_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _join_guild_id = 2;
@@ -69211,10 +67959,9 @@ void guild_join::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_join::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_join)
-  // required .client_baseserver.guild_join.join_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _join_guild_id = 2;
@@ -69257,10 +68004,11 @@ int guild_join::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.guild_join.join_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _join_guild_id = 2;
@@ -69406,7 +68154,7 @@ guild_join_confirm::guild_join_confirm(const guild_join_confirm& from)
 
 void guild_join_confirm::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _new_man_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -69445,7 +68193,7 @@ guild_join_confirm* guild_join_confirm::New() const {
 
 void guild_join_confirm::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__new_man()) {
       if (_new_man_ != NULL) _new_man_->::client_baseserver::guild_member::Clear();
     }
@@ -69464,18 +68212,13 @@ bool guild_join_confirm::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -69521,10 +68264,9 @@ failure:
 void guild_join_confirm::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_join_confirm)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.guild_member _new_man = 2;
@@ -69543,10 +68285,9 @@ void guild_join_confirm::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_join_confirm::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_join_confirm)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.guild_member _new_man = 2;
@@ -69568,10 +68309,11 @@ int guild_join_confirm::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.guild_member _new_man = 2;
@@ -69682,7 +68424,7 @@ guild_leave::guild_leave(const guild_leave& from)
 
 void guild_leave::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -69718,7 +68460,7 @@ guild_leave* guild_leave::New() const {
 }
 
 void guild_leave::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -69733,18 +68475,13 @@ bool guild_leave::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -69777,10 +68514,9 @@ failure:
 void guild_leave::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_leave)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -69793,10 +68529,9 @@ void guild_leave::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_leave::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_leave)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -69811,10 +68546,11 @@ int guild_leave::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -69911,7 +68647,7 @@ guild_kick::guild_kick(const guild_kick& from)
 
 void guild_kick::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -69947,7 +68683,7 @@ guild_kick* guild_kick::New() const {
 }
 
 void guild_kick::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -69962,18 +68698,13 @@ bool guild_kick::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -70006,10 +68737,9 @@ failure:
 void guild_kick::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_kick)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -70022,10 +68752,9 @@ void guild_kick::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_kick::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_kick)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -70040,10 +68769,11 @@ int guild_kick::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -70140,7 +68870,7 @@ guild_set::guild_set(const guild_set& from)
 
 void guild_set::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -70176,7 +68906,7 @@ guild_set* guild_set::New() const {
 }
 
 void guild_set::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -70191,18 +68921,13 @@ bool guild_set::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -70235,10 +68960,9 @@ failure:
 void guild_set::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_set)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -70251,10 +68975,9 @@ void guild_set::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_set::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_set)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -70269,10 +68992,11 @@ int guild_set::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -71054,7 +69778,7 @@ guild_set_job::guild_set_job(const guild_set_job& from)
 
 void guild_set_job::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -71090,7 +69814,7 @@ guild_set_job* guild_set_job::New() const {
 }
 
 void guild_set_job::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -71105,18 +69829,13 @@ bool guild_set_job::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -71149,10 +69868,9 @@ failure:
 void guild_set_job::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_set_job)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -71165,10 +69883,9 @@ void guild_set_job::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_set_job::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_set_job)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -71183,10 +69900,11 @@ int guild_set_job::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -71284,7 +70002,7 @@ guild_add_hire::guild_add_hire(const guild_add_hire& from)
 
 void guild_add_hire::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _income_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -71350,18 +70068,13 @@ bool guild_add_hire::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -71409,10 +70122,9 @@ failure:
 void guild_add_hire::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_add_hire)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _income = 2;
@@ -71430,10 +70142,9 @@ void guild_add_hire::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_add_hire::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_add_hire)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _income = 2;
@@ -71453,10 +70164,11 @@ int guild_add_hire::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _income = 2;
@@ -71567,7 +70279,7 @@ guild_del_hire::guild_del_hire(const guild_del_hire& from)
 
 void guild_del_hire::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _hire_reward_ = 0u;
   _stay_reward_ = 0u;
   _heroid_ = 0u;
@@ -71635,18 +70347,13 @@ bool guild_del_hire::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -71724,10 +70431,9 @@ failure:
 void guild_del_hire::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_del_hire)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional uint32 _hire_reward = 2;
@@ -71755,10 +70461,9 @@ void guild_del_hire::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_del_hire::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_del_hire)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional uint32 _hire_reward = 2;
@@ -71788,10 +70493,11 @@ int guild_del_hire::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _hire_reward = 2;
@@ -71923,7 +70629,7 @@ guild_query_hires::guild_query_hires(const guild_query_hires& from)
 
 void guild_query_hires::SharedCtor() {
   _cached_size_ = 0;
-  _from_ = 0;
+  _from_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -71959,7 +70665,7 @@ guild_query_hires* guild_query_hires::New() const {
 }
 
 void guild_query_hires::Clear() {
-  _from_ = 0;
+  _from_ = 0u;
   _users_.Clear();
   _hire_uids_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -72009,19 +70715,14 @@ bool guild_query_hires::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.hire_from _from = 3;
+      // required uint32 _from = 3;
       case 3: {
         if (tag == 24) {
          parse__from:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::hire_from_IsValid(value)) {
-            set__from(static_cast< ::client_baseserver::hire_from >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_from_)));
+          set_has__from();
         } else {
           goto handle_unusual;
         }
@@ -72066,10 +70767,9 @@ void guild_query_hires::SerializeWithCachedSizes(
       2, this->_hire_uids(i), output);
   }
 
-  // required .client_baseserver.hire_from _from = 3;
+  // required uint32 _from = 3;
   if (has__from()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_from(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_from(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -72095,10 +70795,9 @@ void guild_query_hires::SerializeWithCachedSizes(
       WriteUInt32ToArray(2, this->_hire_uids(i), target);
   }
 
-  // required .client_baseserver.hire_from _from = 3;
+  // required uint32 _from = 3;
   if (has__from()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_from(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_from(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -72113,10 +70812,11 @@ int guild_query_hires::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[2 / 32] & (0xffu << (2 % 32))) {
-    // required .client_baseserver.hire_from _from = 3;
+    // required uint32 _from = 3;
     if (has__from()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_from());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_from());
     }
 
   }
@@ -73018,8 +71718,8 @@ guild_hire_hero::guild_hire_hero(const guild_hire_hero& from)
 
 void guild_hire_hero::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
-  _from_ = 0;
+  _result_ = 0u;
+  _from_ = 0u;
   _uid_ = 0u;
   _hero_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -73093,18 +71793,13 @@ bool guild_hire_hero::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.hire_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::hire_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::hire_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -73112,19 +71807,14 @@ bool guild_hire_hero::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.hire_from _from = 2;
+      // optional uint32 _from = 2;
       case 2: {
         if (tag == 16) {
          parse__from:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::hire_from_IsValid(value)) {
-            set__from(static_cast< ::client_baseserver::hire_from >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_from_)));
+          set_has__from();
         } else {
           goto handle_unusual;
         }
@@ -73185,16 +71875,14 @@ failure:
 void guild_hire_hero::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_hire_hero)
-  // required .client_baseserver.hire_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
-  // optional .client_baseserver.hire_from _from = 2;
+  // optional uint32 _from = 2;
   if (has__from()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_from(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_from(), output);
   }
 
   // optional uint32 _uid = 3;
@@ -73218,16 +71906,14 @@ void guild_hire_hero::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_hire_hero::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_hire_hero)
-  // required .client_baseserver.hire_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
-  // optional .client_baseserver.hire_from _from = 2;
+  // optional uint32 _from = 2;
   if (has__from()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_from(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_from(), target);
   }
 
   // optional uint32 _uid = 3;
@@ -73254,16 +71940,18 @@ int guild_hire_hero::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.hire_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
-    // optional .client_baseserver.hire_from _from = 2;
+    // optional uint32 _from = 2;
     if (has__from()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_from());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_from());
     }
 
     // optional uint32 _uid = 3;
@@ -73389,7 +72077,7 @@ guild_worship_req::guild_worship_req(const guild_worship_req& from)
 
 void guild_worship_req::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -73425,7 +72113,7 @@ guild_worship_req* guild_worship_req::New() const {
 }
 
 void guild_worship_req::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -73440,18 +72128,13 @@ bool guild_worship_req::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -73484,10 +72167,9 @@ failure:
 void guild_worship_req::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_worship_req)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -73500,10 +72182,9 @@ void guild_worship_req::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_worship_req::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_worship_req)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -73518,10 +72199,11 @@ int guild_worship_req::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -73619,7 +72301,7 @@ guild_worship_withdraw::guild_worship_withdraw(const guild_worship_withdraw& fro
 
 void guild_worship_withdraw::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -73655,7 +72337,7 @@ guild_worship_withdraw* guild_worship_withdraw::New() const {
 }
 
 void guild_worship_withdraw::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   _rewards_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -73671,18 +72353,13 @@ bool guild_worship_withdraw::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -73729,10 +72406,9 @@ failure:
 void guild_worship_withdraw::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.guild_worship_withdraw)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated .client_baseserver.worship_reward _rewards = 2;
@@ -73751,10 +72427,9 @@ void guild_worship_withdraw::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_worship_withdraw::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.guild_worship_withdraw)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated .client_baseserver.worship_reward _rewards = 2;
@@ -73776,10 +72451,11 @@ int guild_worship_withdraw::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -74095,27 +72771,6 @@ void guild_qurey_hh_detail::Swap(guild_qurey_hh_detail* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* worship_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return worship_reward_type_descriptor_;
-}
-bool worship_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const worship_reward_type worship_reward::gold;
-const worship_reward_type worship_reward::diamond;
-const worship_reward_type worship_reward::type_MIN;
-const worship_reward_type worship_reward::type_MAX;
-const int worship_reward::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int worship_reward::kTypeFieldNumber;
 const int worship_reward::kParam1FieldNumber;
@@ -74140,7 +72795,7 @@ worship_reward::worship_reward(const worship_reward& from)
 
 void worship_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _param1_ = 0u;
   _param2_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -74188,10 +72843,7 @@ void worship_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_param1_, _param2_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _param2_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -74210,18 +72862,13 @@ bool worship_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.worship_reward.type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::worship_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::worship_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -74284,10 +72931,9 @@ failure:
 void worship_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.worship_reward)
-  // required .client_baseserver.worship_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _param1 = 2;
@@ -74310,10 +72956,9 @@ void worship_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* worship_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.worship_reward)
-  // required .client_baseserver.worship_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _param1 = 2;
@@ -74338,10 +72983,11 @@ int worship_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.worship_reward.type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _param1 = 2;
@@ -74438,33 +73084,6 @@ void worship_reward::Swap(worship_reward* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* activity_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return activity_reward_type_descriptor_;
-}
-bool activity_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const activity_reward_type activity_reward::rmb;
-const activity_reward_type activity_reward::money;
-const activity_reward_type activity_reward::item;
-const activity_reward_type activity_reward::hero;
-const activity_reward_type activity_reward::rand_soul;
-const activity_reward_type activity_reward::type_MIN;
-const activity_reward_type activity_reward::type_MAX;
-const int activity_reward::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int activity_reward::kTypeFieldNumber;
 const int activity_reward::kIdFieldNumber;
@@ -74489,7 +73108,7 @@ activity_reward::activity_reward(const activity_reward& from)
 
 void activity_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _id_ = 0u;
   _amount_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -74537,10 +73156,7 @@ void activity_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(_id_, _amount_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _amount_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -74559,18 +73175,13 @@ bool activity_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseserver.activity_reward.type _type = 1;
+      // optional uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::activity_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::activity_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -74633,10 +73244,9 @@ failure:
 void activity_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.activity_reward)
-  // optional .client_baseserver.activity_reward.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _id = 2;
@@ -74659,10 +73269,9 @@ void activity_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* activity_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.activity_reward)
-  // optional .client_baseserver.activity_reward.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _id = 2;
@@ -74687,10 +73296,11 @@ int activity_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseserver.activity_reward.type _type = 1;
+    // optional uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _id = 2;
@@ -75316,37 +73926,6 @@ void activity_rewards::Swap(activity_rewards* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* activity_info_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return activity_info_type_descriptor_;
-}
-bool activity_info_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const activity_info_type activity_info::single_br_tavern;
-const activity_info_type activity_info::combo_br_tavern;
-const activity_info_type activity_info::single_gd_tavern;
-const activity_info_type activity_info::combo_gd_tavern;
-const activity_info_type activity_info::magic_soul_tavern;
-const activity_info_type activity_info::rmb_recharge;
-const activity_info_type activity_info::diamond_consume;
-const activity_info_type activity_info::type_MIN;
-const activity_info_type activity_info::type_MAX;
-const int activity_info::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int activity_info::kIdFieldNumber;
 const int activity_info::kTypeFieldNumber;
@@ -75378,7 +73957,7 @@ void activity_info::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   _id_ = 0u;
-  _type_ = 1;
+  _type_ = 0u;
   _start_time_ = 0u;
   _end_time_ = 0u;
   _title_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -75439,9 +74018,7 @@ void activity_info::Clear() {
   } while (0)
 
   if (_has_bits_[0 / 32] & 239) {
-    ZR_(_start_time_, _end_time_);
-    _id_ = 0u;
-    _type_ = 1;
+    ZR_(_id_, _end_time_);
     if (has__title()) {
       if (_title_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _title_->clear();
@@ -75491,19 +74068,14 @@ bool activity_info::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.activity_info.type _type = 2;
+      // optional uint32 _type = 2;
       case 2: {
         if (tag == 16) {
          parse__type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::activity_info_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::activity_info_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -75636,10 +74208,9 @@ void activity_info::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_id(), output);
   }
 
-  // optional .client_baseserver.activity_info.type _type = 2;
+  // optional uint32 _type = 2;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_type(), output);
   }
 
   // optional uint32 _start_time = 3;
@@ -75703,10 +74274,9 @@ void activity_info::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_id(), target);
   }
 
-  // optional .client_baseserver.activity_info.type _type = 2;
+  // optional uint32 _type = 2;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_type(), target);
   }
 
   // optional uint32 _start_time = 3;
@@ -75778,10 +74348,11 @@ int activity_info::ByteSize() const {
           this->_id());
     }
 
-    // optional .client_baseserver.activity_info.type _type = 2;
+    // optional uint32 _type = 2;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _start_time = 3;
@@ -75925,31 +74496,6 @@ void activity_info::Swap(activity_info* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* cdkey_gift_reply_cdkey_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return cdkey_gift_reply_cdkey_result_descriptor_;
-}
-bool cdkey_gift_reply_cdkey_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::success;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::already_used;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::not_exists;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::once_only;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::cdkey_result_MIN;
-const cdkey_gift_reply_cdkey_result cdkey_gift_reply::cdkey_result_MAX;
-const int cdkey_gift_reply::cdkey_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int cdkey_gift_reply::kResultFieldNumber;
 const int cdkey_gift_reply::kPackFieldNumber;
@@ -75974,7 +74520,7 @@ cdkey_gift_reply::cdkey_gift_reply(const cdkey_gift_reply& from)
 
 void cdkey_gift_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _pack_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -76013,7 +74559,7 @@ cdkey_gift_reply* cdkey_gift_reply::New() const {
 
 void cdkey_gift_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__pack()) {
       if (_pack_ != NULL) _pack_->::client_baseserver::res_pack::Clear();
     }
@@ -76032,18 +74578,13 @@ bool cdkey_gift_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::cdkey_gift_reply_cdkey_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::cdkey_gift_reply_cdkey_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -76089,10 +74630,9 @@ failure:
 void cdkey_gift_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.cdkey_gift_reply)
-  // required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.res_pack _pack = 2;
@@ -76111,10 +74651,9 @@ void cdkey_gift_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* cdkey_gift_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.cdkey_gift_reply)
-  // required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.res_pack _pack = 2;
@@ -76136,10 +74675,11 @@ int cdkey_gift_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.cdkey_gift_reply.cdkey_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.res_pack _pack = 2;
@@ -78528,29 +77068,6 @@ void revenge_excavate_reply::Swap(revenge_excavate_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* search_excavate_reply_search_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return search_excavate_reply_search_result_descriptor_;
-}
-bool search_excavate_reply_search_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const search_excavate_reply_search_result search_excavate_reply::success;
-const search_excavate_reply_search_result search_excavate_reply::failed;
-const search_excavate_reply_search_result search_excavate_reply::lack_money;
-const search_excavate_reply_search_result search_excavate_reply::search_result_MIN;
-const search_excavate_reply_search_result search_excavate_reply::search_result_MAX;
-const int search_excavate_reply::search_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int search_excavate_reply::kResultFieldNumber;
 const int search_excavate_reply::kExcavateFieldNumber;
@@ -78575,7 +77092,7 @@ search_excavate_reply::search_excavate_reply(const search_excavate_reply& from)
 
 void search_excavate_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _excavate_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -78614,7 +77131,7 @@ search_excavate_reply* search_excavate_reply::New() const {
 
 void search_excavate_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__excavate()) {
       if (_excavate_ != NULL) _excavate_->::client_baseserver::excavate::Clear();
     }
@@ -78633,18 +77150,13 @@ bool search_excavate_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.search_excavate_reply.search_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::search_excavate_reply_search_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::search_excavate_reply_search_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -78690,10 +77202,9 @@ failure:
 void search_excavate_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.search_excavate_reply)
-  // required .client_baseserver.search_excavate_reply.search_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.excavate _excavate = 2;
@@ -78712,10 +77223,9 @@ void search_excavate_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* search_excavate_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.search_excavate_reply)
-  // required .client_baseserver.search_excavate_reply.search_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.excavate _excavate = 2;
@@ -78737,10 +77247,11 @@ int search_excavate_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.search_excavate_reply.search_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.excavate _excavate = 2;
@@ -80508,58 +79019,6 @@ void excavate_team::Swap(excavate_team* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* excavate_owner_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return excavate_owner_descriptor_;
-}
-bool excavate_owner_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const excavate_owner excavate::mine;
-const excavate_owner excavate::others;
-const excavate_owner excavate::robot;
-const excavate_owner excavate::owner_MIN;
-const excavate_owner excavate::owner_MAX;
-const int excavate::owner_ARRAYSIZE;
-#endif  // _MSC_VER
-const ::google::protobuf::EnumDescriptor* excavate_state_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return excavate_state_descriptor_;
-}
-bool excavate_state_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const excavate_state excavate::searched;
-const excavate_state excavate::battle;
-const excavate_state excavate::shield;
-const excavate_state excavate::occupy;
-const excavate_state excavate::protect;
-const excavate_state excavate::dead;
-const excavate_state excavate::state_MIN;
-const excavate_state excavate::state_MAX;
-const int excavate::state_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int excavate::kOwnerFieldNumber;
 const int excavate::kIdFieldNumber;
@@ -80588,10 +79047,10 @@ excavate::excavate(const excavate& from)
 
 void excavate::SharedCtor() {
   _cached_size_ = 0;
-  _owner_ = 0;
+  _owner_ = 0u;
   _id_ = 0u;
   _type_id_ = 0u;
-  _state_ = 1;
+  _state_ = 0u;
   _state_end_ts_ = 0u;
   _create_time_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -80641,9 +79100,7 @@ void excavate::Clear() {
 
   if (_has_bits_[0 / 32] & 119) {
     ZR_(_owner_, _id_);
-    ZR_(_state_end_ts_, _create_time_);
-    _type_id_ = 0u;
-    _state_ = 1;
+    ZR_(_type_id_, _create_time_);
   }
 
 #undef OFFSET_OF_FIELD_
@@ -80664,18 +79121,13 @@ bool excavate::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.excavate.owner _owner = 1;
+      // required uint32 _owner = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::excavate_owner_IsValid(value)) {
-            set__owner(static_cast< ::client_baseserver::excavate_owner >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_owner_)));
+          set_has__owner();
         } else {
           goto handle_unusual;
         }
@@ -80727,19 +79179,14 @@ bool excavate::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.excavate.state _state = 5;
+      // required uint32 _state = 5;
       case 5: {
         if (tag == 40) {
          parse__state:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::excavate_state_IsValid(value)) {
-            set__state(static_cast< ::client_baseserver::excavate_state >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(5, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_state_)));
+          set_has__state();
         } else {
           goto handle_unusual;
         }
@@ -80802,10 +79249,9 @@ failure:
 void excavate::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.excavate)
-  // required .client_baseserver.excavate.owner _owner = 1;
+  // required uint32 _owner = 1;
   if (has__owner()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_owner(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_owner(), output);
   }
 
   // required uint32 _id = 2;
@@ -80824,10 +79270,9 @@ void excavate::SerializeWithCachedSizes(
       4, this->_team(i), output);
   }
 
-  // required .client_baseserver.excavate.state _state = 5;
+  // required uint32 _state = 5;
   if (has__state()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->_state(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->_state(), output);
   }
 
   // optional uint32 _state_end_ts = 6;
@@ -80850,10 +79295,9 @@ void excavate::SerializeWithCachedSizes(
 ::google::protobuf::uint8* excavate::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.excavate)
-  // required .client_baseserver.excavate.owner _owner = 1;
+  // required uint32 _owner = 1;
   if (has__owner()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_owner(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_owner(), target);
   }
 
   // required uint32 _id = 2;
@@ -80873,10 +79317,9 @@ void excavate::SerializeWithCachedSizes(
         4, this->_team(i), target);
   }
 
-  // required .client_baseserver.excavate.state _state = 5;
+  // required uint32 _state = 5;
   if (has__state()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->_state(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->_state(), target);
   }
 
   // optional uint32 _state_end_ts = 6;
@@ -80901,10 +79344,11 @@ int excavate::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.excavate.owner _owner = 1;
+    // required uint32 _owner = 1;
     if (has__owner()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_owner());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_owner());
     }
 
     // required uint32 _id = 2;
@@ -80921,10 +79365,11 @@ int excavate::ByteSize() const {
           this->_type_id());
     }
 
-    // required .client_baseserver.excavate.state _state = 5;
+    // required uint32 _state = 5;
     if (has__state()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_state());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_state());
     }
 
     // optional uint32 _state_end_ts = 6;
@@ -81044,27 +79489,6 @@ void excavate::Swap(excavate* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* excavate_history_def_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return excavate_history_def_result_descriptor_;
-}
-bool excavate_history_def_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const excavate_history_def_result excavate_history::win;
-const excavate_history_def_result excavate_history::fail;
-const excavate_history_def_result excavate_history::def_result_MIN;
-const excavate_history_def_result excavate_history::def_result_MAX;
-const int excavate_history::def_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int excavate_history::kIdFieldNumber;
 const int excavate_history::kExcavateIdFieldNumber;
@@ -81098,7 +79522,7 @@ void excavate_history::SharedCtor() {
   _cached_size_ = 0;
   _id_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _excavate_id_ = 0u;
-  _result_ = 0;
+  _result_ = 0u;
   _enemy_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _enemy_svrid_ = 0u;
   _enemy_svrname_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -81228,19 +79652,14 @@ bool excavate_history::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.excavate_history.def_result _result = 3;
+      // required uint32 _result = 3;
       case 3: {
         if (tag == 24) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::excavate_history_def_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::excavate_history_def_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -81381,10 +79800,9 @@ void excavate_history::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_excavate_id(), output);
   }
 
-  // required .client_baseserver.excavate_history.def_result _result = 3;
+  // required uint32 _result = 3;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_result(), output);
   }
 
   // required string _enemy_name = 4;
@@ -81454,10 +79872,9 @@ void excavate_history::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_excavate_id(), target);
   }
 
-  // required .client_baseserver.excavate_history.def_result _result = 3;
+  // required uint32 _result = 3;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_result(), target);
   }
 
   // required string _enemy_name = 4;
@@ -81530,10 +79947,11 @@ int excavate_history::ByteSize() const {
           this->_excavate_id());
     }
 
-    // required .client_baseserver.excavate_history.def_result _result = 3;
+    // required uint32 _result = 3;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required string _enemy_name = 4;
@@ -82526,7 +80944,7 @@ void excavate_battle::SharedCtor() {
   _cached_size_ = 0;
   _self_team_ = NULL;
   _oppo_team_ = NULL;
-  _result_ = 0;
+  _result_ = 0u;
   _record_id_ = 0u;
   _record_svrid_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -82628,19 +81046,14 @@ bool excavate_battle::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.battle_result _result = 3;
+      // required uint32 _result = 3;
       case 3: {
         if (tag == 24) {
          parse__result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -82715,10 +81128,9 @@ void excavate_battle::SerializeWithCachedSizes(
       2, this->_oppo_team(), output);
   }
 
-  // required .client_baseserver.battle_result _result = 3;
+  // required uint32 _result = 3;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_result(), output);
   }
 
   // required uint32 _record_id = 4;
@@ -82755,10 +81167,9 @@ void excavate_battle::SerializeWithCachedSizes(
         2, this->_oppo_team(), target);
   }
 
-  // required .client_baseserver.battle_result _result = 3;
+  // required uint32 _result = 3;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_result(), target);
   }
 
   // required uint32 _record_id = 4;
@@ -82797,10 +81208,11 @@ int excavate_battle::ByteSize() const {
           this->_oppo_team());
     }
 
-    // required .client_baseserver.battle_result _result = 3;
+    // required uint32 _result = 3;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _record_id = 4;
@@ -83131,31 +81543,6 @@ void query_excavate_battle_reply::Swap(query_excavate_battle_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* set_excavate_team_reply_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return set_excavate_team_reply_result_descriptor_;
-}
-bool set_excavate_team_reply_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const set_excavate_team_reply_result set_excavate_team_reply::success;
-const set_excavate_team_reply_result set_excavate_team_reply::failed;
-const set_excavate_team_reply_result set_excavate_team_reply::expired;
-const set_excavate_team_reply_result set_excavate_team_reply::fall;
-const set_excavate_team_reply_result set_excavate_team_reply::result_MIN;
-const set_excavate_team_reply_result set_excavate_team_reply::result_MAX;
-const int set_excavate_team_reply::result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int set_excavate_team_reply::kResultFieldNumber;
 const int set_excavate_team_reply::kMineFieldNumber;
@@ -83180,7 +81567,7 @@ set_excavate_team_reply::set_excavate_team_reply(const set_excavate_team_reply& 
 
 void set_excavate_team_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _mine_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -83219,7 +81606,7 @@ set_excavate_team_reply* set_excavate_team_reply::New() const {
 
 void set_excavate_team_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__mine()) {
       if (_mine_ != NULL) _mine_->::client_baseserver::excavate::Clear();
     }
@@ -83238,18 +81625,13 @@ bool set_excavate_team_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.set_excavate_team_reply.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::set_excavate_team_reply_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::set_excavate_team_reply_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -83295,10 +81677,9 @@ failure:
 void set_excavate_team_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.set_excavate_team_reply)
-  // required .client_baseserver.set_excavate_team_reply.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.excavate _mine = 2;
@@ -83317,10 +81698,9 @@ void set_excavate_team_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_excavate_team_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.set_excavate_team_reply)
-  // required .client_baseserver.set_excavate_team_reply.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.excavate _mine = 2;
@@ -83342,10 +81722,11 @@ int set_excavate_team_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.set_excavate_team_reply.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.excavate _mine = 2;
@@ -83459,7 +81840,7 @@ excavate_start_battle_reply::excavate_start_battle_reply(const excavate_start_ba
 
 void excavate_start_battle_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _rseed_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -83527,18 +81908,13 @@ bool excavate_start_battle_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -83614,10 +81990,9 @@ failure:
 void excavate_start_battle_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.excavate_start_battle_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // required uint32 _rseed = 2;
@@ -83647,10 +82022,9 @@ void excavate_start_battle_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* excavate_start_battle_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.excavate_start_battle_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // required uint32 _rseed = 2;
@@ -83684,10 +82058,11 @@ int excavate_start_battle_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _rseed = 2;
@@ -83795,27 +82170,6 @@ void excavate_start_battle_reply::Swap(excavate_start_battle_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* excavate_end_battle_reply_mine_battle_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return excavate_end_battle_reply_mine_battle_result_descriptor_;
-}
-bool excavate_end_battle_reply_mine_battle_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply::success;
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply::timeout;
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply::mine_battle_result_MIN;
-const excavate_end_battle_reply_mine_battle_result excavate_end_battle_reply::mine_battle_result_MAX;
-const int excavate_end_battle_reply::mine_battle_result_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int excavate_end_battle_reply::kResultFieldNumber;
 const int excavate_end_battle_reply::kExcavateFieldNumber;
@@ -83842,9 +82196,9 @@ excavate_end_battle_reply::excavate_end_battle_reply(const excavate_end_battle_r
 
 void excavate_end_battle_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _excavate_ = NULL;
-  _mine_battle_result_ = 0;
+  _mine_battle_result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -83916,18 +82270,13 @@ bool excavate_end_battle_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseserver.battle_result _result = 1 [default = victory];
+      // optional uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -83962,19 +82311,14 @@ bool excavate_end_battle_reply::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+      // optional uint32 _mine_battle_result = 4;
       case 4: {
         if (tag == 32) {
          parse__mine_battle_result:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::excavate_end_battle_reply_mine_battle_result_IsValid(value)) {
-            set__mine_battle_result(static_cast< ::client_baseserver::excavate_end_battle_reply_mine_battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(4, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_mine_battle_result_)));
+          set_has__mine_battle_result();
         } else {
           goto handle_unusual;
         }
@@ -84007,10 +82351,9 @@ failure:
 void excavate_end_battle_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.excavate_end_battle_reply)
-  // optional .client_baseserver.battle_result _result = 1 [default = victory];
+  // optional uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.excavate _excavate = 2;
@@ -84025,10 +82368,9 @@ void excavate_end_battle_reply::SerializeWithCachedSizes(
       3, this->_reward(i), output);
   }
 
-  // optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+  // optional uint32 _mine_battle_result = 4;
   if (has__mine_battle_result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      4, this->_mine_battle_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->_mine_battle_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -84041,10 +82383,9 @@ void excavate_end_battle_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* excavate_end_battle_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.excavate_end_battle_reply)
-  // optional .client_baseserver.battle_result _result = 1 [default = victory];
+  // optional uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.excavate _excavate = 2;
@@ -84061,10 +82402,9 @@ void excavate_end_battle_reply::SerializeWithCachedSizes(
         3, this->_reward(i), target);
   }
 
-  // optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+  // optional uint32 _mine_battle_result = 4;
   if (has__mine_battle_result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      4, this->_mine_battle_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->_mine_battle_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -84079,10 +82419,11 @@ int excavate_end_battle_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseserver.battle_result _result = 1 [default = victory];
+    // optional uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.excavate _excavate = 2;
@@ -84092,10 +82433,11 @@ int excavate_end_battle_reply::ByteSize() const {
           this->_excavate());
     }
 
-    // optional .client_baseserver.excavate_end_battle_reply.mine_battle_result _mine_battle_result = 4 [default = success];
+    // optional uint32 _mine_battle_result = 4;
     if (has__mine_battle_result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_mine_battle_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_mine_battle_result());
     }
 
   }
@@ -84453,35 +82795,6 @@ void draw_excav_res_reply::Swap(draw_excav_res_reply* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* excavate_reward_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return excavate_reward_type_descriptor_;
-}
-bool excavate_reward_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const excavate_reward_type excavate_reward::gold;
-const excavate_reward_type excavate_reward::diamond;
-const excavate_reward_type excavate_reward::item;
-const excavate_reward_type excavate_reward::wood;
-const excavate_reward_type excavate_reward::iron;
-const excavate_reward_type excavate_reward::crystal;
-const excavate_reward_type excavate_reward::type_MIN;
-const excavate_reward_type excavate_reward::type_MAX;
-const int excavate_reward::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int excavate_reward::kTypeFieldNumber;
 const int excavate_reward::kTeamIdFieldNumber;
@@ -84507,7 +82820,7 @@ excavate_reward::excavate_reward(const excavate_reward& from)
 
 void excavate_reward::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _team_id_ = 0u;
   _param1_ = 0u;
   _param2_ = 0u;
@@ -84556,10 +82869,7 @@ void excavate_reward::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 15) {
-    ZR_(_team_id_, _param2_);
-    _type_ = 1;
-  }
+  ZR_(_type_, _param2_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -84578,18 +82888,13 @@ bool excavate_reward::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.excavate_reward.type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::excavate_reward_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseserver::excavate_reward_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -84667,10 +82972,9 @@ failure:
 void excavate_reward::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.excavate_reward)
-  // required .client_baseserver.excavate_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _team_id = 2;
@@ -84698,10 +83002,9 @@ void excavate_reward::SerializeWithCachedSizes(
 ::google::protobuf::uint8* excavate_reward::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.excavate_reward)
-  // required .client_baseserver.excavate_reward.type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _team_id = 2;
@@ -84731,10 +83034,11 @@ int excavate_reward::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.excavate_reward.type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _team_id = 2;
@@ -85094,7 +83398,7 @@ clear_excavate_battle_reply::clear_excavate_battle_reply(const clear_excavate_ba
 
 void clear_excavate_battle_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -85130,7 +83434,7 @@ clear_excavate_battle_reply* clear_excavate_battle_reply::New() const {
 }
 
 void clear_excavate_battle_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -85145,18 +83449,13 @@ bool clear_excavate_battle_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -85189,10 +83488,9 @@ failure:
 void clear_excavate_battle_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.clear_excavate_battle_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -85205,10 +83503,9 @@ void clear_excavate_battle_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* clear_excavate_battle_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.clear_excavate_battle_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -85223,10 +83520,11 @@ int clear_excavate_battle_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -85323,7 +83621,7 @@ withdraw_excavate_hero_reply::withdraw_excavate_hero_reply(const withdraw_excava
 
 void withdraw_excavate_hero_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -85359,7 +83657,7 @@ withdraw_excavate_hero_reply* withdraw_excavate_hero_reply::New() const {
 }
 
 void withdraw_excavate_hero_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -85374,18 +83672,13 @@ bool withdraw_excavate_hero_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -85418,10 +83711,9 @@ failure:
 void withdraw_excavate_hero_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.withdraw_excavate_hero_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -85434,10 +83726,9 @@ void withdraw_excavate_hero_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* withdraw_excavate_hero_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.withdraw_excavate_hero_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -85452,10 +83743,11 @@ int withdraw_excavate_hero_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -85553,7 +83845,7 @@ draw_excavate_def_rwd_reply::draw_excavate_def_rwd_reply(const draw_excavate_def
 
 void draw_excavate_def_rwd_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _draw_vitality_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -85619,18 +83911,13 @@ bool draw_excavate_def_rwd_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -85678,10 +83965,9 @@ failure:
 void draw_excavate_def_rwd_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.draw_excavate_def_rwd_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional uint32 _draw_vitality = 2;
@@ -85699,10 +83985,9 @@ void draw_excavate_def_rwd_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* draw_excavate_def_rwd_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.draw_excavate_def_rwd_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional uint32 _draw_vitality = 2;
@@ -85722,10 +84007,11 @@ int draw_excavate_def_rwd_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _draw_vitality = 2;
@@ -85835,7 +84121,7 @@ drop_excavate_reply::drop_excavate_reply(const drop_excavate_reply& from)
 
 void drop_excavate_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _reward_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -85874,7 +84160,7 @@ drop_excavate_reply* drop_excavate_reply::New() const {
 
 void drop_excavate_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__reward()) {
       if (_reward_ != NULL) _reward_->::client_baseserver::excavate_reward::Clear();
     }
@@ -85893,18 +84179,13 @@ bool drop_excavate_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1 [default = success];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -85950,10 +84231,9 @@ failure:
 void drop_excavate_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.drop_excavate_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.excavate_reward _reward = 2;
@@ -85972,10 +84252,9 @@ void drop_excavate_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* drop_excavate_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.drop_excavate_reply)
-  // required .client_baseserver.result _result = 1 [default = success];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.excavate_reward _reward = 2;
@@ -85997,10 +84276,11 @@ int drop_excavate_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1 [default = success];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.excavate_reward _reward = 2;
@@ -86112,7 +84392,7 @@ change_server_reply::change_server_reply(const change_server_reply& from)
 
 void change_server_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -86148,7 +84428,7 @@ change_server_reply* change_server_reply::New() const {
 }
 
 void change_server_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   _server_info_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -86164,18 +84444,13 @@ bool change_server_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.server_opt_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::server_opt_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::server_opt_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -86222,10 +84497,9 @@ failure:
 void change_server_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.change_server_reply)
-  // required .client_baseserver.server_opt_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated .client_baseserver.server_info _server_info = 2;
@@ -86244,10 +84518,9 @@ void change_server_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* change_server_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.change_server_reply)
-  // required .client_baseserver.server_opt_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated .client_baseserver.server_info _server_info = 2;
@@ -86269,10 +84542,11 @@ int change_server_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.server_opt_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -86754,27 +85028,6 @@ void server_info::Swap(server_info* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_instance_query_is_can_jump_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_instance_query_is_can_jump_descriptor_;
-}
-bool guild_instance_query_is_can_jump_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_instance_query_is_can_jump guild_instance_query::true;
-const guild_instance_query_is_can_jump guild_instance_query::false;
-const guild_instance_query_is_can_jump guild_instance_query::is_can_jump_MIN;
-const guild_instance_query_is_can_jump guild_instance_query::is_can_jump_MAX;
-const int guild_instance_query::is_can_jump_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_instance_query::kCurrentRaidIdFieldNumber;
 const int guild_instance_query::kSummaryFieldNumber;
@@ -86802,7 +85055,7 @@ void guild_instance_query::SharedCtor() {
   _cached_size_ = 0;
   _current_raid_id_ = 0u;
   _stage_pass_ = 0u;
-  _is_can_jump_ = 1;
+  _is_can_jump_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -86848,10 +85101,7 @@ void guild_instance_query::Clear() {
     ::memset(&first, 0, n);                                \
   } while (0)
 
-  if (_has_bits_[0 / 32] & 13) {
-    ZR_(_current_raid_id_, _stage_pass_);
-    _is_can_jump_ = 1;
-  }
+  ZR_(_current_raid_id_, _is_can_jump_);
 
 #undef OFFSET_OF_FIELD_
 #undef ZR_
@@ -86914,19 +85164,14 @@ bool guild_instance_query::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+      // required uint32 _is_can_jump = 4;
       case 4: {
         if (tag == 32) {
          parse__is_can_jump:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_instance_query_is_can_jump_IsValid(value)) {
-            set__is_can_jump(static_cast< ::client_baseserver::guild_instance_query_is_can_jump >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(4, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_is_can_jump_)));
+          set_has__is_can_jump();
         } else {
           goto handle_unusual;
         }
@@ -86975,10 +85220,9 @@ void guild_instance_query::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_stage_pass(), output);
   }
 
-  // required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+  // required uint32 _is_can_jump = 4;
   if (has__is_can_jump()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      4, this->_is_can_jump(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->_is_can_jump(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -87008,10 +85252,9 @@ void guild_instance_query::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_stage_pass(), target);
   }
 
-  // required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+  // required uint32 _is_can_jump = 4;
   if (has__is_can_jump()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      4, this->_is_can_jump(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->_is_can_jump(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -87040,10 +85283,11 @@ int guild_instance_query::ByteSize() const {
           this->_stage_pass());
     }
 
-    // required .client_baseserver.guild_instance_query.is_can_jump _is_can_jump = 4;
+    // required uint32 _is_can_jump = 4;
     if (has__is_can_jump()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_is_can_jump());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_is_can_jump());
     }
 
   }
@@ -87528,27 +85772,6 @@ void guild_chapter::Swap(guild_chapter* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_instance_detail_challenger_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_instance_detail_challenger_status_descriptor_;
-}
-bool guild_instance_detail_challenger_status_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_instance_detail_challenger_status guild_instance_detail::battle;
-const guild_instance_detail_challenger_status guild_instance_detail::prepare;
-const guild_instance_detail_challenger_status guild_instance_detail::challenger_status_MIN;
-const guild_instance_detail_challenger_status guild_instance_detail::challenger_status_MAX;
-const int guild_instance_detail::challenger_status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_instance_detail::kStageFieldNumber;
 const int guild_instance_detail::kWaveFieldNumber;
@@ -87580,7 +85803,7 @@ void guild_instance_detail::SharedCtor() {
   _stage_ = 0u;
   _wave_ = 0u;
   _challenger_ = NULL;
-  _challenger_status_ = 1;
+  _challenger_status_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -87632,7 +85855,7 @@ void guild_instance_detail::Clear() {
     if (has__challenger()) {
       if (_challenger_ != NULL) _challenger_->::client_baseserver::guild_challenger::Clear();
     }
-    _challenger_status_ = 1;
+    _challenger_status_ = 0u;
   }
 
 #undef OFFSET_OF_FIELD_
@@ -87729,19 +85952,14 @@ bool guild_instance_detail::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+      // optional uint32 _challenger_status = 6;
       case 6: {
         if (tag == 48) {
          parse__challenger_status:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_instance_detail_challenger_status_IsValid(value)) {
-            set__challenger_status(static_cast< ::client_baseserver::guild_instance_detail_challenger_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(6, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_challenger_status_)));
+          set_has__challenger_status();
         } else {
           goto handle_unusual;
         }
@@ -87802,10 +86020,9 @@ void guild_instance_detail::SerializeWithCachedSizes(
       5, this->_challenger(), output);
   }
 
-  // optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+  // optional uint32 _challenger_status = 6;
   if (has__challenger_status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      6, this->_challenger_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->_challenger_status(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -87848,10 +86065,9 @@ void guild_instance_detail::SerializeWithCachedSizes(
         5, this->_challenger(), target);
   }
 
-  // optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+  // optional uint32 _challenger_status = 6;
   if (has__challenger_status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      6, this->_challenger_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->_challenger_status(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -87887,10 +86103,11 @@ int guild_instance_detail::ByteSize() const {
           this->_challenger());
     }
 
-    // optional .client_baseserver.guild_instance_detail.challenger_status _challenger_status = 6;
+    // optional uint32 _challenger_status = 6;
     if (has__challenger_status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_challenger_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_challenger_status());
     }
 
   }
@@ -88973,27 +87190,6 @@ void guild_instance_summary::Swap(guild_instance_summary* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_instance_item_drop_state_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_instance_item_drop_state_descriptor_;
-}
-bool guild_instance_item_drop_state_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_instance_item_drop_state guild_instance_item::no_apply;
-const guild_instance_item_drop_state guild_instance_item::apply;
-const guild_instance_item_drop_state guild_instance_item::drop_state_MIN;
-const guild_instance_item_drop_state guild_instance_item::drop_state_MAX;
-const int guild_instance_item::drop_state_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_instance_item::kItemIdFieldNumber;
 const int guild_instance_item::kNumFieldNumber;
@@ -89022,7 +87218,7 @@ void guild_instance_item::SharedCtor() {
   _cached_size_ = 0;
   _item_id_ = 0u;
   _num_ = 0u;
-  _state_ = 1;
+  _state_ = 0u;
   _apply_num_ = 0u;
   _able_app_count_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -89071,9 +87267,7 @@ void guild_instance_item::Clear() {
   } while (0)
 
   if (_has_bits_[0 / 32] & 31) {
-    ZR_(_item_id_, _num_);
-    ZR_(_apply_num_, _able_app_count_);
-    _state_ = 1;
+    ZR_(_item_id_, _able_app_count_);
   }
 
 #undef OFFSET_OF_FIELD_
@@ -89122,19 +87316,14 @@ bool guild_instance_item::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseserver.guild_instance_item.drop_state _state = 3;
+      // required uint32 _state = 3;
       case 3: {
         if (tag == 24) {
          parse__state:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::guild_instance_item_drop_state_IsValid(value)) {
-            set__state(static_cast< ::client_baseserver::guild_instance_item_drop_state >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_state_)));
+          set_has__state();
         } else {
           goto handle_unusual;
         }
@@ -89207,10 +87396,9 @@ void guild_instance_item::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_num(), output);
   }
 
-  // required .client_baseserver.guild_instance_item.drop_state _state = 3;
+  // required uint32 _state = 3;
   if (has__state()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_state(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_state(), output);
   }
 
   // required uint32 _apply_num = 4;
@@ -89243,10 +87431,9 @@ void guild_instance_item::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_num(), target);
   }
 
-  // required .client_baseserver.guild_instance_item.drop_state _state = 3;
+  // required uint32 _state = 3;
   if (has__state()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_state(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_state(), target);
   }
 
   // required uint32 _apply_num = 4;
@@ -89285,10 +87472,11 @@ int guild_instance_item::ByteSize() const {
           this->_num());
     }
 
-    // required .client_baseserver.guild_instance_item.drop_state _state = 3;
+    // required uint32 _state = 3;
     if (has__state()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_state());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_state());
     }
 
     // required uint32 _apply_num = 4;
@@ -90625,7 +88813,7 @@ split_hero_reply::split_hero_reply(const split_hero_reply& from)
 
 void split_hero_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _hero_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -90664,7 +88852,7 @@ split_hero_reply* split_hero_reply::New() const {
 
 void split_hero_reply::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _result_ = 0;
+    _result_ = 0u;
     if (has__hero()) {
       if (_hero_ != NULL) _hero_->::client_baseserver::hero::Clear();
     }
@@ -90683,18 +88871,13 @@ bool split_hero_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -90740,10 +88923,9 @@ failure:
 void split_hero_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.split_hero_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -90762,10 +88944,9 @@ void split_hero_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* split_hero_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.split_hero_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional .client_baseserver.hero _hero = 2;
@@ -90787,10 +88968,11 @@ int split_hero_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional .client_baseserver.hero _hero = 2;
@@ -91989,7 +90171,7 @@ worldcup_submit_reply::worldcup_submit_reply(const worldcup_submit_reply& from)
 
 void worldcup_submit_reply::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -92025,7 +90207,7 @@ worldcup_submit_reply* worldcup_submit_reply::New() const {
 }
 
 void worldcup_submit_reply::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -92040,18 +90222,13 @@ bool worldcup_submit_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::result_IsValid(value)) {
-            set__result(static_cast< ::client_baseserver::result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -92084,10 +90261,9 @@ failure:
 void worldcup_submit_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.worldcup_submit_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -92100,10 +90276,9 @@ void worldcup_submit_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* worldcup_submit_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.worldcup_submit_reply)
-  // required .client_baseserver.result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -92118,10 +90293,11 @@ int worldcup_submit_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -93042,43 +91218,6 @@ void ranklist_item::Swap(ranklist_item* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* query_ranklist_reply_rank_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return query_ranklist_reply_rank_type_descriptor_;
-}
-bool query_ranklist_reply_rank_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const query_ranklist_reply_rank_type query_ranklist_reply::guildliveness;
-const query_ranklist_reply_rank_type query_ranklist_reply::excavate_rob;
-const query_ranklist_reply_rank_type query_ranklist_reply::excavate_gold;
-const query_ranklist_reply_rank_type query_ranklist_reply::excavate_exp;
-const query_ranklist_reply_rank_type query_ranklist_reply::top_gs;
-const query_ranklist_reply_rank_type query_ranklist_reply::full_hero_gs;
-const query_ranklist_reply_rank_type query_ranklist_reply::hero_team_gs;
-const query_ranklist_reply_rank_type query_ranklist_reply::hero_evo_star;
-const query_ranklist_reply_rank_type query_ranklist_reply::hero_arousal;
-const query_ranklist_reply_rank_type query_ranklist_reply::top_arena;
-const query_ranklist_reply_rank_type query_ranklist_reply::rank_type_MIN;
-const query_ranklist_reply_rank_type query_ranklist_reply::rank_type_MAX;
-const int query_ranklist_reply::rank_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int query_ranklist_reply::kRankTypeFieldNumber;
 const int query_ranklist_reply::kRanklistItemFieldNumber;
@@ -93106,7 +91245,7 @@ query_ranklist_reply::query_ranklist_reply(const query_ranklist_reply& from)
 
 void query_ranklist_reply::SharedCtor() {
   _cached_size_ = 0;
-  _rank_type_ = 1;
+  _rank_type_ = 0u;
   _self_ranking_ = 0u;
   _self_item_ = NULL;
   _self_prev_pos_ = 0u;
@@ -93146,14 +91285,27 @@ query_ranklist_reply* query_ranklist_reply::New() const {
 }
 
 void query_ranklist_reply::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<query_ranklist_reply*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 29) {
-    _rank_type_ = 1;
-    _self_ranking_ = 0u;
+    ZR_(_rank_type_, _self_ranking_);
     if (has__self_item()) {
       if (_self_item_ != NULL) _self_item_->::client_baseserver::ranklist_item::Clear();
     }
     _self_prev_pos_ = 0u;
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _ranklist_item_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -93169,18 +91321,13 @@ bool query_ranklist_reply::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+      // required uint32 _rank_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseserver::query_ranklist_reply_rank_type_IsValid(value)) {
-            set__rank_type(static_cast< ::client_baseserver::query_ranklist_reply_rank_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_rank_type_)));
+          set_has__rank_type();
         } else {
           goto handle_unusual;
         }
@@ -93270,10 +91417,9 @@ failure:
 void query_ranklist_reply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseserver.query_ranklist_reply)
-  // required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   if (has__rank_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_rank_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_rank_type(), output);
   }
 
   // repeated .client_baseserver.ranklist_item _ranklist_item = 2;
@@ -93308,10 +91454,9 @@ void query_ranklist_reply::SerializeWithCachedSizes(
 ::google::protobuf::uint8* query_ranklist_reply::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseserver.query_ranklist_reply)
-  // required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   if (has__rank_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_rank_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_rank_type(), target);
   }
 
   // repeated .client_baseserver.ranklist_item _ranklist_item = 2;
@@ -93350,10 +91495,11 @@ int query_ranklist_reply::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseserver.query_ranklist_reply.rank_type _rank_type = 1;
+    // required uint32 _rank_type = 1;
     if (has__rank_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_rank_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_rank_type());
     }
 
     // optional uint32 _self_ranking = 3;

@@ -10,7 +10,7 @@ xpcall(function()
   CCNode = {}
   CCSprite = {}
   ed.HpBar = {}
-  LegendLog = log
+  --LegendLog = log
   require("resource_manager")
   require("datatable")
   require("battle/edp")
