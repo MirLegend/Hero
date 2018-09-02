@@ -459,27 +459,30 @@ typedef KBEUnordered_map< std::string, std::string >			SPACE_DATA;												//
 
 #if defined(_WIN32)
 
+#define KBE_MIN std::min
+#define KBE_MAX std::max
+
 #undef min
-#define min min
+//#define min min
 #undef max
-#define max max
-
-template <class T>
-inline const T & min( const T & a, const T & b )
-{
-	return b < a ? b : a;
-}
-
-template <class T>
-inline const T & max( const T & a, const T & b )
-{
-	return a < b ? b : a;
-}
-
-#define KBE_MIN min
-#define KBE_MAX max
-
-#define NOMINMAX
+//#define max max
+//
+//template <class T>
+//inline const T & min( const T & a, const T & b )
+//{
+//	return b < a ? b : a;
+//}
+//
+//template <class T>
+//inline const T & max( const T & a, const T & b )
+//{
+//	return a < b ? b : a;
+//}
+//
+//#define KBE_MIN min
+//#define KBE_MAX max
+//
+//#define NOMINMAX
 
 #else
 

@@ -527,10 +527,11 @@ local function complete(key)
     end
     ed.player:increaseTutorial(id)
     completeAddition(key)
-    --local msg = ed.upmsg.tutorial()
-    --msg._record = ed.player._tutorial
+    local msg = ed.upmsg.tutorial()
+    msg._record = ed.player._tutorial
     --if key == "_5v5Anim" then
-    --  ed.send(msg, "tutorial")
+    --ed.dump(ed.player._tutorial)
+      ed.send(msg, "tutorial")
     --else
     --  ed.delaySend(msg, "tutorial")
     --end

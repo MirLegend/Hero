@@ -119,6 +119,7 @@ local function doTavern(self, box, times)
   local msg = ed.upmsg.tavern_draw()
   msg._draw_type = drawType
   msg._box_type = box_index[box]
+  --print("tavern_draw2 Sending msg: _box_type:" .. box_index[box] .. " drawtp:"..drawType)
   ed.send(msg, "tavern_draw")
   self.isTaverning = true
 end

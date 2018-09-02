@@ -24,7 +24,7 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 //#include "data_download.h"
 #include "network/channel.h"
 
-#include "proto/cb.pb.h"
+//#include "proto/cb.pb.h"
 #include "proto/bmb.pb.h"
 #include "../../server/basemgr/basemgr_interface.h"
 #include "proto/basedb.pb.h"
@@ -234,6 +234,7 @@ bool Proxy::sendToClient(bool expectData)
 //-------------------------------------------------------------------------------------
 void Proxy::sendUserDownInfo()
 {
+	time_t timestap = time(0);
 	Network::Bundle* pBundle = Network::Bundle::createPoolObject();
 	pBundle->newMessage(91, 6);
 	client_baseserver::down_msg downmsg;
@@ -245,10 +246,12 @@ void Proxy::sendUserDownInfo()
 	client_baseserver::user* pUserData = loginreply.mutable__user();
 	pUserData->set__userid(id());
 
+	downmsg.set__svr_time(timestap); //服务器当前时间戳
+
 	//nameCard
 	client_baseserver::name_card* pNameCard = pUserData->mutable__name_card();
 	pNameCard->set__name(nickName_);
-	pNameCard->set__last_set_name_time(0);
+	pNameCard->set__last_set_name_time(timestap);
 	pNameCard->set__avatar(0);
 
 	pUserData->set__level(level_);
@@ -273,14 +276,14 @@ void Proxy::sendUserDownInfo()
 
 	//Usermidas
 	client_baseserver::usermidas* pUserMidas = pUserData->mutable__usermidas();
-	pUserMidas->set__last_change(0);
+	pUserMidas->set__last_change(timestap);
 	pUserMidas->set__today_times(0);
 
 	//vitality
 	client_baseserver::vitality* pVitality = pUserData->mutable__vitality();
 	pVitality->set__current(100);
 	pVitality->set__lastbuy(0);
-	pVitality->set__lastchange(0);
+	pVitality->set__lastchange(timestap);
 	pVitality->set__todaybuy(0);
 
 	//heros info
@@ -297,10 +300,10 @@ void Proxy::sendUserDownInfo()
 
 	//玩家关卡相关信息
 	client_baseserver::userstage* pUserStage = pUserData->mutable__userstage();
-	pUserStage->set__elite_reset_time(0);
-	pUserStage->set__act_reset_time(0);
+	pUserStage->set__elite_reset_time(timestap);
+	pUserStage->set__act_reset_time(timestap);
 	client_baseserver::sweep* psweep = pUserStage->mutable__sweep();
-	psweep->set__last_reset_time(0);
+	psweep->set__last_reset_time(timestap);
 	psweep->set__today_free_sweep_times(0);
 
 	//shop info
@@ -332,12 +335,91 @@ void Proxy::sendUserDownInfo()
 	pGuid->set__name("asdf");
 
 	client_baseserver::chat* pChat = pUserData->mutable__chat();
-	pChat->set__world_chat_times(0);
-	pChat->set__last_reset_world_chat_time(0);
+	pChat->set__world_chat_times(timestap);
+	pChat->set__last_reset_world_chat_time(timestap);
 
 	printf("downmsg size:%d, %d \n", downmsg.ByteSize(), loginreply.ByteSize());
 	ADDTOBUNDLE((*pBundle), downmsg)
 		this->sendToClient(pBundle);
+}
+
+void Proxy::OnProcessClientUpMsg(MemoryStream& s)
+{
+	client_baseup::up_msg upCmd;
+	client_baseserver::down_msg downmsg;
+	PARSEBUNDLE(s, upCmd)
+
+	bool breply = false;
+
+	/////////////////32 新手引导/////////////////////
+	if (upCmd.has__tutorial()) //新手引导
+	{
+		breply |= this->OnTutorial(upCmd._tutorial(), downmsg);
+	}
+
+	/////////////////50 魂匣/////////////////////
+	if (upCmd.has__ask_magicsoul())
+	{
+		breply |= this->OnAskMagicsoul(upCmd._ask_magicsoul(), downmsg);
+	}
+
+	/////////////////26 tavern/////////////////////
+	if (upCmd.has__tavern_draw())
+	{
+		breply |= this->OnTavernDraw(upCmd._tavern_draw(), downmsg);
+	}
+
+	if (breply)
+	{
+		time_t timestap = time(0);
+		Network::Bundle* pBundle = Network::Bundle::createPoolObject();
+		pBundle->newMessage(91, 6);
+		downmsg.set__svr_time(timestap); //服务器当前时间戳
+		ADDTOBUNDLE((*pBundle), downmsg)
+			this->sendToClient(pBundle);
+	}
+}
+
+bool Proxy::OnTutorial(const client_baseup::tutorial& tutorialmsg, client_baseserver::down_msg& downmsg)
+{
+	DEBUG_MSG(fmt::format("OnTutorial id:{}", this->id()));
+
+	/*for (size_t i = 0; i < tutorialmsg._record_size(); i++)
+	{
+	printf("OnTutorial i:%d, v:%d  \n", i, tutorialmsg._record(i));
+	}*/
+
+	client_baseserver::tutorial_reply* preply = downmsg.mutable__tutorial_reply();
+	preply->set__result(0);
+	return true;
+}
+
+bool Proxy::OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg, client_baseserver::down_msg& downmsg)
+{
+	DEBUG_MSG(fmt::format("OnAskMagicsoul id:{}", this->id()));
+
+	/*for (size_t i = 0; i < tutorialmsg._record_size(); i++)
+	{
+	printf("OnTutorial i:%d, v:%d  \n", i, tutorialmsg._record(i));
+	}*/
+
+	//client_baseserver::ask_magicsoul_reply* preply = downmsg.mutable__ask_magicsoul_reply();
+	//preply->set__result(0);
+	return false;
+}
+
+bool Proxy::OnTavernDraw(const client_baseup::tavern_draw& tavern_drawmsg, client_baseserver::down_msg& downmsg)
+{
+	DEBUG_MSG(fmt::format("OnTavernDraw id:{}", this->id()));
+
+	/*for (size_t i = 0; i < tutorialmsg._record_size(); i++)
+	{
+	printf("OnTutorial i:%d, v:%d  \n", i, tutorialmsg._record(i));
+	}*/
+
+	//client_baseserver::ask_magicsoul_reply* preply = downmsg.mutable__ask_magicsoul_reply();
+	//preply->set__result(0);
+	return false;
 }
 
 //-------------------------------------------------------------------------------------

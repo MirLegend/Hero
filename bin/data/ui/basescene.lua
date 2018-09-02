@@ -246,7 +246,7 @@ local updateVitalityHandler = function(self)
 end
 class.updateVitalityHandler = updateVitalityHandler
 local update = function(self, dt)
-  self.updateVitality(dt)
+  --self.updateVitality(dt)
   for k, v in pairs(self.updateHandlerList or {}) do
     if v then
       xpcall(function()

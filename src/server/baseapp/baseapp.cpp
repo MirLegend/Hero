@@ -429,9 +429,25 @@ void BaseApp::loginBaseapp(Network::Channel* pChannel, MemoryStream& s)
 //
 void BaseApp::onClientUpMsg(Network::Channel* pChannel, MemoryStream& s)
 {
-	client_baseup::up_msg upCmd;
-	PARSEBUNDLE(s, upCmd)
-		printf("onClientUpMsg-------------------------\n");
+	ENTITY_ID pid = pChannel->proxyID();
+
+	if (pid > 0)
+	{
+		Proxy* proxy = static_cast<Proxy*>(this->findEntity(pid));
+		if (proxy)
+		{
+			proxy->OnProcessClientUpMsg(s);
+			return;
+		}
+		else
+		{
+			ERROR_MSG(fmt::format("onClientUpMsg proxyid:{} not found!", pid));
+		}
+	}
+	else
+	{
+		ERROR_MSG(fmt::format("onClientUpMsg error  proxyid is null!"));
+	}
 }
 
 //-------------------------------------------------------------------------------------

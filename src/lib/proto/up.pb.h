@@ -23,7 +23,6 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
-#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
@@ -199,554 +198,6 @@ class request_guild_log;
 class query_act_stage;
 class fb_attention;
 
-enum system_setting_change_setting_status {
-  system_setting_change_setting_status_on = 1,
-  system_setting_change_setting_status_off = 2
-};
-bool system_setting_change_setting_status_IsValid(int value);
-const system_setting_change_setting_status system_setting_change_setting_status_setting_status_MIN = system_setting_change_setting_status_on;
-const system_setting_change_setting_status system_setting_change_setting_status_setting_status_MAX = system_setting_change_setting_status_off;
-const int system_setting_change_setting_status_setting_status_ARRAYSIZE = system_setting_change_setting_status_setting_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* system_setting_change_setting_status_descriptor();
-inline const ::std::string& system_setting_change_setting_status_Name(system_setting_change_setting_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    system_setting_change_setting_status_descriptor(), value);
-}
-inline bool system_setting_change_setting_status_Parse(
-    const ::std::string& name, system_setting_change_setting_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<system_setting_change_setting_status>(
-    system_setting_change_setting_status_descriptor(), name, value);
-}
-enum set_money_price_type {
-  set_money_price_type_gold = 0,
-  set_money_price_type_diamond = 1,
-  set_money_price_type_crusadepoint = 2,
-  set_money_price_type_arenapoint = 3,
-  set_money_price_type_guildpoint = 4
-};
-bool set_money_price_type_IsValid(int value);
-const set_money_price_type set_money_price_type_price_type_MIN = set_money_price_type_gold;
-const set_money_price_type set_money_price_type_price_type_MAX = set_money_price_type_guildpoint;
-const int set_money_price_type_price_type_ARRAYSIZE = set_money_price_type_price_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* set_money_price_type_descriptor();
-inline const ::std::string& set_money_price_type_Name(set_money_price_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    set_money_price_type_descriptor(), value);
-}
-inline bool set_money_price_type_Parse(
-    const ::std::string& name, set_money_price_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<set_money_price_type>(
-    set_money_price_type_descriptor(), name, value);
-}
-enum buy_vitality_type {
-  buy_vitality_type_shadow_rune = 1,
-  buy_vitality_type_vitality = 2
-};
-bool buy_vitality_type_IsValid(int value);
-const buy_vitality_type buy_vitality_type_type_MIN = buy_vitality_type_shadow_rune;
-const buy_vitality_type buy_vitality_type_type_MAX = buy_vitality_type_vitality;
-const int buy_vitality_type_type_ARRAYSIZE = buy_vitality_type_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* buy_vitality_type_descriptor();
-inline const ::std::string& buy_vitality_type_Name(buy_vitality_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    buy_vitality_type_descriptor(), value);
-}
-inline bool buy_vitality_type_Parse(
-    const ::std::string& name, buy_vitality_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<buy_vitality_type>(
-    buy_vitality_type_descriptor(), name, value);
-}
-enum shop_refresh_rtype {
-  shop_refresh_rtype_sync = 0,
-  shop_refresh_rtype_auto_refresh = 1,
-  shop_refresh_rtype_manual_refresh = 2
-};
-bool shop_refresh_rtype_IsValid(int value);
-const shop_refresh_rtype shop_refresh_rtype_rtype_MIN = shop_refresh_rtype_sync;
-const shop_refresh_rtype shop_refresh_rtype_rtype_MAX = shop_refresh_rtype_manual_refresh;
-const int shop_refresh_rtype_rtype_ARRAYSIZE = shop_refresh_rtype_rtype_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* shop_refresh_rtype_descriptor();
-inline const ::std::string& shop_refresh_rtype_Name(shop_refresh_rtype value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    shop_refresh_rtype_descriptor(), value);
-}
-inline bool shop_refresh_rtype_Parse(
-    const ::std::string& name, shop_refresh_rtype* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<shop_refresh_rtype>(
-    shop_refresh_rtype_descriptor(), name, value);
-}
-enum hero_equip_upgrade_OP_TYPE {
-  hero_equip_upgrade_OP_TYPE_normal = 1,
-  hero_equip_upgrade_OP_TYPE_boss = 2
-};
-bool hero_equip_upgrade_OP_TYPE_IsValid(int value);
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade_OP_TYPE_OP_TYPE_MIN = hero_equip_upgrade_OP_TYPE_normal;
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade_OP_TYPE_OP_TYPE_MAX = hero_equip_upgrade_OP_TYPE_boss;
-const int hero_equip_upgrade_OP_TYPE_OP_TYPE_ARRAYSIZE = hero_equip_upgrade_OP_TYPE_OP_TYPE_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hero_equip_upgrade_OP_TYPE_descriptor();
-inline const ::std::string& hero_equip_upgrade_OP_TYPE_Name(hero_equip_upgrade_OP_TYPE value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hero_equip_upgrade_OP_TYPE_descriptor(), value);
-}
-inline bool hero_equip_upgrade_OP_TYPE_Parse(
-    const ::std::string& name, hero_equip_upgrade_OP_TYPE* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hero_equip_upgrade_OP_TYPE>(
-    hero_equip_upgrade_OP_TYPE_descriptor(), name, value);
-}
-enum reset_elite_rtype {
-  reset_elite_rtype_daily_free = 0,
-  reset_elite_rtype_vip_reset = 1
-};
-bool reset_elite_rtype_IsValid(int value);
-const reset_elite_rtype reset_elite_rtype_rtype_MIN = reset_elite_rtype_daily_free;
-const reset_elite_rtype reset_elite_rtype_rtype_MAX = reset_elite_rtype_vip_reset;
-const int reset_elite_rtype_rtype_ARRAYSIZE = reset_elite_rtype_rtype_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* reset_elite_rtype_descriptor();
-inline const ::std::string& reset_elite_rtype_Name(reset_elite_rtype value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    reset_elite_rtype_descriptor(), value);
-}
-inline bool reset_elite_rtype_Parse(
-    const ::std::string& name, reset_elite_rtype* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<reset_elite_rtype>(
-    reset_elite_rtype_descriptor(), name, value);
-}
-enum sweep_stage_rtype {
-  sweep_stage_rtype_sweep_with_ticket = 0,
-  sweep_stage_rtype_sweep_with_rmb = 1
-};
-bool sweep_stage_rtype_IsValid(int value);
-const sweep_stage_rtype sweep_stage_rtype_rtype_MIN = sweep_stage_rtype_sweep_with_ticket;
-const sweep_stage_rtype sweep_stage_rtype_rtype_MAX = sweep_stage_rtype_sweep_with_rmb;
-const int sweep_stage_rtype_rtype_ARRAYSIZE = sweep_stage_rtype_rtype_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* sweep_stage_rtype_descriptor();
-inline const ::std::string& sweep_stage_rtype_Name(sweep_stage_rtype value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    sweep_stage_rtype_descriptor(), value);
-}
-inline bool sweep_stage_rtype_Parse(
-    const ::std::string& name, sweep_stage_rtype* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<sweep_stage_rtype>(
-    sweep_stage_rtype_descriptor(), name, value);
-}
-enum tavern_draw_draw_type {
-  tavern_draw_draw_type_single = 0,
-  tavern_draw_draw_type_combo = 1,
-  tavern_draw_draw_type_stone = 3,
-  tavern_draw_draw_type_free = 4
-};
-bool tavern_draw_draw_type_IsValid(int value);
-const tavern_draw_draw_type tavern_draw_draw_type_draw_type_MIN = tavern_draw_draw_type_single;
-const tavern_draw_draw_type tavern_draw_draw_type_draw_type_MAX = tavern_draw_draw_type_free;
-const int tavern_draw_draw_type_draw_type_ARRAYSIZE = tavern_draw_draw_type_draw_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* tavern_draw_draw_type_descriptor();
-inline const ::std::string& tavern_draw_draw_type_Name(tavern_draw_draw_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    tavern_draw_draw_type_descriptor(), value);
-}
-inline bool tavern_draw_draw_type_Parse(
-    const ::std::string& name, tavern_draw_draw_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<tavern_draw_draw_type>(
-    tavern_draw_draw_type_descriptor(), name, value);
-}
-enum tavern_draw_box_type {
-  tavern_draw_box_type_green = 1,
-  tavern_draw_box_type_blue = 2,
-  tavern_draw_box_type_purple = 3,
-  tavern_draw_box_type_magicsoul = 4,
-  tavern_draw_box_type_stone_green = 5,
-  tavern_draw_box_type_stone_blue = 6,
-  tavern_draw_box_type_stone_purple = 7
-};
-bool tavern_draw_box_type_IsValid(int value);
-const tavern_draw_box_type tavern_draw_box_type_box_type_MIN = tavern_draw_box_type_green;
-const tavern_draw_box_type tavern_draw_box_type_box_type_MAX = tavern_draw_box_type_stone_purple;
-const int tavern_draw_box_type_box_type_ARRAYSIZE = tavern_draw_box_type_box_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* tavern_draw_box_type_descriptor();
-inline const ::std::string& tavern_draw_box_type_Name(tavern_draw_box_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    tavern_draw_box_type_descriptor(), value);
-}
-inline bool tavern_draw_box_type_Parse(
-    const ::std::string& name, tavern_draw_box_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<tavern_draw_box_type>(
-    tavern_draw_box_type_descriptor(), name, value);
-}
-enum query_rankboard_rankboard_type {
-  query_rankboard_rankboard_type_static_c = 0,
-  query_rankboard_rankboard_type_dynamic = 1
-};
-bool query_rankboard_rankboard_type_IsValid(int value);
-const query_rankboard_rankboard_type query_rankboard_rankboard_type_rankboard_type_MIN = query_rankboard_rankboard_type_static_c;
-const query_rankboard_rankboard_type query_rankboard_rankboard_type_rankboard_type_MAX = query_rankboard_rankboard_type_dynamic;
-const int query_rankboard_rankboard_type_rankboard_type_ARRAYSIZE = query_rankboard_rankboard_type_rankboard_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* query_rankboard_rankboard_type_descriptor();
-inline const ::std::string& query_rankboard_rankboard_type_Name(query_rankboard_rankboard_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    query_rankboard_rankboard_type_descriptor(), value);
-}
-inline bool query_rankboard_rankboard_type_Parse(
-    const ::std::string& name, query_rankboard_rankboard_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<query_rankboard_rankboard_type>(
-    query_rankboard_rankboard_type_descriptor(), name, value);
-}
-enum set_name_set_type {
-  set_name_set_type_free = 0,
-  set_name_set_type_rmb = 1
-};
-bool set_name_set_type_IsValid(int value);
-const set_name_set_type set_name_set_type_set_type_MIN = set_name_set_type_free;
-const set_name_set_type set_name_set_type_set_type_MAX = set_name_set_type_rmb;
-const int set_name_set_type_set_type_ARRAYSIZE = set_name_set_type_set_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* set_name_set_type_descriptor();
-inline const ::std::string& set_name_set_type_Name(set_name_set_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    set_name_set_type_descriptor(), value);
-}
-inline bool set_name_set_type_Parse(
-    const ::std::string& name, set_name_set_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<set_name_set_type>(
-    set_name_set_type_descriptor(), name, value);
-}
-enum query_data_query_type {
-  query_data_query_type_rmb = 1,
-  query_data_query_type_hero = 2,
-  query_data_query_type_recharge = 3,
-  query_data_query_type_monthcard = 4
-};
-bool query_data_query_type_IsValid(int value);
-const query_data_query_type query_data_query_type_query_type_MIN = query_data_query_type_rmb;
-const query_data_query_type query_data_query_type_query_type_MAX = query_data_query_type_monthcard;
-const int query_data_query_type_query_type_ARRAYSIZE = query_data_query_type_query_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* query_data_query_type_descriptor();
-inline const ::std::string& query_data_query_type_Name(query_data_query_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    query_data_query_type_descriptor(), value);
-}
-inline bool query_data_query_type_Parse(
-    const ::std::string& name, query_data_query_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<query_data_query_type>(
-    query_data_query_type_descriptor(), name, value);
-}
-enum ask_daily_login_status {
-  ask_daily_login_status_all = 1,
-  ask_daily_login_status_common = 2,
-  ask_daily_login_status_vip = 3
-};
-bool ask_daily_login_status_IsValid(int value);
-const ask_daily_login_status ask_daily_login_status_status_MIN = ask_daily_login_status_all;
-const ask_daily_login_status ask_daily_login_status_status_MAX = ask_daily_login_status_vip;
-const int ask_daily_login_status_status_ARRAYSIZE = ask_daily_login_status_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* ask_daily_login_status_descriptor();
-inline const ::std::string& ask_daily_login_status_Name(ask_daily_login_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    ask_daily_login_status_descriptor(), value);
-}
-inline bool ask_daily_login_status_Parse(
-    const ::std::string& name, ask_daily_login_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ask_daily_login_status>(
-    ask_daily_login_status_descriptor(), name, value);
-}
-enum chat_acc_chat_acc_t {
-  chat_acc_chat_acc_t_binary = 1,
-  chat_acc_chat_acc_t_pvp_replay = 2
-};
-bool chat_acc_chat_acc_t_IsValid(int value);
-const chat_acc_chat_acc_t chat_acc_chat_acc_t_chat_acc_t_MIN = chat_acc_chat_acc_t_binary;
-const chat_acc_chat_acc_t chat_acc_chat_acc_t_chat_acc_t_MAX = chat_acc_chat_acc_t_pvp_replay;
-const int chat_acc_chat_acc_t_chat_acc_t_ARRAYSIZE = chat_acc_chat_acc_t_chat_acc_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor();
-inline const ::std::string& chat_acc_chat_acc_t_Name(chat_acc_chat_acc_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    chat_acc_chat_acc_t_descriptor(), value);
-}
-inline bool chat_acc_chat_acc_t_Parse(
-    const ::std::string& name, chat_acc_chat_acc_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<chat_acc_chat_acc_t>(
-    chat_acc_chat_acc_t_descriptor(), name, value);
-}
-enum guild_set_jump_is_can_jump {
-  guild_set_jump_is_can_jump_jump_true = 1,
-  guild_set_jump_is_can_jump_jump_false = 2
-};
-bool guild_set_jump_is_can_jump_IsValid(int value);
-const guild_set_jump_is_can_jump guild_set_jump_is_can_jump_is_can_jump_MIN = guild_set_jump_is_can_jump_jump_true;
-const guild_set_jump_is_can_jump guild_set_jump_is_can_jump_is_can_jump_MAX = guild_set_jump_is_can_jump_jump_false;
-const int guild_set_jump_is_can_jump_is_can_jump_ARRAYSIZE = guild_set_jump_is_can_jump_is_can_jump_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_set_jump_is_can_jump_descriptor();
-inline const ::std::string& guild_set_jump_is_can_jump_Name(guild_set_jump_is_can_jump value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_set_jump_is_can_jump_descriptor(), value);
-}
-inline bool guild_set_jump_is_can_jump_Parse(
-    const ::std::string& name, guild_set_jump_is_can_jump* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_set_jump_is_can_jump>(
-    guild_set_jump_is_can_jump_descriptor(), name, value);
-}
-enum guild_join_confirm_confirm_type {
-  guild_join_confirm_confirm_type_accept = 1,
-  guild_join_confirm_confirm_type_reject = 2
-};
-bool guild_join_confirm_confirm_type_IsValid(int value);
-const guild_join_confirm_confirm_type guild_join_confirm_confirm_type_confirm_type_MIN = guild_join_confirm_confirm_type_accept;
-const guild_join_confirm_confirm_type guild_join_confirm_confirm_type_confirm_type_MAX = guild_join_confirm_confirm_type_reject;
-const int guild_join_confirm_confirm_type_confirm_type_ARRAYSIZE = guild_join_confirm_confirm_type_confirm_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_join_confirm_confirm_type_descriptor();
-inline const ::std::string& guild_join_confirm_confirm_type_Name(guild_join_confirm_confirm_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_join_confirm_confirm_type_descriptor(), value);
-}
-inline bool guild_join_confirm_confirm_type_Parse(
-    const ::std::string& name, guild_join_confirm_confirm_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_join_confirm_confirm_type>(
-    guild_join_confirm_confirm_type_descriptor(), name, value);
-}
-enum guild_set_guild_join_t {
-  guild_set_guild_join_t_no_verify = 1,
-  guild_set_guild_join_t_verify = 2,
-  guild_set_guild_join_t_closed = 3
-};
-bool guild_set_guild_join_t_IsValid(int value);
-const guild_set_guild_join_t guild_set_guild_join_t_guild_join_t_MIN = guild_set_guild_join_t_no_verify;
-const guild_set_guild_join_t guild_set_guild_join_t_guild_join_t_MAX = guild_set_guild_join_t_closed;
-const int guild_set_guild_join_t_guild_join_t_ARRAYSIZE = guild_set_guild_join_t_guild_join_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_set_guild_join_t_descriptor();
-inline const ::std::string& guild_set_guild_join_t_Name(guild_set_guild_join_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_set_guild_join_t_descriptor(), value);
-}
-inline bool guild_set_guild_join_t_Parse(
-    const ::std::string& name, guild_set_guild_join_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_set_guild_join_t>(
-    guild_set_guild_join_t_descriptor(), name, value);
-}
-enum query_ranklist_rank_type {
-  query_ranklist_rank_type_guildliveness = 1,
-  query_ranklist_rank_type_excavate_rob = 2,
-  query_ranklist_rank_type_excavate_gold = 3,
-  query_ranklist_rank_type_excavate_exp = 4,
-  query_ranklist_rank_type_top_gs = 5,
-  query_ranklist_rank_type_full_hero_gs = 6,
-  query_ranklist_rank_type_hero_team_gs = 7,
-  query_ranklist_rank_type_hero_evo_star = 8,
-  query_ranklist_rank_type_hero_arousal = 9,
-  query_ranklist_rank_type_top_arena = 10
-};
-bool query_ranklist_rank_type_IsValid(int value);
-const query_ranklist_rank_type query_ranklist_rank_type_rank_type_MIN = query_ranklist_rank_type_guildliveness;
-const query_ranklist_rank_type query_ranklist_rank_type_rank_type_MAX = query_ranklist_rank_type_top_arena;
-const int query_ranklist_rank_type_rank_type_ARRAYSIZE = query_ranklist_rank_type_rank_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* query_ranklist_rank_type_descriptor();
-inline const ::std::string& query_ranklist_rank_type_Name(query_ranklist_rank_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    query_ranklist_rank_type_descriptor(), value);
-}
-inline bool query_ranklist_rank_type_Parse(
-    const ::std::string& name, query_ranklist_rank_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<query_ranklist_rank_type>(
-    query_ranklist_rank_type_descriptor(), name, value);
-}
-enum require_arousal_arousal_type {
-  require_arousal_arousal_type_require_arousal_t = 1,
-  require_arousal_arousal_type_apply_arousal_t = 2
-};
-bool require_arousal_arousal_type_IsValid(int value);
-const require_arousal_arousal_type require_arousal_arousal_type_arousal_type_MIN = require_arousal_arousal_type_require_arousal_t;
-const require_arousal_arousal_type require_arousal_arousal_type_arousal_type_MAX = require_arousal_arousal_type_apply_arousal_t;
-const int require_arousal_arousal_type_arousal_type_ARRAYSIZE = require_arousal_arousal_type_arousal_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* require_arousal_arousal_type_descriptor();
-inline const ::std::string& require_arousal_arousal_type_Name(require_arousal_arousal_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    require_arousal_arousal_type_descriptor(), value);
-}
-inline bool require_arousal_arousal_type_Parse(
-    const ::std::string& name, require_arousal_arousal_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<require_arousal_arousal_type>(
-    require_arousal_arousal_type_descriptor(), name, value);
-}
-enum hero_status {
-  idle = 0,
-  hire = 1,
-  mining = 2
-};
-bool hero_status_IsValid(int value);
-const hero_status hero_status_MIN = idle;
-const hero_status hero_status_MAX = mining;
-const int hero_status_ARRAYSIZE = hero_status_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor();
-inline const ::std::string& hero_status_Name(hero_status value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hero_status_descriptor(), value);
-}
-inline bool hero_status_Parse(
-    const ::std::string& name, hero_status* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hero_status>(
-    hero_status_descriptor(), name, value);
-}
-enum guild_job_t {
-  chairman = 1,
-  member = 2,
-  elder = 3
-};
-bool guild_job_t_IsValid(int value);
-const guild_job_t guild_job_t_MIN = chairman;
-const guild_job_t guild_job_t_MAX = elder;
-const int guild_job_t_ARRAYSIZE = guild_job_t_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor();
-inline const ::std::string& guild_job_t_Name(guild_job_t value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    guild_job_t_descriptor(), value);
-}
-inline bool guild_job_t_Parse(
-    const ::std::string& name, guild_job_t* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<guild_job_t>(
-    guild_job_t_descriptor(), name, value);
-}
-enum hire_from {
-  hire_guild = 0,
-  hire_tbc = 1,
-  hire_stage = 2,
-  hire_excav = 3
-};
-bool hire_from_IsValid(int value);
-const hire_from hire_from_MIN = hire_guild;
-const hire_from hire_from_MAX = hire_excav;
-const int hire_from_ARRAYSIZE = hire_from_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor();
-inline const ::std::string& hire_from_Name(hire_from value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    hire_from_descriptor(), value);
-}
-inline bool hire_from_Parse(
-    const ::std::string& name, hire_from* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<hire_from>(
-    hire_from_descriptor(), name, value);
-}
-enum chat_channel {
-  world_channel = 1,
-  guild_channel = 2,
-  personal_channel = 3
-};
-bool chat_channel_IsValid(int value);
-const chat_channel chat_channel_MIN = world_channel;
-const chat_channel chat_channel_MAX = personal_channel;
-const int chat_channel_ARRAYSIZE = chat_channel_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor();
-inline const ::std::string& chat_channel_Name(chat_channel value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    chat_channel_descriptor(), value);
-}
-inline bool chat_channel_Parse(
-    const ::std::string& name, chat_channel* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<chat_channel>(
-    chat_channel_descriptor(), name, value);
-}
-enum server_opt_type {
-  get = 0,
-  change = 1
-};
-bool server_opt_type_IsValid(int value);
-const server_opt_type server_opt_type_MIN = get;
-const server_opt_type server_opt_type_MAX = change;
-const int server_opt_type_ARRAYSIZE = server_opt_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* server_opt_type_descriptor();
-inline const ::std::string& server_opt_type_Name(server_opt_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    server_opt_type_descriptor(), value);
-}
-inline bool server_opt_type_Parse(
-    const ::std::string& name, server_opt_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<server_opt_type>(
-    server_opt_type_descriptor(), name, value);
-}
-enum platform_type {
-  self = 0,
-  s91 = 1,
-  tbt = 2,
-  pp = 3,
-  lemon = 4,
-  itools = 5,
-  kuaiyong = 6,
-  tuyoo = 7,
-  lemonyueyu = 8,
-  ky_android = 101,
-  xm_android = 102,
-  lemon_android = 103,
-  s360_android = 104,
-  uc_android = 105,
-  duoku_android = 106,
-  s91_android = 107,
-  wandoujia_android = 108,
-  pps_android = 109,
-  dangle_android = 110,
-  oppo_android = 111,
-  anzhi_android = 112,
-  s37wan_android = 113,
-  huawei_android = 114,
-  lianxiang_android = 115,
-  pptv_android = 116,
-  vivo_android = 117
-};
-bool platform_type_IsValid(int value);
-const platform_type platform_type_MIN = self;
-const platform_type platform_type_MAX = vivo_android;
-const int platform_type_ARRAYSIZE = platform_type_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* platform_type_descriptor();
-inline const ::std::string& platform_type_Name(platform_type value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    platform_type_descriptor(), value);
-}
-inline bool platform_type_Parse(
-    const ::std::string& name, platform_type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<platform_type>(
-    platform_type_descriptor(), name, value);
-}
-enum battle_result {
-  victory = 0,
-  defeat = 1,
-  canceled = 2,
-  timeout = 3
-};
-bool battle_result_IsValid(int value);
-const battle_result battle_result_MIN = victory;
-const battle_result battle_result_MAX = timeout;
-const int battle_result_ARRAYSIZE = battle_result_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor();
-inline const ::std::string& battle_result_Name(battle_result value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    battle_result_descriptor(), value);
-}
-inline bool battle_result_Parse(
-    const ::std::string& name, battle_result* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<battle_result>(
-    battle_result_descriptor(), name, value);
-}
 // ===================================================================
 
 class up_msg : public ::google::protobuf::Message {
@@ -2215,30 +1666,6 @@ class system_setting_change : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef system_setting_change_setting_status setting_status;
-  static const setting_status on = system_setting_change_setting_status_on;
-  static const setting_status off = system_setting_change_setting_status_off;
-  static inline bool setting_status_IsValid(int value) {
-    return system_setting_change_setting_status_IsValid(value);
-  }
-  static const setting_status setting_status_MIN =
-    system_setting_change_setting_status_setting_status_MIN;
-  static const setting_status setting_status_MAX =
-    system_setting_change_setting_status_setting_status_MAX;
-  static const int setting_status_ARRAYSIZE =
-    system_setting_change_setting_status_setting_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  setting_status_descriptor() {
-    return system_setting_change_setting_status_descriptor();
-  }
-  static inline const ::std::string& setting_status_Name(setting_status value) {
-    return system_setting_change_setting_status_Name(value);
-  }
-  static inline bool setting_status_Parse(const ::std::string& name,
-      setting_status* value) {
-    return system_setting_change_setting_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required string key = 1;
@@ -2624,12 +2051,12 @@ class sdk_login : public ::google::protobuf::Message {
   inline ::std::string* release__session_key();
   inline void set_allocated__session_key(::std::string* _session_key);
 
-  // required .client_baseup.platform_type _plat_id = 2;
+  // required uint32 _plat_id = 2;
   inline bool has__plat_id() const;
   inline void clear__plat_id();
   static const int kPlatIdFieldNumber = 2;
-  inline ::client_baseup::platform_type _plat_id() const;
-  inline void set__plat_id(::client_baseup::platform_type value);
+  inline ::google::protobuf::uint32 _plat_id() const;
+  inline void set__plat_id(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.sdk_login)
  private:
@@ -2643,7 +2070,7 @@ class sdk_login : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* _session_key_;
-  int _plat_id_;
+  ::google::protobuf::uint32 _plat_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -2854,12 +2281,12 @@ class exit_stage : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseup::battle_result _result() const;
-  inline void set__result(::client_baseup::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // optional uint32 _stars = 2;
   inline bool has__stars() const;
@@ -2929,7 +2356,7 @@ class exit_stage : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _stars_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _heroes_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _oprations_;
@@ -3877,41 +3304,14 @@ class set_money : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef set_money_price_type price_type;
-  static const price_type gold = set_money_price_type_gold;
-  static const price_type diamond = set_money_price_type_diamond;
-  static const price_type crusadepoint = set_money_price_type_crusadepoint;
-  static const price_type arenapoint = set_money_price_type_arenapoint;
-  static const price_type guildpoint = set_money_price_type_guildpoint;
-  static inline bool price_type_IsValid(int value) {
-    return set_money_price_type_IsValid(value);
-  }
-  static const price_type price_type_MIN =
-    set_money_price_type_price_type_MIN;
-  static const price_type price_type_MAX =
-    set_money_price_type_price_type_MAX;
-  static const int price_type_ARRAYSIZE =
-    set_money_price_type_price_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  price_type_descriptor() {
-    return set_money_price_type_descriptor();
-  }
-  static inline const ::std::string& price_type_Name(price_type value) {
-    return set_money_price_type_Name(value);
-  }
-  static inline bool price_type_Parse(const ::std::string& name,
-      price_type* value) {
-    return set_money_price_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.set_money.price_type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::set_money_price_type _type() const;
-  inline void set__type(::client_baseup::set_money_price_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required uint32 _amount = 2;
   inline bool has__amount() const;
@@ -3931,7 +3331,7 @@ class set_money : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _amount_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -4309,38 +3709,14 @@ class buy_vitality : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef buy_vitality_type type;
-  static const type shadow_rune = buy_vitality_type_shadow_rune;
-  static const type vitality = buy_vitality_type_vitality;
-  static inline bool type_IsValid(int value) {
-    return buy_vitality_type_IsValid(value);
-  }
-  static const type type_MIN =
-    buy_vitality_type_type_MIN;
-  static const type type_MAX =
-    buy_vitality_type_type_MAX;
-  static const int type_ARRAYSIZE =
-    buy_vitality_type_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  type_descriptor() {
-    return buy_vitality_type_descriptor();
-  }
-  static inline const ::std::string& type_Name(type value) {
-    return buy_vitality_type_Name(value);
-  }
-  static inline bool type_Parse(const ::std::string& name,
-      type* value) {
-    return buy_vitality_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // optional .client_baseup.buy_vitality.type _type = 1;
+  // optional uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::buy_vitality_type _type() const;
-  inline void set__type(::client_baseup::buy_vitality_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.buy_vitality)
  private:
@@ -4351,7 +3727,7 @@ class buy_vitality : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -4501,39 +3877,14 @@ class shop_refresh : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef shop_refresh_rtype rtype;
-  static const rtype sync = shop_refresh_rtype_sync;
-  static const rtype auto_refresh = shop_refresh_rtype_auto_refresh;
-  static const rtype manual_refresh = shop_refresh_rtype_manual_refresh;
-  static inline bool rtype_IsValid(int value) {
-    return shop_refresh_rtype_IsValid(value);
-  }
-  static const rtype rtype_MIN =
-    shop_refresh_rtype_rtype_MIN;
-  static const rtype rtype_MAX =
-    shop_refresh_rtype_rtype_MAX;
-  static const int rtype_ARRAYSIZE =
-    shop_refresh_rtype_rtype_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rtype_descriptor() {
-    return shop_refresh_rtype_descriptor();
-  }
-  static inline const ::std::string& rtype_Name(rtype value) {
-    return shop_refresh_rtype_Name(value);
-  }
-  static inline bool rtype_Parse(const ::std::string& name,
-      rtype* value) {
-    return shop_refresh_rtype_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::shop_refresh_rtype _type() const;
-  inline void set__type(::client_baseup::shop_refresh_rtype value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required uint32 _shop_id = 2;
   inline bool has__shop_id() const;
@@ -4553,7 +3904,7 @@ class shop_refresh : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _shop_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -4977,38 +4328,14 @@ class hero_equip_upgrade : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef hero_equip_upgrade_OP_TYPE OP_TYPE;
-  static const OP_TYPE normal = hero_equip_upgrade_OP_TYPE_normal;
-  static const OP_TYPE boss = hero_equip_upgrade_OP_TYPE_boss;
-  static inline bool OP_TYPE_IsValid(int value) {
-    return hero_equip_upgrade_OP_TYPE_IsValid(value);
-  }
-  static const OP_TYPE OP_TYPE_MIN =
-    hero_equip_upgrade_OP_TYPE_OP_TYPE_MIN;
-  static const OP_TYPE OP_TYPE_MAX =
-    hero_equip_upgrade_OP_TYPE_OP_TYPE_MAX;
-  static const int OP_TYPE_ARRAYSIZE =
-    hero_equip_upgrade_OP_TYPE_OP_TYPE_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  OP_TYPE_descriptor() {
-    return hero_equip_upgrade_OP_TYPE_descriptor();
-  }
-  static inline const ::std::string& OP_TYPE_Name(OP_TYPE value) {
-    return hero_equip_upgrade_OP_TYPE_Name(value);
-  }
-  static inline bool OP_TYPE_Parse(const ::std::string& name,
-      OP_TYPE* value) {
-    return hero_equip_upgrade_OP_TYPE_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+  // required uint32 _op_type = 1;
   inline bool has__op_type() const;
   inline void clear__op_type();
   static const int kOpTypeFieldNumber = 1;
-  inline ::client_baseup::hero_equip_upgrade_OP_TYPE _op_type() const;
-  inline void set__op_type(::client_baseup::hero_equip_upgrade_OP_TYPE value);
+  inline ::google::protobuf::uint32 _op_type() const;
+  inline void set__op_type(::google::protobuf::uint32 value);
 
   // required uint32 _heroid = 2;
   inline bool has__heroid() const;
@@ -5049,7 +4376,7 @@ class hero_equip_upgrade : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _op_type_;
+  ::google::protobuf::uint32 _op_type_;
   ::google::protobuf::uint32 _heroid_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _materials_;
   ::google::protobuf::uint32 _slot_;
@@ -5256,12 +4583,12 @@ class hero : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _gs() const;
   inline void set__gs(::google::protobuf::uint32 value);
 
-  // required .client_baseup.hero_status _state = 7;
+  // required uint32 _state = 7;
   inline bool has__state() const;
   inline void clear__state();
   static const int kStateFieldNumber = 7;
-  inline ::client_baseup::hero_status _state() const;
-  inline void set__state(::client_baseup::hero_status value);
+  inline ::google::protobuf::uint32 _state() const;
+  inline void set__state(::google::protobuf::uint32 value);
 
   // repeated uint32 _skill_levels = 8;
   inline int _skill_levels_size() const;
@@ -5328,7 +4655,7 @@ class hero : public ::google::protobuf::Message {
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _skill_levels_;
   ::google::protobuf::RepeatedPtrField< ::client_baseup::hero_equip > _items_;
   ::client_baseup::hero_arousal* _arousal_;
-  int _state_;
+  ::google::protobuf::uint32 _state_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -6150,38 +5477,14 @@ class reset_elite : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef reset_elite_rtype rtype;
-  static const rtype daily_free = reset_elite_rtype_daily_free;
-  static const rtype vip_reset = reset_elite_rtype_vip_reset;
-  static inline bool rtype_IsValid(int value) {
-    return reset_elite_rtype_IsValid(value);
-  }
-  static const rtype rtype_MIN =
-    reset_elite_rtype_rtype_MIN;
-  static const rtype rtype_MAX =
-    reset_elite_rtype_rtype_MAX;
-  static const int rtype_ARRAYSIZE =
-    reset_elite_rtype_rtype_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rtype_descriptor() {
-    return reset_elite_rtype_descriptor();
-  }
-  static inline const ::std::string& rtype_Name(rtype value) {
-    return reset_elite_rtype_Name(value);
-  }
-  static inline bool rtype_Parse(const ::std::string& name,
-      rtype* value) {
-    return reset_elite_rtype_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::reset_elite_rtype _type() const;
-  inline void set__type(::client_baseup::reset_elite_rtype value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional uint32 _stageid = 2;
   inline bool has__stageid() const;
@@ -6201,7 +5504,7 @@ class reset_elite : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _stageid_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -6263,38 +5566,14 @@ class sweep_stage : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef sweep_stage_rtype rtype;
-  static const rtype sweep_with_ticket = sweep_stage_rtype_sweep_with_ticket;
-  static const rtype sweep_with_rmb = sweep_stage_rtype_sweep_with_rmb;
-  static inline bool rtype_IsValid(int value) {
-    return sweep_stage_rtype_IsValid(value);
-  }
-  static const rtype rtype_MIN =
-    sweep_stage_rtype_rtype_MIN;
-  static const rtype rtype_MAX =
-    sweep_stage_rtype_rtype_MAX;
-  static const int rtype_ARRAYSIZE =
-    sweep_stage_rtype_rtype_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rtype_descriptor() {
-    return sweep_stage_rtype_descriptor();
-  }
-  static inline const ::std::string& rtype_Name(rtype value) {
-    return sweep_stage_rtype_Name(value);
-  }
-  static inline bool rtype_Parse(const ::std::string& name,
-      rtype* value) {
-    return sweep_stage_rtype_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.sweep_stage.rtype _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::sweep_stage_rtype _type() const;
-  inline void set__type(::client_baseup::sweep_stage_rtype value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required uint32 _stageid = 2;
   inline bool has__stageid() const;
@@ -6323,7 +5602,7 @@ class sweep_stage : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _stageid_;
   ::google::protobuf::uint32 _times_;
   friend void  protobuf_AddDesc_up_2eproto();
@@ -6524,76 +5803,21 @@ class tavern_draw : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef tavern_draw_draw_type draw_type;
-  static const draw_type single = tavern_draw_draw_type_single;
-  static const draw_type combo = tavern_draw_draw_type_combo;
-  static const draw_type stone = tavern_draw_draw_type_stone;
-  static const draw_type free = tavern_draw_draw_type_free;
-  static inline bool draw_type_IsValid(int value) {
-    return tavern_draw_draw_type_IsValid(value);
-  }
-  static const draw_type draw_type_MIN =
-    tavern_draw_draw_type_draw_type_MIN;
-  static const draw_type draw_type_MAX =
-    tavern_draw_draw_type_draw_type_MAX;
-  static const int draw_type_ARRAYSIZE =
-    tavern_draw_draw_type_draw_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  draw_type_descriptor() {
-    return tavern_draw_draw_type_descriptor();
-  }
-  static inline const ::std::string& draw_type_Name(draw_type value) {
-    return tavern_draw_draw_type_Name(value);
-  }
-  static inline bool draw_type_Parse(const ::std::string& name,
-      draw_type* value) {
-    return tavern_draw_draw_type_Parse(name, value);
-  }
-
-  typedef tavern_draw_box_type box_type;
-  static const box_type green = tavern_draw_box_type_green;
-  static const box_type blue = tavern_draw_box_type_blue;
-  static const box_type purple = tavern_draw_box_type_purple;
-  static const box_type magicsoul = tavern_draw_box_type_magicsoul;
-  static const box_type stone_green = tavern_draw_box_type_stone_green;
-  static const box_type stone_blue = tavern_draw_box_type_stone_blue;
-  static const box_type stone_purple = tavern_draw_box_type_stone_purple;
-  static inline bool box_type_IsValid(int value) {
-    return tavern_draw_box_type_IsValid(value);
-  }
-  static const box_type box_type_MIN =
-    tavern_draw_box_type_box_type_MIN;
-  static const box_type box_type_MAX =
-    tavern_draw_box_type_box_type_MAX;
-  static const int box_type_ARRAYSIZE =
-    tavern_draw_box_type_box_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  box_type_descriptor() {
-    return tavern_draw_box_type_descriptor();
-  }
-  static inline const ::std::string& box_type_Name(box_type value) {
-    return tavern_draw_box_type_Name(value);
-  }
-  static inline bool box_type_Parse(const ::std::string& name,
-      box_type* value) {
-    return tavern_draw_box_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+  // required uint32 _draw_type = 1;
   inline bool has__draw_type() const;
   inline void clear__draw_type();
   static const int kDrawTypeFieldNumber = 1;
-  inline ::client_baseup::tavern_draw_draw_type _draw_type() const;
-  inline void set__draw_type(::client_baseup::tavern_draw_draw_type value);
+  inline ::google::protobuf::uint32 _draw_type() const;
+  inline void set__draw_type(::google::protobuf::uint32 value);
 
-  // required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+  // required uint32 _box_type = 2;
   inline bool has__box_type() const;
   inline void clear__box_type();
   static const int kBoxTypeFieldNumber = 2;
-  inline ::client_baseup::tavern_draw_box_type _box_type() const;
-  inline void set__box_type(::client_baseup::tavern_draw_box_type value);
+  inline ::google::protobuf::uint32 _box_type() const;
+  inline void set__box_type(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.tavern_draw)
  private:
@@ -6606,8 +5830,8 @@ class tavern_draw : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _draw_type_;
-  int _box_type_;
+  ::google::protobuf::uint32 _draw_type_;
+  ::google::protobuf::uint32 _box_type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -7281,12 +6505,12 @@ class end_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseup::battle_result _result() const;
-  inline void set__result(::client_baseup::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.end_battle)
  private:
@@ -7297,7 +6521,7 @@ class end_battle : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -7667,38 +6891,14 @@ class query_rankboard : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef query_rankboard_rankboard_type rankboard_type;
-  static const rankboard_type static_c = query_rankboard_rankboard_type_static_c;
-  static const rankboard_type dynamic = query_rankboard_rankboard_type_dynamic;
-  static inline bool rankboard_type_IsValid(int value) {
-    return query_rankboard_rankboard_type_IsValid(value);
-  }
-  static const rankboard_type rankboard_type_MIN =
-    query_rankboard_rankboard_type_rankboard_type_MIN;
-  static const rankboard_type rankboard_type_MAX =
-    query_rankboard_rankboard_type_rankboard_type_MAX;
-  static const int rankboard_type_ARRAYSIZE =
-    query_rankboard_rankboard_type_rankboard_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rankboard_type_descriptor() {
-    return query_rankboard_rankboard_type_descriptor();
-  }
-  static inline const ::std::string& rankboard_type_Name(rankboard_type value) {
-    return query_rankboard_rankboard_type_Name(value);
-  }
-  static inline bool rankboard_type_Parse(const ::std::string& name,
-      rankboard_type* value) {
-    return query_rankboard_rankboard_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.query_rankboard.rankboard_type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::query_rankboard_rankboard_type _type() const;
-  inline void set__type(::client_baseup::query_rankboard_rankboard_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.query_rankboard)
  private:
@@ -7709,7 +6909,7 @@ class query_rankboard : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -8056,38 +7256,14 @@ class set_name : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef set_name_set_type set_type;
-  static const set_type free = set_name_set_type_free;
-  static const set_type rmb = set_name_set_type_rmb;
-  static inline bool set_type_IsValid(int value) {
-    return set_name_set_type_IsValid(value);
-  }
-  static const set_type set_type_MIN =
-    set_name_set_type_set_type_MIN;
-  static const set_type set_type_MAX =
-    set_name_set_type_set_type_MAX;
-  static const int set_type_ARRAYSIZE =
-    set_name_set_type_set_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  set_type_descriptor() {
-    return set_name_set_type_descriptor();
-  }
-  static inline const ::std::string& set_type_Name(set_type value) {
-    return set_name_set_type_Name(value);
-  }
-  static inline bool set_type_Parse(const ::std::string& name,
-      set_type* value) {
-    return set_name_set_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.set_name.set_type _type = 1;
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::set_name_set_type _type() const;
-  inline void set__type(::client_baseup::set_name_set_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // required string _name = 2;
   inline bool has__name() const;
@@ -8113,7 +7289,7 @@ class set_name : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* _name_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -8253,43 +7429,19 @@ class query_data : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef query_data_query_type query_type;
-  static const query_type rmb = query_data_query_type_rmb;
-  static const query_type hero = query_data_query_type_hero;
-  static const query_type recharge = query_data_query_type_recharge;
-  static const query_type monthcard = query_data_query_type_monthcard;
-  static inline bool query_type_IsValid(int value) {
-    return query_data_query_type_IsValid(value);
-  }
-  static const query_type query_type_MIN =
-    query_data_query_type_query_type_MIN;
-  static const query_type query_type_MAX =
-    query_data_query_type_query_type_MAX;
-  static const int query_type_ARRAYSIZE =
-    query_data_query_type_query_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  query_type_descriptor() {
-    return query_data_query_type_descriptor();
-  }
-  static inline const ::std::string& query_type_Name(query_type value) {
-    return query_data_query_type_Name(value);
-  }
-  static inline bool query_type_Parse(const ::std::string& name,
-      query_type* value) {
-    return query_data_query_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // repeated .client_baseup.query_data.query_type _type = 1;
+  // repeated uint32 _type = 1;
   inline int _type_size() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::query_data_query_type _type(int index) const;
-  inline void set__type(int index, ::client_baseup::query_data_query_type value);
-  inline void add__type(::client_baseup::query_data_query_type value);
-  inline const ::google::protobuf::RepeatedField<int>& _type() const;
-  inline ::google::protobuf::RepeatedField<int>* mutable__type();
+  inline ::google::protobuf::uint32 _type(int index) const;
+  inline void set__type(int index, ::google::protobuf::uint32 value);
+  inline void add__type(::google::protobuf::uint32 value);
+  inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+      _type() const;
+  inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+      mutable__type();
 
   // repeated uint32 _query_heroes = 2;
   inline int _query_heroes_size() const;
@@ -8322,7 +7474,7 @@ class query_data : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField<int> _type_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _type_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _query_heroes_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _month_card_id_;
   friend void  protobuf_AddDesc_up_2eproto();
@@ -8545,12 +7697,12 @@ class charge : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.platform_type _platid = 1 [default = self];
+  // required uint32 _platid = 1;
   inline bool has__platid() const;
   inline void clear__platid();
   static const int kPlatidFieldNumber = 1;
-  inline ::client_baseup::platform_type _platid() const;
-  inline void set__platid(::client_baseup::platform_type value);
+  inline ::google::protobuf::uint32 _platid() const;
+  inline void set__platid(::google::protobuf::uint32 value);
 
   // required uint32 _chargeid = 2;
   inline bool has__chargeid() const;
@@ -8584,7 +7736,7 @@ class charge : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _platid_;
+  ::google::protobuf::uint32 _platid_;
   ::google::protobuf::uint32 _chargeid_;
   ::std::string* _extradata_;
   friend void  protobuf_AddDesc_up_2eproto();
@@ -8647,39 +7799,14 @@ class ask_daily_login : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef ask_daily_login_status status;
-  static const status all = ask_daily_login_status_all;
-  static const status common = ask_daily_login_status_common;
-  static const status vip = ask_daily_login_status_vip;
-  static inline bool status_IsValid(int value) {
-    return ask_daily_login_status_IsValid(value);
-  }
-  static const status status_MIN =
-    ask_daily_login_status_status_MIN;
-  static const status status_MAX =
-    ask_daily_login_status_status_MAX;
-  static const int status_ARRAYSIZE =
-    ask_daily_login_status_status_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  status_descriptor() {
-    return ask_daily_login_status_descriptor();
-  }
-  static inline const ::std::string& status_Name(status value) {
-    return ask_daily_login_status_Name(value);
-  }
-  static inline bool status_Parse(const ::std::string& name,
-      status* value) {
-    return ask_daily_login_status_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.ask_daily_login.status _status = 1;
+  // required uint32 _status = 1;
   inline bool has__status() const;
   inline void clear__status();
   static const int kStatusFieldNumber = 1;
-  inline ::client_baseup::ask_daily_login_status _status() const;
-  inline void set__status(::client_baseup::ask_daily_login_status value);
+  inline ::google::protobuf::uint32 _status() const;
+  inline void set__status(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.ask_daily_login)
  private:
@@ -8690,7 +7817,7 @@ class ask_daily_login : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _status_;
+  ::google::protobuf::uint32 _status_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -9243,12 +8370,12 @@ class tbc_end_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseup::battle_result _result() const;
-  inline void set__result(::client_baseup::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseup.tbc_hero _self_heroes = 2;
   inline int _self_heroes_size() const;
@@ -9298,7 +8425,7 @@ class tbc_end_battle : public ::google::protobuf::Message {
   ::google::protobuf::RepeatedPtrField< ::client_baseup::tbc_hero > _self_heroes_;
   ::google::protobuf::RepeatedPtrField< ::client_baseup::tbc_hero > _oppo_heroes_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _oprations_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -9958,12 +9085,12 @@ class chat_broad_say : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // optional .client_baseup.chat_channel _channel = 1;
+  // optional uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseup::chat_channel _channel() const;
-  inline void set__channel(::client_baseup::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // repeated uint32 _target_ids = 2;
   inline int _target_ids_size() const;
@@ -10021,7 +9148,7 @@ class chat_broad_say : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _target_ids_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::uint32 _content_type_;
   ::std::string* _content_;
   ::client_baseup::chat_acc* _accessory_;
@@ -10156,12 +9283,12 @@ class chat_say : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseup::chat_channel _channel() const;
-  inline void set__channel(::client_baseup::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // optional uint32 _target_id = 2;
   inline bool has__target_id() const;
@@ -10215,7 +9342,7 @@ class chat_say : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::uint32 _target_id_;
   ::std::string* _content_;
   ::client_baseup::chat_acc* _accessory_;
@@ -10280,38 +9407,14 @@ class chat_acc : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef chat_acc_chat_acc_t chat_acc_t;
-  static const chat_acc_t binary = chat_acc_chat_acc_t_binary;
-  static const chat_acc_t pvp_replay = chat_acc_chat_acc_t_pvp_replay;
-  static inline bool chat_acc_t_IsValid(int value) {
-    return chat_acc_chat_acc_t_IsValid(value);
-  }
-  static const chat_acc_t chat_acc_t_MIN =
-    chat_acc_chat_acc_t_chat_acc_t_MIN;
-  static const chat_acc_t chat_acc_t_MAX =
-    chat_acc_chat_acc_t_chat_acc_t_MAX;
-  static const int chat_acc_t_ARRAYSIZE =
-    chat_acc_chat_acc_t_chat_acc_t_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  chat_acc_t_descriptor() {
-    return chat_acc_chat_acc_t_descriptor();
-  }
-  static inline const ::std::string& chat_acc_t_Name(chat_acc_t value) {
-    return chat_acc_chat_acc_t_Name(value);
-  }
-  static inline bool chat_acc_t_Parse(const ::std::string& name,
-      chat_acc_t* value) {
-    return chat_acc_chat_acc_t_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 1;
-  inline ::client_baseup::chat_acc_chat_acc_t _type() const;
-  inline void set__type(::client_baseup::chat_acc_chat_acc_t value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // optional string _binary = 2;
   inline bool has__binary() const;
@@ -10346,7 +9449,7 @@ class chat_acc : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* _binary_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   ::google::protobuf::uint32 _record_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -10410,12 +9513,12 @@ class chat_fresh : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseup::chat_channel _channel() const;
-  inline void set__channel(::client_baseup::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.chat_fresh)
  private:
@@ -10426,7 +9529,7 @@ class chat_fresh : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -10489,12 +9592,12 @@ class chat_fetch : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   inline bool has__channel() const;
   inline void clear__channel();
   static const int kChannelFieldNumber = 1;
-  inline ::client_baseup::chat_channel _channel() const;
-  inline void set__channel(::client_baseup::chat_channel value);
+  inline ::google::protobuf::uint32 _channel() const;
+  inline void set__channel(::google::protobuf::uint32 value);
 
   // required uint32 _chat_id = 2;
   inline bool has__chat_id() const;
@@ -10514,7 +9617,7 @@ class chat_fetch : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _channel_;
+  ::google::protobuf::uint32 _channel_;
   ::google::protobuf::uint32 _chat_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -11247,38 +10350,14 @@ class guild_set_jump : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_set_jump_is_can_jump is_can_jump;
-  static const is_can_jump jump_true = guild_set_jump_is_can_jump_jump_true;
-  static const is_can_jump jump_false = guild_set_jump_is_can_jump_jump_false;
-  static inline bool is_can_jump_IsValid(int value) {
-    return guild_set_jump_is_can_jump_IsValid(value);
-  }
-  static const is_can_jump is_can_jump_MIN =
-    guild_set_jump_is_can_jump_is_can_jump_MIN;
-  static const is_can_jump is_can_jump_MAX =
-    guild_set_jump_is_can_jump_is_can_jump_MAX;
-  static const int is_can_jump_ARRAYSIZE =
-    guild_set_jump_is_can_jump_is_can_jump_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  is_can_jump_descriptor() {
-    return guild_set_jump_is_can_jump_descriptor();
-  }
-  static inline const ::std::string& is_can_jump_Name(is_can_jump value) {
-    return guild_set_jump_is_can_jump_Name(value);
-  }
-  static inline bool is_can_jump_Parse(const ::std::string& name,
-      is_can_jump* value) {
-    return guild_set_jump_is_can_jump_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+  // required uint32 _is_can_jump = 1;
   inline bool has__is_can_jump() const;
   inline void clear__is_can_jump();
   static const int kIsCanJumpFieldNumber = 1;
-  inline ::client_baseup::guild_set_jump_is_can_jump _is_can_jump() const;
-  inline void set__is_can_jump(::client_baseup::guild_set_jump_is_can_jump value);
+  inline ::google::protobuf::uint32 _is_can_jump() const;
+  inline void set__is_can_jump(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.guild_set_jump)
  private:
@@ -11289,7 +10368,7 @@ class guild_set_jump : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _is_can_jump_;
+  ::google::protobuf::uint32 _is_can_jump_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -12320,12 +11399,12 @@ class guild_instance_end : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseup::battle_result _result() const;
-  inline void set__result(::client_baseup::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated uint32 _hp_info = 2;
   inline int _hp_info_size() const;
@@ -12409,7 +11488,7 @@ class guild_instance_end : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _hp_info_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _wave_;
   ::google::protobuf::uint32 _damage_;
   ::google::protobuf::uint32 _progress_;
@@ -13172,30 +12251,6 @@ class guild_join_confirm : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_join_confirm_confirm_type confirm_type;
-  static const confirm_type accept = guild_join_confirm_confirm_type_accept;
-  static const confirm_type reject = guild_join_confirm_confirm_type_reject;
-  static inline bool confirm_type_IsValid(int value) {
-    return guild_join_confirm_confirm_type_IsValid(value);
-  }
-  static const confirm_type confirm_type_MIN =
-    guild_join_confirm_confirm_type_confirm_type_MIN;
-  static const confirm_type confirm_type_MAX =
-    guild_join_confirm_confirm_type_confirm_type_MAX;
-  static const int confirm_type_ARRAYSIZE =
-    guild_join_confirm_confirm_type_confirm_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  confirm_type_descriptor() {
-    return guild_join_confirm_confirm_type_descriptor();
-  }
-  static inline const ::std::string& confirm_type_Name(confirm_type value) {
-    return guild_join_confirm_confirm_type_Name(value);
-  }
-  static inline bool confirm_type_Parse(const ::std::string& name,
-      confirm_type* value) {
-    return guild_join_confirm_confirm_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _uid = 1;
@@ -13205,12 +12260,12 @@ class guild_join_confirm : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _uid() const;
   inline void set__uid(::google::protobuf::uint32 value);
 
-  // required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+  // required uint32 _type = 2;
   inline bool has__type() const;
   inline void clear__type();
   static const int kTypeFieldNumber = 2;
-  inline ::client_baseup::guild_join_confirm_confirm_type _type() const;
-  inline void set__type(::client_baseup::guild_join_confirm_confirm_type value);
+  inline ::google::protobuf::uint32 _type() const;
+  inline void set__type(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.guild_join_confirm)
  private:
@@ -13224,7 +12279,7 @@ class guild_join_confirm : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _uid_;
-  int _type_;
+  ::google::protobuf::uint32 _type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -13433,31 +12488,6 @@ class guild_set : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef guild_set_guild_join_t guild_join_t;
-  static const guild_join_t no_verify = guild_set_guild_join_t_no_verify;
-  static const guild_join_t verify = guild_set_guild_join_t_verify;
-  static const guild_join_t closed = guild_set_guild_join_t_closed;
-  static inline bool guild_join_t_IsValid(int value) {
-    return guild_set_guild_join_t_IsValid(value);
-  }
-  static const guild_join_t guild_join_t_MIN =
-    guild_set_guild_join_t_guild_join_t_MIN;
-  static const guild_join_t guild_join_t_MAX =
-    guild_set_guild_join_t_guild_join_t_MAX;
-  static const int guild_join_t_ARRAYSIZE =
-    guild_set_guild_join_t_guild_join_t_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  guild_join_t_descriptor() {
-    return guild_set_guild_join_t_descriptor();
-  }
-  static inline const ::std::string& guild_join_t_Name(guild_join_t value) {
-    return guild_set_guild_join_t_Name(value);
-  }
-  static inline bool guild_join_t_Parse(const ::std::string& name,
-      guild_join_t* value) {
-    return guild_set_guild_join_t_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // optional uint32 _avatar = 1;
@@ -13467,12 +12497,12 @@ class guild_set : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _avatar() const;
   inline void set__avatar(::google::protobuf::uint32 value);
 
-  // optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+  // optional uint32 _join_type = 2;
   inline bool has__join_type() const;
   inline void clear__join_type();
   static const int kJoinTypeFieldNumber = 2;
-  inline ::client_baseup::guild_set_guild_join_t _join_type() const;
-  inline void set__join_type(::client_baseup::guild_set_guild_join_t value);
+  inline ::google::protobuf::uint32 _join_type() const;
+  inline void set__join_type(::google::protobuf::uint32 value);
 
   // optional uint32 _join_limit = 3;
   inline bool has__join_limit() const;
@@ -13527,7 +12557,7 @@ class guild_set : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _avatar_;
-  int _join_type_;
+  ::google::protobuf::uint32 _join_type_;
   ::std::string* _slogan_;
   ::google::protobuf::uint32 _join_limit_;
   ::google::protobuf::uint32 _can_jump_;
@@ -13739,12 +12769,12 @@ class guild_set_job : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _uid() const;
   inline void set__uid(::google::protobuf::uint32 value);
 
-  // required .client_baseup.guild_job_t _job = 2;
+  // required uint32 _job = 2;
   inline bool has__job() const;
   inline void clear__job();
   static const int kJobFieldNumber = 2;
-  inline ::client_baseup::guild_job_t _job() const;
-  inline void set__job(::client_baseup::guild_job_t value);
+  inline ::google::protobuf::uint32 _job() const;
+  inline void set__job(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.guild_set_job)
  private:
@@ -13758,7 +12788,7 @@ class guild_set_job : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _uid_;
-  int _job_;
+  ::google::protobuf::uint32 _job_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -13979,12 +13009,12 @@ class guild_query_hires : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.hire_from _from = 1;
+  // required uint32 _from = 1;
   inline bool has__from() const;
   inline void clear__from();
   static const int kFromFieldNumber = 1;
-  inline ::client_baseup::hire_from _from() const;
-  inline void set__from(::client_baseup::hire_from value);
+  inline ::google::protobuf::uint32 _from() const;
+  inline void set__from(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.guild_query_hires)
  private:
@@ -13995,7 +13025,7 @@ class guild_query_hires : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _from_;
+  ::google::protobuf::uint32 _from_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -14072,12 +13102,12 @@ class guild_hire_hero : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _heroid() const;
   inline void set__heroid(::google::protobuf::uint32 value);
 
-  // required .client_baseup.hire_from _from = 3;
+  // required uint32 _from = 3;
   inline bool has__from() const;
   inline void clear__from();
   static const int kFromFieldNumber = 3;
-  inline ::client_baseup::hire_from _from() const;
-  inline void set__from(::client_baseup::hire_from value);
+  inline ::google::protobuf::uint32 _from() const;
+  inline void set__from(::google::protobuf::uint32 value);
 
   // optional uint32 _stage_id = 4;
   inline bool has__stage_id() const;
@@ -14103,7 +13133,7 @@ class guild_hire_hero : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::uint32 _uid_;
   ::google::protobuf::uint32 _heroid_;
-  int _from_;
+  ::google::protobuf::uint32 _from_;
   ::google::protobuf::uint32 _stage_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -15398,12 +14428,12 @@ class excavate_end_battle : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   inline bool has__result() const;
   inline void clear__result();
   static const int kResultFieldNumber = 1;
-  inline ::client_baseup::battle_result _result() const;
-  inline void set__result(::client_baseup::battle_result value);
+  inline ::google::protobuf::uint32 _result() const;
+  inline void set__result(::google::protobuf::uint32 value);
 
   // repeated .client_baseup.excavate_hero _self_heroes = 2;
   inline int _self_heroes_size() const;
@@ -15461,7 +14491,7 @@ class excavate_end_battle : public ::google::protobuf::Message {
   mutable int _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::client_baseup::excavate_hero > _self_heroes_;
   ::google::protobuf::RepeatedPtrField< ::client_baseup::excavate_hero > _oppo_heroes_;
-  int _result_;
+  ::google::protobuf::uint32 _result_;
   ::google::protobuf::uint32 _type_id_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > _oprations_;
   friend void  protobuf_AddDesc_up_2eproto();
@@ -16704,46 +15734,14 @@ class query_ranklist : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef query_ranklist_rank_type rank_type;
-  static const rank_type guildliveness = query_ranklist_rank_type_guildliveness;
-  static const rank_type excavate_rob = query_ranklist_rank_type_excavate_rob;
-  static const rank_type excavate_gold = query_ranklist_rank_type_excavate_gold;
-  static const rank_type excavate_exp = query_ranklist_rank_type_excavate_exp;
-  static const rank_type top_gs = query_ranklist_rank_type_top_gs;
-  static const rank_type full_hero_gs = query_ranklist_rank_type_full_hero_gs;
-  static const rank_type hero_team_gs = query_ranklist_rank_type_hero_team_gs;
-  static const rank_type hero_evo_star = query_ranklist_rank_type_hero_evo_star;
-  static const rank_type hero_arousal = query_ranklist_rank_type_hero_arousal;
-  static const rank_type top_arena = query_ranklist_rank_type_top_arena;
-  static inline bool rank_type_IsValid(int value) {
-    return query_ranklist_rank_type_IsValid(value);
-  }
-  static const rank_type rank_type_MIN =
-    query_ranklist_rank_type_rank_type_MIN;
-  static const rank_type rank_type_MAX =
-    query_ranklist_rank_type_rank_type_MAX;
-  static const int rank_type_ARRAYSIZE =
-    query_ranklist_rank_type_rank_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  rank_type_descriptor() {
-    return query_ranklist_rank_type_descriptor();
-  }
-  static inline const ::std::string& rank_type_Name(rank_type value) {
-    return query_ranklist_rank_type_Name(value);
-  }
-  static inline bool rank_type_Parse(const ::std::string& name,
-      rank_type* value) {
-    return query_ranklist_rank_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   inline bool has__rank_type() const;
   inline void clear__rank_type();
   static const int kRankTypeFieldNumber = 1;
-  inline ::client_baseup::query_ranklist_rank_type _rank_type() const;
-  inline void set__rank_type(::client_baseup::query_ranklist_rank_type value);
+  inline ::google::protobuf::uint32 _rank_type() const;
+  inline void set__rank_type(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:client_baseup.query_ranklist)
  private:
@@ -16754,7 +15752,7 @@ class query_ranklist : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _rank_type_;
+  ::google::protobuf::uint32 _rank_type_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
   friend void protobuf_ShutdownFile_up_2eproto();
@@ -16894,30 +15892,6 @@ class require_arousal : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
-  typedef require_arousal_arousal_type arousal_type;
-  static const arousal_type require_arousal_t = require_arousal_arousal_type_require_arousal_t;
-  static const arousal_type apply_arousal_t = require_arousal_arousal_type_apply_arousal_t;
-  static inline bool arousal_type_IsValid(int value) {
-    return require_arousal_arousal_type_IsValid(value);
-  }
-  static const arousal_type arousal_type_MIN =
-    require_arousal_arousal_type_arousal_type_MIN;
-  static const arousal_type arousal_type_MAX =
-    require_arousal_arousal_type_arousal_type_MAX;
-  static const int arousal_type_ARRAYSIZE =
-    require_arousal_arousal_type_arousal_type_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  arousal_type_descriptor() {
-    return require_arousal_arousal_type_descriptor();
-  }
-  static inline const ::std::string& arousal_type_Name(arousal_type value) {
-    return require_arousal_arousal_type_Name(value);
-  }
-  static inline bool arousal_type_Parse(const ::std::string& name,
-      arousal_type* value) {
-    return require_arousal_arousal_type_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required uint32 _hid = 1;
@@ -16927,12 +15901,12 @@ class require_arousal : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 _hid() const;
   inline void set__hid(::google::protobuf::uint32 value);
 
-  // required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+  // required uint32 _arousal_type = 2;
   inline bool has__arousal_type() const;
   inline void clear__arousal_type();
   static const int kArousalTypeFieldNumber = 2;
-  inline ::client_baseup::require_arousal_arousal_type _arousal_type() const;
-  inline void set__arousal_type(::client_baseup::require_arousal_arousal_type value);
+  inline ::google::protobuf::uint32 _arousal_type() const;
+  inline void set__arousal_type(::google::protobuf::uint32 value);
 
   // optional uint32 _aid = 3;
   inline bool has__aid() const;
@@ -16955,7 +15929,7 @@ class require_arousal : public ::google::protobuf::Message {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::google::protobuf::uint32 _hid_;
-  int _arousal_type_;
+  ::google::protobuf::uint32 _arousal_type_;
   ::google::protobuf::uint32 _aid_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -17019,12 +15993,12 @@ class change_server : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // required .client_baseup.server_opt_type _op_type = 1;
+  // required uint32 _op_type = 1;
   inline bool has__op_type() const;
   inline void clear__op_type();
   static const int kOpTypeFieldNumber = 1;
-  inline ::client_baseup::server_opt_type _op_type() const;
-  inline void set__op_type(::client_baseup::server_opt_type value);
+  inline ::google::protobuf::uint32 _op_type() const;
+  inline void set__op_type(::google::protobuf::uint32 value);
 
   // optional uint32 _server_id = 2;
   inline bool has__server_id() const;
@@ -17044,7 +16018,7 @@ class change_server : public ::google::protobuf::Message {
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
-  int _op_type_;
+  ::google::protobuf::uint32 _op_type_;
   ::google::protobuf::uint32 _server_id_;
   friend void  protobuf_AddDesc_up_2eproto();
   friend void protobuf_AssignDesc_up_2eproto();
@@ -21238,7 +20212,7 @@ inline void sdk_login::set_allocated__session_key(::std::string* _session_key) {
   // @@protoc_insertion_point(field_set_allocated:client_baseup.sdk_login._session_key)
 }
 
-// required .client_baseup.platform_type _plat_id = 2;
+// required uint32 _plat_id = 2;
 inline bool sdk_login::has__plat_id() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -21249,15 +20223,14 @@ inline void sdk_login::clear_has__plat_id() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void sdk_login::clear__plat_id() {
-  _plat_id_ = 0;
+  _plat_id_ = 0u;
   clear_has__plat_id();
 }
-inline ::client_baseup::platform_type sdk_login::_plat_id() const {
+inline ::google::protobuf::uint32 sdk_login::_plat_id() const {
   // @@protoc_insertion_point(field_get:client_baseup.sdk_login._plat_id)
-  return static_cast< ::client_baseup::platform_type >(_plat_id_);
+  return _plat_id_;
 }
-inline void sdk_login::set__plat_id(::client_baseup::platform_type value) {
-  assert(::client_baseup::platform_type_IsValid(value));
+inline void sdk_login::set__plat_id(::google::protobuf::uint32 value) {
   set_has__plat_id();
   _plat_id_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.sdk_login._plat_id)
@@ -21299,7 +20272,7 @@ inline void enter_stage::set__stage_id(::google::protobuf::uint32 value) {
 
 // exit_stage
 
-// required .client_baseup.battle_result _result = 1 [default = victory];
+// required uint32 _result = 1;
 inline bool exit_stage::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -21310,15 +20283,14 @@ inline void exit_stage::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void exit_stage::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseup::battle_result exit_stage::_result() const {
+inline ::google::protobuf::uint32 exit_stage::_result() const {
   // @@protoc_insertion_point(field_get:client_baseup.exit_stage._result)
-  return static_cast< ::client_baseup::battle_result >(_result_);
+  return _result_;
 }
-inline void exit_stage::set__result(::client_baseup::battle_result value) {
-  assert(::client_baseup::battle_result_IsValid(value));
+inline void exit_stage::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.exit_stage._result)
@@ -22604,7 +21576,7 @@ inline void activity_lotto_reward::set__activity_id(::google::protobuf::uint32 v
 
 // set_money
 
-// required .client_baseup.set_money.price_type _type = 1;
+// required uint32 _type = 1;
 inline bool set_money::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -22615,15 +21587,14 @@ inline void set_money::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_money::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::set_money_price_type set_money::_type() const {
+inline ::google::protobuf::uint32 set_money::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.set_money._type)
-  return static_cast< ::client_baseup::set_money_price_type >(_type_);
+  return _type_;
 }
-inline void set_money::set__type(::client_baseup::set_money_price_type value) {
-  assert(::client_baseup::set_money_price_type_IsValid(value));
+inline void set_money::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.set_money._type)
@@ -22769,7 +21740,7 @@ inline void wear_equip::set__item_pos(::google::protobuf::uint32 value) {
 
 // buy_vitality
 
-// optional .client_baseup.buy_vitality.type _type = 1;
+// optional uint32 _type = 1;
 inline bool buy_vitality::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -22780,15 +21751,14 @@ inline void buy_vitality::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void buy_vitality::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::buy_vitality_type buy_vitality::_type() const {
+inline ::google::protobuf::uint32 buy_vitality::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.buy_vitality._type)
-  return static_cast< ::client_baseup::buy_vitality_type >(_type_);
+  return _type_;
 }
-inline void buy_vitality::set__type(::client_baseup::buy_vitality_type value) {
-  assert(::client_baseup::buy_vitality_type_IsValid(value));
+inline void buy_vitality::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.buy_vitality._type)
@@ -22850,7 +21820,7 @@ inline void consume_item::set__item_id(::google::protobuf::uint32 value) {
 
 // shop_refresh
 
-// required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+// required uint32 _type = 1;
 inline bool shop_refresh::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -22861,15 +21831,14 @@ inline void shop_refresh::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void shop_refresh::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::shop_refresh_rtype shop_refresh::_type() const {
+inline ::google::protobuf::uint32 shop_refresh::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.shop_refresh._type)
-  return static_cast< ::client_baseup::shop_refresh_rtype >(_type_);
+  return _type_;
 }
-inline void shop_refresh::set__type(::client_baseup::shop_refresh_rtype value) {
-  assert(::client_baseup::shop_refresh_rtype_IsValid(value));
+inline void shop_refresh::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.shop_refresh._type)
@@ -23123,7 +22092,7 @@ inline void fragment_compose::set__frag_amount(::google::protobuf::uint32 value)
 
 // hero_equip_upgrade
 
-// required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+// required uint32 _op_type = 1;
 inline bool hero_equip_upgrade::has__op_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -23134,15 +22103,14 @@ inline void hero_equip_upgrade::clear_has__op_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void hero_equip_upgrade::clear__op_type() {
-  _op_type_ = 1;
+  _op_type_ = 0u;
   clear_has__op_type();
 }
-inline ::client_baseup::hero_equip_upgrade_OP_TYPE hero_equip_upgrade::_op_type() const {
+inline ::google::protobuf::uint32 hero_equip_upgrade::_op_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.hero_equip_upgrade._op_type)
-  return static_cast< ::client_baseup::hero_equip_upgrade_OP_TYPE >(_op_type_);
+  return _op_type_;
 }
-inline void hero_equip_upgrade::set__op_type(::client_baseup::hero_equip_upgrade_OP_TYPE value) {
-  assert(::client_baseup::hero_equip_upgrade_OP_TYPE_IsValid(value));
+inline void hero_equip_upgrade::set__op_type(::google::protobuf::uint32 value) {
   set_has__op_type();
   _op_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.hero_equip_upgrade._op_type)
@@ -23450,7 +22418,7 @@ inline void hero::set__gs(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.hero._gs)
 }
 
-// required .client_baseup.hero_status _state = 7;
+// required uint32 _state = 7;
 inline bool hero::has__state() const {
   return (_has_bits_[0] & 0x00000040u) != 0;
 }
@@ -23461,15 +22429,14 @@ inline void hero::clear_has__state() {
   _has_bits_[0] &= ~0x00000040u;
 }
 inline void hero::clear__state() {
-  _state_ = 0;
+  _state_ = 0u;
   clear_has__state();
 }
-inline ::client_baseup::hero_status hero::_state() const {
+inline ::google::protobuf::uint32 hero::_state() const {
   // @@protoc_insertion_point(field_get:client_baseup.hero._state)
-  return static_cast< ::client_baseup::hero_status >(_state_);
+  return _state_;
 }
-inline void hero::set__state(::client_baseup::hero_status value) {
-  assert(::client_baseup::hero_status_IsValid(value));
+inline void hero::set__state(::google::protobuf::uint32 value) {
   set_has__state();
   _state_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.hero._state)
@@ -24110,7 +23077,7 @@ inline void suspend_report::set__gametime(::google::protobuf::uint32 value) {
 
 // reset_elite
 
-// required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+// required uint32 _type = 1;
 inline bool reset_elite::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -24121,15 +23088,14 @@ inline void reset_elite::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void reset_elite::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::reset_elite_rtype reset_elite::_type() const {
+inline ::google::protobuf::uint32 reset_elite::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.reset_elite._type)
-  return static_cast< ::client_baseup::reset_elite_rtype >(_type_);
+  return _type_;
 }
-inline void reset_elite::set__type(::client_baseup::reset_elite_rtype value) {
-  assert(::client_baseup::reset_elite_rtype_IsValid(value));
+inline void reset_elite::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.reset_elite._type)
@@ -24163,7 +23129,7 @@ inline void reset_elite::set__stageid(::google::protobuf::uint32 value) {
 
 // sweep_stage
 
-// required .client_baseup.sweep_stage.rtype _type = 1;
+// required uint32 _type = 1;
 inline bool sweep_stage::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -24174,15 +23140,14 @@ inline void sweep_stage::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void sweep_stage::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::sweep_stage_rtype sweep_stage::_type() const {
+inline ::google::protobuf::uint32 sweep_stage::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.sweep_stage._type)
-  return static_cast< ::client_baseup::sweep_stage_rtype >(_type_);
+  return _type_;
 }
-inline void sweep_stage::set__type(::client_baseup::sweep_stage_rtype value) {
-  assert(::client_baseup::sweep_stage_rtype_IsValid(value));
+inline void sweep_stage::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.sweep_stage._type)
@@ -24248,7 +23213,7 @@ inline void sweep_stage::set__times(::google::protobuf::uint32 value) {
 
 // tavern_draw
 
-// required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+// required uint32 _draw_type = 1;
 inline bool tavern_draw::has__draw_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -24259,21 +23224,20 @@ inline void tavern_draw::clear_has__draw_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tavern_draw::clear__draw_type() {
-  _draw_type_ = 0;
+  _draw_type_ = 0u;
   clear_has__draw_type();
 }
-inline ::client_baseup::tavern_draw_draw_type tavern_draw::_draw_type() const {
+inline ::google::protobuf::uint32 tavern_draw::_draw_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.tavern_draw._draw_type)
-  return static_cast< ::client_baseup::tavern_draw_draw_type >(_draw_type_);
+  return _draw_type_;
 }
-inline void tavern_draw::set__draw_type(::client_baseup::tavern_draw_draw_type value) {
-  assert(::client_baseup::tavern_draw_draw_type_IsValid(value));
+inline void tavern_draw::set__draw_type(::google::protobuf::uint32 value) {
   set_has__draw_type();
   _draw_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.tavern_draw._draw_type)
 }
 
-// required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+// required uint32 _box_type = 2;
 inline bool tavern_draw::has__box_type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -24284,15 +23248,14 @@ inline void tavern_draw::clear_has__box_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void tavern_draw::clear__box_type() {
-  _box_type_ = 1;
+  _box_type_ = 0u;
   clear_has__box_type();
 }
-inline ::client_baseup::tavern_draw_box_type tavern_draw::_box_type() const {
+inline ::google::protobuf::uint32 tavern_draw::_box_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.tavern_draw._box_type)
-  return static_cast< ::client_baseup::tavern_draw_box_type >(_box_type_);
+  return _box_type_;
 }
-inline void tavern_draw::set__box_type(::client_baseup::tavern_draw_box_type value) {
-  assert(::client_baseup::tavern_draw_box_type_IsValid(value));
+inline void tavern_draw::set__box_type(::google::protobuf::uint32 value) {
   set_has__box_type();
   _box_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.tavern_draw._box_type)
@@ -24944,7 +23907,7 @@ start_battle::mutable__attack_lineup() {
 
 // end_battle
 
-// required .client_baseup.battle_result _result = 1;
+// required uint32 _result = 1;
 inline bool end_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -24955,15 +23918,14 @@ inline void end_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void end_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseup::battle_result end_battle::_result() const {
+inline ::google::protobuf::uint32 end_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseup.end_battle._result)
-  return static_cast< ::client_baseup::battle_result >(_result_);
+  return _result_;
 }
-inline void end_battle::set__result(::client_baseup::battle_result value) {
-  assert(::client_baseup::battle_result_IsValid(value));
+inline void end_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.end_battle._result)
@@ -25067,7 +24029,7 @@ inline void query_replay::set__record_svrid(::google::protobuf::uint32 value) {
 
 // query_rankboard
 
-// required .client_baseup.query_rankboard.rankboard_type _type = 1;
+// required uint32 _type = 1;
 inline bool query_rankboard::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -25078,15 +24040,14 @@ inline void query_rankboard::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void query_rankboard::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::query_rankboard_rankboard_type query_rankboard::_type() const {
+inline ::google::protobuf::uint32 query_rankboard::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.query_rankboard._type)
-  return static_cast< ::client_baseup::query_rankboard_rankboard_type >(_type_);
+  return _type_;
 }
-inline void query_rankboard::set__type(::client_baseup::query_rankboard_rankboard_type value) {
-  assert(::client_baseup::query_rankboard_rankboard_type_IsValid(value));
+inline void query_rankboard::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.query_rankboard._type)
@@ -25136,7 +24097,7 @@ inline void query_oppo_info::set__oppo_user_id(::google::protobuf::uint32 value)
 
 // set_name
 
-// required .client_baseup.set_name.set_type _type = 1;
+// required uint32 _type = 1;
 inline bool set_name::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -25147,15 +24108,14 @@ inline void set_name::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void set_name::clear__type() {
-  _type_ = 0;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::set_name_set_type set_name::_type() const {
+inline ::google::protobuf::uint32 set_name::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.set_name._type)
-  return static_cast< ::client_baseup::set_name_set_type >(_type_);
+  return _type_;
 }
-inline void set_name::set__type(::client_baseup::set_name_set_type value) {
-  assert(::client_baseup::set_name_set_type_IsValid(value));
+inline void set_name::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.set_name._type)
@@ -25269,33 +24229,31 @@ inline void set_avatar::set__avatar(::google::protobuf::uint32 value) {
 
 // query_data
 
-// repeated .client_baseup.query_data.query_type _type = 1;
+// repeated uint32 _type = 1;
 inline int query_data::_type_size() const {
   return _type_.size();
 }
 inline void query_data::clear__type() {
   _type_.Clear();
 }
-inline ::client_baseup::query_data_query_type query_data::_type(int index) const {
+inline ::google::protobuf::uint32 query_data::_type(int index) const {
   // @@protoc_insertion_point(field_get:client_baseup.query_data._type)
-  return static_cast< ::client_baseup::query_data_query_type >(_type_.Get(index));
+  return _type_.Get(index);
 }
-inline void query_data::set__type(int index, ::client_baseup::query_data_query_type value) {
-  assert(::client_baseup::query_data_query_type_IsValid(value));
+inline void query_data::set__type(int index, ::google::protobuf::uint32 value) {
   _type_.Set(index, value);
   // @@protoc_insertion_point(field_set:client_baseup.query_data._type)
 }
-inline void query_data::add__type(::client_baseup::query_data_query_type value) {
-  assert(::client_baseup::query_data_query_type_IsValid(value));
+inline void query_data::add__type(::google::protobuf::uint32 value) {
   _type_.Add(value);
   // @@protoc_insertion_point(field_add:client_baseup.query_data._type)
 }
-inline const ::google::protobuf::RepeatedField<int>&
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
 query_data::_type() const {
   // @@protoc_insertion_point(field_list:client_baseup.query_data._type)
   return _type_;
 }
-inline ::google::protobuf::RepeatedField<int>*
+inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
 query_data::mutable__type() {
   // @@protoc_insertion_point(field_mutable_list:client_baseup.query_data._type)
   return &_type_;
@@ -25421,7 +24379,7 @@ inline void open_shop::set__shopid(::google::protobuf::uint32 value) {
 
 // charge
 
-// required .client_baseup.platform_type _platid = 1 [default = self];
+// required uint32 _platid = 1;
 inline bool charge::has__platid() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -25432,15 +24390,14 @@ inline void charge::clear_has__platid() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void charge::clear__platid() {
-  _platid_ = 0;
+  _platid_ = 0u;
   clear_has__platid();
 }
-inline ::client_baseup::platform_type charge::_platid() const {
+inline ::google::protobuf::uint32 charge::_platid() const {
   // @@protoc_insertion_point(field_get:client_baseup.charge._platid)
-  return static_cast< ::client_baseup::platform_type >(_platid_);
+  return _platid_;
 }
-inline void charge::set__platid(::client_baseup::platform_type value) {
-  assert(::client_baseup::platform_type_IsValid(value));
+inline void charge::set__platid(::google::protobuf::uint32 value) {
   set_has__platid();
   _platid_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.charge._platid)
@@ -25550,7 +24507,7 @@ inline void charge::set_allocated__extradata(::std::string* _extradata) {
 
 // ask_daily_login
 
-// required .client_baseup.ask_daily_login.status _status = 1;
+// required uint32 _status = 1;
 inline bool ask_daily_login::has__status() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -25561,15 +24518,14 @@ inline void ask_daily_login::clear_has__status() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void ask_daily_login::clear__status() {
-  _status_ = 1;
+  _status_ = 0u;
   clear_has__status();
 }
-inline ::client_baseup::ask_daily_login_status ask_daily_login::_status() const {
+inline ::google::protobuf::uint32 ask_daily_login::_status() const {
   // @@protoc_insertion_point(field_get:client_baseup.ask_daily_login._status)
-  return static_cast< ::client_baseup::ask_daily_login_status >(_status_);
+  return _status_;
 }
-inline void ask_daily_login::set__status(::client_baseup::ask_daily_login_status value) {
-  assert(::client_baseup::ask_daily_login_status_IsValid(value));
+inline void ask_daily_login::set__status(::google::protobuf::uint32 value) {
   set_has__status();
   _status_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.ask_daily_login._status)
@@ -26019,7 +24975,7 @@ inline void tbc_hero::set__custom_data(::google::protobuf::uint32 value) {
 
 // tbc_end_battle
 
-// required .client_baseup.battle_result _result = 1 [default = victory];
+// required uint32 _result = 1;
 inline bool tbc_end_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -26030,15 +24986,14 @@ inline void tbc_end_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void tbc_end_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseup::battle_result tbc_end_battle::_result() const {
+inline ::google::protobuf::uint32 tbc_end_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseup.tbc_end_battle._result)
-  return static_cast< ::client_baseup::battle_result >(_result_);
+  return _result_;
 }
-inline void tbc_end_battle::set__result(::client_baseup::battle_result value) {
-  assert(::client_baseup::battle_result_IsValid(value));
+inline void tbc_end_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.tbc_end_battle._result)
@@ -26525,7 +25480,7 @@ inline void chat::set_allocated__chat_broad_say(::client_baseup::chat_broad_say*
 
 // chat_broad_say
 
-// optional .client_baseup.chat_channel _channel = 1;
+// optional uint32 _channel = 1;
 inline bool chat_broad_say::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -26536,15 +25491,14 @@ inline void chat_broad_say::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_broad_say::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseup::chat_channel chat_broad_say::_channel() const {
+inline ::google::protobuf::uint32 chat_broad_say::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseup.chat_broad_say._channel)
-  return static_cast< ::client_baseup::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_broad_say::set__channel(::client_baseup::chat_channel value) {
-  assert(::client_baseup::chat_channel_IsValid(value));
+inline void chat_broad_say::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.chat_broad_say._channel)
@@ -26729,7 +25683,7 @@ inline void chat_broad_say::set_allocated__accessory(::client_baseup::chat_acc* 
 
 // chat_say
 
-// required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+// required uint32 _channel = 1;
 inline bool chat_say::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -26740,15 +25694,14 @@ inline void chat_say::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_say::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseup::chat_channel chat_say::_channel() const {
+inline ::google::protobuf::uint32 chat_say::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseup.chat_say._channel)
-  return static_cast< ::client_baseup::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_say::set__channel(::client_baseup::chat_channel value) {
-  assert(::client_baseup::chat_channel_IsValid(value));
+inline void chat_say::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.chat_say._channel)
@@ -26923,7 +25876,7 @@ inline void chat_say::set_allocated__accessory(::client_baseup::chat_acc* _acces
 
 // chat_acc
 
-// required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+// required uint32 _type = 1;
 inline bool chat_acc::has__type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -26934,15 +25887,14 @@ inline void chat_acc::clear_has__type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_acc::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::chat_acc_chat_acc_t chat_acc::_type() const {
+inline ::google::protobuf::uint32 chat_acc::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.chat_acc._type)
-  return static_cast< ::client_baseup::chat_acc_chat_acc_t >(_type_);
+  return _type_;
 }
-inline void chat_acc::set__type(::client_baseup::chat_acc_chat_acc_t value) {
-  assert(::client_baseup::chat_acc_chat_acc_t_IsValid(value));
+inline void chat_acc::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.chat_acc._type)
@@ -27052,7 +26004,7 @@ inline void chat_acc::set__record_id(::google::protobuf::uint32 value) {
 
 // chat_fresh
 
-// required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+// required uint32 _channel = 1;
 inline bool chat_fresh::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -27063,15 +26015,14 @@ inline void chat_fresh::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_fresh::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseup::chat_channel chat_fresh::_channel() const {
+inline ::google::protobuf::uint32 chat_fresh::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseup.chat_fresh._channel)
-  return static_cast< ::client_baseup::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_fresh::set__channel(::client_baseup::chat_channel value) {
-  assert(::client_baseup::chat_channel_IsValid(value));
+inline void chat_fresh::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.chat_fresh._channel)
@@ -27081,7 +26032,7 @@ inline void chat_fresh::set__channel(::client_baseup::chat_channel value) {
 
 // chat_fetch
 
-// required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+// required uint32 _channel = 1;
 inline bool chat_fetch::has__channel() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -27092,15 +26043,14 @@ inline void chat_fetch::clear_has__channel() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void chat_fetch::clear__channel() {
-  _channel_ = 1;
+  _channel_ = 0u;
   clear_has__channel();
 }
-inline ::client_baseup::chat_channel chat_fetch::_channel() const {
+inline ::google::protobuf::uint32 chat_fetch::_channel() const {
   // @@protoc_insertion_point(field_get:client_baseup.chat_fetch._channel)
-  return static_cast< ::client_baseup::chat_channel >(_channel_);
+  return _channel_;
 }
-inline void chat_fetch::set__channel(::client_baseup::chat_channel value) {
-  assert(::client_baseup::chat_channel_IsValid(value));
+inline void chat_fetch::set__channel(::google::protobuf::uint32 value) {
   set_has__channel();
   _channel_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.chat_fetch._channel)
@@ -28711,7 +27661,7 @@ inline void guild::set_allocated__guild_send_mail(::client_baseup::guild_send_ma
 
 // guild_set_jump
 
-// required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+// required uint32 _is_can_jump = 1;
 inline bool guild_set_jump::has__is_can_jump() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -28722,15 +27672,14 @@ inline void guild_set_jump::clear_has__is_can_jump() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_set_jump::clear__is_can_jump() {
-  _is_can_jump_ = 1;
+  _is_can_jump_ = 0u;
   clear_has__is_can_jump();
 }
-inline ::client_baseup::guild_set_jump_is_can_jump guild_set_jump::_is_can_jump() const {
+inline ::google::protobuf::uint32 guild_set_jump::_is_can_jump() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_set_jump._is_can_jump)
-  return static_cast< ::client_baseup::guild_set_jump_is_can_jump >(_is_can_jump_);
+  return _is_can_jump_;
 }
-inline void guild_set_jump::set__is_can_jump(::client_baseup::guild_set_jump_is_can_jump value) {
-  assert(::client_baseup::guild_set_jump_is_can_jump_IsValid(value));
+inline void guild_set_jump::set__is_can_jump(::google::protobuf::uint32 value) {
   set_has__is_can_jump();
   _is_can_jump_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_set_jump._is_can_jump)
@@ -29204,7 +28153,7 @@ inline void guild_instance_start::set__stage_id(::google::protobuf::uint32 value
 
 // guild_instance_end
 
-// required .client_baseup.battle_result _result = 1;
+// required uint32 _result = 1;
 inline bool guild_instance_end::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -29215,15 +28164,14 @@ inline void guild_instance_end::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_instance_end::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseup::battle_result guild_instance_end::_result() const {
+inline ::google::protobuf::uint32 guild_instance_end::_result() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_instance_end._result)
-  return static_cast< ::client_baseup::battle_result >(_result_);
+  return _result_;
 }
-inline void guild_instance_end::set__result(::client_baseup::battle_result value) {
-  assert(::client_baseup::battle_result_IsValid(value));
+inline void guild_instance_end::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_instance_end._result)
@@ -29699,7 +28647,7 @@ inline void guild_join_confirm::set__uid(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.guild_join_confirm._uid)
 }
 
-// required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+// required uint32 _type = 2;
 inline bool guild_join_confirm::has__type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -29710,15 +28658,14 @@ inline void guild_join_confirm::clear_has__type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_join_confirm::clear__type() {
-  _type_ = 1;
+  _type_ = 0u;
   clear_has__type();
 }
-inline ::client_baseup::guild_join_confirm_confirm_type guild_join_confirm::_type() const {
+inline ::google::protobuf::uint32 guild_join_confirm::_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_join_confirm._type)
-  return static_cast< ::client_baseup::guild_join_confirm_confirm_type >(_type_);
+  return _type_;
 }
-inline void guild_join_confirm::set__type(::client_baseup::guild_join_confirm_confirm_type value) {
-  assert(::client_baseup::guild_join_confirm_confirm_type_IsValid(value));
+inline void guild_join_confirm::set__type(::google::protobuf::uint32 value) {
   set_has__type();
   _type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_join_confirm._type)
@@ -29784,7 +28731,7 @@ inline void guild_set::set__avatar(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.guild_set._avatar)
 }
 
-// optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+// optional uint32 _join_type = 2;
 inline bool guild_set::has__join_type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -29795,15 +28742,14 @@ inline void guild_set::clear_has__join_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_set::clear__join_type() {
-  _join_type_ = 1;
+  _join_type_ = 0u;
   clear_has__join_type();
 }
-inline ::client_baseup::guild_set_guild_join_t guild_set::_join_type() const {
+inline ::google::protobuf::uint32 guild_set::_join_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_set._join_type)
-  return static_cast< ::client_baseup::guild_set_guild_join_t >(_join_type_);
+  return _join_type_;
 }
-inline void guild_set::set__join_type(::client_baseup::guild_set_guild_join_t value) {
-  assert(::client_baseup::guild_set_guild_join_t_IsValid(value));
+inline void guild_set::set__join_type(::google::protobuf::uint32 value) {
   set_has__join_type();
   _join_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_set._join_type)
@@ -29993,7 +28939,7 @@ inline void guild_set_job::set__uid(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.guild_set_job._uid)
 }
 
-// required .client_baseup.guild_job_t _job = 2;
+// required uint32 _job = 2;
 inline bool guild_set_job::has__job() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -30004,15 +28950,14 @@ inline void guild_set_job::clear_has__job() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void guild_set_job::clear__job() {
-  _job_ = 1;
+  _job_ = 0u;
   clear_has__job();
 }
-inline ::client_baseup::guild_job_t guild_set_job::_job() const {
+inline ::google::protobuf::uint32 guild_set_job::_job() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_set_job._job)
-  return static_cast< ::client_baseup::guild_job_t >(_job_);
+  return _job_;
 }
-inline void guild_set_job::set__job(::client_baseup::guild_job_t value) {
-  assert(::client_baseup::guild_job_t_IsValid(value));
+inline void guild_set_job::set__job(::google::protobuf::uint32 value) {
   set_has__job();
   _job_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_set_job._job)
@@ -30078,7 +29023,7 @@ inline void guild_del_hire::set__heroid(::google::protobuf::uint32 value) {
 
 // guild_query_hires
 
-// required .client_baseup.hire_from _from = 1;
+// required uint32 _from = 1;
 inline bool guild_query_hires::has__from() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -30089,15 +29034,14 @@ inline void guild_query_hires::clear_has__from() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void guild_query_hires::clear__from() {
-  _from_ = 0;
+  _from_ = 0u;
   clear_has__from();
 }
-inline ::client_baseup::hire_from guild_query_hires::_from() const {
+inline ::google::protobuf::uint32 guild_query_hires::_from() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_query_hires._from)
-  return static_cast< ::client_baseup::hire_from >(_from_);
+  return _from_;
 }
-inline void guild_query_hires::set__from(::client_baseup::hire_from value) {
-  assert(::client_baseup::hire_from_IsValid(value));
+inline void guild_query_hires::set__from(::google::protobuf::uint32 value) {
   set_has__from();
   _from_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_query_hires._from)
@@ -30155,7 +29099,7 @@ inline void guild_hire_hero::set__heroid(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.guild_hire_hero._heroid)
 }
 
-// required .client_baseup.hire_from _from = 3;
+// required uint32 _from = 3;
 inline bool guild_hire_hero::has__from() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -30166,15 +29110,14 @@ inline void guild_hire_hero::clear_has__from() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void guild_hire_hero::clear__from() {
-  _from_ = 0;
+  _from_ = 0u;
   clear_has__from();
 }
-inline ::client_baseup::hire_from guild_hire_hero::_from() const {
+inline ::google::protobuf::uint32 guild_hire_hero::_from() const {
   // @@protoc_insertion_point(field_get:client_baseup.guild_hire_hero._from)
-  return static_cast< ::client_baseup::hire_from >(_from_);
+  return _from_;
 }
-inline void guild_hire_hero::set__from(::client_baseup::hire_from value) {
-  assert(::client_baseup::hire_from_IsValid(value));
+inline void guild_hire_hero::set__from(::google::protobuf::uint32 value) {
   set_has__from();
   _from_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.guild_hire_hero._from)
@@ -31310,7 +30253,7 @@ inline void excavate_start_battle::set__use_hire(::google::protobuf::uint32 valu
 
 // excavate_end_battle
 
-// required .client_baseup.battle_result _result = 1 [default = victory];
+// required uint32 _result = 1;
 inline bool excavate_end_battle::has__result() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -31321,15 +30264,14 @@ inline void excavate_end_battle::clear_has__result() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void excavate_end_battle::clear__result() {
-  _result_ = 0;
+  _result_ = 0u;
   clear_has__result();
 }
-inline ::client_baseup::battle_result excavate_end_battle::_result() const {
+inline ::google::protobuf::uint32 excavate_end_battle::_result() const {
   // @@protoc_insertion_point(field_get:client_baseup.excavate_end_battle._result)
-  return static_cast< ::client_baseup::battle_result >(_result_);
+  return _result_;
 }
-inline void excavate_end_battle::set__result(::client_baseup::battle_result value) {
-  assert(::client_baseup::battle_result_IsValid(value));
+inline void excavate_end_battle::set__result(::google::protobuf::uint32 value) {
   set_has__result();
   _result_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.excavate_end_battle._result)
@@ -32127,7 +31069,7 @@ inline void report_battle::set_allocated__data(::std::string* _data) {
 
 // query_ranklist
 
-// required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+// required uint32 _rank_type = 1;
 inline bool query_ranklist::has__rank_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -32138,15 +31080,14 @@ inline void query_ranklist::clear_has__rank_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void query_ranklist::clear__rank_type() {
-  _rank_type_ = 1;
+  _rank_type_ = 0u;
   clear_has__rank_type();
 }
-inline ::client_baseup::query_ranklist_rank_type query_ranklist::_rank_type() const {
+inline ::google::protobuf::uint32 query_ranklist::_rank_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.query_ranklist._rank_type)
-  return static_cast< ::client_baseup::query_ranklist_rank_type >(_rank_type_);
+  return _rank_type_;
 }
-inline void query_ranklist::set__rank_type(::client_baseup::query_ranklist_rank_type value) {
-  assert(::client_baseup::query_ranklist_rank_type_IsValid(value));
+inline void query_ranklist::set__rank_type(::google::protobuf::uint32 value) {
   set_has__rank_type();
   _rank_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.query_ranklist._rank_type)
@@ -32208,7 +31149,7 @@ inline void require_arousal::set__hid(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:client_baseup.require_arousal._hid)
 }
 
-// required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+// required uint32 _arousal_type = 2;
 inline bool require_arousal::has__arousal_type() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -32219,15 +31160,14 @@ inline void require_arousal::clear_has__arousal_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void require_arousal::clear__arousal_type() {
-  _arousal_type_ = 1;
+  _arousal_type_ = 0u;
   clear_has__arousal_type();
 }
-inline ::client_baseup::require_arousal_arousal_type require_arousal::_arousal_type() const {
+inline ::google::protobuf::uint32 require_arousal::_arousal_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.require_arousal._arousal_type)
-  return static_cast< ::client_baseup::require_arousal_arousal_type >(_arousal_type_);
+  return _arousal_type_;
 }
-inline void require_arousal::set__arousal_type(::client_baseup::require_arousal_arousal_type value) {
-  assert(::client_baseup::require_arousal_arousal_type_IsValid(value));
+inline void require_arousal::set__arousal_type(::google::protobuf::uint32 value) {
   set_has__arousal_type();
   _arousal_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.require_arousal._arousal_type)
@@ -32261,7 +31201,7 @@ inline void require_arousal::set__aid(::google::protobuf::uint32 value) {
 
 // change_server
 
-// required .client_baseup.server_opt_type _op_type = 1;
+// required uint32 _op_type = 1;
 inline bool change_server::has__op_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -32272,15 +31212,14 @@ inline void change_server::clear_has__op_type() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void change_server::clear__op_type() {
-  _op_type_ = 0;
+  _op_type_ = 0u;
   clear_has__op_type();
 }
-inline ::client_baseup::server_opt_type change_server::_op_type() const {
+inline ::google::protobuf::uint32 change_server::_op_type() const {
   // @@protoc_insertion_point(field_get:client_baseup.change_server._op_type)
-  return static_cast< ::client_baseup::server_opt_type >(_op_type_);
+  return _op_type_;
 }
-inline void change_server::set__op_type(::client_baseup::server_opt_type value) {
-  assert(::client_baseup::server_opt_type_IsValid(value));
+inline void change_server::set__op_type(::google::protobuf::uint32 value) {
   set_has__op_type();
   _op_type_ = value;
   // @@protoc_insertion_point(field_set:client_baseup.change_server._op_type)
@@ -32409,136 +31348,6 @@ inline void fb_attention::set__fb_attention(::google::protobuf::uint32 value) {
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::client_baseup::system_setting_change_setting_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::system_setting_change_setting_status>() {
-  return ::client_baseup::system_setting_change_setting_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::set_money_price_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::set_money_price_type>() {
-  return ::client_baseup::set_money_price_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::buy_vitality_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::buy_vitality_type>() {
-  return ::client_baseup::buy_vitality_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::shop_refresh_rtype> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::shop_refresh_rtype>() {
-  return ::client_baseup::shop_refresh_rtype_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::hero_equip_upgrade_OP_TYPE> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::hero_equip_upgrade_OP_TYPE>() {
-  return ::client_baseup::hero_equip_upgrade_OP_TYPE_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::reset_elite_rtype> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::reset_elite_rtype>() {
-  return ::client_baseup::reset_elite_rtype_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::sweep_stage_rtype> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::sweep_stage_rtype>() {
-  return ::client_baseup::sweep_stage_rtype_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::tavern_draw_draw_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::tavern_draw_draw_type>() {
-  return ::client_baseup::tavern_draw_draw_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::tavern_draw_box_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::tavern_draw_box_type>() {
-  return ::client_baseup::tavern_draw_box_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::query_rankboard_rankboard_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::query_rankboard_rankboard_type>() {
-  return ::client_baseup::query_rankboard_rankboard_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::set_name_set_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::set_name_set_type>() {
-  return ::client_baseup::set_name_set_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::query_data_query_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::query_data_query_type>() {
-  return ::client_baseup::query_data_query_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::ask_daily_login_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::ask_daily_login_status>() {
-  return ::client_baseup::ask_daily_login_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::chat_acc_chat_acc_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::chat_acc_chat_acc_t>() {
-  return ::client_baseup::chat_acc_chat_acc_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::guild_set_jump_is_can_jump> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::guild_set_jump_is_can_jump>() {
-  return ::client_baseup::guild_set_jump_is_can_jump_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::guild_join_confirm_confirm_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::guild_join_confirm_confirm_type>() {
-  return ::client_baseup::guild_join_confirm_confirm_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::guild_set_guild_join_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::guild_set_guild_join_t>() {
-  return ::client_baseup::guild_set_guild_join_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::query_ranklist_rank_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::query_ranklist_rank_type>() {
-  return ::client_baseup::query_ranklist_rank_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::require_arousal_arousal_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::require_arousal_arousal_type>() {
-  return ::client_baseup::require_arousal_arousal_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::hero_status> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::hero_status>() {
-  return ::client_baseup::hero_status_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::guild_job_t> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::guild_job_t>() {
-  return ::client_baseup::guild_job_t_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::hire_from> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::hire_from>() {
-  return ::client_baseup::hire_from_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::chat_channel> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::chat_channel>() {
-  return ::client_baseup::chat_channel_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::server_opt_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::server_opt_type>() {
-  return ::client_baseup::server_opt_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::platform_type> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::platform_type>() {
-  return ::client_baseup::platform_type_descriptor();
-}
-template <> struct is_proto_enum< ::client_baseup::battle_result> : ::google::protobuf::internal::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::client_baseup::battle_result>() {
-  return ::client_baseup::battle_result_descriptor();
-}
 
 }  // namespace google
 }  // namespace protobuf

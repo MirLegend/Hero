@@ -28,6 +28,9 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "helper/debug_helper.h"
 #include "network/address.h"
 #include "network/message_handler.h"
+
+#include "proto/cb.pb.h"
+#include "proto/up.pb.h"
 	
 namespace KBEngine{
 
@@ -149,8 +152,15 @@ public:
 	*/
 	Network::Channel* pChannel();
 
+	//处理客户端消息
+	void OnProcessClientUpMsg(MemoryStream& s);
+
 public:
 	void sendUserDownInfo();
+	//新手引导消息处理
+	bool OnTutorial(const client_baseup::tutorial& tutorialmsg, client_baseserver::down_msg& downmsg);
+	bool OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg, client_baseserver::down_msg& downmsg);
+	bool OnTavernDraw(const client_baseup::tavern_draw& tavern_drawmsg, client_baseserver::down_msg& downmsg);
 
 protected:
 	uint64 rndUUID_;

@@ -41,7 +41,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* system_setting_change_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   system_setting_change_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* system_setting_change_setting_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* system_setting_request_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   system_setting_request_reflection_ = NULL;
@@ -90,7 +89,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* set_money_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_money_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* set_money_price_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* hero_upgrade_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hero_upgrade_reflection_ = NULL;
@@ -106,14 +104,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* buy_vitality_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   buy_vitality_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* buy_vitality_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* consume_item_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   consume_item_reflection_ = NULL;
 const ::google::protobuf::Descriptor* shop_refresh_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   shop_refresh_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* shop_refresh_rtype_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* shop_consume_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   shop_consume_reflection_ = NULL;
@@ -129,7 +125,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* hero_equip_upgrade_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hero_equip_upgrade_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* hero_equip_upgrade_OP_TYPE_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* hero_equip_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hero_equip_reflection_ = NULL;
@@ -163,11 +158,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* reset_elite_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   reset_elite_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* reset_elite_rtype_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* sweep_stage_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   sweep_stage_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* sweep_stage_rtype_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* buy_skill_stren_point_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   buy_skill_stren_point_reflection_ = NULL;
@@ -177,8 +170,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* tavern_draw_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tavern_draw_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* tavern_draw_draw_type_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* tavern_draw_box_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* hero_evolve_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   hero_evolve_reflection_ = NULL;
@@ -215,7 +206,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* query_rankboard_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_rankboard_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* query_rankboard_rankboard_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* query_oppo_info_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_oppo_info_reflection_ = NULL;
@@ -231,14 +221,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* set_name_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_name_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* set_name_set_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* set_avatar_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   set_avatar_reflection_ = NULL;
 const ::google::protobuf::Descriptor* query_data_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_data_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* query_data_query_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* midas_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   midas_reflection_ = NULL;
@@ -251,7 +239,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* ask_daily_login_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   ask_daily_login_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* ask_daily_login_status_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* tbc_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   tbc_reflection_ = NULL;
@@ -303,7 +290,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* chat_acc_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   chat_acc_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* chat_fresh_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   chat_fresh_reflection_ = NULL;
@@ -322,7 +308,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_set_jump_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_set_jump_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_set_jump_is_can_jump_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_send_mail_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_send_mail_reflection_ = NULL;
@@ -392,7 +377,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_join_confirm_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_join_confirm_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_join_confirm_confirm_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_leave_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_leave_reflection_ = NULL;
@@ -402,7 +386,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* guild_set_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_set_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_set_guild_join_t_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* guild_query_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   guild_query_reflection_ = NULL;
@@ -511,14 +494,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* query_ranklist_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   query_ranklist_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* query_ranklist_rank_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* dot_info_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   dot_info_reflection_ = NULL;
 const ::google::protobuf::Descriptor* require_arousal_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   require_arousal_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* require_arousal_arousal_type_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* change_server_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   change_server_reflection_ = NULL;
@@ -531,13 +512,6 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* fb_attention_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   fb_attention_reflection_ = NULL;
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* server_opt_type_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* platform_type_descriptor_ = NULL;
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor_ = NULL;
 
 }  // namespace
 
@@ -732,7 +706,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(system_setting_change));
-  system_setting_change_setting_status_descriptor_ = system_setting_change_descriptor_->enum_type(0);
   system_setting_request_descriptor_ = file->message_type(7);
   static const int system_setting_request_offsets_[1] = {
   };
@@ -1002,7 +975,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(set_money));
-  set_money_price_type_descriptor_ = set_money_descriptor_->enum_type(0);
   hero_upgrade_descriptor_ = file->message_type(23);
   static const int hero_upgrade_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hero_upgrade, _hero_id_),
@@ -1078,7 +1050,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(buy_vitality));
-  buy_vitality_type_descriptor_ = buy_vitality_descriptor_->enum_type(0);
   consume_item_descriptor_ = file->message_type(28);
   static const int consume_item_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(consume_item, _hero_id_),
@@ -1111,7 +1082,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(shop_refresh));
-  shop_refresh_rtype_descriptor_ = shop_refresh_descriptor_->enum_type(0);
   shop_consume_descriptor_ = file->message_type(30);
   static const int shop_consume_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(shop_consume, _sid_),
@@ -1194,7 +1164,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(hero_equip_upgrade));
-  hero_equip_upgrade_OP_TYPE_descriptor_ = hero_equip_upgrade_descriptor_->enum_type(0);
   hero_equip_descriptor_ = file->message_type(35);
   static const int hero_equip_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hero_equip, _index_),
@@ -1384,7 +1353,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(reset_elite));
-  reset_elite_rtype_descriptor_ = reset_elite_descriptor_->enum_type(0);
   sweep_stage_descriptor_ = file->message_type(46);
   static const int sweep_stage_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(sweep_stage, _type_),
@@ -1402,7 +1370,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(sweep_stage));
-  sweep_stage_rtype_descriptor_ = sweep_stage_descriptor_->enum_type(0);
   buy_skill_stren_point_descriptor_ = file->message_type(47);
   static const int buy_skill_stren_point_offsets_[1] = {
   };
@@ -1447,8 +1414,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(tavern_draw));
-  tavern_draw_draw_type_descriptor_ = tavern_draw_descriptor_->enum_type(0);
-  tavern_draw_box_type_descriptor_ = tavern_draw_descriptor_->enum_type(1);
   hero_evolve_descriptor_ = file->message_type(50);
   static const int hero_evolve_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(hero_evolve, _heroid_),
@@ -1639,7 +1604,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(query_rankboard));
-  query_rankboard_rankboard_type_descriptor_ = query_rankboard_descriptor_->enum_type(0);
   query_oppo_info_descriptor_ = file->message_type(62);
   static const int query_oppo_info_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(query_oppo_info, _oppo_user_id_),
@@ -1713,7 +1677,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(set_name));
-  set_name_set_type_descriptor_ = set_name_descriptor_->enum_type(0);
   set_avatar_descriptor_ = file->message_type(67);
   static const int set_avatar_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(set_avatar, _avatar_),
@@ -1746,7 +1709,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(query_data));
-  query_data_query_type_descriptor_ = query_data_descriptor_->enum_type(0);
   midas_descriptor_ = file->message_type(69);
   static const int midas_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(midas, _times_),
@@ -1809,7 +1771,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(ask_daily_login));
-  ask_daily_login_status_descriptor_ = ask_daily_login_descriptor_->enum_type(0);
   tbc_descriptor_ = file->message_type(73);
   static const int tbc_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tbc, _open_panel_),
@@ -2088,7 +2049,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(chat_acc));
-  chat_acc_chat_acc_t_descriptor_ = chat_acc_descriptor_->enum_type(0);
   chat_fresh_descriptor_ = file->message_type(90);
   static const int chat_fresh_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(chat_fresh, _channel_),
@@ -2216,7 +2176,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_set_jump));
-  guild_set_jump_is_can_jump_descriptor_ = guild_set_jump_descriptor_->enum_type(0);
   guild_send_mail_descriptor_ = file->message_type(96);
   static const int guild_send_mail_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(guild_send_mail, title_),
@@ -2569,7 +2528,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_join_confirm));
-  guild_join_confirm_confirm_type_descriptor_ = guild_join_confirm_descriptor_->enum_type(0);
   guild_leave_descriptor_ = file->message_type(119);
   static const int guild_leave_offsets_[1] = {
   };
@@ -2619,7 +2577,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(guild_set));
-  guild_set_guild_join_t_descriptor_ = guild_set_descriptor_->enum_type(0);
   guild_query_descriptor_ = file->message_type(122);
   static const int guild_query_offsets_[1] = {
   };
@@ -3188,7 +3145,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(query_ranklist));
-  query_ranklist_rank_type_descriptor_ = query_ranklist_descriptor_->enum_type(0);
   dot_info_descriptor_ = file->message_type(158);
   static const int dot_info_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(dot_info, _dot_id_),
@@ -3221,7 +3177,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(require_arousal));
-  require_arousal_arousal_type_descriptor_ = require_arousal_descriptor_->enum_type(0);
   change_server_descriptor_ = file->message_type(160);
   static const int change_server_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(change_server, _op_type_),
@@ -3283,13 +3238,6 @@ void protobuf_AssignDesc_up_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(fb_attention));
-  hero_status_descriptor_ = file->enum_type(0);
-  guild_job_t_descriptor_ = file->enum_type(1);
-  hire_from_descriptor_ = file->enum_type(2);
-  chat_channel_descriptor_ = file->enum_type(3);
-  server_opt_type_descriptor_ = file->enum_type(4);
-  platform_type_descriptor_ = file->enum_type(5);
-  battle_result_descriptor_ = file->enum_type(6);
 }
 
 namespace {
@@ -4083,393 +4031,312 @@ void protobuf_AddDesc_up_2eproto() {
     "day_happy\030\001 \002(\r\"\200\001\n\016system_setting\0227\n\010_r"
     "equest\030\001 \001(\0132%.client_baseup.system_sett"
     "ing_request\0225\n\007_change\030\002 \001(\0132$.client_ba"
-    "seup.system_setting_change\"V\n\025system_set"
+    "seup.system_setting_change\"3\n\025system_set"
     "ting_change\022\013\n\003key\030\001 \002(\t\022\r\n\005value\030\002 \002(\t\""
-    "!\n\016setting_status\022\006\n\002on\020\001\022\007\n\003off\020\002\"\030\n\026sy"
-    "stem_setting_request\"!\n\013push_notify\022\022\n\n_"
-    "client_id\030\001 \002(\t\"[\n\005login\022\024\n\014_active_code"
-    "\030\001 \001(\004\022\025\n\r_old_deviceid\030\002 \001(\t\022\020\n\010_versio"
-    "n\030\003 \001(\t\022\023\n\013_languageid\030\004 \001(\r\"Q\n\tsdk_logi"
-    "n\022\024\n\014_session_key\030\001 \002(\t\022.\n\010_plat_id\030\002 \002("
-    "\0162\034.client_baseup.platform_type\"\022\n\020reque"
-    "st_userinfo\" \n\013enter_stage\022\021\n\t_stage_id\030"
-    "\001 \002(\r\"\233\001\n\nexit_stage\0226\n\007_result\030\001 \002(\0162\034."
-    "client_baseup.battle_result:\007victory\022\016\n\006"
-    "_stars\030\002 \001(\r\022\017\n\007_heroes\030\003 \003(\r\022\022\n\n_oprati"
-    "ons\030\004 \003(\r\022\014\n\004_md5\030\005 \001(\t\022\022\n\n_self_data\030\006 "
-    "\003(\r\"\343\003\n\006gm_cmd\022\032\n\022_unlock_all_stages\030\001 \001"
-    "(\005\022\027\n\017_get_all_heroes\030\002 \001(\005\022+\n\016_set_hero"
-    "_info\030\003 \003(\0132\023.client_baseup.hero\022\025\n\r_set"
-    "_vitality\030\004 \001(\005\022,\n\n_set_money\030\005 \001(\0132\030.cl"
-    "ient_baseup.set_money\022\031\n\021_set_recharge_s"
-    "um\030\006 \001(\005\022\031\n\021_set_player_level\030\007 \001(\005\022\027\n\017_"
-    "set_player_exp\030\010 \001(\005\022\022\n\n_set_items\030\t \003(\r"
-    "\022\025\n\r_reset_device\030\n \001(\r\022\032\n\022_open_mystery"
-    "_shop\030\013 \001(\r\022\023\n\013_archive_id\030\014 \001(\r\022\023\n\013_res"
-    "tore_id\030\r \001(\r\022\024\n\014_reset_sweep\030\016 \001(\005\022\034\n\024_"
-    "set_dailylogin_days\030\017 \001(\r\022>\n\021_open_guild"
-    "_stage\030\020 \001(\0132#.client_baseup.open_all_gu"
-    "ild_stage\"7\n\ractivity_info\022\024\n\014_player_na"
-    "me\030\001 \002(\t\022\020\n\010_version\030\002 \002(\r\">\n\023activity_l"
-    "otto_info\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_activit"
-    "y_id\030\002 \002(\r\"C\n\030activity_bigpackage_info\022\021"
-    "\n\t_group_id\030\001 \002(\t\022\024\n\014_activity_id\030\002 \002(\r\""
-    "[\n\037activity_bigpackage_reward_info\022\021\n\t_g"
-    "roup_id\030\001 \002(\t\022\024\n\014_activity_id\030\002 \002(\r\022\017\n\007_"
-    "box_id\030\003 \002(\r\"D\n\031activity_bigpackage_rese"
-    "t\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_activity_id\030\002 \002"
-    "(\r\"@\n\025activity_lotto_reward\022\021\n\t_group_id"
-    "\030\001 \002(\t\022\024\n\014_activity_id\030\002 \002(\r\"\026\n\024open_all"
-    "_guild_stage\"\247\001\n\tset_money\0222\n\005_type\030\001 \002("
-    "\0162#.client_baseup.set_money.price_type\022\017"
-    "\n\007_amount\030\002 \002(\r\"U\n\nprice_type\022\010\n\004gold\020\000\022"
-    "\013\n\007diamond\020\001\022\020\n\014crusadepoint\020\002\022\016\n\narenap"
-    "oint\020\003\022\016\n\nguildpoint\020\004\" \n\014hero_upgrade\022\020"
-    "\n\010_hero_id\030\001 \002(\r\"$\n\017equip_synthesis\022\021\n\t_"
-    "equip_id\030\001 \002(\r\"1\n\nwear_equip\022\020\n\010_hero_id"
-    "\030\001 \002(\r\022\021\n\t_item_pos\030\002 \002(\r\"\017\n\rsync_vitali"
-    "ty\"f\n\014buy_vitality\022/\n\005_type\030\001 \001(\0162 .clie"
-    "nt_baseup.buy_vitality.type\"%\n\004type\022\017\n\013s"
-    "hadow_rune\020\001\022\014\n\010vitality\020\002\"2\n\014consume_it"
-    "em\022\020\n\010_hero_id\030\001 \002(\r\022\020\n\010_item_id\030\002 \002(\r\"\221"
-    "\001\n\014shop_refresh\0226\n\005_type\030\001 \002(\0162!.client_"
-    "baseup.shop_refresh.rtype:\004sync\022\020\n\010_shop"
-    "_id\030\002 \002(\r\"7\n\005rtype\022\010\n\004sync\020\000\022\020\n\014auto_ref"
-    "resh\020\001\022\022\n\016manual_refresh\020\002\">\n\014shop_consu"
-    "me\022\014\n\004_sid\030\001 \002(\r\022\017\n\007_slotid\030\002 \002(\r\022\017\n\007_am"
-    "ount\030\003 \002(\r\"0\n\rskill_levelup\022\017\n\007_heroid\030\001"
-    " \002(\r\022\016\n\006_order\030\002 \003(\r\"\032\n\tsell_item\022\r\n\005_it"
-    "em\030\001 \003(\r\";\n\020fragment_compose\022\021\n\t_fragmen"
-    "t\030\001 \002(\r\022\024\n\014_frag_amount\030\002 \002(\r\"\256\001\n\022hero_e"
-    "quip_upgrade\022C\n\010_op_type\030\001 \002(\0162).client_"
-    "baseup.hero_equip_upgrade.OP_TYPE:\006norma"
-    "l\022\017\n\007_heroid\030\002 \002(\r\022\r\n\005_slot\030\003 \002(\r\022\022\n\n_ma"
-    "terials\030\004 \003(\r\"\037\n\007OP_TYPE\022\n\n\006normal\020\001\022\010\n\004"
-    "boss\020\002\"<\n\nhero_equip\022\016\n\006_index\030\001 \002(\r\022\020\n\010"
-    "_item_id\030\002 \002(\r\022\014\n\004_exp\030\003 \002(\r\"\373\001\n\004hero\022\014\n"
-    "\004_tid\030\001 \002(\r\022\r\n\005_rank\030\002 \001(\r\022\016\n\006_level\030\003 \002"
-    "(\r\022\016\n\006_stars\030\004 \002(\r\022\014\n\004_exp\030\005 \002(\r\022\013\n\003_gs\030"
-    "\006 \002(\r\022*\n\006_state\030\007 \002(\0162\032.client_baseup.he"
-    "ro_status\022\025\n\r_skill_levels\030\010 \003(\r\022)\n\006_ite"
-    "ms\030\t \003(\0132\031.client_baseup.hero_equip\022-\n\010_"
-    "arousal\030\n \001(\0132\033.client_baseup.hero_arous"
-    "al\"\274\001\n\014hero_arousal\022\017\n\007_status\030\001 \002(\r\022\014\n\004"
-    "_str\030\002 \002(\r\022\014\n\004_agi\030\003 \002(\r\022\014\n\004_int\030\004 \002(\r\022\020"
-    "\n\010_str_var\030\005 \002(\005\022\020\n\010_agi_var\030\006 \002(\005\022\020\n\010_i"
-    "nt_var\030\007 \002(\005\022\022\n\n_cost_gold\030\010 \002(\r\022\025\n\r_cos"
-    "t_diamond\030\t \002(\r\022\020\n\010_aro_exp\030\n \002(\r\"\033\n\010tut"
-    "orial\022\017\n\007_record\030\001 \003(\r\"\035\n\014trigger_task\022\r"
-    "\n\005_task\030\001 \003(\r\"-\n\017require_rewards\022\r\n\005_lin"
-    "e\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\"D\n\022change_task_stat"
-    "us\022\r\n\005_line\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\022\022\n\n_opera"
-    "tion\030\003 \002(\r\"\034\n\013trigger_job\022\r\n\005_jobs\030\001 \003(\r"
-    "\"\033\n\013job_rewards\022\014\n\004_job\030\001 \002(\r\"#\n\016suspend"
-    "_report\022\021\n\t_gametime\030\001 \002(\r\"\204\001\n\013reset_eli"
-    "te\022;\n\005_type\030\001 \002(\0162 .client_baseup.reset_"
-    "elite.rtype:\ndaily_free\022\020\n\010_stageid\030\002 \001("
-    "\r\"&\n\005rtype\022\016\n\ndaily_free\020\000\022\r\n\tvip_reset\020"
-    "\001\"\224\001\n\013sweep_stage\022/\n\005_type\030\001 \002(\0162 .clien"
-    "t_baseup.sweep_stage.rtype\022\020\n\010_stageid\030\002"
-    " \002(\r\022\016\n\006_times\030\003 \001(\r\"2\n\005rtype\022\025\n\021sweep_w"
-    "ith_ticket\020\000\022\022\n\016sweep_with_rmb\020\001\"\027\n\025buy_"
-    "skill_stren_point\"\017\n\rask_magicsoul\"\266\002\n\013t"
-    "avern_draw\022@\n\n_draw_type\030\001 \002(\0162$.client_"
-    "baseup.tavern_draw.draw_type:\006single\022=\n\t"
-    "_box_type\030\002 \002(\0162#.client_baseup.tavern_d"
-    "raw.box_type:\005green\"7\n\tdraw_type\022\n\n\006sing"
-    "le\020\000\022\t\n\005combo\020\001\022\t\n\005stone\020\003\022\010\n\004free\020\004\"m\n\010"
-    "box_type\022\t\n\005green\020\001\022\010\n\004blue\020\002\022\n\n\006purple\020"
-    "\003\022\r\n\tmagicsoul\020\004\022\017\n\013stone_green\020\005\022\016\n\nsto"
-    "ne_blue\020\006\022\020\n\014stone_purple\020\007\"\036\n\013hero_evol"
-    "ve\022\017\n\007_heroid\030\001 \002(\r\"7\n\017enter_act_stage\022\024"
-    "\n\014_stage_group\030\001 \002(\r\022\016\n\006_stage\030\002 \002(\r\"\221\005\n"
-    "\006ladder\022.\n\013_open_panel\030\001 \001(\0132\031.client_ba"
-    "seup.open_panel\0226\n\017_apply_opponent\030\002 \001(\013"
-    "2\035.client_baseup.apply_opponent\0222\n\r_star"
-    "t_battle\030\003 \001(\0132\033.client_baseup.start_bat"
-    "tle\022.\n\013_end_battle\030\004 \001(\0132\031.client_baseup"
-    ".end_battle\022.\n\013_set_lineup\030\005 \001(\0132\031.clien"
-    "t_baseup.set_lineup\0224\n\016_query_records\030\006 "
-    "\001(\0132\034.client_baseup.query_records\0222\n\r_qu"
-    "ery_replay\030\007 \001(\0132\033.client_baseup.query_r"
-    "eplay\0228\n\020_query_rankboard\030\010 \001(\0132\036.client"
-    "_baseup.query_rankboard\0223\n\013_query_oppo\030\t"
-    " \001(\0132\036.client_baseup.query_oppo_info\0228\n\020"
-    "_clear_battle_cd\030\n \001(\0132\036.client_baseup.c"
-    "lear_battle_cd\022:\n\021_draw_rank_reward\030\013 \001("
-    "\0132\037.client_baseup.draw_rank_reward\022<\n\022_b"
-    "uy_battle_chance\030\014 \001(\0132 .client_baseup.b"
-    "uy_battle_chance\"\014\n\nopen_panel\"\020\n\016apply_"
-    "opponent\"=\n\014start_battle\022\025\n\r_oppo_user_i"
-    "d\030\001 \002(\r\022\026\n\016_attack_lineup\030\002 \003(\r\";\n\nend_b"
-    "attle\022-\n\007_result\030\001 \002(\0162\034.client_baseup.b"
-    "attle_result\"\035\n\nset_lineup\022\017\n\007_lineup\030\001 "
-    "\003(\r\"\017\n\rquery_records\"<\n\014query_replay\022\025\n\r"
-    "_record_index\030\001 \002(\r\022\025\n\r_record_svrid\030\002 \001"
-    "(\r\"\022\n\020sync_skill_stren\"|\n\017query_rankboar"
-    "d\022<\n\005_type\030\001 \002(\0162-.client_baseup.query_r"
-    "ankboard.rankboard_type\"+\n\016rankboard_typ"
-    "e\022\014\n\010static_c\020\000\022\013\n\007dynamic\020\001\"(\n\017query_op"
-    "po_info\022\025\n\r_oppo_user_id\030\001 \002(\r\"\021\n\017clear_"
-    "battle_cd\"\022\n\020draw_rank_reward\"\023\n\021buy_bat"
-    "tle_chance\"i\n\010set_name\022/\n\005_type\030\001 \002(\0162 ."
-    "client_baseup.set_name.set_type\022\r\n\005_name"
-    "\030\002 \002(\t\"\035\n\010set_type\022\010\n\004free\020\000\022\007\n\003rmb\020\001\"\035\n"
-    "\nset_avatar\022\017\n\007_avatar\030\001 \002(\r\"\256\001\n\nquery_d"
-    "ata\0223\n\005_type\030\001 \003(\0162$.client_baseup.query"
-    "_data.query_type\022\025\n\r_query_heroes\030\002 \003(\r\022"
-    "\026\n\016_month_card_id\030\003 \003(\r\"<\n\nquery_type\022\007\n"
-    "\003rmb\020\001\022\010\n\004hero\020\002\022\014\n\010recharge\020\003\022\r\n\tmonthc"
-    "ard\020\004\"\027\n\005midas\022\016\n\006_times\030\001 \002(\r\"\034\n\topen_s"
-    "hop\022\017\n\007_shopid\030\001 \002(\r\"d\n\006charge\0223\n\007_plati"
-    "d\030\001 \002(\0162\034.client_baseup.platform_type:\004s"
-    "elf\022\021\n\t_chargeid\030\002 \002(\r\022\022\n\n_extradata\030\003 \001"
-    "(\t\"q\n\017ask_daily_login\0226\n\007_status\030\001 \002(\0162%"
-    ".client_baseup.ask_daily_login.status\"&\n"
-    "\006status\022\007\n\003all\020\001\022\n\n\006common\020\002\022\007\n\003vip\020\003\"\263\002"
-    "\n\003tbc\0222\n\013_open_panel\030\001 \001(\0132\035.client_base"
-    "up.tbc_open_panel\0222\n\013_query_oppo\030\002 \001(\0132\035"
-    ".client_baseup.tbc_query_oppo\0223\n\n_start_"
-    "bat\030\003 \001(\0132\037.client_baseup.tbc_start_batt"
-    "le\022/\n\010_end_bat\030\004 \001(\0132\035.client_baseup.tbc"
-    "_end_battle\022(\n\006_reset\030\005 \001(\0132\030.client_bas"
-    "eup.tbc_reset\0224\n\014_draw_reward\030\006 \001(\0132\036.cl"
-    "ient_baseup.tbc_draw_reward\"\020\n\016tbc_open_"
-    "panel\"#\n\016tbc_query_oppo\022\021\n\t_stage_id\030\001 \002"
-    "(\r\"7\n\020tbc_start_battle\022\020\n\010_heroids\030\001 \003(\r"
-    "\022\021\n\t_use_hire\030\002 \001(\r\"U\n\010tbc_hero\022\017\n\007_hero"
-    "id\030\001 \002(\r\022\020\n\010_hp_perc\030\002 \002(\r\022\020\n\010_mp_perc\030\003"
-    " \002(\r\022\024\n\014_custom_data\030\004 \001(\r\"\272\001\n\016tbc_end_b"
-    "attle\0226\n\007_result\030\001 \002(\0162\034.client_baseup.b"
-    "attle_result:\007victory\022-\n\014_self_heroes\030\002 "
-    "\003(\0132\027.client_baseup.tbc_hero\022-\n\014_oppo_he"
-    "roes\030\003 \003(\0132\027.client_baseup.tbc_hero\022\022\n\n_"
-    "oprations\030\004 \003(\r\"\013\n\ttbc_reset\"$\n\017tbc_draw"
-    "_reward\022\021\n\t_stage_id\030\001 \002(\r\"\016\n\014get_mailli"
-    "st\"\030\n\tread_mail\022\013\n\003_id\030\001 \002(\r\"\016\n\014get_svr_"
-    "time\"\034\n\014get_vip_gift\022\014\n\004_vip\030\001 \002(\r\"\325\002\n\004c"
-    "hat\022%\n\004_say\030\001 \001(\0132\027.client_baseup.chat_s"
-    "ay\022)\n\006_fresh\030\002 \001(\0132\031.client_baseup.chat_"
-    "fresh\022)\n\006_fetch\030\003 \001(\0132\031.client_baseup.ch"
-    "at_fetch\0220\n\014_chat_add_bl\030\004 \001(\0132\032.client_"
-    "baseup.chat_add_bl\0220\n\014_chat_del_bl\030\005 \001(\013"
-    "2\032.client_baseup.chat_del_bl\0224\n\016_chat_fe"
-    "tch_bl\030\006 \001(\0132\034.client_baseup.chat_fetch_"
-    "bl\0226\n\017_chat_broad_say\030\007 \001(\0132\035.client_bas"
-    "eup.chat_broad_say\"\252\001\n\016chat_broad_say\022-\n"
-    "\010_channel\030\001 \001(\0162\033.client_baseup.chat_cha"
-    "nnel\022\023\n\013_target_ids\030\002 \003(\r\022\025\n\r_content_ty"
-    "pe\030\003 \001(\r\022\020\n\010_content\030\004 \001(\t\022+\n\n_accessory"
-    "\030\005 \001(\0132\027.client_baseup.chat_acc\"\017\n\rchat_"
-    "fetch_bl\"\262\001\n\010chat_say\022<\n\010_channel\030\001 \002(\0162"
-    "\033.client_baseup.chat_channel:\rworld_chan"
-    "nel\022\022\n\n_target_id\030\002 \001(\r\022\025\n\r_content_type"
-    "\030\003 \002(\r\022\020\n\010_content\030\004 \002(\t\022+\n\n_accessory\030\005"
-    " \001(\0132\027.client_baseup.chat_acc\"\224\001\n\010chat_a"
-    "cc\0229\n\005_type\030\001 \002(\0162\".client_baseup.chat_a"
-    "cc.chat_acc_t:\006binary\022\017\n\007_binary\030\002 \001(\t\022\022"
-    "\n\n_record_id\030\003 \001(\r\"(\n\nchat_acc_t\022\n\n\006bina"
-    "ry\020\001\022\016\n\npvp_replay\020\002\"J\n\nchat_fresh\022<\n\010_c"
-    "hannel\030\001 \002(\0162\033.client_baseup.chat_channe"
-    "l:\rworld_channel\"\\\n\nchat_fetch\022<\n\010_chann"
-    "el\030\001 \002(\0162\033.client_baseup.chat_channel:\rw"
-    "orld_channel\022\020\n\010_chat_id\030\002 \002(\r\"\033\n\013chat_a"
-    "dd_bl\022\014\n\004_uid\030\001 \002(\r\"\033\n\013chat_del_bl\022\014\n\004_u"
-    "id\030\001 \002(\r\"\347\017\n\005guild\022,\n\007_create\030\001 \001(\0132\033.cl"
-    "ient_baseup.guild_create\022.\n\010_dismiss\030\002 \001"
-    "(\0132\034.client_baseup.guild_dismiss\022(\n\005_lis"
-    "t\030\003 \001(\0132\031.client_baseup.guild_list\022,\n\007_s"
-    "earch\030\004 \001(\0132\033.client_baseup.guild_search"
-    "\022(\n\005_join\030\005 \001(\0132\031.client_baseup.guild_jo"
-    "in\0228\n\r_join_confirm\030\006 \001(\0132!.client_baseu"
-    "p.guild_join_confirm\0220\n\014_guild_leave\030\007 \001"
-    "(\0132\032.client_baseup.guild_leave\022(\n\005_kick\030"
-    "\010 \001(\0132\031.client_baseup.guild_kick\022&\n\004_set"
-    "\030\t \001(\0132\030.client_baseup.guild_set\022*\n\006_que"
-    "ry\030\n \001(\0132\032.client_baseup.guild_query\0226\n\014"
-    "_open_pannel\030\013 \001(\0132 .client_baseup.guild"
-    "_open_pannel\022.\n\010_set_job\030\014 \001(\0132\034.client_"
-    "baseup.guild_set_job\0220\n\t_add_hire\030\r \001(\0132"
-    "\035.client_baseup.guild_add_hire\0220\n\t_del_h"
-    "ire\030\016 \001(\0132\035.client_baseup.guild_del_hire"
-    "\0226\n\014_query_hires\030\017 \001(\0132 .client_baseup.g"
-    "uild_query_hires\0222\n\n_hire_hero\030\020 \001(\0132\036.c"
-    "lient_baseup.guild_hire_hero\0226\n\014_worship"
-    "_req\030\021 \001(\0132 .client_baseup.guild_worship"
-    "_req\022@\n\021_worship_withdraw\030\022 \001(\0132%.client"
-    "_baseup.guild_worship_withdraw\022>\n\020_query"
-    "_hh_detail\030\023 \001(\0132$.client_baseup.guild_q"
-    "urey_hh_detail\022<\n\017_instance_query\030\024 \001(\0132"
-    "#.client_baseup.guild_instance_query\022>\n\020"
-    "_instance_detail\030\025 \001(\0132$.client_baseup.g"
-    "uild_instance_detail\022<\n\017_instance_start\030"
-    "\026 \001(\0132#.client_baseup.guild_instance_sta"
-    "rt\0228\n\r_instance_end\030\027 \001(\0132!.client_baseu"
-    "p.guild_instance_end\022:\n\016_instance_drop\030\030"
-    " \001(\0132\".client_baseup.guild_instance_drop"
-    "\022:\n\016_instance_open\030\031 \001(\0132\".client_baseup"
-    ".guild_instance_open\022<\n\017_instance_apply\030"
-    "\032 \001(\0132#.client_baseup.guild_instance_app"
-    "ly\0222\n\n_drop_info\030\033 \001(\0132\036.client_baseup.g"
-    "uild_drop_info\0222\n\n_drop_give\030\034 \001(\0132\036.cli"
-    "ent_baseup.guild_drop_give\022>\n\020_instance_"
-    "damage\030\035 \001(\0132$.client_baseup.guild_insta"
-    "nce_damage\022:\n\016_items_history\030\036 \001(\0132\".cli"
-    "ent_baseup.guild_items_history\022.\n\013_guild"
-    "_jump\030\037 \001(\0132\031.client_baseup.guild_jump\0228"
-    "\n\020_guild_app_queue\030  \001(\0132\036.client_baseup"
-    ".guild_app_queue\022@\n\021_instance_prepare\030! "
-    "\001(\0132%.client_baseup.guild_prepare_instan"
-    "ce\022>\n\023_guild_query_member\030\" \001(\0132!.client"
-    "_baseup.guild_query_member\022:\n\021_guild_sta"
-    "ge_rank\030# \001(\0132\037.client_baseup.guild_stag"
-    "e_rank\0220\n\t_set_jump\030$ \001(\0132\035.client_baseu"
-    "p.guild_set_jump\0228\n\020_guild_send_mail\030% \001"
-    "(\0132\036.client_baseup.guild_send_mail\"\177\n\016gu"
-    "ild_set_jump\022\?\n\014_is_can_jump\030\001 \002(\0162).cli"
-    "ent_baseup.guild_set_jump.is_can_jump\",\n"
-    "\013is_can_jump\022\r\n\tjump_true\020\001\022\016\n\njump_fals"
-    "e\020\002\"1\n\017guild_send_mail\022\r\n\005title\030\001 \002(\t\022\017\n"
-    "\007content\030\002 \002(\t\"%\n\020guild_stage_rank\022\021\n\t_s"
-    "tage_id\030\001 \002(\r\"\024\n\022guild_query_member\"+\n\026g"
-    "uild_prepare_instance\022\021\n\t_stage_id\030\001 \002(\r"
-    "\"#\n\017guild_app_queue\022\020\n\010_item_id\030\001 \002(\r\"\014\n"
-    "\nguild_jump\"\025\n\023guild_items_history\"^\n\017gu"
-    "ild_drop_give\022\020\n\010_item_id\030\001 \002(\r\022\020\n\010_raid"
-    "_id\030\002 \002(\r\022\020\n\010_user_id\030\003 \002(\r\022\025\n\r_time_out"
-    "_end\030\004 \002(\r\")\n\025guild_instance_damage\022\020\n\010_"
-    "raid_id\030\001 \002(\r\"\021\n\017guild_drop_info\":\n\024guil"
-    "d_instance_apply\022\020\n\010_raid_id\030\001 \002(\r\022\020\n\010_i"
-    "tem_id\030\002 \002(\r\")\n\024guild_instance_start\022\021\n\t"
-    "_stage_id\030\001 \002(\r\"\306\001\n\022guild_instance_end\022-"
-    "\n\007_result\030\001 \002(\0162\034.client_baseup.battle_r"
-    "esult\022\020\n\010_hp_info\030\002 \003(\r\022\r\n\005_wave\030\003 \002(\r\022\017"
-    "\n\007_damage\030\004 \002(\r\022\021\n\t_progress\030\005 \002(\r\022\027\n\017_s"
-    "tage_progress\030\006 \002(\r\022\022\n\n_oprations\030\007 \003(\r\022"
-    "\017\n\007_heroes\030\010 \003(\r\"\'\n\023guild_instance_drop\022"
-    "\020\n\010_raid_id\030\001 \002(\r\"\'\n\023guild_instance_open"
-    "\022\020\n\010_raid_id\030\001 \002(\r\"\026\n\024guild_instance_que"
-    "ry\"*\n\025guild_instance_detail\022\021\n\t_stage_id"
-    "\030\001 \002(\r\".\n\014guild_create\022\r\n\005_name\030\001 \002(\t\022\017\n"
-    "\007_avatar\030\002 \002(\r\"\017\n\rguild_dismiss\"\014\n\nguild"
-    "_list\"!\n\014guild_search\022\021\n\t_guild_id\030\001 \002(\r"
-    "\"\037\n\nguild_join\022\021\n\t_guild_id\030\001 \002(\r\"\221\001\n\022gu"
-    "ild_join_confirm\022\014\n\004_uid\030\001 \002(\r\022E\n\005_type\030"
-    "\002 \002(\0162..client_baseup.guild_join_confirm"
-    ".confirm_type:\006accept\"&\n\014confirm_type\022\n\n"
-    "\006accept\020\001\022\n\n\006reject\020\002\"\r\n\013guild_leave\"\032\n\n"
-    "guild_kick\022\014\n\004_uid\030\001 \002(\r\"\336\001\n\tguild_set\022\017"
-    "\n\007_avatar\030\001 \001(\r\0229\n\n_join_type\030\002 \001(\0162%.cl"
-    "ient_baseup.guild_set.guild_join_t\022\023\n\013_j"
-    "oin_limit\030\003 \001(\r\022\017\n\007_slogan\030\004 \001(\t\022\021\n\t_can"
-    "_jump\030\005 \001(\r\022\025\n\r_avatar_frame\030\006 \001(\r\"5\n\014gu"
-    "ild_join_t\022\r\n\tno_verify\020\001\022\n\n\006verify\020\002\022\n\n"
-    "\006closed\020\003\"\r\n\013guild_query\"\023\n\021guild_open_p"
-    "annel\"G\n\rguild_set_job\022\014\n\004_uid\030\001 \002(\r\022(\n\004"
-    "_job\030\002 \002(\0162\032.client_baseup.guild_job_t\"!"
-    "\n\016guild_add_hire\022\017\n\007_heroid\030\001 \002(\r\"!\n\016gui"
-    "ld_del_hire\022\017\n\007_heroid\030\002 \002(\r\"<\n\021guild_qu"
-    "ery_hires\022\'\n\005_from\030\001 \002(\0162\030.client_baseup"
-    ".hire_from\"l\n\017guild_hire_hero\022\014\n\004_uid\030\001 "
-    "\002(\r\022\017\n\007_heroid\030\002 \002(\r\022\'\n\005_from\030\003 \002(\0162\030.cl"
-    "ient_baseup.hire_from\022\021\n\t_stage_id\030\004 \001(\r"
-    "\".\n\021guild_worship_req\022\013\n\003_id\030\001 \002(\r\022\014\n\004_u"
-    "id\030\002 \002(\r\"\030\n\026guild_worship_withdraw\"6\n\025gu"
-    "ild_qurey_hh_detail\022\014\n\004_uid\030\001 \002(\r\022\017\n\007_he"
-    "roid\030\002 \002(\r\"\023\n\021ask_activity_info\"\034\n\ncdkey"
-    "_gift\022\016\n\006_cdkey\030\001 \002(\t\"\226\007\n\010excavate\0228\n\020_s"
-    "earch_excavate\030\001 \001(\0132\036.client_baseup.sea"
-    "rch_excavate\022@\n\024_query_excavate_data\030\002 \001"
-    "(\0132\".client_baseup.query_excavate_data\022F"
-    "\n\027_query_excavate_history\030\003 \001(\0132%.client"
-    "_baseup.query_excavate_history\022D\n\026_query"
-    "_excavate_battle\030\004 \001(\0132$.client_baseup.q"
-    "uery_excavate_battle\022<\n\022_set_excavate_te"
-    "am\030\005 \001(\0132 .client_baseup.set_excavate_te"
-    "am\022D\n\026_excavate_start_battle\030\006 \001(\0132$.cli"
-    "ent_baseup.excavate_start_battle\022@\n\024_exc"
-    "avate_end_battle\030\007 \001(\0132\".client_baseup.e"
-    "xcavate_end_battle\022>\n\023_query_excavate_de"
-    "f\030\010 \001(\0132!.client_baseup.query_excavate_d"
-    "ef\022D\n\026_clear_excavate_battle\030\t \001(\0132$.cli"
-    "ent_baseup.clear_excavate_battle\022D\n\026_dra"
-    "w_excavate_def_rwd\030\n \001(\0132$.client_baseup"
-    ".draw_excavate_def_rwd\0222\n\r_query_replay\030"
-    "\013 \001(\0132\033.client_baseup.query_replay\022:\n\021_r"
-    "evenge_excavate\030\014 \001(\0132\037.client_baseup.re"
-    "venge_excavate\0226\n\017_draw_excav_res\030\r \001(\0132"
-    "\035.client_baseup.draw_excav_res\022F\n\027_withd"
-    "raw_excavate_hero\030\016 \001(\0132%.client_baseup."
-    "withdraw_excavate_hero\"\"\n\016draw_excav_res"
-    "\022\020\n\010_mine_id\030\001 \001(\r\"\021\n\017search_excavate\"\025\n"
-    "\023query_excavate_data\"\030\n\026query_excavate_h"
-    "istory\"$\n\025query_excavate_battle\022\013\n\003_id\030\001"
-    " \002(\t\"O\n\021set_excavate_team\022\024\n\014_excavate_i"
-    "d\030\001 \001(\r\022\014\n\004_tid\030\002 \003(\r\022\026\n\016_excavate_type\030"
-    "\003 \001(\r\"z\n\025excavate_start_battle\022\020\n\010_heroi"
-    "ds\030\001 \003(\r\022\024\n\014_excavate_id\030\002 \002(\r\022\020\n\010_team_"
-    "id\030\003 \002(\r\022\024\n\014_team_svr_id\030\004 \001(\r\022\021\n\t_use_h"
-    "ire\030\005 \001(\r\"\333\001\n\023excavate_end_battle\0226\n\007_re"
-    "sult\030\001 \002(\0162\034.client_baseup.battle_result"
-    ":\007victory\0222\n\014_self_heroes\030\002 \003(\0132\034.client"
-    "_baseup.excavate_hero\0222\n\014_oppo_heroes\030\003 "
-    "\003(\0132\034.client_baseup.excavate_hero\022\022\n\n_op"
-    "rations\030\004 \003(\r\022\020\n\010_type_id\030\005 \002(\r\"<\n\022query"
-    "_excavate_def\022\020\n\010_mine_id\030\001 \002(\r\022\024\n\014_appl"
-    "ier_uid\030\002 \002(\r\"\027\n\025clear_excavate_battle\"*"
-    "\n\026withdraw_excavate_hero\022\020\n\010_hero_id\030\001 \002"
-    "(\r\"$\n\025draw_excavate_def_rwd\022\013\n\003_id\030\001 \002(\t"
-    "\"!\n\rdrop_excavate\022\020\n\010_mine_id\030\001 \002(\r\"<\n\020r"
-    "evenge_excavate\022\024\n\014_enemy_svrid\030\001 \001(\r\022\022\n"
-    "\n_enemy_uid\030\002 \001(\r\"Z\n\rexcavate_hero\022\017\n\007_h"
-    "eroid\030\001 \002(\r\022\020\n\010_hp_perc\030\002 \002(\r\022\020\n\010_mp_per"
-    "c\030\003 \002(\r\022\024\n\014_custom_data\030\004 \001(\r\"\022\n\020query_s"
-    "plit_data\"\"\n\022query_split_return\022\014\n\004_tid\030"
-    "\001 \002(\r\"-\n\nsplit_hero\022\014\n\004_tid\030\001 \002(\r\022\021\n\t_st"
-    "one_id\030\002 \001(\r\"|\n\010worldcup\0226\n\017_worldcup_qu"
-    "ery\030\001 \001(\0132\035.client_baseup.worldcup_query"
-    "\0228\n\020_worldcup_submit\030\002 \001(\0132\036.client_base"
-    "up.worldcup_submit\"\020\n\016worldcup_query\"3\n\017"
-    "worldcup_submit\022\017\n\007_guess1\030\001 \002(\r\022\017\n\007_gue"
-    "ss2\030\002 \001(\r\"+\n\rreport_battle\022\013\n\003_id\030\001 \002(\r\022"
-    "\r\n\005_data\030\002 \002(\014\"\211\002\n\016query_ranklist\022;\n\n_ra"
-    "nk_type\030\001 \002(\0162\'.client_baseup.query_rank"
-    "list.rank_type\"\271\001\n\trank_type\022\021\n\rguildliv"
-    "eness\020\001\022\020\n\014excavate_rob\020\002\022\021\n\rexcavate_go"
-    "ld\020\003\022\020\n\014excavate_exp\020\004\022\n\n\006top_gs\020\005\022\020\n\014fu"
-    "ll_hero_gs\020\006\022\020\n\014hero_team_gs\020\007\022\021\n\rhero_e"
-    "vo_star\020\010\022\020\n\014hero_arousal\020\t\022\r\n\ttop_arena"
-    "\020\n\"\033\n\010dot_info\022\017\n\007_dot_id\030\001 \002(\r\"\255\001\n\017requ"
-    "ire_arousal\022\014\n\004_hid\030\001 \002(\r\022B\n\r_arousal_ty"
-    "pe\030\002 \002(\0162+.client_baseup.require_arousal"
-    ".arousal_type\022\014\n\004_aid\030\003 \001(\r\":\n\014arousal_t"
-    "ype\022\025\n\021require_arousal_t\020\001\022\023\n\017apply_arou"
-    "sal_t\020\002\"U\n\rchange_server\0220\n\010_op_type\030\001 \002"
-    "(\0162\036.client_baseup.server_opt_type\022\022\n\n_s"
-    "erver_id\030\002 \001(\r\"\'\n\021request_guild_log\022\022\n\nl"
-    "og_status\030\001 \002(\r\",\n\017query_act_stage\022\031\n\021_a"
-    "ct_stage_groups\030\001 \003(\r\"%\n\014fb_attention\022\025\n"
-    "\r_fb_attention\030\001 \002(\r*-\n\013hero_status\022\010\n\004i"
-    "dle\020\000\022\010\n\004hire\020\001\022\n\n\006mining\020\002*2\n\013guild_job"
-    "_t\022\014\n\010chairman\020\001\022\n\n\006member\020\002\022\t\n\005elder\020\003*"
-    "I\n\thire_from\022\016\n\nhire_guild\020\000\022\014\n\010hire_tbc"
-    "\020\001\022\016\n\nhire_stage\020\002\022\016\n\nhire_excav\020\003*J\n\014ch"
-    "at_channel\022\021\n\rworld_channel\020\001\022\021\n\rguild_c"
-    "hannel\020\002\022\024\n\020personal_channel\020\003*&\n\017server"
-    "_opt_type\022\007\n\003get\020\000\022\n\n\006change\020\001*\260\003\n\rplatf"
-    "orm_type\022\010\n\004self\020\000\022\007\n\003s91\020\001\022\007\n\003tbt\020\002\022\006\n\002"
-    "pp\020\003\022\t\n\005lemon\020\004\022\n\n\006itools\020\005\022\014\n\010kuaiyong\020"
-    "\006\022\t\n\005tuyoo\020\007\022\016\n\nlemonyueyu\020\010\022\016\n\nky_andro"
-    "id\020e\022\016\n\nxm_android\020f\022\021\n\rlemon_android\020g\022"
-    "\020\n\014s360_android\020h\022\016\n\nuc_android\020i\022\021\n\rduo"
-    "ku_android\020j\022\017\n\013s91_android\020k\022\025\n\021wandouj"
-    "ia_android\020l\022\017\n\013pps_android\020m\022\022\n\016dangle_"
-    "android\020n\022\020\n\014oppo_android\020o\022\021\n\ranzhi_and"
-    "roid\020p\022\022\n\016s37wan_android\020q\022\022\n\016huawei_and"
-    "roid\020r\022\025\n\021lianxiang_android\020s\022\020\n\014pptv_an"
-    "droid\020t\022\020\n\014vivo_android\020u*C\n\rbattle_resu"
-    "lt\022\013\n\007victory\020\000\022\n\n\006defeat\020\001\022\014\n\010canceled\020"
-    "\002\022\013\n\007timeout\020\003", 19894);
+    "\030\n\026system_setting_request\"!\n\013push_notify"
+    "\022\022\n\n_client_id\030\001 \002(\t\"[\n\005login\022\024\n\014_active"
+    "_code\030\001 \001(\004\022\025\n\r_old_deviceid\030\002 \001(\t\022\020\n\010_v"
+    "ersion\030\003 \001(\t\022\023\n\013_languageid\030\004 \001(\r\"3\n\tsdk"
+    "_login\022\024\n\014_session_key\030\001 \002(\t\022\020\n\010_plat_id"
+    "\030\002 \002(\r\"\022\n\020request_userinfo\" \n\013enter_stag"
+    "e\022\021\n\t_stage_id\030\001 \002(\r\"t\n\nexit_stage\022\017\n\007_r"
+    "esult\030\001 \002(\r\022\016\n\006_stars\030\002 \001(\r\022\017\n\007_heroes\030\003"
+    " \003(\r\022\022\n\n_oprations\030\004 \003(\r\022\014\n\004_md5\030\005 \001(\t\022\022"
+    "\n\n_self_data\030\006 \003(\r\"\343\003\n\006gm_cmd\022\032\n\022_unlock"
+    "_all_stages\030\001 \001(\005\022\027\n\017_get_all_heroes\030\002 \001"
+    "(\005\022+\n\016_set_hero_info\030\003 \003(\0132\023.client_base"
+    "up.hero\022\025\n\r_set_vitality\030\004 \001(\005\022,\n\n_set_m"
+    "oney\030\005 \001(\0132\030.client_baseup.set_money\022\031\n\021"
+    "_set_recharge_sum\030\006 \001(\005\022\031\n\021_set_player_l"
+    "evel\030\007 \001(\005\022\027\n\017_set_player_exp\030\010 \001(\005\022\022\n\n_"
+    "set_items\030\t \003(\r\022\025\n\r_reset_device\030\n \001(\r\022\032"
+    "\n\022_open_mystery_shop\030\013 \001(\r\022\023\n\013_archive_i"
+    "d\030\014 \001(\r\022\023\n\013_restore_id\030\r \001(\r\022\024\n\014_reset_s"
+    "weep\030\016 \001(\005\022\034\n\024_set_dailylogin_days\030\017 \001(\r"
+    "\022>\n\021_open_guild_stage\030\020 \001(\0132#.client_bas"
+    "eup.open_all_guild_stage\"7\n\ractivity_inf"
+    "o\022\024\n\014_player_name\030\001 \002(\t\022\020\n\010_version\030\002 \002("
+    "\r\">\n\023activity_lotto_info\022\021\n\t_group_id\030\001 "
+    "\002(\t\022\024\n\014_activity_id\030\002 \002(\r\"C\n\030activity_bi"
+    "gpackage_info\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_act"
+    "ivity_id\030\002 \002(\r\"[\n\037activity_bigpackage_re"
+    "ward_info\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_activit"
+    "y_id\030\002 \002(\r\022\017\n\007_box_id\030\003 \002(\r\"D\n\031activity_"
+    "bigpackage_reset\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_"
+    "activity_id\030\002 \002(\r\"@\n\025activity_lotto_rewa"
+    "rd\022\021\n\t_group_id\030\001 \002(\t\022\024\n\014_activity_id\030\002 "
+    "\002(\r\"\026\n\024open_all_guild_stage\"+\n\tset_money"
+    "\022\r\n\005_type\030\001 \002(\r\022\017\n\007_amount\030\002 \002(\r\" \n\014hero"
+    "_upgrade\022\020\n\010_hero_id\030\001 \002(\r\"$\n\017equip_synt"
+    "hesis\022\021\n\t_equip_id\030\001 \002(\r\"1\n\nwear_equip\022\020"
+    "\n\010_hero_id\030\001 \002(\r\022\021\n\t_item_pos\030\002 \002(\r\"\017\n\rs"
+    "ync_vitality\"\035\n\014buy_vitality\022\r\n\005_type\030\001 "
+    "\001(\r\"2\n\014consume_item\022\020\n\010_hero_id\030\001 \002(\r\022\020\n"
+    "\010_item_id\030\002 \002(\r\"/\n\014shop_refresh\022\r\n\005_type"
+    "\030\001 \002(\r\022\020\n\010_shop_id\030\002 \002(\r\">\n\014shop_consume"
+    "\022\014\n\004_sid\030\001 \002(\r\022\017\n\007_slotid\030\002 \002(\r\022\017\n\007_amou"
+    "nt\030\003 \002(\r\"0\n\rskill_levelup\022\017\n\007_heroid\030\001 \002"
+    "(\r\022\016\n\006_order\030\002 \003(\r\"\032\n\tsell_item\022\r\n\005_item"
+    "\030\001 \003(\r\";\n\020fragment_compose\022\021\n\t_fragment\030"
+    "\001 \002(\r\022\024\n\014_frag_amount\030\002 \002(\r\"Z\n\022hero_equi"
+    "p_upgrade\022\020\n\010_op_type\030\001 \002(\r\022\017\n\007_heroid\030\002"
+    " \002(\r\022\r\n\005_slot\030\003 \002(\r\022\022\n\n_materials\030\004 \003(\r\""
+    "<\n\nhero_equip\022\016\n\006_index\030\001 \002(\r\022\020\n\010_item_i"
+    "d\030\002 \002(\r\022\014\n\004_exp\030\003 \002(\r\"\337\001\n\004hero\022\014\n\004_tid\030\001"
+    " \002(\r\022\r\n\005_rank\030\002 \001(\r\022\016\n\006_level\030\003 \002(\r\022\016\n\006_"
+    "stars\030\004 \002(\r\022\014\n\004_exp\030\005 \002(\r\022\013\n\003_gs\030\006 \002(\r\022\016"
+    "\n\006_state\030\007 \002(\r\022\025\n\r_skill_levels\030\010 \003(\r\022)\n"
+    "\006_items\030\t \003(\0132\031.client_baseup.hero_equip"
+    "\022-\n\010_arousal\030\n \001(\0132\033.client_baseup.hero_"
+    "arousal\"\274\001\n\014hero_arousal\022\017\n\007_status\030\001 \002("
+    "\r\022\014\n\004_str\030\002 \002(\r\022\014\n\004_agi\030\003 \002(\r\022\014\n\004_int\030\004 "
+    "\002(\r\022\020\n\010_str_var\030\005 \002(\005\022\020\n\010_agi_var\030\006 \002(\005\022"
+    "\020\n\010_int_var\030\007 \002(\005\022\022\n\n_cost_gold\030\010 \002(\r\022\025\n"
+    "\r_cost_diamond\030\t \002(\r\022\020\n\010_aro_exp\030\n \002(\r\"\033"
+    "\n\010tutorial\022\017\n\007_record\030\001 \003(\r\"\035\n\014trigger_t"
+    "ask\022\r\n\005_task\030\001 \003(\r\"-\n\017require_rewards\022\r\n"
+    "\005_line\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\"D\n\022change_task"
+    "_status\022\r\n\005_line\030\001 \002(\r\022\013\n\003_id\030\002 \002(\r\022\022\n\n_"
+    "operation\030\003 \002(\r\"\034\n\013trigger_job\022\r\n\005_jobs\030"
+    "\001 \003(\r\"\033\n\013job_rewards\022\014\n\004_job\030\001 \002(\r\"#\n\016su"
+    "spend_report\022\021\n\t_gametime\030\001 \002(\r\".\n\013reset"
+    "_elite\022\r\n\005_type\030\001 \002(\r\022\020\n\010_stageid\030\002 \001(\r\""
+    ">\n\013sweep_stage\022\r\n\005_type\030\001 \002(\r\022\020\n\010_stagei"
+    "d\030\002 \002(\r\022\016\n\006_times\030\003 \001(\r\"\027\n\025buy_skill_str"
+    "en_point\"\017\n\rask_magicsoul\"4\n\013tavern_draw"
+    "\022\022\n\n_draw_type\030\001 \002(\r\022\021\n\t_box_type\030\002 \002(\r\""
+    "\036\n\013hero_evolve\022\017\n\007_heroid\030\001 \002(\r\"7\n\017enter"
+    "_act_stage\022\024\n\014_stage_group\030\001 \002(\r\022\016\n\006_sta"
+    "ge\030\002 \002(\r\"\221\005\n\006ladder\022.\n\013_open_panel\030\001 \001(\013"
+    "2\031.client_baseup.open_panel\0226\n\017_apply_op"
+    "ponent\030\002 \001(\0132\035.client_baseup.apply_oppon"
+    "ent\0222\n\r_start_battle\030\003 \001(\0132\033.client_base"
+    "up.start_battle\022.\n\013_end_battle\030\004 \001(\0132\031.c"
+    "lient_baseup.end_battle\022.\n\013_set_lineup\030\005"
+    " \001(\0132\031.client_baseup.set_lineup\0224\n\016_quer"
+    "y_records\030\006 \001(\0132\034.client_baseup.query_re"
+    "cords\0222\n\r_query_replay\030\007 \001(\0132\033.client_ba"
+    "seup.query_replay\0228\n\020_query_rankboard\030\010 "
+    "\001(\0132\036.client_baseup.query_rankboard\0223\n\013_"
+    "query_oppo\030\t \001(\0132\036.client_baseup.query_o"
+    "ppo_info\0228\n\020_clear_battle_cd\030\n \001(\0132\036.cli"
+    "ent_baseup.clear_battle_cd\022:\n\021_draw_rank"
+    "_reward\030\013 \001(\0132\037.client_baseup.draw_rank_"
+    "reward\022<\n\022_buy_battle_chance\030\014 \001(\0132 .cli"
+    "ent_baseup.buy_battle_chance\"\014\n\nopen_pan"
+    "el\"\020\n\016apply_opponent\"=\n\014start_battle\022\025\n\r"
+    "_oppo_user_id\030\001 \002(\r\022\026\n\016_attack_lineup\030\002 "
+    "\003(\r\"\035\n\nend_battle\022\017\n\007_result\030\001 \002(\r\"\035\n\nse"
+    "t_lineup\022\017\n\007_lineup\030\001 \003(\r\"\017\n\rquery_recor"
+    "ds\"<\n\014query_replay\022\025\n\r_record_index\030\001 \002("
+    "\r\022\025\n\r_record_svrid\030\002 \001(\r\"\022\n\020sync_skill_s"
+    "tren\" \n\017query_rankboard\022\r\n\005_type\030\001 \002(\r\"("
+    "\n\017query_oppo_info\022\025\n\r_oppo_user_id\030\001 \002(\r"
+    "\"\021\n\017clear_battle_cd\"\022\n\020draw_rank_reward\""
+    "\023\n\021buy_battle_chance\"(\n\010set_name\022\r\n\005_typ"
+    "e\030\001 \002(\r\022\r\n\005_name\030\002 \002(\t\"\035\n\nset_avatar\022\017\n\007"
+    "_avatar\030\001 \002(\r\"J\n\nquery_data\022\r\n\005_type\030\001 \003"
+    "(\r\022\025\n\r_query_heroes\030\002 \003(\r\022\026\n\016_month_card"
+    "_id\030\003 \003(\r\"\027\n\005midas\022\016\n\006_times\030\001 \002(\r\"\034\n\top"
+    "en_shop\022\017\n\007_shopid\030\001 \002(\r\"@\n\006charge\022\017\n\007_p"
+    "latid\030\001 \002(\r\022\021\n\t_chargeid\030\002 \002(\r\022\022\n\n_extra"
+    "data\030\003 \001(\t\"\"\n\017ask_daily_login\022\017\n\007_status"
+    "\030\001 \002(\r\"\263\002\n\003tbc\0222\n\013_open_panel\030\001 \001(\0132\035.cl"
+    "ient_baseup.tbc_open_panel\0222\n\013_query_opp"
+    "o\030\002 \001(\0132\035.client_baseup.tbc_query_oppo\0223"
+    "\n\n_start_bat\030\003 \001(\0132\037.client_baseup.tbc_s"
+    "tart_battle\022/\n\010_end_bat\030\004 \001(\0132\035.client_b"
+    "aseup.tbc_end_battle\022(\n\006_reset\030\005 \001(\0132\030.c"
+    "lient_baseup.tbc_reset\0224\n\014_draw_reward\030\006"
+    " \001(\0132\036.client_baseup.tbc_draw_reward\"\020\n\016"
+    "tbc_open_panel\"#\n\016tbc_query_oppo\022\021\n\t_sta"
+    "ge_id\030\001 \002(\r\"7\n\020tbc_start_battle\022\020\n\010_hero"
+    "ids\030\001 \003(\r\022\021\n\t_use_hire\030\002 \001(\r\"U\n\010tbc_hero"
+    "\022\017\n\007_heroid\030\001 \002(\r\022\020\n\010_hp_perc\030\002 \002(\r\022\020\n\010_"
+    "mp_perc\030\003 \002(\r\022\024\n\014_custom_data\030\004 \001(\r\"\223\001\n\016"
+    "tbc_end_battle\022\017\n\007_result\030\001 \002(\r\022-\n\014_self"
+    "_heroes\030\002 \003(\0132\027.client_baseup.tbc_hero\022-"
+    "\n\014_oppo_heroes\030\003 \003(\0132\027.client_baseup.tbc"
+    "_hero\022\022\n\n_oprations\030\004 \003(\r\"\013\n\ttbc_reset\"$"
+    "\n\017tbc_draw_reward\022\021\n\t_stage_id\030\001 \002(\r\"\016\n\014"
+    "get_maillist\"\030\n\tread_mail\022\013\n\003_id\030\001 \002(\r\"\016"
+    "\n\014get_svr_time\"\034\n\014get_vip_gift\022\014\n\004_vip\030\001"
+    " \002(\r\"\325\002\n\004chat\022%\n\004_say\030\001 \001(\0132\027.client_bas"
+    "eup.chat_say\022)\n\006_fresh\030\002 \001(\0132\031.client_ba"
+    "seup.chat_fresh\022)\n\006_fetch\030\003 \001(\0132\031.client"
+    "_baseup.chat_fetch\0220\n\014_chat_add_bl\030\004 \001(\013"
+    "2\032.client_baseup.chat_add_bl\0220\n\014_chat_de"
+    "l_bl\030\005 \001(\0132\032.client_baseup.chat_del_bl\0224"
+    "\n\016_chat_fetch_bl\030\006 \001(\0132\034.client_baseup.c"
+    "hat_fetch_bl\0226\n\017_chat_broad_say\030\007 \001(\0132\035."
+    "client_baseup.chat_broad_say\"\215\001\n\016chat_br"
+    "oad_say\022\020\n\010_channel\030\001 \001(\r\022\023\n\013_target_ids"
+    "\030\002 \003(\r\022\025\n\r_content_type\030\003 \001(\r\022\020\n\010_conten"
+    "t\030\004 \001(\t\022+\n\n_accessory\030\005 \001(\0132\027.client_bas"
+    "eup.chat_acc\"\017\n\rchat_fetch_bl\"\206\001\n\010chat_s"
+    "ay\022\020\n\010_channel\030\001 \002(\r\022\022\n\n_target_id\030\002 \001(\r"
+    "\022\025\n\r_content_type\030\003 \002(\r\022\020\n\010_content\030\004 \002("
+    "\t\022+\n\n_accessory\030\005 \001(\0132\027.client_baseup.ch"
+    "at_acc\">\n\010chat_acc\022\r\n\005_type\030\001 \002(\r\022\017\n\007_bi"
+    "nary\030\002 \001(\t\022\022\n\n_record_id\030\003 \001(\r\"\036\n\nchat_f"
+    "resh\022\020\n\010_channel\030\001 \002(\r\"0\n\nchat_fetch\022\020\n\010"
+    "_channel\030\001 \002(\r\022\020\n\010_chat_id\030\002 \002(\r\"\033\n\013chat"
+    "_add_bl\022\014\n\004_uid\030\001 \002(\r\"\033\n\013chat_del_bl\022\014\n\004"
+    "_uid\030\001 \002(\r\"\347\017\n\005guild\022,\n\007_create\030\001 \001(\0132\033."
+    "client_baseup.guild_create\022.\n\010_dismiss\030\002"
+    " \001(\0132\034.client_baseup.guild_dismiss\022(\n\005_l"
+    "ist\030\003 \001(\0132\031.client_baseup.guild_list\022,\n\007"
+    "_search\030\004 \001(\0132\033.client_baseup.guild_sear"
+    "ch\022(\n\005_join\030\005 \001(\0132\031.client_baseup.guild_"
+    "join\0228\n\r_join_confirm\030\006 \001(\0132!.client_bas"
+    "eup.guild_join_confirm\0220\n\014_guild_leave\030\007"
+    " \001(\0132\032.client_baseup.guild_leave\022(\n\005_kic"
+    "k\030\010 \001(\0132\031.client_baseup.guild_kick\022&\n\004_s"
+    "et\030\t \001(\0132\030.client_baseup.guild_set\022*\n\006_q"
+    "uery\030\n \001(\0132\032.client_baseup.guild_query\0226"
+    "\n\014_open_pannel\030\013 \001(\0132 .client_baseup.gui"
+    "ld_open_pannel\022.\n\010_set_job\030\014 \001(\0132\034.clien"
+    "t_baseup.guild_set_job\0220\n\t_add_hire\030\r \001("
+    "\0132\035.client_baseup.guild_add_hire\0220\n\t_del"
+    "_hire\030\016 \001(\0132\035.client_baseup.guild_del_hi"
+    "re\0226\n\014_query_hires\030\017 \001(\0132 .client_baseup"
+    ".guild_query_hires\0222\n\n_hire_hero\030\020 \001(\0132\036"
+    ".client_baseup.guild_hire_hero\0226\n\014_worsh"
+    "ip_req\030\021 \001(\0132 .client_baseup.guild_worsh"
+    "ip_req\022@\n\021_worship_withdraw\030\022 \001(\0132%.clie"
+    "nt_baseup.guild_worship_withdraw\022>\n\020_que"
+    "ry_hh_detail\030\023 \001(\0132$.client_baseup.guild"
+    "_qurey_hh_detail\022<\n\017_instance_query\030\024 \001("
+    "\0132#.client_baseup.guild_instance_query\022>"
+    "\n\020_instance_detail\030\025 \001(\0132$.client_baseup"
+    ".guild_instance_detail\022<\n\017_instance_star"
+    "t\030\026 \001(\0132#.client_baseup.guild_instance_s"
+    "tart\0228\n\r_instance_end\030\027 \001(\0132!.client_bas"
+    "eup.guild_instance_end\022:\n\016_instance_drop"
+    "\030\030 \001(\0132\".client_baseup.guild_instance_dr"
+    "op\022:\n\016_instance_open\030\031 \001(\0132\".client_base"
+    "up.guild_instance_open\022<\n\017_instance_appl"
+    "y\030\032 \001(\0132#.client_baseup.guild_instance_a"
+    "pply\0222\n\n_drop_info\030\033 \001(\0132\036.client_baseup"
+    ".guild_drop_info\0222\n\n_drop_give\030\034 \001(\0132\036.c"
+    "lient_baseup.guild_drop_give\022>\n\020_instanc"
+    "e_damage\030\035 \001(\0132$.client_baseup.guild_ins"
+    "tance_damage\022:\n\016_items_history\030\036 \001(\0132\".c"
+    "lient_baseup.guild_items_history\022.\n\013_gui"
+    "ld_jump\030\037 \001(\0132\031.client_baseup.guild_jump"
+    "\0228\n\020_guild_app_queue\030  \001(\0132\036.client_base"
+    "up.guild_app_queue\022@\n\021_instance_prepare\030"
+    "! \001(\0132%.client_baseup.guild_prepare_inst"
+    "ance\022>\n\023_guild_query_member\030\" \001(\0132!.clie"
+    "nt_baseup.guild_query_member\022:\n\021_guild_s"
+    "tage_rank\030# \001(\0132\037.client_baseup.guild_st"
+    "age_rank\0220\n\t_set_jump\030$ \001(\0132\035.client_bas"
+    "eup.guild_set_jump\0228\n\020_guild_send_mail\030%"
+    " \001(\0132\036.client_baseup.guild_send_mail\"&\n\016"
+    "guild_set_jump\022\024\n\014_is_can_jump\030\001 \002(\r\"1\n\017"
+    "guild_send_mail\022\r\n\005title\030\001 \002(\t\022\017\n\007conten"
+    "t\030\002 \002(\t\"%\n\020guild_stage_rank\022\021\n\t_stage_id"
+    "\030\001 \002(\r\"\024\n\022guild_query_member\"+\n\026guild_pr"
+    "epare_instance\022\021\n\t_stage_id\030\001 \002(\r\"#\n\017gui"
+    "ld_app_queue\022\020\n\010_item_id\030\001 \002(\r\"\014\n\nguild_"
+    "jump\"\025\n\023guild_items_history\"^\n\017guild_dro"
+    "p_give\022\020\n\010_item_id\030\001 \002(\r\022\020\n\010_raid_id\030\002 \002"
+    "(\r\022\020\n\010_user_id\030\003 \002(\r\022\025\n\r_time_out_end\030\004 "
+    "\002(\r\")\n\025guild_instance_damage\022\020\n\010_raid_id"
+    "\030\001 \002(\r\"\021\n\017guild_drop_info\":\n\024guild_insta"
+    "nce_apply\022\020\n\010_raid_id\030\001 \002(\r\022\020\n\010_item_id\030"
+    "\002 \002(\r\")\n\024guild_instance_start\022\021\n\t_stage_"
+    "id\030\001 \002(\r\"\250\001\n\022guild_instance_end\022\017\n\007_resu"
+    "lt\030\001 \002(\r\022\020\n\010_hp_info\030\002 \003(\r\022\r\n\005_wave\030\003 \002("
+    "\r\022\017\n\007_damage\030\004 \002(\r\022\021\n\t_progress\030\005 \002(\r\022\027\n"
+    "\017_stage_progress\030\006 \002(\r\022\022\n\n_oprations\030\007 \003"
+    "(\r\022\017\n\007_heroes\030\010 \003(\r\"\'\n\023guild_instance_dr"
+    "op\022\020\n\010_raid_id\030\001 \002(\r\"\'\n\023guild_instance_o"
+    "pen\022\020\n\010_raid_id\030\001 \002(\r\"\026\n\024guild_instance_"
+    "query\"*\n\025guild_instance_detail\022\021\n\t_stage"
+    "_id\030\001 \002(\r\".\n\014guild_create\022\r\n\005_name\030\001 \002(\t"
+    "\022\017\n\007_avatar\030\002 \002(\r\"\017\n\rguild_dismiss\"\014\n\ngu"
+    "ild_list\"!\n\014guild_search\022\021\n\t_guild_id\030\001 "
+    "\002(\r\"\037\n\nguild_join\022\021\n\t_guild_id\030\001 \002(\r\"1\n\022"
+    "guild_join_confirm\022\014\n\004_uid\030\001 \002(\r\022\r\n\005_typ"
+    "e\030\002 \002(\r\"\r\n\013guild_leave\"\032\n\nguild_kick\022\014\n\004"
+    "_uid\030\001 \002(\r\"\200\001\n\tguild_set\022\017\n\007_avatar\030\001 \001("
+    "\r\022\022\n\n_join_type\030\002 \001(\r\022\023\n\013_join_limit\030\003 \001"
+    "(\r\022\017\n\007_slogan\030\004 \001(\t\022\021\n\t_can_jump\030\005 \001(\r\022\025"
+    "\n\r_avatar_frame\030\006 \001(\r\"\r\n\013guild_query\"\023\n\021"
+    "guild_open_pannel\"+\n\rguild_set_job\022\014\n\004_u"
+    "id\030\001 \002(\r\022\014\n\004_job\030\002 \002(\r\"!\n\016guild_add_hire"
+    "\022\017\n\007_heroid\030\001 \002(\r\"!\n\016guild_del_hire\022\017\n\007_"
+    "heroid\030\002 \002(\r\"\"\n\021guild_query_hires\022\r\n\005_fr"
+    "om\030\001 \002(\r\"R\n\017guild_hire_hero\022\014\n\004_uid\030\001 \002("
+    "\r\022\017\n\007_heroid\030\002 \002(\r\022\r\n\005_from\030\003 \002(\r\022\021\n\t_st"
+    "age_id\030\004 \001(\r\".\n\021guild_worship_req\022\013\n\003_id"
+    "\030\001 \002(\r\022\014\n\004_uid\030\002 \002(\r\"\030\n\026guild_worship_wi"
+    "thdraw\"6\n\025guild_qurey_hh_detail\022\014\n\004_uid\030"
+    "\001 \002(\r\022\017\n\007_heroid\030\002 \002(\r\"\023\n\021ask_activity_i"
+    "nfo\"\034\n\ncdkey_gift\022\016\n\006_cdkey\030\001 \002(\t\"\226\007\n\010ex"
+    "cavate\0228\n\020_search_excavate\030\001 \001(\0132\036.clien"
+    "t_baseup.search_excavate\022@\n\024_query_excav"
+    "ate_data\030\002 \001(\0132\".client_baseup.query_exc"
+    "avate_data\022F\n\027_query_excavate_history\030\003 "
+    "\001(\0132%.client_baseup.query_excavate_histo"
+    "ry\022D\n\026_query_excavate_battle\030\004 \001(\0132$.cli"
+    "ent_baseup.query_excavate_battle\022<\n\022_set"
+    "_excavate_team\030\005 \001(\0132 .client_baseup.set"
+    "_excavate_team\022D\n\026_excavate_start_battle"
+    "\030\006 \001(\0132$.client_baseup.excavate_start_ba"
+    "ttle\022@\n\024_excavate_end_battle\030\007 \001(\0132\".cli"
+    "ent_baseup.excavate_end_battle\022>\n\023_query"
+    "_excavate_def\030\010 \001(\0132!.client_baseup.quer"
+    "y_excavate_def\022D\n\026_clear_excavate_battle"
+    "\030\t \001(\0132$.client_baseup.clear_excavate_ba"
+    "ttle\022D\n\026_draw_excavate_def_rwd\030\n \001(\0132$.c"
+    "lient_baseup.draw_excavate_def_rwd\0222\n\r_q"
+    "uery_replay\030\013 \001(\0132\033.client_baseup.query_"
+    "replay\022:\n\021_revenge_excavate\030\014 \001(\0132\037.clie"
+    "nt_baseup.revenge_excavate\0226\n\017_draw_exca"
+    "v_res\030\r \001(\0132\035.client_baseup.draw_excav_r"
+    "es\022F\n\027_withdraw_excavate_hero\030\016 \001(\0132%.cl"
+    "ient_baseup.withdraw_excavate_hero\"\"\n\016dr"
+    "aw_excav_res\022\020\n\010_mine_id\030\001 \001(\r\"\021\n\017search"
+    "_excavate\"\025\n\023query_excavate_data\"\030\n\026quer"
+    "y_excavate_history\"$\n\025query_excavate_bat"
+    "tle\022\013\n\003_id\030\001 \002(\t\"O\n\021set_excavate_team\022\024\n"
+    "\014_excavate_id\030\001 \001(\r\022\014\n\004_tid\030\002 \003(\r\022\026\n\016_ex"
+    "cavate_type\030\003 \001(\r\"z\n\025excavate_start_batt"
+    "le\022\020\n\010_heroids\030\001 \003(\r\022\024\n\014_excavate_id\030\002 \002"
+    "(\r\022\020\n\010_team_id\030\003 \002(\r\022\024\n\014_team_svr_id\030\004 \001"
+    "(\r\022\021\n\t_use_hire\030\005 \001(\r\"\264\001\n\023excavate_end_b"
+    "attle\022\017\n\007_result\030\001 \002(\r\0222\n\014_self_heroes\030\002"
+    " \003(\0132\034.client_baseup.excavate_hero\0222\n\014_o"
+    "ppo_heroes\030\003 \003(\0132\034.client_baseup.excavat"
+    "e_hero\022\022\n\n_oprations\030\004 \003(\r\022\020\n\010_type_id\030\005"
+    " \002(\r\"<\n\022query_excavate_def\022\020\n\010_mine_id\030\001"
+    " \002(\r\022\024\n\014_applier_uid\030\002 \002(\r\"\027\n\025clear_exca"
+    "vate_battle\"*\n\026withdraw_excavate_hero\022\020\n"
+    "\010_hero_id\030\001 \002(\r\"$\n\025draw_excavate_def_rwd"
+    "\022\013\n\003_id\030\001 \002(\t\"!\n\rdrop_excavate\022\020\n\010_mine_"
+    "id\030\001 \002(\r\"<\n\020revenge_excavate\022\024\n\014_enemy_s"
+    "vrid\030\001 \001(\r\022\022\n\n_enemy_uid\030\002 \001(\r\"Z\n\rexcava"
+    "te_hero\022\017\n\007_heroid\030\001 \002(\r\022\020\n\010_hp_perc\030\002 \002"
+    "(\r\022\020\n\010_mp_perc\030\003 \002(\r\022\024\n\014_custom_data\030\004 \001"
+    "(\r\"\022\n\020query_split_data\"\"\n\022query_split_re"
+    "turn\022\014\n\004_tid\030\001 \002(\r\"-\n\nsplit_hero\022\014\n\004_tid"
+    "\030\001 \002(\r\022\021\n\t_stone_id\030\002 \001(\r\"|\n\010worldcup\0226\n"
+    "\017_worldcup_query\030\001 \001(\0132\035.client_baseup.w"
+    "orldcup_query\0228\n\020_worldcup_submit\030\002 \001(\0132"
+    "\036.client_baseup.worldcup_submit\"\020\n\016world"
+    "cup_query\"3\n\017worldcup_submit\022\017\n\007_guess1\030"
+    "\001 \002(\r\022\017\n\007_guess2\030\002 \001(\r\"+\n\rreport_battle\022"
+    "\013\n\003_id\030\001 \002(\r\022\r\n\005_data\030\002 \002(\014\"$\n\016query_ran"
+    "klist\022\022\n\n_rank_type\030\001 \002(\r\"\033\n\010dot_info\022\017\n"
+    "\007_dot_id\030\001 \002(\r\"D\n\017require_arousal\022\014\n\004_hi"
+    "d\030\001 \002(\r\022\025\n\r_arousal_type\030\002 \002(\r\022\014\n\004_aid\030\003"
+    " \001(\r\"5\n\rchange_server\022\020\n\010_op_type\030\001 \002(\r\022"
+    "\022\n\n_server_id\030\002 \001(\r\"\'\n\021request_guild_log"
+    "\022\022\n\nlog_status\030\001 \002(\r\",\n\017query_act_stage\022"
+    "\031\n\021_act_stage_groups\030\001 \003(\r\"%\n\014fb_attenti"
+    "on\022\025\n\r_fb_attention\030\001 \002(\r", 16665);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "up.proto", &protobuf_RegisterTypes);
   up_msg::default_instance_ = new up_msg();
@@ -4809,135 +4676,6 @@ struct StaticDescriptorInitializer_up_2eproto {
     protobuf_AddDesc_up_2eproto();
   }
 } static_descriptor_initializer_up_2eproto_;
-const ::google::protobuf::EnumDescriptor* hero_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hero_status_descriptor_;
-}
-bool hero_status_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* guild_job_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_job_t_descriptor_;
-}
-bool guild_job_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* hire_from_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hire_from_descriptor_;
-}
-bool hire_from_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* chat_channel_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return chat_channel_descriptor_;
-}
-bool chat_channel_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* server_opt_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return server_opt_type_descriptor_;
-}
-bool server_opt_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* platform_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return platform_type_descriptor_;
-}
-bool platform_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 101:
-    case 102:
-    case 103:
-    case 104:
-    case 105:
-    case 106:
-    case 107:
-    case 108:
-    case 109:
-    case 110:
-    case 111:
-    case 112:
-    case 113:
-    case 114:
-    case 115:
-    case 116:
-    case 117:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::google::protobuf::EnumDescriptor* battle_result_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return battle_result_descriptor_;
-}
-bool battle_result_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
 
 // ===================================================================
 
@@ -9971,27 +9709,6 @@ void system_setting::Swap(system_setting* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* system_setting_change_setting_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return system_setting_change_setting_status_descriptor_;
-}
-bool system_setting_change_setting_status_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const system_setting_change_setting_status system_setting_change::on;
-const system_setting_change_setting_status system_setting_change::off;
-const system_setting_change_setting_status system_setting_change::setting_status_MIN;
-const system_setting_change_setting_status system_setting_change::setting_status_MAX;
-const int system_setting_change::setting_status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int system_setting_change::kKeyFieldNumber;
 const int system_setting_change::kValueFieldNumber;
@@ -11122,7 +10839,7 @@ void sdk_login::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   _session_key_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _plat_id_ = 0;
+  _plat_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -11167,7 +10884,7 @@ void sdk_login::Clear() {
         _session_key_->clear();
       }
     }
-    _plat_id_ = 0;
+    _plat_id_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -11199,19 +10916,14 @@ bool sdk_login::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.platform_type _plat_id = 2;
+      // required uint32 _plat_id = 2;
       case 2: {
         if (tag == 16) {
          parse__plat_id:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::platform_type_IsValid(value)) {
-            set__plat_id(static_cast< ::client_baseup::platform_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_plat_id_)));
+          set_has__plat_id();
         } else {
           goto handle_unusual;
         }
@@ -11254,10 +10966,9 @@ void sdk_login::SerializeWithCachedSizes(
       1, this->_session_key(), output);
   }
 
-  // required .client_baseup.platform_type _plat_id = 2;
+  // required uint32 _plat_id = 2;
   if (has__plat_id()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_plat_id(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_plat_id(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -11281,10 +10992,9 @@ void sdk_login::SerializeWithCachedSizes(
         1, this->_session_key(), target);
   }
 
-  // required .client_baseup.platform_type _plat_id = 2;
+  // required uint32 _plat_id = 2;
   if (has__plat_id()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_plat_id(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_plat_id(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -11306,10 +11016,11 @@ int sdk_login::ByteSize() const {
           this->_session_key());
     }
 
-    // required .client_baseup.platform_type _plat_id = 2;
+    // required uint32 _plat_id = 2;
     if (has__plat_id()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_plat_id());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_plat_id());
     }
 
   }
@@ -11813,7 +11524,7 @@ exit_stage::exit_stage(const exit_stage& from)
 void exit_stage::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _stars_ = 0u;
   _md5_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -11893,18 +11604,13 @@ bool exit_stage::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.battle_result _result = 1 [default = victory];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseup::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -12026,10 +11732,9 @@ failure:
 void exit_stage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.exit_stage)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // optional uint32 _stars = 2;
@@ -12075,10 +11780,9 @@ void exit_stage::SerializeWithCachedSizes(
 ::google::protobuf::uint8* exit_stage::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.exit_stage)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // optional uint32 _stars = 2;
@@ -12127,10 +11831,11 @@ int exit_stage::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.battle_result _result = 1 [default = victory];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // optional uint32 _stars = 2;
@@ -15039,33 +14744,6 @@ void open_all_guild_stage::Swap(open_all_guild_stage* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* set_money_price_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return set_money_price_type_descriptor_;
-}
-bool set_money_price_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const set_money_price_type set_money::gold;
-const set_money_price_type set_money::diamond;
-const set_money_price_type set_money::crusadepoint;
-const set_money_price_type set_money::arenapoint;
-const set_money_price_type set_money::guildpoint;
-const set_money_price_type set_money::price_type_MIN;
-const set_money_price_type set_money::price_type_MAX;
-const int set_money::price_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int set_money::kTypeFieldNumber;
 const int set_money::kAmountFieldNumber;
@@ -15089,7 +14767,7 @@ set_money::set_money(const set_money& from)
 
 void set_money::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   _amount_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -15155,18 +14833,13 @@ bool set_money::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.set_money.price_type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::set_money_price_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::set_money_price_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -15214,10 +14887,9 @@ failure:
 void set_money::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.set_money)
-  // required .client_baseup.set_money.price_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // required uint32 _amount = 2;
@@ -15235,10 +14907,9 @@ void set_money::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_money::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.set_money)
-  // required .client_baseup.set_money.price_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // required uint32 _amount = 2;
@@ -15258,10 +14929,11 @@ int set_money::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.set_money.price_type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required uint32 _amount = 2;
@@ -16242,27 +15914,6 @@ void sync_vitality::Swap(sync_vitality* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* buy_vitality_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return buy_vitality_type_descriptor_;
-}
-bool buy_vitality_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const buy_vitality_type buy_vitality::shadow_rune;
-const buy_vitality_type buy_vitality::vitality;
-const buy_vitality_type buy_vitality::type_MIN;
-const buy_vitality_type buy_vitality::type_MAX;
-const int buy_vitality::type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int buy_vitality::kTypeFieldNumber;
 #endif  // !_MSC_VER
@@ -16285,7 +15936,7 @@ buy_vitality::buy_vitality(const buy_vitality& from)
 
 void buy_vitality::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -16321,7 +15972,7 @@ buy_vitality* buy_vitality::New() const {
 }
 
 void buy_vitality::Clear() {
-  _type_ = 1;
+  _type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -16336,18 +15987,13 @@ bool buy_vitality::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseup.buy_vitality.type _type = 1;
+      // optional uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::buy_vitality_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::buy_vitality_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -16380,10 +16026,9 @@ failure:
 void buy_vitality::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.buy_vitality)
-  // optional .client_baseup.buy_vitality.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -16396,10 +16041,9 @@ void buy_vitality::SerializeWithCachedSizes(
 ::google::protobuf::uint8* buy_vitality::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.buy_vitality)
-  // optional .client_baseup.buy_vitality.type _type = 1;
+  // optional uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -16414,10 +16058,11 @@ int buy_vitality::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseup.buy_vitality.type _type = 1;
+    // optional uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
   }
@@ -16766,29 +16411,6 @@ void consume_item::Swap(consume_item* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* shop_refresh_rtype_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return shop_refresh_rtype_descriptor_;
-}
-bool shop_refresh_rtype_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const shop_refresh_rtype shop_refresh::sync;
-const shop_refresh_rtype shop_refresh::auto_refresh;
-const shop_refresh_rtype shop_refresh::manual_refresh;
-const shop_refresh_rtype shop_refresh::rtype_MIN;
-const shop_refresh_rtype shop_refresh::rtype_MAX;
-const int shop_refresh::rtype_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int shop_refresh::kTypeFieldNumber;
 const int shop_refresh::kShopIdFieldNumber;
@@ -16812,7 +16434,7 @@ shop_refresh::shop_refresh(const shop_refresh& from)
 
 void shop_refresh::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   _shop_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -16878,18 +16500,13 @@ bool shop_refresh::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::shop_refresh_rtype_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::shop_refresh_rtype >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -16937,10 +16554,9 @@ failure:
 void shop_refresh::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.shop_refresh)
-  // required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // required uint32 _shop_id = 2;
@@ -16958,10 +16574,9 @@ void shop_refresh::SerializeWithCachedSizes(
 ::google::protobuf::uint8* shop_refresh::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.shop_refresh)
-  // required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // required uint32 _shop_id = 2;
@@ -16981,10 +16596,11 @@ int shop_refresh::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.shop_refresh.rtype _type = 1 [default = sync];
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required uint32 _shop_id = 2;
@@ -18151,27 +17767,6 @@ void fragment_compose::Swap(fragment_compose* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* hero_equip_upgrade_OP_TYPE_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return hero_equip_upgrade_OP_TYPE_descriptor_;
-}
-bool hero_equip_upgrade_OP_TYPE_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade::normal;
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade::boss;
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade::OP_TYPE_MIN;
-const hero_equip_upgrade_OP_TYPE hero_equip_upgrade::OP_TYPE_MAX;
-const int hero_equip_upgrade::OP_TYPE_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int hero_equip_upgrade::kOpTypeFieldNumber;
 const int hero_equip_upgrade::kHeroidFieldNumber;
@@ -18197,7 +17792,7 @@ hero_equip_upgrade::hero_equip_upgrade(const hero_equip_upgrade& from)
 
 void hero_equip_upgrade::SharedCtor() {
   _cached_size_ = 0;
-  _op_type_ = 1;
+  _op_type_ = 0u;
   _heroid_ = 0u;
   _slot_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -18235,11 +17830,24 @@ hero_equip_upgrade* hero_equip_upgrade::New() const {
 }
 
 void hero_equip_upgrade::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<hero_equip_upgrade*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 7) {
-    _op_type_ = 1;
-    _heroid_ = 0u;
+    ZR_(_op_type_, _heroid_);
     _slot_ = 0u;
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _materials_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -18255,18 +17863,13 @@ bool hero_equip_upgrade::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+      // required uint32 _op_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::hero_equip_upgrade_OP_TYPE_IsValid(value)) {
-            set__op_type(static_cast< ::client_baseup::hero_equip_upgrade_OP_TYPE >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_op_type_)));
+          set_has__op_type();
         } else {
           goto handle_unusual;
         }
@@ -18348,10 +17951,9 @@ failure:
 void hero_equip_upgrade::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.hero_equip_upgrade)
-  // required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+  // required uint32 _op_type = 1;
   if (has__op_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_op_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_op_type(), output);
   }
 
   // required uint32 _heroid = 2;
@@ -18380,10 +17982,9 @@ void hero_equip_upgrade::SerializeWithCachedSizes(
 ::google::protobuf::uint8* hero_equip_upgrade::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.hero_equip_upgrade)
-  // required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+  // required uint32 _op_type = 1;
   if (has__op_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_op_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_op_type(), target);
   }
 
   // required uint32 _heroid = 2;
@@ -18414,10 +18015,11 @@ int hero_equip_upgrade::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.hero_equip_upgrade.OP_TYPE _op_type = 1 [default = normal];
+    // required uint32 _op_type = 1;
     if (has__op_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_op_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_op_type());
     }
 
     // required uint32 _heroid = 2;
@@ -18877,7 +18479,7 @@ void hero::SharedCtor() {
   _stars_ = 0u;
   _exp_ = 0u;
   _gs_ = 0u;
-  _state_ = 0;
+  _state_ = 0u;
   _arousal_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -18927,7 +18529,7 @@ void hero::Clear() {
 
   if (_has_bits_[0 / 32] & 127) {
     ZR_(_tid_, _gs_);
-    _state_ = 0;
+    _state_ = 0u;
   }
   if (has__arousal()) {
     if (_arousal_ != NULL) _arousal_->::client_baseup::hero_arousal::Clear();
@@ -19041,19 +18643,14 @@ bool hero::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.hero_status _state = 7;
+      // required uint32 _state = 7;
       case 7: {
         if (tag == 56) {
          parse__state:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::hero_status_IsValid(value)) {
-            set__state(static_cast< ::client_baseup::hero_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(7, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_state_)));
+          set_has__state();
         } else {
           goto handle_unusual;
         }
@@ -19162,10 +18759,9 @@ void hero::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->_gs(), output);
   }
 
-  // required .client_baseup.hero_status _state = 7;
+  // required uint32 _state = 7;
   if (has__state()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      7, this->_state(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(7, this->_state(), output);
   }
 
   // repeated uint32 _skill_levels = 8;
@@ -19226,10 +18822,9 @@ void hero::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->_gs(), target);
   }
 
-  // required .client_baseup.hero_status _state = 7;
+  // required uint32 _state = 7;
   if (has__state()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      7, this->_state(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(7, this->_state(), target);
   }
 
   // repeated uint32 _skill_levels = 8;
@@ -19306,10 +18901,11 @@ int hero::ByteSize() const {
           this->_gs());
     }
 
-    // required .client_baseup.hero_status _state = 7;
+    // required uint32 _state = 7;
     if (has__state()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_state());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_state());
     }
 
   }
@@ -21744,27 +21340,6 @@ void suspend_report::Swap(suspend_report* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* reset_elite_rtype_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return reset_elite_rtype_descriptor_;
-}
-bool reset_elite_rtype_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const reset_elite_rtype reset_elite::daily_free;
-const reset_elite_rtype reset_elite::vip_reset;
-const reset_elite_rtype reset_elite::rtype_MIN;
-const reset_elite_rtype reset_elite::rtype_MAX;
-const int reset_elite::rtype_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int reset_elite::kTypeFieldNumber;
 const int reset_elite::kStageidFieldNumber;
@@ -21788,7 +21363,7 @@ reset_elite::reset_elite(const reset_elite& from)
 
 void reset_elite::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   _stageid_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -21854,18 +21429,13 @@ bool reset_elite::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::reset_elite_rtype_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::reset_elite_rtype >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -21913,10 +21483,9 @@ failure:
 void reset_elite::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.reset_elite)
-  // required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional uint32 _stageid = 2;
@@ -21934,10 +21503,9 @@ void reset_elite::SerializeWithCachedSizes(
 ::google::protobuf::uint8* reset_elite::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.reset_elite)
-  // required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional uint32 _stageid = 2;
@@ -21957,10 +21525,11 @@ int reset_elite::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.reset_elite.rtype _type = 1 [default = daily_free];
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional uint32 _stageid = 2;
@@ -22046,27 +21615,6 @@ void reset_elite::Swap(reset_elite* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* sweep_stage_rtype_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return sweep_stage_rtype_descriptor_;
-}
-bool sweep_stage_rtype_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const sweep_stage_rtype sweep_stage::sweep_with_ticket;
-const sweep_stage_rtype sweep_stage::sweep_with_rmb;
-const sweep_stage_rtype sweep_stage::rtype_MIN;
-const sweep_stage_rtype sweep_stage::rtype_MAX;
-const int sweep_stage::rtype_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int sweep_stage::kTypeFieldNumber;
 const int sweep_stage::kStageidFieldNumber;
@@ -22091,7 +21639,7 @@ sweep_stage::sweep_stage(const sweep_stage& from)
 
 void sweep_stage::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   _stageid_ = 0u;
   _times_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -22158,18 +21706,13 @@ bool sweep_stage::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.sweep_stage.rtype _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::sweep_stage_rtype_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::sweep_stage_rtype >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -22232,10 +21775,9 @@ failure:
 void sweep_stage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.sweep_stage)
-  // required .client_baseup.sweep_stage.rtype _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // required uint32 _stageid = 2;
@@ -22258,10 +21800,9 @@ void sweep_stage::SerializeWithCachedSizes(
 ::google::protobuf::uint8* sweep_stage::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.sweep_stage)
-  // required .client_baseup.sweep_stage.rtype _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // required uint32 _stageid = 2;
@@ -22286,10 +21827,11 @@ int sweep_stage::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.sweep_stage.rtype _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required uint32 _stageid = 2;
@@ -22734,62 +22276,6 @@ void ask_magicsoul::Swap(ask_magicsoul* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* tavern_draw_draw_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return tavern_draw_draw_type_descriptor_;
-}
-bool tavern_draw_draw_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const tavern_draw_draw_type tavern_draw::single;
-const tavern_draw_draw_type tavern_draw::combo;
-const tavern_draw_draw_type tavern_draw::stone;
-const tavern_draw_draw_type tavern_draw::free;
-const tavern_draw_draw_type tavern_draw::draw_type_MIN;
-const tavern_draw_draw_type tavern_draw::draw_type_MAX;
-const int tavern_draw::draw_type_ARRAYSIZE;
-#endif  // _MSC_VER
-const ::google::protobuf::EnumDescriptor* tavern_draw_box_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return tavern_draw_box_type_descriptor_;
-}
-bool tavern_draw_box_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const tavern_draw_box_type tavern_draw::green;
-const tavern_draw_box_type tavern_draw::blue;
-const tavern_draw_box_type tavern_draw::purple;
-const tavern_draw_box_type tavern_draw::magicsoul;
-const tavern_draw_box_type tavern_draw::stone_green;
-const tavern_draw_box_type tavern_draw::stone_blue;
-const tavern_draw_box_type tavern_draw::stone_purple;
-const tavern_draw_box_type tavern_draw::box_type_MIN;
-const tavern_draw_box_type tavern_draw::box_type_MAX;
-const int tavern_draw::box_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int tavern_draw::kDrawTypeFieldNumber;
 const int tavern_draw::kBoxTypeFieldNumber;
@@ -22813,8 +22299,8 @@ tavern_draw::tavern_draw(const tavern_draw& from)
 
 void tavern_draw::SharedCtor() {
   _cached_size_ = 0;
-  _draw_type_ = 0;
-  _box_type_ = 1;
+  _draw_type_ = 0u;
+  _box_type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -22850,10 +22336,21 @@ tavern_draw* tavern_draw::New() const {
 }
 
 void tavern_draw::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _draw_type_ = 0;
-    _box_type_ = 1;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<tavern_draw*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_draw_type_, _box_type_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -22868,18 +22365,13 @@ bool tavern_draw::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+      // required uint32 _draw_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::tavern_draw_draw_type_IsValid(value)) {
-            set__draw_type(static_cast< ::client_baseup::tavern_draw_draw_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_draw_type_)));
+          set_has__draw_type();
         } else {
           goto handle_unusual;
         }
@@ -22887,19 +22379,14 @@ bool tavern_draw::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+      // required uint32 _box_type = 2;
       case 2: {
         if (tag == 16) {
          parse__box_type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::tavern_draw_box_type_IsValid(value)) {
-            set__box_type(static_cast< ::client_baseup::tavern_draw_box_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_box_type_)));
+          set_has__box_type();
         } else {
           goto handle_unusual;
         }
@@ -22932,16 +22419,14 @@ failure:
 void tavern_draw::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.tavern_draw)
-  // required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+  // required uint32 _draw_type = 1;
   if (has__draw_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_draw_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_draw_type(), output);
   }
 
-  // required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+  // required uint32 _box_type = 2;
   if (has__box_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_box_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_box_type(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -22954,16 +22439,14 @@ void tavern_draw::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tavern_draw::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.tavern_draw)
-  // required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+  // required uint32 _draw_type = 1;
   if (has__draw_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_draw_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_draw_type(), target);
   }
 
-  // required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+  // required uint32 _box_type = 2;
   if (has__box_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_box_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_box_type(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -22978,16 +22461,18 @@ int tavern_draw::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.tavern_draw.draw_type _draw_type = 1 [default = single];
+    // required uint32 _draw_type = 1;
     if (has__draw_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_draw_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_draw_type());
     }
 
-    // required .client_baseup.tavern_draw.box_type _box_type = 2 [default = green];
+    // required uint32 _box_type = 2;
     if (has__box_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_box_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_box_type());
     }
 
   }
@@ -24936,7 +24421,7 @@ end_battle::end_battle(const end_battle& from)
 
 void end_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -24972,7 +24457,7 @@ end_battle* end_battle::New() const {
 }
 
 void end_battle::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -24987,18 +24472,13 @@ bool end_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.battle_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseup::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -25031,10 +24511,9 @@ failure:
 void end_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.end_battle)
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -25047,10 +24526,9 @@ void end_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* end_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.end_battle)
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -25065,10 +24543,11 @@ int end_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.battle_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -25991,27 +25470,6 @@ void sync_skill_stren::Swap(sync_skill_stren* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* query_rankboard_rankboard_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return query_rankboard_rankboard_type_descriptor_;
-}
-bool query_rankboard_rankboard_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const query_rankboard_rankboard_type query_rankboard::static_c;
-const query_rankboard_rankboard_type query_rankboard::dynamic;
-const query_rankboard_rankboard_type query_rankboard::rankboard_type_MIN;
-const query_rankboard_rankboard_type query_rankboard::rankboard_type_MAX;
-const int query_rankboard::rankboard_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int query_rankboard::kTypeFieldNumber;
 #endif  // !_MSC_VER
@@ -26034,7 +25492,7 @@ query_rankboard::query_rankboard(const query_rankboard& from)
 
 void query_rankboard::SharedCtor() {
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -26070,7 +25528,7 @@ query_rankboard* query_rankboard::New() const {
 }
 
 void query_rankboard::Clear() {
-  _type_ = 0;
+  _type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -26085,18 +25543,13 @@ bool query_rankboard::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.query_rankboard.rankboard_type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::query_rankboard_rankboard_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::query_rankboard_rankboard_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -26129,10 +25582,9 @@ failure:
 void query_rankboard::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.query_rankboard)
-  // required .client_baseup.query_rankboard.rankboard_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -26145,10 +25597,9 @@ void query_rankboard::SerializeWithCachedSizes(
 ::google::protobuf::uint8* query_rankboard::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.query_rankboard)
-  // required .client_baseup.query_rankboard.rankboard_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -26163,10 +25614,11 @@ int query_rankboard::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.query_rankboard.rankboard_type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
   }
@@ -26986,27 +26438,6 @@ void buy_battle_chance::Swap(buy_battle_chance* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* set_name_set_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return set_name_set_type_descriptor_;
-}
-bool set_name_set_type_IsValid(int value) {
-  switch(value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const set_name_set_type set_name::free;
-const set_name_set_type set_name::rmb;
-const set_name_set_type set_name::set_type_MIN;
-const set_name_set_type set_name::set_type_MAX;
-const int set_name::set_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int set_name::kTypeFieldNumber;
 const int set_name::kNameFieldNumber;
@@ -27031,7 +26462,7 @@ set_name::set_name(const set_name& from)
 void set_name::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _type_ = 0;
+  _type_ = 0u;
   _name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -27072,7 +26503,7 @@ set_name* set_name::New() const {
 
 void set_name::Clear() {
   if (_has_bits_[0 / 32] & 3) {
-    _type_ = 0;
+    _type_ = 0u;
     if (has__name()) {
       if (_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _name_->clear();
@@ -27093,18 +26524,13 @@ bool set_name::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.set_name.set_type _type = 1;
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::set_name_set_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::set_name_set_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -27154,10 +26580,9 @@ failure:
 void set_name::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.set_name)
-  // required .client_baseup.set_name.set_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // required string _name = 2;
@@ -27180,10 +26605,9 @@ void set_name::SerializeWithCachedSizes(
 ::google::protobuf::uint8* set_name::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.set_name)
-  // required .client_baseup.set_name.set_type _type = 1;
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // required string _name = 2;
@@ -27209,10 +26633,11 @@ int set_name::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.set_name.set_type _type = 1;
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // required string _name = 2;
@@ -27521,31 +26946,6 @@ void set_avatar::Swap(set_avatar* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* query_data_query_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return query_data_query_type_descriptor_;
-}
-bool query_data_query_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const query_data_query_type query_data::rmb;
-const query_data_query_type query_data::hero;
-const query_data_query_type query_data::recharge;
-const query_data_query_type query_data::monthcard;
-const query_data_query_type query_data::query_type_MIN;
-const query_data_query_type query_data::query_type_MAX;
-const int query_data::query_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int query_data::kTypeFieldNumber;
 const int query_data::kQueryHeroesFieldNumber;
@@ -27622,24 +27022,17 @@ bool query_data::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .client_baseup.query_data.query_type _type = 1;
+      // repeated uint32 _type = 1;
       case 1: {
         if (tag == 8) {
          parse__type:
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::query_data_query_type_IsValid(value)) {
-            add__type(static_cast< ::client_baseup::query_data_query_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 1, 8, input, this->mutable__type())));
         } else if (tag == 10) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedEnumNoInline(
-                 input,
-                 &::client_baseup::query_data_query_type_IsValid,
-                 this->mutable__type())));
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, this->mutable__type())));
         } else {
           goto handle_unusual;
         }
@@ -27711,9 +27104,9 @@ failure:
 void query_data::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.query_data)
-  // repeated .client_baseup.query_data.query_type _type = 1;
+  // repeated uint32 _type = 1;
   for (int i = 0; i < this->_type_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(
       1, this->_type(i), output);
   }
 
@@ -27739,10 +27132,10 @@ void query_data::SerializeWithCachedSizes(
 ::google::protobuf::uint8* query_data::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.query_data)
-  // repeated .client_baseup.query_data.query_type _type = 1;
+  // repeated uint32 _type = 1;
   for (int i = 0; i < this->_type_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(i), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteUInt32ToArray(1, this->_type(i), target);
   }
 
   // repeated uint32 _query_heroes = 2;
@@ -27768,12 +27161,12 @@ void query_data::SerializeWithCachedSizes(
 int query_data::ByteSize() const {
   int total_size = 0;
 
-  // repeated .client_baseup.query_data.query_type _type = 1;
+  // repeated uint32 _type = 1;
   {
     int data_size = 0;
     for (int i = 0; i < this->_type_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
-        this->_type(i));
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        UInt32Size(this->_type(i));
     }
     total_size += 1 * this->_type_size() + data_size;
   }
@@ -28339,7 +27732,7 @@ charge::charge(const charge& from)
 void charge::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _platid_ = 0;
+  _platid_ = 0u;
   _chargeid_ = 0u;
   _extradata_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -28416,18 +27809,13 @@ bool charge::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.platform_type _platid = 1 [default = self];
+      // required uint32 _platid = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::platform_type_IsValid(value)) {
-            set__platid(static_cast< ::client_baseup::platform_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_platid_)));
+          set_has__platid();
         } else {
           goto handle_unusual;
         }
@@ -28492,10 +27880,9 @@ failure:
 void charge::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.charge)
-  // required .client_baseup.platform_type _platid = 1 [default = self];
+  // required uint32 _platid = 1;
   if (has__platid()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_platid(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_platid(), output);
   }
 
   // required uint32 _chargeid = 2;
@@ -28523,10 +27910,9 @@ void charge::SerializeWithCachedSizes(
 ::google::protobuf::uint8* charge::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.charge)
-  // required .client_baseup.platform_type _platid = 1 [default = self];
+  // required uint32 _platid = 1;
   if (has__platid()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_platid(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_platid(), target);
   }
 
   // required uint32 _chargeid = 2;
@@ -28557,10 +27943,11 @@ int charge::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.platform_type _platid = 1 [default = self];
+    // required uint32 _platid = 1;
     if (has__platid()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_platid());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_platid());
     }
 
     // required uint32 _chargeid = 2;
@@ -28657,29 +28044,6 @@ void charge::Swap(charge* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* ask_daily_login_status_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return ask_daily_login_status_descriptor_;
-}
-bool ask_daily_login_status_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const ask_daily_login_status ask_daily_login::all;
-const ask_daily_login_status ask_daily_login::common;
-const ask_daily_login_status ask_daily_login::vip;
-const ask_daily_login_status ask_daily_login::status_MIN;
-const ask_daily_login_status ask_daily_login::status_MAX;
-const int ask_daily_login::status_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int ask_daily_login::kStatusFieldNumber;
 #endif  // !_MSC_VER
@@ -28702,7 +28066,7 @@ ask_daily_login::ask_daily_login(const ask_daily_login& from)
 
 void ask_daily_login::SharedCtor() {
   _cached_size_ = 0;
-  _status_ = 1;
+  _status_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -28738,7 +28102,7 @@ ask_daily_login* ask_daily_login::New() const {
 }
 
 void ask_daily_login::Clear() {
-  _status_ = 1;
+  _status_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -28753,18 +28117,13 @@ bool ask_daily_login::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.ask_daily_login.status _status = 1;
+      // required uint32 _status = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::ask_daily_login_status_IsValid(value)) {
-            set__status(static_cast< ::client_baseup::ask_daily_login_status >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_status_)));
+          set_has__status();
         } else {
           goto handle_unusual;
         }
@@ -28797,10 +28156,9 @@ failure:
 void ask_daily_login::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.ask_daily_login)
-  // required .client_baseup.ask_daily_login.status _status = 1;
+  // required uint32 _status = 1;
   if (has__status()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_status(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -28813,10 +28171,9 @@ void ask_daily_login::SerializeWithCachedSizes(
 ::google::protobuf::uint8* ask_daily_login::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.ask_daily_login)
-  // required .client_baseup.ask_daily_login.status _status = 1;
+  // required uint32 _status = 1;
   if (has__status()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_status(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -28831,10 +28188,11 @@ int ask_daily_login::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.ask_daily_login.status _status = 1;
+    // required uint32 _status = 1;
     if (has__status()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_status());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_status());
     }
 
   }
@@ -30408,7 +29766,7 @@ tbc_end_battle::tbc_end_battle(const tbc_end_battle& from)
 
 void tbc_end_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -30444,7 +29802,7 @@ tbc_end_battle* tbc_end_battle::New() const {
 }
 
 void tbc_end_battle::Clear() {
-  _result_ = 0;
+  _result_ = 0u;
   _self_heroes_.Clear();
   _oppo_heroes_.Clear();
   _oprations_.Clear();
@@ -30462,18 +29820,13 @@ bool tbc_end_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.battle_result _result = 1 [default = victory];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseup::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -30553,10 +29906,9 @@ failure:
 void tbc_end_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.tbc_end_battle)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated .client_baseup.tbc_hero _self_heroes = 2;
@@ -30587,10 +29939,9 @@ void tbc_end_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* tbc_end_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.tbc_end_battle)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated .client_baseup.tbc_hero _self_heroes = 2;
@@ -30625,10 +29976,11 @@ int tbc_end_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.battle_result _result = 1 [default = victory];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
   }
@@ -32467,7 +31819,7 @@ chat_broad_say::chat_broad_say(const chat_broad_say& from)
 void chat_broad_say::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   _content_type_ = 0u;
   _content_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _accessory_ = NULL;
@@ -32510,9 +31862,18 @@ chat_broad_say* chat_broad_say::New() const {
 }
 
 void chat_broad_say::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_broad_say*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 29) {
-    _channel_ = 1;
-    _content_type_ = 0u;
+    ZR_(_channel_, _content_type_);
     if (has__content()) {
       if (_content_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _content_->clear();
@@ -32522,6 +31883,10 @@ void chat_broad_say::Clear() {
       if (_accessory_ != NULL) _accessory_->::client_baseup::chat_acc::Clear();
     }
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   _target_ids_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -32537,18 +31902,13 @@ bool chat_broad_say::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .client_baseup.chat_channel _channel = 1;
+      // optional uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseup::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -32645,10 +32005,9 @@ failure:
 void chat_broad_say::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.chat_broad_say)
-  // optional .client_baseup.chat_channel _channel = 1;
+  // optional uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   // repeated uint32 _target_ids = 2;
@@ -32688,10 +32047,9 @@ void chat_broad_say::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_broad_say::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.chat_broad_say)
-  // optional .client_baseup.chat_channel _channel = 1;
+  // optional uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   // repeated uint32 _target_ids = 2;
@@ -32735,10 +32093,11 @@ int chat_broad_say::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .client_baseup.chat_channel _channel = 1;
+    // optional uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
     // optional uint32 _content_type = 3;
@@ -33062,7 +32421,7 @@ chat_say::chat_say(const chat_say& from)
 void chat_say::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   _target_id_ = 0u;
   _content_type_ = 0u;
   _content_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -33106,9 +32465,18 @@ chat_say* chat_say::New() const {
 }
 
 void chat_say::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_say*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 31) {
-    _channel_ = 1;
-    _target_id_ = 0u;
+    ZR_(_channel_, _target_id_);
     _content_type_ = 0u;
     if (has__content()) {
       if (_content_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
@@ -33119,6 +32487,10 @@ void chat_say::Clear() {
       if (_accessory_ != NULL) _accessory_->::client_baseup::chat_acc::Clear();
     }
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -33133,18 +32505,13 @@ bool chat_say::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+      // required uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseup::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -33237,10 +32604,9 @@ failure:
 void chat_say::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.chat_say)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   // optional uint32 _target_id = 2;
@@ -33279,10 +32645,9 @@ void chat_say::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_say::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.chat_say)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   // optional uint32 _target_id = 2;
@@ -33325,10 +32690,11 @@ int chat_say::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+    // required uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
     // optional uint32 _target_id = 2;
@@ -33450,27 +32816,6 @@ void chat_say::Swap(chat_say* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* chat_acc_chat_acc_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return chat_acc_chat_acc_t_descriptor_;
-}
-bool chat_acc_chat_acc_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const chat_acc_chat_acc_t chat_acc::binary;
-const chat_acc_chat_acc_t chat_acc::pvp_replay;
-const chat_acc_chat_acc_t chat_acc::chat_acc_t_MIN;
-const chat_acc_chat_acc_t chat_acc::chat_acc_t_MAX;
-const int chat_acc::chat_acc_t_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int chat_acc::kTypeFieldNumber;
 const int chat_acc::kBinaryFieldNumber;
@@ -33496,7 +32841,7 @@ chat_acc::chat_acc(const chat_acc& from)
 void chat_acc::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  _type_ = 1;
+  _type_ = 0u;
   _binary_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _record_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -33537,15 +32882,28 @@ chat_acc* chat_acc::New() const {
 }
 
 void chat_acc::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_acc*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
   if (_has_bits_[0 / 32] & 7) {
-    _type_ = 1;
+    ZR_(_type_, _record_id_);
     if (has__binary()) {
       if (_binary_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _binary_->clear();
       }
     }
-    _record_id_ = 0u;
   }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -33560,18 +32918,13 @@ bool chat_acc::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+      // required uint32 _type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::chat_acc_chat_acc_t_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::chat_acc_chat_acc_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -33636,10 +32989,9 @@ failure:
 void chat_acc::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.chat_acc)
-  // required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_type(), output);
   }
 
   // optional string _binary = 2;
@@ -33667,10 +33019,9 @@ void chat_acc::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_acc::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.chat_acc)
-  // required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+  // required uint32 _type = 1;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_type(), target);
   }
 
   // optional string _binary = 2;
@@ -33701,10 +33052,11 @@ int chat_acc::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.chat_acc.chat_acc_t _type = 1 [default = binary];
+    // required uint32 _type = 1;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
     // optional string _binary = 2;
@@ -33823,7 +33175,7 @@ chat_fresh::chat_fresh(const chat_fresh& from)
 
 void chat_fresh::SharedCtor() {
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -33859,7 +33211,7 @@ chat_fresh* chat_fresh::New() const {
 }
 
 void chat_fresh::Clear() {
-  _channel_ = 1;
+  _channel_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -33874,18 +33226,13 @@ bool chat_fresh::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+      // required uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseup::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -33918,10 +33265,9 @@ failure:
 void chat_fresh::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.chat_fresh)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -33934,10 +33280,9 @@ void chat_fresh::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_fresh::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.chat_fresh)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -33952,10 +33297,11 @@ int chat_fresh::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+    // required uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
   }
@@ -34053,7 +33399,7 @@ chat_fetch::chat_fetch(const chat_fetch& from)
 
 void chat_fetch::SharedCtor() {
   _cached_size_ = 0;
-  _channel_ = 1;
+  _channel_ = 0u;
   _chat_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -34090,10 +33436,21 @@ chat_fetch* chat_fetch::New() const {
 }
 
 void chat_fetch::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _channel_ = 1;
-    _chat_id_ = 0u;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<chat_fetch*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_channel_, _chat_id_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -34108,18 +33465,13 @@ bool chat_fetch::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+      // required uint32 _channel = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::chat_channel_IsValid(value)) {
-            set__channel(static_cast< ::client_baseup::chat_channel >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_channel_)));
+          set_has__channel();
         } else {
           goto handle_unusual;
         }
@@ -34167,10 +33519,9 @@ failure:
 void chat_fetch::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.chat_fetch)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_channel(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_channel(), output);
   }
 
   // required uint32 _chat_id = 2;
@@ -34188,10 +33539,9 @@ void chat_fetch::SerializeWithCachedSizes(
 ::google::protobuf::uint8* chat_fetch::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.chat_fetch)
-  // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+  // required uint32 _channel = 1;
   if (has__channel()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_channel(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_channel(), target);
   }
 
   // required uint32 _chat_id = 2;
@@ -34211,10 +33561,11 @@ int chat_fetch::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.chat_channel _channel = 1 [default = world_channel];
+    // required uint32 _channel = 1;
     if (has__channel()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_channel());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_channel());
     }
 
     // required uint32 _chat_id = 2;
@@ -36659,27 +36010,6 @@ void guild::Swap(guild* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_set_jump_is_can_jump_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_set_jump_is_can_jump_descriptor_;
-}
-bool guild_set_jump_is_can_jump_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_set_jump_is_can_jump guild_set_jump::jump_true;
-const guild_set_jump_is_can_jump guild_set_jump::jump_false;
-const guild_set_jump_is_can_jump guild_set_jump::is_can_jump_MIN;
-const guild_set_jump_is_can_jump guild_set_jump::is_can_jump_MAX;
-const int guild_set_jump::is_can_jump_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_set_jump::kIsCanJumpFieldNumber;
 #endif  // !_MSC_VER
@@ -36702,7 +36032,7 @@ guild_set_jump::guild_set_jump(const guild_set_jump& from)
 
 void guild_set_jump::SharedCtor() {
   _cached_size_ = 0;
-  _is_can_jump_ = 1;
+  _is_can_jump_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -36738,7 +36068,7 @@ guild_set_jump* guild_set_jump::New() const {
 }
 
 void guild_set_jump::Clear() {
-  _is_can_jump_ = 1;
+  _is_can_jump_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -36753,18 +36083,13 @@ bool guild_set_jump::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+      // required uint32 _is_can_jump = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::guild_set_jump_is_can_jump_IsValid(value)) {
-            set__is_can_jump(static_cast< ::client_baseup::guild_set_jump_is_can_jump >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_is_can_jump_)));
+          set_has__is_can_jump();
         } else {
           goto handle_unusual;
         }
@@ -36797,10 +36122,9 @@ failure:
 void guild_set_jump::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.guild_set_jump)
-  // required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+  // required uint32 _is_can_jump = 1;
   if (has__is_can_jump()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_is_can_jump(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_is_can_jump(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -36813,10 +36137,9 @@ void guild_set_jump::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_set_jump::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.guild_set_jump)
-  // required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+  // required uint32 _is_can_jump = 1;
   if (has__is_can_jump()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_is_can_jump(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_is_can_jump(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -36831,10 +36154,11 @@ int guild_set_jump::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.guild_set_jump.is_can_jump _is_can_jump = 1;
+    // required uint32 _is_can_jump = 1;
     if (has__is_can_jump()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_is_can_jump());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_is_can_jump());
     }
 
   }
@@ -39680,7 +39004,7 @@ guild_instance_end::guild_instance_end(const guild_instance_end& from)
 
 void guild_instance_end::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _wave_ = 0u;
   _damage_ = 0u;
   _progress_ = 0u;
@@ -39755,18 +39079,13 @@ bool guild_instance_end::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.battle_result _result = 1;
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseup::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -39916,10 +39235,9 @@ failure:
 void guild_instance_end::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.guild_instance_end)
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated uint32 _hp_info = 2;
@@ -39970,10 +39288,9 @@ void guild_instance_end::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_instance_end::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.guild_instance_end)
-  // required .client_baseup.battle_result _result = 1;
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated uint32 _hp_info = 2;
@@ -40026,10 +39343,11 @@ int guild_instance_end::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.battle_result _result = 1;
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _wave = 3;
@@ -42106,27 +41424,6 @@ void guild_join::Swap(guild_join* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_join_confirm_confirm_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_join_confirm_confirm_type_descriptor_;
-}
-bool guild_join_confirm_confirm_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_join_confirm_confirm_type guild_join_confirm::accept;
-const guild_join_confirm_confirm_type guild_join_confirm::reject;
-const guild_join_confirm_confirm_type guild_join_confirm::confirm_type_MIN;
-const guild_join_confirm_confirm_type guild_join_confirm::confirm_type_MAX;
-const int guild_join_confirm::confirm_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_join_confirm::kUidFieldNumber;
 const int guild_join_confirm::kTypeFieldNumber;
@@ -42151,7 +41448,7 @@ guild_join_confirm::guild_join_confirm(const guild_join_confirm& from)
 void guild_join_confirm::SharedCtor() {
   _cached_size_ = 0;
   _uid_ = 0u;
-  _type_ = 1;
+  _type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -42187,10 +41484,21 @@ guild_join_confirm* guild_join_confirm::New() const {
 }
 
 void guild_join_confirm::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _uid_ = 0u;
-    _type_ = 1;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<guild_join_confirm*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_uid_, _type_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -42219,19 +41527,14 @@ bool guild_join_confirm::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+      // required uint32 _type = 2;
       case 2: {
         if (tag == 16) {
          parse__type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::guild_join_confirm_confirm_type_IsValid(value)) {
-            set__type(static_cast< ::client_baseup::guild_join_confirm_confirm_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_type_)));
+          set_has__type();
         } else {
           goto handle_unusual;
         }
@@ -42269,10 +41572,9 @@ void guild_join_confirm::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_uid(), output);
   }
 
-  // required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+  // required uint32 _type = 2;
   if (has__type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_type(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -42290,10 +41592,9 @@ void guild_join_confirm::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_uid(), target);
   }
 
-  // required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+  // required uint32 _type = 2;
   if (has__type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_type(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -42315,10 +41616,11 @@ int guild_join_confirm::ByteSize() const {
           this->_uid());
     }
 
-    // required .client_baseup.guild_join_confirm.confirm_type _type = 2 [default = accept];
+    // required uint32 _type = 2;
     if (has__type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_type());
     }
 
   }
@@ -42794,29 +42096,6 @@ void guild_kick::Swap(guild_kick* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* guild_set_guild_join_t_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return guild_set_guild_join_t_descriptor_;
-}
-bool guild_set_guild_join_t_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const guild_set_guild_join_t guild_set::no_verify;
-const guild_set_guild_join_t guild_set::verify;
-const guild_set_guild_join_t guild_set::closed;
-const guild_set_guild_join_t guild_set::guild_join_t_MIN;
-const guild_set_guild_join_t guild_set::guild_join_t_MAX;
-const int guild_set::guild_join_t_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int guild_set::kAvatarFieldNumber;
 const int guild_set::kJoinTypeFieldNumber;
@@ -42846,7 +42125,7 @@ void guild_set::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   _avatar_ = 0u;
-  _join_type_ = 1;
+  _join_type_ = 0u;
   _join_limit_ = 0u;
   _slogan_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _can_jump_ = 0u;
@@ -42900,9 +42179,8 @@ void guild_set::Clear() {
   } while (0)
 
   if (_has_bits_[0 / 32] & 63) {
+    ZR_(_avatar_, _join_type_);
     ZR_(_join_limit_, _avatar_frame_);
-    _avatar_ = 0u;
-    _join_type_ = 1;
     if (has__slogan()) {
       if (_slogan_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
         _slogan_->clear();
@@ -42941,19 +42219,14 @@ bool guild_set::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+      // optional uint32 _join_type = 2;
       case 2: {
         if (tag == 16) {
          parse__join_type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::guild_set_guild_join_t_IsValid(value)) {
-            set__join_type(static_cast< ::client_baseup::guild_set_guild_join_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_join_type_)));
+          set_has__join_type();
         } else {
           goto handle_unusual;
         }
@@ -43053,10 +42326,9 @@ void guild_set::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_avatar(), output);
   }
 
-  // optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+  // optional uint32 _join_type = 2;
   if (has__join_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_join_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_join_type(), output);
   }
 
   // optional uint32 _join_limit = 3;
@@ -43099,10 +42371,9 @@ void guild_set::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_avatar(), target);
   }
 
-  // optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+  // optional uint32 _join_type = 2;
   if (has__join_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_join_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_join_type(), target);
   }
 
   // optional uint32 _join_limit = 3;
@@ -43150,10 +42421,11 @@ int guild_set::ByteSize() const {
           this->_avatar());
     }
 
-    // optional .client_baseup.guild_set.guild_join_t _join_type = 2;
+    // optional uint32 _join_type = 2;
     if (has__join_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_join_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_join_type());
     }
 
     // optional uint32 _join_limit = 3;
@@ -43647,7 +42919,7 @@ guild_set_job::guild_set_job(const guild_set_job& from)
 void guild_set_job::SharedCtor() {
   _cached_size_ = 0;
   _uid_ = 0u;
-  _job_ = 1;
+  _job_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -43683,10 +42955,21 @@ guild_set_job* guild_set_job::New() const {
 }
 
 void guild_set_job::Clear() {
-  if (_has_bits_[0 / 32] & 3) {
-    _uid_ = 0u;
-    _job_ = 1;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<guild_set_job*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_uid_, _job_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -43715,19 +42998,14 @@ bool guild_set_job::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.guild_job_t _job = 2;
+      // required uint32 _job = 2;
       case 2: {
         if (tag == 16) {
          parse__job:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::guild_job_t_IsValid(value)) {
-            set__job(static_cast< ::client_baseup::guild_job_t >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_job_)));
+          set_has__job();
         } else {
           goto handle_unusual;
         }
@@ -43765,10 +43043,9 @@ void guild_set_job::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_uid(), output);
   }
 
-  // required .client_baseup.guild_job_t _job = 2;
+  // required uint32 _job = 2;
   if (has__job()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_job(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_job(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -43786,10 +43063,9 @@ void guild_set_job::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_uid(), target);
   }
 
-  // required .client_baseup.guild_job_t _job = 2;
+  // required uint32 _job = 2;
   if (has__job()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_job(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_job(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -43811,10 +43087,11 @@ int guild_set_job::ByteSize() const {
           this->_uid());
     }
 
-    // required .client_baseup.guild_job_t _job = 2;
+    // required uint32 _job = 2;
     if (has__job()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_job());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_job());
     }
 
   }
@@ -44361,7 +43638,7 @@ guild_query_hires::guild_query_hires(const guild_query_hires& from)
 
 void guild_query_hires::SharedCtor() {
   _cached_size_ = 0;
-  _from_ = 0;
+  _from_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -44397,7 +43674,7 @@ guild_query_hires* guild_query_hires::New() const {
 }
 
 void guild_query_hires::Clear() {
-  _from_ = 0;
+  _from_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -44412,18 +43689,13 @@ bool guild_query_hires::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.hire_from _from = 1;
+      // required uint32 _from = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::hire_from_IsValid(value)) {
-            set__from(static_cast< ::client_baseup::hire_from >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_from_)));
+          set_has__from();
         } else {
           goto handle_unusual;
         }
@@ -44456,10 +43728,9 @@ failure:
 void guild_query_hires::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.guild_query_hires)
-  // required .client_baseup.hire_from _from = 1;
+  // required uint32 _from = 1;
   if (has__from()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_from(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_from(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -44472,10 +43743,9 @@ void guild_query_hires::SerializeWithCachedSizes(
 ::google::protobuf::uint8* guild_query_hires::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.guild_query_hires)
-  // required .client_baseup.hire_from _from = 1;
+  // required uint32 _from = 1;
   if (has__from()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_from(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_from(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -44490,10 +43760,11 @@ int guild_query_hires::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.hire_from _from = 1;
+    // required uint32 _from = 1;
     if (has__from()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_from());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_from());
     }
 
   }
@@ -44595,7 +43866,7 @@ void guild_hire_hero::SharedCtor() {
   _cached_size_ = 0;
   _uid_ = 0u;
   _heroid_ = 0u;
-  _from_ = 0;
+  _from_ = 0u;
   _stage_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -44690,19 +43961,14 @@ bool guild_hire_hero::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.hire_from _from = 3;
+      // required uint32 _from = 3;
       case 3: {
         if (tag == 24) {
          parse__from:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::hire_from_IsValid(value)) {
-            set__from(static_cast< ::client_baseup::hire_from >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(3, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_from_)));
+          set_has__from();
         } else {
           goto handle_unusual;
         }
@@ -44760,10 +44026,9 @@ void guild_hire_hero::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_heroid(), output);
   }
 
-  // required .client_baseup.hire_from _from = 3;
+  // required uint32 _from = 3;
   if (has__from()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->_from(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->_from(), output);
   }
 
   // optional uint32 _stage_id = 4;
@@ -44791,10 +44056,9 @@ void guild_hire_hero::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_heroid(), target);
   }
 
-  // required .client_baseup.hire_from _from = 3;
+  // required uint32 _from = 3;
   if (has__from()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->_from(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->_from(), target);
   }
 
   // optional uint32 _stage_id = 4;
@@ -44828,10 +44092,11 @@ int guild_hire_hero::ByteSize() const {
           this->_heroid());
     }
 
-    // required .client_baseup.hire_from _from = 3;
+    // required uint32 _from = 3;
     if (has__from()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_from());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_from());
     }
 
     // optional uint32 _stage_id = 4;
@@ -48625,7 +47890,7 @@ excavate_end_battle::excavate_end_battle(const excavate_end_battle& from)
 
 void excavate_end_battle::SharedCtor() {
   _cached_size_ = 0;
-  _result_ = 0;
+  _result_ = 0u;
   _type_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -48694,18 +47959,13 @@ bool excavate_end_battle::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.battle_result _result = 1 [default = victory];
+      // required uint32 _result = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::battle_result_IsValid(value)) {
-            set__result(static_cast< ::client_baseup::battle_result >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_result_)));
+          set_has__result();
         } else {
           goto handle_unusual;
         }
@@ -48800,10 +48060,9 @@ failure:
 void excavate_end_battle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.excavate_end_battle)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_result(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_result(), output);
   }
 
   // repeated .client_baseup.excavate_hero _self_heroes = 2;
@@ -48839,10 +48098,9 @@ void excavate_end_battle::SerializeWithCachedSizes(
 ::google::protobuf::uint8* excavate_end_battle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.excavate_end_battle)
-  // required .client_baseup.battle_result _result = 1 [default = victory];
+  // required uint32 _result = 1;
   if (has__result()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_result(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_result(), target);
   }
 
   // repeated .client_baseup.excavate_hero _self_heroes = 2;
@@ -48882,10 +48140,11 @@ int excavate_end_battle::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.battle_result _result = 1 [default = victory];
+    // required uint32 _result = 1;
     if (has__result()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_result());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_result());
     }
 
     // required uint32 _type_id = 5;
@@ -52439,43 +51698,6 @@ void report_battle::Swap(report_battle* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* query_ranklist_rank_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return query_ranklist_rank_type_descriptor_;
-}
-bool query_ranklist_rank_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const query_ranklist_rank_type query_ranklist::guildliveness;
-const query_ranklist_rank_type query_ranklist::excavate_rob;
-const query_ranklist_rank_type query_ranklist::excavate_gold;
-const query_ranklist_rank_type query_ranklist::excavate_exp;
-const query_ranklist_rank_type query_ranklist::top_gs;
-const query_ranklist_rank_type query_ranklist::full_hero_gs;
-const query_ranklist_rank_type query_ranklist::hero_team_gs;
-const query_ranklist_rank_type query_ranklist::hero_evo_star;
-const query_ranklist_rank_type query_ranklist::hero_arousal;
-const query_ranklist_rank_type query_ranklist::top_arena;
-const query_ranklist_rank_type query_ranklist::rank_type_MIN;
-const query_ranklist_rank_type query_ranklist::rank_type_MAX;
-const int query_ranklist::rank_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int query_ranklist::kRankTypeFieldNumber;
 #endif  // !_MSC_VER
@@ -52498,7 +51720,7 @@ query_ranklist::query_ranklist(const query_ranklist& from)
 
 void query_ranklist::SharedCtor() {
   _cached_size_ = 0;
-  _rank_type_ = 1;
+  _rank_type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -52534,7 +51756,7 @@ query_ranklist* query_ranklist::New() const {
 }
 
 void query_ranklist::Clear() {
-  _rank_type_ = 1;
+  _rank_type_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -52549,18 +51771,13 @@ bool query_ranklist::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+      // required uint32 _rank_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::query_ranklist_rank_type_IsValid(value)) {
-            set__rank_type(static_cast< ::client_baseup::query_ranklist_rank_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_rank_type_)));
+          set_has__rank_type();
         } else {
           goto handle_unusual;
         }
@@ -52593,10 +51810,9 @@ failure:
 void query_ranklist::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.query_ranklist)
-  // required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   if (has__rank_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_rank_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_rank_type(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -52609,10 +51825,9 @@ void query_ranklist::SerializeWithCachedSizes(
 ::google::protobuf::uint8* query_ranklist::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.query_ranklist)
-  // required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+  // required uint32 _rank_type = 1;
   if (has__rank_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_rank_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_rank_type(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -52627,10 +51842,11 @@ int query_ranklist::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.query_ranklist.rank_type _rank_type = 1;
+    // required uint32 _rank_type = 1;
     if (has__rank_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_rank_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_rank_type());
     }
 
   }
@@ -52928,27 +52144,6 @@ void dot_info::Swap(dot_info* other) {
 
 // ===================================================================
 
-const ::google::protobuf::EnumDescriptor* require_arousal_arousal_type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return require_arousal_arousal_type_descriptor_;
-}
-bool require_arousal_arousal_type_IsValid(int value) {
-  switch(value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#ifndef _MSC_VER
-const require_arousal_arousal_type require_arousal::require_arousal_t;
-const require_arousal_arousal_type require_arousal::apply_arousal_t;
-const require_arousal_arousal_type require_arousal::arousal_type_MIN;
-const require_arousal_arousal_type require_arousal::arousal_type_MAX;
-const int require_arousal::arousal_type_ARRAYSIZE;
-#endif  // _MSC_VER
 #ifndef _MSC_VER
 const int require_arousal::kHidFieldNumber;
 const int require_arousal::kArousalTypeFieldNumber;
@@ -52974,7 +52169,7 @@ require_arousal::require_arousal(const require_arousal& from)
 void require_arousal::SharedCtor() {
   _cached_size_ = 0;
   _hid_ = 0u;
-  _arousal_type_ = 1;
+  _arousal_type_ = 0u;
   _aid_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -53011,11 +52206,21 @@ require_arousal* require_arousal::New() const {
 }
 
 void require_arousal::Clear() {
-  if (_has_bits_[0 / 32] & 7) {
-    _hid_ = 0u;
-    _arousal_type_ = 1;
-    _aid_ = 0u;
-  }
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<require_arousal*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(_hid_, _aid_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -53044,19 +52249,14 @@ bool require_arousal::MergePartialFromCodedStream(
         break;
       }
 
-      // required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+      // required uint32 _arousal_type = 2;
       case 2: {
         if (tag == 16) {
          parse__arousal_type:
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::require_arousal_arousal_type_IsValid(value)) {
-            set__arousal_type(static_cast< ::client_baseup::require_arousal_arousal_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(2, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_arousal_type_)));
+          set_has__arousal_type();
         } else {
           goto handle_unusual;
         }
@@ -53109,10 +52309,9 @@ void require_arousal::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_hid(), output);
   }
 
-  // required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+  // required uint32 _arousal_type = 2;
   if (has__arousal_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->_arousal_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->_arousal_type(), output);
   }
 
   // optional uint32 _aid = 3;
@@ -53135,10 +52334,9 @@ void require_arousal::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_hid(), target);
   }
 
-  // required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+  // required uint32 _arousal_type = 2;
   if (has__arousal_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_arousal_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->_arousal_type(), target);
   }
 
   // optional uint32 _aid = 3;
@@ -53165,10 +52363,11 @@ int require_arousal::ByteSize() const {
           this->_hid());
     }
 
-    // required .client_baseup.require_arousal.arousal_type _arousal_type = 2;
+    // required uint32 _arousal_type = 2;
     if (has__arousal_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_arousal_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_arousal_type());
     }
 
     // optional uint32 _aid = 3;
@@ -53281,7 +52480,7 @@ change_server::change_server(const change_server& from)
 
 void change_server::SharedCtor() {
   _cached_size_ = 0;
-  _op_type_ = 0;
+  _op_type_ = 0u;
   _server_id_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -53347,18 +52546,13 @@ bool change_server::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .client_baseup.server_opt_type _op_type = 1;
+      // required uint32 _op_type = 1;
       case 1: {
         if (tag == 8) {
-          int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::client_baseup::server_opt_type_IsValid(value)) {
-            set__op_type(static_cast< ::client_baseup::server_opt_type >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(1, value);
-          }
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &_op_type_)));
+          set_has__op_type();
         } else {
           goto handle_unusual;
         }
@@ -53406,10 +52600,9 @@ failure:
 void change_server::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:client_baseup.change_server)
-  // required .client_baseup.server_opt_type _op_type = 1;
+  // required uint32 _op_type = 1;
   if (has__op_type()) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->_op_type(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->_op_type(), output);
   }
 
   // optional uint32 _server_id = 2;
@@ -53427,10 +52620,9 @@ void change_server::SerializeWithCachedSizes(
 ::google::protobuf::uint8* change_server::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:client_baseup.change_server)
-  // required .client_baseup.server_opt_type _op_type = 1;
+  // required uint32 _op_type = 1;
   if (has__op_type()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_op_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->_op_type(), target);
   }
 
   // optional uint32 _server_id = 2;
@@ -53450,10 +52642,11 @@ int change_server::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .client_baseup.server_opt_type _op_type = 1;
+    // required uint32 _op_type = 1;
     if (has__op_type()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->_op_type());
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->_op_type());
     }
 
     // optional uint32 _server_id = 2;

@@ -19,14 +19,16 @@ local tostring = tostring;
 local logSaveId = 0
 local logString
 local up_code
---ed.upmsg = up
---ed.downmsg = down
+
 ed.isDebug = true
 
 local up = pb_loader("up")()
 local down = pb_loader("cb")()
 local upmsg = up.up_msg
 local downmsg = down.down_msg
+
+ed.upmsg = up
+ed.downmsg = down
 
 local cryptkey = "0"
 local user_id = 0
@@ -289,6 +291,23 @@ local function doSend(block, ttype)
 	return true
 end
 
+local function send(obj, ttype)
+	currentMsg = nil
+	currentMsg = upmsg()
+	currentMsg._repeat = 0
+	--currentMsg._user_id = user_id
+	currentMsg["_" .. ttype] = obj
+	currentMsgType = ttype
+	local code, err = currentMsg:Serialize()
+	print("[netword.lua|doSend] Sending msg: " .. ttype)
+	LegendLog("[netword.lua|doSend] Sending msg: " .. ttype)
+	--if currentMsg._tavern_draw then
+	--	print("[netword.lua|doSend] Sending _tavern_draw : " .. currentMsg._tavern_draw._draw_type)
+	--end
+	return GameApp.SendMsg(91, 7, code)
+end
+ed.send = send
+
 local send_time_record = {}
 local function checkSendIllegal()
 	local gap = 15
@@ -508,7 +527,7 @@ local function dispatch(data)
 	end
 	logString = ""
 	ed.LegendLog("[netword.lua|dispatch] begin------------------!")
-	var_dump(msg, 2)
+	--var_dump(msg, 2)
 	if msg._login_reply then
 		print("===============login reply==================")
 
@@ -632,7 +651,7 @@ local function dispatch(data)
 	end
 	if msg._equip_synthesis_reply then
 		local reply = msg._equip_synthesis_reply
-		local result = reply._result == "success"
+		local result = reply._result == 0 --"success"
 		local data = ed.netdata.equipCraft
 		if result then
 			ed.player:addMoney(-data.expense)
@@ -649,7 +668,7 @@ local function dispatch(data)
 	end
 	if msg._wear_equip_reply then
 		local reply = msg._wear_equip_reply
-		local result = reply._result == "success"
+		local result = reply._result == 0--"success"
 		local gs = reply._gs
 		if ed.netdata.putonReply then
 			local data = ed.netdata.putonReply
@@ -690,7 +709,7 @@ local function dispatch(data)
 	end
 	if msg._fragment_compose_reply then
 		local reply = msg._fragment_compose_reply
-		local result = reply._result == "success"
+		local result = reply._result == 0 --"success"
 		local info = ed.netdata.fragmentCompose
 		if result then
 			ed.player:addMoney(-info.cost)
@@ -712,7 +731,7 @@ local function dispatch(data)
 	end
 	if msg._hero_equip_upgrade_reply then
 		local reply = msg._hero_equip_upgrade_reply
-		local result = reply._result == "success"
+		local result = reply._result == 0 --"success"
 		local hero = reply._hero
 		if hero then
 			local handler = ed.netreply.equipUpgrade
@@ -752,7 +771,7 @@ local function dispatch(data)
 	end
 	if msg._hero_upgrade_reply then
 		local reply = msg._hero_upgrade_reply
-		local result = reply._result == "success"
+		local result = reply._result == 0 --"success"
 		local hero = reply._hero
 		local items = reply._items
 		local props = {}
@@ -775,7 +794,7 @@ local function dispatch(data)
 		local reply = msg._open_shop_reply
 		local result = reply._result
 		local shop = reply._shop
-		result = result == "success" or result == 0
+		result = result == 0 --result == "success"
 		if shop then
 			ed.player:refreshShopData(shop)
 		end
@@ -859,7 +878,7 @@ local function dispatch(data)
 	if msg._require_rewards_reply then
 		local reply = msg._require_rewards_reply
 		local result = reply._result
-		result = result == "success" or result == 0
+		result = result == 0 --result == "success" or 
 		if ed.netreply.requireRewards then
 			ed.netreply.requireRewards(result, ed.netdata.requireRewards)
 			ed.netreply.requireRewards = nil
@@ -869,7 +888,7 @@ local function dispatch(data)
 	if msg._get_vip_gift_reply then
 		local reply = msg._get_vip_gift_reply
 		local result = reply._result
-		result = result == "success" or result == 0
+		result = result == 0 --result == "success" or 
 		local handler = ed.netreply.getvipGift
 		local data = ed.netdata.getvipGift
 		if result then
@@ -1175,7 +1194,7 @@ local function dispatch(data)
 		local reply = msg._set_name_reply
 		local result = reply._result
 		local data = ed.netdata.setname
-		if result == "success" and data then
+		if result == 0 and data then --"success"
 			local name = data.name or ""
 			local cost = data.cost or 0
 			ed.player:setName(name)

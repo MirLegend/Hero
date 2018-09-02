@@ -34,11 +34,11 @@ function GameApp.InitPb()
     buffer = read_protobuf_file_c(pbbaseFilePath)
     protobuf.register(buffer) --注:protobuf 是因为在protobuf.lua里面使用module(protobuf)来修改全局名字
 
-    local pbupFilePath = "./data/up.pb"
-    print("InitPb file path: "..pbbaseFilePath)
+    --local pbupFilePath = "./data/up.pb"
+    --print("InitPb file path: "..pbbaseFilePath)
     
-    buffer = read_protobuf_file_c(pbupFilePath)
-    protobuf.register(buffer) --注:protobuf 是因为在protobuf.lua里面使用module(protobuf)来修改全局名字
+    --buffer = read_protobuf_file_c(pbupFilePath)
+    --protobuf.register(buffer) --注:protobuf 是因为在protobuf.lua里面使用module(protobuf)来修改全局名字
 end
 
 function GameApp.loginServer(account, pwd)

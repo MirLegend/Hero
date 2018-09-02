@@ -94,6 +94,7 @@ end
 local function setup(self, data, nobackup)
   self.initialized = true
   self.data = data
+
   self.skillbook_qunty = {}
   self.equip_order = {}
   self.equip_qunty = {}
@@ -123,6 +124,7 @@ local function setup(self, data, nobackup)
   end
   self:initNativeTimeDiff(self._last_login)
   ed.localnotify.init()
+  self._task = self._task or {}
 end
 class.setup = setup
 local setGlobalConfig = function(self, config)
@@ -1699,7 +1701,7 @@ local function useFreeTavern(self, type)
 end
 class.useFreeTavern = useFreeTavern
 local function getTavernRecord(self, box)
-  local record = self._tavern_record
+  local record = self._tavern_record or {}
   local bt = box_color_table
   for k, v in pairs(record) do
     if v._box_type == box or v._box_type == bt[box] then

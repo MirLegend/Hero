@@ -66,13 +66,14 @@ local registerTouchHandler = function(self)
       ed.netdata.tavern = {type = "stone"}
       ed.netreply.tavern = handler
       local boxTypes = {
-        stone_green = "stone_green",
-        stone_blue = "stone_blue",
-        stone_purple = "stone_purple"
+        stone_green = 0,--"stone_green",
+        stone_blue = 1,--"stone_blue",
+        stone_purple = 2,--"stone_purple"
       }
       local msg = ed.upmsg.tavern_draw()
-      msg._draw_type = "stone"
+      msg._draw_type = 3 --"stone"
       msg._box_type = boxTypes[self.data.box]
+      print("tavern_draw Sending msg: _box_type" .. msg._box_type)
       ed.send(msg, "tavern_draw")
     end
   })

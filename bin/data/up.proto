@@ -1,11 +1,12 @@
-package up;
+package client_baseup;
 
-enum hero_status {
-    idle    = 0;    // 空闲
-    hire    = 1;    // 雇佣兵
-    mining  = 2;    // 守矿
-}
+//enum hero_status {
+//    idle    = 0;    // 空闲
+//    hire    = 1;    // 雇佣兵
+//    mining  = 2;    // 守矿
+//}
 
+//c-s 客户端 -> 服务器 91 - 7
 message up_msg {
     required uint32             _repeat             = 1;
     optional uint32             _user_id            = 2;
@@ -113,10 +114,10 @@ message system_setting{
  }
 
 message system_setting_change{
-    enum setting_status {
-        on    = 1;
-        off   = 2;
-    }
+    //enum setting_status {
+    //    on    = 1;
+    //    off   = 2;
+    //}
     required string key = 1;
     required string value = 2;
 }
@@ -138,7 +139,7 @@ message login {
 
 message sdk_login {
     required string           _session_key    = 1;      // session id
-    required platform_type    _plat_id        = 2;      // platform id
+    required uint32    _plat_id        = 2;      // platform id
 }
 
 message request_userinfo {
@@ -149,7 +150,7 @@ message enter_stage {
 }
 
 message exit_stage {
-    required battle_result     _result    = 1 [default = victory];
+    required uint32     _result    = 1 ;
     optional uint32            _stars     = 2;
     repeated uint32            _heroes    = 3;  // hero type id
     repeated uint32            _oprations = 4;  // <<replacement:8, op:2, wave_idx:3, tick:10, hero_pos:3>>
@@ -213,14 +214,14 @@ message activity_lotto_reward{
 message open_all_guild_stage{
 }
 message set_money {
-    enum price_type {
-        gold          = 0;
-        diamond       = 1;
-        crusadepoint  = 2;
-        arenapoint    = 3;
-        guildpoint    = 4;
-    }
-    required price_type _type   = 1;
+    //enum price_type {
+    //    gold          = 0;
+    //    diamond       = 1;
+    //    crusadepoint  = 2;
+    //    arenapoint    = 3;
+    //    guildpoint    = 4;
+    //}
+    required uint32 _type   = 1;
     required uint32     _amount = 2;
 }
 
@@ -241,6 +242,11 @@ message sync_vitality {
 }
 
 message buy_vitality {
+    //enum type {
+    //  shadow_rune = 1; // 幽暗符文
+    //  vitality    = 2; // 日常体力
+    //}
+    optional uint32 _type = 1; // 要买的体力类型
 }
 
 // 吃经验丹，先添加这个协议
@@ -255,12 +261,12 @@ message consume_item {
 // 1. sync的时候，如果自动刷新周期到了，刷一批新的内容返回
 // 2. manual_refresh的时候，如果自动刷新周期到了，免费刷新
 message shop_refresh {
-    enum rtype {
-        sync           = 0;   // 玩家新进入商店时，同步商店
-        auto_refresh   = 1;   // 时间到了，客户端发起的商店自动刷新请求
-        manual_refresh = 2;   // 玩家手动刷新的请求
-    }
-    required rtype  _type    = 1[default = sync]; // refresh or sync
+    //enum rtype {
+    //    sync           = 0;   // 玩家新进入商店时，同步商店
+    //    auto_refresh   = 1;   // 时间到了，客户端发起的商店自动刷新请求
+    //    manual_refresh = 2;   // 玩家手动刷新的请求
+    //}
+    required uint32  _type    = 1; // refresh or sync
     required uint32 _shop_id = 2;                 // 商店ID
 }
 
@@ -286,11 +292,11 @@ message fragment_compose {
 }
 
 message hero_equip_upgrade {
-    enum OP_TYPE{
-        normal      =   1;  //普通进阶
-        boss        =   2;  //一键到顶
-    }
-    required OP_TYPE _op_type   = 1[default = normal];      // 进阶方式
+    //enum OP_TYPE{
+    //    normal      =   1;  //普通进阶
+    //    boss        =   2;  //一键到顶
+    //}
+    required uint32 _op_type   = 1;      // 进阶方式
     required uint32 _heroid     = 2;                        // 英雄ID
     required uint32 _slot       = 3;                        // 要进阶的装备位
     repeated uint32 _materials  = 4;                        // 消耗的材料组<<amount:11, id:10>>
@@ -311,7 +317,7 @@ message hero {
     required uint32 _stars                = 4;   // 进化等级
     required uint32 _exp                  = 5;
     required uint32 _gs                   = 6;
-    required hero_status _state           = 7;   // 英雄状态，标识英雄正在干的事
+    required uint32 _state           = 7;   // 英雄状态，标识英雄正在干的事
     repeated uint32 _skill_levels         = 8;   // 技能等级
     repeated hero_equip _items            = 9;   // 当前的装备列表
     optional hero_arousal _arousal        = 10;  // 英雄觉醒
@@ -375,21 +381,21 @@ message suspend_report {
 //-------------------------------------------------------------------------------
 // 精英关卡重置
 message reset_elite {
-    enum rtype {
-        daily_free     = 0;   // 每日0点自动重置
-        vip_reset      = 1;   // VIP重置
-    }
-    required rtype  _type    = 1[default = daily_free]; // 自动重置
+    //enum rtype {
+    //    daily_free     = 0;   // 每日0点自动重置
+    //    vip_reset      = 1;   // VIP重置
+    //}
+    required uint32  _type    = 1; // 自动重置
     optional uint32 _stageid = 2;                       // 精英关ID，例如：10001
 }
 
 // 关卡扫荡
 message sweep_stage {
-    enum rtype {
-        sweep_with_ticket = 0;    // 用扫荡币扫荡，命名是历史遗留问题
-        sweep_with_rmb    = 1;    // 付费扫荡
-    }
-    required rtype  _type     = 1; // 扫荡类型
+    //enum rtype {
+    //    sweep_with_ticket = 0;    // 用扫荡币扫荡，命名是历史遗留问题
+    //    sweep_with_rmb    = 1;    // 付费扫荡
+    //}
+    required uint32  _type     = 1; // 扫荡类型
     required uint32 _stageid  = 2; // 关卡id
     optional uint32 _times    = 3; // 扫荡次数, 缺省为1
 }
@@ -404,23 +410,23 @@ message ask_magicsoul{
 
 // 酒馆抽奖
 message tavern_draw{
-    enum draw_type {
-        single          = 0;   // 单抽
-        combo           = 1;   // 十连抽
-        stone           = 3;   // 灵魂石抽奖
-        free            = 4;   // 免费单抽
-    }
-    enum box_type {
-        green           = 1;    // 绿箱子
-        blue            = 2;    // 蓝箱子
-        purple          = 3;    // 紫箱子
-        magicsoul       = 4;    // 神秘宝箱 抽法为combo
-        stone_green     = 5;    // 星际商人 抽法为combo
-        stone_blue      = 6;    // 星际商人 抽法为combo
-        stone_purple    = 7;    // 星际商人 抽法为combo
-    }
-    required draw_type  _draw_type  = 1[default = single]; // 抽法
-    required box_type   _box_type   = 2[default = green];  // 要抽箱子类型
+    //enum draw_type {
+    //    single          = 0;   // 单抽
+    //    combo           = 1;   // 十连抽
+    //    stone           = 3;   // 灵魂石抽奖
+    //    free            = 4;   // 免费单抽
+    //}
+    //enum box_type {
+    //    green           = 1;    // 绿箱子
+    //    blue            = 2;    // 蓝箱子
+    //    purple          = 3;    // 紫箱子
+    //    magicsoul       = 4;    // 神秘宝箱 抽法为combo
+    //    stone_green     = 5;    // 星际商人 抽法为combo
+    //    stone_blue      = 6;    // 星际商人 抽法为combo
+    //    stone_purple    = 7;    // 星际商人 抽法为combo
+    //}
+    required uint32   _draw_type  = 1; // 抽法
+    required uint32   _box_type   = 2;  // 要抽箱子类型
 }
 
 // 英雄进化
@@ -463,7 +469,7 @@ message start_battle{
 }
 
 message end_battle{
-    required battle_result _result  = 1;     // 战斗结果
+    required uint32 _result  = 1;     // 战斗结果
 }
 
 message set_lineup{
@@ -483,11 +489,11 @@ message sync_skill_stren {
 }
 
 message query_rankboard{
-    enum rankboard_type {
-      static_c   = 0;
-      dynamic  = 1;
-    }
-    required rankboard_type _type = 1;
+    //enum rankboard_type {
+    //  static_c   = 0;
+    //  dynamic  = 1;
+    //}
+    required uint32 _type = 1;
 }
 
 message query_oppo_info{
@@ -505,11 +511,11 @@ message buy_battle_chance{
 
 // 设置玩家名字
 message set_name {
-    enum set_type {
-      free  = 0;
-      rmb   = 1;
-    }
-    required set_type _type = 1;
+    //enum set_type {
+    //  free  = 0;
+    //  rmb   = 1;
+    //}
+    required uint32 _type = 1;
     required string   _name = 2;
 }
 
@@ -520,13 +526,13 @@ message set_avatar {
 
 // 查询玩家数据
 message query_data {
-    enum query_type{
-        rmb     = 1;
-        hero    = 2;
-        recharge  = 3;
-	monthcard = 4;
-    }
-    repeated query_type   _type           = 1;
+    //enum query_type{
+   //     rmb     = 1;
+    //    hero    = 2;
+    //    recharge  = 3;
+	//monthcard = 4;
+    //}
+    repeated uint32   _type           = 1;
     repeated uint32       _query_heroes   = 2;
     repeated uint32       _month_card_id  = 3;
 }
@@ -543,19 +549,19 @@ message open_shop {
 
 // 充值
 message charge {
-    required platform_type _platid      = 1[default = self];
+    required uint32 _platid      = 1;
     required uint32        _chargeid    = 2;
     optional string        _extradata     = 3;
 }
 
 //每日登陆
 message ask_daily_login {
-    enum status {
-      all     = 1;  // 正常领取+VIP领取
-      common  = 2;  // 正常领取
-      vip     = 3;  // VIP补领
-    }
-    required status _status   = 1;
+    //enum status {
+    //  all     = 1;  // 正常领取+VIP领取
+    //  common  = 2;  // 正常领取
+    //  vip     = 3;  // VIP补领
+    //}
+    required uint32 _status   = 1;
 }
 
 // 燃烧的远征
@@ -588,7 +594,7 @@ message tbc_hero {
 }
 
 message tbc_end_battle {
-    required battle_result _result  = 1[default = victory];
+    required uint32 _result  = 1;
     repeated tbc_hero _self_heroes  = 2;
     repeated tbc_hero _oppo_heroes  = 3;
     repeated uint32   _oprations    = 4;  // <<replacement:8, op:2, wave_idx:3, tick:10, hero_pos:3>>
@@ -632,7 +638,7 @@ message chat {
 }
 
 message chat_broad_say {
-    optional chat_channel _channel      = 1;
+    optional uint32 _channel      = 1;
     repeated uint32       _target_ids   = 2;
     optional uint32       _content_type = 3;
     optional string       _content      = 4;
@@ -645,7 +651,7 @@ message chat_fetch_bl {
 
 // 发聊天消息
 message chat_say {
-    required chat_channel _channel      = 1[default = world_channel];
+    required uint32 _channel      = 1;
     optional uint32       _target_id    = 2;        //消息对象ID，部分情况有效
     required uint32       _content_type = 3;
     required string       _content      = 4;
@@ -653,23 +659,23 @@ message chat_say {
 }
 
 message chat_acc {
-    enum chat_acc_t {
-        binary = 1;             // 客户端自定义数据
-        pvp_replay  = 2;        // pvp比赛录像
-    }
-    required chat_acc_t   _type         = 1[default = binary];
+    //enum chat_acc_t {
+    //    binary = 1;             // 客户端自定义数据
+    //    pvp_replay  = 2;        // pvp比赛录像
+    //}
+    required uint32   _type         = 1;
     optional string       _binary       = 2;
     optional uint32       _record_id    = 3;
 }
 
 // 服务器聊天消息拉取
 message chat_fresh {
-    required chat_channel _channel = 1[default = world_channel];
+    required uint32 _channel = 1;
 }
 
 // 聊天附件拉取
 message chat_fetch {
-    required chat_channel _channel = 1[default = world_channel];
+    required uint32 _channel = 1;
     required uint32       _chat_id = 2;
 }
 
@@ -689,7 +695,7 @@ message guild {
     optional guild_search           _search             = 4;        //按条件查询公会
     optional guild_join             _join               = 5;        //加入公会
     optional guild_join_confirm     _join_confirm       = 6;        //加入公会确认
-    optional guild_leave            _leave              = 7;        //离开公会
+    optional guild_leave            _guild_leave              = 7;        //离开公会
     optional guild_kick             _kick               = 8;        //踢出公会
     optional guild_set              _set                = 9;        //设置公会信息
     optional guild_query            _query              = 10;       //查询本公会信息
@@ -710,25 +716,30 @@ message guild {
     optional guild_instance_open    _instance_open      = 25;       //开去公会副本
     optional guild_instance_apply   _instance_apply     = 26;       //申请副本掉落
     optional guild_drop_info        _drop_info          = 27;       //请求分配物品信息  
-    optional guild_drop_give        _drop_give          = 28; //分物品
+    optional guild_drop_give        _drop_give          = 28;	    //分物品
     optional guild_instance_damage  _instance_damage    = 29; 
-    optional guild_items_history    _items_history     =  30; // 物品分配纪录
-    optional guild_jump             _guild_jump          = 31; //插队
-    optional guild_app_queue             _guild_app_queue          = 32; // up - 请求申请队列
-    optional guild_prepare_instance _instance_prepare    = 33; //
-    optional guild_query_member     _guild_query_member      = 34; // 公会成员列表
-    optional guild_stage_rank     _guild_stage_rank      = 35; // 公会副本排行榜
-    optional  guild_set_jump          _set_jump           = 36;
+    optional guild_items_history    _items_history	=  30;       // 物品分配纪录
+    optional guild_jump             _guild_jump         = 31;	     //插队
+    optional guild_app_queue        _guild_app_queue	= 32;	     // up - 请求申请队列
+    optional guild_prepare_instance _instance_prepare   = 33; //
+    optional guild_query_member     _guild_query_member = 34;	     // 公会成员列表
+    optional guild_stage_rank	    _guild_stage_rank   = 35;        // 公会副本排行榜
+    optional  guild_set_jump        _set_jump           = 36;
+    optional guild_send_mail        _guild_send_mail    = 37;       // 发送公会邮件
 }
 
 message guild_set_jump{
-    enum is_can_jump {
-        true     = 1;
-        false    = 2;
-    }
-    required is_can_jump _is_can_jump = 1;
+    //enum is_can_jump {
+    //    jump_true     = 1;
+    //    jump_false    = 2;
+    //}
+    required uint32 _is_can_jump = 1;
 }
 
+message guild_send_mail {
+    required string title   = 1;   // 公会邮件标题
+    required string content = 2;   // 公会邮件内容
+}
 message guild_stage_rank{
      required uint32 _stage_id = 1;
 }
@@ -777,7 +788,7 @@ message guild_instance_start {
 }
 
 message guild_instance_end {
-    required battle_result  _result  = 1;
+    required uint32  _result  = 1;
     repeated uint32         _hp_info = 2;
     required uint32         _wave = 3;
     required uint32         _damage = 4;
@@ -826,12 +837,12 @@ message guild_join {
 }
 
 message guild_join_confirm {
-    enum confirm_type {
-        accept = 1;
-        reject = 2;
-    }
+    //enum confirm_type {
+    //    accept = 1;
+    //    reject = 2;
+    //}
     required uint32         _uid    = 1;    //同意加入的玩家uid
-    required confirm_type   _type   = 2[default = accept];    
+    required uint32   _type   = 2;    
 }
 
 message guild_leave {
@@ -842,16 +853,17 @@ message guild_kick {
 }
 
 message guild_set {
-    enum guild_join_t {
-        no_verify   = 1;        //不需要验证
-        verify      = 2;        //需要验证才能加入
-        closed      = 3;        //不允许加入
-    }
+    //enum guild_join_t {
+    //    no_verify   = 1;        //不需要验证
+    //    verify      = 2;        //需要验证才能加入
+   //     closed      = 3;        //不允许加入
+   // }
     optional uint32         _avatar     = 1;
-    optional guild_join_t   _join_type  = 2;        //加入公会类型
+    optional uint32   _join_type  = 2;        //加入公会类型
     optional uint32         _join_limit = 3;        //最小战队等级
     optional string         _slogan     = 4;        //公告
     optional uint32         _can_jump   = 5;       // 1：允许插队
+    optional uint32         _avatar_frame = 6; 		//图标框
 }
 
 message guild_query {
@@ -862,7 +874,7 @@ message guild_open_pannel {
 
 message guild_set_job {
     required uint32         _uid    = 1;
-    required guild_job_t    _job    = 2;
+    required uint32    _job    = 2;
 }
 
 message guild_add_hire {
@@ -874,13 +886,13 @@ message guild_del_hire {
 }
 
 message guild_query_hires {
-    required hire_from      _from   = 1;
+    required uint32      _from   = 1;
 }
 
 message guild_hire_hero {
     required uint32         _uid    = 1;
     required uint32         _heroid = 2;
-    required hire_from      _from   = 3;
+    required uint32      _from   = 3;
     optional uint32         _stage_id = 4;
 }
 
@@ -902,25 +914,25 @@ message guild_qurey_hh_detail {
 message ask_activity_info {
 }
 
-enum guild_job_t {
-    chairman    = 1;
-    member      = 2;
-    elder       = 3;
-}
+//enum guild_job_t {
+//    chairman    = 1;
+//    member      = 2;
+//    elder       = 3;
+//}
 
-enum hire_from {
-    guild   = 0;
-    tbc     = 1;
-    stage   = 2;
-    excav   = 3;
-}
+//enum hire_from {
+//    hire_guild   = 0;
+//    hire_tbc     = 1;
+//    hire_stage   = 2;
+//    hire_excav   = 3;
+//}
 
 // 聊天频道
-enum chat_channel {
-    world_channel       = 1;            // 世界频道
-    guild_channel       = 2;            // 公会频道
-    personal_channel    = 3;            // 私聊频道
-}
+//enum chat_channel {
+//    world_channel       = 1;            // 世界频道
+//    guild_channel       = 2;            // 公会频道
+//    personal_channel    = 3;            // 私聊频道
+//}
 
 // 兑换码
 message cdkey_gift {
@@ -938,10 +950,15 @@ message excavate {
     optional excavate_end_battle    _excavate_end_battle    = 7;
     optional query_excavate_def     _query_excavate_def     = 8; // 查询协防数据
     optional clear_excavate_battle  _clear_excavate_battle  = 9; // 清除当前战斗
-    optional withdraw_excavate_hero _withdraw_excavate_hero = 10; // 撤回守矿英雄
-    optional draw_excavate_def_rwd  _draw_excavate_def_rwd  = 11; // 取防守成功奖励
-    optional drop_excavate          _drop_excavate          = 12; // 丢弃防守的矿
-    optional query_replay           _query_replay           = 13; // 查询防守记录战斗录像
+    optional draw_excavate_def_rwd  _draw_excavate_def_rwd  = 10; // 取防守成功奖励
+    optional query_replay           _query_replay           = 11; // 查询防守记录战斗录像
+    optional revenge_excavate       _revenge_excavate       = 12; // 复仇
+    optional draw_excav_res         _draw_excav_res         = 13; // 获取矿资源
+    optional withdraw_excavate_hero _withdraw_excavate_hero = 14; // 撤回守矿英雄
+}
+
+message draw_excav_res {
+    optional uint32 _mine_id = 1; // 矿ID
 }
 
 message search_excavate {
@@ -960,8 +977,9 @@ message query_excavate_battle {
 }
 
 message set_excavate_team {
-    required uint32 _excavate_id = 1; // 宝藏id
-    repeated uint32 _tid         = 2; // 英雄id
+    optional uint32 _excavate_id   = 1; // 宝藏id
+    repeated uint32 _tid           = 2; // 英雄id
+    optional uint32 _excavate_type = 3; // 宝藏类型,金币(gold):4,5,6; 经验(item):7,8,9; 木头(wood)：10,11,12; 铁(iron)：13,14,15; 水晶(crystal):16,17,18
 }
 
 message excavate_start_battle {
@@ -973,7 +991,7 @@ message excavate_start_battle {
 }
 
 message excavate_end_battle {
-    required battle_result _result  = 1[default = victory];
+    required uint32 _result  = 1;
     repeated excavate_hero _self_heroes  = 2;
     repeated excavate_hero _oppo_heroes  = 3;
     repeated uint32        _oprations    = 4;   // <<replacement:8, op:2, wave_idx:3, tick:10, hero_pos:3>>
@@ -996,11 +1014,16 @@ message withdraw_excavate_hero {
 }
 
 message draw_excavate_def_rwd {
-    required string _id             = 1; // 历史记录id
+    required string _id             = 1; // 历史记录id, 如果是"all"，那么就是得到所有的奖励
 }
 
 message drop_excavate {
     required uint32 _mine_id        = 1; // 要丢弃的矿ID
+}
+
+message revenge_excavate {
+    optional uint32 _enemy_svrid = 1; // 敌人服务器ID
+    optional uint32 _enemy_uid   = 2; // 敌人ID
 }
 
 message excavate_hero {
@@ -1044,20 +1067,20 @@ message report_battle {
 }
 
 message query_ranklist {
-    enum rank_type {
-        guildliveness = 1 ;     //公会活跃排行榜
-        excavate_rob  = 2;      //掠夺榜
-        excavate_gold = 3;      //金币开采榜
-        excavate_exp  = 4;      //经验药膏开采榜
-        top_gs        = 5;      //巅峰战力榜
-        full_hero_gs  = 6;      //全员战力榜
-        hero_team_gs  = 7;      //小队战力榜
-        hero_evo_star = 8;      //英雄进化榜
-        hero_arousal  = 9;      //专属装备洗练榜
-        top_arena     = 10;     //巅峰竞技场
-    }
+    //enum rank_type {
+    //    guildliveness = 1 ;     //公会活跃排行榜
+    //    excavate_rob  = 2;      //掠夺榜
+   //     excavate_gold = 3;      //金币开采榜
+   //     excavate_exp  = 4;      //经验药膏开采榜
+   //     top_gs        = 5;      //巅峰战力榜
+   //     full_hero_gs  = 6;      //全员战力榜
+   //     hero_team_gs  = 7;      //小队战力榜
+   //     hero_evo_star = 8;      //英雄进化榜
+   //     hero_arousal  = 9;      //专属装备洗练榜
+   //     top_arena     = 10;     //巅峰竞技场
+   // }
 
-    required rank_type _rank_type = 1;
+    required uint32 _rank_type = 1;
 }
 
 //打点数据
@@ -1065,27 +1088,28 @@ message dot_info{
 	required uint32 _dot_id = 1;
 }
 message require_arousal {
-    enum arousal_type{
-        require_arousal = 1;
-        apply_arousal   = 2;
-    }
+    //enum arousal_type{
+    //    require_arousal_t = 1;
+    //    apply_arousal_t   = 2;
+    //}
 
     required uint32       _hid          = 1; //英雄id
-    required arousal_type _arousal_type = 2; //请求类型
+    required uint32 _arousal_type = 2; //请求类型
     optional uint32       _aid          = 3; //当arousal_type为require_arousal填写觉醒等级，为apply_arousal填写1(应用):0(放弃)
 }
 
-enum server_opt_type {
-    get    = 0;    //get list
-    change = 1;    //change server
-}
+//enum server_opt_type {
+//    get    = 0;    //get list
+//   change = 1;    //change server
+//}
 
 message change_server {
-    required server_opt_type _op_type        = 1; //0:get list 1:change server
+    required uint32 _op_type        = 1; //0:get list 1:change server
     optional uint32          _server_id      = 2; //服务器ID
 }
 
 message request_guild_log{
+    required uint32       log_status          = 1; //请求日志
 }
 
 message query_act_stage{
@@ -1098,41 +1122,41 @@ message fb_attention{
 
 
 // 平台类型
-enum platform_type {
-    self    = 0;        //官方
-    s91     = 1;
-    tbt     = 2;
-    pp      = 3;
-    lemon   = 4;
-    itools  = 5;
-    kuaiyong = 6;
-    tuyoo    = 7;
-    lemonyueyu = 8;
+//enum platform_type {
+//    self    = 0;        //官方
+//    s91     = 1;
+//    tbt     = 2;
+//    pp      = 3;
+ //   lemon   = 4;
+ //   itools  = 5;
+ //   kuaiyong = 6;
+ //   tuyoo    = 7;
+ //   lemonyueyu = 8;
 
-    ky_android    = 101;
-    xm_android    = 102;
-    lemon_android = 103;
-    s360_android  = 104;
-    uc_android    = 105;
-    duoku_android = 106;
-    s91_android       = 107;
-    wandoujia_android = 108;
-    pps_android       = 109;
-    dangle_android    = 110;
-    oppo_android      = 111;
-    anzhi_android     = 112;
-    s37wan_android    = 113;
-    huawei_android    = 114;
-    lianxiang_android = 115;
-    pptv_android      = 116;
-    vivo_android      = 117;
-}
+  //  ky_android    = 101;
+ //   xm_android    = 102;
+  //  lemon_android = 103;
+  //  s360_android  = 104;
+ //   uc_android    = 105;
+  //  duoku_android = 106;
+ //   s91_android       = 107;
+  //  wandoujia_android = 108;
+ //   pps_android       = 109;
+ //   dangle_android    = 110;
+ //   oppo_android      = 111;
+  //  anzhi_android     = 112;
+  //  s37wan_android    = 113;
+  //  huawei_android    = 114;
+  //  lianxiang_android = 115;
+  //  pptv_android      = 116;
+  //  vivo_android      = 117;
+//}
 
-enum battle_result {
-    victory  = 0;
-    defeat   = 1;
-    canceled = 2;
-    timeout  = 3;
-}
+//enum battle_result {
+ //   victory  = 0;
+ //   defeat   = 1;
+ //   canceled = 2;
+//    timeout  = 3;
+//}
 
 
