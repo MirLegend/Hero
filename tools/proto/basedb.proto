@@ -46,3 +46,21 @@ message RemoveEntity {
 	optional int32 entityID = 2;
 	optional int64 entityDBID = 3;
 }
+
+//base -> dbmgr 6 - 6 //base向db 写实体
+message WriteEntity {
+	optional uint64 componentID = 1;
+	optional int32 entityID = 2;
+	optional int64 entityDBID = 3;
+	optional int32 callbackID = 4;
+	optional bytes datas = 5;
+}
+
+//dbmgr -> base 6 - 7 //dbmgr向所有base返回写实体回调
+message WriteToDBCallback {
+	optional uint32 success = 1;
+	optional int64 entityDBID = 2;
+	optional int32 entityID = 3;
+	optional int32 callbackID = 4;
+}
+

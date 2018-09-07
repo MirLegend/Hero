@@ -35,6 +35,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* RemoveEntity_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   RemoveEntity_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteEntity_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteEntity_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteToDBCallback_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteToDBCallback_reflection_ = NULL;
 
 }  // namespace
 
@@ -142,6 +148,43 @@ void protobuf_AssignDesc_basedb_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(RemoveEntity));
+  WriteEntity_descriptor_ = file->message_type(5);
+  static const int WriteEntity_offsets_[5] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, componentid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, entityid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, entitydbid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, callbackid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, datas_),
+  };
+  WriteEntity_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      WriteEntity_descriptor_,
+      WriteEntity::default_instance_,
+      WriteEntity_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteEntity, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(WriteEntity));
+  WriteToDBCallback_descriptor_ = file->message_type(6);
+  static const int WriteToDBCallback_offsets_[4] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, success_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, entitydbid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, entityid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, callbackid_),
+  };
+  WriteToDBCallback_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      WriteToDBCallback_descriptor_,
+      WriteToDBCallback::default_instance_,
+      WriteToDBCallback_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteToDBCallback, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(WriteToDBCallback));
 }
 
 namespace {
@@ -164,6 +207,10 @@ void protobuf_RegisterTypes(const ::std::string&) {
     QueryPlayerCBFromDbmgr_descriptor_, &QueryPlayerCBFromDbmgr::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     RemoveEntity_descriptor_, &RemoveEntity::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    WriteEntity_descriptor_, &WriteEntity::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    WriteToDBCallback_descriptor_, &WriteToDBCallback::default_instance());
 }
 
 }  // namespace
@@ -179,6 +226,10 @@ void protobuf_ShutdownFile_basedb_2eproto() {
   delete QueryPlayerCBFromDbmgr_reflection_;
   delete RemoveEntity::default_instance_;
   delete RemoveEntity_reflection_;
+  delete WriteEntity::default_instance_;
+  delete WriteEntity_reflection_;
+  delete WriteToDBCallback::default_instance_;
+  delete WriteToDBCallback_reflection_;
 }
 
 void protobuf_AddDesc_basedb_2eproto() {
@@ -203,7 +254,12 @@ void protobuf_AddDesc_basedb_2eproto() {
     "d\030\002 \001(\t\022\022\n\nentityDBID\030\003 \001(\003\022\017\n\007success\030\004"
     " \001(\r\022\020\n\010entityID\030\005 \001(\005\022\r\n\005datas\030\006 \001(\014\"I\n"
     "\014RemoveEntity\022\023\n\013componentID\030\001 \001(\004\022\020\n\010en"
-    "tityID\030\002 \001(\005\022\022\n\nentityDBID\030\003 \001(\003", 632);
+    "tityID\030\002 \001(\005\022\022\n\nentityDBID\030\003 \001(\003\"k\n\013Writ"
+    "eEntity\022\023\n\013componentID\030\001 \001(\004\022\020\n\010entityID"
+    "\030\002 \001(\005\022\022\n\nentityDBID\030\003 \001(\003\022\022\n\ncallbackID"
+    "\030\004 \001(\005\022\r\n\005datas\030\005 \001(\014\"^\n\021WriteToDBCallba"
+    "ck\022\017\n\007success\030\001 \001(\r\022\022\n\nentityDBID\030\002 \001(\003\022"
+    "\020\n\010entityID\030\003 \001(\005\022\022\n\ncallbackID\030\004 \001(\005", 837);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "basedb.proto", &protobuf_RegisterTypes);
   DbmgrInitCompleted::default_instance_ = new DbmgrInitCompleted();
@@ -211,11 +267,15 @@ void protobuf_AddDesc_basedb_2eproto() {
   QueryAccount::default_instance_ = new QueryAccount();
   QueryPlayerCBFromDbmgr::default_instance_ = new QueryPlayerCBFromDbmgr();
   RemoveEntity::default_instance_ = new RemoveEntity();
+  WriteEntity::default_instance_ = new WriteEntity();
+  WriteToDBCallback::default_instance_ = new WriteToDBCallback();
   DbmgrInitCompleted::default_instance_->InitAsDefaultInstance();
   GetEntityAppFromDbmgr::default_instance_->InitAsDefaultInstance();
   QueryAccount::default_instance_->InitAsDefaultInstance();
   QueryPlayerCBFromDbmgr::default_instance_->InitAsDefaultInstance();
   RemoveEntity::default_instance_->InitAsDefaultInstance();
+  WriteEntity::default_instance_->InitAsDefaultInstance();
+  WriteToDBCallback::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_basedb_2eproto);
 }
 
@@ -2362,6 +2422,756 @@ void RemoveEntity::Swap(RemoveEntity* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = RemoveEntity_descriptor_;
   metadata.reflection = RemoveEntity_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int WriteEntity::kComponentIDFieldNumber;
+const int WriteEntity::kEntityIDFieldNumber;
+const int WriteEntity::kEntityDBIDFieldNumber;
+const int WriteEntity::kCallbackIDFieldNumber;
+const int WriteEntity::kDatasFieldNumber;
+#endif  // !_MSC_VER
+
+WriteEntity::WriteEntity()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:base_dbmgr.WriteEntity)
+}
+
+void WriteEntity::InitAsDefaultInstance() {
+}
+
+WriteEntity::WriteEntity(const WriteEntity& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:base_dbmgr.WriteEntity)
+}
+
+void WriteEntity::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  componentid_ = GOOGLE_ULONGLONG(0);
+  entityid_ = 0;
+  entitydbid_ = GOOGLE_LONGLONG(0);
+  callbackid_ = 0;
+  datas_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+WriteEntity::~WriteEntity() {
+  // @@protoc_insertion_point(destructor:base_dbmgr.WriteEntity)
+  SharedDtor();
+}
+
+void WriteEntity::SharedDtor() {
+  if (datas_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete datas_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void WriteEntity::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* WriteEntity::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return WriteEntity_descriptor_;
+}
+
+const WriteEntity& WriteEntity::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_basedb_2eproto();
+  return *default_instance_;
+}
+
+WriteEntity* WriteEntity::default_instance_ = NULL;
+
+WriteEntity* WriteEntity::New() const {
+  return new WriteEntity;
+}
+
+void WriteEntity::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<WriteEntity*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  if (_has_bits_[0 / 32] & 31) {
+    ZR_(componentid_, callbackid_);
+    if (has_datas()) {
+      if (datas_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        datas_->clear();
+      }
+    }
+  }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool WriteEntity::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:base_dbmgr.WriteEntity)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint64 componentID = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &componentid_)));
+          set_has_componentid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_entityID;
+        break;
+      }
+
+      // optional int32 entityID = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_entityID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &entityid_)));
+          set_has_entityid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(24)) goto parse_entityDBID;
+        break;
+      }
+
+      // optional int64 entityDBID = 3;
+      case 3: {
+        if (tag == 24) {
+         parse_entityDBID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &entitydbid_)));
+          set_has_entitydbid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(32)) goto parse_callbackID;
+        break;
+      }
+
+      // optional int32 callbackID = 4;
+      case 4: {
+        if (tag == 32) {
+         parse_callbackID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &callbackid_)));
+          set_has_callbackid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(42)) goto parse_datas;
+        break;
+      }
+
+      // optional bytes datas = 5;
+      case 5: {
+        if (tag == 42) {
+         parse_datas:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_datas()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:base_dbmgr.WriteEntity)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:base_dbmgr.WriteEntity)
+  return false;
+#undef DO_
+}
+
+void WriteEntity::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:base_dbmgr.WriteEntity)
+  // optional uint64 componentID = 1;
+  if (has_componentid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->componentid(), output);
+  }
+
+  // optional int32 entityID = 2;
+  if (has_entityid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->entityid(), output);
+  }
+
+  // optional int64 entityDBID = 3;
+  if (has_entitydbid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->entitydbid(), output);
+  }
+
+  // optional int32 callbackID = 4;
+  if (has_callbackid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->callbackid(), output);
+  }
+
+  // optional bytes datas = 5;
+  if (has_datas()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      5, this->datas(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:base_dbmgr.WriteEntity)
+}
+
+::google::protobuf::uint8* WriteEntity::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:base_dbmgr.WriteEntity)
+  // optional uint64 componentID = 1;
+  if (has_componentid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->componentid(), target);
+  }
+
+  // optional int32 entityID = 2;
+  if (has_entityid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->entityid(), target);
+  }
+
+  // optional int64 entityDBID = 3;
+  if (has_entitydbid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->entitydbid(), target);
+  }
+
+  // optional int32 callbackID = 4;
+  if (has_callbackid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->callbackid(), target);
+  }
+
+  // optional bytes datas = 5;
+  if (has_datas()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->datas(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:base_dbmgr.WriteEntity)
+  return target;
+}
+
+int WriteEntity::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint64 componentID = 1;
+    if (has_componentid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt64Size(
+          this->componentid());
+    }
+
+    // optional int32 entityID = 2;
+    if (has_entityid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->entityid());
+    }
+
+    // optional int64 entityDBID = 3;
+    if (has_entitydbid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->entitydbid());
+    }
+
+    // optional int32 callbackID = 4;
+    if (has_callbackid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->callbackid());
+    }
+
+    // optional bytes datas = 5;
+    if (has_datas()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->datas());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void WriteEntity::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const WriteEntity* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const WriteEntity*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void WriteEntity::MergeFrom(const WriteEntity& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_componentid()) {
+      set_componentid(from.componentid());
+    }
+    if (from.has_entityid()) {
+      set_entityid(from.entityid());
+    }
+    if (from.has_entitydbid()) {
+      set_entitydbid(from.entitydbid());
+    }
+    if (from.has_callbackid()) {
+      set_callbackid(from.callbackid());
+    }
+    if (from.has_datas()) {
+      set_datas(from.datas());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void WriteEntity::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void WriteEntity::CopyFrom(const WriteEntity& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool WriteEntity::IsInitialized() const {
+
+  return true;
+}
+
+void WriteEntity::Swap(WriteEntity* other) {
+  if (other != this) {
+    std::swap(componentid_, other->componentid_);
+    std::swap(entityid_, other->entityid_);
+    std::swap(entitydbid_, other->entitydbid_);
+    std::swap(callbackid_, other->callbackid_);
+    std::swap(datas_, other->datas_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata WriteEntity::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteEntity_descriptor_;
+  metadata.reflection = WriteEntity_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int WriteToDBCallback::kSuccessFieldNumber;
+const int WriteToDBCallback::kEntityDBIDFieldNumber;
+const int WriteToDBCallback::kEntityIDFieldNumber;
+const int WriteToDBCallback::kCallbackIDFieldNumber;
+#endif  // !_MSC_VER
+
+WriteToDBCallback::WriteToDBCallback()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:base_dbmgr.WriteToDBCallback)
+}
+
+void WriteToDBCallback::InitAsDefaultInstance() {
+}
+
+WriteToDBCallback::WriteToDBCallback(const WriteToDBCallback& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:base_dbmgr.WriteToDBCallback)
+}
+
+void WriteToDBCallback::SharedCtor() {
+  _cached_size_ = 0;
+  success_ = 0u;
+  entitydbid_ = GOOGLE_LONGLONG(0);
+  entityid_ = 0;
+  callbackid_ = 0;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+WriteToDBCallback::~WriteToDBCallback() {
+  // @@protoc_insertion_point(destructor:base_dbmgr.WriteToDBCallback)
+  SharedDtor();
+}
+
+void WriteToDBCallback::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void WriteToDBCallback::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* WriteToDBCallback::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return WriteToDBCallback_descriptor_;
+}
+
+const WriteToDBCallback& WriteToDBCallback::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_basedb_2eproto();
+  return *default_instance_;
+}
+
+WriteToDBCallback* WriteToDBCallback::default_instance_ = NULL;
+
+WriteToDBCallback* WriteToDBCallback::New() const {
+  return new WriteToDBCallback;
+}
+
+void WriteToDBCallback::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<WriteToDBCallback*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  ZR_(entitydbid_, callbackid_);
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool WriteToDBCallback::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:base_dbmgr.WriteToDBCallback)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 success = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &success_)));
+          set_has_success();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_entityDBID;
+        break;
+      }
+
+      // optional int64 entityDBID = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_entityDBID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &entitydbid_)));
+          set_has_entitydbid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(24)) goto parse_entityID;
+        break;
+      }
+
+      // optional int32 entityID = 3;
+      case 3: {
+        if (tag == 24) {
+         parse_entityID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &entityid_)));
+          set_has_entityid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(32)) goto parse_callbackID;
+        break;
+      }
+
+      // optional int32 callbackID = 4;
+      case 4: {
+        if (tag == 32) {
+         parse_callbackID:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &callbackid_)));
+          set_has_callbackid();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:base_dbmgr.WriteToDBCallback)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:base_dbmgr.WriteToDBCallback)
+  return false;
+#undef DO_
+}
+
+void WriteToDBCallback::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:base_dbmgr.WriteToDBCallback)
+  // optional uint32 success = 1;
+  if (has_success()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->success(), output);
+  }
+
+  // optional int64 entityDBID = 2;
+  if (has_entitydbid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->entitydbid(), output);
+  }
+
+  // optional int32 entityID = 3;
+  if (has_entityid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->entityid(), output);
+  }
+
+  // optional int32 callbackID = 4;
+  if (has_callbackid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->callbackid(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:base_dbmgr.WriteToDBCallback)
+}
+
+::google::protobuf::uint8* WriteToDBCallback::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:base_dbmgr.WriteToDBCallback)
+  // optional uint32 success = 1;
+  if (has_success()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->success(), target);
+  }
+
+  // optional int64 entityDBID = 2;
+  if (has_entitydbid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->entitydbid(), target);
+  }
+
+  // optional int32 entityID = 3;
+  if (has_entityid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->entityid(), target);
+  }
+
+  // optional int32 callbackID = 4;
+  if (has_callbackid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->callbackid(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:base_dbmgr.WriteToDBCallback)
+  return target;
+}
+
+int WriteToDBCallback::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 success = 1;
+    if (has_success()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->success());
+    }
+
+    // optional int64 entityDBID = 2;
+    if (has_entitydbid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->entitydbid());
+    }
+
+    // optional int32 entityID = 3;
+    if (has_entityid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->entityid());
+    }
+
+    // optional int32 callbackID = 4;
+    if (has_callbackid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->callbackid());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void WriteToDBCallback::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const WriteToDBCallback* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const WriteToDBCallback*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void WriteToDBCallback::MergeFrom(const WriteToDBCallback& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_success()) {
+      set_success(from.success());
+    }
+    if (from.has_entitydbid()) {
+      set_entitydbid(from.entitydbid());
+    }
+    if (from.has_entityid()) {
+      set_entityid(from.entityid());
+    }
+    if (from.has_callbackid()) {
+      set_callbackid(from.callbackid());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void WriteToDBCallback::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void WriteToDBCallback::CopyFrom(const WriteToDBCallback& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool WriteToDBCallback::IsInitialized() const {
+
+  return true;
+}
+
+void WriteToDBCallback::Swap(WriteToDBCallback* other) {
+  if (other != this) {
+    std::swap(success_, other->success_);
+    std::swap(entitydbid_, other->entitydbid_);
+    std::swap(entityid_, other->entityid_);
+    std::swap(callbackid_, other->callbackid_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata WriteToDBCallback::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteToDBCallback_descriptor_;
+  metadata.reflection = WriteToDBCallback_reflection_;
   return metadata;
 }
 

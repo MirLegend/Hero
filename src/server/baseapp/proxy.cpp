@@ -23,6 +23,9 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "proxy_forwarder.h"
 //#include "data_download.h"
 #include "network/channel.h"
+#include "GameModule/HeroManager.h"
+#include "GameModule/GameModule.h"
+#include "GameModule/TavernManager.h"
 
 //#include "proto/cb.pb.h"
 #include "proto/bmb.pb.h"
@@ -101,7 +104,7 @@ void Proxy::onClientDeath(void)
 	addr(Network::Address::NONE);
 
 	entitiesEnabled_ = false;
-
+	this->setDirty(true);
 	this->onDestroyEntity(true, true);
 	this->destroyEntity();
 
@@ -128,7 +131,8 @@ void Proxy::InitDatas(const std::string datas)
 {
 	MemoryStream playerData;
 	playerData.append(datas);
-	
+	//gamedatas_.clear();
+	gameUserdata_.Clear();
 
 	playerData >> serverid_;
 	playerData.readBlob(nickName_);
@@ -149,8 +153,22 @@ void Proxy::InitDatas(const std::string datas)
 		>> rechargegem_
 		>> facebook_follow_;
 
-	INFO_MSG(fmt::format("Proxy::InitDatas: user={}, dbid={}, entityID={},serverid={}, nickName={}, level={}, exp={}, money={}, rechargegem={}\n",
-		accountName(), dbid(), id(), serverid_, nickName_, level_, exp_, money_, rechargegem_));
+	std::string protodata;
+	playerData.readBlob(protodata);
+	if (protodata.size()>0)
+	{
+		gameUserdata_.ParseFromString(protodata);
+	}
+	else
+	{
+		//初始化角色
+		onInitPlayerDatas();
+	}
+
+	INFO_MSG(fmt::format("Proxy::InitDatas: user={}, dbid={}, entityID={},serverid={}, nickName={}, level={}, exp={}, money={}, rechargegem={}, gamedatas_size={}\n",
+		accountName(), dbid(), id(), serverid_, nickName_, level_, exp_, money_, rechargegem_, gameUserdata_.ByteSize()));
+	
+	
 }
 
 //-------------------------------------------------------------------------------------
@@ -160,6 +178,34 @@ double Proxy::getTimeSinceHeardFromClient() const
 	return double(timestamp() - pChanel->lastReceivedTime()) / stampsPerSecondD();
 }
 
+//-------------------------------------------------------------------------------------
+void Proxy::addPersistentsDataToStream(uint32 flags, MemoryStream* s)
+{
+	MemoryStream& ss = *s;
+	ss << 3;
+	ss.appendBlob(nickName_);
+
+	ss << 6;
+	ss << level_;
+
+	ss << 7;
+	ss << exp_;
+
+	ss << 8;
+	ss << money_;
+
+	ss << 9;
+	ss << gem_;
+
+	ss << 10;
+	ss << arena_point_;
+
+	ss << 11;
+	ss << crusade_point_;
+
+	ss << 19;
+	ss.appendBlob(gameUserdata_.SerializeAsString());
+}
 
 //-------------------------------------------------------------------------------------
 bool Proxy::hasClient() const
@@ -242,101 +288,104 @@ void Proxy::sendUserDownInfo()
 	client_baseserver::login_reply& loginreply = *(downmsg.mutable__login_reply());
 	loginreply.set__result(0);
 	loginreply.set__time_zone("china");
-	//发送玩家数据
-	client_baseserver::user* pUserData = loginreply.mutable__user();
-	pUserData->set__userid(id());
 
 	downmsg.set__svr_time(timestap); //服务器当前时间戳
+	//发送玩家数据
+	client_baseserver::user* pUserData = loginreply.mutable__user();
+	*pUserData = gameUserdata_;
+	//pUserData->set__userid(id());
 
-	//nameCard
-	client_baseserver::name_card* pNameCard = pUserData->mutable__name_card();
-	pNameCard->set__name(nickName_);
-	pNameCard->set__last_set_name_time(timestap);
-	pNameCard->set__avatar(0);
+	//downmsg.set__svr_time(timestap); //服务器当前时间戳
 
-	pUserData->set__level(level_);
-	pUserData->set__exp(exp_);
-	pUserData->set__money(money_);
-	pUserData->set__rmb(gem_);
-	pUserData->set__recharge_sum(0);
+	////nameCard
+	//client_baseserver::name_card* pNameCard = pUserData->mutable__name_card();
+	//pNameCard->set__name(nickName_);
+	//pNameCard->set__last_set_name_time(timestap);
+	//pNameCard->set__avatar(0);
+
+	//pUserData->set__level(level_);
+	//pUserData->set__exp(exp_);
+	//pUserData->set__money(money_);
+	//pUserData->set__rmb(gem_);
+	//pUserData->set__recharge_sum(0);
 
 
-	//userpoint
-	client_baseserver::user_point* pUserPoint = pUserData->add__points();
-	pUserPoint->set__type(1);
-	pUserPoint->set__value(100);
+	////userpoint
+	//client_baseserver::user_point* pUserPoint = pUserData->add__points();
+	//pUserPoint->set__type(1);
+	//pUserPoint->set__value(100);
 
-	client_baseserver::user_point* pUserPoint1 = pUserData->add__points();
-	pUserPoint1->set__type(2);
-	pUserPoint1->set__value(100);
+	//client_baseserver::user_point* pUserPoint1 = pUserData->add__points();
+	//pUserPoint1->set__type(2);
+	//pUserPoint1->set__value(100);
 
-	client_baseserver::user_point* pUserPoint2 = pUserData->add__points();
-	pUserPoint2->set__type(3);
-	pUserPoint2->set__value(100);
+	//client_baseserver::user_point* pUserPoint2 = pUserData->add__points();
+	//pUserPoint2->set__type(3);
+	//pUserPoint2->set__value(100);
 
-	//Usermidas
-	client_baseserver::usermidas* pUserMidas = pUserData->mutable__usermidas();
-	pUserMidas->set__last_change(timestap);
-	pUserMidas->set__today_times(0);
+	////Usermidas
+	//client_baseserver::usermidas* pUserMidas = pUserData->mutable__usermidas();
+	//pUserMidas->set__last_change(timestap);
+	//pUserMidas->set__today_times(0);
 
-	//vitality
-	client_baseserver::vitality* pVitality = pUserData->mutable__vitality();
-	pVitality->set__current(100);
-	pVitality->set__lastbuy(0);
-	pVitality->set__lastchange(timestap);
-	pVitality->set__todaybuy(0);
+	////vitality
+	//client_baseserver::vitality* pVitality = pUserData->mutable__vitality();
+	//pVitality->set__current(100);
+	//pVitality->set__lastbuy(0);
+	//pVitality->set__lastchange(timestap);
+	//pVitality->set__todaybuy(0);
 
-	//heros info
-	//client_baseserver::hero* pHero = pUserData->add__heroes();
+	////heros info
+	////client_baseserver::hero* pHero = pUserData->add__heroes();
 
-	//items info
-	//pUserData->add__items(0);
+	////items info
+	////pUserData->add__items(0);
 
-	client_baseserver::skilllevelup* pSkillInfo = pUserData->mutable__skill_level_up();
-	pSkillInfo->set__skill_levelup_chance(5);
-	pSkillInfo->set__skill_levelup_cd(0);
-	pSkillInfo->set__reset_times(0);
-	pSkillInfo->set__last_reset_date(0);
+	//client_baseserver::skilllevelup* pSkillInfo = pUserData->mutable__skill_level_up();
+	//pSkillInfo->set__skill_levelup_chance(5);
+	//pSkillInfo->set__skill_levelup_cd(0);
+	//pSkillInfo->set__reset_times(0);
+	//pSkillInfo->set__last_reset_date(0);
 
-	//玩家关卡相关信息
-	client_baseserver::userstage* pUserStage = pUserData->mutable__userstage();
-	pUserStage->set__elite_reset_time(timestap);
-	pUserStage->set__act_reset_time(timestap);
-	client_baseserver::sweep* psweep = pUserStage->mutable__sweep();
-	psweep->set__last_reset_time(timestap);
-	psweep->set__today_free_sweep_times(0);
+	////玩家关卡相关信息
+	//client_baseserver::userstage* pUserStage = pUserData->mutable__userstage();
+	//pUserStage->set__elite_reset_time(timestap);
+	//pUserStage->set__act_reset_time(timestap);
+	//client_baseserver::sweep* psweep = pUserStage->mutable__sweep();
+	//psweep->set__last_reset_time(timestap);
+	//psweep->set__today_free_sweep_times(0);
 
-	//shop info
-	//client_baseserver::user_shop* pUserShop = pUserData->add__shop();
+	////shop info
+	////client_baseserver::user_shop* pUserShop = pUserData->add__shop();
 
-	//tutorial info  新手引导的内容
-	//pUserData->add__tutorial(0);
+	////tutorial info  新手引导的内容
+	////pUserData->add__tutorial(0);
 
-	//task info
-	//client_baseserver::usertask* pTask = pUserData->add__task();
+	////task info
+	////client_baseserver::usertask* pTask = pUserData->add__task();
 
-	//finish job  已经完成的任务链记录
-	//pUserData->add__task_finished(0);
+	////finish job  已经完成的任务链记录
+	////pUserData->add__task_finished(0);
 
-	//daily job info  每日任务
-	//client_baseserver::dailyjob* pJob = pUserData->add__dailyjob();
+	////daily job info  每日任务
+	////client_baseserver::dailyjob* pJob = pUserData->add__dailyjob();
 
-	//tavern info 酒馆记录
-	//client_baseserver::tavern_record* pTavernRecord = pUserData->add__tavern_record();
+	////tavern info 酒馆记录
+	////client_baseserver::tavern_record* pTavernRecord = pUserData->add__tavern_record();
 
-	//daily_login
-	client_baseserver::daily_login* pDailyLogin = pUserData->mutable__daily_login();
-	pDailyLogin->set__frequency(0);
-	pDailyLogin->set__last_login_date(0);
-	pDailyLogin->set__status(0);
+	////daily_login
+	//client_baseserver::daily_login* pDailyLogin = pUserData->mutable__daily_login();
+	//pDailyLogin->set__frequency(0);
+	//pDailyLogin->set__last_login_date(0);
+	//pDailyLogin->set__status(0);
 
-	client_baseserver::user_guild* pGuid = pUserData->mutable__user_guild();
-	pGuid->set__id(0);
-	pGuid->set__name("asdf");
+	//client_baseserver::user_guild* pGuid = pUserData->mutable__user_guild();
+	//pGuid->set__id(0);
+	//pGuid->set__name("asdf");
 
-	client_baseserver::chat* pChat = pUserData->mutable__chat();
-	pChat->set__world_chat_times(timestap);
-	pChat->set__last_reset_world_chat_time(timestap);
+	//client_baseserver::chat* pChat = pUserData->mutable__chat();
+	//pChat->set__world_chat_times(timestap);
+	//pChat->set__last_reset_world_chat_time(timestap);
 
 	printf("downmsg size:%d, %d \n", downmsg.ByteSize(), loginreply.ByteSize());
 	ADDTOBUNDLE((*pBundle), downmsg)
@@ -380,6 +429,7 @@ void Proxy::OnProcessClientUpMsg(MemoryStream& s)
 	}
 }
 
+//更新新手引导消息
 bool Proxy::OnTutorial(const client_baseup::tutorial& tutorialmsg, client_baseserver::down_msg& downmsg)
 {
 	DEBUG_MSG(fmt::format("OnTutorial id:{}", this->id()));
@@ -388,12 +438,13 @@ bool Proxy::OnTutorial(const client_baseup::tutorial& tutorialmsg, client_basese
 	{
 	printf("OnTutorial i:%d, v:%d  \n", i, tutorialmsg._record(i));
 	}*/
-
+	gameUserdata_._tutorial.CopyFrom(tutorialmsg);
 	client_baseserver::tutorial_reply* preply = downmsg.mutable__tutorial_reply();
 	preply->set__result(0);
 	return true;
 }
 
+//请求魔法召唤消息
 bool Proxy::OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg, client_baseserver::down_msg& downmsg)
 {
 	DEBUG_MSG(fmt::format("OnAskMagicsoul id:{}", this->id()));
@@ -408,18 +459,196 @@ bool Proxy::OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg,
 	return false;
 }
 
+//抽奖消息
 bool Proxy::OnTavernDraw(const client_baseup::tavern_draw& tavern_drawmsg, client_baseserver::down_msg& downmsg)
 {
 	DEBUG_MSG(fmt::format("OnTavernDraw id:{}", this->id()));
+	uint32 boxtype = tavern_drawmsg._box_type();
+	uint32 drawtype = tavern_drawmsg._draw_type();
+	const GlobalParam& globalparam = GameModule::getSingleton().getGlobalParam();
+	int cost = 0;
+	int costtype = coin;
+	int cdtime = 0;
+	std::string drawkey = "Bronze";
 
-	/*for (size_t i = 0; i < tutorialmsg._record_size(); i++)
+	if (green == boxtype)
 	{
-	printf("OnTutorial i:%d, v:%d  \n", i, tutorialmsg._record(i));
-	}*/
+		cdtime = globalparam.tavern_bronze_cd;
+		costtype = coin;
+		std::string drawkey = "Bronze";
+	}
+	else if (purple == boxtype)
+	{
+		cdtime = globalparam.tavern_magic_cd;
+		costtype = gems;
+		std::string drawkey = "Gold";
+	}
+	else
+	{
+		return false;
+	}
 
-	//client_baseserver::ask_magicsoul_reply* preply = downmsg.mutable__ask_magicsoul_reply();
-	//preply->set__result(0);
 	return false;
+}
+
+void Proxy::onInitPlayerDatas()
+{
+	time_t timestap = time(0);
+	client_baseserver::user* pUserData = &gameUserdata_;
+	gameUserdata_.set__userid(id());
+	//nameCard
+	client_baseserver::name_card* pNameCard = pUserData->mutable__name_card();
+	pNameCard->set__name(nickName_);
+	pNameCard->set__last_set_name_time(timestap);
+	pNameCard->set__avatar(1); //玩家头像
+
+	pUserData->set__level(level_);
+	pUserData->set__recharge_sum(0);
+	pUserData->set__exp(exp_);
+	pUserData->set__money(money_);
+	pUserData->set__rmb(gem_);
+	
+	//vitality 体力
+	client_baseserver::vitality* pVitality = pUserData->mutable__vitality();
+	pVitality->set__current(100);
+	pVitality->set__lastbuy(0);
+	pVitality->set__lastchange(timestap);
+	pVitality->set__todaybuy(0);
+
+	//heros info  送个船长
+	//client_baseserver::hero* pHero = pUserData->add__heroes();
+	this->addPlayerHero(1, 1);
+
+	//物品背包
+	//pUserData->add__items(0);
+
+	//技能升级信息
+	client_baseserver::skilllevelup* pSkillInfo = pUserData->mutable__skill_level_up();
+	pSkillInfo->set__skill_levelup_chance(5);
+	pSkillInfo->set__skill_levelup_cd(timestap);
+	pSkillInfo->set__reset_times(0);
+	pSkillInfo->set__last_reset_date(timestap);
+
+	//玩家关卡相关信息
+	client_baseserver::userstage* pUserStage = pUserData->mutable__userstage();
+	pUserStage->set__elite_reset_time(0);
+	pUserStage->set__act_reset_time(timestap);
+	client_baseserver::sweep* psweep = pUserStage->mutable__sweep();
+	psweep->set__last_reset_time(timestap);
+	psweep->set__today_free_sweep_times(0);
+
+	//商店信息
+	//client_baseserver::user_shop* pUserShop = pUserData->add__shop();
+
+	//新手引导的内容
+	for (int i = 0; i < 95; i++)
+	{
+		pUserData->add__tutorial(0);
+	}
+
+	//任务记录
+	//client_baseserver::usertask* pTask = pUserData->add__task();
+
+	//已经完成的任务链记录
+	//pUserData->add__task_finished(0);
+
+	//每日任务
+	//client_baseserver::dailyjob* pJob = pUserData->add__dailyjob();
+
+	//酒馆记录
+	//client_baseserver::tavern_record* pTavernRecord = pUserData->add__tavern_record();
+
+	//点金手
+	client_baseserver::usermidas* pUserMidas = pUserData->mutable__usermidas();
+	pUserMidas->set__last_change(timestap);
+	pUserMidas->set__today_times(0);
+
+	//每日登陆
+	client_baseserver::daily_login* pDailyLogin = pUserData->mutable__daily_login();
+	pDailyLogin->set__frequency(1);
+	pDailyLogin->set__last_login_date(timestap);
+	pDailyLogin->set__status(3);
+
+	//玩家消耗点数
+	//enum user_point_type {
+	//    arenapoint      = 1;        // pvp点数
+	//    crusadepoint    = 2;        // 远征点数
+	//    guildpoint      = 3;        // 公会币
+	//}
+	client_baseserver::user_point* pUserPoint = pUserData->add__points();
+	pUserPoint->set__type(1);
+	pUserPoint->set__value(100);
+
+	client_baseserver::user_point* pUserPoint1 = pUserData->add__points();
+	pUserPoint1->set__type(2);
+	pUserPoint1->set__value(100);
+
+	client_baseserver::user_point* pUserPoint2 = pUserData->add__points();
+	pUserPoint2->set__type(3);
+	pUserPoint2->set__value(100);
+
+	//用户公会数据
+	client_baseserver::user_guild* pGuid = pUserData->mutable__user_guild();
+	pGuid->set__id(0);
+	pGuid->set__name("asdf");
+
+	client_baseserver::chat* pChat = pUserData->mutable__chat();
+	pChat->set__world_chat_times(0);
+	pChat->set__last_reset_world_chat_time(timestap);
+
+	//体力值相关数据
+	client_baseserver::vitality* pvitality = pUserData->mutable__shadow_runes();
+	pvitality->set__current(200);
+	pvitality->set__lastchange(timestap);
+	pvitality->set__todaybuy(0);
+	pvitality->set__lastbuy(0);
+}
+
+bool Proxy::addPlayerHero(uint32 heroId, uint32 reason)
+{
+	HeroConfig* pHeroConfig = HeroManager::getSingleton().getHeroConfig(heroId);
+	if (!pHeroConfig)
+	{
+		return false;
+	}
+	for (int i = 0; i < gameUserdata_._heroes_size();i++)
+	{
+		const client_baseserver::hero& heroData = gameUserdata_._heroes(i);
+		if (heroData._tid() == heroId) //已经有相同的英雄了
+		{
+			return false;
+		}
+	}
+	client_baseserver::hero* heroData = gameUserdata_.add__heroes();
+	if (!heroData)
+	{
+		return false;
+	}
+	heroData->set__tid(heroId);
+	heroData->set__level(1);
+	heroData->set__exp(0);
+	heroData->set__rank(pHeroConfig->InitialRank);
+	heroData->set__stars(pHeroConfig->InitialStars);
+	heroData->set__state(hero_status_idle);
+
+	for (int i = 0; i < 4; i++)
+	{
+		const HeroSkillConfig& skillcfg = pHeroConfig->skillConfig[i];
+		heroData->add__skill_levels(skillcfg.InitLevel);
+	}
+
+	//装备曹初始化
+	for (int i = 0; i < 6; i++)
+	{
+		client_baseserver::hero_equip* pheroEquip = heroData->add__items();
+		pheroEquip->set__index(i);
+		pheroEquip->set__item_id(0);
+		pheroEquip->set__exp(0);
+	}
+
+	heroData->set__gs(100); //英雄战力
+
+	return true;
 }
 
 //-------------------------------------------------------------------------------------

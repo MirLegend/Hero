@@ -78,6 +78,7 @@ public:
 	*/
 	void removeEntity(Network::Channel* pChannel, KBEngine::MemoryStream& s);
 	
+	void writeEntity(Network::Channel* pChannel, KBEngine::MemoryStream& s);
 protected:
 	TimerHandle											loopCheckTimerHandle_;
 	TimerHandle											mainProcessTimer_;

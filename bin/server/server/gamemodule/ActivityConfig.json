@@ -1,0 +1,75 @@
+{
+    "NearActivity" :
+    {
+        "1" :
+        {
+            "id" : 1,
+            "name" : "Lotto",
+            "page" : LottoPage,
+            "need_vip" : false,
+            "limit_vip_level" : 1,
+            "start_time" : "20141201",
+            "during_time" : "7",
+            "need_level" : true,
+            "limit_level" : 1,
+            "icon" : "UI/NB.jpg",
+            "sound" : "sound/adventure.mp3",
+            "show_name" :  "ACTIVITY.BIGLOTTO" 
+        }
+    },
+    "OpenServerActivity" :
+    {
+        "2" :
+        {
+            "id" : 2,
+            "name" : "ContinueRecharge",
+            "page" : ContinueCharge,
+            "need_vip" : false,
+            "limit_vip_level" : 0,
+            "start_time" : "20141222",
+            "during_time" : "7",
+            "need_level" : true,
+            "limit_level" : 1,
+            "icon" : "UI/NB.jpg",
+            "sound" : "sound/adventure.mp3",
+            "show_name" :  "CONTINUECHARGE_BUTTONNAME" 
+        }
+    },
+    "ChristmasActivity" :
+    {
+        "1" :
+        {
+            "id" : 1,
+            "name" : "BigPackage",
+            "page" : BigPackagePage,
+            "need_vip" : false,
+            "limit_vip_level" : 0,
+            "start_time" : "20141222",
+            "during_time" : "7",
+            "need_level" : true,
+            "limit_level" : 1,
+            "icon" : "UI/NB.jpg",
+            "sound" : "sound/adventure.mp3",
+            "show_name" :  "Big Package" ,
+            "boss_appear_count" : 1,
+            "boss_appear_probability" : 0.5,
+            "limit_times" : 3,
+            "big_reward_rank" : 20
+        },
+        "2" :
+        {
+            "id" : 2,
+            "name" : "EveryDayHappy",
+            "page" : EveryDayHappyPage,
+            "need_vip" : false,
+            "limit_vip_level" : 1,
+            "start_time" : "20141222",
+            "during_time" : "7",
+            "need_level" : true,
+            "limit_level" : 1,
+            "icon" : "UI/NB.jpg",
+            "sound" : "sound/adventure.mp3",
+            "show_name" :  "ACTIVITY.EVERYDAYHAPPY" 
+        }
+    }
+}

@@ -38,6 +38,8 @@ class GetEntityAppFromDbmgr;
 class QueryAccount;
 class QueryPlayerCBFromDbmgr;
 class RemoveEntity;
+class WriteEntity;
+class WriteToDBCallback;
 
 // ===================================================================
 
@@ -683,6 +685,239 @@ class RemoveEntity : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static RemoveEntity* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class WriteEntity : public ::google::protobuf::Message {
+ public:
+  WriteEntity();
+  virtual ~WriteEntity();
+
+  WriteEntity(const WriteEntity& from);
+
+  inline WriteEntity& operator=(const WriteEntity& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const WriteEntity& default_instance();
+
+  void Swap(WriteEntity* other);
+
+  // implements Message ----------------------------------------------
+
+  WriteEntity* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const WriteEntity& from);
+  void MergeFrom(const WriteEntity& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint64 componentID = 1;
+  inline bool has_componentid() const;
+  inline void clear_componentid();
+  static const int kComponentIDFieldNumber = 1;
+  inline ::google::protobuf::uint64 componentid() const;
+  inline void set_componentid(::google::protobuf::uint64 value);
+
+  // optional int32 entityID = 2;
+  inline bool has_entityid() const;
+  inline void clear_entityid();
+  static const int kEntityIDFieldNumber = 2;
+  inline ::google::protobuf::int32 entityid() const;
+  inline void set_entityid(::google::protobuf::int32 value);
+
+  // optional int64 entityDBID = 3;
+  inline bool has_entitydbid() const;
+  inline void clear_entitydbid();
+  static const int kEntityDBIDFieldNumber = 3;
+  inline ::google::protobuf::int64 entitydbid() const;
+  inline void set_entitydbid(::google::protobuf::int64 value);
+
+  // optional int32 callbackID = 4;
+  inline bool has_callbackid() const;
+  inline void clear_callbackid();
+  static const int kCallbackIDFieldNumber = 4;
+  inline ::google::protobuf::int32 callbackid() const;
+  inline void set_callbackid(::google::protobuf::int32 value);
+
+  // optional bytes datas = 5;
+  inline bool has_datas() const;
+  inline void clear_datas();
+  static const int kDatasFieldNumber = 5;
+  inline const ::std::string& datas() const;
+  inline void set_datas(const ::std::string& value);
+  inline void set_datas(const char* value);
+  inline void set_datas(const void* value, size_t size);
+  inline ::std::string* mutable_datas();
+  inline ::std::string* release_datas();
+  inline void set_allocated_datas(::std::string* datas);
+
+  // @@protoc_insertion_point(class_scope:base_dbmgr.WriteEntity)
+ private:
+  inline void set_has_componentid();
+  inline void clear_has_componentid();
+  inline void set_has_entityid();
+  inline void clear_has_entityid();
+  inline void set_has_entitydbid();
+  inline void clear_has_entitydbid();
+  inline void set_has_callbackid();
+  inline void clear_has_callbackid();
+  inline void set_has_datas();
+  inline void clear_has_datas();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 _has_bits_[1];
+  mutable int _cached_size_;
+  ::google::protobuf::uint64 componentid_;
+  ::google::protobuf::int64 entitydbid_;
+  ::google::protobuf::int32 entityid_;
+  ::google::protobuf::int32 callbackid_;
+  ::std::string* datas_;
+  friend void  protobuf_AddDesc_basedb_2eproto();
+  friend void protobuf_AssignDesc_basedb_2eproto();
+  friend void protobuf_ShutdownFile_basedb_2eproto();
+
+  void InitAsDefaultInstance();
+  static WriteEntity* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class WriteToDBCallback : public ::google::protobuf::Message {
+ public:
+  WriteToDBCallback();
+  virtual ~WriteToDBCallback();
+
+  WriteToDBCallback(const WriteToDBCallback& from);
+
+  inline WriteToDBCallback& operator=(const WriteToDBCallback& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const WriteToDBCallback& default_instance();
+
+  void Swap(WriteToDBCallback* other);
+
+  // implements Message ----------------------------------------------
+
+  WriteToDBCallback* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const WriteToDBCallback& from);
+  void MergeFrom(const WriteToDBCallback& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 success = 1;
+  inline bool has_success() const;
+  inline void clear_success();
+  static const int kSuccessFieldNumber = 1;
+  inline ::google::protobuf::uint32 success() const;
+  inline void set_success(::google::protobuf::uint32 value);
+
+  // optional int64 entityDBID = 2;
+  inline bool has_entitydbid() const;
+  inline void clear_entitydbid();
+  static const int kEntityDBIDFieldNumber = 2;
+  inline ::google::protobuf::int64 entitydbid() const;
+  inline void set_entitydbid(::google::protobuf::int64 value);
+
+  // optional int32 entityID = 3;
+  inline bool has_entityid() const;
+  inline void clear_entityid();
+  static const int kEntityIDFieldNumber = 3;
+  inline ::google::protobuf::int32 entityid() const;
+  inline void set_entityid(::google::protobuf::int32 value);
+
+  // optional int32 callbackID = 4;
+  inline bool has_callbackid() const;
+  inline void clear_callbackid();
+  static const int kCallbackIDFieldNumber = 4;
+  inline ::google::protobuf::int32 callbackid() const;
+  inline void set_callbackid(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:base_dbmgr.WriteToDBCallback)
+ private:
+  inline void set_has_success();
+  inline void clear_has_success();
+  inline void set_has_entitydbid();
+  inline void clear_has_entitydbid();
+  inline void set_has_entityid();
+  inline void clear_has_entityid();
+  inline void set_has_callbackid();
+  inline void clear_has_callbackid();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 _has_bits_[1];
+  mutable int _cached_size_;
+  ::google::protobuf::int64 entitydbid_;
+  ::google::protobuf::uint32 success_;
+  ::google::protobuf::int32 entityid_;
+  ::google::protobuf::int32 callbackid_;
+  friend void  protobuf_AddDesc_basedb_2eproto();
+  friend void protobuf_AssignDesc_basedb_2eproto();
+  friend void protobuf_ShutdownFile_basedb_2eproto();
+
+  void InitAsDefaultInstance();
+  static WriteToDBCallback* default_instance_;
 };
 // ===================================================================
 
@@ -1665,6 +1900,282 @@ inline void RemoveEntity::set_entitydbid(::google::protobuf::int64 value) {
   set_has_entitydbid();
   entitydbid_ = value;
   // @@protoc_insertion_point(field_set:base_dbmgr.RemoveEntity.entityDBID)
+}
+
+// -------------------------------------------------------------------
+
+// WriteEntity
+
+// optional uint64 componentID = 1;
+inline bool WriteEntity::has_componentid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void WriteEntity::set_has_componentid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void WriteEntity::clear_has_componentid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void WriteEntity::clear_componentid() {
+  componentid_ = GOOGLE_ULONGLONG(0);
+  clear_has_componentid();
+}
+inline ::google::protobuf::uint64 WriteEntity::componentid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteEntity.componentID)
+  return componentid_;
+}
+inline void WriteEntity::set_componentid(::google::protobuf::uint64 value) {
+  set_has_componentid();
+  componentid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteEntity.componentID)
+}
+
+// optional int32 entityID = 2;
+inline bool WriteEntity::has_entityid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void WriteEntity::set_has_entityid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void WriteEntity::clear_has_entityid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void WriteEntity::clear_entityid() {
+  entityid_ = 0;
+  clear_has_entityid();
+}
+inline ::google::protobuf::int32 WriteEntity::entityid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteEntity.entityID)
+  return entityid_;
+}
+inline void WriteEntity::set_entityid(::google::protobuf::int32 value) {
+  set_has_entityid();
+  entityid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteEntity.entityID)
+}
+
+// optional int64 entityDBID = 3;
+inline bool WriteEntity::has_entitydbid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void WriteEntity::set_has_entitydbid() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void WriteEntity::clear_has_entitydbid() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void WriteEntity::clear_entitydbid() {
+  entitydbid_ = GOOGLE_LONGLONG(0);
+  clear_has_entitydbid();
+}
+inline ::google::protobuf::int64 WriteEntity::entitydbid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteEntity.entityDBID)
+  return entitydbid_;
+}
+inline void WriteEntity::set_entitydbid(::google::protobuf::int64 value) {
+  set_has_entitydbid();
+  entitydbid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteEntity.entityDBID)
+}
+
+// optional int32 callbackID = 4;
+inline bool WriteEntity::has_callbackid() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void WriteEntity::set_has_callbackid() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void WriteEntity::clear_has_callbackid() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void WriteEntity::clear_callbackid() {
+  callbackid_ = 0;
+  clear_has_callbackid();
+}
+inline ::google::protobuf::int32 WriteEntity::callbackid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteEntity.callbackID)
+  return callbackid_;
+}
+inline void WriteEntity::set_callbackid(::google::protobuf::int32 value) {
+  set_has_callbackid();
+  callbackid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteEntity.callbackID)
+}
+
+// optional bytes datas = 5;
+inline bool WriteEntity::has_datas() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void WriteEntity::set_has_datas() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void WriteEntity::clear_has_datas() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void WriteEntity::clear_datas() {
+  if (datas_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    datas_->clear();
+  }
+  clear_has_datas();
+}
+inline const ::std::string& WriteEntity::datas() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteEntity.datas)
+  return *datas_;
+}
+inline void WriteEntity::set_datas(const ::std::string& value) {
+  set_has_datas();
+  if (datas_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    datas_ = new ::std::string;
+  }
+  datas_->assign(value);
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteEntity.datas)
+}
+inline void WriteEntity::set_datas(const char* value) {
+  set_has_datas();
+  if (datas_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    datas_ = new ::std::string;
+  }
+  datas_->assign(value);
+  // @@protoc_insertion_point(field_set_char:base_dbmgr.WriteEntity.datas)
+}
+inline void WriteEntity::set_datas(const void* value, size_t size) {
+  set_has_datas();
+  if (datas_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    datas_ = new ::std::string;
+  }
+  datas_->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:base_dbmgr.WriteEntity.datas)
+}
+inline ::std::string* WriteEntity::mutable_datas() {
+  set_has_datas();
+  if (datas_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    datas_ = new ::std::string;
+  }
+  // @@protoc_insertion_point(field_mutable:base_dbmgr.WriteEntity.datas)
+  return datas_;
+}
+inline ::std::string* WriteEntity::release_datas() {
+  clear_has_datas();
+  if (datas_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    return NULL;
+  } else {
+    ::std::string* temp = datas_;
+    datas_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    return temp;
+  }
+}
+inline void WriteEntity::set_allocated_datas(::std::string* datas) {
+  if (datas_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete datas_;
+  }
+  if (datas) {
+    set_has_datas();
+    datas_ = datas;
+  } else {
+    clear_has_datas();
+    datas_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_set_allocated:base_dbmgr.WriteEntity.datas)
+}
+
+// -------------------------------------------------------------------
+
+// WriteToDBCallback
+
+// optional uint32 success = 1;
+inline bool WriteToDBCallback::has_success() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void WriteToDBCallback::set_has_success() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void WriteToDBCallback::clear_has_success() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void WriteToDBCallback::clear_success() {
+  success_ = 0u;
+  clear_has_success();
+}
+inline ::google::protobuf::uint32 WriteToDBCallback::success() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteToDBCallback.success)
+  return success_;
+}
+inline void WriteToDBCallback::set_success(::google::protobuf::uint32 value) {
+  set_has_success();
+  success_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteToDBCallback.success)
+}
+
+// optional int64 entityDBID = 2;
+inline bool WriteToDBCallback::has_entitydbid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void WriteToDBCallback::set_has_entitydbid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void WriteToDBCallback::clear_has_entitydbid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void WriteToDBCallback::clear_entitydbid() {
+  entitydbid_ = GOOGLE_LONGLONG(0);
+  clear_has_entitydbid();
+}
+inline ::google::protobuf::int64 WriteToDBCallback::entitydbid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteToDBCallback.entityDBID)
+  return entitydbid_;
+}
+inline void WriteToDBCallback::set_entitydbid(::google::protobuf::int64 value) {
+  set_has_entitydbid();
+  entitydbid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteToDBCallback.entityDBID)
+}
+
+// optional int32 entityID = 3;
+inline bool WriteToDBCallback::has_entityid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void WriteToDBCallback::set_has_entityid() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void WriteToDBCallback::clear_has_entityid() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void WriteToDBCallback::clear_entityid() {
+  entityid_ = 0;
+  clear_has_entityid();
+}
+inline ::google::protobuf::int32 WriteToDBCallback::entityid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteToDBCallback.entityID)
+  return entityid_;
+}
+inline void WriteToDBCallback::set_entityid(::google::protobuf::int32 value) {
+  set_has_entityid();
+  entityid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteToDBCallback.entityID)
+}
+
+// optional int32 callbackID = 4;
+inline bool WriteToDBCallback::has_callbackid() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void WriteToDBCallback::set_has_callbackid() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void WriteToDBCallback::clear_has_callbackid() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void WriteToDBCallback::clear_callbackid() {
+  callbackid_ = 0;
+  clear_has_callbackid();
+}
+inline ::google::protobuf::int32 WriteToDBCallback::callbackid() const {
+  // @@protoc_insertion_point(field_get:base_dbmgr.WriteToDBCallback.callbackID)
+  return callbackid_;
+}
+inline void WriteToDBCallback::set_callbackid(::google::protobuf::int32 value) {
+  set_has_callbackid();
+  callbackid_ = value;
+  // @@protoc_insertion_point(field_set:base_dbmgr.WriteToDBCallback.callbackID)
 }
 
 

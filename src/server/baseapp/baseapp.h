@@ -83,6 +83,7 @@ public:
 		/*GAME_TIME gametime, ENTITY_ID startID, ENTITY_ID endID*/);
 	void onGetEntityAppFromDbmgr(Network::Channel* pChannel, MemoryStream& s);
 	void onQueryPlayerCBFromDbmgr(Network::Channel* pChannel, MemoryStream& s);
+	void onWriteToDBCallback(Network::Channel* pChannel, MemoryStream& s);
 
 	void onClientHello(Network::Channel* pChannel, MemoryStream& s); //øÕªß∂ÀŒ’ ÷
 	void loginBaseapp(Network::Channel* pChannel, MemoryStream& s);

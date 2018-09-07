@@ -152,6 +152,10 @@ void Base::onDestroyEntity(bool deleteFromDB, bool writeToDB)
 		ADDTOBUNDLE((*pBundle), removeCmd)
 			dbmgrinfos->pChannel->send(pBundle);
 
+		if (writeToDB)
+		{
+			this->writeToDB(NULL);
+		}
 		this->hasDB(false);
 		return;
 	}
@@ -159,7 +163,7 @@ void Base::onDestroyEntity(bool deleteFromDB, bool writeToDB)
 	if(writeToDB)
 	{
 		// 这个行为默认会处理
-		// this->writeToDB(NULL);
+		 this->writeToDB(NULL);
 	}
 	else
 	{
@@ -241,33 +245,24 @@ void Base::writeToDB(void* data, void* extra1, void* extra2)
 	//	}
 	//}
 
-	//if(isArchiveing_)
-	//{
-	//	// __py_pyWriteToDB没有增加引用
-	//	//if(pyCallback != NULL)
-	//	//	Py_DECREF(pyCallback);
+	if(isArchiveing_)
+	{
+		WARNING_MSG(fmt::format("::writeToDB(): is archiveing! entityid={}, dbid={}.\n", 
+			this->id(), this->dbid()));
+		return;
+	}
 
-	//	WARNING_MSG(fmt::format("{}::writeToDB(): is archiveing! entityid={}, dbid={}.\n", 
-	//		this->scriptName(), this->id(), this->dbid()));
+	isArchiveing_ = true;
 
-	//	return;
-	//}
+	if(isDestroyed())
+	{	
 
-	//isArchiveing_ = true;
+		ERROR_MSG(fmt::format("::writeToDB(): is destroyed! entityid={}, dbid={}.\n", 
+			 this->id(), this->dbid()));
+		return;
+	}
 
-	//if(isDestroyed())
-	//{	
-	//	// __py_pyWriteToDB没有增加引用
-	//	//if(pyCallback != NULL)
-	//	//	Py_DECREF(pyCallback);
-
-	//	ERROR_MSG(fmt::format("{}::writeToDB(): is destroyed! entityid={}, dbid={}.\n", 
-	//		this->scriptName(), this->id(), this->dbid()));
-
-	//	return;
-	//}
-
-	//CALLBACK_ID callbackID = 0;
+	CALLBACK_ID callbackID = 0;
 	//if(pyCallback != NULL)
 	//{
 	//	callbackID = callbackMgr().save(pyCallback);
@@ -278,7 +273,7 @@ void Base::writeToDB(void* data, void* extra1, void* extra2)
 	//// 写入数据库的是该entity的初始值， 并不影响
 	//if(this->cellMailbox() == NULL) 
 	//{
-	//	onCellWriteToDBCompleted(callbackID, shouldAutoLoad, -1);
+	onCellWriteToDBCompleted(callbackID, 0/*, -1*/);
 	//}
 	//else
 	//{
@@ -290,6 +285,59 @@ void Base::writeToDB(void* data, void* extra1, void* extra2)
 	//	sendToCellapp(pBundle);
 	//}
 }
+
+//-------------------------------------------------------------------------------------
+void Base::onCellWriteToDBCompleted(CALLBACK_ID callbackID, int8 shouldAutoLoad)
+{
+	hasDB(true);
+
+	onWriteToDB();
+
+	// 如果在数据库中已经存在该entity则允许应用层多次调用写库进行数据及时覆盖需求
+	if (this->DBID_ > 0)
+		isArchiveing_ = false;
+	else
+		setDirty();
+
+	// 如果数据没有改变那么不需要持久化
+	if (!isDirty())
+		return;
+
+	setDirty(false);
+
+	Components::COMPONENTS& cts = Components::getSingleton().getComponents(DBMGR_TYPE);
+	Components::ComponentInfos* dbmgrinfos = NULL;
+
+	if (cts.size() > 0)
+		dbmgrinfos = &(*cts.begin());
+
+	if (dbmgrinfos == NULL || dbmgrinfos->pChannel == NULL || dbmgrinfos->cid == 0)
+	{
+		ERROR_MSG(fmt::format("::onCellWriteToDBCompleted({}): not found dbmgr!\n",
+			this->id()));
+		return;
+	}
+	
+	MemoryStream* s = MemoryStream::ObjPool().createObject();
+	this->addPersistentsDataToStream(0, s);
+	printf("writeEntity id:%d, data.size:%d  \n", id(), s->size());
+
+	Network::Bundle* pBundle = Network::Bundle::ObjPool().createObject();
+	(*pBundle).newMessage(DbmgrInterface::writeEntity);
+
+	base_dbmgr::WriteEntity writeCmd;
+	writeCmd.set_componentid(g_componentID);
+	writeCmd.set_entityid(id());
+	writeCmd.set_entitydbid(dbid());
+	writeCmd.set_callbackid(callbackID);
+	writeCmd.set_datas(s->data(), s->size());
+
+	ADDTOBUNDLE((*pBundle), writeCmd)
+		dbmgrinfos->pChannel->send(pBundle);
+
+	MemoryStream::ObjPool().reclaimObject(s);
+}
+
 
 //-------------------------------------------------------------------------------------
 void Base::onWriteToDBCallback(ENTITY_ID eid, 

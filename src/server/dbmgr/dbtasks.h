@@ -219,6 +219,28 @@ protected:
 	DBID entityDBID_;
 };
 
+/**
+向数据库写entity， 备份entity时也是这个机制
+*/
+class DBTaskWriteEntity : public EntityDBTask
+{
+public:
+	DBTaskWriteEntity(const Network::Address& addr, COMPONENT_ID componentID,
+		ENTITY_ID eid, DBID entityDBID, CALLBACK_ID callid, MemoryStream& datas);
+
+	virtual ~DBTaskWriteEntity();
+	virtual bool db_thread_process();
+	virtual thread::TPTask::TPTaskState presentMainThread();
+
+protected:
+	COMPONENT_ID componentID_;
+	ENTITY_ID eid_;
+	DBID entityDBID_;
+	const std::string savedatas;
+	CALLBACK_ID callbackID_;
+	int8 shouldAutoLoad_;
+	bool success_;
+};
 
 }
 

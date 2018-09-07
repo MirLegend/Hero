@@ -352,5 +352,22 @@ void DBMgrApp::removeEntity(Network::Channel* pChannel, KBEngine::MemoryStream& 
 		componentID, entityID, entityDBID));
 }
 
+//-------------------------------------------------------------------------------------
+void DBMgrApp::writeEntity(Network::Channel* pChannel, KBEngine::MemoryStream& s)
+{
+	base_dbmgr::WriteEntity writeCmd;
+	PARSEBUNDLE(s, writeCmd);
+	COMPONENT_ID componentID = writeCmd.componentid();
+	ENTITY_ID entityID = writeCmd.entityid();
+	DBID entityDBID = writeCmd.entitydbid();
+	CALLBACK_ID callbackId = writeCmd.callbackid();
+	const std::string datastr = writeCmd.datas();
+	MemoryStream* ss = MemoryStream::ObjPool().createObject();
+	//ss->clear();
+	ss->append(datastr.c_str(), datastr.size());
+	bufferedDBTasks_.addTask(new DBTaskWriteEntity(pChannel->addr(), componentID, entityID, entityDBID, callbackId,*ss));
+	MemoryStream::ObjPool().reclaimObject(ss);
+	//numWrittenEntity_++;
+}
 
 }

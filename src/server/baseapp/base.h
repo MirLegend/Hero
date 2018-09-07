@@ -63,7 +63,7 @@ public:
 	INLINE DBID dbid() const;
 	INLINE void dbid(DBID id);
 
-	void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
+	virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
 
 	/** 
 		写备份信息到流
@@ -96,7 +96,7 @@ public:
 	void onRestore();
 
 	void writeToDB(void* data, void* extra1 = NULL, void* extra2 = NULL);
-
+	void onCellWriteToDBCompleted(CALLBACK_ID callbackID, int8 shouldAutoLoad);
 	/** 
 		客户端丢失 
 	*/

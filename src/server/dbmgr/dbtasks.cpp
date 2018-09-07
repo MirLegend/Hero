@@ -651,4 +651,84 @@ thread::TPTask::TPTaskState DBTaskRemoveEntity::presentMainThread()
 }
 
 //-------------------------------------------------------------------------------------
+DBTaskWriteEntity::DBTaskWriteEntity(const Network::Address& addr,
+	COMPONENT_ID componentID, ENTITY_ID eid,
+	DBID entityDBID, CALLBACK_ID callid, MemoryStream& datas) :
+	EntityDBTask(addr, datas, eid, entityDBID),
+	componentID_(componentID),
+	eid_(eid),
+	entityDBID_(entityDBID),
+	callbackID_(callid),
+	shouldAutoLoad_(-1),
+	success_(false)
+{
+}
+
+//-------------------------------------------------------------------------------------
+DBTaskWriteEntity::~DBTaskWriteEntity()
+{
+}
+
+//-------------------------------------------------------------------------------------
+bool DBTaskWriteEntity::db_thread_process()
+{
+	bool writeEntityLog = (entityDBID_ == 0);
+
+	uint32 ip = 0;
+	uint16 port = 0;
+
+	//if (writeEntityLog)
+	//{
+	//	(*pDatas_) >> ip >> port;
+	//}
+	
+	entityDBID_ = EntityTables::getSingleton().writeEntity(pdbi_, entityDBID_, false, pDatas_, "dota_players");
+	success_ = entityDBID_ > 0;
+
+	if (writeEntityLog && success_)
+	{
+		success_ = false;
+
+		// 先写log， 如果写失败则可能这个entity已经在线
+		KBEEntityLogTable* pELTable = static_cast<KBEEntityLogTable*>
+			(EntityTables::getSingleton().findKBETable("kbe_entitylog"));
+		KBE_ASSERT(pELTable);
+
+		success_ = pELTable->logEntity(pdbi_, inet_ntoa((struct in_addr&)ip), port, entityDBID_,
+			componentID_, eid_);
+
+		if (!success_)
+		{
+			entityDBID_ = 0;
+		}
+	}
+
+	return false;
+}
+
+//-------------------------------------------------------------------------------------
+thread::TPTask::TPTaskState DBTaskWriteEntity::presentMainThread()
+{
+	// 返回写entity的结果， 成功或者失败
+
+	Network::Bundle* pBundle = Network::Bundle::ObjPool().createObject();
+	(*pBundle).newMessage(BaseappInterface::onWriteToDBCallback);
+	base_dbmgr::WriteToDBCallback writecbCmd;
+	writecbCmd.set_success(success_);
+	writecbCmd.set_entitydbid(entityDBID_);
+	writecbCmd.set_entityid(eid_);
+	writecbCmd.set_callbackid(callbackID_);
+
+	ADDTOBUNDLE((*pBundle), writecbCmd);
+
+	if (!this->send(pBundle))
+	{
+		ERROR_MSG(fmt::format("DBTaskWriteEntity::presentMainThread: channel({0}) not found.\n", addr_.c_str()));
+		Network::Bundle::ObjPool().reclaimObject(pBundle);
+	}
+
+	return EntityDBTask::presentMainThread();
+}
+
+//-------------------------------------------------------------------------------------
 }

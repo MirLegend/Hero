@@ -11,6 +11,8 @@
 #include "server/components.h"
 #include <sstream>
 
+#include "GameModule/GameModule.h"
+
 #include "proto/cb.pb.h"
 #include "proto/up.pb.h"
 #include "proto/bmb.pb.h"
@@ -98,6 +100,12 @@ bool BaseApp::initializeEnd()
 {
 	loopCheckTimerHandle_ = this->dispatcher().addTimer(1000000 / 50, this,
 							reinterpret_cast<void *>(TIMEOUT_TICK));
+
+	new GameModule();
+	if (!GameModule::getSingleton().InitModule())
+	{
+		return false;
+	}
 	return true;
 }
 
@@ -547,6 +555,29 @@ void BaseApp::onQueryPlayerCBFromDbmgr(Network::Channel* pChannel, MemoryStream&
 	}
 
 	SAFE_RELEASE(ptinfos);
+}
+
+void BaseApp::onWriteToDBCallback(Network::Channel* pChannel, MemoryStream& s)
+{
+	if (pChannel->isExternal())
+		return;
+
+	base_dbmgr::WriteToDBCallback callbackCmd;
+	PARSEBUNDLE(s, callbackCmd);
+
+	int8 success = callbackCmd.success();
+	DBID dbid = callbackCmd.entitydbid();
+	ENTITY_ID entityID = callbackCmd.entityid();
+	CALLBACK_ID callbackid = callbackCmd.callbackid();
+
+	Base* base = pEntities_->find(entityID);
+	if (base == NULL)
+	{
+		//ERROR_MSG(fmt::format("Baseapp::onWriteToDBCallback: can't found entity:{}.\n", entityID));
+		return;
+	}
+
+	base->onWriteToDBCallback(entityID, dbid, callbackid, -1, success);
 }
 
 //-------------------------------------------------------------------------------------

@@ -149,4 +149,12 @@
 		<IndexType>					</IndexType>
 		<Default>					</Default>
 	</facebook_follow>
+	
+	<player_datas>
+		<Type>			BLOB		</Type> 
+		<DBLength>			0		</DBLength>
+		<Flags>				0		</Flags>
+		<IndexType>					</IndexType>
+		<Default>					</Default>
+	</player_datas>
 </root>

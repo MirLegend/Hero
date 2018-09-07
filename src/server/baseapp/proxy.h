@@ -155,13 +155,15 @@ public:
 	//处理客户端消息
 	void OnProcessClientUpMsg(MemoryStream& s);
 
+	virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
 public:
 	void sendUserDownInfo();
 	//新手引导消息处理
 	bool OnTutorial(const client_baseup::tutorial& tutorialmsg, client_baseserver::down_msg& downmsg);
 	bool OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg, client_baseserver::down_msg& downmsg);
 	bool OnTavernDraw(const client_baseup::tavern_draw& tavern_drawmsg, client_baseserver::down_msg& downmsg);
-
+	void onInitPlayerDatas();
+	bool addPlayerHero(uint32 heroId, uint32 reason);
 protected:
 	uint64 rndUUID_;
 	Network::Address addr_;
@@ -206,6 +208,8 @@ private:
 	int64 rechargegem_;
 	int8 facebook_follow_;
 
+	//std::string gamedatas_; //玩家压缩数据
+	client_baseserver::user gameUserdata_;
 };
 
 }
