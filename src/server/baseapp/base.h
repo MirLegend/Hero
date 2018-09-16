@@ -26,6 +26,8 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "common/common.h"
 #include "helper/debug_helper.h"
 #include "server/entity_app.h"
+#include "pyscript/math.h"
+#include "pyscript/scriptobject.h"
 /*#include "server/script_timers.h"	*/	
 	
 namespace KBEngine{
@@ -40,15 +42,17 @@ class Channel;
 }
 
 
-class Base
+class Base : public script::ScriptObject
 {
+	/** 子类化 将一些py操作填充进派生类 */
+	BASE_SCRIPT_HREADER(Base, ScriptObject)
 protected:
 	ENTITY_ID										id_;
 	bool											isDestroyed_;
 	uint32											flags_;
 
 public:
-	Base(ENTITY_ID id, bool isInitialised = true);
+	Base(ENTITY_ID id, PyTypeObject* pyType = getScriptType(), bool isInitialised = true);
 	~Base();
 
 	/** 

@@ -48,7 +48,7 @@ class ProxyForwarder;
 
 class Proxy : public Base
 {
-
+	BASE_SCRIPT_HREADER(Proxy, Base)
 public:
 	Proxy(ENTITY_ID id);
 	~Proxy();

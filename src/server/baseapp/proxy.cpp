@@ -39,9 +39,19 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 
 namespace KBEngine{
 	
+	SCRIPT_METHOD_DECLARE_BEGIN(Proxy)
+		SCRIPT_METHOD_DECLARE_END()
+
+		SCRIPT_MEMBER_DECLARE_BEGIN(Proxy)
+		SCRIPT_MEMBER_DECLARE_END()
+
+		SCRIPT_GETSET_DECLARE_BEGIN(Proxy)
+		SCRIPT_GETSET_DECLARE_END()
+		BASE_SCRIPT_INIT(Proxy, 0, 0, 0, 0, 0)
+
 //-------------------------------------------------------------------------------------
 Proxy::Proxy(ENTITY_ID id):
-Base(id, true),
+Base(id, getScriptType(), true),
 rndUUID_(KBEngine::genUUID64()),
 addr_(Network::Address::NONE),
 entitiesEnabled_(false),

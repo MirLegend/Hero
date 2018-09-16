@@ -35,9 +35,21 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 
 namespace KBEngine{
 
+//-------------------------------------------------------------------------------------
+SCRIPT_METHOD_DECLARE_BEGIN(Base)
+SCRIPT_METHOD_DECLARE_END()
+
+SCRIPT_MEMBER_DECLARE_BEGIN(Base)
+SCRIPT_MEMBER_DECLARE_END()
+
+SCRIPT_GETSET_DECLARE_BEGIN(Base)
+SCRIPT_GETSET_DECLARE_END()
+
+BASE_SCRIPT_INIT(Base, 0, 0, 0, 0, 0)
 
 //-------------------------------------------------------------------------------------
-Base::Base(ENTITY_ID id, bool isInitialised):
+Base::Base(ENTITY_ID id, PyTypeObject* pyType, bool isInitialised) :
+ScriptObject(pyType, isInitialised),
 id_(id),
 isDestroyed_(false),
 flags_(ENTITY_FLAGS_INITING),

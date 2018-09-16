@@ -22,6 +22,10 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #define KBE_ENTITY_APP_H
 
 // common include
+#include "pyscript/py_gc.h"
+#include "pyscript/script.h"
+#include "pyscript/pyprofile.h"
+#include "pyscript/pyprofile_handler.h"
 #include "common/common.h"
 #include "math/math.h"
 #include "common/timer.h"
@@ -89,6 +93,20 @@ public:
 		通过entityID销毁一个entity 
 	*/
 	virtual bool destroyEntity(ENTITY_ID entityID, bool callScript);
+
+	KBEngine::script::Script& getScript(){ return script_; }
+	PyObjectPtr getEntryScript(){ return entryScript_; }
+
+	void registerScript(PyTypeObject*);
+	int registerPyObjectToScript(const char* attrName, PyObject* pyObj);
+	int unregisterPyObjectToScript(const char* attrName);
+
+	bool installPyScript();
+	virtual bool installPyModules();
+	virtual void onInstallPyModules() {};
+	virtual bool uninstallPyModules();
+	bool uninstallPyScript();
+	bool installEntityDef();
 	
 	virtual bool initializeWatcher();
 
@@ -132,6 +150,41 @@ public:
 	void onBroadcastGlobalDataChanged(Network::Channel* pChannel, KBEngine::MemoryStream& s);
 
 	/**
+	允许脚本assert底层
+	*/
+	static PyObject* __py_assert(PyObject* self, PyObject* args);
+
+	/**
+	设置脚本输出类型前缀
+	*/
+	static PyObject* __py_setScriptLogType(PyObject* self, PyObject* args);
+
+	/**
+	通过相对路径获取资源的全路径
+	*/
+	static PyObject* __py_getResFullPath(PyObject* self, PyObject* args);
+
+	/**
+	通过相对路径判断资源是否存在
+	*/
+	static PyObject* __py_hasRes(PyObject* self, PyObject* args);
+
+	/**
+	open文件
+	*/
+	static PyObject* __py_kbeOpen(PyObject* self, PyObject* args);
+
+	/**
+	列出目录下所有文件
+	*/
+	static PyObject* __py_listPathRes(PyObject* self, PyObject* args);
+
+	/**
+	匹配相对路径获得全路径
+	*/
+	static PyObject* __py_matchPath(PyObject* self, PyObject* args);
+
+	/**
 		更新负载情况
 	*/
 	int tickPassedPercent(uint64 curr = timestamp());
@@ -142,6 +195,10 @@ public:
 	uint64 checkTickPeriod();
 
 protected:
+	KBEngine::script::Script								script_;
+	std::vector<PyTypeObject*>								scriptBaseTypes_;
+
+	PyObjectPtr												entryScript_;
 
 	EntityIDClient											idClient_;
 
@@ -168,6 +225,9 @@ EntityApp<E>::EntityApp(Network::EventDispatcher& dispatcher,
 					 COMPONENT_TYPE componentType,
 					 COMPONENT_ID componentID):
 ServerApp(dispatcher, ninterface, componentType, componentID),
+script_(),
+scriptBaseTypes_(),
+entryScript_(),
 idClient_(),
 pEntities_(NULL),
 gameTimer_(),
@@ -188,7 +248,13 @@ EntityApp<E>::~EntityApp()
 template<class E>
 bool EntityApp<E>::inInitialize()
 {
-	return true;
+	if (!installPyScript())
+		return false;
+
+	if (!installPyModules())
+		return false;
+
+	return installEntityDef();
 }
 
 template<class E>
@@ -222,7 +288,249 @@ void EntityApp<E>::finalise(void)
 	if(pEntities_)
 		pEntities_->finalise();
 
+	uninstallPyScript();
+
 	ServerApp::finalise();
+}
+
+template<class E>
+bool EntityApp<E>::installEntityDef()
+{
+	return true;
+}
+
+
+template<class E>
+int EntityApp<E>::registerPyObjectToScript(const char* attrName, PyObject* pyObj)
+{
+	return script_.registerToModule(attrName, pyObj);
+}
+
+template<class E>
+int EntityApp<E>::unregisterPyObjectToScript(const char* attrName)
+{
+	return script_.unregisterToModule(attrName);
+}
+
+
+template<class E>
+bool EntityApp<E>::installPyScript()
+{
+	if (Resmgr::getSingleton().respaths().size() <= 0 ||
+		Resmgr::getSingleton().getPySysResPath().size() == 0)
+	{
+		KBE_ASSERT(false && "EntityApp::installPyScript: KBE_RES_PATH is error!\n");
+		return false;
+	}
+
+	std::wstring user_scripts_path = L"";
+	wchar_t* tbuf = KBEngine::strutil::char2wchar(const_cast<char*>(Resmgr::getSingleton().getPySysResPath().c_str()));
+	if (tbuf != NULL)
+	{
+		user_scripts_path += tbuf;
+		user_scripts_path += "/scripts";
+		free(tbuf);
+	}
+	else
+	{
+		KBE_ASSERT(false && "EntityApp::installPyScript: KBE_RES_PATH error[char2wchar]!\n");
+		return false;
+	}
+
+	std::wstring pyPaths = user_scripts_path + L"common;";
+	pyPaths += user_scripts_path + L"data;";
+
+	switch (componentType_)
+	{
+	case BASEAPP_TYPE:
+		pyPaths += user_scripts_path + L"server_common;";
+		pyPaths += user_scripts_path + L"base;";
+		pyPaths += user_scripts_path + L"base/interfaces;";
+		break;
+	case CELLAPP_TYPE:
+		pyPaths += user_scripts_path + L"server_common;";
+		pyPaths += user_scripts_path + L"cell;";
+		pyPaths += user_scripts_path + L"cell/interfaces;";
+		break;
+	case DBMGR_TYPE:
+		pyPaths += user_scripts_path + L"server_common;";
+		pyPaths += user_scripts_path + L"db;";
+		break;
+	default:
+		pyPaths += user_scripts_path + L"client;";
+		pyPaths += user_scripts_path + L"client/interfaces;";
+		pyPaths += user_scripts_path + L"client/components;";
+		break;
+	};
+
+	std::string kbe_res_path = Resmgr::getSingleton().getPySysResPath();
+	kbe_res_path += "scripts/pyCommonLib";
+
+	tbuf = KBEngine::strutil::char2wchar(const_cast<char*>(kbe_res_path.c_str()));
+	bool ret = getScript().install(tbuf, pyPaths, "KBEngine", componentType_);
+	free(tbuf);
+	return ret;
+}
+
+template<class E>
+void EntityApp<E>::registerScript(PyTypeObject* pto)
+{
+	scriptBaseTypes_.push_back(pto);
+}
+
+template<class E>
+bool EntityApp<E>::uninstallPyScript()
+{
+	return uninstallPyModules() && getScript().uninstall();
+}
+
+template<class E>
+bool EntityApp<E>::installPyModules()
+{
+	Entities<E>::installScript(NULL);
+	EntityGarbages<E>::installScript(NULL);
+	//Entity::installScript(g_script.getModule());
+
+	pEntities_ = new Entities<E>();
+	registerPyObjectToScript("entities", pEntities_);
+
+	// 添加pywatcher支持
+	if (!initializePyWatcher(&this->getScript()))
+		return false;
+
+	//// 添加globalData, globalBases支持
+	//pGlobalData_ = new GlobalDataClient(DBMGR_TYPE, GlobalDataServer::GLOBAL_DATA);
+	//registerPyObjectToScript("globalData", pGlobalData_);
+
+	// 注册创建entity的方法到py
+	// 允许assert底层，用于调试脚本某个时机时底层状态
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), kbassert, __py_assert, METH_VARARGS, 0);
+
+	//// 向脚本注册app发布状态
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), publish, __py_getAppPublish, METH_VARARGS, 0);
+
+	// 注册设置脚本输出类型
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), scriptLogType, __py_setScriptLogType, METH_VARARGS, 0);
+
+	// 获得资源全路径
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getResFullPath, __py_getResFullPath, METH_VARARGS, 0);
+
+	// 是否存在某个资源
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), hasRes, __py_hasRes, METH_VARARGS, 0);
+
+	// 打开一个文件
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), open, __py_kbeOpen, METH_VARARGS, 0);
+
+	// 列出目录下所有文件
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), listPathRes, __py_listPathRes, METH_VARARGS, 0);
+
+	// 匹配相对路径获得全路径
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), matchPath, __py_matchPath, METH_VARARGS, 0);
+
+	//// 获取watcher值
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getWatcher, __py_getWatcher, METH_VARARGS, 0);
+
+	//// 获取watcher目录
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getWatcherDir, __py_getWatcherDir, METH_VARARGS, 0);
+
+	// debug追踪kbe封装的py对象计数
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), debugTracing, script::PyGC::__py_debugTracing, METH_VARARGS, 0);
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_NORMAL", log4cxx::ScriptLevel::SCRIPT_INT))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.LOG_TYPE_NORMAL.\n");
+	}
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_INFO", log4cxx::ScriptLevel::SCRIPT_INFO))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.LOG_TYPE_INFO.\n");
+	}
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_ERR", log4cxx::ScriptLevel::SCRIPT_ERR))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.LOG_TYPE_ERR.\n");
+	}
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_DBG", log4cxx::ScriptLevel::SCRIPT_DBG))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.LOG_TYPE_DBG.\n");
+	}
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_WAR", log4cxx::ScriptLevel::SCRIPT_WAR))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.LOG_TYPE_WAR.\n");
+	}
+
+	if (PyModule_AddIntConstant(this->getScript().getModule(), "NEXT_ONLY", KBE_NEXT_ONLY))
+	{
+		ERROR_MSG("EntityApp::installPyModules: Unable to set KBEngine.NEXT_ONLY.\n");
+	}
+
+	for (int i = 0; i < SERVER_ERR_MAX; i++)
+	{
+		if (PyModule_AddIntConstant(getScript().getModule(), SERVER_ERR_STR[i], i))
+		{
+			ERROR_MSG(fmt::format("EntityApp::installPyModules: Unable to set KBEngine.{}.\n", SERVER_ERR_STR[i]));
+		}
+	}
+
+	// 安装入口模块
+	std::string entryScriptFileName = "";
+	if (componentType() == BASEAPP_TYPE)
+	{
+		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getBaseApp();
+		entryScriptFileName = "kbemain"/*info.entryScriptFile*/;
+	}
+	else if (componentType() == CELLAPP_TYPE)
+	{
+		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
+		entryScriptFileName = "kbemain";// info.entryScriptFile;
+	}
+
+	if (entryScriptFileName.size() > 0)
+	{
+		PyObject *pyEntryScriptFileName = PyUnicode_FromString(entryScriptFileName.c_str());
+		entryScript_ = PyImport_Import(pyEntryScriptFileName);
+
+		if (PyErr_Occurred())
+		{
+			INFO_MSG(fmt::format("EntityApp::installPyModules: importing scripts/{}{}.py...\n",
+				(componentType() == BASEAPP_TYPE ? "base/" : "cell/"),
+				entryScriptFileName));
+
+			PyErr_PrintEx(0);
+		}
+
+		S_RELEASE(pyEntryScriptFileName);
+
+		if (entryScript_.get() == NULL)
+		{
+			return false;
+		}
+	}
+
+	onInstallPyModules();
+	return true;
+}
+
+template<class E>
+bool EntityApp<E>::uninstallPyModules()
+{
+	// script::PyGC::set_debug(script::PyGC::DEBUG_STATS|script::PyGC::DEBUG_LEAK);
+	// script::PyGC::collect();
+	unregisterPyObjectToScript("globalData");
+	//S_RELEASE(pGlobalData_);
+
+	S_RELEASE(pEntities_);
+	unregisterPyObjectToScript("entities");
+
+	Entities<E>::uninstallScript();
+	EntityGarbages<E>::uninstallScript();
+	//Entity::uninstallScript();
+	//EntityDef::uninstallScript();
+
+	script::PyGC::debugTracing();
+	return true;
 }
 
 template<class E>

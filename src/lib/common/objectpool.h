@@ -35,7 +35,12 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 namespace KBEngine{
 
 #define OBJECT_POOL_INIT_SIZE	16
-#define OBJECT_POOL_INIT_MAX_SIZE	OBJECT_POOL_INIT_SIZE * 16
+#define OBJECT_POOL_INIT_MAX_SIZE	OBJECT_POOL_INIT_SIZE * 1024
+
+	// 追踪对象分配处
+#define OBJECTPOOL_POINT fmt::format("{}#{}", __FUNCTION__, __LINE__).c_str() 
+	// 每5分钟检查一次瘦身
+#define OBJECT_POOL_REDUCING_TIME_OUT	300 * stampsPerSecondD()
 
 template< typename T >
 class SmartPoolObject;

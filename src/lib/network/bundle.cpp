@@ -77,6 +77,13 @@ Bundle* Bundle::createPoolObject()
 }
 
 //-------------------------------------------------------------------------------------
+Bundle* Bundle::createPoolObject(const std::string& logPoint)
+{
+	return _g_objPool.createObject(logPoint);
+}
+
+
+//-------------------------------------------------------------------------------------
 Bundle::SmartPoolObjectPtr Bundle::createSmartPoolObj()
 {
 	return SmartPoolObjectPtr(new SmartPoolObject<Bundle>(ObjPool().createObject(), _g_objPool));

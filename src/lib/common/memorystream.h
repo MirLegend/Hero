@@ -410,6 +410,15 @@ public:
 		return rsize;
 	}
 
+	void appendBlob(const MemoryStream *stream)
+	{
+		ArraySize len = (ArraySize)stream->length();
+		(*this) << len;
+
+		if (len > 0)
+			append(*stream);
+	}
+
 	void readPackXYZ(float& x, float&y, float& z, float minf = -256.f)
 	{
 		uint32 packed = 0;

@@ -33,9 +33,6 @@
     <ClCompile Include="..\..\ssl\d1_clnt.c">
       <Filter>Source Files\ssl</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ssl\d1_enc.c">
-      <Filter>Source Files\ssl</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\ssl\d1_lib.c">
       <Filter>Source Files\ssl</Filter>
     </ClCompile>
@@ -153,19 +150,25 @@
     <ClCompile Include="..\..\ssl\t1_srvr.c">
       <Filter>Source Files\ssl</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\ssl\d1_srtp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ssl\s3_cbc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ssl\t1_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ssl\t1_reneg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ssl\tls_srp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\crypto\cryptlib.h">
-      <Filter>Header Files\crypto</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\crypto\o_dir.h">
-      <Filter>Header Files\crypto</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\crypto\evp\evp_locl.h">
-      <Filter>Header Files\crypto\evp</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <None Include="..\..\ms\ssleay32.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

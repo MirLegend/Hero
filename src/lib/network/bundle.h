@@ -93,6 +93,7 @@ public:
 	static ObjectPool<Bundle>& ObjPool();
 	static void reclaimPoolObject(Bundle* obj);
 	static Bundle* createPoolObject();
+	static Bundle* createPoolObject(const std::string& logPoint);
 	static void destroyObjPool();
 	virtual void onReclaimObject();
 	virtual size_t getPoolObjectBytes();
