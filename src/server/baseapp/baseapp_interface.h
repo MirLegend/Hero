@@ -7,7 +7,9 @@
 #ifndef KBE_BASEAPP_INTERFACE_H
 #define KBE_BASEAPP_INTERFACE_H
 
+#if defined(BASEAPP)
 #include "baseapp.h"
+#endif
 #include "network/server_interface_macros.h"
 #include "network/interface_defs.h"
 #include "server/server_errors.h"

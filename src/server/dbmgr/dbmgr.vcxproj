@@ -71,7 +71,7 @@
     </ClCompile>
     <Link>
       <AdditionalOptions>/ignore:4049 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>apr-1_d.lib;aprutil-1_d.lib;log4cxx_d.lib;expat_d.lib;Version.lib;netapi32.lib;resmgr_d.lib;server_d.lib;xml_d.lib;common_d.lib;helper_d.lib;math_d.lib;network_d.lib;thread_d.lib;ws2_32.lib;libprotobuf.lib;db_mysql_d.lib;db_redis_d.lib;db_interface_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pyhal_d.lib;apr-1_d.lib;aprutil-1_d.lib;log4cxx_d.lib;expat_d.lib;_hashlib_d.pyd;pyexpat_d.pyd;select_d.pyd;_ctypes_d.pyd;_elementtree_d.pyd;unicodedata_d.pyd;_socket_d.pyd;Version.lib;netapi32.lib;resmgr_d.lib;server_d.lib;xml_d.lib;common_d.lib;helper_d.lib;math_d.lib;network_d.lib;thread_d.lib;ws2_32.lib;libprotobuf.lib;db_mysql_d.lib;db_redis_d.lib;db_interface_d.lib;_ssl_d.pyd;crypt32.lib;ssleay32_d.lib;libeay32_d.lib;python34_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>../../libs;../../lib/dependencies/vld;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>expat_d.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -114,6 +114,7 @@
     <ClCompile Include="..\..\lib\proto\celldb.pb.cc" />
     <ClCompile Include="..\..\lib\proto\coms.pb.cc" />
     <ClCompile Include="..\..\lib\proto\ldb.pb.cc" />
+    <ClCompile Include="..\..\lib\python\Modules\getbuildinfo.c" />
     <ClCompile Include="buffered_dbtasks.cpp" />
     <ClCompile Include="dbTalbeModule.cpp" />
     <ClCompile Include="dbtasks.cpp" />

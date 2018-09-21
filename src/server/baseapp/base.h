@@ -25,9 +25,9 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 	
 #include "common/common.h"
 #include "helper/debug_helper.h"
-#include "server/entity_app.h"
-#include "pyscript/math.h"
-#include "pyscript/scriptobject.h"
+//#include "server/entity_app.h"
+#include "pyhal/math.h"
+#include "pyhal/scriptobject.h"
 /*#include "server/script_timers.h"	*/	
 	
 namespace KBEngine{
@@ -150,16 +150,6 @@ public:
 	*/
 	INLINE void setDirty(bool dirty = true);
 	INLINE bool isDirty() const;
-
-	INLINE ENTITY_ID id() const	
-	{
-		return id_;		
-	}
-		
-		INLINE void id(ENTITY_ID v)		
-	{					
-		id_ = v; 
-	}
 		
 		INLINE bool hasFlags(uint32 v) const
 	{
@@ -206,6 +196,19 @@ public:
 	}
 
 	void destroyEntity();
+
+	INLINE ENTITY_ID id() const
+	{
+		return id_;
+	}
+	INLINE void id(ENTITY_ID v)
+	{
+		id_ = v;
+	}
+	static PyObject* __pyget_pyGetID(Base *self, void *closure)
+	{
+		return PyLong_FromLong(self->id());
+	}
 	
 protected:
 	/**

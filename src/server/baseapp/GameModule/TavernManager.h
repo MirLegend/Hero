@@ -22,7 +22,7 @@ namespace KBEngine{
 		single = 0,   // 单抽
 		combo = 1,   // 十连抽
 		stone = 3,   // 灵魂石抽奖
-		free = 4,   // 免费单抽
+		drfree = 4,   // 免费单抽
 	};
 	enum box_type {
 	    green           = 1,    // 绿箱子

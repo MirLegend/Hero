@@ -3,19 +3,21 @@
 #define KBE_BASEAPP_H
 	
 // common include	
-#include "server/kbemain.h"
-#include "server/serverapp.h"
-#include "server/idallocate.h"
-#include "server/serverconfig.h"
+#include "base.h"
+#include "proxy.h"
+#include "server/entity_app.h"
+//#include "server/kbemain.h"
+//#include "server/serverapp.h"
+//#include "server/idallocate.h"
+//#include "server/serverconfig.h"
 #include "server/pendingLoginmgr.h"
 #include "common/timer.h"
 #include "network/endpoint.h"
 #include "network/udp_packet_receiver.h"
-#include "network/common.h"
-#include "network/address.h"
-#include "server/entity_app.h"
-#include "base.h"
-#include "proxy.h"
+//#include "network/common.h"
+//#include "network/address.h"
+
+
 //#include "logwatcher.h"
 
 //#define NDEBUG
@@ -44,23 +46,31 @@ public:
 		COMPONENT_ID componentID);
 
 	~BaseApp();
+
+	virtual bool installPyModules();
+	virtual void onInstallPyModules();
+	virtual bool uninstallPyModules();
+	virtual bool installEntityDef();
 	
 	bool run();
 	
 	virtual bool initializeWatcher();
+
+	/**
+	创建了一个entity回调
+	*/
+	virtual Base* onCreateEntity(PyObject* pyEntity, ENTITY_ID eid);
 
 	void handleTimeout(TimerHandle handle, void * arg);
 	void handleTick();
 
 	/* 初始化相关接口 */
 	bool initializeBegin();
-	bool inInitialize();
+	//bool inInitialize();
 	bool initializeEnd();
 	void finalise();
 
 	virtual bool canShutdown();
-
-	virtual Base* onCreateEntity(const char* entityType, ENTITY_ID eid);
 	
 
 	/**

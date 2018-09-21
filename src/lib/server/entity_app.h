@@ -22,10 +22,10 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #define KBE_ENTITY_APP_H
 
 // common include
-#include "pyscript/py_gc.h"
-#include "pyscript/script.h"
-#include "pyscript/pyprofile.h"
-#include "pyscript/pyprofile_handler.h"
+#include "pyhal/py_gc.h"
+#include "pyhal/script.h"
+#include "pyhal/pyprofile.h"
+#include "pyhal/pyprofile_handler.h"
 #include "common/common.h"
 #include "math/math.h"
 #include "common/timer.h"
@@ -52,13 +52,6 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 
 	
 namespace KBEngine{
-
-// 实体的标志
-#define ENTITY_FLAGS_UNKNOWN			0x00000000
-#define ENTITY_FLAGS_DESTROYING			0x00000001
-#define ENTITY_FLAGS_INITING			0x00000002
-#define ENTITY_FLAGS_TELEPORT_START		0x00000004
-#define ENTITY_FLAGS_TELEPORT_END		0x00000008
 
 template<class E>
 class EntityApp : public ServerApp
@@ -106,7 +99,10 @@ public:
 	virtual void onInstallPyModules() {};
 	virtual bool uninstallPyModules();
 	bool uninstallPyScript();
-	bool installEntityDef();
+	virtual bool installEntityDef();
+	bool loadUnitScriptType(const char* unitName);
+
+	PyTypeObject* findUnitScriptType(const char* unitName);
 	
 	virtual bool initializeWatcher();
 
@@ -124,9 +120,9 @@ public:
 	/**
 		创建一个entity 
 	*/
-	E* createEntity(const char* entityType, ENTITY_ID eid = 0, bool initProperty = true);
+	E* createEntity(const char* entityType, ENTITY_ID eid = 0, bool isInitializeScript = true);
 
-	virtual E* onCreateEntity(const char* entityType, ENTITY_ID eid);
+	virtual E* onCreateEntity(PyObject* pyEntity, ENTITY_ID eid);
 
 	/** 网络接口
 		请求分配一个ENTITY_ID段的回调
@@ -195,8 +191,10 @@ public:
 	uint64 checkTickPeriod();
 
 protected:
+	typedef std::map<std::string, PyTypeObject*>::iterator  SCRIPTUNITMAPITER;
 	KBEngine::script::Script								script_;
 	std::vector<PyTypeObject*>								scriptBaseTypes_;
+	std::map<std::string, PyTypeObject*>					scriptUnitTypes_;
 
 	PyObjectPtr												entryScript_;
 
@@ -236,7 +234,6 @@ lastTimestamp_(timestamp()),
 load_(0.f)
 {
 	idClient_.pApp(this);
-	pEntities_ = new Entities<E>();
 }
 
 template<class E>
@@ -312,6 +309,57 @@ int EntityApp<E>::unregisterPyObjectToScript(const char* attrName)
 	return script_.unregisterToModule(attrName);
 }
 
+template<class E>
+bool EntityApp<E>::loadUnitScriptType(const char* unitName)
+{
+	PyObject *pyEntryScriptFileName = PyUnicode_FromString(unitName);
+	PyObject *unitScriptModule = PyImport_Import(pyEntryScriptFileName);
+
+	if (PyErr_Occurred())
+	{
+		INFO_MSG(fmt::format("EntityApp::installPyModules: importing scripts/{}.py...\n", unitName));
+
+		PyErr_PrintEx(0);
+	}
+
+	S_RELEASE(pyEntryScriptFileName);
+	if (unitScriptModule == NULL)
+	{
+		ERROR_MSG(fmt::format("EntityDef::loadUnitScriptType: Could not find ComponentClass[{}.py]\n",
+			unitName));
+		return false;
+	}
+	PyObject* pyClass =
+		PyObject_GetAttrString(unitScriptModule, const_cast<char *>(unitName));
+
+	S_RELEASE(unitScriptModule);
+
+	if (pyClass == NULL)
+	{
+		ERROR_MSG(fmt::format("EntityDef::loadUnitScriptType: Could not find Class[{}]\n",
+			unitName));
+		return false;
+	}
+	else
+	{
+		DEBUG_MSG(fmt::format("EntityDef::loadUnitScriptType: ComponentClass[{}.py], Successfully!!!\n",
+			unitName));
+		scriptUnitTypes_[unitName] = (PyTypeObject*)pyClass;
+	}
+	
+	return true;
+}
+
+template<class E>
+PyTypeObject* EntityApp<E>::findUnitScriptType(const char* unitName)
+{
+	SCRIPTUNITMAPITER it = scriptUnitTypes_.find(unitName);
+	if (it != scriptUnitTypes_.end())
+	{
+		return it->second;
+	}
+	return NULL;
+}
 
 template<class E>
 bool EntityApp<E>::installPyScript()
@@ -328,7 +376,7 @@ bool EntityApp<E>::installPyScript()
 	if (tbuf != NULL)
 	{
 		user_scripts_path += tbuf;
-		user_scripts_path += "/scripts";
+		user_scripts_path += L"scripts/";
 		free(tbuf);
 	}
 	else
@@ -395,8 +443,8 @@ bool EntityApp<E>::installPyModules()
 	registerPyObjectToScript("entities", pEntities_);
 
 	// 添加pywatcher支持
-	if (!initializePyWatcher(&this->getScript()))
-		return false;
+	//if (!initializePyWatcher(&this->getScript()))
+	//	return false;
 
 	//// 添加globalData, globalBases支持
 	//pGlobalData_ = new GlobalDataClient(DBMGR_TYPE, GlobalDataServer::GLOBAL_DATA);
@@ -404,28 +452,28 @@ bool EntityApp<E>::installPyModules()
 
 	// 注册创建entity的方法到py
 	// 允许assert底层，用于调试脚本某个时机时底层状态
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), kbassert, __py_assert, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), kbassert, __py_assert, METH_VARARGS, 0);
 
 	//// 向脚本注册app发布状态
 	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), publish, __py_getAppPublish, METH_VARARGS, 0);
 
 	// 注册设置脚本输出类型
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), scriptLogType, __py_setScriptLogType, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), scriptLogType, __py_setScriptLogType, METH_VARARGS, 0);
 
 	// 获得资源全路径
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getResFullPath, __py_getResFullPath, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getResFullPath, __py_getResFullPath, METH_VARARGS, 0);
 
 	// 是否存在某个资源
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), hasRes, __py_hasRes, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), hasRes, __py_hasRes, METH_VARARGS, 0);
 
 	// 打开一个文件
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), open, __py_kbeOpen, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), open, __py_kbeOpen, METH_VARARGS, 0);
 
 	// 列出目录下所有文件
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), listPathRes, __py_listPathRes, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), listPathRes, __py_listPathRes, METH_VARARGS, 0);
 
 	// 匹配相对路径获得全路径
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), matchPath, __py_matchPath, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), matchPath, __py_matchPath, METH_VARARGS, 0);
 
 	//// 获取watcher值
 	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getWatcher, __py_getWatcher, METH_VARARGS, 0);
@@ -434,7 +482,7 @@ bool EntityApp<E>::installPyModules()
 	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getWatcherDir, __py_getWatcherDir, METH_VARARGS, 0);
 
 	// debug追踪kbe封装的py对象计数
-	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), debugTracing, script::PyGC::__py_debugTracing, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), debugTracing, script::PyGC::__py_debugTracing, METH_VARARGS, 0);
 
 	if (PyModule_AddIntConstant(this->getScript().getModule(), "LOG_TYPE_NORMAL", log4cxx::ScriptLevel::SCRIPT_INT))
 	{
@@ -479,12 +527,12 @@ bool EntityApp<E>::installPyModules()
 	if (componentType() == BASEAPP_TYPE)
 	{
 		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getBaseApp();
-		entryScriptFileName = "kbemain"/*info.entryScriptFile*/;
+		entryScriptFileName = "heromain"/*info.entryScriptFile*/;
 	}
 	else if (componentType() == CELLAPP_TYPE)
 	{
 		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
-		entryScriptFileName = "kbemain";// info.entryScriptFile;
+		entryScriptFileName = "heromain";// info.entryScriptFile;
 	}
 
 	if (entryScriptFileName.size() > 0)
@@ -505,6 +553,7 @@ bool EntityApp<E>::installPyModules()
 
 		if (entryScript_.get() == NULL)
 		{
+			ERROR_MSG(fmt::format("entryScript Import Error!"));
 			return false;
 		}
 	}
@@ -529,12 +578,17 @@ bool EntityApp<E>::uninstallPyModules()
 	//Entity::uninstallScript();
 	//EntityDef::uninstallScript();
 
+	for (SCRIPTUNITMAPITER it = scriptUnitTypes_.begin(); it != scriptUnitTypes_.end(); it++)
+	{
+		S_RELEASE(it->second);
+	}
+	scriptUnitTypes_.clear();
 	script::PyGC::debugTracing();
 	return true;
 }
 
 template<class E>
-E* EntityApp<E>::createEntity(const char* entityType, ENTITY_ID eid, bool initProperty)
+E* EntityApp<E>::createEntity(const char* entityType, ENTITY_ID eid, bool isInitializeScript)
 {
 	// 检查ID是否足够, 不足返回NULL
 	if(eid <= 0 && idClient_.size() == 0)
@@ -563,13 +617,30 @@ E* EntityApp<E>::createEntity(const char* entityType, ENTITY_ID eid, bool initPr
 	}
 
 	PyObject* obj = sm->createObject();*/
+	PyTypeObject* pObjType = findUnitScriptType(entityType);
+	if (!pObjType)
+	{
+		PyErr_Format(PyExc_TypeError, "EntityApp::createEntity: entityType [%s] not found! Please register in entities.xml and implement a %s.def and %s.py\n",
+			entityType, entityType, entityType);
+
+		PyErr_PrintEx(0);
+		return NULL;
+	}
+
+	PyObject * obj = PyType_GenericAlloc(pObjType, 0);
+	if (obj == NULL)
+	{
+		PyErr_Print();
+		ERROR_MSG("ScriptDefModule::createObject: GenericAlloc is failed.\n");
+		return NULL;
+	}
 
 	// 判断是否要分配一个新的id
 	ENTITY_ID id = eid;
 	if(id <= 0)
 		id = idClient_.alloc();
 	
-	E* entity = onCreateEntity(entityType, id);
+	E* entity = onCreateEntity(obj, id);
 
 	//if(initProperty)
 	//	entity->initProperty();
@@ -578,10 +649,20 @@ E* EntityApp<E>::createEntity(const char* entityType, ENTITY_ID eid, bool initPr
 	pEntities_->add(id, entity); 
 
 	// 初始化脚本
-	/*if(isInitializeScript)
-		entity->initializeEntity(params);
+	if (isInitializeScript)
+	{
+		if (PyObject_HasAttrString(obj, "__init__"))
+		{
+			PyObject* pyResult = PyObject_CallMethod(obj, const_cast<char*>("__init__"),
+				const_cast<char*>(""));
+			if (pyResult != NULL)
+				Py_DECREF(pyResult);
+			else
+				SCRIPT_ERROR_CHECK();
+		}
+	}
 
-	SCRIPT_ERROR_CHECK();*/
+	SCRIPT_ERROR_CHECK();
 
 	INFO_MSG(fmt::format("EntityApp::createEntity: new {0} {1}\n", entityType, id));
 
@@ -589,11 +670,11 @@ E* EntityApp<E>::createEntity(const char* entityType, ENTITY_ID eid, bool initPr
 }
 
 template<class E>
-E* EntityApp<E>::onCreateEntity(const char* entityType, ENTITY_ID eid)
+E* EntityApp<E>::onCreateEntity(PyObject* pyEntity, ENTITY_ID eid)
 {
 	// 执行Entity的构造函数
-	//return new(pyEntity) E(eid, sm);
-	return new E(eid);
+	return new(pyEntity) E(eid);
+	//return new E(eid);
 }
 
 template<class E>
@@ -651,10 +732,10 @@ void EntityApp<E>::handleGameTick()
 template<class E>
 bool EntityApp<E>::destroyEntity(ENTITY_ID entityID, bool callScript)
 {
-	E* entity = pEntities_->erase(entityID);
+	PyObjectPtr entity = pEntities_->erase(entityID);
 	if(entity != NULL)
 	{
-		static_cast<E*>(entity)->destroy(callScript);
+		static_cast<E*>(entity.get())->destroy(callScript);
 		return true;
 	}
 
@@ -691,10 +772,10 @@ void EntityApp<E>::onDbmgrInitCompleted(Network::Channel* pChannel,
 	INFO_MSG(fmt::format("EntityApp::onDbmgrInitCompleted: entityID alloc({}-{}), startGlobalOrder={}, startGroupOrder={}, digest={}.\n",
 		startID, endID, startGlobalOrder, startGroupOrder, digest));
 
-	startGlobalOrder_ = startGlobalOrder;
-	startGroupOrder_ = startGroupOrder;
-	g_componentGlobalOrder = startGlobalOrder;
-	g_componentGroupOrder = startGroupOrder;
+	//startGlobalOrder_ = startGlobalOrder;
+	//startGroupOrder_ = startGroupOrder;
+	//g_componentGlobalOrder = startGlobalOrder;
+	//g_componentGroupOrder = startGroupOrder;
 
 	idClient_.onAddRange(startID, endID);
 	g_kbetime = gametime;

@@ -76,12 +76,6 @@ Bundle* Bundle::createPoolObject()
 	return _g_objPool.createObject();
 }
 
-//-------------------------------------------------------------------------------------
-Bundle* Bundle::createPoolObject(const std::string& logPoint)
-{
-	return _g_objPool.createObject(logPoint);
-}
-
 
 //-------------------------------------------------------------------------------------
 Bundle::SmartPoolObjectPtr Bundle::createSmartPoolObj()

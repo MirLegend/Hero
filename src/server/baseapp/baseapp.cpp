@@ -89,11 +89,11 @@ bool BaseApp::initializeBegin()
 	return true;
 }
 
-//-------------------------------------------------------------------------------------
-bool BaseApp::inInitialize()
-{
-	return true;
-}
+////-------------------------------------------------------------------------------------
+//bool BaseApp::inInitialize()
+//{
+//	return true;
+//}
 
 //-------------------------------------------------------------------------------------
 bool BaseApp::initializeEnd()
@@ -101,11 +101,11 @@ bool BaseApp::initializeEnd()
 	loopCheckTimerHandle_ = this->dispatcher().addTimer(1000000 / 50, this,
 							reinterpret_cast<void *>(TIMEOUT_TICK));
 
-	new GameModule();
-	if (!GameModule::getSingleton().InitModule())
-	{
-		return false;
-	}
+	//new GameModule();
+	//if (!GameModule::getSingleton().InitModule())
+	//{
+	//	return false;
+	//}
 	return true;
 }
 
@@ -162,6 +162,102 @@ void BaseApp::onChannelDeregister(Network::Channel * pChannel)
 	}
 }
 
+//-------------------------------------------------------------------------------------
+Base* BaseApp::onCreateEntity(PyObject* pyEntity, ENTITY_ID eid)
+{
+	if (PyType_IsSubtype(pyEntity->ob_type, Proxy::getScriptType()))
+	{
+		return new(pyEntity)Proxy(eid);
+	}
+
+	return EntityApp<Base>::onCreateEntity(pyEntity, eid);
+}
+
+//-------------------------------------------------------------------------------------
+bool BaseApp::installPyModules()
+{
+	Base::installScript(getScript().getModule());
+	Proxy::installScript(getScript().getModule());
+
+	registerScript(Base::getScriptType());
+	registerScript(Proxy::getScriptType());
+
+	// 注册创建entity的方法到py 
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), time, __py_gametime, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createBase, __py_createBase, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createBaseLocally, __py_createBase, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createEntity, __py_createBase, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createBaseAnywhere, __py_createBaseAnywhere, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createBaseFromDBID, __py_createBaseFromDBID, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), createBaseAnywhereFromDBID, __py_createBaseAnywhereFromDBID, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), executeRawDatabaseCommand, __py_executeRawDatabaseCommand, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), quantumPassedPercent, __py_quantumPassedPercent, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), charge, __py_charge, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), registerReadFileDescriptor, PyFileDescriptor::__py_registerReadFileDescriptor, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), registerWriteFileDescriptor, PyFileDescriptor::__py_registerWriteFileDescriptor, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), deregisterReadFileDescriptor, PyFileDescriptor::__py_deregisterReadFileDescriptor, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), deregisterWriteFileDescriptor, PyFileDescriptor::__py_deregisterWriteFileDescriptor, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), reloadScript, __py_reloadScript, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), isShuttingDown, __py_isShuttingDown, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), address, __py_address, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), deleteBaseByDBID, __py_deleteBaseByDBID, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), lookUpBaseByDBID, __py_lookUpBaseByDBID, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), setAppFlags, __py_setFlags, METH_VARARGS, 0);
+	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getAppFlags, __py_getFlags, METH_VARARGS, 0);
+
+	return EntityApp<Base>::installPyModules();
+}
+
+//-------------------------------------------------------------------------------------
+void BaseApp::onInstallPyModules()
+{
+	// 添加globalData, globalBases支持
+
+	if (PyModule_AddIntMacro(this->getScript().getModule(), LOG_ON_REJECT))
+	{
+		ERROR_MSG("Baseapp::onInstallPyModules: Unable to set KBEngine.LOG_ON_REJECT.\n");
+	}
+
+	if (PyModule_AddIntMacro(this->getScript().getModule(), LOG_ON_ACCEPT))
+	{
+		ERROR_MSG("Baseapp::onInstallPyModules: Unable to set KBEngine.LOG_ON_ACCEPT.\n");
+	}
+
+	if (PyModule_AddIntMacro(this->getScript().getModule(), LOG_ON_WAIT_FOR_DESTROY))
+	{
+		ERROR_MSG("Baseapp::onInstallPyModules: Unable to set KBEngine.LOG_ON_WAIT_FOR_DESTROY.\n");
+	}
+}
+
+//-------------------------------------------------------------------------------------
+bool BaseApp::uninstallPyModules()
+{
+	//if (g_kbeSrvConfig.getBaseApp().profiles.open_pyprofile)
+	//{
+	//	script::PyProfile::stop("kbengine");
+
+	//	char buf[MAX_BUF];
+	//	kbe_snprintf(buf, MAX_BUF, "baseapp%u.pyprofile", startGroupOrder_);
+	//	script::PyProfile::dump("kbengine", buf);
+	//	script::PyProfile::remove("kbengine");
+	//}
+
+	//unregisterPyObjectToScript("baseAppData");
+	//S_RELEASE(pBaseAppData_);
+
+	Base::uninstallScript();
+	Proxy::uninstallScript();
+	return EntityApp<Base>::uninstallPyModules();
+}
+
+bool BaseApp::installEntityDef()
+{
+	if (!loadUnitScriptType("Player"))
+	{
+		return false;
+	}
+	return true;
+}
 
 ////-------------------------------------------------------------------------------------
 //void BaseApp::handleCheckStatusTick()
@@ -228,6 +324,19 @@ void BaseApp::onDbmgrInitCompleted(Network::Channel* pChannel, MemoryStream& s)
 
 	idClient_.onAddRange(dicCmd.startentityid(), dicCmd.endentityid());
 	g_kbetime = dicCmd.g_kbetime();
+
+	EntityApp<Base>::onDbmgrInitCompleted(pChannel, ::time(0), dicCmd.startentityid(), dicCmd.endentityid(),
+		0, 0, "ss");
+
+	PyObject* pyResult = PyObject_CallMethod(getEntryScript().get(),
+		const_cast<char*>("onAppInit"),
+		const_cast<char*>("i"),
+		0);
+
+	if (pyResult != NULL)
+		Py_DECREF(pyResult);
+	else
+		SCRIPT_ERROR_CHECK();
 
 	pInitProgressHandler_ = new InitProgressHandler(this->networkInterface());
 }
@@ -526,7 +635,7 @@ void BaseApp::onQueryPlayerCBFromDbmgr(Network::Channel* pChannel, MemoryStream&
 		return;
 	}
 
-	Proxy* base = static_cast<Proxy*>(createEntity("Proxy", entityID));
+	Proxy* base = static_cast<Proxy*>(createEntity("Player", entityID));
 
 	if (!base)
 	{
@@ -552,6 +661,7 @@ void BaseApp::onQueryPlayerCBFromDbmgr(Network::Channel* pChannel, MemoryStream&
 		base->addr(pClientChannel->addr());
 
 		createClientProxies(base);
+		base->onUserLogonOn();
 	}
 
 	SAFE_RELEASE(ptinfos);
@@ -578,19 +688,6 @@ void BaseApp::onWriteToDBCallback(Network::Channel* pChannel, MemoryStream& s)
 	}
 
 	base->onWriteToDBCallback(entityID, dbid, callbackid, -1, success);
-}
-
-//-------------------------------------------------------------------------------------
-Base* BaseApp::onCreateEntity(const char* entityType, ENTITY_ID eid)
-{
-	if (kbe_strnicmp(entityType, "Proxy", 5) == 0)
-	{
-		INFO_MSG(fmt::format("EntityApp::createEntity: new Proxy {}\n", eid));
-		return new Proxy(eid);
-	}
-
-	ERROR_MSG(fmt::format("BaseApp::onCreateEntity: error entitType: {}\n", entityType));
-	return NULL;
 }
 
 //-------------------------------------------------------------------------------------
@@ -629,8 +726,8 @@ bool BaseApp::createClientProxies(Proxy* base, bool reload)
 	//if(!reload)
 	base->onEntitiesEnabled();
 
-	//发送登录成功协议
-	base->sendUserDownInfo();
+	////发送登录成功协议
+	//base->sendUserDownInfo();
 	return true;
 }
 
