@@ -67,7 +67,7 @@ public:
 	INLINE DBID dbid() const;
 	INLINE void dbid(DBID id);
 
-	virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
+	 void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
 
 	/** 
 		写备份信息到流
@@ -116,7 +116,7 @@ public:
 	*/
 	void onDestroy(bool callScript);
 
-	virtual void InitDatas(const std::string datas) {};
+	//void InitDatas(const std::string datas);
 
 	/**
 		销毁base内部通知

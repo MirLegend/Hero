@@ -6,5 +6,4 @@ protoc bmb.proto --cpp_out=../../src/lib/proto
 protoc basedb.proto --cpp_out=../../src/lib/proto 
 protoc celldb.proto --cpp_out=../../src/lib/proto 
 protoc cb.proto --cpp_out=../../src/lib/proto 
-protoc up.proto --cpp_out=../../src/lib/proto 
 pause

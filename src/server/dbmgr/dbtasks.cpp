@@ -602,7 +602,7 @@ thread::TPTask::TPTaskState DBTaskQueryAccount::presentMainThread()
 		queryCmd.set_datas(error_);
 		//(*pBundle) << error_;
 	}
-	ERROR_MSG(fmt::format("DBTaskQueryAccount::QueryPlayerCBFromDbmgr size:({}) \n", queryCmd.ByteSize()));
+	//ERROR_MSG(fmt::format("DBTaskQueryAccount::QueryPlayerCBFromDbmgr size:({}) \n", queryCmd.ByteSize()));
 	ADDTOBUNDLE((*pBundle), queryCmd);
 	if (!this->send(pBundle))
 	{

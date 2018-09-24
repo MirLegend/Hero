@@ -14,7 +14,7 @@
 #include "GameModule/GameModule.h"
 
 #include "proto/cb.pb.h"
-#include "proto/up.pb.h"
+//#include "proto/up.pb.h"
 #include "proto/bmb.pb.h"
 #include "../../server/basemgr/basemgr_interface.h"
 #include "proto/basedb.pb.h"
@@ -167,7 +167,8 @@ Base* BaseApp::onCreateEntity(PyObject* pyEntity, ENTITY_ID eid)
 {
 	if (PyType_IsSubtype(pyEntity->ob_type, Proxy::getScriptType()))
 	{
-		return new(pyEntity)Proxy(eid);
+		Proxy* pproxy = new(pyEntity)Proxy(eid);
+		return pproxy;
 	}
 
 	return EntityApp<Base>::onCreateEntity(pyEntity, eid);
@@ -256,6 +257,18 @@ bool BaseApp::installEntityDef()
 	{
 		return false;
 	}
+	//Proxy* base = static_cast<Proxy*>(createEntity("Player", 5));
+	//PyObject* pObj2 = dynamic_cast<PyObject*>(base);
+	//
+	//PyObject* pObj = static_cast<PyObject*>(base);
+	//PyObject* pObj3 = (PyObject*)(base);
+	//PyObject* pObj5 = (PyObject*)((DWORD)base);
+	//printf("base:%d, pObj:%d, %d, %d \n", base, pObj, pObj3, pObj5);
+	//SCRIPT_OBJECT_CALL_ARGS0(pObj5, const_cast<char*>("onUserLogonOn"), true);
+	//SCRIPT_OBJECT_CALL_ARGS0(pObj, const_cast<char*>("onUserLogonOn"), true);
+	//SCRIPT_OBJECT_CALL_ARGS0(pObj2, const_cast<char*>("onUserLogonOn"), true);
+	//SCRIPT_OBJECT_CALL_ARGS0(pObj3, const_cast<char*>("onUserLogonOn"), true);
+	//base->onUserLogonOn();
 	return true;
 }
 
@@ -688,6 +701,8 @@ void BaseApp::onWriteToDBCallback(Network::Channel* pChannel, MemoryStream& s)
 	}
 
 	base->onWriteToDBCallback(entityID, dbid, callbackid, -1, success);
+
+	S_RELEASE(base);
 }
 
 //-------------------------------------------------------------------------------------

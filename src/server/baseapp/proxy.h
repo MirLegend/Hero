@@ -66,7 +66,7 @@ public:
 	bool sendToClient(Network::Bundle* pBundle);
 	bool sendToClient(bool expectData = true);
 
-	virtual void InitDatas(const std::string datas);
+	void InitDatas(const std::string datas);
 
 	/** 
 		脚本请求获取连接的rtt值
@@ -155,7 +155,15 @@ public:
 	//处理客户端消息
 	void OnProcessClientUpMsg(MemoryStream& s);
 
-	virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
+	void SendDataToClient(uint8 mainCmd, uint8 subCmd, const char* senbuff, uint32 sendSize);
+	//DECLARE_PY_MOTHOD_ARG3(pySendDataToClient, uint8, uint8, PyObject_ptr);
+	/*PyObject* pySendDataToClient(PY_METHOD_ARG_uint8,
+		PY_METHOD_ARG_uint8,
+		PY_METHOD_ARG_PyObject_ptr);*/
+	static PyObject* __py_pySendDataToClient(PyObject* self, PyObject* args, PyObject* kwds);
+	
+
+	//virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
 public:
 	//void sendUserDownInfo();
 	void onUserLogonOn();

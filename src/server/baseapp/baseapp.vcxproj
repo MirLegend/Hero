@@ -71,7 +71,7 @@
     </ClCompile>
     <Link>
       <AdditionalOptions>/ignore:4049 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>apr-1_d.lib;aprutil-1_d.lib;log4cxx_d.lib;expat_d.lib;Version.lib;netapi32.lib;resmgr_d.lib;server_d.lib;xml_d.lib;common_d.lib;helper_d.lib;math_d.lib;network_d.lib;thread_d.lib;ws2_32.lib;libprotobuf.lib;lib_json.lib;pyhal_d.lib;_hashlib_d.pyd;pyexpat_d.pyd;select_d.pyd;_ctypes_d.pyd;_elementtree_d.pyd;unicodedata_d.pyd;_socket_d.pyd;_ssl_d.pyd;crypt32.lib;ssleay32_d.lib;libeay32_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>apr-1_d.lib;aprutil-1_d.lib;log4cxx_d.lib;expat_d.lib;Version.lib;netapi32.lib;resmgr_d.lib;server_d.lib;xml_d.lib;common_d.lib;helper_d.lib;math_d.lib;network_d.lib;thread_d.lib;ws2_32.lib;libprotobuf.lib;pyhal_d.lib;_hashlib_d.pyd;pyexpat_d.pyd;select_d.pyd;_ctypes_d.pyd;_elementtree_d.pyd;unicodedata_d.pyd;_socket_d.pyd;_ssl_d.pyd;crypt32.lib;ssleay32_d.lib;libeay32_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>../../libs;../../lib/dependencies/vld;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>expat_d.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -114,7 +114,6 @@
     <ClCompile Include="..\..\lib\proto\bmb.pb.cc" />
     <ClCompile Include="..\..\lib\proto\cb.pb.cc" />
     <ClCompile Include="..\..\lib\proto\coms.pb.cc" />
-    <ClCompile Include="..\..\lib\proto\up.pb.cc" />
     <ClCompile Include="..\..\lib\python\Modules\getbuildinfo.c" />
     <ClCompile Include="base.cpp" />
     <ClCompile Include="base_messages_forward_handler.cpp" />
@@ -175,7 +174,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\lib\proto\basedb.pb.h" />
     <ClInclude Include="..\..\lib\proto\cb.pb.h" />
-    <ClInclude Include="..\..\lib\proto\up.pb.h" />
     <ClInclude Include="base.h" />
     <ClInclude Include="baseapp.h" />
     <ClInclude Include="baseapp_interface.h" />

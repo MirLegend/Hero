@@ -130,7 +130,48 @@ void Base::eraseEntityLog()
 //-------------------------------------------------------------------------------------
 void Base::addPersistentsDataToStream(uint32 flags, MemoryStream* s)
 {
-	
+	/*PyObject* pData = PyBytes_FromStringAndSize(datas.c_str(), datas.size());
+	SCRIPT_OBJECT_CALL_ARGS1(this, const_cast<char*>("onInitDatas")
+	, const_cast<char*>("O"), pData, true);
+	S_RELEASE(pData);*/
+
+		MemoryStream& ss = *s;
+		ss << 19;
+		//ss.appendBlob(gameUserdata_.SerializeAsString());
+
+	if (PyObject_HasAttrString(this, const_cast<char*>("addPersistentsDataToStream")))
+	{
+		PyObject* pyResult = PyObject_CallMethod((this),
+			("addPersistentsDataToStream"),	
+			const_cast<char*>(""));
+		
+		if (pyResult != NULL) {
+			//
+			if (!PyBytes_Check(pyResult))
+			{
+			}
+			else
+			{
+				char *buffer;
+				Py_ssize_t length;
+
+				if (PyBytes_AsStringAndSize(pyResult, &buffer, &length) < 0)
+				{
+					SCRIPT_ERROR_CHECK();
+					PyErr_PrintEx(0);
+					return;
+				}
+
+				//s->append(buffer, length);
+				ss.appendBlob(buffer, length);
+			}
+			Py_DECREF(pyResult);
+		}
+		else
+		{
+			PyErr_PrintEx(0);
+		}
+	}	
 }
 
 void Base::destroyEntity()

@@ -92,7 +92,7 @@
 		-->
 		<auth>  
 			<username> root </username>									<!-- Type: String -->
-			<password> 123456 </password>									<!-- Type: String -->
+			<password> root </password>									<!-- Type: String -->
 			
 		</auth>
 		

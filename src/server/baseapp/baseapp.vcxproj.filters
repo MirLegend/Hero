@@ -60,9 +60,6 @@
     <ClCompile Include="proxy_forwarder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\proto\up.pb.cc">
-      <Filter>pb</Filter>
-    </ClCompile>
     <ClCompile Include="GameModule\GameModule.cpp">
       <Filter>GameModule</Filter>
     </ClCompile>
@@ -106,9 +103,6 @@
     </ClInclude>
     <ClInclude Include="proxy.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\lib\proto\up.pb.h">
-      <Filter>pb</Filter>
     </ClInclude>
     <ClInclude Include="GameModule\GameModule.h">
       <Filter>GameModule</Filter>
