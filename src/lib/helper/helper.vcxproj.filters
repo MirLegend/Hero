@@ -75,6 +75,9 @@
     <ClCompile Include="..\dependencies\sigar\win32\wmi.cpp">
       <Filter>sigar</Filter>
     </ClCompile>
+    <ClCompile Include="script_loglevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="console_helper.h">

@@ -36,7 +36,7 @@ void ScriptStdOutErr::info_msg(const wchar_t* msg, uint32 msglen)
 	{
 		std::string out;
 		strutil::wchar2utf8(sbuffer_, out);
-		DEBUG_MSG(out);
+		SCRIPT_INFO_MSG(out);
 		sbuffer_ = L"";
 	}
 }
@@ -52,7 +52,7 @@ void ScriptStdOutErr::error_msg(const wchar_t* msg, uint32 msglen)
 	{
 		std::string out;
 		strutil::wchar2utf8(sbuffer_, out);
-		ERROR_MSG(out);
+		SCRIPT_ERROR_MSG(out);
 		sbuffer_ = L"";
 	}
 }

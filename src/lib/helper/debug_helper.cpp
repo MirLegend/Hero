@@ -188,7 +188,7 @@ logMutex(),
 //hasBufferedLogPackets_(0),
 //pNetworkInterface_(NULL),
 //pDispatcher_(NULL),
-//scriptMsgType_(log4cxx::ScriptLevel::SCRIPT_INT),
+scriptMsgType_(log4cxx::ScriptLevel::SCRIPT_INT),
 noSyncLog_(false),
 canLogFile_(true)
 {
@@ -614,63 +614,63 @@ int KBELOG_TYPE_MAPPING(int type)
 }
 
 //-------------------------------------------------------------------------------------
-//void DebugHelper::script_info_msg(const std::string& s)
-//{
-//	KBEngine::thread::ThreadGuard tg(&this->logMutex); 
-//
-//#ifdef NO_USE_LOG4CXX
-//#else
-//	if(canLogFile_)
-//		LOG4CXX_LOG(g_logger,  log4cxx::ScriptLevel::toLevel(scriptMsgType_), s);
-//#endif
-//
-//
-//	onMessage(KBELOG_TYPE_MAPPING(scriptMsgType_), s.c_str(), s.size());
-//
-//#if KBE_PLATFORM == PLATFORM_WIN32
-//	set_errorcolor();
-//
-//	// 如果是用户手动设置的也输出为错误信息
-//	if(log4cxx::ScriptLevel::SCRIPT_ERR == scriptMsgType_)
-//		printf("[S_ERROR]: %s", s.c_str());
-//
-//	set_normalcolor();
-//#endif
-//}
-//
-////-------------------------------------------------------------------------------------
-//void DebugHelper::script_error_msg(const std::string& s)
-//{
-//	KBEngine::thread::ThreadGuard tg(&this->logMutex); 
-//
-//	setScriptMsgType(log4cxx::ScriptLevel::SCRIPT_ERR);
-//
-//#ifdef NO_USE_LOG4CXX
-//#else
-//	if(canLogFile_)
-//		LOG4CXX_LOG(g_logger,  log4cxx::ScriptLevel::toLevel(scriptMsgType_), s);
-//#endif
-//
-//	onMessage(KBELOG_SCRIPT_ERROR, s.c_str(), s.size());
-//
-//#if KBE_PLATFORM == PLATFORM_WIN32
-//	set_errorcolor();
-//	printf("[S_ERROR]: %s", s.c_str());
-//	set_normalcolor();
-//#endif
-//}
-//
-////-------------------------------------------------------------------------------------
-//void DebugHelper::setScriptMsgType(int msgtype)
-//{
-//	scriptMsgType_ = msgtype;
-//}
-//
-////-------------------------------------------------------------------------------------
-//void DebugHelper::resetScriptMsgType()
-//{
-//	setScriptMsgType(log4cxx::ScriptLevel::SCRIPT_INFO);
-//}
+void DebugHelper::script_info_msg(const std::string& s)
+{
+	KBEngine::thread::ThreadGuard tg(&this->logMutex); 
+
+#ifdef NO_USE_LOG4CXX
+#else
+	if(canLogFile_)
+		LOG4CXX_LOG(g_logger,  log4cxx::ScriptLevel::toLevel(scriptMsgType_), s);
+#endif
+
+
+	//onMessage(KBELOG_TYPE_MAPPING(scriptMsgType_), s.c_str(), s.size());
+
+#if KBE_PLATFORM == PLATFORM_WIN32
+	set_errorcolor();
+
+	// 如果是用户手动设置的也输出为错误信息
+	if(log4cxx::ScriptLevel::SCRIPT_ERR == scriptMsgType_)
+		printf("[S_ERROR]: %s", s.c_str());
+
+	set_normalcolor();
+#endif
+}
+
+//-------------------------------------------------------------------------------------
+void DebugHelper::script_error_msg(const std::string& s)
+{
+	KBEngine::thread::ThreadGuard tg(&this->logMutex); 
+
+	setScriptMsgType(log4cxx::ScriptLevel::SCRIPT_ERR);
+
+#ifdef NO_USE_LOG4CXX
+#else
+	if(canLogFile_)
+		LOG4CXX_LOG(g_logger,  log4cxx::ScriptLevel::toLevel(scriptMsgType_), s);
+#endif
+
+	//onMessage(KBELOG_SCRIPT_ERROR, s.c_str(), s.size());
+
+#if KBE_PLATFORM == PLATFORM_WIN32
+	set_errorcolor();
+	printf("[S_ERROR]: %s", s.c_str());
+	set_normalcolor();
+#endif
+}
+
+//-------------------------------------------------------------------------------------
+void DebugHelper::setScriptMsgType(int msgtype)
+{
+	scriptMsgType_ = msgtype;
+}
+
+//-------------------------------------------------------------------------------------
+void DebugHelper::resetScriptMsgType()
+{
+	setScriptMsgType(log4cxx::ScriptLevel::SCRIPT_INFO);
+}
 
 //-------------------------------------------------------------------------------------
 void DebugHelper::debug_msg(const std::string& s)

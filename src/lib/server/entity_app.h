@@ -458,7 +458,7 @@ bool EntityApp<E>::installPyModules()
 	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), publish, __py_getAppPublish, METH_VARARGS, 0);
 
 	// 注册设置脚本输出类型
-	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), scriptLogType, __py_setScriptLogType, METH_VARARGS, 0);
+	APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), scriptLogType, __py_setScriptLogType, METH_VARARGS, 0);
 
 	// 获得资源全路径
 	//APPEND_SCRIPT_MODULE_METHOD(getScript().getModule(), getResFullPath, __py_getResFullPath, METH_VARARGS, 0);
@@ -891,6 +891,31 @@ void EntityApp<E>::calcLoad(float spareTime)
 	static float loadSmoothingBias = 0.01f;// g_kbeSrvConfig.loadSmoothingBias;
 	load_ = (1 - loadSmoothingBias) * load_ + loadSmoothingBias * load;
 }
+
+template<class E>
+PyObject* EntityApp<E>::__py_setScriptLogType(PyObject* self, PyObject* args)
+{
+	int argCount = (int)PyTuple_Size(args);
+	if (argCount != 1)
+	{
+		PyErr_Format(PyExc_TypeError, "KBEngine::scriptLogType(): args is error!");
+		PyErr_PrintEx(0);
+		return 0;
+	}
+
+	int type = -1;
+
+	if (PyArg_ParseTuple(args, "i", &type) == -1)
+	{
+		PyErr_Format(PyExc_TypeError, "KBEngine::scriptLogType(): args is error!");
+		PyErr_PrintEx(0);
+		return 0;
+	}
+
+	DebugHelper::getSingleton().setScriptMsgType(type);
+	S_Return;
+}
+
 }
 
 #endif // KBE_ENTITY_APP_H

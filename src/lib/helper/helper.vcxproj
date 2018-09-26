@@ -97,6 +97,7 @@
     <ClCompile Include="debug_helper.cpp" />
     <ClCompile Include="debug_option.cpp" />
     <ClCompile Include="eventhistory_stats.cpp" />
+    <ClCompile Include="script_loglevel.cpp" />
     <ClCompile Include="sys_info.cpp" />
     <ClCompile Include="watch_pools.cpp" />
     <ClCompile Include="watcher.cpp" />
