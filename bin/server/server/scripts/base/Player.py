@@ -4,6 +4,8 @@ from KBEDebug import *
 import GlobalDefine
 from Container.HeroContainer import HeroContainer
 from Container.TavernContainer import TavernContainer
+from Container.InventoryContainer import InventoryContainer
+from Container.StageContainer import StageContainer
 import down_pb2 as cbproto
 import up_pb2 as upproto
 
@@ -19,6 +21,11 @@ class Player(KBEngine.Proxy):
 		self.heroContainer = HeroContainer(self)
 		#酒馆容器
 		self.tavernContainer = TavernContainer(self)
+		#背包物品容器
+		self.inventoryContainer = InventoryContainer(self)
+		#关卡容器
+		self.stageContainer = StageContainer(self)
+		#新手引导
 		self.tutorial = []
 		
 	def addUserCurrency(self, type, mount, reason):
@@ -40,7 +47,7 @@ class Player(KBEngine.Proxy):
 		self.heroContainer.addPlayerHero(heroId, reason)
 		
 	def addPlayerItem(self, itemId, itemNum, reason):
-		#self.heroContainer.addPlayerHero(heroId, reason)
+		self.inventoryContainer.addinventoryItem(itemId, itemNum, reason)
 		pass
 		
 	def onInitDatas(self, initData):
@@ -73,10 +80,10 @@ class Player(KBEngine.Proxy):
 		self.skill_levelup_reset_times = user._skill_level_up._reset_times
 		self.skill_levelup_last_reset_date = user._skill_level_up._last_reset_date
 		
-		self.userstage_elite_reset_time = user._userstage._elite_reset_time
-		self.userstage_sweep_last_reset_time = user._userstage._sweep._last_reset_time
-		self.userstage_sweep_today_free_sweep_times = user._userstage._sweep._today_free_sweep_times
-		self.userstage_act_reset_time = user._userstage._act_reset_time
+		#self.userstage_elite_reset_time = user._userstage._elite_reset_time
+		#self.userstage_sweep_last_reset_time = user._userstage._sweep._last_reset_time
+		#self.userstage_sweep_today_free_sweep_times = user._userstage._sweep._today_free_sweep_times
+		#self.userstage_act_reset_time = user._userstage._act_reset_time
 		
 		self.usermidas_last_charge = user._usermidas._last_change
 		self.usermidas_today_times = user._usermidas._today_times
@@ -99,6 +106,8 @@ class Player(KBEngine.Proxy):
 			self.tutorial.append(v)
 			
 		self.heroContainer.ParseFromProtoData(user._heroes)
+		self.inventoryContainer.ParseFromProtoData(user._items)
+		self.stageContainer.ParseFromProtoData(user._userstage)
 		DEBUG_MSG("Player::onInitDatas id:%i, level:%i, name:%s"%(self.id, user._level, user._name_card._name))
 		
 	def InitPlayerData(self):
@@ -127,10 +136,10 @@ class Player(KBEngine.Proxy):
 		self.skill_levelup_reset_times = 0
 		self.skill_levelup_last_reset_date = t
 		
-		self.userstage_elite_reset_time = 0
-		self.userstage_sweep_last_reset_time = t
-		self.userstage_sweep_today_free_sweep_times = 0
-		self.userstage_act_reset_time = t
+		#self.userstage_elite_reset_time = 0
+		#self.userstage_sweep_last_reset_time = t
+		#self.userstage_sweep_today_free_sweep_times = 0
+		#self.userstage_act_reset_time = t
 		
 		self.usermidas_last_charge = t
 		self.usermidas_today_times = 0
@@ -175,6 +184,16 @@ class Player(KBEngine.Proxy):
 		
 		bRespCmd = False
 		downmsg = cbproto.down_msg()
+		
+		#-----------------进入副本------------------------
+		if upProto.HasField('_enter_stage'):
+			ERROR_MSG("OnProcessClientUpMsg ---- _enter_stage stageid:%i"%(upProto._enter_stage._stage_id))
+			bRespCmd = self.stageContainer.reqEnterStage(upProto._enter_stage._stage_id, downmsg._enter_stage_reply) or bRespCmd
+			
+		#-----------------退出副本------------------------
+		if upProto.HasField('_exit_stage'):
+			ERROR_MSG("OnProcessClientUpMsg ---- _exit_stage reuslt:%i"%(upProto._exit_stage._result))
+			bRespCmd = self.stageContainer.reqExitStage(upProto._exit_stage, downmsg._exit_stage_reply) or bRespCmd
 		
 		#-----------------新手引导------------------------
 		if upProto.HasField('_tutorial'):
@@ -241,7 +260,10 @@ class Player(KBEngine.Proxy):
 			
 		#-----------------精英关卡重置------------------------
 		if upProto.HasField('_reset_elite'):
-			ERROR_MSG("OnProcessClientUpMsg ---- _reset_elite")
+			stageid = 0
+			if upProto._reset_elite.HasField('_stageid'):
+				stageid = upProto._reset_elite._stageid
+			ERROR_MSG("OnProcessClientUpMsg ---- _reset_elite type:%i, stateid:%i"%(upProto._reset_elite._type, stageid))
 			
 		#-----------------关卡扫荡------------------------
 		if upProto.HasField('_sweep_stage'):
@@ -404,11 +426,11 @@ class Player(KBEngine.Proxy):
 		user._skill_level_up._last_reset_date = self.skill_levelup_last_reset_date
 		
 		#user._userstage = cbproto.userstage()
-		user._userstage._elite_reset_time = self.userstage_elite_reset_time
+		#user._userstage._elite_reset_time = self.userstage_elite_reset_time
 		#user._userstage._sweep = cbproto.sweep()
-		user._userstage._sweep._last_reset_time = self.userstage_sweep_last_reset_time
-		user._userstage._sweep._today_free_sweep_times = self.userstage_sweep_today_free_sweep_times
-		user._userstage._act_reset_time = self.userstage_act_reset_time
+		#user._userstage._sweep._last_reset_time = self.userstage_sweep_last_reset_time
+		#user._userstage._sweep._today_free_sweep_times = self.userstage_sweep_today_free_sweep_times
+		#user._userstage._act_reset_time = self.userstage_act_reset_time
 		
 		#user._usermidas = cbproto.usermidas()
 		user._usermidas._last_change = self.usermidas_last_charge
@@ -435,6 +457,9 @@ class Player(KBEngine.Proxy):
 			
 		self.heroContainer.SerializeToProtoData(user._heroes)
 		
+		self.inventoryContainer.SerializeToProtoData(user._items)
+		
+		self.stageContainer.SerializeToProtoData(user._userstage)
 		for v in self.tutorial:
 			user._tutorial.append(v)
 
