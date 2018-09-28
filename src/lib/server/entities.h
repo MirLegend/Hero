@@ -26,8 +26,8 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "common/common.h"
 #include "common/smartpointer.h"
 #include "entity_garbages.h"
-#include "pyscript/scriptobject.h"
-#include "pyscript/pyobject_pointer.h"
+#include "pyhal/scriptobject.h"
+#include "pyhal/pyobject_pointer.h"
 	
 namespace KBEngine{
 
