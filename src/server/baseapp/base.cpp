@@ -85,8 +85,9 @@ void Base::onDestroy(bool callScript)
 {
 	setDirty();
 	
-	if(callScript)
+	if (callScript)
 	{
+		SCRIPT_OBJECT_CALL_ARGS0(this, const_cast<char*>("onDestroy"), true);
 	}
 
 	if(this->hasDB())

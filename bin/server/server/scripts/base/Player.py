@@ -28,6 +28,16 @@ class Player(KBEngine.Proxy):
 		#新手引导
 		self.tutorial = []
 		
+	def onDestroy(self): #这个很重要，不然player实体就不会析构导致内存泄露
+		"""
+		KBEngine method.
+		entity销毁
+		"""
+		self.heroContainer = None
+		self.tavernContainer = None
+		self.inventoryContainer = None
+		self.stageContainer = None
+		
 	def addUserCurrency(self, type, mount, reason):
 		if cost_type_coin == type:
 			if self.money + mount < 0:

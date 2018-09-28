@@ -183,10 +183,11 @@ public:
 			return;
 		if (!isDestroyed_)
 		{
-			isDestroyed_ = true;
 			addFlags(ENTITY_FLAGS_DESTROYING);
 			onDestroy(callScript);
 			removeFlags(ENTITY_FLAGS_DESTROYING);
+			isDestroyed_ = true;
+			Py_DECREF(this);
 		}
 	}
 
