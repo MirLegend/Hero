@@ -28,10 +28,7 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "helper/debug_helper.h"
 #include "network/address.h"
 #include "network/message_handler.h"
-//
-//#include "proto/cb.pb.h"
-//#include "proto/up.pb.h"
-	
+
 namespace KBEngine{
 
 
@@ -156,23 +153,11 @@ public:
 	void OnProcessClientUpMsg(MemoryStream& s);
 
 	void SendDataToClient(uint8 mainCmd, uint8 subCmd, const char* senbuff, uint32 sendSize);
-	//DECLARE_PY_MOTHOD_ARG3(pySendDataToClient, uint8, uint8, PyObject_ptr);
-	/*PyObject* pySendDataToClient(PY_METHOD_ARG_uint8,
-		PY_METHOD_ARG_uint8,
-		PY_METHOD_ARG_PyObject_ptr);*/
 	static PyObject* __py_pySendDataToClient(PyObject* self, PyObject* args, PyObject* kwds);
-	
-
-	//virtual void addPersistentsDataToStream(uint32 flags, MemoryStream* s);
 public:
-	//void sendUserDownInfo();
 	void onUserLogonOn();
-	//新手引导消息处理
-	/*bool OnTutorial(const client_baseup::tutorial& tutorialmsg, client_baseserver::down_msg& downmsg);
-	bool OnAskMagicsoul(const client_baseup::ask_magicsoul& ask_magicsoulmsg, client_baseserver::down_msg& downmsg);
-	bool OnTavernDraw(const client_baseup::tavern_draw& tavern_drawmsg, client_baseserver::down_msg& downmsg);*/
 	void onInitPlayerDatas();
-	bool addPlayerHero(uint32 heroId, uint32 reason);
+	
 protected:
 	uint64 rndUUID_;
 	Network::Address addr_;
@@ -216,9 +201,6 @@ private:
 	int16 tutorialstep_;
 	int64 rechargegem_;
 	int8 facebook_follow_;
-
-	//std::string gamedatas_; //玩家压缩数据
-	//client_baseserver::user gameUserdata_;
 };
 
 }
