@@ -12,7 +12,7 @@ CSRCS =				\
 	linux_sigar
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/dependencies/$(LIB)/linux,,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/dependencies/$(LIB)/linux,,$(CURDIR))
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak

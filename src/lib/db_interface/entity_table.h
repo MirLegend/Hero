@@ -154,7 +154,7 @@ public:
 	const stTableItem* pTableItemDescription() { return pTableItemDescription_; }
 
 	uint32 datalength() const{ return datalength_; }
-	uint32 datalength(uint32 datalength) { datalength_ = datalength; }
+	//uint32 datalength(uint32 datalength) { datalength_ = datalength; }
 	/**
 		≥ı ºªØ
 	*/

@@ -36,7 +36,7 @@ SRCS =				\
 USE_OPENSSL = 1
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/$(LIB),,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/$(LIB),,$(CURDIR))
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak

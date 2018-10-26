@@ -82,7 +82,7 @@ Proxy::~Proxy()
 void Proxy::kick()
 {
 	// 如果被销毁频道仍然存活则将其关闭
-	Network::Channel* pChannel = BaseApp::getSingleton().networkInterface().findChannel(addr_);
+	//Network::Channel* pChannel = BaseApp::getSingleton().networkInterface().findChannel(addr_);
 	//if(pChannel && !pChannel->isDestroyed())
 	//{
 	//	Network::Bundle* pBundle = Network::Bundle::createPoolObject();

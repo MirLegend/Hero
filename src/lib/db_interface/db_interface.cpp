@@ -24,7 +24,7 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "entity_table.h"
 #include "common/kbekey.h"
 #include "db_mysql/db_interface_mysql.h"
-#include "db_redis/db_interface_redis.h"
+//#include "db_redis/db_interface_redis.h"
 #include "server/serverconfig.h"
 #include "thread/threadpool.h"
 
@@ -48,7 +48,7 @@ DBUtil::~DBUtil()
 //-------------------------------------------------------------------------------------
 bool DBUtil::initThread()
 {
-	ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
+	//ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
 	//if(strcmp(dbcfg.db_type, "mysql") == 0)
 	{
 		if (!mysql_thread_safe()) 
@@ -67,7 +67,7 @@ bool DBUtil::initThread()
 //-------------------------------------------------------------------------------------
 bool DBUtil::finiThread()
 {
-	ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
+	//ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
 	//if(strcmp(dbcfg.db_type, "mysql") == 0)
 	{
 		mysql_thread_end();
@@ -170,7 +170,7 @@ const char* DBUtil::dbname()
 //-------------------------------------------------------------------------------------
 const char* DBUtil::dbtype()
 {
-	ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
+	//ENGINE_COMPONENT_INFO& dbcfg = g_kbeSrvConfig.getDBMgr();
 	return "mysql";// dbcfg.db_type;
 }
 

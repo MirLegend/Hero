@@ -21,15 +21,15 @@ MANDIR := $(DESTDIR)/usr/local/share/man
 LIB =	jemalloc
 CONFIG_ARGS =
 
-LIBDIR := $(KBE_ROOT)/kbe/src/libs
+LIBDIR := $(KBE_ROOT)/src/libs
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/dependencies/$(LIB),,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/dependencies/$(LIB),,$(CURDIR))
 endif
 
 srcroot := 
 objroot := 
-abs_srcroot := $(KBE_ROOT)/kbe/src/lib/dependencies/$(LIB)
-abs_objroot := $(KBE_ROOT)/kbe/src/lib/dependencies/$(LIB)
+abs_srcroot := $(KBE_ROOT)/src/lib/dependencies/$(LIB)
+abs_objroot := $(KBE_ROOT)/src/lib/dependencies/$(LIB)
 
 # Build parameters.
 CPPFLAGS :=  -D_GNU_SOURCE -D_REENTRANT -I$(srcroot)include -I$(objroot)include

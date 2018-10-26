@@ -151,7 +151,7 @@ void Resmgr::updatePaths()
 //-------------------------------------------------------------------------------------
 bool Resmgr::initialize()
 {
-	TiXmlNode* node = NULL, *rootNode = NULL;
+	TiXmlNode* node = NULL/*, *rootNode = NULL*/;
 	std::string loadconfig("./serverConfig.xml");
 	SmartPointer<XML> xml(new XML(loadconfig.c_str()));
 

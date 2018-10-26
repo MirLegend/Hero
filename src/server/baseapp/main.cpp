@@ -1,5 +1,5 @@
 #include "server/kbemain.h"
-#include "BaseApp.h"
+#include "baseapp.h"
 
 #undef DEFINE_IN_INTERFACE
 #undef KBE_SERVER_INTERFACE_MACRO_H //很重要这个操作

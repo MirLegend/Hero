@@ -230,9 +230,9 @@ void DBMgrApp::OnRegisterServer(Network::Channel* pChannel, /*KBEngine::*/Memory
 	servercommon::RegisterSelf regCmd;
 	PARSEBUNDLE(tempS, regCmd);
 	COMPONENT_TYPE componentType = (COMPONENT_TYPE)regCmd.componenttype();
-	uint32 uid = regCmd.uid();
+	//uint32 uid = regCmd.uid();
 	COMPONENT_ID componentID = regCmd.componentid();
-	uint32 extaddr = 0;
+	//uint32 extaddr = 0;
 	KBEngine::COMPONENT_TYPE tcomponentType = (KBEngine::COMPONENT_TYPE)componentType;
 
 	if (pSyncAppDatasHandler_ == NULL)

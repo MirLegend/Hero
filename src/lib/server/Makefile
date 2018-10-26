@@ -6,22 +6,17 @@ SRCS =				\
 	component_active_report_handler \
 	entity_app		\
 	forward_messagebuffer	\
-	globaldata_client	\
 	globaldata_server	\
 	idallocate		\
 	pendingLoginmgr		\
-	script_timers		\
 	serverapp		\
 	serverconfig		\
 	machine_infos		\
-	sendmail_threadtasks	\
 	shutdowner		\
-	signal_handler		\
-	telnet_handler		\
-	telnet_server
+	signal_handler
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/$(LIB),,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/$(LIB),,$(CURDIR))
 endif
 
 USE_PYTHON=1
@@ -32,4 +27,4 @@ ifndef NO_USE_LOG4CXX
 	CPPFLAGS += -DLOG4CXX_STATIC
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak

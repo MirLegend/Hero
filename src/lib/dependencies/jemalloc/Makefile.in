@@ -23,14 +23,14 @@ CONFIG_ARGS =
 #CONFIG_ARGS =--enable-debug --enable-prof --disable-optimize --enable-valgrind
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/dependencies/$(LIB),,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/dependencies/$(LIB),,$(CURDIR))
 endif
-LIBDIR := $(KBE_ROOT)/kbe/src/libs
+LIBDIR := $(KBE_ROOT)/src/libs
 
 srcroot := 
 objroot := 
-abs_srcroot := $(KBE_ROOT)/kbe/src/lib/dependencies/$(LIB)
-abs_objroot := $(KBE_ROOT)/kbe/src/lib/dependencies/$(LIB)
+abs_srcroot := $(KBE_ROOT)/src/lib/dependencies/$(LIB)
+abs_objroot := $(KBE_ROOT)/src/lib/dependencies/$(LIB)
 
 # Build parameters.
 CPPFLAGS := @CPPFLAGS@ -I$(srcroot)include -I$(objroot)include

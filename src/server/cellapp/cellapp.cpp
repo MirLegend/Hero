@@ -151,7 +151,7 @@ void CellApp::onGetEntityAppFromDbmgr(Network::Channel* pChannel, MemoryStream& 
 		));
 	if (cinfos)
 	{
-		if (cinfos->pIntAddr->ip != geafCmd.intaddr() || cinfos->pIntAddr->port != geafCmd.intport())
+		if (cinfos->pIntAddr->ip != (uint32)geafCmd.intaddr() || cinfos->pIntAddr->port != (uint16)geafCmd.intport())
 		{
 			ERROR_MSG(fmt::format("CellApp::onGetEntityAppFromDbmgr: Illegal app(uid:{0}, username:{1}, componentType:{2}, "
 				"componentID:{3}\n",

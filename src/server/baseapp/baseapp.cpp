@@ -397,7 +397,7 @@ void BaseApp::onClientHello(Network::Channel* pChannel, MemoryStream& s)
 {
 	client_baseserver::Hello helloCmd;
 	PARSEBUNDLE(s, helloCmd)
-		uint32 clientVersion = helloCmd.version();
+	//	uint32 clientVersion = helloCmd.version();
 	const std::string& extradata = helloCmd.extradata();
 
 	Network::Bundle* pBundle = Network::Bundle::ObjPool().createObject();

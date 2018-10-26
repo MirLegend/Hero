@@ -40,6 +40,6 @@
 using namespace KBEngine;
 int KBENGINE_MAIN(int argc, char* argv[])
 {
-	ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
+	//ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
 	return kbeMainT<CellApp>(argc, argv, CELLAPP_TYPE, -1, -1, "");
 }

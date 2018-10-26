@@ -812,7 +812,7 @@ void DebugHelper::backtrace_msg()
 			LOG4CXX_INFO(g_logger, ss);
 #endif
 
-			onMessage(KBELOG_PRINT, ss.c_str(), ss.size());
+			//onMessage(KBELOG_PRINT, ss.c_str(), ss.size());
 
 	}
 

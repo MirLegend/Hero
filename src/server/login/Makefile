@@ -1,15 +1,21 @@
-BIN  = baseappmgr
+BIN  = login
 SRCS =						\
-	baseapp					\
-	baseappmgr				\
-	baseappmgr_interface			\
+	login					\
+	login_interface			\
 	main
-
+	
+SRCCC = 						\
+	../../lib/proto/cl.pb   \
+	../../lib/proto/lbm.pb   \
+	../../lib/proto/ldb.pb   \
+	../../lib/proto/coms.pb
+	
 ASMS =
 
 MY_LIBS =		\
 	server		\
 	network		\
+	pyhal	\
 	thread
 	
 
@@ -28,8 +34,8 @@ endif
 CPPFLAGS += -DKBE_BASEAPPMGR
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/server/$(BIN),,$(CURDIR))
+export KBE_ROOT := $(subst /src/server/$(BIN),,$(CURDIR))
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak
 

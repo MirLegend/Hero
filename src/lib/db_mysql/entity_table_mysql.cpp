@@ -424,7 +424,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 		
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "tinyint%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "tinyint%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else 
 		{
@@ -442,7 +442,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "smallint%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "smallint%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -460,7 +460,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "int%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "int%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -478,7 +478,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "bigint%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "bigint%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -496,7 +496,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "tinyint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "tinyint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -514,7 +514,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "smallint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "smallint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -533,7 +533,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "int%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "int%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -551,7 +551,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "bigint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "bigint%s unsigned not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -569,7 +569,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "float%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "float%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{
@@ -587,7 +587,7 @@ EntityTableItem* EntityTableMysql::createItem(std::string type, const stTableIte
 
 		if (!bunique)
 		{
-			kbe_snprintf(itemDBType, MAX_BUF, "double%s not null %s", dataLength, pTableItemDescription->defaultValue);
+			kbe_snprintf(itemDBType, MAX_BUF, "double%s not null %s", dataLength, pTableItemDescription->defaultValue[0] == 0 ? "default 0" : pTableItemDescription->defaultValue);
 		}
 		else
 		{

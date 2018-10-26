@@ -375,7 +375,7 @@ void Base::onCellWriteToDBCompleted(CALLBACK_ID callbackID, int8 shouldAutoLoad)
 	
 	MemoryStream* s = MemoryStream::ObjPool().createObject();
 	this->addPersistentsDataToStream(0, s);
-	printf("writeEntity id:%d, data.size:%d  \n", id(), s->size());
+	printf("writeEntity id:%d, data.size:%d  \n", id(), (int32)s->size());
 
 	Network::Bundle* pBundle = Network::Bundle::ObjPool().createObject();
 	(*pBundle).newMessage(DbmgrInterface::writeEntity);

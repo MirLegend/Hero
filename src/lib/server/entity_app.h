@@ -45,6 +45,7 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "resmgr/resmgr.h"
 //#include "helper/console_helper.h"
 #include "server/serverapp.h"
+#include "network/channel.h"
 
 #if KBE_PLATFORM == PLATFORM_WIN32
 #pragma warning (disable : 4996)
@@ -526,12 +527,12 @@ bool EntityApp<E>::installPyModules()
 	std::string entryScriptFileName = "";
 	if (componentType() == BASEAPP_TYPE)
 	{
-		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getBaseApp();
+		//ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getBaseApp();
 		entryScriptFileName = "heromain"/*info.entryScriptFile*/;
 	}
 	else if (componentType() == CELLAPP_TYPE)
 	{
-		ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
+		//ENGINE_COMPONENT_INFO& info = g_kbeSrvConfig.getCellApp();
 		entryScriptFileName = "heromain";// info.entryScriptFile;
 	}
 

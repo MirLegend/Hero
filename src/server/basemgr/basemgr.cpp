@@ -364,7 +364,7 @@ void BaseMgrApp::onRegisterPendingAccountEx(Network::Channel* pChannel, MemorySt
 	ENTITY_ID entityID;
 	DBID entityDBID;
 	uint32 flags;
-	uint64 deadline;
+	//uint64 deadline;
 
 	login_basemgr::RegisterPendingAccountEx rpaxCmd;
 	PARSEBUNDLE(s, rpaxCmd)

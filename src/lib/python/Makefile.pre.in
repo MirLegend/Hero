@@ -19,12 +19,12 @@
 # See also the section "Build instructions" in the README file.
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/lib/python,,$(CURDIR))
+export KBE_ROOT := $(subst /src/lib/python,,$(CURDIR))
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak
 
-KBELIBDIR = $(KBE_ROOT)/kbe/src/libs
+KBELIBDIR = $(KBE_ROOT)/src/libs
 KBE_PYTHONLIB = $(KBELIBDIR)/lib$(PYTHONLIB).a
 # === Variables set by makesetup ===
 
@@ -473,8 +473,8 @@ LIBRARY_OBJS=	\
 # Default target
 all::		build_all
 build_all:	$(BUILDPYTHON) oldsharedmods sharedmods gdbhooks Modules/_testembed python-config
-		@rm -rf $(KBE_ROOT)/kbe/res/scripts/common/lib-dynload
-		@cp -rf "$(KBE_ROOT)/kbe/src/lib/python/build/lib.linux-$(shell uname -m)-$(VERSION)" "$(KBE_ROOT)/kbe/res/scripts/common/lib-dynload"
+		@rm -rf $(KBE_ROOT)/res/scripts/common/lib-dynload
+		@cp -rf "$(KBE_ROOT)/src/lib/python/build/lib.linux-$(shell uname -m)-$(VERSION)" "$(KBE_ROOT)/res/scripts/common/lib-dynload"
 
 # Compile a binary with gcc profile guided optimization.
 profile-opt:
@@ -1543,7 +1543,7 @@ clean:: pycremoval
 	-rm -f Lib/lib2to3/*Grammar*.pickle
 	-rm -f Modules/_testembed Modules/_freeze_importlib
 	-rm -f $(KBE_PYTHONLIB)
-	-rm -rf $(KBE_ROOT)/kbe/res/scripts/common/lib-dynload
+	-rm -rf $(KBE_ROOT)/res/scripts/common/lib-dynload
 
 profile-removal:
 	find . -name '*.gc??' -exec rm -f {} ';'

@@ -618,7 +618,7 @@ thread::TPTask::TPTaskState DBTaskQueryAccount::presentMainThread()
 DBTaskRemoveEntity::DBTaskRemoveEntity(const Network::Address& addr,
 	COMPONENT_ID componentID, ENTITY_ID eid,
 	DBID entityDBID/*, MemoryStream& datas*/) :
-	EntityDBTask(addr, MemoryStream(), eid, entityDBID),
+	EntityDBTask(addr, /*MemoryStream(),*/ eid, entityDBID),
 	componentID_(componentID),
 	eid_(eid),
 	entityDBID_(entityDBID)

@@ -553,10 +553,6 @@ bool Components::findLogger()
 	{
 		return true;
 	}
-	
-	int i = 0;
-	
-
 	return false;
 }
 
@@ -698,7 +694,6 @@ void Components::OnRegisterServer(Network::Channel* pChannel, MemoryStream& s)
 		COMPONENT_TYPE componentType = (COMPONENT_TYPE)regCmd.componenttype();
 	uint32 uid = regCmd.uid();
 	COMPONENT_ID componentID = regCmd.componentid();
-	uint32 extaddr = 0;
 
 	Network::Bundle* pBundle = Network::Bundle::ObjPool().createObject();
 	COMMON_NETWORK_MESSAGE(componentType, (*pBundle), CBRegisterServer);

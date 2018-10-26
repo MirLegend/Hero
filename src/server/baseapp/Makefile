@@ -1,15 +1,26 @@
-BIN  = baseappmgr
+BIN  = baseapp
 SRCS =						\
+	base					\
 	baseapp					\
-	baseappmgr				\
-	baseappmgr_interface			\
+	baseapp_interface			\
+	base_messages_forward_handler		\
+	initprogress_handler			\
+	proxy					\
+	proxy_forwarder				\
 	main
-
+	
+SRCCC = 						\
+	../../lib/proto/basedb.pb   \
+	../../lib/proto/bmb.pb   \
+	../../lib/proto/cb.pb   \
+	../../lib/proto/coms.pb
+	
 ASMS =
 
 MY_LIBS =		\
 	server		\
 	network		\
+	pyhal	\
 	thread
 	
 
@@ -25,11 +36,11 @@ ifndef NO_USE_LOG4CXX
 endif
 
 #HAS_PCH = 1
-CPPFLAGS += -DKBE_BASEAPPMGR
+CPPFLAGS += -DBASEAPP
 
 ifndef KBE_ROOT
-export KBE_ROOT := $(subst /kbe/src/server/$(BIN),,$(CURDIR))
+export KBE_ROOT := $(subst /src/server/$(BIN),,$(CURDIR))
 endif
 
-include $(KBE_ROOT)/kbe/src/build/common.mak
+include $(KBE_ROOT)/src/build/common.mak
 
