@@ -23,9 +23,6 @@ along with KBEngine.  If not, see <http://www.gnu.org/licenses/>.
 #include "proxy_forwarder.h"
 //#include "data_download.h"
 #include "network/channel.h"
-#include "GameModule/HeroManager.h"
-#include "GameModule/GameModule.h"
-#include "GameModule/TavernManager.h"
 
 #include "proto/bmb.pb.h"
 #include "../../server/basemgr/basemgr_interface.h"

@@ -97,7 +97,8 @@ class TavernContainer:
 				if playerTavern.oneDrawTimes == 0: #第一次抽奖 给火女
 					rewardArr[1].append(3)
 				elif playerTavern.oneDrawTimes == 1: #再次抽取给小鹿的灵魂石
-					rewardArr[2].append([157, 1])
+					##rewardArr[2].append([157, 1])
+					rewardArr[1].append(2)
 				else: #随机一个物品
 					itemgroup = d_itemgroups.datas.get('101')
 					if itemgroup is None:
@@ -114,7 +115,8 @@ class TavernContainer:
 			elif drawtype == GlobalDefine.draw_type_single: #单次付费
 				cost = -10
 				if playerTavern.oneDrawTimes == 1: #再次抽取给小鹿的灵魂石
-					rewardArr[2].append([157, 1])
+					#rewardArr[2].append([157, 1])
+					rewardArr[1].append(2)
 				else: #随机一个物品
 					itemgroup = d_itemgroups.datas.get('101')
 					if itemgroup is None:
@@ -139,6 +141,7 @@ class TavernContainer:
 			self.player.addPlayerHero(v, GlobalDefine.ITEM_LOG_tavernDraw)
 			protoHero = tavern_draw_reply._new_heroes.add()
 			self.player.heroContainer.SerializeHeroById(v, protoHero)
+			tavern_draw_reply._item_ids.append((1<<10) | v)
 			
 		for v in rewardArr[2]: #添加物品
 			self.player.addPlayerItem(v[0], v[1], GlobalDefine.ITEM_LOG_tavernDraw)

@@ -11,8 +11,6 @@
 #include "server/components.h"
 #include <sstream>
 
-#include "GameModule/GameModule.h"
-
 #include "proto/cb.pb.h"
 //#include "proto/up.pb.h"
 #include "proto/bmb.pb.h"

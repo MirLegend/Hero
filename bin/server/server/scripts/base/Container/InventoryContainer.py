@@ -34,12 +34,12 @@ class InventoryContainer:
 	def addinventoryItem(self, itemId, itemNum, reason):
 		if itemId <=0 or itemNum <= 0:
 			return
-		item = self.itemDatas[itemId]
-		if item is None:
+		if itemId in self.itemDatas:
+			item = self.itemDatas[itemId]
+			item.itemNum += itemNum
+		else:
 			item = InventoryItem(itemId, itemNum)
 			self.itemDatas[itemId] = item
-		else:
-			item.itemNum += itemNum
 	
 	def ParseFromProtoData(self, protoData):
 		for v in protoData:

@@ -117,9 +117,6 @@
     <ClCompile Include="..\..\lib\python\Modules\getbuildinfo.c" />
     <ClCompile Include="base.cpp" />
     <ClCompile Include="base_messages_forward_handler.cpp" />
-    <ClCompile Include="GameModule\GameModule.cpp" />
-    <ClCompile Include="GameModule\HeroManager.cpp" />
-    <ClCompile Include="GameModule\TavernManager.cpp" />
     <ClCompile Include="initprogress_handler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="baseapp.cpp" />
@@ -178,9 +175,6 @@
     <ClInclude Include="baseapp.h" />
     <ClInclude Include="baseapp_interface.h" />
     <ClInclude Include="base_messages_forward_handler.h" />
-    <ClInclude Include="GameModule\GameModule.h" />
-    <ClInclude Include="GameModule\HeroManager.h" />
-    <ClInclude Include="GameModule\TavernManager.h" />
     <ClInclude Include="initprogress_handler.h" />
     <ClInclude Include="proxy.h" />
   </ItemGroup>

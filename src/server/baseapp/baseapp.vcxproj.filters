@@ -19,9 +19,6 @@
     <Filter Include="pb">
       <UniqueIdentifier>{11a0d888-9830-4074-a0c1-1217885b132e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameModule">
-      <UniqueIdentifier>{bb9eef83-5d6f-430c-a398-d3e257d42c09}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,15 +57,6 @@
     <ClCompile Include="proxy_forwarder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameModule\GameModule.cpp">
-      <Filter>GameModule</Filter>
-    </ClCompile>
-    <ClCompile Include="GameModule\TavernManager.cpp">
-      <Filter>GameModule</Filter>
-    </ClCompile>
-    <ClCompile Include="GameModule\HeroManager.cpp">
-      <Filter>GameModule</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\lib\python\Modules\getbuildinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -103,15 +91,6 @@
     </ClInclude>
     <ClInclude Include="proxy.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameModule\GameModule.h">
-      <Filter>GameModule</Filter>
-    </ClInclude>
-    <ClInclude Include="GameModule\TavernManager.h">
-      <Filter>GameModule</Filter>
-    </ClInclude>
-    <ClInclude Include="GameModule\HeroManager.h">
-      <Filter>GameModule</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
